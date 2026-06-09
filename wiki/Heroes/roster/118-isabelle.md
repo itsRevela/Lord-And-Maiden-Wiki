@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** Heal  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** Heal  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 170cm · Age 20 · Birthday 10/31 · Character: Arrogance,Willfulness · Interest: Challenge

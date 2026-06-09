@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 1  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Human  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 152cm · Age 15 · Birthday 10/4 · Character: Artlessly Charming · Interest: Draw

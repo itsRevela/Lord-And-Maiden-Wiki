@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 170cm · Age 25 · Birthday 8/8 · Character: Calm,Resolute · Interest: Discuss tactics

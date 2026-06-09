@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 167cm · Age 150 · Birthday 4/30 · Character: Lively,Easygoing · Interest: Explore the forest

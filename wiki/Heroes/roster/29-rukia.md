@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 1  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Human  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 163cm · Age 24 · Birthday 9/15 · Character: Compassionate,Kind · Interest: Pray

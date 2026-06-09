@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 162cm · Age 17 · Birthday 9/3 · Character: Reserved,Reserved · Interest: Learn magic

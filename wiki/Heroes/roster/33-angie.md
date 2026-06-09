@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 3  ·  **Role:** Debuff  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★4  ·  **Race:** Elf  ·  **Role:** Debuff  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 160cm · Age 20 · Birthday 3/3 · Character: Pure,Ardent · Interest: Conduct magic experiments

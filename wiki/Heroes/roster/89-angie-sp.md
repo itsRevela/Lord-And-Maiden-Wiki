@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 3  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Elf  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 160cm · Age 20 · Birthday 3/3 · Character: Pure,Ardent · Interest: Conduct magic experiments

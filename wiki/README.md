@@ -8,8 +8,10 @@
 
 ### Mechanics
 - [Buffs & Debuffs](Mechanics/Buffs.md)
+- [Stats, Formulas & Mechanics](Mechanics/Stats-and-Formulas.md)
 
 ### Heroes & Lord
+- [AI / Enemy Heroes](Heroes/AI-Heroes.md)
 - [Hero Talents](Heroes/Hero-Talents.md)
 - [Heroes (Roster)](Heroes/Heroes.md)
 - [Lord Talents](Heroes/Lord-Talents.md)
@@ -30,4 +32,10 @@
 
 ### Codex & Collections
 - [Hero Codex (Collections)](Codex/Codex.md)
+
+### Items
+- [Items & Resources (Props)](Items/Items.md)
+
+### Characters & Lore
+- [Maidens (Workers / NPCs)](Characters/Maidens.md)
 

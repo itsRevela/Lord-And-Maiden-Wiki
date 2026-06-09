@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 167cm · Age 300 · Birthday 10/19 · Character: Great Physician,Callous · Interest: Gather herbs

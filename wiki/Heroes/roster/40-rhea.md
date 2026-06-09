@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 164cm · Age 505 · Birthday 3/8 · Character: Strong-willed,Persistent · Interest: Stargaze

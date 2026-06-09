@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 153cm · Age 16 · Birthday 3/25 · Character: Clueless,Confused · Interest: Sleep

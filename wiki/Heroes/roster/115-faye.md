@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 162cm · Age 200 · Birthday 2/5 · Character: Rational,Wise · Interest: Decipher ancient inscriptions

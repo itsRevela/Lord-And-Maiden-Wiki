@@ -9,7 +9,7 @@ import collections
 
 from resolver import (Resolver, load, has, fmt_num, clean, secs,
                       SOLDIER_TYPE, RST_ARCHETYPE, SKILL_TYPE_NAME, HERO_ROLE,
-                      HERO_MAX_LEVEL, ROOT)
+                      RACE_NAME, NPC_JOB, HERO_MAX_LEVEL, ROOT)
 
 WIKI = os.path.join(ROOT, "wiki")
 R = Resolver()
@@ -239,7 +239,7 @@ def gen_heroes():
             h["id"],
             "[%s](%s)" % (R.hero_name(h["id"]), page),
             "★" + h["rare"],
-            h["type"],
+            RACE_NAME.get(h["type"], h["type"]),
             R.hero_role(h["id"]),
             RST_ARCHETYPE.get(h["RST"], h["RST"]).split(" (")[0],
             "%s/%s/%s/%s" % (h["attack"], h["defense"], h["ruin"], h["speed"]),
@@ -260,7 +260,7 @@ def gen_hero_pages(heroes):
         # identity
         role = R.hero_role(hid)
         L.append("**Rarity:** ★%s  ·  **Race:** %s  ·  **Role:** %s  ·  **Archetype (RST):** %s"
-                 % (h["rare"], h["type"], role, RST_ARCHETYPE.get(h["RST"], h["RST"])))
+                 % (h["rare"], RACE_NAME.get(h["type"], h["type"]), role, RST_ARCHETYPE.get(h["RST"], h["RST"])))
         L.append("")
         # bio
         hf = R.herofile.get(hid)
@@ -358,6 +358,117 @@ def gen_skills():
     write("Heroes/Skills.md", "Skill Catalog", "Heroes & Lord", lines)
 
 
+def gen_ai_heroes():
+    heroes = [h for h in load("HeroInfo") if not R.is_named_hero(h["id"])]
+    heroes.sort(key=lambda h: int(h["id"]))
+    lines = ["Non-roster heroes used by AI / enemies / events (%d). Same stat model as "
+             "[playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`." % len(heroes), ""]
+    body = []
+    for h in heroes:
+        skills = " · ".join(nm for st, sid, nm, sk in _hero_skills(h))
+        body.append([h["id"], R.hero_name(h["id"]), "★" + h["rare"], RACE_NAME.get(h["type"], h["type"]),
+                     "%s/%s/%s/%s" % (h["attack"], h["defense"], h["ruin"], h["speed"]),
+                     "%s/%s/%s/%s" % (h["attack_grow"], h["defense_grow"], h["ruin_grow"], h["speed_grow"]),
+                     skills or "—"])
+    lines += tbl(["ID", "Name", "Rarity", "Race", "Base A/D/R/S", "Growth A/D/R/S", "Skills"], body)
+    write("Heroes/AI-Heroes.md", "AI / Enemy Heroes", "Heroes & Lord", lines)
+
+
+def gen_npcs():
+    rows = load("NPCData")
+    lines = ["Assignable workers (\"Maidens\") placed in production buildings. "
+             "Higher rarity / weight = stronger work output.", ""]
+    body = []
+    for r in rows:
+        body.append([r.get("XmlNum", ""), clean(r.get("Name_en") or r.get("Name")),
+                     NPC_JOB.get(r.get("JobType"), r.get("JobType")), "★" + r.get("Rare", ""),
+                     r.get("Weight", ""), R.expand_props(r.get("WorkEffects")),
+                     R.expand_props(r.get("WorkCosts"))])
+    lines += tbl(["ID", "Name", "Job", "Rarity", "Weight", "Work Effect", "Work Cost"], body)
+    write("Characters/Maidens.md", "Maidens (Workers / NPCs)", "Characters & Lore", lines)
+
+
+def gen_props():
+    rows = load("PropInfo")
+    by_t = collections.OrderedDict()
+    for r in rows:
+        by_t.setdefault(r["type"], []).append(r)
+    lines = ["Master catalog of every item / resource / material (\"prop\") in the game, "
+             "grouped by internal type. Prop IDs are referenced throughout the wiki "
+             "(costs, rewards, effects).", "",
+             "| Type | Count |", "|---|---|"]
+    for t in sorted(by_t, key=lambda x: int(x) if x.isdigit() else 0):
+        lines.append("| Type %s | %d |" % (t, len(by_t[t])))
+    lines.append("")
+    for t in sorted(by_t, key=lambda x: int(x) if x.isdigit() else 0):
+        lines.append("## Type %s (%d)" % (t, len(by_t[t])))
+        body = []
+        for r in sorted(by_t[t], key=lambda x: int(x["id"]) if x["id"].isdigit() else 0):
+            body.append([r["id"], clean(r.get("name_en") or r.get("name")),
+                         "★" + r.get("rare", "0"), clean(r.get("des_en"))[:90]])
+        lines += tbl(["ID", "Name", "Rarity", "Description"], body)
+        lines.append("")
+    write("Items/Items.md", "Items & Resources (Props)", "Items", lines)
+
+
+def gen_mechanics():
+    L = [
+        "How the numbers work. **All formulas here are verified from the decompiled game "
+        "code**; where a calculation is server-side, that is stated explicitly.", "",
+        "## Stat & data conventions",
+        "- Packed lists use `id_count` (a prop id and amount), joined by `+`. "
+        "Example: `Effect = 84_1000000+78_1` → *Reserve Soldiers Capacity ×1,000,000, Number Of Troops ×1*.",
+        "- `need_build = BuildingType_Level` (`0_0` = no requirement).",
+        "- The four combat stats are **Attack (ATK / AD)**, **Defense (DEF)**, "
+        "**Ruin (DES / DMG)**, **Speed (SP)**.", "",
+        "## Hero stat growth — *client-side, exact*",
+        "A hero's effective stat at level *L*:",
+        "```",
+        "stat(L) = base + floor(growth × L)",
+        "```",
+        "Applies to Attack, Defense, Ruin and Speed independently (base + per-stat growth "
+        "from the hero's data). **Hero max level = %d.** Per-hero level tables are on each "
+        "hero page; bases and growth are in the [roster](../Heroes/Heroes.md)." % HERO_MAX_LEVEL, "",
+        "### Hero races", "",
+        "| # | Race |", "|---|---|"] + ["| %s | %s |" % (k, v) for k, v in RACE_NAME.items()] + [
+        "", "### Hero roles (Job)", "",
+        "| # | Role |", "|---|---|"] + ["| %s | %s |" % (k, v) for k, v in HERO_ROLE.items()] + [
+        "", "### Skill types", "",
+        "| # | Type |", "|---|---|"] + ["| %s | %s |" % (k, v) for k, v in SKILL_TYPE_NAME.items()] + [
+        "", "### RST — recommended troop & stat-point archetype",
+        "When a hero leads troops, surplus attribute points are auto-allocated by their RST "
+        "(verified from code):", "",
+        "| RST | Soldier type | Point allocation |", "|---|---|---|",
+        "| 1 | Infantry | 60% Defense, remainder Speed |",
+        "| 2 | Archer | 80% Attack, remainder Ruin |",
+        "| 3 | Cavalry | 60% Defense, remainder Attack |",
+        "| 4 | Chariot | 60% Ruin, remainder Attack |", "",
+        "## Troops",
+        "Soldier base stats and recruit/cure costs are fixed per tier — see [Soldiers](../Soldiers/Soldiers.md). "
+        "Each of the 4 types (Infantry, Archer, Cavalry, Chariot) has tiers T1–T6. "
+        "Composition bonuses: [Troop Combinations](../Military/Troop-Combinations.md).", "",
+        "## Build / research / craft time",
+        "Base times come straight from the data (seconds): buildings [`time`](../Buildings/Buildings.md), "
+        "research [`time`](../Research/Science.md), crafting [`NeedTime`](../Crafting/Formulas.md). "
+        "In-game speedups and reductions are applied on top (server-validated).", "",
+        "## Power",
+        "Total Power is **computed server-side** and sent to the client as a breakdown:",
+        "```",
+        "AllPower = BuildPower + SciencePower + HeroPower + SkillPower + LordPower + CodexPower",
+        "```",
+        "Each system contributes its `power` value (e.g. each building level, each tech level, "
+        "each codex set lists a Power amount in its tables).", "",
+        "## Combat — *server-side*",
+        "Battles are resolved on the server. The client sends the chosen troops "
+        "(`CSLogic_StartFight`) and receives a **Battle Report** containing the result, "
+        "per-round data, kills and MVPs. The exact damage equation is therefore not present "
+        "in the client. What the client (and this wiki) provides: effective hero/troop stats, "
+        "skill and buff definitions, and troop-composition bonuses. "
+        "See [Buffs](Buffs.md) (`+1` beneficial, `-1` detrimental).",
+    ]
+    write("Mechanics/Stats-and-Formulas.md", "Stats, Formulas & Mechanics", "Mechanics", L)
+
+
 def gen_home():
     secs_order = ["Overview", "Mechanics", "Heroes & Lord", "Military", "City & Economy",
                   "Progression", "Codex & Collections", "Items", "Lore"]
@@ -381,8 +492,12 @@ def gen_home():
 
 def main():
     os.makedirs(WIKI, exist_ok=True)
+    gen_mechanics()
     gen_heroes()
+    gen_ai_heroes()
     gen_skills()
+    gen_npcs()
+    gen_props()
     gen_buildings()
     gen_soldiers()
     gen_science()

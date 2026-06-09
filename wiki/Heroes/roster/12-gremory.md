@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 3  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Elf  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 158cm · Age 18 · Birthday 6/1 · Character: Charmingly Naughty · Interest: Tease younger sister

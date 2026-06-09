@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 168cm · Age 350 · Birthday 6/6 · Character: Dashing,Unrestrained · Interest: Enjoy afternoon tea

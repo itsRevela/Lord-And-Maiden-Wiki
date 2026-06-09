@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 3  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Elf  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 172cm · Age 22 · Birthday 1/5 · Character: Aloof · Interest: Battle

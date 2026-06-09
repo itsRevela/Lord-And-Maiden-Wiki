@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 1  ·  **Role:** Heal  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Human  ·  **Role:** Heal  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 161cm · Age 22 · Birthday 9/20 · Character: Gentle,Strong-willed · Interest: Cook

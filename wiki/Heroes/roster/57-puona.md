@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 3  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
+**Rarity:** ★4  ·  **Race:** Elf  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
 
 ## Profile
 Height 156cm · Age 15 · Birthday 2/8 · Character: Sensitive,Delicate · Interest: Gaze at the stars

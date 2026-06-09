@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★3  ·  **Race:** 2  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★3  ·  **Race:** Orc  ·  **Role:** DPS  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 166cm · Age 20 · Birthday 3/16 · Character: Brave,Strong-willed · Interest: Explore

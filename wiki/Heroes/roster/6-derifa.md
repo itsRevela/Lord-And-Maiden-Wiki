@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 1  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Human  ·  **Role:** Buff  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 158cm · Age 17 · Birthday 3/24 · Character: Gentle,Strong-willed · Interest: Weave flower crowns

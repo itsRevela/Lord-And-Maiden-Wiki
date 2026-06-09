@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 2  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
+**Rarity:** ★5  ·  **Race:** Orc  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
 
 ## Profile
 Height 168cm · Age 23 · Birthday 5/12 · Character: Gentle,Kind · Interest: Listen to stories

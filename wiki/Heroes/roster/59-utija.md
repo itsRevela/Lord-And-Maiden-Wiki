@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** Buff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** Buff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 166cm · Age 510 · Birthday 11/1 · Character: Tough,Steady · Interest: Study divine prophecies

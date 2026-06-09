@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 1  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
+**Rarity:** ★4  ·  **Race:** Human  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
 
 ## Profile
 Height 157cm · Age 16 · Birthday 6/9 · Character: Optimistic · Interest: Take a walk

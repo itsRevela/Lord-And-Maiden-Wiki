@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 2  ·  **Role:** Debuff  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★4  ·  **Race:** Orc  ·  **Role:** Debuff  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 173cm · Age 21 · Birthday 7/23 · Character: Tough,Decisive · Interest: Mountain forest exploration

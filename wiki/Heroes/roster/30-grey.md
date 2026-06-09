@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★3  ·  **Race:** 1  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★3  ·  **Race:** Human  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 167cm · Age 28 · Birthday 7/19 · Character: Gentle,Approachable · Interest: Collect strange teaching tools

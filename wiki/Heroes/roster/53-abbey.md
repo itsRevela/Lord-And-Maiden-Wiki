@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★3  ·  **Race:** 2  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★3  ·  **Race:** Orc  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 163cm · Age 300 · Birthday 5/1 · Character: Keen,Vigilant · Interest: Groom feathers

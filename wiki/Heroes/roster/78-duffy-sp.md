@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 2  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★5  ·  **Race:** Orc  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Profile
 Height 157cm · Age 18 · Birthday 12/3 · Character: Proud,Soft-hearted · Interest: Play hide-and-seek

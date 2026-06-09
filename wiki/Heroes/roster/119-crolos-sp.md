@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** Heal  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** Heal  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 155cm · Age 15 · Birthday 3/15 · Character: Quiet · Interest: Observe plants and animals

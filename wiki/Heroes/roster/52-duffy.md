@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 2  ·  **Role:** DPS  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★4  ·  **Race:** Orc  ·  **Role:** DPS  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 157cm · Age 18 · Birthday 12/3 · Character: Proud,Soft-hearted · Interest: Play hide-and-seek

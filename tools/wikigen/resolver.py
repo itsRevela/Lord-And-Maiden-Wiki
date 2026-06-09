@@ -15,6 +15,8 @@ CSV_DIR = os.path.join(ROOT, "data", "csv")
 # verified from decompiled GetSkillTypeName / GetHeroJobDes (tokens resolved via localization)
 SKILL_TYPE_NAME = {"1": "Strategic", "2": "Tactical", "3": "Passive", "4": "Pursuit"}
 HERO_ROLE = {"1": "DPS", "2": "Heal", "3": "CC (Control)", "4": "Buff", "5": "Debuff"}
+RACE_NAME = {"1": "Human", "2": "Orc", "3": "Elf"}   # GetHeroRaceDesTip
+NPC_JOB = {"1": "Peasant Woman", "2": "Craftsman", "3": "Researcher", "4": "Angler"}  # GetJobDes
 HERO_MAX_LEVEL = 80   # verified: code level brackets reach 80; UpExp type 2 = 1..80
 
 

@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 3  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
+**Rarity:** ★4  ·  **Race:** Elf  ·  **Role:** Heal  ·  **Archetype (RST):** Infantry (DEF + Speed)
 
 ## Profile
 Height 165cm · Age 230 · Birthday 5/3 · Character: Innocent,Free-spirited · Interest: Forest singing and dancing

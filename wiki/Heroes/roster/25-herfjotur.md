@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★3  ·  **Race:** 2  ·  **Role:** DPS  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★3  ·  **Race:** Orc  ·  **Role:** DPS  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Profile
 Height 165cm · Age 15 · Birthday 6/12 · Character: Reckless,Enthusiastic · Interest: Train monstrous strength

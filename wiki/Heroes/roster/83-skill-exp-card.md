@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** —  ·  **Archetype (RST):** Infantry (DEF + Speed)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** —  ·  **Archetype (RST):** Infantry (DEF + Speed)
 
 ## Base Stats & Growth
 | Stat | Base | Growth / Level |

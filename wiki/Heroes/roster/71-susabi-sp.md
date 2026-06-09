@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 2  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Orc  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 170cm · Age 800 · Birthday 11/9 · Character: Mysterious,Cold and aloof · Interest: Moonlit walk

@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★4  ·  **Race:** 2  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★4  ·  **Race:** Orc  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 165cm · Age 500 · Birthday 3/14 · Character: Easygoing,Lazy · Interest: Carve ocean gems

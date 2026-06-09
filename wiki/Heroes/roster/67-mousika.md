@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 2  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Orc  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 154cm · Age 300 · Birthday 9/2 · Character: Withdrawn,Refined and aloof · Interest: Count fireflies

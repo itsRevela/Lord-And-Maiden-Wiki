@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★2  ·  **Race:** 1  ·  **Role:** —  ·  **Archetype (RST):** Archer (ATK + Ruin)
+**Rarity:** ★2  ·  **Race:** Human  ·  **Role:** —  ·  **Archetype (RST):** Archer (ATK + Ruin)
 
 ## Base Stats & Growth
 | Stat | Base | Growth / Level |

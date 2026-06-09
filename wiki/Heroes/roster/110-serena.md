@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 2  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Orc  ·  **Role:** Debuff  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 163cm · Age 170 · Birthday 6/11 · Character: Tough · Interest: Collect rubies

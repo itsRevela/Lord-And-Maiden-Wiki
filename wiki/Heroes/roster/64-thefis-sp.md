@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★5  ·  **Race:** 1  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Chariot (Ruin + ATK)
+**Rarity:** ★5  ·  **Race:** Human  ·  **Role:** CC (Control)  ·  **Archetype (RST):** Chariot (Ruin + ATK)
 
 ## Profile
 Height 161cm · Age 21 · Birthday 2/14 · Character: Gentle · Interest: Dance

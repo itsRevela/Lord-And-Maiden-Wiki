@@ -2,7 +2,7 @@
 
 [← Back to roster](../Heroes.md)
 
-**Rarity:** ★2  ·  **Race:** 1  ·  **Role:** —  ·  **Archetype (RST):** Cavalry (DEF + ATK)
+**Rarity:** ★2  ·  **Race:** Human  ·  **Role:** —  ·  **Archetype (RST):** Cavalry (DEF + ATK)
 
 ## Base Stats & Growth
 | Stat | Base | Growth / Level |
