@@ -4,6 +4,8 @@
 
 > Generated from game data. See `notes/` for methodology and `tools/` for the generators.
 
+**Start here:** [Game Overview](Game-Overview.md) · [Stats, Formulas & Mechanics](Mechanics/Stats-and-Formulas.md) · [Glossary](Reference/Glossary.md) · [Hero Lv 80 Leaderboards](Heroes/Hero-Leaderboards.md)
+
 ## Table of Contents
 
 ### Overview

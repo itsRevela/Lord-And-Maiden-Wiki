@@ -1,12 +1,19 @@
 # Recommended Teams & Builds
 
-Developer-recommended hero teams and skill loadouts (great starting builds). Each team is 3 heroes; skills are listed per hero.
+Developer-recommended hero teams and skill loadouts (great starting builds). Each team is 3 heroes; skills are listed per hero. Hero pages link back here via their "Featured in N recommended teams" note.
 
+## Beginner Teams (5)
 | ID | Category | Hero 1 | Hero 2 | Hero 3 |
 |---|---|---|---|---|
 | 1001 | ★Beginner Recommend★ | **Patra**<br/>Ghost Bone, Rift, Tactical Burst, Thorn Cross | **Pomon**<br/>Heavy Knight, Field Therapy, Unbounded, Cocoon Silence | **Lafayette·Sp**<br/>Past Memory, Elemental Burst, Hard Armor, Devout |
 | 1002 | ★Beginner Recommend★ | **Phila**<br/>Tactical Superb, Evil Fruit, Bone Blade, Raid | **Pomon**<br/>Heavy Knight, Field Therapy, Unbounded, Cocoon Silence | **Lafayette·Sp**<br/>Past Memory, Elemental Burst, Hard Armor, Devout |
 | 1003 | ★Beginner Recommend★ | **SusaMaki·Sp**<br/>Higanbana, Purgatory Trial, Spirit Strike, Demon Breaker | **Pomon**<br/>Heavy Knight, Field Therapy, Unbounded, Cocoon Silence | **Lafayette·Sp**<br/>Past Memory, Hard Armor, Elf Deer, Force Of Will |
+| 1064 | ★Beginner Plan1★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Susabi**<br/>Fox Spell, Turbid Current, Sword Break | **Puona**<br/>Mirror Whisper, Skyland, Anabiosis |
+| 1065 | ★Beginner Plan2★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Susabi**<br/>Fox Spell, Turbid Current, Sword Break | **Lafayette**<br/>Feather Fall, Anabiosis, Skyland |
+
+## Popular Plans (99)
+| ID | Category | Hero 1 | Hero 2 | Hero 3 |
+|---|---|---|---|---|
 | 1004 | Popular Plan 1 | **Synaga**<br/>Flame Combo, Arrows Volley, Rift, Element Affinity | **Pomon**<br/>Heavy Knight, Field Therapy, Hard Armor, Force Of Will | **Madeline**<br/>Boost Morale, Elemental Burst, Unbounded, Healing Bell |
 | 1005 | Popular Plan 2 | **Synaga**<br/>Flame Combo, Endless Destroy, Rift, Thorn Cross | **Pomon**<br/>Heavy Knight, Field Therapy, Hard Armor, Force Of Will | **Aguria**<br/>Flowlight Slash, Tactical Burst, Holy-light Chop, Chain Arrows |
 | 1006 | Popular Plan 3 | **Patra**<br/>Ghost Bone, Thorn Cross, Tactical Burst, Holy-light Chop | **Slider·Sp**<br/>Dark Arrive, Noise, Cocoon Silence, Blue Fire | **Lafayette·Sp**<br/>Past Memory, Unbounded, Elemental Burst, Healing Bell |
@@ -67,8 +74,6 @@ Developer-recommended hero teams and skill loadouts (great starting builds). Eac
 | 1061 | Popular Plan 58 | **Satoru**<br/>Gray World, Agile, Angel Blesse, Song Dream | **Rhea**<br/>Star Shield, Spirit Gather, Dinner, Reactive Block | **Mousika**<br/>Imprint Doom, Sneak Attack, Lurking, Self-Healing |
 | 1062 | Popular Plan 59 | **Sera**<br/>Butterfly Strike, Element Affinity, Purgatory Trial, Mushin | **Pomon**<br/>Heavy Knight, Field Therapy, Unbounded, Cocoon Silence | **Lafayette·Sp**<br/>Past Memory, Elemental Burst, Hard Armor, Devout |
 | 1063 | Popular Plan 60 | **Sera**<br/>Butterfly Strike, Spirit Gather, Purgatory Trial, Spirit Strike | **Yaya**<br/>Lost Night, Devout, Field Therapy, Elf Deer | **Yao Lin**<br/>Cloud Arrow, Unmoving, Hawkeye, Healing Bell |
-| 1064 | ★Beginner Plan1★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Susabi**<br/>Fox Spell, Turbid Current, Sword Break | **Puona**<br/>Mirror Whisper, Skyland, Anabiosis |
-| 1065 | ★Beginner Plan2★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Susabi**<br/>Fox Spell, Turbid Current, Sword Break | **Lafayette**<br/>Feather Fall, Anabiosis, Skyland |
 | 1066 | Popular Plan 61 | **Utia**<br/>Vines Entwine, Sparkly Flowers, Charged Slash | **Bellona**<br/>Steel Will, Wind Spirit, Anabiosis | **Lorelei**<br/>Tide Sea, Turbid Current, Reflux |
 | 1067 | Popular Plan 62 | **Angie·Sp**<br/>Magic Book, Gospel, Elf Elegy | **Slider**<br/>Mad Knife, Flowers Sword, Rose Sword | **Gremory**<br/>Night Fall, Seal Arrow, Soul Shot |
 | 1068 | Popular Plan 63 | **Utia**<br/>Vines Entwine, Sparkly Flowers, Charged Slash | **Lafayette**<br/>Feather Fall, Divine Light, Skyland | **Crolos**<br/>Pure Land, Gospel, Springtime |
@@ -108,6 +113,7 @@ Developer-recommended hero teams and skill loadouts (great starting builds). Eac
 | 1102 | Popular Plan 97 | **Roland**<br/>Epee Storm, Thorn Cross, Tactical Burst, Rift | **Faye**<br/>Arcane Missile, Elemental Burst, Starlight Flash, Sky Tear Arrow | **Slider·Sp**<br/>Dark Arrive, Devout, Noise, Rainy Night |
 | 1103 | Popular Plan 98 | **Utia·Sp**<br/>Phantom Vortex, Tactical Burst, Wail, Fire Emblem | **Slider·Sp**<br/>Dark Arrive, Noise, Rainy Night, Devout | **Nyx**<br/>Soul Drain, Force Of Will, Sky Tear Arrow, Unbounded |
 | 1104 | Popular Plan 99 | **Aguria·Sp**<br/>Swift Thrust, Evil Fruit, Tactical Burst, Bone Blade | **Nyx**<br/>Soul Drain, Sky Tear Arrow, Devout, Force Of Will | **Utija·Sp**<br/>Chronos Boundary, Starlight Flash, Knight Creed, Hard Armor |
+
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

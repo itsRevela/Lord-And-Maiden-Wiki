@@ -538,16 +538,24 @@ def gen_mechanics():
 def gen_recommend():
     rows = load("Recommend")
     lines = ["Developer-recommended hero teams and skill loadouts (great starting builds). "
-             "Each team is 3 heroes; skills are listed per hero.", ""]
-    body = []
+             "Each team is 3 heroes; skills are listed per hero. Hero pages link back here "
+             "via their \"Featured in N recommended teams\" note.", ""]
+    groups = collections.OrderedDict([("Beginner Teams", []), ("Popular Plans", [])])
     for r in rows:
-        cells = [r["RecId"], R.desc(r.get("Des_en") or r.get("Des"))]
+        cat = R.desc(r.get("Des_en") or r.get("Des"))
+        bucket = "Beginner Teams" if "beginner" in cat.lower() else "Popular Plans"
+        cells = [r["RecId"], cat]
         for i in (1, 2, 3):
             h = r.get("HeroNum%d" % i, "0")
             sk = R.skill_list(r.get("SkillNum%d" % i, ""))
             cells.append("**%s**<br/>%s" % (R.hero_name(h), sk) if h != "0" else "—")
-        body.append(cells)
-    lines += tbl(["ID", "Category", "Hero 1", "Hero 2", "Hero 3"], body)
+        groups[bucket].append(cells)
+    for title, body in groups.items():
+        if not body:
+            continue
+        lines.append("## %s (%d)" % (title, len(body)))
+        lines += tbl(["ID", "Category", "Hero 1", "Hero 2", "Hero 3"], body)
+        lines.append("")
     write("Teams/Recommended-Teams.md", "Recommended Teams & Builds", "Teams & Builds", lines)
 
 
@@ -768,6 +776,9 @@ def gen_home():
     lines = ["**Lord and Maiden** — a complete, data-mined reference for stats, formulas, "
              "and progression. All numbers are extracted directly from the game files.", "",
              "> Generated from game data. See `notes/` for methodology and `tools/` for the generators.", "",
+             "**Start here:** [Game Overview](Game-Overview.md) · "
+             "[Stats, Formulas & Mechanics](Mechanics/Stats-and-Formulas.md) · "
+             "[Glossary](Reference/Glossary.md) · [Hero Lv 80 Leaderboards](Heroes/Hero-Leaderboards.md)", "",
              "## Table of Contents", ""]
     for sec in secs_order + [s for s in by_sec if s not in secs_order]:
         if sec not in by_sec or sec == "_hidden":
