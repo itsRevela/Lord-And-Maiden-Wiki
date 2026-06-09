@@ -22,9 +22,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Campaign page gained an **Enemy Lv** column (decoded from the AI-formation params).
 
 ### Changed
+- Rewrote the root `README.md` as a proper wiki landing page: welcome, "Start here"
+  quick links, browse-by-category navigation into every section, link to the full
+  generated index, an accuracy statement, and a condensed "how it's built" section.
 - Hero Codex set bonuses are now decoded (e.g. "Infantry HP +2") instead of showing
   raw `EffectType`/`EffectVal`; required heroes link to their pages.
 - Skill Catalog gained a legend for the `Max Use` / `Ready Rd` columns.
+- `verify.py` now also validates the root README's links so page renames can't silently
+  break the front page.
 - **`tools/wikigen/build_extra.py`** — 19 additional wiki pages covering every
   remaining player-facing config: feature/building unlock gates, item sources,
   shops, recharge/gift packs, choice chests, gift-code rewards, relic dungeons,

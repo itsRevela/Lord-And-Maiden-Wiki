@@ -48,6 +48,24 @@ def check_links():
     return bad
 
 
+def check_root_readme():
+    """The repo-root README.md is hand-curated; make sure its links into wiki/ resolve."""
+    path = os.path.join(ROOT, "README.md")
+    if not os.path.exists(path):
+        return 0
+    bad = 0
+    text = open(path, encoding="utf-8").read()
+    for m in LINK.finditer(text):
+        url = m.group(1).split("#")[0]
+        if not url or url.startswith(("http://", "https://", "mailto:")):
+            continue
+        target = os.path.normpath(os.path.join(ROOT, urllib.parse.unquote(url)))
+        if not os.path.exists(target):
+            bad += 1
+            problems.append("BROKEN LINK in README.md -> %s" % url)
+    return bad
+
+
 def count_re(rx):
     total = collections_local = 0
     per = {}
@@ -81,7 +99,7 @@ def cross_checks():
 
 def main():
     print("=== link integrity ===")
-    bad = check_links()
+    bad = check_links() + check_root_readme()
     print("broken links: %d" % bad)
     for p in problems[:25]:
         print("  " + p)
