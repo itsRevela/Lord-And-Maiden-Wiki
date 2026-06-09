@@ -12,6 +12,7 @@
 
 ### Heroes & Lord
 - [AI / Enemy Heroes](Heroes/AI-Heroes.md)
+- [Hero Skins](Heroes/Hero-Skins.md)
 - [Hero Talents](Heroes/Hero-Talents.md)
 - [Heroes (Roster)](Heroes/Heroes.md)
 - [Lord Talents](Heroes/Lord-Talents.md)
@@ -27,39 +28,57 @@
 ### City & Economy
 - [Buildings](Buildings/Buildings.md)
 - [Crafting & Production](Crafting/Formulas.md)
+- [Recharge & Gift Packs](Items/Recharge-Packs.md)
 - [Research / Technology](Research/Science.md)
+- [Shops & Stores](Items/Shops.md)
 
 ### PvE & World
 - [Bosses](World/Bosses.md)
 - [Campaign (Main Gates)](World/Campaign.md)
+- [NPC Cities & Guardians](World/NPC-Cities.md)
+- [Relic Dungeons](World/Relic-Dungeons.md)
 - [Trials (Assessment)](World/Trials.md)
+- [Warlord Challenge](World/Warlord-Challenge.md)
+- [Wilderness & World Boxes](World/Wild-Exploration.md)
+- [World & Naval Structures](World/World-Structures.md)
 - [World Map Objects](World/World-Map.md)
 
 ### Alliance
 - [Alliance Research](Alliance/Union-Research.md)
 
 ### Progression
+- [Building & City Unlocks](Progression/Building-Unlocks.md)
 - [Favorability (GoodFeel)](Progression/Favorability.md)
+- [Feature Unlock Levels](Progression/Feature-Unlocks.md)
 - [Lord Outfits](Progression/Lord-Outfits.md)
 - [Ship Levels](Progression/Ship.md)
 - [Style Level](Progression/Style.md)
 - [VIP Levels](Progression/VIP.md)
 
 ### Quests & Events
+- [Minigames](Quests/Minigames.md)
 - [Quests & Events](Quests/Quests-and-Events.md)
 
 ### Codex & Collections
 - [Hero Codex (Collections)](Codex/Codex.md)
 - [Item Collections](Codex/Item-Collections.md)
+- [Reward Boxes](Codex/Reward-Boxes.md)
 
 ### Characters & Lore
+- [Dating Events](Lore/Dating-Events.md)
 - [Maidens (Workers / NPCs)](Characters/Maidens.md)
 - [Story & Plot](Lore/Story.md)
 
 ### Items
+- [Choice Chests](Items/Choice-Chests.md)
+- [Gift Code Rewards](Items/Gift-Code-Rewards.md)
+- [Item Sources (How to Obtain)](Items/Item-Sources.md)
 - [Items & Resources (Props)](Items/Items.md)
 
 ### Reference
+- [AI Equipment Sets](Reference/AI-Equipment.md)
 - [Attribute / Effect Catalog](Reference/Attributes.md)
+- [Avatar Frames](Reference/Avatar-Frames.md)
+- [Chat Emojis](Reference/Emojis.md)
 - [Game Tips](Reference/Tips.md)
 

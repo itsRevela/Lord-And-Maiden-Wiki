@@ -744,6 +744,8 @@ def main():
     gen_story()
     gen_tips()
     gen_entry_effects()
+    import build_extra
+    build_extra.register(write, tbl, R)
     gen_home()
     print("generated %d pages in %s" % (len(PAGES), WIKI))
     for sec, title, rel in PAGES:
