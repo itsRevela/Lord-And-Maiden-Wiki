@@ -15,5 +15,13 @@ venv/
 .DS_Store
 Thumbs.db
 
-# scratch model dumps
+# scratch model dumps + ad-hoc audit artifacts (regenerable; not part of the toolchain)
 tools/_*.txt
+tools/audit_findings.txt
+tools/cjk_*.txt
+tools/html.txt
+tools/naive_tables.txt
+tools/underscore.txt
+tools/copy_audit.py
+tools/validate2.py
+tools/_inspect_model.py
