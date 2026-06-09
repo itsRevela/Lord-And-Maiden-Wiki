@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Glossary greatly expanded** (17 → ~70 terms + a 16-row currency table), reorganised into
+  six categories (Stats & hero terms, Battle & skills, City/economy/troops, Progression &
+  collections, PvE/World/Alliance, Currencies). Driven by a 4-subagent sweep of the whole
+  wiki for newcomer-ambiguous jargon; every definition is grounded in the wiki/data
+  (uncertain terms were left out rather than guessed). Added e.g. Commander/Striker,
+  troop restraint, wound states, Impact/Init/+Lv, Real damage, Splash, Vit vs Stamina,
+  Great World, Union, Lord/Lord Level, Prestige, Title/Astral Badges, Territory tiers,
+  Integral, Sphere of Influence, and a name-aliases note (Chase=Pursuit, Strategy=Strategic, …).
+
+### Fixed
+- Glossary "Ruin / DES / DMG" entry rendered with stray backslashes (`Ruin \ DES \ DMG`) due
+  to invalid escapes in the generator — now correct.
+- Maidens page header was inaccurate ("higher weight = stronger"): Weight is the inverse
+  summon draw-weight (★6 = 1, ★1 = 30); corrected to clarify rarity drives strength.
+- Added **Stun** to the Status Effects page (it appears throughout skills but was missing).
 - **Strategy & Guides** — 8 community-strategy pages rebuilt (in the wiki's voice, with
   attribution) from Lofthouse's archived Steam guides, kept in a separate `build_guides.py`
   module and clearly banner-marked as player knowledge rather than extracted data:

@@ -431,8 +431,10 @@ def gen_ai_heroes():
 
 def gen_npcs():
     rows = load("NPCData")
-    lines = ["Assignable workers (\"Maidens\") placed in production buildings. "
-             "Higher rarity / weight = stronger work output.", ""]
+    lines = ["Assignable workers (\"Maidens\") placed in production buildings to boost output. "
+             "**Higher rarity = stronger** (bigger Work Effect). **Weight** is the summon-pool "
+             "draw weight — rarer Maidens have a *lower* weight (★6 = 1, ★1 = 30), i.e. they are "
+             "pulled less often. **Job** is which production building they work in.", ""]
     body = []
     for r in rows:
         body.append([r.get("XmlNum", ""), clean(r.get("Name_en") or r.get("Name")),

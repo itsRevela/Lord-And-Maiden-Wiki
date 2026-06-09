@@ -9,6 +9,7 @@ Crowd-control and status definitions used throughout combat. See [Battle Mechani
 | Disarm | Unit cannot make normal attacks. |
 | Silence | Unit cannot use Tactical skills. |
 | Vertigo | Disarm **and** Silence combined. |
+| Stun | Unit is **Unable to Move** — it cannot act at all for the duration. |
 | Chaos | Normal attacks and Tactical/Chase skills target **completely at random** (friend or foe). |
 | Forbidden Healing | Unit cannot be healed. |
 | Taunt | Unit must normal-attack the taunter (ignored if the unit is also in Chaos). |

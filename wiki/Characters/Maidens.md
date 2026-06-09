@@ -1,6 +1,6 @@
 # Maidens (Workers / NPCs)
 
-Assignable workers ("Maidens") placed in production buildings. Higher rarity / weight = stronger work output.
+Assignable workers ("Maidens") placed in production buildings to boost output. **Higher rarity = stronger** (bigger Work Effect). **Weight** is the summon-pool draw weight — rarer Maidens have a *lower* weight (★6 = 1, ★1 = 30), i.e. they are pulled less often. **Job** is which production building they work in.
 
 | ID | Name | Job | Rarity | Weight | Work Effect | Work Cost |
 |---|---|---|---|---|---|---|
