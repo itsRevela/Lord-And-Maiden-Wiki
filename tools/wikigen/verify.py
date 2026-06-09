@@ -17,7 +17,7 @@ WIKI = os.path.join(ROOT, "wiki")
 CSV = os.path.join(ROOT, "data", "csv")
 
 LINK = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
-PLACEHOLDER = re.compile(r"\b(Prop|Hero|Build|Skill|Tech|Buff)#\d")
+PLACEHOLDER = re.compile(r"\b(Prop|Hero|Build|Skill|Tech|Buff|Attr|AI)#\d")
 TOKEN = re.compile(r"\{[^{}]{1,40}\}")
 
 issues = collections = 0

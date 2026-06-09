@@ -469,9 +469,230 @@ def gen_mechanics():
     write("Mechanics/Stats-and-Formulas.md", "Stats, Formulas & Mechanics", "Mechanics", L)
 
 
+def gen_recommend():
+    rows = load("Recommend")
+    lines = ["Developer-recommended hero teams and skill loadouts (great starting builds). "
+             "Each team is 3 heroes; skills are listed per hero.", ""]
+    body = []
+    for r in rows:
+        cells = [r["RecId"], clean(r.get("Des_en") or r.get("Des"))]
+        for i in (1, 2, 3):
+            h = r.get("HeroNum%d" % i, "0")
+            sk = R.skill_list(r.get("SkillNum%d" % i, ""))
+            cells.append("**%s**<br/>%s" % (R.hero_name(h), sk) if h != "0" else "—")
+        body.append(cells)
+    lines += tbl(["ID", "Category", "Hero 1", "Hero 2", "Hero 3"], body)
+    write("Teams/Recommended-Teams.md", "Recommended Teams & Builds", "Teams & Builds", lines)
+
+
+def gen_favorability():
+    rows = load("GoodFeel")
+    lines = ["Hero favorability (\"GoodFeel\") levels — raise affinity for a global all-hero stat bonus.", ""]
+    body = [[r["lv"], fmt_num(r["upLvExp"]), R.expand_props(r.get("costProp")), clean(r.get("des_en") or r.get("des"))]
+            for r in rows]
+    lines += tbl(["Lv", "EXP", "Cost / Level", "Effect"], body)
+    write("Progression/Favorability.md", "Favorability (GoodFeel)", "Progression", lines)
+
+
+def gen_ship():
+    rows = load("ShipData")
+    lines = ["Transport/Naval ship levels.", ""]
+    body = [[r["ShipLv"], r["MoveSpeed"], r["LoadCount"], R.expand_props(r.get("UpNeeds"))] for r in rows]
+    lines += tbl(["Ship Lv", "Move Speed", "Load Count", "Upgrade Cost"], body)
+    write("Progression/Ship.md", "Ship Levels", "Progression", lines)
+
+
+def gen_lord_dress():
+    rows = load("LordDress")
+    lines = ["Lord cosmetic outfits (suits). Pieces are item ids.", ""]
+    body = []
+    for r in rows:
+        pieces = ", ".join(R.prop_name(r[k]) for k in ("Pos1_PropId", "Pos2_PropId", "Pos3_PropId")
+                           if r.get(k, "0") not in ("0", ""))
+        body.append([r["SuitID"], clean(r.get("SuitName_en") or r.get("SuitName")), "★" + r.get("Rare", ""), pieces or "—"])
+    lines += tbl(["Suit ID", "Name", "Rarity", "Pieces"], body)
+    write("Progression/Lord-Outfits.md", "Lord Outfits", "Progression", lines)
+
+
+def gen_union_science():
+    rows = load("UnionScience")
+    by_id = collections.OrderedDict()
+    for r in rows:
+        by_id.setdefault(r["id"], []).append(r)
+    lines = ["Alliance (Union) research. Uses alliance resources (Ci/Si/Fe/Ue/Gold).", ""]
+    for sid, lvls in by_id.items():
+        lines.append("### %s" % clean(lvls[0].get("name_en") or lvls[0].get("name")))
+        body = []
+        for l in sorted(lvls, key=lambda x: int(x["lv"])):
+            body.append([l["lv"], fmt_num(l["power"]),
+                         "%s/%s/%s/%s/%s" % (l["union_Ci"], l["union_Si"], l["union_Fe"], l["union_Ue"], l["union_Gold"]),
+                         secs(l["time"]), clean(l.get("des_en"))])
+        lines += tbl(["Lv", "Power", "Cost Ci/Si/Fe/Ue/Gold", "Time", "Effect"], body)
+        lines.append("")
+    write("Alliance/Union-Research.md", "Alliance Research", "Alliance", lines)
+
+
+def gen_bosses():
+    lines = ["World and alliance bosses with their enemy formations and rewards.", ""]
+    for cfg, title in [("WolrdBoss", "World Bosses"), ("UnionBoss", "Alliance Bosses")]:
+        rows = load(cfg)
+        if not rows:
+            continue
+        lines.append("## %s" % title)
+        body = [[r["BossId"], clean(r.get("Name_en") or r.get("Name")), R.expand_ai(r.get("AiInfo"))] for r in rows]
+        lines += tbl(["ID", "Boss", "Enemy Formation"], body)
+        lines.append("")
+    ncw = load("NewCityWar")
+    if ncw:
+        lines.append("## City War Bosses")
+        body = [[r["CityLv"], clean(r.get("Name_en") or r.get("Name")), clean(r.get("Con_en") or r.get("Con")),
+                 secs(r.get("FightTime")), R.expand_ai(r.get("AiInfo"))] for r in ncw]
+        lines += tbl(["Lv", "Boss", "Condition", "Fight Time", "Enemy Formation"], body)
+    write("World/Bosses.md", "Bosses", "PvE & World", lines)
+
+
+def gen_campaign():
+    rows = load("MainGate")
+    lines = ["Main campaign stages (\"gates\"). Beat the enemy formation to clear; each grants a "
+             "first-clear reward and passive idle Income.", "",
+             "*%d stages total.*" % len(rows), ""]
+    body = []
+    for r in rows:
+        body.append([r["gateNum"], r.get("NeedLv", ""), R.expand_ai(r.get("AiInfo")),
+                     R.expand_props(r.get("FirstAward"))])
+    lines += tbl(["Stage", "Lord Lv", "Enemy Formation", "First-Clear Reward"], body)
+    write("World/Campaign.md", "Campaign (Main Gates)", "PvE & World", lines)
+
+
+def gen_trials():
+    rows = load("Assess")
+    lines = ["Assessment trial gates — sequential fights with a troop cap.", ""]
+    body = [[r["GateNum"], r.get("GroupId", ""), r.get("MaxTroop", ""), R.expand_ai(r.get("AiInfo")),
+             R.expand_props(r.get("FirstAward"))] for r in rows]
+    lines += tbl(["Gate", "Group", "Max Troops", "Enemy Formation", "First Reward"], body)
+    write("World/Trials.md", "Trials (Assessment)", "PvE & World", lines)
+
+
+def gen_worldmap():
+    rows = load("WorldMapInfo")
+    lines = ["World-map objects you can attack/occupy for rewards.", ""]
+    body = [[clean(r.get("Name_en") or r.get("Name")), r.get("Lv", ""), R.expand_ai(r.get("AiInfo")),
+             R.expand_props(r.get("PassAward"))] for r in rows]
+    lines += tbl(["Object", "Lv", "Enemy Formation", "Reward"], body)
+    write("World/World-Map.md", "World Map Objects", "PvE & World", lines)
+
+
+def gen_quests():
+    lines = ["All quest, mission and event systems.", ""]
+    defs = [
+        ("MainQuests", "Main Quests", ["Chapter", "name_en", "des_en", "reward"], ["Chapter", "Name", "Objective", "Reward"]),
+        ("DailyQuests", "Daily Quests", ["name_en", "des_en", "activity", "reward"], ["Category", "Objective", "Activity", "Reward"]),
+        ("WeekQuests", "Weekly Quests", ["name_en", "des_en", "activity", "reward"], ["Category", "Objective", "Activity", "Reward"]),
+        ("AnnalsQuests", "Annals (Achievements)", ["Title_en", "des_en", "star", "reward"], ["Category", "Objective", "Stars", "Reward"]),
+        ("LifeTask", "Life Tasks", ["TaskDes_en", "Awards"], ["Objective", "Reward"]),
+        ("HeroBook", "Hero Handbook", ["Title_en", "Des_en", "Awards"], ["Category", "Objective", "Reward"]),
+        ("HandBook", "Newcomer Handbook", ["Des_en", "Reward"], ["Objective", "Reward"]),
+        ("WeekEvent", "Weekly Events", ["EventName_en", "des_en", "reward"], ["Event", "Objective", "Reward"]),
+        ("MonthEvent", "Monthly Events", ["Des_en", "Reward"], ["Objective", "Reward"]),
+    ]
+    for cfg, title, cols, head in defs:
+        rows = load(cfg)
+        if not rows:
+            continue
+        lines.append("## %s" % title)
+        body = []
+        for r in rows:
+            row = []
+            for c in cols:
+                v = r.get(c, "")
+                if c in ("reward", "Reward", "Awards"):
+                    v = R.expand_props(v)
+                else:
+                    v = clean(v)
+                row.append(v)
+            body.append(row)
+        lines += tbl(head, body)
+        lines.append("")
+    sq = load("SideQuests")
+    if sq:
+        cats = collections.Counter(clean(r.get("name_en") or r.get("name")) for r in sq)
+        lines.append("## Side Quests")
+        lines.append("%d side-quest steps (repetitive per-building/per-level objectives). Breakdown by category:" % len(sq))
+        lines.append("")
+        lines += tbl(["Category", "Steps"], sorted(cats.items(), key=lambda x: -x[1]))
+    write("Quests/Quests-and-Events.md", "Quests & Events", "Quests & Events", lines)
+
+
+def gen_story():
+    sl = load("StoryLine")
+    lines = ["The game's narrative. Spoilers ahead.", "", "## Prologue / Story Lines", ""]
+    for r in sl:
+        t = clean(r.get("line_en"))
+        if t and t != "0":
+            lines.append("> " + t + "\n")
+    mp = load("MainPlot")
+    by_ch = collections.OrderedDict()
+    for r in mp:
+        by_ch.setdefault(r["chapter"], []).append(r)
+    lines.append("## Main Story")
+    for ch, plot in by_ch.items():
+        lines.append("\n### Chapter %s\n" % ch)
+        for r in plot:
+            txt = clean(r.get("content_en"))
+            if not txt or txt == "0":
+                continue
+            sp = r.get("speaker", "0")
+            if sp not in ("0", "") and sp in R.hero:
+                lines.append("**%s:** %s" % (R.hero_name(sp), txt))
+            else:
+                lines.append("> " + txt)
+        lines.append("")
+    write("Lore/Story.md", "Story & Plot", "Characters & Lore", lines)
+
+
+def gen_tips():
+    rows = load("Tips")
+    by_t = collections.OrderedDict()
+    for r in rows:
+        by_t.setdefault(clean(r.get("TypeName_en") or r.get("TypeName")), []).append(r)
+    lines = ["In-game loading tips and mechanics hints, grouped by topic.", ""]
+    for tn, tl in by_t.items():
+        lines.append("### %s" % (tn or "General"))
+        for r in tl:
+            d = clean(r.get("des_en") or r.get("des"))
+            if d:
+                lines.append("- " + d)
+        lines.append("")
+    write("Reference/Tips.md", "Game Tips", "Reference", lines)
+
+
+def gen_entry_effects():
+    rows = load("EntryEffect")
+    lines = ["Catalog of attribute/effect entries used by gear, buffs and bonuses.", ""]
+    body = [[r["EffectType"], clean(r.get("Name_en") or r.get("Name"))] for r in rows]
+    lines += tbl(["Effect ID", "Attribute"], body)
+    write("Reference/Attributes.md", "Attribute / Effect Catalog", "Reference", lines)
+
+
+def gen_collections():
+    rows = load("PropCodex")
+    by_t = collections.OrderedDict()
+    for r in rows:
+        by_t.setdefault(clean(r.get("TypeName_en") or r.get("TypeName")), []).append(r)
+    lines = ["Item-collection sets (\"PropCodex\") — gather the listed items to unlock a permanent bonus + Power.", ""]
+    for tn, cl in by_t.items():
+        lines.append("## %s" % (tn or "Misc"))
+        body = [[r["Id"], R.expand_props(r.get("NeedProps")), R.expand_effects(r.get("Effects")), fmt_num(r.get("Power"))]
+                for r in cl]
+        lines += tbl(["Set ID", "Required Items", "Bonus", "Power"], body)
+        lines.append("")
+    write("Codex/Item-Collections.md", "Item Collections", "Codex & Collections", lines)
+
+
 def gen_home():
-    secs_order = ["Overview", "Mechanics", "Heroes & Lord", "Military", "City & Economy",
-                  "Progression", "Codex & Collections", "Items", "Lore"]
+    secs_order = ["Overview", "Mechanics", "Heroes & Lord", "Teams & Builds", "Military",
+                  "City & Economy", "PvE & World", "Alliance", "Progression", "Quests & Events",
+                  "Codex & Collections", "Characters & Lore", "Items", "Reference"]
     by_sec = collections.defaultdict(list)
     for sec, title, rel in PAGES:
         by_sec[sec].append((title, rel))
@@ -506,9 +727,23 @@ def main():
     gen_talents("WarlordTalent", "Lord Talents", "Heroes/Lord-Talents.md", has_props=False)
     gen_vip()
     gen_style()
+    gen_favorability()
+    gen_ship()
+    gen_lord_dress()
     gen_buffs()
     gen_troop_combos()
     gen_codex()
+    gen_collections()
+    gen_recommend()
+    gen_union_science()
+    gen_bosses()
+    gen_campaign()
+    gen_trials()
+    gen_worldmap()
+    gen_quests()
+    gen_story()
+    gen_tips()
+    gen_entry_effects()
     gen_home()
     print("generated %d pages in %s" % (len(PAGES), WIKI))
     for sec, title, rel in PAGES:

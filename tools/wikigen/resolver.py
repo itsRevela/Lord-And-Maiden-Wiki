@@ -83,9 +83,30 @@ class Resolver:
             self.awaken.setdefault((r["skill_type"], r["skill_id"]), []).append(r)
         for k in self.awaken:
             self.awaken[k].sort(key=lambda x: int(x["Lv"]))
+        # AI formation units + attribute/effect catalog (separate id spaces)
+        self.ai = {r["AiNum"]: r for r in load("AiInfo")}
+        self.entry = {r["EffectType"]: r for r in load("EntryEffect")}
         # localization
         locp = os.path.join(ROOT, "data", "localization.json")
         self.loc = json.load(open(locp, encoding="utf-8")) if os.path.exists(locp) else {}
+
+    def effect_name(self, eid):
+        r = self.entry.get(str(eid).strip())
+        return clean(r.get("Name_en") or r.get("Name")) if r else ("Attr#" + str(eid))
+
+    def expand_effects(self, s, sep="+"):
+        """'111_200+115_50' -> 'Infantry HP ×200, ...' using the EntryEffect catalog."""
+        s = (s or "").strip()
+        if not s or s == "0":
+            return "—"
+        out = []
+        for tok in s.split(sep):
+            if "_" in tok:
+                eid, _, val = tok.partition("_")
+                out.append("%s ×%s" % (self.effect_name(eid), fmt_num(val)))
+            elif tok:
+                out.append(self.effect_name(tok))
+        return ", ".join(out)
 
     def loc_en(self, token):
         return (self.loc.get(token.strip("{}"), {}) or {}).get("English_Text", token)
@@ -107,6 +128,51 @@ class Resolver:
 
     def hero_stat_at(self, base, grow, level):
         return int(base) + math.floor(float(grow) * level)
+
+    def skill_list(self, s, sep="+"):
+        """'2_81+2_100+3_26' -> 'Taboo Seal, ...' (each token is skilltype_id)."""
+        s = (s or "").strip()
+        if not s or s == "0":
+            return "—"
+        out = []
+        for tok in s.split(sep):
+            if "_" in tok:
+                st, _, sid = tok.partition("_")
+                out.append(self.skill_name(st, sid))
+            elif tok:
+                out.append(tok)
+        return ", ".join(out)
+
+    def expand_ai(self, s):
+        """AI formation 'aiNum,aiNum,..._lv_x_y'. Each aiNum is an AiInfo unit whose
+        HeroNum1..3 are HeroInfo ids -> resolve to the enemy hero team."""
+        s = (s or "").strip()
+        if not s or s == "0":
+            return "—"
+        ids, _, params = s.partition("_")
+        units = []
+        for aid in ids.split(","):
+            aid = aid.strip()
+            if not aid:
+                continue
+            row = self.ai.get(aid)
+            if row:
+                hs = [self.hero_name(row["HeroNum%d" % i]) for i in (1, 2, 3)
+                      if row.get("HeroNum%d" % i, "0") not in ("0", "")]
+                units.append(" / ".join(hs) if hs else ("AI#" + aid))
+            elif aid in self.hero:
+                units.append(self.hero_name(aid))
+            else:
+                units.append("AI#" + aid)
+        # dedupe consecutive duplicates (formations often repeat the same unit)
+        out = []
+        for u in units:
+            if not out or out[-1] != u:
+                out.append(u)
+        txt = "; ".join(out)
+        if params:
+            txt += "  *(Lv/params: %s)*" % params
+        return txt
 
     # ---- name lookups ----
     def prop_name(self, pid):
@@ -130,7 +196,9 @@ class Resolver:
 
     def skill_name(self, st, sid):
         r = self.skill.get((str(st), str(sid)))
-        return clean(r.get("name_en") or r.get("name")) if r else ("Skill#%s.%s" % (st, sid))
+        if not r:
+            return "Skill#%s.%s" % (st, sid)
+        return clean(r.get("Name_en") or r.get("name_en") or r.get("Name") or r.get("name")) or ("Skill#%s.%s" % (st, sid))
 
     def science_name(self, sid):
         r = self.science_by_id.get(str(sid).strip())
