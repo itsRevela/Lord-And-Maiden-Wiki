@@ -4,10 +4,12 @@ data/csv; every id is resolved to a name. Re-run after data changes.
 Usage: python tools/wikigen/build.py
 """
 import os
+import re
 import collections
 
 from resolver import (Resolver, load, has, fmt_num, clean, secs,
-                      SOLDIER_TYPE, RST_ARCHETYPE, ROOT)
+                      SOLDIER_TYPE, RST_ARCHETYPE, SKILL_TYPE_NAME, HERO_ROLE,
+                      HERO_MAX_LEVEL, ROOT)
 
 WIKI = os.path.join(ROOT, "wiki")
 R = Resolver()
@@ -203,6 +205,159 @@ def gen_codex():
     write("Codex/Codex.md", "Hero Codex (Collections)", "Codex & Collections", lines)
 
 
+def _slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "x"
+
+
+def _hero_skills(h):
+    out = []
+    for i in (0, 1, 2):
+        st, sid = h["skill%d_type" % i], h["skill%d_id" % i]
+        if st == "0" and sid == "0":
+            continue
+        sk = R.skill_full(st, sid)
+        nm = clean(sk.get("Name_en") or sk.get("Name")) if sk else "Skill#%s.%s" % (st, sid)
+        out.append((st, sid, nm, sk))
+    return out
+
+
+def gen_heroes():
+    heroes = [h for h in load("HeroInfo") if R.is_named_hero(h["id"])]
+    heroes.sort(key=lambda h: (-int(h["rare"]), int(h["id"])))
+    lines = ["The playable hero roster (%d heroes). Stats shown are **base** (level 0 reference) "
+             "with per-level **growth**; effective stat at level *L* = `base + floor(growth × L)`. "
+             "Hero max level is **%d**. Click a hero for full per-level tables, skills, and lore." % (len(heroes), HERO_MAX_LEVEL),
+             "",
+             "- **Rarity**: 2–5 (higher = rarer). **Race**: hero faction (1–3). "
+             "**Role**: DPS / Heal / CC / Buff / Debuff. **RST**: recommended troop & stat-point archetype.",
+             "- Skills are linked to the [Skill catalog](Skills.md).", ""]
+    body = []
+    for h in heroes:
+        skills = " · ".join("%s (%s)" % (nm, SKILL_TYPE_NAME.get(st, st)) for st, sid, nm, sk in _hero_skills(h))
+        page = "roster/%s-%s.md" % (h["id"], _slug(R.hero_name(h["id"])))
+        body.append([
+            h["id"],
+            "[%s](%s)" % (R.hero_name(h["id"]), page),
+            "★" + h["rare"],
+            h["type"],
+            R.hero_role(h["id"]),
+            RST_ARCHETYPE.get(h["RST"], h["RST"]).split(" (")[0],
+            "%s/%s/%s/%s" % (h["attack"], h["defense"], h["ruin"], h["speed"]),
+            "%s/%s/%s/%s" % (h["attack_grow"], h["defense_grow"], h["ruin_grow"], h["speed_grow"]),
+            skills or "—",
+        ])
+    lines += tbl(["ID", "Hero", "Rarity", "Race", "Role", "Archetype",
+                  "Base A/D/R/S", "Growth A/D/R/S", "Skills"], body)
+    write("Heroes/Heroes.md", "Heroes (Roster)", "Heroes & Lord", lines)
+    gen_hero_pages(heroes)
+
+
+def gen_hero_pages(heroes):
+    for h in heroes:
+        hid = h["id"]
+        nm = R.hero_name(hid)
+        L = ["[← Back to roster](../Heroes.md)", ""]
+        # identity
+        role = R.hero_role(hid)
+        L.append("**Rarity:** ★%s  ·  **Race:** %s  ·  **Role:** %s  ·  **Archetype (RST):** %s"
+                 % (h["rare"], h["type"], role, RST_ARCHETYPE.get(h["RST"], h["RST"])))
+        L.append("")
+        # bio
+        hf = R.herofile.get(hid)
+        if hf:
+            bio = []
+            if hf.get("Heighi", "0") not in ("0", ""): bio.append("Height %scm" % hf["Heighi"])
+            if hf.get("Age", "0") not in ("0", ""): bio.append("Age %s" % hf["Age"])
+            if hf.get("Birthday", "0") not in ("0", ""): bio.append("Birthday %s" % hf["Birthday"])
+            if clean(hf.get("Character_en")): bio.append("Character: %s" % clean(hf["Character_en"]))
+            if clean(hf.get("Interest_en")): bio.append("Interest: %s" % clean(hf["Interest_en"]))
+            if bio:
+                L.append("## Profile")
+                L.append(" · ".join(bio)); L.append("")
+        # background story
+        bg = R.herobg.get(hid)
+        if bg:
+            paras = [clean(bg.get("Bg_Line%d_en" % i)) for i in range(1, 13)]
+            paras = [p for p in paras if p and p != "0"]
+            if paras:
+                L.append("## Background")
+                for p in paras:
+                    L.append(p + "\n")
+        # voice lines
+        hd = R.herodes.get(hid)
+        if hd:
+            vl = []
+            for label, key in [("Summon", "summon_line_en"), ("Tap 1", "click_line1_en"),
+                               ("Tap 2", "click_line2_en"), ("Tap 3", "click_line3_en")]:
+                v = clean(hd.get(key))
+                if v and v != "0":
+                    vl.append((label, v))
+            if vl:
+                L.append("## Voice Lines")
+                L += tbl(["Line", "Text"], vl); L.append("")
+        # base stats + growth
+        L.append("## Base Stats & Growth")
+        L += tbl(["Stat", "Base", "Growth / Level"],
+                 [["Attack", h["attack"], h["attack_grow"]],
+                  ["Defense", h["defense"], h["defense_grow"]],
+                  ["Ruin", h["ruin"], h["ruin_grow"]],
+                  ["Speed", h["speed"], h["speed_grow"]]])
+        L.append("")
+        # full level progression
+        L.append("## Stat Progression (Lv 1–%d)" % HERO_MAX_LEVEL)
+        L.append("`stat(L) = base + floor(growth × L)`")
+        prog = []
+        for lv in range(1, HERO_MAX_LEVEL + 1):
+            prog.append([lv,
+                         R.hero_stat_at(h["attack"], h["attack_grow"], lv),
+                         R.hero_stat_at(h["defense"], h["defense_grow"], lv),
+                         R.hero_stat_at(h["ruin"], h["ruin_grow"], lv),
+                         R.hero_stat_at(h["speed"], h["speed_grow"], lv)])
+        L += tbl(["Lv", "Attack", "Defense", "Ruin", "Speed"], prog)
+        L.append("")
+        # skills
+        L.append("## Skills")
+        for st, sid, snm, sk in _hero_skills(h):
+            L.append("### %s — *%s*" % (snm, SKILL_TYPE_NAME.get(st, "Type " + st)))
+            if sk:
+                if clean(sk.get("Des_en")):
+                    L.append(clean(sk["Des_en"]))
+                meta = []
+                if sk.get("Rare"): meta.append("Rarity ★%s" % sk["Rare"])
+                if sk.get("MaxUse", "0") not in ("0", ""): meta.append("Max uses/battle: %s" % sk["MaxUse"])
+                if sk.get("ReadyRound", "0") not in ("0", ""): meta.append("Ready on round %s" % sk["ReadyRound"])
+                if meta:
+                    L.append("*" + " · ".join(meta) + "*")
+                aw = R.awaken.get((st, sid))
+                if aw:
+                    L.append("")
+                    L += tbl(["Skill Lv", "Effect"],
+                             [[a["Lv"], clean(a.get("des_en") or a.get("des"))] for a in aw])
+            L.append("")
+        write("Heroes/roster/%s-%s.md" % (hid, _slug(nm)), nm, "_hidden", L)
+
+
+def gen_skills():
+    rows = load("NewSkillInfo")
+    by_t = collections.OrderedDict()
+    for r in rows:
+        by_t.setdefault(r["ST"], []).append(r)
+    lines = ["Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. "
+             "Skills level up (\"awaken\") — see per-level effects on each hero's page. "
+             "`Impact` is the skill's base power coefficient; `Init`/`+Lv` show base value and per-level gain.", ""]
+    for st in sorted(by_t, key=lambda x: int(x)):
+        lines.append("## %s Skills" % SKILL_TYPE_NAME.get(st, "Type " + st))
+        body = []
+        for r in sorted(by_t[st], key=lambda x: int(x["ID"])):
+            body.append([r["ID"], clean(r.get("Name_en") or r.get("Name")), "★" + r["Rare"],
+                         r.get("MaxUse", "0"), r.get("ReadyRound", "0"),
+                         r.get("ImpactBy", ""), r.get("InitVal", ""), r.get("UpVal", ""),
+                         clean(r.get("Des_en") or r.get("Des"))])
+        lines += tbl(["ID", "Name", "Rarity", "Max Use", "Ready Rd", "Impact", "Init", "+/Lv", "Description"], body)
+        lines.append("")
+    write("Heroes/Skills.md", "Skill Catalog", "Heroes & Lord", lines)
+
+
 def gen_home():
     secs_order = ["Overview", "Mechanics", "Heroes & Lord", "Military", "City & Economy",
                   "Progression", "Codex & Collections", "Items", "Lore"]
@@ -214,7 +369,7 @@ def gen_home():
              "> Generated from game data. See `notes/` for methodology and `tools/` for the generators.", "",
              "## Table of Contents", ""]
     for sec in secs_order + [s for s in by_sec if s not in secs_order]:
-        if sec not in by_sec:
+        if sec not in by_sec or sec == "_hidden":
             continue
         lines.append("### %s" % sec)
         for title, rel in sorted(by_sec[sec]):
@@ -226,6 +381,8 @@ def gen_home():
 
 def main():
     os.makedirs(WIKI, exist_ok=True)
+    gen_heroes()
+    gen_skills()
     gen_buildings()
     gen_soldiers()
     gen_science()

@@ -11,7 +11,9 @@
 
 ### Heroes & Lord
 - [Hero Talents](Heroes/Hero-Talents.md)
+- [Heroes (Roster)](Heroes/Heroes.md)
 - [Lord Talents](Heroes/Lord-Talents.md)
+- [Skill Catalog](Heroes/Skills.md)
 
 ### Military
 - [Soldiers (Troops)](Soldiers/Soldiers.md)

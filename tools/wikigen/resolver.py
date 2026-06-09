@@ -6,9 +6,16 @@ English names so generated pages never contain a bare numeric id without a name.
 import os
 import csv
 import re
+import json
+import math
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CSV_DIR = os.path.join(ROOT, "data", "csv")
+
+# verified from decompiled GetSkillTypeName / GetHeroJobDes (tokens resolved via localization)
+SKILL_TYPE_NAME = {"1": "Strategic", "2": "Tactical", "3": "Passive", "4": "Pursuit"}
+HERO_ROLE = {"1": "DPS", "2": "Heal", "3": "CC (Control)", "4": "Buff", "5": "Debuff"}
+HERO_MAX_LEVEL = 80   # verified: code level brackets reach 80; UpExp type 2 = 1..80
 
 
 def load(name):
@@ -64,6 +71,40 @@ class Resolver:
         self.science_by_id = {}
         for r in self.science:
             self.science_by_id.setdefault(r["id"], r)
+        # hero lore/role links (keyed by character id)
+        self.herodes = {r["id"]: r for r in load("HeroDes")}
+        self.herofile = {r["HeroNum"]: r for r in load("HeroFile")}
+        self.herobg = {r["Hero_id"]: r for r in load("HeroBgDesLine")}
+        # skill awaken per-level table keyed by (skill_type, skill_id)
+        self.awaken = {}
+        for r in load("SkillAwake"):
+            self.awaken.setdefault((r["skill_type"], r["skill_id"]), []).append(r)
+        for k in self.awaken:
+            self.awaken[k].sort(key=lambda x: int(x["Lv"]))
+        # localization
+        locp = os.path.join(ROOT, "data", "localization.json")
+        self.loc = json.load(open(locp, encoding="utf-8")) if os.path.exists(locp) else {}
+
+    def loc_en(self, token):
+        return (self.loc.get(token.strip("{}"), {}) or {}).get("English_Text", token)
+
+    def resolve_tokens(self, text):
+        if not text or "{" not in text:
+            return clean(text)
+        return clean(re.sub(r"\{([^{}]*)\}", lambda m: self.loc_en(m.group(1)) or m.group(0), text))
+
+    def is_named_hero(self, hid):
+        return str(hid) in self.herodes
+
+    def hero_role(self, hid):
+        r = self.herodes.get(str(hid))
+        return HERO_ROLE.get(r["HeroJob"], "—") if r else "—"
+
+    def skill_full(self, st, sid):
+        return self.skill.get((str(st), str(sid)))
+
+    def hero_stat_at(self, base, grow, level):
+        return int(base) + math.floor(float(grow) * level)
 
     # ---- name lookups ----
     def prop_name(self, pid):
