@@ -1,0 +1,474 @@
+﻿Simplified_Text,Traditional_Text,English_Text,Japanese_Text,Korean_Text
+服务器正在维护,伺服器正在維護,Server Is Under Maintenance,サーバーはメンテナンス中です,서버 점검 중
+预计完成时间,預計完成時間,Estimated Completion Time,推定終了時間,예상 완료 시간
+服务器未开放,伺服器未開放,Server Is Not Open,サーバーが開いていません,서버가 열려 있지 않습니다
+开放时间,開放時間,Opening Hours,営業時間,개관 시간
+请先设置,請先設置,Please Set First,設定してください,설정해주세요
+亲爱的各位玩家，为了给您带来更好的游戏体验，我们将于,親愛的各位玩家，為了給您帶來更好的遊戲體驗，我們將於,"Dear Players, In Order To Bring You A Better Gaming Experience",プレイヤーの皆様、より良いゲーム体験をお届けするために,"플레이어 여러분, 더 나은 게임 경험을 제공하기 위해"
+对服务器进行停机维护,對服務器進行停機維護,Downtime For Server Maintenance,サーバーメンテナンスのためのダウンタイム,서버 유지 보수를 위한 다운타임
+您已被管理员踢下线,您已被管理員踢下線,You Have Been Kicked Offline By Administrator,管理者によって強制的にオフラインにされました,관리자에 의해 강제로 오프라인 상태가 되었습니다.
+您的账号在其他地方登录,您的賬號在其他地方登錄,Your Account Is Logged In Elsewhere,あなたのアカウントは別の場所でログインしています,계정이 다른 곳에 로그인되어 있습니다.
+由于您的IP存在异常,由於您的IP存在異常,Your IP Address Is Abnormal,IPが異常,IP가 비정상입니다
+系统拒绝了您的登录请求,系統拒絕了您的登錄請求,The System Denied Your Login Request,ログイン要求が拒否されました,귀하의 로그인 요청이 거부되었습니다
+系统检测到您正在使用非法加速工具，请立即停止使用,系統檢測到您正在使用非法加速工具，請立即停止使用,The System Detects That You Are Using An Illegal Acceleration Tool. Please Stop Using It Immediately,違法な高速化ツールを使用していることをシステムが検出しました。すぐに使用を中止してください,시스템에서 불법 가속 도구를 사용하고 있음을 감지했습니다. 즉시 사용을 중지하십시오.
+否则账号将被永久封禁,否則賬號將被永久封禁,"Otherwise, The Account Will Be Permanently Banned",そうしないと、アカウントは永久に禁止されます,그렇지 않으면 계정이 영구적으로 금지됩니다.
+"数据异常,无法使用","數據異常,無法使用",Data Is Abnormal And Cannot Be Used,データが異常で使えない,데이터가 비정상적이며 사용할 수 없습니다.
+该账号由于违反用户守则,該賬號由於違反用戶守則,This Account Is Due To Violation Of User Rules,このアカウントはユーザーポリシー違反のためです,이 계정은 사용자 정책을 위반했습니다.
+账号被永久封禁,賬號被永久封禁,The Account Was Permanently Banned,アカウント永久禁止,영구적으로 금지된 계정
+角色被永久封禁,角色被永久封禁,The Role Was Permanently Banned,キャラクターの永久禁止,영구적으로 금지된 캐릭터
+"战斗结果异常,本场战斗作废","戰鬥結果異常,本場戰鬥作廢","The Battle Result Is Abnormal, This Battle Is Invalid",戦闘結果が異常,전투 결과가 오류
+由于网络异常已与服务器断开连接,由於網路異常已與伺服器斷開連接,Disconnected From Server Due To Network Exception,ネットワーク例外のため、サーバーから切断されました,네트워크 예외로 인해 서버와의 연결이 끊어졌습니다.
+网络错误,網絡錯誤,Network Error,ネットワークエラー,네트워크 오류
+服务器繁忙,伺服器繁忙,Server Is Too Busy,サーバーがビジーです,서버가 사용 중입니다
+操作太频繁,操作太頻繁,Operation Too Frequent,操作頻度が高すぎる,너무 자주 작동
+请稍后再试,請稍後再試,Please Try Again Later,後でもう一度やり直してください,나중에 다시 시도 해주십시오
+请重新登录,請重新登錄,Please Login Again,もう一度ログインしてください,다시 로그인하십시오
+"交易失败,请重新下单","交易失敗,請重新下單","Transaction Failed, Please Reorder",取引に失敗しました。もう一度注文してください,거래에 실패했습니다. 다시 주문해 주세요.
+是否立即重启游戏更换为选择的语言,是否立即重啟遊戲更換為選擇的語言,Whether To Restart The Game Immediately And Change To The Selected Language,選択した言語に変更するためにゲームをすぐに再起動するかどうか,선택한 언어로 변경하기 위해 게임을 즉시 다시 시작할지 여부
+感谢您对本游戏的支持，您购买的物品已到账,感謝您對本遊戲的支持，您購買的物品已到賬,"Thank You For Your Support Of This Game, The Props You Purchased Have Been Credited To Your Account",このゲームをご愛顧いただきありがとうございます。購入したアイテムは送信されました,이 게임을 지원해 주셔서 감사합니다. 구매한 아이템이 발송되었습니다.
+请选择,請選擇,Select,選択,선택해
+请先卸下,請先卸下,Please Remove,必須解除,필요 장착해제
+请输入,請輸入,Enter,入力,입력
+请输入您的兑换码,請輸入您的兌換碼,Please Enter Your CDK,CDK 入力してください,CDK 입력하세요
+请输入新的角色名,請輸入新的角色名,Please Enter New Role Name,キャラクター名 入力してください,캐릭터 이름 입력하세요
+联盟礼物匿名,聯盟禮物匿名,Hide Union Gift Name,ギルド贈呈品名を非表示,문파 선물 이름 숨기기
+创建了新的联盟,創建了新的聯盟,Created A New Union,新しいギルドを作成しました,새로운 문파 만들었습니다
+欢迎各位玩家加入,歡迎各位玩家加入,Welcome All Players To Join,参加を歓迎します,가입을 환영합니다
+恭喜玩家,恭喜玩家,Congratulate Player,プレイヤーを祝福する,플레이어를 축하합니다
+引用到,引用到,Refer To,引用する,인용하다
+召唤出,召喚出,Summon Get,召唤獲得,소환 획득
+不能为空,不能為空,Cannot Be Empty,空白です,비어있다
+确认购买,確認購買,Confirm Purchase,購入確認,구매 확인
+等级过低,等級過低,Insufficient Level,等級が足りない,불충분한 레벨
+权限,權限,Jurisdiction,管轄権,관할권
+权限不足,權限不足,Insufficient Authority,不十分な権限,불충분한 권한
+数量不足,數量不足,Not Enough Quantity,不十分な数量,수량 부족
+次数不足,次數不足,Not Enough Times,不十分な回数,횟수 부족
+人数不足,人數不足,Not Enough People,人数不足,인원 부족
+道具数量不足,道具數量不足,Not Enough Props Quantity,不十分な数量の道具,아이템 수량 부족
+挑战次数不足,挑戰次數不足,Not Enough Challenges,不十分な挑戦回数,도전 횟수 부족
+主角等级不足,主角等級不足,Not Enough Protagonist Level,主人公の等級が足りない,불충분한 주인공 레벨
+剩余觉醒点不足,剩餘覺醒點不足,Not Enough Remaining Awakening Points,残り覚醒ポイントが不足しています,남은 각성 포인트가 부족합니다
+今日挑战次数不足,今日挑戰次數不足,Not Enough Challenges,不十分な挑戦回数のため,도전 횟수 부족하여
+不能重置,不能重置,Cannot Be Reset,リセットできません,재설정할 수 없습니다
+请先重置,請先重置,Priority Reset,優先リセット,우선순위 재설정
+将获得以下道具,將獲得以下道具,You Will Get The Following Props,以下の道具がもらえます,다음과 같은 소품을 받게 됩니다
+重置后将获得以下道具,重置後將獲得以下道具,The Following Props Will Be Acquired After Reset,リセット後、以下の道具が得られます,재설정 후 다음 아이템 얻습니다
+重置后将返还所有升级消耗,重置後將返還所有升級消耗,All Upgrade Costs Will Be Refunded After The Reset,すべてのアップグレード費用はリセット後に返金されます,모든 업그레이드 비용은 재설정 후 환불됩니다.
+退出战斗视为战斗失败,退出戰鬥視為戰鬥失敗,Exiting A Battle Is Considered A Battle Failure,戦闘を終了すると、戦闘の敗北と見なされます,전투를 종료하면 전투 패배로 간주됩니다
+提交成为宝鉴后，道具或装备将彻底销毁,提交成為寶鑑後，道具或裝備將徹底銷毀,"After Submitting As Codex, The Props Or Equipment Will Be Completely Destroyed",宝鑑になるために提出した後、道具または装備は完全に破壊されます,보감이 되기 위해 제출한 후 소품 또는 장비는 완전히 파괴됩니다.
+分享给大家一个联盟礼包,分享給大家一個聯盟禮包,Share An Union Gift,シェア ギルド贈呈品,지분 문파 선물
+最多上阵3名角色,最多上陣3名角色,Most Deploy Three Roles,最大数を超えました,최대 수를 초과했습니다
+最多叠加1小时,最多叠加1小時,Stacks Up To Most 1 Hour,最大1時間までスタック,최대 1시간 중첩
+最多叠加2小时,最多叠加2小時,Stacks Up To Most 2 Hours,最大1時間までスタック,최대 2시간 중첩
+最多叠加8小时,最多叠加8小時,Stacks Up To Most 8 Hours,最大8時間までスタック,최대 8시간 중첩
+最多叠加12小时,最多叠加12小時,Stacks Up To Most 12 Hours,最大12時間までスタック,최대 12시간 중첩
+偷偷观察了你,偷偷觀察了你,Observed You Secretly,こっそりあなたを観察していました,몰래 당신을 관찰했습니다
+角色等级无法超越主角等级,角色等級無法超越主角等級,Role Level Cannot Beyond The Protagonist Level,キャラクター等級が主人公等級を超えない,캐릭터 레벨은 주인공 레벨을 초과할 수 없습니다
+精炼等级不能大于主角等级,精煉等級不能大於主角等級,Refine Level Cannot Be Greater Than Protagonist Level,精錬等級は主人公等級以上にできません,정련하다 레벨은 주인공 레벨보다 높을 수 없습니다.
+今日内容已全部完成,今日內容已全部完成,Today's Content Has Been Completed,本日の内容は全て終了しました,오늘의 내용은 모두 끝났습니다
+请选择一个对象,請選擇一個對象,Please Select An Object,オブジェクトを選択してください,개체를 선택하세요
+是否确认,是否確認,Confirm To,確認,확인
+是否确认移除,是否確認移除,Confirm To Remove,確認 取り除く,확인 없애다
+是否确认立即退出游戏,是否確認立即退出遊戲,Confirm To Quit Game,確認 ゲームを終了します?,확인 게임 탈퇴?
+是否确认立即退出战斗,是否確認立即退出戰鬥,Confirm To Quit The Battle,確認 非戦闘状態?,확인 전투에서 벗어난?
+是否确认退出,是否確認退出,Confirm To Quit,確認終了,확인 탈퇴
+退出后将无法获得任何奖励,退出後將無法獲得任何獎勵,Can't Get Any Rewards After Quit,終了後は報酬を受け取ることができません,종료 후에는 어떠한 보상도 받을 수 없습니다.
+退出后将自动离开团队,退出後將自動離開團隊,Exit Will Automatically Leave The Team,終了後、自動的にチームを離れます,탈퇴 후 자동으로 팀을 탈퇴합니다.
+退出后将自动取消战场报名,退出後將自動取消戰場報名,Exit Will Automatically Cancel Your Battlefield Registration,終了後、バトルフィールド登録は自動的にキャンセルされます,탈퇴 후 전장 등록은 자동으로 취소됩니다.
+是否确认使用,是否確認使用,Confirm To Use,確認使用,확인 사용
+是否确认分解,是否確認分解,Confirm To Disassemble,確認分解,확인 분해
+是否确定提交道具,是否確定提交道具,Confirm To Submit Props,道具登録確認,아이템 등록 확인
+是否确认扩充装备容量,是否確認擴充裝備容量,Confirm To Expand Equipment Capacity,装備容量の拡大を確認,장비 용량 확장 확인
+装备容量,裝備容量,Equipment Capacity,装備容量,장비 용량
+分解数量,分解數量,Decomposition Quantity,分解量,분해 수량
+不能分解,不能分解,Can't Decompose,分解できない,분해할 수 없다
+他人点赞奖励,他人點贊獎勵,Others' Likes Rewards,他人のいいね報酬,타인의 좋아요 보상
+本赛季的随机奖励,本賽季的隨機獎勵,Random Rewards For This Season,今シーズンのランダム報酬,이번 시즌의 무작위 보상
+使用后将获得以下基础奖励,使用後將獲得以下基礎獎勵,"After Use, You Will Get The Following Basic Rewards",使用後、以下の基本報酬が得られます,사용 후 기본 보상은 다음과 같습니다
+使用后获得,使用後獲得,After Use Get,使用後に入手,사용 후 획득
+使用后随机获得,使用後隨機獲得,Randomly Get After Use,使用後にランダムで入手,사용 후 무작위로 획득
+使用后可自行选择,使用後可自行選擇,Selectable After Use,使用後は自分で選択べる,사용 후 스스로 선택 가능
+随机获得其中一种,隨機獲得其中一種,Randomly Get One of Them,ランダムでいずれかを入手,무작위로 그중 하나를 획득
+挑战胜利消耗,挑戰勝利消耗,Consume After Victory,勝利に挑む消耗,도전에 승리하면 소모
+分解后将获得,分解後將獲得,After Disassemble It Will Gets,分解後、あなたは得るでしょう,"분해 후, 당신은 얻을 것이다"
+今日次数已用完,今日次數已用完,Not Enough Times,回数不足のため,횟수 부족하여
+帮助成功,幫助成功,Help Succeed,成功援助,완료 돕다
+首次免费,首次免費,First time free,初回無料,처음으로 무료
+战斗中,戰鬥中,In Battle,戦闘中,전투에서
+使用中,使用中,Using,使用中,사용 중
+加载中,加載中,Loading,Loading,Loading
+待命中,待命中,On Standby,待機中,대기 중
+僵持中,僵持中,In Stalemate,僵持中,교착 상
+公示中,公示中,Notice Period,公告期間,공고기간
+训练中,訓練中,Training,訓練中,훈련 중
+上架中,上架中,On Shelves,棚の上,판매 중
+装扮中,裝扮中,Dress Up,装飾中,장식 중
+收集中,收集中,Collecting,収集中,수집 중
+重生中,重生中,Regenerating,再生中,재생 중
+研究中,研究中,In Research,研究中,연구 중
+处理中,處理中,In Process,処理中,처리 중
+工作中,工作中,Working,仕事中,작업 중
+建造中,建造中,In Building,建造中,건설 중
+学习中,學習中,Learning,学習中,학습 중
+出售中,出售中,On Sale,売却中,판매 중
+冷却中,冷却中,Cooling,冷却中,냉각 중
+准备中,準備中,Preparing,準備中,준비 중
+升级中,升級中,Upgrading,進行中,업그레이드 중
+空闲中,空閑中,Idle,空き中,쉬는 중
+正在进行,正在進行,In Progress,進行中,진행 중
+正在逃离,正在逃離,Escaping,逃走中,탈출 중
+正在治疗,正在治療,Healing,治療中,치료 중
+正在训练,正在訓練,Training,訓練中,훈련 중
+正在研究,正在研究,Researching,研究中,연구 중
+正在升级,正在升級,Upgrading,進行中,업그레이드 중
+正在参加比武大会,正在參加比武大會,Participating In The Tournament,武道大会に参加中,무술 대회에 참가 중
+正在战斗中,正在戰鬥中,In Battle,戦闘中,전투에서
+正在派遣中,正在派遣中,On Dispatch,派遣中,파견 중
+正在编队中,正在編隊中,Forming A Team,編成中,편성 중
+正在竞技场中,正在競技場中,In The Arena,アリーナに参加中,경기장에 참가 중
+在PVE玩法中,在PVE玩法中,In PVE,PVEモードで,PVE 플레이에서
+在PVP玩法中,在PVP玩法中,In PVP,PVPモードで,PVP 플레이에서
+仅PVE玩法生效,僅PVE玩法生效,Only Effective In PVE,PVEモードでのみ有効,PVE 플레이에서만 효과 발휘
+仅PVP玩法生效,僅PVP玩法生效,Only Effective In PVP,PVPモードでのみ有効,PVP 플레이에서만 효과 발휘
+无法加入,無法加入,Can't Join,参加できません,참여할 수 없다
+无法兑换,無法兌換,Can't Exchange,交換できません,교환 불가
+无法研究,無法研究,Can't Research,研究できません,연구불가
+无法查看,無法查看,Can't Check,確認できません,확인할 수 없습니다
+正在战斗中，无法加入,正在戰鬥中，無法加入,"In Battle, Can't Join","戦闘中,参加できません","전투에서,참여할 수 없다"
+战场准备中,戰場準備中,Battlefield Preparation,戦場の準備,전장 준비
+无法移动,無法移動,Unable To Move,動くことが出来ない,움직일 수 없다
+没有可以加速的种子,沒有可以加速的種子,No Seeds to Speedup,種は植えていません,씨를 심지 않았다
+"盟主连续3天未上线,其他玩家可以申请替代盟主","盟主連續3天未上線,其他玩家可以申請替代盟主","The Leader Has Not Been Online For 3 Consecutive Days, Other Players Can Apply To Replace The Leader",連続して 3 日間オンラインでない場合、他のプレイヤーに置き換えられる可能性があります,연속 3일 동안 온라인에 접속하지 않은 경우 다른 플레이어로 교체될 수 있습니다
+击败其他玩家任务有效次数,擊敗其他玩家任務有效次數,Efficiently Defeat Other Player Task,他のプレイヤーを倒すための有効なミッション数,다른 플레이어를 물리치기 위한 효과적인 임무 수
+请邀请2-4名在线好友创建家族,請邀請2-4名在線好友創建家族,Invite 2-4 Online Friends To Create A Clan,2 ～ 4 人のオンラインの友達を招待して家族を作りましょう,온라인 친구 2~4명을 초대하여 가족을 만드세요.
+没有空闲位置,沒有空閒位置,No Vacancies,空きスロットなし,무료 슬롯 없음
+未选择道具,未選擇道具,No Props Selected,道具が選択されていません,선택한 아이템 없음
+等待开启,等待開啟,Wait To Open,開くのを待つ,열릴 때까지 기다리십시오
+暂无数据,暫無數據,No Data,データなし,데이터 없음
+等待复活中,等待復活中,Waiting For Resurrection,復活を待っている,부활을 기다리다
+解锁头像框后将同时获得对应称号,解鎖頭像框後將同時獲得對應稱號,"After Unlocking The Avatar Frame, Get The Title At The Same Time",アバターフレームのロックを解除すると、対応するタイトルが同時に取得されます,아바타 프레임을 잠금 해제하면 해당 타이틀을 동시에 얻을 수 있습니다.
+"获取信息失败,请稍后再试","獲取信息失敗,請稍後再試",Failed To Get Information. Please Try Again Later,情報を取得できませんでした。しばらくしてからもう一度お試しください,정보를 가져오지 못했습니다. 나중에 다시 시도해 주세요.
+数据异常,數據異常,Data Abnormal,データ異常,데이터 오류
+播放异常,播放異常,Play Abnormal,異常再生,비정상적인 재생
+客户端无法播放,客戶端無法播放,Client Cannot Play,クライアントが再生できない,클라이언트가 재생할 수 없습니다
+您当前处于禁言状态,您當前處於禁言狀態,You Are Currently Banned,チャットが無効になっています,채팅이 비활성화되었습니다.
+聊天对象已屏蔽私聊,聊天對象已屏蔽私聊,The Chat Object Has Blocked Private Chats,相手はチャットをブロックしました,상대방이 채팅을 차단했습니다.
+未选择聊天对象,未選擇聊天對象,No Chat Object Is Selected,オブジェクトが選択されていません,선택한 개체가 없습니다.
+超过长度限制,超過長度限製,Out Of Length Limit,長さ制限を超えました,길이 제한 초과
+不能全是数字,不能全是數字,It Can't Be All Numbers,すべてが数字であってはなりません,모든 숫자가 될 수는 없습니다
+存在特殊符号,存在特殊符號,There Are Special Symbols,特別な記号があります,특수 기호가 있습니다.
+包含敏感字符,包含敏感字符,Contains Sensitive Characters,センシティブな文字が含まれています,민감한 문자가 포함되어 있습니다.
+特殊状态,特殊狀態,Special Status,異常状態,이상 상태
+无法释放技能,無法釋放技能,Unable To Release Skills,スキルが使えない,스킬을 사용할 수 없다
+竞技场无法手动操作,競技場無法手動操作,The Arena Cannot Be Manually Operated,"対練場,手動操作不可","대련장,수동으로 작동할 수 없음."
+至少邀请两名好友,至少邀請兩名好友,Invite At Least Two Friends,少なくとも 2 人の友人を招待する,친구를 두 명 이상 초대하세요.
+在团队中无法进入,在團隊中無法進入,Not Accessible In The Team,チームでアクセスできない,팀에서 액세스할 수 없음
+没有需要复活的角色,沒有需要復活的角色,There Are No Characters To Resurrect,死んだキャラなし,죽은 캐릭터 없음
+已经存在,已經存在,Existing,もう存在している,이미 존재 함
+已有角色,已有角色,Existing Role,既に存在,기존 역할
+已有家族,已有家族,Existing Clan,既存の家族,기존 가족
+已有联盟,已有聯盟,Existing Union,既存のギルド,기존 문파
+已有团队,已有團隊,Existing Team,既存のチーム,기존 팀
+无法邀请其他服务器玩家,無法邀請其他伺服器玩家,Cannot Invite Other Server Players,他のサーバー プレイヤーを招待できません,다른 서버 플레이어를 초대할 수 없습니다
+无法加入其他服务器的联盟,無法加入其他伺服器的聯盟,Cannot Join The Union Of Other Servers,他のサーバーからギルドに参加できません,다른 서버에서 문파에 가입할 수 없습니다.
+今日已邀请过该玩家,今日已邀請過該玩家,This Player Has Been Invited Today,このプレイヤーはすでに招待されています,이미 이 플레이어를 초대했습니다
+邀请您加入,邀請您加入,Invite You To Join,参加を招待,가입 초대
+是否接受邀请,是否接受邀請,Whether To Accept The Invitation,招待を受けるかどうか,초대 수락 여부
+"邀请成功,等待对方答复","邀請成功,等待對方答復","Invitation Successful, Waiting For The Reply",返信を待ちます,답장을 기다리다
+人数已满,人數已滿,The Number Is Full,プレイヤー数がいっぱいです,플레이어 수가 가득 찼습니다
+联盟内还存在其他玩家,聯盟內還存在其他玩家,There Are Other Players In The Union,ギルドには他のプレイヤーがいます,문파 다른 플레이어가 있습니다.
+没有可领取的邮件,沒有可領取的郵件,There Is No Mail Available,ピックアップするメールがありません,받을 메일이 없다
+有未领取的附件,有未領取的附件,Have Not Received The Attachment,未請求の添付ファイルがあります,소유권이 주장되지 않은 첨부파일이 있습니다.
+已经是好友关系,已經是好友關系,It's Already A Friend,すでに友達,이미 친구 관계
+没有好友,沒有好友,There Is No Friend,友達がいない,친구가없는
+没有统帅,沒有統帥,No Commander,統帥がない,리더 부재
+赠送成功,贈送成功,Completed,完了,완료
+设置成功,設置成功,Success,設定成功,설정 성공
+报名成功,報名成功,Success,参加成功,가입 성공
+支付成功,支付成功,Success,支払い成功,결제 성공
+分解成功,分解成功,Success,分解成功,분해 성공
+进阶成功,進階成功,Success,進階成功,진급 성공
+使用成功,使用成功,Success,使用に成功,사용 성공
+发送成功,發送成功,Success,送信成功,성공적으로 보냈습니다
+购买成功,購買成功,Success,購入成功,구매 성공
+领取成功,領取成功,Success,受取成功,수령 성공
+取消成功,取消成功,Success,キャンセル成功,취소 성공
+已赠送,已贈送,Completed,完了,완료
+已离线,已離線,Offline,オフライン,오프 라인
+已获得,已獲得,Got,入手済み,이미 획득한
+已拥有,已擁有,Owned,所有済み,이미 가지다한
+已购买,已購買,Purchased,購入済み,이미 구매한
+已完成,已完成,Completed,完成済み,이미 완성한
+已达成,已達成,Achieved,達成済み,이미 달성한
+已领取,已領取,Claimed,受け取り済み,이미 수령됨
+已就绪,已就緒,Ready,準備完了,이미 준비한
+已建造,已建造,Built,建造済み,이미 건설한
+已布置,已布置,Deployed,配置済み,이미 배치한
+已扫荡,已掃蕩,Swept,掃討済み,이미 소탕한
+已解锁,已解鎖,Unlocked,解錠済み,이미 잠금 해제한
+已上锁,已上鎖,Locked,ロック済み,이미 잠금한
+已激活,已激活,Activated,活性化,활성화
+已报名,已報名,Registered,参加済み,이미 가입한
+已开启,已開啟,Unlocked,開封済み,이미 열림던
+已出现,已出現,Appeared,出現済み,이미 나타난
+已过时,已過時,Outdated,時代遅れ,이미 구식으로 된
+已禁用,已停用,Disabled,無効,무효
+已出阵,已出陣,Deployed,出陣済み,이미 출전한
+已发送,已發送,Sent,送信済み,이미 보냈던
+已结束,已結束,Over,終了済み,이미 끝났던
+已售罄,已售罄,Sold Out,完売済み,이미 매진한
+已申请,已申請,Applied,申請済み,이미 신청한
+已死亡,已死亡,Dead,死亡済み,이미 죽었던
+已过期,已過期,Expired,失効,이미 만료된
+已满级,已满级,Max Level,最大レベル,최대 레벨
+已签到,已簽到,Signed In,出勤済み,이미 출석한
+已生效,已生效,Effected,発効済み,이미 발효
+已被收回,已被收回,Taken Back,取り戻されている,이미 회수한
+链接已失效,链接已失效,Link Expired,リンクの期限切れ,링크가 만료됨
+已进入战场,已進入戰場,Entered,戦場に入力った,이미 전장에 들어간
+亲爱的各位玩家，本次服务器维护已顺利完成，感谢您的理解与耐心等待，这是您的维护补偿,親愛的各位玩家，本次伺服器維護已順利完成，感謝您的理解與耐心等待，這是您的維護補償,"Dear Players, The Server Maintenance Has Been Successfully Completed, Thank You For Your Understanding And Patience, This Is Your Maintenance Compensation",プレイヤーの皆様、このサーバーのメンテナンスは正常に完了しました。ご理解とご協力に感謝いたします。これはメンテナンスの補償です,"플레이어 여러분, 이번 서버 점검이 성공적으로 완료되었습니다. 이해와 인내에 감사드립니다."
+必须要先解锁发型外观才能使用,必須要先解鎖發型外觀才能使用,Must Unlock The Hairstyle Before You Can Use It,ヘアスタイルの外観を使用するには、ロックを解除する必要があります,사용하기 전에 헤어스타일 모양을 잠금 해제해야 합니다.
+必须上阵3名角色,必須上陣3名角色,Must Deploy 3 Characters,3つの役割が必要,3가지 역할 필요
+坚持30秒无人阵亡,堅持30秒無人陣亡,Hold For 30 Seconds And No One Dies,30秒間押し続けると誰も死なない,30초 동안 유지하면 아무도 죽지 않습니다.
+请先建造,請先建造,Please Build First,最初にビルドしてください,먼저 건축해 주세요
+请先击败周围的怪物,請先擊敗周圍的怪物,Please Beat Around The Monster,先に周囲のモンスターを倒してください,주변 몬스터를 먼저 처치해주세요
+失败不会消耗装备,失敗不會消耗裝備,Failure Does Not Consume Equipment,失敗しても装備は消費されない,실패 시 장비가 소모되지 않습니다
+每周更换,每週更換,Change Weekly,毎週変更,매주 변경
+失败保留,失敗保留,Retain After Failure,失敗後も保持,실패 후 유지
+今日不再提示,今日不再提示,Do Not Remind Today,今日は通知しない,오늘 알림 안 함
+本活动为月度活动，每月1号-3号为报名时间。所有报名玩家将按战力选出128强后开始赛事，为保证赛事的公平，报名截止时的阵容为最终阵容，中途无法更换,本活動為月度活動，每月1號-3號為報名時間。所有報名玩家將按戰力選出128強後開始賽事，為保證賽事的公平，報名截止時的陣容為最終陣容，中途無法更換,"This Event Is A Monthly Event, And The Registration Period Is From The 1st To The 3rd Of Each Month. All Registered Players Will Be Selected Into The Top 128 Based On Their Power And The Competition Will Begin. In Order To Ensure The Fairness Of The Competition, The Lineup At The Time Of Registration Deadline Is The Final Lineup And Cannot Be Changed In The Middle.",このイベントは毎月開催されるイベントで、登録期間は毎月1日から3日までです。登録されているすべてのプレーヤーが戦闘力に基づいて上位 128 名に選ばれ、競争が始まります。 競争の公平性を確保するため、登録締切時のラインナップは最終的なラインナップであり、途中で変更することはできません。,"본 이벤트는 월간 이벤트로, 등록 기간은 매월 1일부터 3일까지입니다. 등록된 모든 선수가 오디션에 참여하게 되며, 대회는 상위 128명을 선발한 후 시작됩니다. 대회의 공정성 확보를 위해 접수마감 시점의 라인업이 최종 라인업으로, 중간에 변경이 불가합니다."
+本活动为月度活动，每月16号-18号为报名时间。所有报名玩家将按战力选出128强后开始赛事，为保证赛事的公平，报名截止时的阵容为最终阵容，中途无法更换,本活動為月度活動，每月16號-18號為報名時間。所有報名玩家將按戰力選出128強後開始賽事，為保證賽事的公平，報名截止時的陣容為最終陣容，中途無法更換,"This Event Is A Monthly Event, And The Registration Period Is From The 16th To The 18th Of Each Month. All Registered Players Will Be Selected Into The Top 128 Based On Their Power And The Competition Will Begin. In Order To Ensure The Fairness Of The Competition, The Lineup At The Time Of Registration Deadline Is The Final Lineup And Cannot Be Changed In The Middle.",このイベントは毎月開催されるイベントで、登録期間は毎月16日から18日までです。登録されているすべてのプレーヤーが戦闘力に基づいて上位 128 名に選ばれ、競争が始まります。 競争の公平性を確保するため、登録締切時のラインナップは最終的なラインナップであり、途中で変更することはできません。,"본 이벤트는 월간 이벤트로, 등록 기간은 매월 16일부터 18일까지입니다. 등록된 모든 선수가 오디션에 참여하게 되며, 대회는 상위 128명을 선발한 후 시작됩니다. 대회의 공정성 확보를 위해 접수마감 시점의 라인업이 최종 라인업으로, 중간에 변경이 불가합니다."
+战败,戰敗,Defeat,不合格,불합격
+竞猜,競猜,Guess,推測,추측하다
+正确时奖励加倍,正確時獎勵加倍,Double The Reward When Correct,正しければ報酬を2倍にする,맞을 때 보상 두 배
+报名结束,報名結束,Registration Ends,終了,등록 종료
+大会人数不足,大會人數不足,Not Enough People,人が足りない,사람이 충분하지 않다
+请选择对象,請選擇對象,Please Select An Object,オブジェクトを選択してください,개체를 선택하세요.
+帮助,幫助,Help,ヘルプ,돕다
+您已离开队伍,您已離開隊伍,Has Left The Team,チームを去った,팀을 떠났습니다
+队伍解散了,隊伍解散了,Team Disbanded,チームは解散した,팀 해산
+已使用过相同类型礼包码,已使用相同類型禮包碼,The Same Type Of Gift Code Has Been Used Before,以前に同じ種類のギフトコードが使用されています,이전에 동일한 유형의 기프트 코드가 사용되었습니다
+首次通关奖励,首次通關獎勵,First Clear Reward,初戦勝利報酬,첫전 승리 보상
+请选择舰队,請選擇艦隊,Please Select A Fleet,チームをお選びください,팀을 선택해주세요
+最大出战队伍数,最大出戰隊伍數,Max Number Of Teams Participating,参加チームの最大数,최대 참여 팀 수
+"联盟处于宣战中,无法变更成员","聯盟處於宣戰,無法變更成員",The Union Is In A State Of Declared War And Members Cannot Be Changed,ギルドは宣戦布告状態にあり、メンバーの変更はできません,문파은 전쟁 선포 상태이므로 구성원을 변경할 수 없습니다.
+选择的舰队需要在主基地待命,選擇的艦隊需要在主基地待命,The Selected Fleet Needs To Be On Standby At The Main Base,選択した艦隊は本基地で待機している必要があります,선택한 함대는 주 기지에서 대기해야 합니다.
+未设置旗舰,未設置旗艦,Flagship Not Set,旗艦未設定,플래그십이 설정되지 않았습니다
+战斗中无法操作,戰鬥中無法操作,Unable To Operate During Battle,戦闘中は操作できない,전투 중에는 작동이 불가능합니다
+存在相同的编队技能,存在相同的編隊技能,The Same Fleet Skills Exist,同じ艦隊スキルが存在します,동일한 함대 스킬이 존재합니다
+使用类型不匹配,使用類型不匹配,Use Type Mismatch,型の不一致を使用する,유형 불일치 사용
+已存在相同效果,已存在相同效果,The Same Effect Already Exists,同じ効果がすでに存在する,같은 효과가 이미 존재합니다
+守卫等级高于您的战舰等级,守衛等級高於您的戰艦等級,Guard Level Is Higher Than Your Ship Level,ガードレベルが船のレベルより高い,가드 레벨이 함선 레벨보다 높습니다
+星盟势力进一步扩大,星盟勢力進一步擴大,Star Union's Power Further Expands,スターアライアンスの力はさらに拡大,스타얼라이언스의 힘은 더욱 커진다
+势力范围,勢力範圍,Sphere Of Influence,勢力範囲,영향권
+只能攻击与自己势力范围相邻的区域,只能攻擊與自己勢力範圍相鄰的區域,Can Only Attack Areas Adjacent To Its Own Sphere Of Influence,自身の勢力範囲に隣接するエリアのみを攻撃できる,자신의 영향권에 인접한 지역만 공격할 수 있습니다
+只能建造在自己的势力范围,只能建造在自己的勢力範圍,Can Only Be Built Within One's Own Sphere Of Influence,自分の勢力範囲内でのみ構築できる,자신의 영향력 범위 내에서만 건설 가능
+只能建造在自己或盟友的势力范围,只能建造在自己或盟友的勢力範圍,Can Only Be Built In Own Or Ally's Sphere Of Influence,自分または味方の勢力範囲内でのみ建設可能,자신 또는 동맹국의 영향권에만 건설할 수 있습니다
+占领后可获得势力范围,佔領後可獲得勢力範圍,"After Occupation, You Can Gain A Sphere Of Influence",占領後、勢力範囲を獲得できます,점령 후에는 영향력의 영역을 얻을 수 있습니다
+所有舰队需要在主基地待命,所有艦隊需要在主基地待命,All Fleets Need To Be On Standby At The Main Base,すべての艦隊は本基地で待機する必要がある,모든 함대는 주 기지에서 대기해야 합니다.
+请选择目标地点,請選擇目標地點,Please Select A Destination,目的地を選択してください,목적지를 선택해주세요
+超出地图边界,超出地圖邊界,Beyond Map Boundaries,マップの境界を越えて,지도 경계 너머
+基地禁止迁移区域,基地禁止遷移區域,Relocation Prohibited Areas Of Base,基地移動禁止エリア,베이스 이동금지구역
+被其他指挥官占领,被其他指揮官佔領,Occupied By Other Commanders,他の指揮官が占領中,다른 지휘관 점령함
+被其他联盟占领,被其他聯盟佔領,Occupied By Other Union,他のギルドが占領中,다른 문파 점령함
+退出后将重新计算积分,退出後將重新計算積分,Points Will Be Recalculated After Exiting,ポイントは退会後に再計算されます,퇴실 후 포인트는 재계산됩니다
+当战舰爆炸时，每件[装备模块]有33%的概率损毁,當戰艦爆炸時，每件[裝備模組]有33%的機率破壞,"When The Battleship Explodes, Each [Equipment Module] Has 33% Probability Of Being Damaged.",戦艦が爆発すると、各[機器モジュール]が33%の確率で損傷します,전함이 폭발할 경우 각 [장비 모듈]이 33%의 확률로 손상됩니다.
+星际运输公司帮助您回收了战舰残骸,星際運輸公司幫助您回收了戰艦殘骸,Interstellar Transportation Company Helped You Recover The Wreckage Of The Battleship,星間輸送会社が戦艦の残骸の回収を手伝ってくれました,성간 운송 회사가 전함 잔해의 회수를 도왔습니다.
+您需要详细的引导教程吗,您需要詳細的引導教學嗎,Do You Need A Detailed Introductory Tutorial?,詳細な入門チュートリアルが必要ですか?,자세한 입문 튜토리얼이 필요합니까?
+这是星际联盟为您准备的开拓者补给，愿您星途顺利,這是星際聯盟為您準備的拓荒者補給，願您星途順利,This Is The Pioneer Supply Prepared By The Star Union For You. I Wish You All The Best In Your Journey To The Stars.,これはスター アライアンスがあなたのために用意したパイオニア サプライです。 星への旅がうまくいくことを祈っています。,스타얼라이언스가 여러분을 위해 준비한 파이오니아 보급품입니다. 별을 향한 당신의 여행에 최선을 다하길 바랍니다.
+退出后将立即按失败结算奖励,退出後將立即依失敗結算獎勵,"After Exiting, The Reward Will Be Settled Immediately As A Failure.",報酬は終了時にすぐに精算されます,퇴장 후 즉시 이벤트 보상을 받으실 수 있습니다.
+请先完成本轮任务,請先完成本輪任務,Please Complete This Round Of Tasks First,まずこのラウンドのタスクを完了してください,먼저 이 작업 라운드를 완료하십시오.
+运输货物时无法使用星门,運送貨物時無法使用星門,Stargates Cannot Be Used When Transporting Goods,スターゲートは貨物輸送時には使用できません,화물 운송 시 스타게이트를 사용할 수 없습니다.
+密码长度为3~6,密碼長度為3~6,Password Length Is 3~6,パスワードの長さは 3 ~ 6,비밀번호 길이는 3~6
+机械风暴是独立玩法，在该玩法中指挥官们拥有独立的战舰库和技能库。战胜关卡后将获得新的战舰和技能，该玩法每周一重置,機械風暴是獨立玩法，在該玩法中指揮官們擁有獨立的戰艦庫和技能庫。戰勝關卡後將獲得新的戰艦和技能，該玩法每週一重置,"Mechanical Storm Is An Independent Gameplay, In Which Commanders Have Independent Warships And Skills. After Defeating The Level, You Will Get New Warships And Skills. This Gameplay Is Reset Every Monday.",機械の嵐 は独立したゲームプレイであり、指揮官は独立した戦艦ライブラリとスキル ライブラリを持っています。レベルをクリアすると、新しい戦艦とスキルが獲得できます。このゲームプレイは毎週月曜日にリセットされます,기계적 폭풍은 사령관이 독립적인 전함 라이브러리와 기술 라이브러리를 보유하는 독립적인 게임플레이입니다. 레벨을 완료하면 새로운 전함과 스킬을 얻을 수 있습니다. 이 게임 플레이는 매주 월요일에 재설정됩니다.
+没有帮助对象,沒有幫助對象,No Help Object,ヘルパー オブジェクトはありません,도우미 개체 없음
+服务器即将维护,伺服器即將維護,The Server Is About To Undergo Maintenance,サーバーがまもなくメンテナンスされます,서버가 곧 점검에 들어갑니다
+"统帅是队伍的核心,当统帅阵亡时,则战斗失败",統帥是隊伍的核心，當統帥陣亡時，戰鬥將失敗,"The Commander Is The Core Of The Team; When The Commander Dies, The Battle Is Lost.",統帥は部隊の核心であり、統帥が戦死のときは、戦闘は失敗となります,"지휘관은 팀의 핵심이며, 지휘관이 전사하면 전투에서 패배한다"
+"当队伍使用相同种族的英雄时,可获得额外的增益效果",當隊伍使用相同種族的英雄時，可獲得額外的增益效果,"When The Team Uses Heroes Of The Same Race, Additional Gain Effects Can Be Obtained.",部隊が同じ種族のヒーローを使用すると、追加のバフを獲得できます,팀이 동일 종족의 영웅을 사용할 때 추가 이익 효과를 얻을 수 있습니다.
+"当队伍使用相同类型的士兵时,可获得额外的增益效果",當隊伍使用相同類型的士兵時，可獲得額外的增益效果,"When The Team Uses Soldiers Of The Same Type, Additional Gain Effects Can Be Obtained.",部隊が同じタイプの兵士を使用すると、追加のバフを獲得できます,팀이 동일 유형의 병사를 사용할 때 추가 이익 효과를 얻을 수 있습니다.
+"不同等级的士兵存在压制效果,高等级士兵会对低等级士兵造成更多的伤害",不同等級的士兵存在壓制效果，高等級士兵會對低等級士兵造成更多傷害,"Soldiers Of Different Levels Have A Suppression Effect, And High-Level Soldiers Deal More Damage To Low-Level Soldiers",異なるレベルの兵士には抑圧効果があり、高レベルの兵士は低レベルの兵士に対してより多くのダメージを与えます,"병사 레벨 차이에 따라 제압 효과가 있으며, 고레벨 병사는 저레벨 병사에게 더 많은 피해를 입힐 수 있습니다."
+不同类型的士兵存在克制效果,不同類型的士兵存在克制效果,Soldiers Of Different Types Have A Restraint Effect,異なるタイプの兵士には克制効果があります,다양한 유형의 병사에게는 구속 효과가 있습니다.
+"轻伤士兵在回到营地时,会立即恢复为健康状态",輕傷士兵回到營地後，會立即恢復為健康狀態,Slight Wounded Soldiers Will Immediately Recover To A Healthy State When They Return To The Camp.,軽傷を負った兵士はキャンプに戻るとすぐに健康状態が回復します,경상 병사는 캠프로 돌아가면 즉시 건강 상태로 회복됩니다.
+"当士兵处于重伤状态时,需要前往医院进行治疗",當士兵處於重傷狀態時，需要前往醫院進行治療,"When Soldiers Are Severely Wounded, They Need To Go To The Hospital For Treatment.",兵士が重傷状態のときは、治療のために病院に行く必要があります,군인이 중상을 입으면 병원에 가서 치료를 받아야 한다
+"当医院容量不足时,重伤士兵会直接阵亡",當醫院容量不足時，重傷士兵將直接陣亡,"When Hospital's Capacity Is Insufficient, Severely Wounded Soldiers Will Die.",病院の容量が不足のときは、重傷の兵士は直接戦死します,"병원 수용 능력이 부족할 경우, 중상 병사는 사망하게 됩니다."
+"当队伍统帅阵亡时,会产生大量的重伤士兵",當隊伍統帥陣亡時，會產生大量的重傷士兵,"When The Team's Commander Dies, A Large Number Of Severely Wounded Soldiers Will Be Generated.",部隊の統帥が戦死のときは、重傷の兵士が大量に発生するだろう,"팀장이 전투 중 사망할 경우, 중상을 입은 병사가 대량 생성됩니다."
+技能生效顺序,技能生效順序,Skill Activation Order,スキルの発動順序,스킬 발동 순서
+"不同种类的技能所造成的相同技能效果可以叠加,例如战略技能和战术技能的造成伤害增加效果,相加后生效",不同種類的技能所造成的相同技能效果可以疊加，例如戰略技能和戰術技能的傷害增加效果，會相加後生效,"The Same Skill Effects Caused By Different Types Of Skills Can Stack, E.g., The Damage Increase Effect Of Strategic Skills And Tactical Skills Will Take Effect After Adding Them Together.",異なる種類のスキルがもたらす同じスキル効果は叠加可能であり、例えば、戦略スキルや戦術スキルのダメージ増加効果、添加後有効,"다른 유형의 스킬로 인한 동일한 스킬 효과는 중첩이 가능하며, 예를 들어 전략 스킬과 전술 스킬의 피해 증가 효과는 합산된 후 적용됩니다."
+"相同种类的技能所造成的相同技能效果无法叠加,例如2个战略技能的造成伤害增加效果,只取最大值生效",相同種類的技能所造成的相同技能效果無法疊加，例如兩個戰略技能的傷害增加效果，只取最大值生效,"The Same Skill Effects Caused By The Same Type Of Skills Cannot Stack, E.g., The Damage Increase Effect Of Two Strategic Skills Will Only Take The Maximum Value.",同種のスキルによる同一のスキル効果は重ね合わせることができません。例えば、戦略スキル2つのえるダメージ増加効果。最大値のみが有効になります,"같은 유형의 스킬로 인한 동일한 스킬 효과는 중첩되지 않으며, 예를 들어 2개의 전략 스킬이 발생하는 피해량을 증가시키는 경우 최대값만 적용됩니다."
+"是唯一状态效果,无法同时存在相同效果",為唯一狀態效果，無法同時存在相同效果,Is A Unique Status Effect And Cannot Have The Same Effect Simultaneously.,ステータス効果はのみであり、同じ効果が同時に存在することはありません,"는 유일한 상태이상 효과이며, 동일한 효과가 동시에 존재할 수 없습니다."
+玩家主城周围的九宫格范围内都是可以占领的目标,玩家主城周圍的九宮格範圍內都是可占領的目標,All Targets Within The Nine-Square Grid Around The Player's Main City Are Occupiable.,プレイヤーの主要都市の周りの 9 マスのグリッドはすべて占領できるターゲットです,플레이어의 주요 도시 주변의 9개 정사각형 격자 안에 있는 모든 목표는 점유 가능합니다.
+"占领核心矿点后可以获得势力范围,势力范围接壤的九宫格都是可以占领的目标",占領核心礦點後可獲得勢力範圍，勢力範圍接壤的九宮格內皆為可占領目標,"After Occupying The Core Mine, You Can Gain A Sphere Of Influence, And The Nine-Square Grids Adjacent To The Sphere Of Influence Are All Occupiable Targets.",コア鉱山ポイントを占領すると、勢力範囲を獲得できます。勢力範囲に隣接する9つのマスはすべて占領可能なターゲットです,"핵심 광산을 점유한 후에는 영향력 범위를 얻을 수 있으며, 영향력 범위에 인접한 9개 정사각형 격자는 모두 점유 가능한 대상입니다."
+"占领矿点后可自动获取收益,但有时间限制,通过升级运输站可以提高占领时间和占领数量",占領礦點後可自動獲取收益，但有時間限制，透過升級運輸站可提高占領時間和占領數量,"After Occupying The Mine, You Can Automatically Obtain Resources, But There Is A Time Limit. Upgrading The Transport Station Can Increase The Occupation Time And The Number Of Occupations.",鉱山ポイントを占領すると自動的に利益が得られますが、時間制限があります。輸送ステーションをアップグレードすることで占領時間と占領数を高めることができる,광산 점유한 후에는 자동으로 자원을 획득할 수 있지만 시간 제한이 있습니다. 운송 스테이션을 업그레이드하면 점유 시간과 점유 횟수를 늘릴 수 있습니다.
+"占领规则：消灭所有敌人后归最初宣战者所有,因此可由宣战者的好友协助宣战者占领目标",占領規則：消滅所有敵人後歸最初宣戰者所有，因此可由宣戰者的好友協助占領目標,"Occupation Rule: After Defeating All Enemies, It Belongs To The First Declarer Of War, So Friends Of The War Declarer Can Assist In Occupying The Target.",占領ルール：すべての敵を排除した後、最初に宣戦した者のものとなるため。宣戦布告者の友人は宣戦布告者のターゲットの占領を支援することができます,점령 규칙: 모든 적을 파괴한 후 재산은 원래 전쟁을 선포한 사람에게 속합니다. 따라서 선전포고자의 친구가 선전포고자를 도와 목표를 점령한다.
+建造营地可获得远距离补给能力,建造營地可獲得遠距離補給能力,Building A Camp Provides Long-Range Supply Capability.,キャンプを建設することで遠距離補給能力を得られます,캠프를 건설하면 장거리 보급 능력을 얻을 수 있습니다.
+"技能描述中的“2个我方部队”,将优先作用于除自己以外的2个友方部队",技能描述中的「2個我方部隊」，將優先作用於除自己以外的2個友方部隊,"In The Skill Description, ""2 Of Our Troops"" Will Prioritize 2 Other Allied Troops Excluding Itself.",スキル説明における「味方部隊2つ」は、自分以外の2つの味方部隊を優先して作用します。,"스킬 설명에 있는 ""아군 부대 2개""는 자신을 제외한 다른 아군 부대 2개에 우선적으로 적용됩니다."
+"被克制时,造成伤害降低25%",當士兵被克制時，造成傷害降低25%,"When Soldiers Are Restrained, Damage Dealt Is Reduced By 25%.",兵士が抑制されている場合、与えるダメージが25%減少します。,"병사가 제압당할 때, 가하는 피해가 25% 감소합니다."
+正在重新连接服务器,正在重新連接伺服器,Reconnecting To The Server,サーバーに再接続中,서버가  다시 연결 중
+等待中,等待中,Waiting,待っています,로딩 중
+禁止迁城到此处,禁止遷城到此處,Relocation To Here Is Prohibited,この場所への移転は禁止されています,이 지역으로의 도시 이전 금지
+必须建立在自己势力领土,必須建立在自己勢力領土,Must Be Built On Your Own Fief,自分の勢力領土に建設する必要があります,자신의 세력 영토에만 건설 가능
+必须建立在联盟势力领土,必須建立在聯盟勢力領土,Must Be Built On Union Fief,同盟の勢力領土に建設する必要があります,동맹 세력 영토에만 건설 가능
+有跨服玩家加入，不计算全服首次通关奖励,有跨服玩家加入，不計算全服首次通關獎勵,"With Cross Server Players Joining, Server-Wide First Clearance Rewards Will Not Be Counted",クロスサーバーのプレイヤーが参加したため、全サーバー初回クリア報酬は計算されません,"타 서버 플레이어가 참여하여, 전 서버 첫  클리어런스 보상 계산되지 않습니다"
+建筑势力范围内没有可宣战的队伍,建築勢力範圍内沒有可宣戰的隊伍,There Is No Team To Declare War On Within The Building's Sphere Of Influence Range,建築の影響範囲内に宣戦布告できるチームが存在しない,건물의 영향 범위 내에 전쟁을 선포할 팀이 없습니다
+已存在相同效果，是否覆盖,已存在相同效果，是否覆蓋,"The Same Effect Already Exists, Do You Want To Overwrite It",同じ効果がすでに存在する.上書きしますか,같은 효과가 이미 존재합니다.덮어쓰시겠습니까
+奖励次数不足,獎勵次數不足,Not Enough Reward Counts,報酬回数不足,보상 횟수 부족
+点击任意空白处关闭,點擊任意空白處關閉,Click Any Blank Space To Close,任意の空白部分をクリックして閉じる,아무 곳이나 클릭하여 시작
+出现五星圣物时有50%概率时是选择的圣物,出現5★聖物時，有50%的機率是選擇的聖物,"When A 5★ Relic Appears, There Is A 50% Chance It Is The Selected Relic.",5★聖物が出現した時、50%の確率で選択された聖物です,"5★ 성물이 등장할 때, 선택한 성물일 확률이 50%입니다"
+出现五星英雄时有50%概率时是选择的英雄,出現5★英雄時，有50%的機率是選擇的英雄,"When A 5★ Hero Appears, There Is A 50% Chance It Is The Selected Hero.",5★ヒーローが出現した時、50%の確率で選択されたヒーローです,"5★ 영웅이 등장할 때, 선택한 영웅일 확률이 50%입니다"
+每场战斗开始时,每場戰鬥開始時,At The Start Of Each Battle,各戦闘開始時,각 전투 시작 시
+战场报名已开始,戰場報名已開始,Battlefield Registration Started,戦場参加開始,전장 신청 시작
+讨伐失败无消耗,討伐失敗無消耗,Raid Failure Without Consumption,討伐敗北で消耗なし,토벌 실패 무소모
+将城市迁移至指定地点,將城市遷移至指定地點,Move The City To A Specified Location,都市を指定された場所に移動する,도시를 지정된 위치로 이동
+没有需要治疗的士兵,沒有需要治療的士兵,No Soldiers Need Healing,治療が必要な兵士はいません,치료가 필요한 병사가 없습니다
+提交后，英雄将彻底销毁,提交後，英雄將徹底銷毀,"After Submission, The Hero Will Be Completely Destroyed",提出後、ヒーローは完全に破壊されます,"제출 후, 영웅은 완전히 파괴됩니다"
+不能赠送给跨服好友,不能贈送給跨服好友,Cannot Be Gifted To Friends In Cross Server,クロスサーバーの親友に贈ることはできません,다른 서버 있는 친구 선물 수 없습니다
+超出好友的接收上限,超出好友的接收上限,Exceed The Friend's Receive Upper,親友の受信上限を超えました,친구의 수신 한도 초과했습니다
+没有可帮助的对象,沒有可幫助的對象,No One Needs Help,助けられる対象がいません,도울 대상이 없습니다
+请将素材卡拖入此栏中,請將素材卡拖入此欄中,Please Drag The Material Card Into This Column,素材カードをこの欄にドラッグしてください,소재 카드를 칸에 끌어 주십시오
+英雄未觉醒，无法重置,"英雄未覺醒,無法重置",The Hero Is Not Awakened And Cannot Be Reset,英雄は目覚めず、リセットできない,영웅이 각성되지 않아 리셋할 수 없습니다
+请拖入想要转化为技能经验的英雄卡,請拖入想要轉化為技能經驗的英雄卡,Please Drag The Hero Card You Want To Convert Into Skill EXP,スキル経験に変えたいヒーローカードをドラッグしてください。,스킬경험치로 전환하고 싶은 영웅 카드에 가입하십시오
+本次进阶需要消耗相同英雄卡,本次進階需要消耗相同英雄卡,This Advancement Needs To Consume The Same Hero Card,今回の昇進は同じヒーローカードを使う必要があります。,이번 진급에는 동일한 영웅 카드가 필요합니다
+进阶后获得可分配属性10点,進階後獲得可分配屬性10點,Get 10 Assignable Attributes After Advanced,昇進を進めて、属性を割り当てることができる10点が得られます。,진급 후 10포인트를 분배할 수 있습니다
+请将素材拖入此栏中,請將素材卡拖入此欄中,Please Drag The Material Card Into This Column,素材カードをこの欄にドラッグしてください。,소재 카드를 칸에 끌어 주십시오
+伤害排行前20名有概率获得稀有奖励,傷害排行前20名有機率獲得稀有獎勵,The Top 20 In The Damage Ranking Have A Chance To Receive Rare Rewards,ダメージランキングの上位20名が確率で希少報酬を獲得可能,피해 순위 상위 20명이 확률적으로 희귀 보상을 획득 가능합니다
+要求拥有证书，但制造时不会消耗,要求擁有證書，但製造時不會消耗,"Require To Have A Certificate, But Not Consumed When Manufacturing",証書が必要ですが、製造時には消耗されません,자격증이 필요하지만 제작 시 소모되지 않음
+要求拥有配方，但制造时不会消耗,要求擁有配方，但製造時不會消耗,"Require To Have A Formula, But Not Consumed When Manufacturing",レシピが必要ですが、製造時には消耗されません,레시피가 필요하지만 제작 시 소모되지 않음
+相同类型神魔卡最多上阵3张,相同類型神魔卡最多上陣3張,A Maximum Of 3 Divine Demon Cards Of The Same Type Can Be Deployed,同種類の神魔カードは最大3枚まで配置可能です,동일한 유형의 신과 마 카드 최대 3장이 배치 가능합니다
+统帅携带士兵数量不足,統帥携帶士兵數量不足,Not Enough Commander’s Soldier Capacity,統帥の兵士所持数が不足しています,리더의 병력 수송량이 부족합니다
+积分相同时，按战斗力计算排名,積分相同時，按戰鬥力計算排名,"When Points Are Tied, Rank By Battle Power",ポイントが同じ場合、戦闘力で順位を決定,점수가 동일할 경우 전투력으로 순위를 계산합니다
+距离下场战斗开始时间,距離下場戰鬥開場時間,Time Until Next Battle Starts,次の戦闘開始までの時間,다음 전투 시작까지 남은 시간
+感谢您的反馈,感謝您的反饋,Thanks For Your Feedback,ご意見ありがとうございます,피드백 감사합니다
+删除后数据无法恢复,刪除後數據無法恢復,Data Cannot Be Recovered After Deletion,削除後のデータは復元できません,삭제 후에는 데이터를 복구할 수 없습니다
+未设置统帅,未設置統帥,Not Set Commander,統帥が設定されていません,리더가 설정되지 않았습니다
+未设置统帅士兵,未設置統帥士兵,Not Set Commander Soldiers,統帥の兵士が設定されていません,리더 병력이 설정되지 않았습니다
+请先重置英雄,請先重置英雄,Please Reset The Hero First,まずはヒーローをリセットしてください,먼저 영웅을 재설정하세요
+请先卸下技能石,請先卸下技能石,Please Remove The Skill Stone First,まずはスキルストーンを外してください,먼저 스킬 스톤을 제거하세요
+首次通关不消耗次数,首次通關不消耗次數,First Clearance Does Not Consume Times,初回クリアで回数を消耗しない,첫 클리어는 횟수를 소모하지 않음
+协助盟友占领5级以上资源点,協助盟友佔領5級以上資源點,Assist Ally Occupy Level 5+ Resource Points,盟友がレベル5以上の資源ポイントを占領するのを支援する,아군이 레벨 5 이상의 자원 포인트를 점령하다록 지원
+选择受伤的士兵,選擇受傷的士兵,Select Wounded Soldiers,負傷した兵士を選択,부상당한 병사를 선택
+该玩家已离线,該玩家已離線,The Player Is Offline,このプレイヤーはオフラインです,이 플레이어는 오프라인입니다
+已达上限,已達上限,Upper Reached,上限に達しました,이미 상한선에 도달했음
+已达最大等级,已達最大等級,Max Level Reached,最大レベルに達している,이미 최대 등급에 이른
+已达最大次数,已達最大次數,Max Count,最大回数,최대 횟수
+已达到使用上限,已達到使用上限,Usage Reached,使用上限に達しました,사용 한도 도달
+已达到兑换上限,已達到兌換上限,Exchange Reached,両替制限に達しました,교환 한도 도달
+已达到限购上限,已達到限購上限,Buy Limit Reached,購入制限に達しました,구매 한도 도달
+已被使用,已被使用,Has Been Used,使用済み,이미 사용한
+所选择的队伍必须在领地待命,所選擇的隊伍必須在領地待命,The Selected Team Must Be On Standby In The Territory,選択されたチームは領地で待機しなければならない,선택한 부대는 영토에서 대기해야 합니다
+不在附近,不在附近,Not Nearby,近くにいません,근처에 없다
+不在村庄附近,不在村莊附近,Not Nearby The Village,村の近くにいない,마을 근처에 없다
+终身限购1次,終身限購1次,Buying Limit 1,生涯購入 1,영구 한정 1
+本次操作将消耗,本次操作將消耗,This Operation Will Consume,この操作は消耗します,이번 작업에서는 소모
+本次操作将获得,本次操作將獲得,This Operation Will Get,この操作により入手されるのは,이 작업은 다음을 얻습니다
+请先卸下所有装备,請先卸下所有裝備,Please Remove All Equipment First,まずはすべての装備を外してください,먼저 모든 장비를 제거하세요
+是否领取所有奖励,是否領取所有獎勵,Whether To Claim All Rewards,すべての報酬を受け取りましたか,모든 보상을 수령하시겠습니까?
+暂无可拜访的玩家,暫無可拜訪的玩家,No Players To Visit,しばらく訪問できるプレイヤーがいません,현재 방문 가능한 플레이어가 없습니다
+对玩家无效,對玩家無效,Invalid For Players,プレイヤーに無効,플레이어에게 무효
+英雄卡组已达最大数量,英雄卡組已達最大數量,Hero Deck Has Reached Max Quantity,ヒーローカードデッキが最大数に達しました,영웅 카드 덱이 최대 수량에 도달했습니다
+英雄卡组超出最大数量,英雄卡組超出最大數量,Hero Deck Exceeds Max Quantity,ヒーローカードデッキが最大数を超えました,영웅 카드 덱이 최대 수량을 초과했습니다
+放入的素材卡数量错误,放入的素材卡數量錯誤,Wrong Number Of Material Cards Put In,入れた素材カードの数が間違っています,집어넣은 소재 카드 개수 오류
+超过预备兵力最大数量,超過預備兵力最大數量,Exceeded Max Reserve Soldiers Quantity,予備兵力の最大数量を超過しました,예비 병력 최대 수를 초과했습니다
+全部领取后重置,全部領取後重置,Reset After Claiming All,全部受け取ったらリセット,모두 수신 후 재설정
+不在活动时间内,不在活動時間內,Not During The Activities,活動時間外,활동 시간 내 아님
+任何人均可加入,任何人可加入,Anyone Can Join,誰でも参加可能,누구나 가입 가능
+不满足条件,不滿足條件,Conditions Not Met,条件未達成,조건 맞지 않다
+可免费进行一次招募,可免費進行一次招募,Can Be Recruited Once For Free,一回無料で募集できます,무료로 1회 모집 가능
+任何人可加入,任何人可加入,Anyone Can Join,誰でも参加可能,누구나 가입 가능
+是否花费,是否花費,Are you Sure To Cost,費用がかかるかどうか,소비하시겠습니까
+永久解锁皮肤,永久解鎖皮膚,Permanently Unlock The Skin,スキンを永久にロック解除,스킨을 영구적으로 잠금 해제
+进阶素材已足够,進階素材已足夠,Advanced Material Is Sufficient,進階素材が十分です,진급 재료는 이미 충분합니다
+发放了,發放了,Has Been Distributed,が配布されました,가 배포되었습니다
+超出宣战范围,超出宣戰範圍,Exceed Declared War Scope,宣戦範囲を超えました,전쟁 선포 범위 넘어서
+拒绝联盟邀请,拒絕聯盟邀請,Decline Union Invitation,同盟の招待を断る,클랜 요청 거절
+拒绝陌生人邀请,拒絕陌生人邀請,Decline Stranger Invitations,見知らぬ人からの招待を拒絕,낯선 사람 초대 거절
+被其他领主占领,被其他領主占領,Occupied By Other Lords,他の領主が占領,기타 영주들이 점령
+正在荣耀竞技场中,正在榮耀競技場中,In The Glory Arena,現在栄光アリーナ中,지금 영광의 전장 중
+每日可领取,每日可領取,Claim Daily,毎日受け取ることができます,일일 수령 가능
+累计可获得,累計可獲得,Accumulatively Obtainable,累計取得可能,누적 획득 가능
+充值任意金额,充值任意金額,Recharge Any Amount,任意の金額をチャージします,임의 금액 충전
+使用后获得英雄卡,使用後獲得英雄卡,Hero Card Available After Use,使用後にヒーローカードを入手する,사용 후 영웅 카드를 획득합니다
+目标丢失,目標丟失,Target Lost,目標喪失,목표 상실
+无法使用,無法使用,Cannot Be Used,使用できません,사용할 수 없음
+重置后返还,重置後返還,Return After Reset,リセット後に戻る,초기화 후 반환
+分享城市布局获得点赞,分享城市佈局獲得點讚,Share City Layout To Receive Liked,都市レイアウトをシェアしてお気に入りを獲得,도시 배치를 공유하여 좋아요를 받기
+在遗迹副本中获得点赞,在遺跡副本中獲得點讚,Receive Liked In The Ruins Dungeon,遺跡ダンジョンでお気に入りを獲得,유적 던전에서 좋아요 받기
+特产运输奖励随市政厅等级提升而提升,特產運輸獎勵隨市政厅等級提升而提升,Specialty Transport Rewards Increase With City Hall Level,特産品輸送報酬は市庁レベルに応じて増加します,특산품 운송 보상은 시청 레벨에 따라 증가합니다
+所有奖励领取完后结束活动,所有獎勵領取完后結束活動,The Event Ends After All Rewards Have Been Claimed,すべての報酬を受け取ると、活動は終了します,모든 보상을 수령하면 활동이 종료됩니다
+今日累计充值兰德币,今日纍計充值蘭德幣,Today's Cumulative Recharge Of Rand Coins,本日の累計チャージランドコイン,오늘 누적 충전 랜드코인
+奖励不会重复获得,獎勵不會重複獲得,Rewards Will Not Be Got Repeatedly,報酬は重複して獲得できません,보상은 반복해서 획득할 수 없습니다
+治疗效果受士兵生命属性影响,治療效果受士兵生命屬性影響,The Healing Effect Is Affected By The Soldiers' HP Attribute,回復効果は兵士のHP属性に影響されます,치유 효과는 병사의 HP 속성에 영향을 받습니다
+当队伍统帅携带战车类型的士兵时，可以炮击建筑,當隊伍統帥攜帶戰車類型的士兵時，可以炮擊建築,"When The Team Commander Has Chariot-type Soldiers, They Can Bombard Building",チームの指揮官が戦車タイプの兵士を連れている場合、建築を砲撃できます,"팀 사령관이 전차 유형의 병사를 데리고 있을 때, 건물을 포격할 수 있습니다"
+在攻城战玩法中，长按炮击按钮，可开启自动炮击,在攻城戰玩法中，長按炮擊按鈕，可開啟自動炮擊,"In The Siege Battle Gameplay, Long-Press The Bombardment Button To Enable Automatic Bombardment",攻城戦のゲームプレイでは、砲撃ボタンを長押しすると、自動砲撃が有効になります,공성전 게임플레이에서 포격 버튼을 길게 누르면 자동 포격이 활성화됩니다
+每周仅能选择1种城市类型发布1次，奖励不受占领数量影响,每週僅能選擇1種城市類型發布1次，獎勵不受佔領數量影響,"Only 1 City Type Can Be Selected And Released Once Per Week, And The Rewards Are Not Affected By The Number Of Occupations",毎週1つの都市タイプを選択して1回のみ発表でき、報酬は占領数に影響されません,"매주 1개의 도시 유형을 선택하여 1회만 발표할 수 있으며, 보상은 점령 수에 영향을 받지 않습니다"
+长按已装备的技能可以查看详情,長按已裝備的技能可以查看詳情,Long-Press An Equipped Skill To View Details,装備中のスキルを長押しして詳細を確認,장착한 스킬을 길게 눌러 상세 정보 확인
+超过世界等级之后将只获得经验无法提升领主等级,超過世界等級之後將只獲得經驗無法提升領主等級,"After Exceeding The World Level, You Will Only Gain EXP And Cannot Increase Your Lord Level",ワールドレベルを超えると、経験値のみ獲得し、領主レベルは上がりません,월드 레벨을 초과하면 경험치만 획득하고 영주 레벨은 올라가지 않습니다
+查询游客登陆自动生成的永久账号密码,查詢遊客登入自動生成的永久帳號密碼,Query The Permanent Account And Password Automatically Generated By Guest When They Login,ゲストログインで自動生成された永久アカウントのパスワードを照会,게스트 로그인으로 자동 생성된 영구 계정 비밀번호 조회
+"验证码已发送至邮箱,请查收",驗證碼已發送至郵箱，請查收,"The Captcha Has Been Sent To Your Email, Please Check",検証コードをポストに送信しました、ご確認ください,인증코드가 우편함으로 발송되었습니다. 확인해 주세요
+没有与势力范围接壤,沒有與勢力範圍接壤,Not bordering the sphere of influence,勢力圏に接していない,영향권에 접하지 않음
+与势力范围接壤,與勢力範圍接壤,Bordering the sphere of influence,勢力圏に接している,영향권에 접함
+与盟友共享势力范围,與盟友共享勢力範圍,Share sphere of influence with allies,同盟国と勢力圏を共有する,동맹국과 영향력을 공유하세요
+该玩家使用不适合昵称,該玩家使用不合適昵稱,The Player Uses An Inappropriate Nickname,プレイヤーが不適切な別名を使用し、,플레이어가 부적절한 별명을 사용하고
+该玩家发表不适合言论,該玩家發表不合適言論,The Player Made Inappropriate Comments,プレイヤーが不適切な発言を投稿,플레이어가 부적절한 발언 게시
+该玩家涉嫌使用外挂,該玩家涉嫌使用外掛,The Player Is Suspected Of Cheating,プレイヤーがチートを使用する疑い,플레이어가 치트 사용 의심
+尊敬的领主大人由于您的言论遭到多人举报当前处于禁言状态,尊敬的領主大人由於您的言論遭到多人舉報，當前處於禁言狀態,Dear Lord: Your Account Has Been Muted Due To Multiple Reports About Your Comments,領主様：あなたの発言は多くの人から報告されており、現在禁止されています。,영주님: 귀하의 발언이 많은 사람들에게 신고되었기 때문에 현재 발언이 금지되었습니다.
+拖动编队头像,拖動編隊頭像,Please Drag the Formation Via,ドラッグチームの顔写真,편대 아바타 드래그
+移动你的队伍,移動你的隊伍,Please Move your troops,チームを移動させましょう,군대를 이동해 주세요
+由于您的昵称涉嫌违规，举报人数过多，服务器已自动给您更改昵称,由於您的暱稱涉嫌違規，舉報人數過多，伺服器已自動給您變更暱稱,"Because your nickname is suspected of violating the rules and too many people have reported it, the server has automatically changed your nickname.",あなたのニックネームはルールに違反している疑いがあり、報告者も多かったため、サーバーは自動的にあなたのニックネームを変更しました。,"귀하의 닉네임은 규정 위반 혐의가 있고, 신고자가 너무 많아 서버에서 자동으로 귀하의 닉네임을 변경하였습니다."
+"根据多名玩家举报,您的昵称涉嫌违规,请尽快更改,否则可能会受到惩罚","根據多名玩家舉報,您的暱稱涉嫌違規,請盡快更改,否則可能會受到懲罰","According to reports from multiple players, your nickname is suspected of violating the rules. Please change it as soon as possible, otherwise you may be punished.",複数のプレイヤーからの報告によると、あなたのニックネームはルール違反の疑いがあります。できるだけ早く変更してください。そうしないと罰せられる可能性があります。,"여러 플레이어의 보고에 따르면, 귀하의 닉네임은 규칙을 위반한 것으로 의심됩니다. 가능한 한 빨리 변경해 주시기 바랍니다. 그렇지 않으면 처벌을 받을 수 있습니다."
+"根据多名玩家举报,您有使用外挂的嫌疑,如果有,请立即停止使用,否则可能会受到封号等严厉惩罚","根據多名玩家舉報,您有使用外掛的嫌疑,如果有,請立即停止使用,否則可能會受到封號等嚴厲懲罰","According to reports from multiple players, you are suspected of using plug-ins. If so, please stop using it immediately, otherwise you may be severely punished by being banned.",複数のプレイヤーからの報告によると、あなたはチートを使用している疑いがあります。もしそうであれば、直ちに使用を中止してください。さもなければ、禁止されるなど厳しく罰せられる可能性があります。,"여러 플레이어의 보고에 따르면, 당신은 치트를 사용한 것으로 의심됩니다. 그렇다면 즉시 사용을 중단하시기 바랍니다. 그렇지 않으면 정지 등의 엄중한 처벌을 받을 수 있습니다."
+技能描述中的“受x属性影响”均指的是施法者（即携带技能的英雄）,技能描述中的「受X屬性影響」均指的是施法者（即攜帶技能的英雄）,"""Affected by X Attribute"" in skill descriptions always refers to the caster (the hero equipped with the skill)",スキル説明文中の「X属性の影響を受ける」は全て術者（スキルを装備するヒーロー）を指す,"스킬 설명 내 ""X 속성 영향을 받음""은 모두 시전자(스킬을 보유한 영웅)를 지칭함"
+该内容不属于游戏本体内容，是玩家社交平台二创内容，官方也不建议安装,此內容不屬於遊戲本體內容，是玩家社交平台的二次創作內容，官方也不建議安裝,"This content is not part of the official game, but rather player-created content from social platforms. The official team does not recommend installation.",このコンテンツはゲーム本体のものではなく、SNSプラットフォームにおけるプレイヤーによる二次創作コンテンツです。公式としてはインストールをお勧めしません,"이 콘텐츠는 게임 본체의 공식 콘텐츠가 아니며, 소셜 플랫폼에서 플레이어들이 제작한 2차 창작물입니다. 공식에서는 설치를 권장하지 않습니다"
+所选择的队伍必须在主城内待命,所選擇的隊伍必須在主城內待命,The Selected Team Must Be On Standby In The Territory,選択されたチームは領地で待機しなければならない,선택한 부대는 영토에서 대기해야 합니다
+巨型投石车将在攻城战开启后自动炮击城市,巨型投石車將在攻城戰開啟後自動炮擊城市,The giant trebuchet will automatically bombard the city when the siege battle begins,巨大トレビュシェットは攻城戦開始後、自動的に都市を砲撃します,대형 트레뷰셋은 공성전 시작 후 자동으로 도시를 포격합니다
+可以用来代替任意英雄本体，让英雄进阶的卡牌,可以用來代替任意英雄本體，讓英雄進階的卡牌,A card that can be used in place of any specific hero copy to Advance a hero.,任意のヒーロー本体の代わりに使用でき、ヒーローを進階させるカード,어떤 영웅 본체 대신 사용하여 영웅을 진급시킬 수 있는 카드
+可以用来代替任意5星英雄，让英雄突破的卡牌,可以用來代替任意5星英雄，讓英雄突破的卡牌,A card that can be used in place of any 5-star hero to Breakthrough a hero.,任意の5星ヒーローの代わりに使用でき、ヒーローを突破させるカード,어떤 5성 영웅 대신 사용하여 영웅을 돌파시킬 수 있는 카드
+英雄满进阶并且60级后将达到等级上限，使用突破卡或同星级卡突破可以提高英雄等级上限,英雄滿進階並且60級後將達到等級上限，使用突破卡或同星級卡突破可以提高英雄等級上限,"After a hero is fully Advanced and reaches level 60, it will hit the level cap. Using a Breakthrough Card or a card of the same star rating for Breakthrough will increase the hero's level cap.",ヒーローが最大まで進階し、かつLv60に達するとレベル上限に達します。突破カードまたは同星のカードで突破することで、ヒーローのレベル上限を上げることができます。,"영웅이 최대 진급되고 60레벨에 도달하면 레벨 상한에 도달합니다, 돌파 카드나 동일 성급 카드로 돌파하면 영웅의 레벨 상한을 높일 수 있습니다."
+可以用来替代任意5星英雄，提交到英雄宝鉴处，提高英雄基础属性,可以用來替代任意5星英雄，提交到英雄寶鑑處，提高英雄基礎屬性,Can be used in place of any 5-star hero and submitted to the Hero Codex to increase the hero's base attributes.,任意の5星ヒーローの代わりとして使用し、ヒーロー図鑑に提出して、ヒーローの基本属性を向上させることができます。,어떤 5성 영웅 대신 사용하여 영웅 보감에 제출하여 영웅의 기본 속성을 높이는 데 사용할 수 있습니다.
+注意，万能宝鉴卡本身也可以进阶，进阶后可以替代任意进阶英雄,注意，萬能寶鑑卡本身也可以進階，進階後可以替代任意進階英雄,"Note: The Universal Codex Card itself can also be Advanced. After Advancement, it can replace any Advanced hero.",注意：万能図鑑カード自体も進階可能で、進階後は任意の進階済みヒーローの代わりになります。,"주의: 만능 보감 카드 자체도 진급이 가능하며, 진급 후에는 어떤 진급된 영웅도 대체할 수 있습니다."
+检测到您可能正在使用第三方变速工具，这样会导致网络异常，请检查是否有使用相关工具,檢測到您可能正在使用第三方變速工具，這樣會導致網絡異常，請檢查是否有使用相關工具,"Detected that you may be using a third-party speed adjustment tool, which may cause network abnormalities. Please check if any related tools are being used.",サードパーティ製の速度変更ツールを使用している可能性が検出されました。これはネットワーク異常を引き起こす可能性がありますので、該当するツールを使用していないかご確認ください.,"제3자 속도 조절 도구를 사용 중인 것으로 감지되었습니다. 이는 네트워크 이상을 초래할 수 있으니, 관련 도구 사용 여부를 확인해 주세요."
+"混乱效果只作用于普通攻击和伤害型战术技能,普通攻击后续触发的追击也跟着受到影响",混亂效果只作用於普通攻擊和傷害型戰術技能，普通攻擊後續觸發的追擊也跟著受到影響。,The Chaos effect only applies to normal attacks and damage-dealing Tactical Skills. Subsequent Pursuit triggered by normal attacks is also affected.,混乱効果は通常攻撃とダメージ型戦術スキルにのみ作用し、通常攻撃後に発動する追撃も同様に影響を受けます。,"혼란 효과는 일반 공격과 피해형 전술 스킬에만 적용되며, 일반 공격 이후 발동되는 추격 또한 영향을 받습니다."
+每个队伍必须配置统帅，且统帅兵力大于0,每個隊伍必須配置統帥，且統帥兵力大於0,"Each team must be assigned a Commander, and the Commander's Strength must be greater than 0.",各チームには統帥を配置する必要があり、かつ統帥の兵力が0より大きくなければなりません,"각 팀에는 리더를 배치해야 하며, 리더의 병력이 0보다 커야 합니다"
+攻城战玩法需要创建/加入联盟，由盟主、副盟主宣战,攻城戰玩法需要創建/加入聯盟，由盟主、副盟主宣戰,"Siege Battle requires creating/joining a Union, with the Leader or Deputy Leader declaring war.",攻城戦のプレイには同盟の作成/参加が必要で、盟主または副盟主が宣戦布告します。,"공성전 플레이는 클랜 생성/가입이 필요하며, 지도자 또는 부 지도자가 선전포고를 합니다."
+攻城战玩法必须建造巨型投石车炮击城市,攻城戰玩法必須建造巨型投石車炮擊城市,Siege Battle requires building a Giant Trebuchet to bombard cities.,攻城戦のプレイには巨大トレビュシェットの建造が必須で、都市を砲撃します。,"공성전 플레이는 대형 트레뷰셋 건설이 필수이며, 도시를 포격해야 합니다."
+城市占领每月1号重置，已占领的城市不能放弃、不能再次占领,城市佔領每月1號重置，已佔領的城市不能放棄、不能再次佔領,City occupation resets on the 1st of each month. Already occupied cities cannot be abandoned or reoccupied.,都市の占領は毎月1日にリセットされます。既に占領された都市は放棄や再占領はできません。,"도시 점령은 매월 1일에 초기화됩니다, 이미 점령된 도시는 포기하거나 재점령할 수 없습니다."
+英雄进阶需要消耗相同的英雄卡，可使用万能进阶卡替代,英雄進階需要消耗相同的英雄卡，可使用萬能進階卡替代,"Hero Advance requires consuming identical Hero cards, which can be substituted with a Universal Advance Card.",ヒーロー進階には同一のヒーローカードを消費する必要があり、万能進階カードで代用可能です。,"영웅 진급에는 동일한 영웅 카드가 소모되며, 만능 진급 카드로 대체 사용 가능합니다."
+英雄每次进阶可获得10点待分配点，并提升最大带兵数量,英雄每次進階可獲得10點待分配點，並提升最大帶兵數量,Each Hero Advance grants 10 Available Points and increases the Max Soldiers Quantity.,進階ごとに、可用ポイントを10獲得し、最大引兵数が増加します。,"진급 시마다 가용점을 10 획득하며, 최대 병력 수량이 증가합니다."
+英雄最大进阶次数与英雄星级相同,英雄最大進階次數與英雄星級相同,The maximum number of Advance times for a Hero is the same as the Hero's star rating.,ヒーローの最大進階可能回数は、ヒーローの星ランクと同じです。,영웅의 최대 진급 가능 횟수는 영웅의 성급과 동일합니다.
+英雄突破,英雄突破,Hero Breakthrough,ヒーロー突破,영웅 돌파
+4星英雄可以使用任意一张4星英雄卡作为突破材料,4★英雄可以使用任意一張4★英雄卡作為突破材料,4★ Heroes can use any 4★ Hero card as Breakthrough material.,4★ヒーローは任意の4★ヒーローカードを突破素材として使用できます。,4★ 영웅은 아무 4★ 영웅 카드나 돌파 재료로 사용할 수 있습니다.
+突破后,突破後,After Breakthrough,突破後,돌파 후
+5星英雄可以使用任意一张5星英雄卡作为突破材料,5★英雄可以使用任意一張5★英雄卡作為突破材料,5★ Heroes can use any 5★ Hero card as Breakthrough material.,5★ヒーローは任意の5★ヒーローカードを突破素材として使用できます。,5★ 영웅은 아무 5★ 영웅 카드나 돌파 재료로 사용할 수 있습니다.
+体力基础上限,體力基礎上限,Vit Base Cap,体力ベース上限,체력 기본 상한선
+体力基础恢复速度,體力基礎恢復速度,Vit Base Recovery Rate,体力ベース回復速度,체력 기본 회복 속도
+每60秒恢复1点体力,每60秒恢復1點體力,Recovers 1 Vit every 60 seconds,60秒毎に体力を1回復,60초마다 체력 1 회복
+体力恢复,體力恢復,Vit Recovery,体力回復,체력 회복
+体力可以通过体力药剂快速补充。,體力可以通過體力藥劑快速補充。,Vit can be quickly replenished using Vit Potions.,体力は体力ポーションですばやく補充できます。,체력은 체력 약제로 빠르게 보충할 수 있습니다.
+体力恢复速度可以通过分配领主天赋点提升。,體力恢復速度可以通過分配領主天賦點提升。,Vit Recovery Rate can be increased by allocating Lord Talent Points.,体力回復速度は領主天賦ポイントを割り当てることで向上できます。,체력 회복 속도는 영주 재능점을 배분하여 향상시킬 수 있습니다.
+体力恢复速度可以通过领主装备-光荣旗帜提升。,體力恢復速度可以通過領主裝備-光榮旗幟提升。,Vit Recovery Rate can be increased by the Lord Equipment - Glory Banner.,体力回復速度は領主装備-栄光の旗で向上できます。,체력 회복 속도는 영주 장비 - 영광의 깃발을 통해 향상시킬 수 있습니다.
+每日可在[活动]-[爱心便当]领取体力补给。,每日可在[活動]-[愛心便當]領取體力補給。,Daily Vit supplies can be claimed in [Activity] - [Love Bento].,毎日[活動]-[愛心弁当]で体力補給を受け取れます。,매일 [활동] - [사랑의 도시락]에서 체력 보급품을 수령할 수 있습니다.
+角色创建时间,角色創建時間,Role Creation Time,キャラクター創建時間,역할 생성 시간
+将提前3天在该副本右下角显示倒计时,將提前3天在該副本右下角顯示倒計時,A countdown will be displayed in the lower right corner of that instance 3 days in advance.,3日前に該当インスタンスの右下隅にカウントダウンを表示します。,3일 전에 해당 인스턴스 우측 하단에 카운트다운이 표시됩니다.
+添加好友时对方的角色创建时间也需>=30天,添加好友時對方的角色創建時間也需>=30天,"When adding friends, the friend's Role Creation Time must also be >=30 days.",親友追加時、相手のキャラクター創建時間も>=30日である必要があります。,친구 추가 시 상대방의 역할 생성 시간도 >=30일 이상이어야 합니다.
+跨服规则,跨服規則,Cross Server Rules,クロスサーバールール,크로스 서버 규칙
+合区规则,合區規則,Server Merge Rules,サーバー統合ルール,서버 통합 규칙
+重新随机所有玩家主城基地,重新隨機所有玩家主城基地,Randomly relocate all players' Main Cities,全てのプレイヤーのメインシティをランダムに再配置します,모든 플레이어의 메인 성을 무작위 재배치합니다
+"并补发1个自定义迁城令,并重置迁城冷却时间","並補發1個自定義遷城令,並重置遷城冷卻時間","and compensate 1 Custom Relocation Order, and reset the relocation cooldown.",カスタム転都令を1つ補給し、転都のクールダウンをリセットします,"커스텀 도시 이주령 1개를 추가 지급하며, 이주 쿨다운을 초기화합니다"
+重置所有已占领的矿点,重置所有已佔領的礦點,Reset all occupied Mines,全ての占領済み鉱山をリセットします,모든 점령된 채굴장을 초기화합니다
+并按剩余时间立即结算未获取资源,並按剩餘時間立即結算未獲取資源,and immediately settle unobtained resources based on remaining time.,残り時間に基づき未獲得資源を即時決済します,남은 시간에 따라 미획득 자원을 즉시 정산합니다
+重置所有联盟已占领的城市,重置所有聯盟已佔領的城市,Reset all Union-occupied Cities,全ての同盟が占領した都市をリセットします,모든 클랜이 점령한 도시를 초기화합니다
+并按剩余时间立即结算联盟未获取资源,並按剩餘時間立即結算聯盟未獲取資源,and immediately settle unobtained Union resources based on remaining time.,残り時間に基づき同盟の未獲得資源を即時決済します,남은 시간에 따라 클랜 미획득 자원을 즉시 정산합니다
+不重置联盟合作关系,不重置聯盟合作關係,Do not reset Union cooperation relationships.,同盟の協力関係はリセットしません,클랜 협력 관계는 초기화하지 않습니다
+不重置首次占领,不重置首次佔領,Do not reset First Occupation.,初回占領はリセットしません,최초 점령은 초기화하지 않습니다
+删除所有玩家营地,刪除所有玩家營地,Remove all player Camps,全てのプレイヤーキャンプを削除します,모든 플레이어 캠프를 삭제합니다
+并退还营地建造资源,並退還營地建造資源,and refund camp construction resources.,キャンプ建設資源を返還します,캠프 건설 자원을 환불합니다
+删除所有联盟营地,刪除所有聯盟營地,Remove all Union Camps,全ての同盟キャンプを削除します,모든 클랜 캠프를 삭제합니다
+并退还联盟资源,並退還聯盟資源,and refund Union resources.,同盟資源を返還します,클랜 자원을 환불합니다
+补发,補發,Compensate,補給,추가 지급
+"神魔试炼名人堂首次通关重置,重新打名人堂","神魔試煉名人堂首次通關重置,重新打名人堂","Reset the first clearance of Divine Demon Trial Hall of Fame, requiring to rechallenge the Hall of Fame.",神魔試練名誉の殿堂の初回クリアをリセット、名誉の殿堂を再挑戦する必要があります,"신과 마의 시험 명예의 전당 첫 클리어를 초기화하며, 명예의 전당을 다시 도전해야 합니다"
+"合区后迁城红圈重置,需要重新打关卡一步步缩小红圈","合區後遷城紅圈重置,需要重新打關卡一步步縮小紅圈","After server merge, reset the relocation restricted zone; need to rechallenge stages to gradually reduce the restricted zone.",サーバー統合後、転都制限エリアをリセット、ステージを再クリアして段階的に制限エリアを縮小する必要があります,"서버 통합 후 이주 제한 지역을 초기화하며, 스테이지를 다시 클리어하여 단계적으로 제한 지역을 축소해야 합니다"
+"不重置城池的保护时间,按最老一个区的保护时间计算","不重置城池的保護時間,按最老一個區的保護時間計算",Do not reset city protection time; calculate based on the oldest server's protection time.,都市の保護時間はリセットせず、最も古いサーバーの保護時間に基づいて計算します,"도시 보호 시간은 초기화하지 않으며, 가장 오래된 월드의 보호 시간을 기준으로 계산합니다"
+本服务器已攻略的城市游记,本伺服器已攻略的城市遊記,City travelogues already conquered on this server,本サーバーで攻略済みの都市の旅行記,본 서버에서 공략 완료한 도시 여행기
+本公会已攻略的城市游记,本公會已攻略的城市遊記,City travelogues already conquered by this Union,本同盟で攻略済みの都市の旅行記,본 클랜에서 공략 완료한 도시 여행기
+可在游记商人处购买,可在遊記商人處購買,Available for purchase from the Travelogue Merchant,旅行記商人から購入可能,여행기 상인에게서 구매 가능
+离线时间超过14天时，您在大世界的城市将被随机迁移到其他地区,離線時間超過14天時，您在大世界的城市將被隨機遷移到其他地區,"When offline for more than 14 days, your city in the Great World will be randomly relocated to another area",オフライン期間が14日を超えると、大世界にあるあなたの都市は別のエリアにランダムに移転されます,"오프라인 시간이 14일을 초과하면, 큰세계에 있는 당신의 도시가 다른 지역으로 무작위 이전됩니다"

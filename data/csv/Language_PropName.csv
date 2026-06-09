@@ -1,0 +1,555 @@
+﻿Simplified_Text,Traditional_Text,English_Text,Japanese_Text,Korean_Text
+1阶,T1,T1,T1,T1
+2阶,T2,T2,T2,T2
+3阶,T3,T3,T3,T3
+4阶,T4,T4,T4,T4
+5阶,T5,T5,T5,T5
+6阶,T6,T6,T6,T6
+小型,小,S,小,소
+中型,中,M,中,중
+大型,大,L,大,대
+粮食,糧食,Food,食料,식량
+木材,木材,Wood,木材,목재
+石料,石料,Stone,石材,석재
+铁锭,鐵錠,Iron,鉄塊,철괴
+步兵,步兵,Infantry,歩兵,보병
+弓兵,弓兵,Archer,弓兵,궁병
+骑兵,騎兵,Cavalry,騎兵,기병
+战车,戰車,Chariot,戦車,전차
+红宝石,紅寶石,Gems,红宝石,보석
+金币,金幣,Gold Coin,金貨,골드
+加速点,加速點,Speedup Points,加速ポイント,가속점
+技能经验,技能經驗,Skill Exp,スキル経験,스킬 경험
+体力,體力,Vit,体力,체력
+冒险者积分,冒險者積分,Adventurer Points,冒険者積分,모험가 포인트
+荣誉积分,榮譽積分,Honor Points,名誉積分,명예 포인트
+联盟积分,聯盟積分,Union Points,同盟積分,동맹 포인트
+友谊积分,友誼積分,Friendship Points,友情積分,우정 포인트
+兰德币,蘭德幣,Rand Coin,ランド通貨,랜드 통화 카드
+领主经验,領主經驗,Lord Exp,領主経験,영주 경험
+英雄经验,英雄經驗,Hero Exp,ヒーロー経験,영웅 경험
+冒险者公会的礼物,冒險者公會的禮物,Adventurer Guild's Gift,冒険者ギルド贈り物,모험가 길드의 선물
+修炼令牌,修煉令牌,Training Token,修練トークン,수련 토큰
+次元之石,次元之石,Dimensional Stone,次元の石,차원석
+新人,新人,Newb,新人,신인
+红玉,紅玉,Ruby,ルビー,루비
+碎片,碎片,Fragment,破片,조각
+改名卡,改名卡,Rename Card,改名カード,개명 카드
+突破卡,突破卡,Breakthrough Card,突破カード,돌파 카드
+英雄卡,英雄卡,Hero Card,ヒーローカード,영웅 카드
+星光卡,星光卡,Starlight Card,星の光カード,별빛 카드
+技能经验卡,技能經驗卡,Skill Exp Card,スキル経験カード,스킬 경험 카드
+万能进阶卡,萬能進階卡,Universal Advanced Card,万能進階カード,만능 진급 카드
+万能宝鉴卡,萬能寶鑑卡,Universal Codex Card,万能図鑑カード,만능 보물 카드
+技能槽解锁卡,技能槽解鎖卡,Skill Slot Unlock Card,スキルスロット解除カード,스킬 슬롯 잠금 해제 카드
+补给箱,補給箱,Supply,補給箱,보급 상자
+资源补给箱,資源補給箱,Resource Supply,資源補給箱,자원 보급 상자
+宝箱,寶箱,Chest,宝箱,상자
+宝箱碎片,寶箱碎片,Chest Fragments,宝箱破片,상자 조각
+活跃宝箱,活躍寶箱,Active Chest,活躍宝箱,활발한 상자
+白银宝箱,白銀寶箱,Silver Chest,銀の宝箱,은화 상자
+铂金宝箱,鉑金寶箱,Platinum Chest,プラチナの宝箱,백금 상자
+黄金宝箱,黃金寶箱,Golden Chest,黄金の宝箱,금괴 상자
+技能石宝箱,技能石寶箱,Skill Stone Chest,スキルストーン宝箱,스킬 스톤 상자
+银质装备宝箱,銀質裝備寶箱,Silver Equipment Chest,银装備宝箱,은색 장비 상자
+金质装备宝箱,金質裝備寶箱,Gold Equipment Chest,金装備宝箱,금색 장비 상자
+史诗饰品宝箱,史詩飾品寶箱,Epic Accessories Chest,エピック飾品宝箱,서사시   보석 상자
+史诗饰品,史詩飾品,Epic Accessories,エピック飾品,서사시 보석
+专属装备,專屬裝備,Exclusive Equipment,専用装備,전용 장비
+银质装备,銀質裝備,Silver Equipment,金装備,실버 장비
+金质装备,金質裝備,Gold Equipment,银装備,금색 장비
+装备图纸,裝備圖紙,Equipment Drawings,装備図面,장비 도면
+时装图纸,時裝圖紙,Fashion Drawings,コスチューム図面,패션 도면
+建筑图纸,建築圖紙,Building Drawings,建築図面,건축 도면
+装备材料,裝備材料,Equipment Stuff,装備素材,장비 재료
+史诗稀有材料,史詩稀有材料,Epic Rare Stuff,エピック希少素材,서사시 희귀 재료
+图纸,圖紙,Drawings,圖紙,그림
+头饰图纸,頭飾圖紙,Headwear Drawings,頭飾図面,머리 장식 도면
+服饰图纸,服飾圖紙,Clothing Drawings,衣装図面,복장 도면
+背饰图纸,背飾圖紙,Back Accessory Drawings,背中装飾図面,뒷장식 도면
+图纸进阶手册,圖紙進階手冊,Drawing Advanced Manual,図面進階手冊,도면 진급 매뉴얼
+英雄经验书,英雄經驗書,Hero Exp Book,ヒーロー経験書,영웅 경험서
+技能经验珠,技能经验珠,Skill Exp Bead,スキル経験珠,스킬 경험치 비즈
+觉醒石,覺醒石,Awakening Stone,覚醒石,각성석
+觉醒突破石,覺醒突破石,Awakening Breakthrough Stone,覚醒突破石,각성 돌파석
+英雄觉醒石,英雄覺醒石,Hero Awakening Stone,ヒーロー覚醒石,영웅 각성석
+天赋突破石,天賦突破石,Talent Breakthrough Stone,天賦突破石,재능 돌파석
+英雄天赋石,英雄天賦石,Hero Talent Stone,ヒーロー天賦石,영웅 재능석
+鲜花,鮮花,Flowers,花,플라워
+香水,香水,Perfume,香水,향수
+爱心巧克力,愛心巧克力,Love Chocolate,愛のチョコレート,사랑의 초콜릿
+誓约之戒,誓約之戒,Oath Ring,誓約の指輪,맹세의 반지
+万象宝珠,萬象寶珠,Universal Jewel,万象宝珠,만상 보주
+幸运彩蛋,幸運彩蛋,Lucky Egg,ラッキーエッグ,행운의 알
+幸运转盘,幸運轉盤,Lucky Wheel,ラッキールーレット,행운의 룰렛
+时装扭蛋,時裝扭蛋,Fashion Gacha,コスチュームガチャ,패션 뽑기
+糖果,糖果,Candy,糖果,사탕
+庆典烟花,慶典煙火,Celebration Fireworks,お祝いの花火,축제 폭죽
+庆典徽章,慶典徽章,Celebration Badge,お祝いバッジ,축제 배지
+产量增加,產量增加,Output Increase,増産,생산 증가
+迁城令,遷城命令,Relocation Order,移転令,이전 명령서
+比武大会,比武大會,Tournament,武道大会,무술 대회
+国际友人,國際友人,International Friends,国際友人,국제 친구
+春日宴,春日宴,Spring Feast,春の宴,봄의 연회
+赤铁,赤鐵,Hematite,赤鉄,적철
+钨金,鎢金,Tungsten Gold,タングステン金,텅스텐
+轻蚕丝,輕蠶絲,Light Silk,軽い絹糸,가벼운 명주실
+皮革,皮革,Leather,革,가죽
+优质木材,優質木材,Premium Wood,良質の木材,고품질 목재
+冷幽泉,冷幽泉,Cold Spring,冷たい泉,차가운 샘물
+玛瑙珠,瑪瑙珠,Agate Bead,めのうの玉,마노 구슬
+鎏金石,鎏金石,Gilded Stone,純度の高い石,류금석
+星月线,星月線,Star Moon Line,星月線,성월선
+银丝缎,銀絲緞,Silver Silk Satin,銀モール,은 공단
+黑珊瑚,黑珊瑚,Black Coral,黒珊瑚,흑 산호
+银麟,銀麟,Silver Scale,銀麟,은비늘
+凤翎,鳳翎,Phoenix Feather,鳳キジ,피닉스
+武器,武器,Weapons,武器,무기
+衣服,衣服,Clothes,服,갑옷
+裤子,褲子,Shorts,ズボン,반바지
+头盔,頭盔,Helmets,かぶと,헬멧
+护手,護手,Gloves,手を守る,장갑
+鞋子,鞋子,Boots,靴,부츠
+兽皮,獸皮,Animal Skin,獣皮,가죽
+真丝,真絲,Silk,シルク,진사
+香料,香料,Spices,香料,향신료
+茶叶,茶葉,Tea,茶葉,차잎
+奇香叶,奇香葉,Lindera Tea,リンデラ茶,린데라 차
+大理石,大理石,Marble,大理石,대리석
+珠宝,珠寶,Jewelry,珠寶,보석
+精制兽皮,精制獸皮,Refined Animal Skin,獣皮を精製する,정제된 짐승 가죽
+幻羚皮,幻羚皮,Phantom Antelope Skin,幻のカモシカの皮,영양가죽
+野猪皮,野豬皮,Peccary Skin,イノシシの皮,멧돼지 가죽
+毛兽皮,毛獸皮,Fur Beast Skin,毛獣の皮,털짐승 가죽
+角兽皮,角獸皮,Horned Beast Skin,角獣の皮,뿔짐승 가죽
+异域真丝,異域真絲,Exotic Silk,異世界のシルク,이역 진사
+木槿麻,木槿麻,Hibiscus Hemp,ムグンゲ,무궁화 삼
+羊兔毛混纺,羊兔毛混紡,Sheep Rabbit Hair Blended,羊とウサギの毛の混紡,토끼털 혼방
+蚕染绸,蠶染綢,Silkworm dyed silk,蚕が絹布にそまる,명주실
+红芯绒,紅芯絨,Red Corduroy,赤芯のダウン,레드 벨벳
+八角茴香子,八角茴香子,Star Anise,八角ウイキョウ,팔각회향자
+果豆蔻,果豆蔻,Cardamom,ナツメグ,육두구
+甘角香,甘角香,Wood Angle of Incense,甘い角の香,감각향
+紫苏,紫蘇,Perilla,シソ,차조기
+雪仁,雪仁,Snow Nut,雪の仁,설인
+玉露碧螺,玉露碧螺,Biluo Tea,つぶら貝,이슬 소라
+新叶茶,新葉茶,New Leaf Tea,若葉茶,새잎 차
+神雪茶,神雪茶,God Snow Tea,はつゆき茶,스노우티
+秋景茶,秋景茶,Autumn Scenery Tea,秋の風物茶,가을 차
+香花茶,香花茶,Fragrant Flower Tea,花の香りのするお茶,꽃잎 차
+天金瓷,天金瓷,Sky Porcelain,天金焼,천금 자기
+龙泉瓷,龍泉瓷,Longquan Porcelain,竜泉磁器,용천 자기
+蔷薇瓷,薔薇瓷,Rose Porcelain,バラの磁器,장미 자기
+古铜瓷,古銅瓷,Bronze Porcelain,古銅の磁器,구리 자기
+白瓷,白瓷,White Porcelain,白磁,백자
+皇室秘宝,皇室秘寶,Royal Treasure,皇室の秘宝,황실의 보물
+森林星光,森林星光,Forest Starlight,森の星,숲의 별빛
+浅海玛瑙,淺海瑪瑙,Shallow Sea Agate,浅海の瑪瑙,천해 마노
+巴洛特迷夜,巴洛特迷夜,Balot Lost In The Night,バロットの夜,바로트의 밤
+丝绒蜜彩,絲絨蜜彩,Velvet Jewel,ベルベットカラー,벨벳밀채
+长剑,長劍,Long Sword,長剣,장검
+皮甲,皮甲,Leather Armor,革の甲,가죽 갑옷
+皮短裤,皮短褲,Leather Pants,革の半ズボン,가죽 반바지
+铁甲盔,鐵甲盔,Iron Armor Helmet,鎧かぶと,체인메일 헬멧
+铁甲之力,鐵甲之力,Power Of Iron Armor,鉄甲の力,체인메일의 힘
+皮靴,皮靴,Leather Boots,ブーツ,가죽 부츠
+狩猎长枪,狩獵長槍,Hunting Spear,槍を狩る,헌터 창
+狩猎铁甲,狩獵鐵甲,Hunting Armor,鉄の甲を狩る,헌터 체인메일
+狩猎短裤,狩獵短褲,Hunting Shorts,狩猟パンツ,헌터 반바지
+狩猎头盔,狩獵頭盔,Hunting Helmet,狩猟ヘルメット,헌터 헬멧
+狩猎护手,狩獵護手,Hunting Bracers,狩猟の小手,헌터 장갑
+狩猎靴,狩獵靴,Hunting Boots,狩猟靴,헌터 부츠
+救赎之枪,救贖之槍,Redemption Spear,救いの銃,구원의 창
+救赎铁甲,救贖鐵甲,Redemption Armor,救済の鉄甲,구원 체인메일
+救赎短裤,救贖短褲,Redemption Shorts,救いの半ズボン,구원 반바지
+救赎头盔,救贖頭盔,Redemption Helmet,救済ヘルメット,구원의 헬멧
+救赎护手,救贖護手,Redemption Bracers,救済護手。,구원의 손길
+救赎靴,救贖靴,Redemption Boots,救済ブーツ,구원 부츠
+疾驰之枪,疾馳之槍,Gallop Spear,疾駆の槍,질주의 창
+疾驰铁甲,疾馳鐵甲,Gallop Armor,鉄の甲を疾駆する,질주 체인메일
+疾驰短裤,疾馳短褲,Gallop Shorts,疾走ショートパンツ,질주 반바지
+疾驰头盔,疾馳頭盔,Gallop Helmet,疾駆ヘルメット,질주 헬멧
+疾驰护手,疾馳護手,Gallop Bracers,ハンドガードを疾走する,질주 장갑
+疾驰靴,疾馳靴,Gallop Boots,疾走ブーツ,질주 부츠
+光明重剑,光明重劍,Bright Epee,光明エペ,광명 중검
+光明重甲,光明重甲,Bright Heavy Armor,光明重甲,광명 중갑
+光明之裤,光明之褲,Bright Pants,明るいパンツ,광명 바지
+光明头盔,光明頭盔,Bright Helmet,明るいヘルメット,광명 헬멧
+光明护手,光明護手,Bright Bracers,光のハンドガード,광명 장갑
+光明靴,光明靴,Bright Boots,光明靴,광명 부츠
+金羽弓,金羽弓,Golden Feather Bow,金羽弓,황금깃털 보우
+金羽战甲,金羽戰甲,Golden Feathered Armor,金羽戦甲,황금깃털 아머
+金羽短裤,金羽短褲,Golden Feather Shorts,金の羽の半ズボン,황금깃털 반바지
+金羽头盔,金羽頭盔,Golden Feather Helmet,金の羽の兜,황금깃털 헬멧
+金羽护手,金羽護手,Golden Feather Bracers,金羽の護手,황금깃털 장갑
+金羽靴,金羽靴,Golden Feather Boots,金の羽のブーツ,황금깃털 부츠
+勇者长矛,勇者長矛,Brave Spear,勇者の槍,용사의 창
+勇者战甲,勇者戰甲,Brave Fight Armour,ガオガイガー,용자 아머
+勇者短裤,勇者短褲,Brave Shorts,勇者パンツ,용사 반바지
+勇者头盔,勇者頭盔,Brave Helmet,勇者の兜,용사 헬멧
+勇者护手,勇者護手,Brave Bracers,勇者の護手,용사 장갑
+勇者靴,勇者靴,Brave Boots,勇者ブーツ,용사 부츠
+寒冰斧,寒冰斧,Ice Axe,氷斧,얼음 도끼
+寒冰重甲,寒冰重甲,Ice Heavy Armor,寒氷重甲,얼음 중갑
+寒冰短裤,寒冰短褲,Ice Shorts,アイスパンツ,얼음 반바지
+寒冰头盔,寒冰頭盔,Ice Helmet,氷のヘルメット,얼음 헬멧
+寒冰护手,寒冰護手,Ice Bracers,氷の護手,얼음 보호 대
+寒冰靴,寒冰靴,Ice Boots,氷靴,얼음 부츠
+神鹰之枪,神鷹之槍,Eagle Spear,コンドルの槍,신조의 창
+神鹰战甲,神鷹戰甲,Eagle Armor,コンドル戦甲,신조 갑옷
+神鹰短裤,神鷹短褲,Eagle Shorts,イーグルパンツ,신조 반바지
+神鹰头盔,神鷹頭盔,Eagle Helmet,コンドル・ヘルメット,신조 헬멧
+神鹰护手,神鷹護手,Eagle Bracers,コンドルハンド,신조 장갑
+神鹰靴,神鷹靴,Eagle Boots,コンドルブーツ,신조 부츠
+正义之枪,正義之槍,Justice Spear,正義の槍,정의의 창
+正义铁甲,正義鐵甲,Justice Armor,正義の鉄甲,정의 체인메일
+正义短裤,正義短褲,Justice Shorts,正義のパンツ,정의 반바지
+正义头盔,正義頭盔,Justice Helmet,正義のヘルメット,정의 헬멧
+正义护手,正義護手,Justice Bracers,正義の護手,정의 손길
+正义靴,正義靴,Justice Boots,正義の靴,정의 부츠
+灵鹿长枪,靈鹿長槍,Spirit Deer Spear,霊鹿の槍,신록의 창
+灵鹿铁甲,靈鹿鐵甲,Spirit Deer Armor,灵鹿てっぽう,신록 체인메일
+灵鹿短裤,靈鹿短褲,Spirit Deer Shorts,灵鹿半ズボン,신록 반바지
+灵鹿头盔,靈鹿頭盔,Spirit Deer Helmet,霊鹿の兜,신록 헬멧
+灵鹿护手,靈鹿護手,Spirit Deer Bracers,霊鹿が手を護る,신록 장갑
+灵鹿靴,靈鹿靴,Spirit Deer Boots,鹿の靴,신록 부츠
+曙光大剑,曙光大劍,Dawn Big Sword,オーロラの大剣,새벽 대검
+曙光重甲,曙光重甲,Dawn Heavy Armor,オーロラベスト,새벽 중갑
+曙光短裤,曙光短褲,Dawn Shorts,オーロラのパンツ,새벽 반바지
+曙光头盔,曙光頭盔,Dawn Helmet,オーロラのかぶと,새벽 헬멧
+曙光护手,曙光護手,Dawn Bracers,オーロラの小手,새벽 장갑
+曙光靴,曙光靴,Dawn Boots,オーロラの靴,새벽 부츠
+黄金弓,黃金弓,Golden Bow,黄金の弓,황금 활
+黄金战甲,黃金戰甲,Golden Armor,黄金戦甲,황금 아머
+黄金短裤,黃金短褲,Gold Shorts,ゴールドパンツ,황금 반바지
+黄金头盔,黃金頭盔,Gold Helmet,黄金のかぶと,황금 헬멧
+黄金护手,黃金護手,Gold Bracers,黄金の守り手,황금 장갑
+黄金靴,黃金靴,Golden Boots,黄金のブーツ,황금 부츠
+英雄长矛,英雄長矛,Hero Spear,ヒーローの矛,영웅 장창
+英雄战甲,英雄戰甲,Hero Armor,ヒーロー戦甲,영웅 아머
+英雄短裤,英雄短褲,Hero Shorts,ヒーローパンツ,영웅 반바지
+英雄头盔,英雄頭盔,Hero Helmet,ヒーローヘルメット,영웅 헬멧
+英雄护手,英雄護手,Hero Bracers,ヒーローハンドガード,영웅 장갑
+英雄靴,英雄靴,Hero Boots,ヒーロー靴,영웅 부츠
+深海战斧,深海戰斧,Deep-Sea Tomahawk,深海戦斧,심해 도끼
+深海战甲,深海戰甲,Deep-Sea Armor,深海戦甲,심 해전 갑
+深海短裤,深海短褲,Deep-Sea Shorts,深海ショートパンツ,심해 반바지
+深海头盔,深海頭盔,Deep-Sea Helmet,深海ヘルメット,심해 헬멧
+深海之力,深海之力,Power of The Deep Sea,深海の力,심해의 힘
+深海靴,深海靴,Deep-Sea Boots,深海ブーツ,심해 부츠
+惩戒之枪,懲戒之槍,Disciplinary Spear,懲罰の槍,징벌의 창
+惩戒战甲,懲戒戰甲,Disciplinary Armor,懲戒戦甲,징벌 아머
+惩戒短裤,懲戒短褲,Disciplinary Shorts,お仕置きパンツ,징계 반바지
+惩戒头盔,懲戒頭盔,Disciplinary Helmet,懲罰兜,징벌 헬멧
+惩戒护手,懲戒護手,Disciplinary Bracers,護手を戒める,징벌 장갑
+惩戒靴,懲戒靴,Disciplinary Boots,懲罰靴,징벌 부츠
+荣耀之枪,榮耀之槍,Glory Spear,栄光の槍,영광의 창
+荣耀战甲,榮耀戰甲,Glory Armor,グローリー戦甲,영광 아머
+荣耀短裤,榮耀短褲,Glory Shorts,グローリー半ズボン,영광 반바지
+荣耀头盔,榮耀頭盔,Glory Helmet,グローリーの兜,영광 헬멧
+荣耀护手,榮耀護手,Glory Bracers,栄光の護手,영광 장갑
+荣耀靴,榮耀靴,Glory Boots,グローリーブーツ,영광 부츠
+闪电长枪,閃電長槍,Lightning Spear,稲妻の槍,번개 창
+闪电战甲,閃電戰甲,Lightning Armour,電撃戦甲,번개 아머
+闪电短裤,閃電短褲,Lightning Shorts,稲妻ショートパンツ,번개 반바지
+闪电头盔,閃電頭盔,Lightning Helmet,稲妻の兜,번개 헬멧
+闪电护手,閃電護手,Lightning Bracers,稲妻ハンドガード,번개 장갑
+闪电靴,閃電靴,Lightning Boots,稲妻靴,번개 부츠
+烈焰大剑,烈焰大劍,Flame Sword,炎の大剣,화염 대검
+烈焰重甲,烈焰重甲,Flame Armor,炎の重甲,화염 중갑
+烈焰短裤,烈焰短褲,Flame Shorts,炎の半ズボン,화염 반바지
+烈焰头盔,烈焰頭盔,Flame Helmet,炎のヘルメット,화염 헬멧
+烈焰护手,烈焰護手,Flame Bracers,炎が手を護る,화염 장갑
+烈焰靴,烈焰靴,Flaming Boots,炎靴,화염 부츠
+狮王弓,獅王弓,Lion King Bow,ライオンの弓,사자왕 궁
+狮王战甲,獅王戰甲,Lion King Armor,ライオン戦甲,사자왕 아머
+狮王短裤,獅王短褲,Lion King Shorts,ライオンのショートパンツ,사자왕 반바지
+狮王头盔,獅王頭盔,Lion King Helmet,ライオンのかぶと,사자왕 헬멧
+狮王之力,獅王之力,Power Of Lion King,ライオンの力,사자왕의 힘
+狮王靴,獅王靴,Lion King Boots,ライオンの靴,사자왕 부츠
+骑士长矛,騎士長矛,Knight Spear,騎士槍,기사 창
+骑士战甲,騎士戰甲,Knight Armor,騎士戦甲,기사 아머
+骑士短裤,騎士短褲,Knights Shorts,ナイトパンツ,기사 반바지
+骑士头盔,騎士頭盔,Knight Helmet,騎士の兜,기사 헬멧
+骑士护手,騎士護手,Knight Bracers,騎士の小手,기사 장갑
+骑士靴,騎士靴,Knight Boots,騎士靴,기사 부츠
+破空斧,破空斧,Broken Empty Axe,空を突く斧,돌파 도끼
+破空重甲,破空重甲,Broken Empty Heavy Armor,エアバッグ,돌파 아머
+破空短裤,破空短褲,Broken Empty Shorts,破れパンツ,돌파 반바지
+破空头盔,破空頭盔,Broken Empty Helmet,空のかぶと,돌파 헬멧
+破空护手,破空護手,Broken Empty Bracers,空の守り手,돌파 장갑
+破空靴,破空靴,Broken Empty Boots,破れ靴,돌파 부츠
+王者之枪,王者之槍,King Spear,王者の槍,왕의 창
+王者战甲,王者戰甲,King Armor,王者戦甲,왕의  갑주
+王者之裤,王者之褲,King Pants,王者のズボン,왕의 반바지
+王者头盔,王者頭盔,King Helmet,王者ヘルメット,왕의 헬멧
+王者护手,王者護手,King Bracers,王者の護手,왕의 장갑
+王者靴,王者靴,King Boots,王者の靴,왕의 부츠
+胜利长枪,勝利長槍,Victory Spear,勝利の槍,승리의 창
+胜利战甲,勝利戰甲,Victory Armor,勝利戦甲,승리 아머
+胜利短裤,勝利短褲,Victory Shorts,ビクトリーパンツ,승리 반바지
+胜利头盔,勝利頭盔,Victory Helmet,勝利の兜,승리 헬멧
+胜利护手,勝利護手,Victory Bracers,勝利のハンドガード,승리 장갑
+胜利靴,勝利靴,Victory Boots,勝利ブーツ,승리 부츠
+雷霆长枪,雷霆長槍,Thunder Spear,雷の槍,천둥의 창
+雷霆战甲,雷霆戰甲,Thunder Armor,雷戦甲,천둥 아머
+雷霆短裤,雷霆短褲,Thunder Shorts,サンダーパンツ,천둥 반바지
+雷霆头盔,雷霆頭盔,Thunder Helmet,サンダーヘルメット,천둥 헬멧
+雷霆护手,雷霆護手,Thunder Bracers,サンダーガード,천둥 장갑
+雷霆靴,雷霆靴,Thunder Boots,サンダーブーツ,천둥 부츠
+曜日大剑,曜日大劍,Sunshine Spear,日光の大剣,태양 대검
+曜日重甲,曜日重甲,Sunshine Armor,日光甲冑,태양 아머
+曜日短裤,曜日短褲,Sunshine Shorts,日光パンツ,태양 반바지
+曜日头盔,曜日頭盔,Sunshine Helmet,日光ヘルメット,태양 헬멧
+曜日之力,曜日之力,Sunshine Bracers,日光の力,태양의 힘
+曜日靴,曜日靴,Sunshine Boots,日光靴,태양 활
+黎明弓,黎明弓,Daybreak Bow,黎明弓,여명 궁
+黎明战甲,黎明戰甲,Daybreak Armor,黎明戦甲,여명 갑주
+黎明短裤,黎明短褲,Daybreak Shorts,夜明けの半ズボン,여명 반바지
+黎明头盔,黎明頭盔,Daybreak Helmet,夜明けのヘルメット,여명 헬멧
+黎明之力,黎明之力,Power Of The Daybreak,夜明けの力,여명의 힘
+黎明靴,黎明靴,Daybreak Boots,夜明けのブーツ,여명 부츠
+战神长矛,戰神長矛,Ares Spear,戦の神の槍,아레스 장창
+战神战甲,戰神戰甲,Ares Armor,戦神戦甲,아레스 아머
+战神短裤,戰神短褲,Ares Shorts,ゴッド・オブ・ウォー,아레스 반바지
+战神头盔,戰神頭盔,Ares Helmet,アレスのヘルメット,아레스 헬멧
+战神之力,戰神之力,Power Of Ares,戦神の力,아레스의 힘
+战神靴,戰神靴,Ares Boots,戦神ブーツ,아레스 부츠
+命运之斧,命運之斧,Fate Axe,運命の斧,운명의 도끼
+命运战甲,命運戰甲,Fate Armor,運命戦甲,운명 아머
+命运之裤,命運之褲,Fate Pants,運命のズボン,운명 반바지
+命运头盔,命運頭盔,Fate Helmet,運命の兜,운명 헬멧
+命运护手,命運護手,Fate Bracers,運命のハンドガード,운명 손길
+命运长靴,命運長靴,Fate Boots,運命の長靴,운명 부츠
+贤者之诗,賢者之詩,Poetry Of Sages,賢者の詩,현자의 시
+冲锋甲,沖鋒甲,Charge Armour,突撃甲,돌격아머
+冲锋短裤,沖鋒短褲,Charge Shorts,ショートパンツ,돌격 반바지
+十字盔,十字盔,Cross Helmet,十字ヘルメット,십자형 헬멧
+贤者护手,賢者護手,Sage Bracers,賢者の護手,현자 장갑
+冲锋靴,沖鋒靴,Charge Boots,突撃ブーツ,돌격 부츠
+巨人斧,巨人斧,Giant Axe,巨人斧,자이언트 도끼
+巨人战甲,巨人戰甲,Giant Armor,巨人戦甲,자이언트 아머
+巨人短裤,巨人短褲,Giant Shorts,巨人のパンツ,자이언트 반바지
+百战盔,百戰盔,Hundred Battle Helmet,よろいかぶと,베테랑 헬멧
+百战护手,百戰護手,Hundred Battle Guard,百戦の小手,베테랑 장갑
+急行靴,急行靴,Walking Boots,急行ブーツ,긴급 부츠
+夜之剑,夜之劍,Night'S Sword,夜の剣,밤의 검
+昼之袍,晝之袍,Day's Robe,昼のローブ,낮의 옷
+狂热短裤,狂熱短褲,Fanatical Shorts,ホットパンツ,열광 반바지
+昼之盔,晝之盔,Day's Helmet,昼のかぶと,낮의 헬멧
+狂热护手,狂熱護手,Fanatical Bracers,熱狂的なサポーター,열광 장갑
+夜之靴,夜之靴,Night's Boots,夜の靴,밤의 부츠
+流光剑,流光劍,Light Sword,流光の剣,유광검
+冥渊甲,冥淵甲,Abyss Armor,冥淵甲,명계 아머
+冥渊裤,冥淵褲,Abyss Pants,冥淵のズボン,명계 반바지
+流光盔,流光盔,Streamer Helmet,流光かぶと,유광 헬멧
+冷静护手,冷靜護手,Cool Bracers,冷静に手を守る,냉정 장갑
+冷静靴,冷靜靴,Cool Boots,落ち着いた靴,냉정 부츠
+永恒魔戒,永恒魔戒,Eternal Ring,永遠の魔戒,영원한 마법반지
+战争史,戰爭史,War History,戦争史,전쟁사
+月神桂冠,月神桂冠,Luna Crown,月桂冠,월계관
+万象史诗,萬象史詩,Vientiane Epic,万象のエピック,만상 서사시
+龙骨项链,龍骨項鏈,Keel Necklace,竜骨のネックレス,드래곤본 목걸이
+魔灵号角,魔靈號角,Magic Bugle,魔霊ラッパ,악마의 뿔피리
+魔晶石,魔晶石,Magic Spar,魔晶石,마 결정
+失落圣袍,失落聖袍,Lost Robe,聖衣を落とす,실낙원 성의
+光翼短剑,光翼短劍,Light Winged Dagger,光翼短剣,빛 날개 단검
+暗影匕首,暗影匕首,Shadow Dagger,影のナイフ,그림자 단검
+魔女契章,魔女契章,Witch's Contract,魔女の契章,마녀 도장
+神盾,神盾,Aegis,神の盾,신의 방패
+圣水,聖水,Holy Water,聖水,성수
+无尽圣杯,無盡聖杯,Endless Holy Grail,無限聖杯,무한 성배
+勇气凭证,勇氣憑證,Courage Voucher,勇気の証,용기의 자격증
+知识之书,知識之書,Book Of Knowledge,知識の書,지식의 책
+皮肤券,皮膚券,Skin Scroll,皮膚巻,스킨권
+皮肤卷,皮膚卷,Skin Scroll,皮膚巻,스킨권
+召唤卷,召喚卷,Summon Scroll,召喚卷,소환권
+英雄召唤卷,英雄召喚卷,Hero Summon Scroll,ヒーロー召喚巻,영웅 소환권
+圣物召唤卷,聖物召喚卷,Relic Summon Scroll,聖物召喚巻,성물 소환권
+圣物,聖物,Relic,聖物,성물
+自选英雄,自選英雄,Optional Hero,自選ヒーロー,선택 가능 영웅
+自选专属装备,自選專屬裝備,Optional Exclusive Equipment,自選専用装備,선택 가능 전용 장비
+丰收权杖,豐收權杖,Harvest Scepter,豊穣の杖,풍요의 홀
+智慧权杖,智慧權杖,Wisdom Scepter,知恵の杖,지혜의 홀
+黄金指环,黃金指環,Golden Ring,黄金の指輪,황금 반지
+铁匠指环,鐵匠指環,Blacksmith's Ring,鍛冶の指輪,대장장이 반지
+集结旗帜,集結旗幟,Rally Banner,集結の旗,집결 깃발
+神圣旗帜,神聖旗幟,Holy Banner,神聖の旗,성스러운 깃발
+战争权杖,戰爭權杖,War Scepter,戦争の杖,전쟁의 홀
+勇气权杖,勇氣權杖,Courage Scepter,勇気の杖,용기의 홀
+光明耳坠,光明耳墜,Light Earring,光明のイヤリング,빛의 귀걸이
+黑暗耳坠,黑暗耳墜,Dark Earring,暗黒のイヤリング,어둠의 귀걸이
+光荣旗帜,光榮旗幟,Glory Banner,栄光の旗,영광의 깃발
+疾风旗帜,疾風旗幟,Gale Banner,疾風の旗,질풍의 깃발
+领主银币,領主銀幣,Lord Silver Coins,領主銀貨,영주 은화
+传奇建造师,傳奇建造師,Legendary Builder,伝説の建築家,전설의 건축가
+传奇科学家,傳奇科學家,Legendary Scientist,伝説の科学者,전설의 과학자
+传奇英雄,傳奇英雄,Legendary Hero,伝説のヒーロー,전설의 영웅
+传奇领主,傳奇領主,Legendary Lord,伝説の領主,전설의 영주
+传奇冒险家,傳奇冒險家,Legendary Adventurer,伝説の冒険家,전설의 모험가
+传奇导师,傳奇導師,Legendary Mentor,伝説の指導者,전설의 멘토
+天下无双,天下無雙,Peerless,天下無双,천하무적
+热心市民,熱心市民,Hospitable Citizen,熱心な市民,열정 시민
+老玩家,老玩家,Veteran Player,ベテランプレイヤー,오래된 유저
+宝鉴收藏家,寶鑑收藏家,Collection Codex,図鑑コレクター,보감 수집가
+开拓者,開拓者,Pioneer,開拓者,개척자
+召唤师,召喚師,Summoner,召喚師,소환사
+魔法师,魔法師,Mage,魔法師,마법사
+蓝色妖姬,藍色妖姬,Blue Rose,ブルーローズ,블루 로즈
+桃花,桃花,Peach Blossom,とうか,복숭아꽃
+鲜血伯爵,鮮血伯爵,Blood Count,ブラッド伯爵,피의 백작
+狼少女,狼少女,Wolf Girl,狼少女,늑대 소녀
+钢铁之心,鋼鐵之心,Heart Of Steel,鋼の心,강철의 마음
+夜色,夜色,Nightfall,夜色,야경
+彼岸花,彼岸花,Higanbana,彼岸花,피안화
+森林轻语,森林輕語,Forest Whispers,森のささやき,숲의 속삭임
+初雪,初雪,First Snow,初雪,첫눈
+骨龙,骨龍,Bone Dragon,骨竜,뼈 드래곤
+圣诞,聖誕,Christmas,クリスマス,크리스마스
+赤鬼,赤鬼,Red Oni,赤鬼,붉은 도깨비
+小熊少女,小熊少女,Little Bear Girl,くま少女,곰 소녀
+电竞少女,電競少女,Esports Girl,eスポーツ少女,e스포츠 소녀
+蓝龙,藍龍,Blue Dragon,せいりゅう,푸른 용
+神魔血,神魔血,Divine Demon Blood,神魔の血,신과 마의 피
+遗迹之证,遺跡之證,Relic Certificate,遺跡証,유적의 증표
+裁缝证书,裁縫證書,Tailor Certificate,裁縫師証書,재봉사 자격증
+工匠证书,工匠證書,Craftsman Certificate,工匠証書,장인 자격증
+药剂师证书,藥劑師證書,Pharmacist Certificate,薬剤師証書,약제사 자격증
+药剂配方,藥劑配方,Potion Formula,ポーションレシピ,물약 레시피
+体力药剂,體力藥劑,Vit Potion,体力ポーション,체력 약제
+攻击药剂,攻擊藥劑,ATK Potion,攻擊ポーション,공격 물약
+防御药剂,防禦藥劑,DEF Potion,防禦ポーション,방어 물약
+破坏药剂,破壞藥劑,DES Potion,破壞ポーション,파괴 물약
+强壮药剂,强壯藥劑,Strong Potion,强壯ポーション,강화 물약
+迅捷药剂,迅捷藥劑,Agility Potion,迅捷ポーション,민첩 물약
+力量药剂,力量藥劑,Power Potion,力量ポーション,힘의 물약
+耐力药剂,耐力藥劑,Stamina Potion,耐久ポーション,지구력 물약
+狂暴药剂,狂暴藥劑,Berserk Potion,狂暴ポーション,광폭 물약
+战斗药剂,戰鬥藥劑,Combat Potion,戰闘ポーション,전투 물약
+固守药剂,固守藥劑,Persistence Potion,固守ポーション,수호 물약
+丰收石碑,豐收石碑,Harvest Stele,収穫石碑,수확 석비
+秘纹石碑,秘紋石碑,Sigil Stele,秘纹石碑,인장 석비
+初心者,初心者,Beginner,初心者,초심자
+侍者,侍者,Attendant,ウェイター,웨이터
+喵喵玩趣,喵喵玩趣,Meow Fun,ニャー楽しい,야옹 재미
+荣耀统治,榮耀統治,Reign Glory,栄光の統治,영광이 지배
+冰雪绒球,冰雪絨球,Snow Pompom,スノーポンポン,스노우 폼폼
+铁血霸主,鐵血霸主,Iron Overlord,鉄血の覇者,철혈의 군주
+仙侣奇缘,仙侶奇緣,Afairy couple,妖精ロマンス,요정 커플
+夜幕怪盗,夜幕怪盜,Night Thief,夜の怪盗,밤의 괴도
+都市先锋,都市先鋒,Urban Pioneer,都市の開拓者,도시 개척자
+玫瑰之刃,玫瑰之刃,Rose Blade,ローズブレード,로즈 블레이드
+璀璨明星,璀璨明星,Brilliant Star,輝くアカボシ,빛나는 별
+深蓝之歌,深藍之歌,Deep Blue Song,ブルーソング,딥 블루 송
+法老传说,法老傳說,Pharaoh Legend,ファラオの伝説,파라오 전설
+黑夜魅影,黑夜魅影,Dark Phantom,夜のファントム,밤의 유령
+奥术使者,奧術使者,Arcane Bringer,秘術の使者,비전의 전령
+月下猎影,月下獵影,Moonlit Hunter,月で影を狩,달빛 사냥꾼
+惊涛掠夺者,驚濤掠奪者,Tide Reaver,荒波の略奪者,파도 약탈자
+不朽神话,不朽神話,Immortal Myth,不滅の神話,불멸의 신화
+深渊王者,深淵王者,Abyss King,深淵の王者,심연의 왕의
+表情券,表情券,Emoji Scroll,表情巻,표정권
+表情,表情,Emoji,表情,표정
+开心,開心,Happy,嬉しい,기뻐
+委屈,委屈,Wronged,悔しい,억울해
+恐吓,恐嚇,Skull,脅す,협박
+阅读,閲讀,Read,読書,독서
+不满,不滿,Gripe,不満,불만
+尴尬,尷尬,Awkward,気まずい,어색해
+爆笑,爆笑,Laugh,爆笑,폭소
+害羞,害羞,Shy,恥ずかしい,부끄러워
+冲击,衝擊,Shock,衝撃,충격
+憧憬,憧憬,Yearning,憧れ,동경
+疑问,疑問,Doubt,疑問,의문
+生气,生氣,Angry,怒る,화나
+抹泪,抹淚,Wipe Tears,涙を拭,눈물을닦다
+无语,無語,Speechless,無言,어이없다
+得意,得意,Proud,得意,뿌듯해
+探头,探頭,Peek,覗,엿보다
+发财,發財,Get Rich,金持ちになる,부자가되다
+兑换券,兌換券,Exchange Scroll,両替券,교환권
+表情券,表情券,Emoji Scroll,表情卷,표정권
+时尚券,時尚券,Fashion Scroll,人気卷,패션권
+召唤券,召喚券,Summon Scroll,召喚卷,소환권
+英雄召唤券,英雄召喚券,Hero Summon Scroll,ヒーロー召喚卷,영웅 소환권
+圣物召唤券,聖物召喚券,Relic Summon Scroll,聖物召喚卷,성물 소환권
+抽奖券,抽獎券,Lottery Scroll,抽選卷,추첨권
+幸运晶石,幸運晶石,Lucky Crystal,ラッキースパー,럭키 크리스탈
+幸运盲盒,幸運盲盒,Lucky Mystery Box,ラッキー盲箱,럭키 블라인드 박스
+宝藏钥匙,寶藏鑰匙,Treasure Key,宝の鍵,보물 열쇠
+精灵游侠,精靈遊俠,Elf Ranger,エルフの騎士,엘프 레인저
+秋日暖阳,秋日暖陽,Autumn Sun,秋の日差し,가을 햇살
+牛仔绮想,牛仔綺想,Cowboy Fantasy,カウボーイ幻想,카우보이 환상
+森林萌兔,森林萌兔,Forest Bunny,森のウサギ,포레스트 버니
+奇妙呱呱,奇妙呱呱,Bulbasaur,フシギダネ,불바사우르
+牛仔萌猫,牛仔萌貓,Cowboy Cat,カウボーイ猫,카우보 고양이
+贝彩珠光,貝彩珠光,Shell Parl,真珠貝の輝き,진주빛 광택
+水墨氤氲,水墨氤氳,Inky Mist,水墨の滲み,수묵 번짐
+潮玩涂鸦,潮玩塗鴉,Trendy Graffiti,落書き,스트릿 팝
+鎏金绮梦,鎏金綺夢,Gilded Fantasy,黄金の夢,황금빛 꿈
+青芜梦呓,青蕪夢囈,Verdant Whisper,緑の囁き,푸른 속삭임
+雪绒绮遇,雪絨綺遇,Muppet Encounter,雪綿の邂逅,눈송이 만남
+樱町甜话,櫻町甜話,Sakura Sweet,桜町の甘い話,달콤한 벚꽃
+汪汪团子,汪汪糰子,Waggy Dango,わんわん団子,멍멍 경단
+夏日曼波,夏日曼波,Summer Mambo,夏のマンボ,여름 맘보
+侠客风云,俠客風雲,Swordsman,侠客の風雲,협객의 바람
+糖果甜心,糖果甜心,Candy Honey,かわいいあめ,사탕 달링
+霜晶战影,霜晶戰影,Crystal Warrior,霜の戦影,서릿전 영상
+深海鲛歌,深海鮫歌,Abyssal Siren,深海の人魚歌,심해 인어
+漠北鸣沙,漠北鳴沙,Desert Echo,砂漠の鳴き砂,모베이 밍샤
+暗夜天使,暗夜天使,Dark Angel,闇夜の天使,밤의 천사
+冕纱之恋,冕紗之戀,Crown Romance,冠紗の恋,면면의 사랑
+星穹誓章,星穹誓章,Stellar Covenant,星空誓い章,별빛 서약장
+青焰式神,青焰式神,Azure Shikigami,青い炎式神,푸른 불꽃 식신
+春日信笺,春日信箋,Spring Letter,春の手紙,봄날의 편지
+琉璃誓约,琉璃誓約,Glaze Oath,琉璃の誓約,유리 서약
+繁花绽放,繁花綻放,Full Bloom,花咲き爛漫,화사한 꽃빛
+彩云之梦,彩雲之夢,Dreamy Clouds,彩雲の夢,채운의 꿈
+荷塘月色,荷塘月色,Moonlit Lotus,蓮池月夜,연못 달빛
+细雨绵绵,細雨綿綿,Drizzling Rain,綿雨,이슬비
+花蔓之灵,花蔓之靈,Vine Elf,蔓綺語り,덩굴 정령
+冬日雪场,冬日雪場,Winter Snowfield,冬の雪原,겨울 설원
+阳光之韵,陽光之韻,Sunshine Melody,陽光の調,햇살의 선율
+雪境狐语,雪境狐語,Snow Fox,雪境の狐言,설호
+花野野餐,花野野餐,Blossom Picnic,花ピクニック,꽃밬 피크닉
+美丽童话,美麗童話,Fantasia,美しい童話,꿈동화
+圣诞颂歌,聖誕頌歌,Christmas Carol,聖夜の讃歌,성탄노래
+元气探险,元氣探險,Energy Adventure,元気探検,원기 탐험
+熊猫竹韵,熊貓竹韻,Panda Bamboo,パンダ竹林,대숲 팬더
+血月骑士,血月騎士,Blood Moon Knight,血月ナイト,혈월 기사
+恶魔有约,惡魔契約,Demon's Rendezvous,悪魔の契り,악마의 만남
+银夜执事,銀夜執事,Silver Night Butler,銀夜の執事,은밤 집사
+提灯夜巡,提燈夜巡,Lantern Night Watch,灯り夜巡り,등불 야순
+万圣之夜,萬聖之夜,Halloween Night,ハロウィンナイト,할로윈 나이트
+漠境琼华,漠境瓊華,Desert Bloom,砂漠の華,사막의 보석
+大演奏家,大演奏家,Virtuoso,大演奏家,거장
+玫纱丝影,玫紗絲影,Rose Veil Shadow,ローズヴェール,로즈 베일
+幽蝶入梦,幽蝶入夢,Dreamthread Butterfly,夢幻蝶,꿈 속 나비
+迷雾森林,迷霧森林,Misty Forest,霧の森,안개 숲
+墨海晶纹,墨海晶紋,Crystal Ink,墨海の晶紋,먹바다 수정결
+烬焰荒花,燼焰荒花,Ember Blossom,焔の華,잿불 꽃
+妖莲华卷,妖蓮華卷,Cursed Lotus Scroll,妖しき蓮の巻,요염한 연화 두루마리
+红纱缀金,紅紗綴金,Gilded Red Veil,金飾りの赤紗,금장식 붉은 면사포
+淡绫清姿,淡綾清姿,Grace in Silk,淡き綾の姿,담비단의 아름다움
+南诏蛊心,南詔蠱心,Nanzhao’s Charm,南詔の呪心,남조의 매혹
+藏地密码,藏地密碼,Tibet’s Cipher,チベット暗号,티베트 암호
+翠翎锦容,翠翎錦容,Jade Feather Beauty,翡翠の羽衣,비취 깃털의 화사함
+醉生梦死,醉生夢死,Live in a Dream,夢現の人生,취한 삶 꿈 같은 죽음
+囚境,囚境,Captive Realm,囚われの境地,감금된 경지
+盘中餐,盤中餐,A Mere Meal,ただの食事,접시 위의 식사
+万事如意,萬事如意,All the best,萬事如意,모든 일이 뜻대로
+秘银锭,秘銀錠,Mithril Ingot,秘銀錠です,미스릴 주괴
+雷击木,雷擊木,Thunderwood,雷撃木,뇌격목
+船体,船體,Hull,船体,선체
+桅杆,桅杆,Mast,マスト,돛대
+船帆,船帆,Sail,帆,돛
+船首雕像,船首雕像,Bow Statue,船首像,이물 조각상
+船尾雕像,船尾雕像,Stern Statue,船尾像,고물 조각상
+货架,貨架,Cargo Rack,貨物棚,화물 선반
+船舶图纸包,船舶圖紙包,Ship Drawings Pack,船舶図面パック,선박 도면집
+船舵,船舵,Rudder,舵,타판
+货船,貨船,Freighter,貨物船,화물선
+船舶图纸,船舶圖紙,Ship Drawings,船舶図面,선박 도면
+童话祈想,童話祈想,Fairy Tale Wish,童話の祈想,동화 기상
+航海日志,航海日誌,Nautical Log,航海日誌,항해 일지
+千面奇遇,千面奇遇,Thousand Faces,千顔の冒険,천면기우

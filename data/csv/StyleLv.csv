@@ -1,0 +1,615 @@
+﻿StyleLv,NeedVal,Effects,Des,Power,Des_en
+1,20,1_0.006+201_0.006,"{主城所有资源产量} +0.6%
+{主城金币产量} +0.6%",2200,"City All Resource Output +0.6%
+City Gold Output +0.6%"
+2,20,1_0.012+201_0.012,"{主城所有资源产量} +1.2%
+{主城金币产量} +1.2%",4554,"City All Resource Output +1.2%
+City Gold Output +1.2%"
+3,40,1_0.018+201_0.018,"{主城所有资源产量} +1.8%
+{主城金币产量} +1.8%",7062,"City All Resource Output +1.8%
+City Gold Output +1.8%"
+4,40,1_0.024+201_0.024,"{主城所有资源产量} +2.4%
+{主城金币产量} +2.4%",9724,"City All Resource Output +2.4%
+City Gold Output +2.4%"
+5,40,1_0.03+201_0.03+28_0.02+30_0.02,"{主城所有资源产量} +3%
+{主城金币产量} +3%
+{所有士兵} {生命} +2%
+{所有士兵} {行军速度} +2%",35340,"City All Resource Output +3%
+City Gold Output +3%
+All Soldiers HP +2%
+All Soldiers March Spd +2%"
+6,60,1_0.036+201_0.036+28_0.02+30_0.02,"{主城所有资源产量} +3.6%
+{主城金币产量} +3.6%
+{所有士兵} {生命} +2%
+{所有士兵} {行军速度} +2%",39010,"City All Resource Output +3.6%
+City Gold Output +3.6%
+All Soldiers HP +2%
+All Soldiers March Spd +2%"
+7,60,1_0.042+201_0.042+28_0.02+30_0.02,"{主城所有资源产量} +4.2%
+{主城金币产量} +4.2%
+{所有士兵} {生命} +2%
+{所有士兵} {行军速度} +2%",42834,"City All Resource Output +4.2%
+City Gold Output +4.2%
+All Soldiers HP +2%
+All Soldiers March Spd +2%"
+8,60,1_0.048+201_0.048+28_0.02+30_0.02,"{主城所有资源产量} +4.8%
+{主城金币产量} +4.8%
+{所有士兵} {生命} +2%
+{所有士兵} {行军速度} +2%",46812,"City All Resource Output +4.8%
+City Gold Output +4.8%
+All Soldiers HP +2%
+All Soldiers March Spd +2%"
+9,60,1_0.054+201_0.054+28_0.02+30_0.02,"{主城所有资源产量} +5.4%
+{主城金币产量} +5.4%
+{所有士兵} {生命} +2%
+{所有士兵} {行军速度} +2%",50944,"City All Resource Output +5.4%
+City Gold Output +5.4%
+All Soldiers HP +2%
+All Soldiers March Spd +2%"
+10,60,1_0.06+201_0.06+28_0.04+30_0.04,"{主城所有资源产量} +6%
+{主城金币产量} +6%
+{所有士兵} {生命} +4%
+{所有士兵} {行军速度} +4%",81530,"City All Resource Output +6%
+City Gold Output +6%
+All Soldiers HP +4%
+All Soldiers March Spd +4%"
+11,80,1_0.066+201_0.066+28_0.04+30_0.04,"{主城所有资源产量} +6.6%
+{主城金币产量} +6.6%
+{所有士兵} {生命} +4%
+{所有士兵} {行军速度} +4%",86670,"City All Resource Output +6.6%
+City Gold Output +6.6%
+All Soldiers HP +4%
+All Soldiers March Spd +4%"
+12,80,1_0.072+201_0.072+28_0.04+30_0.04,"{主城所有资源产量} +7.2%
+{主城金币产量} +7.2%
+{所有士兵} {生命} +4%
+{所有士兵} {行军速度} +4%",91964,"City All Resource Output +7.2%
+City Gold Output +7.2%
+All Soldiers HP +4%
+All Soldiers March Spd +4%"
+13,80,1_0.078+201_0.078+28_0.04+30_0.04,"{主城所有资源产量} +7.8%
+{主城金币产量} +7.8%
+{所有士兵} {生命} +4%
+{所有士兵} {行军速度} +4%",97412,"City All Resource Output +7.8%
+City Gold Output +7.8%
+All Soldiers HP +4%
+All Soldiers March Spd +4%"
+14,80,1_0.084+201_0.084+28_0.04+30_0.04,"{主城所有资源产量} +8.4%
+{主城金币产量} +8.4%
+{所有士兵} {生命} +4%
+{所有士兵} {行军速度} +4%",103014,"City All Resource Output +8.4%
+City Gold Output +8.4%
+All Soldiers HP +4%
+All Soldiers March Spd +4%"
+15,80,1_0.09+201_0.09+28_0.06+30_0.06,"{主城所有资源产量} +9%
+{主城金币产量} +9%
+{所有士兵} {生命} +6%
+{所有士兵} {行军速度} +6%",138570,"City All Resource Output +9%
+City Gold Output +9%
+All Soldiers HP +6%
+All Soldiers March Spd +6%"
+16,100,1_0.096+201_0.096+28_0.06+30_0.06,"{主城所有资源产量} +9.6%
+{主城金币产量} +9.6%
+{所有士兵} {生命} +6%
+{所有士兵} {行军速度} +6%",145180,"City All Resource Output +9.6%
+City Gold Output +9.6%
+All Soldiers HP +6%
+All Soldiers March Spd +6%"
+17,100,1_0.102+201_0.102+28_0.06+30_0.06,"{主城所有资源产量} +10.2%
+{主城金币产量} +10.2%
+{所有士兵} {生命} +6%
+{所有士兵} {行军速度} +6%",151944,"City All Resource Output +10.2%
+City Gold Output +10.2%
+All Soldiers HP +6%
+All Soldiers March Spd +6%"
+18,100,1_0.108+201_0.108+28_0.06+30_0.06,"{主城所有资源产量} +10.8%
+{主城金币产量} +10.8%
+{所有士兵} {生命} +6%
+{所有士兵} {行军速度} +6%",158862,"City All Resource Output +10.8%
+City Gold Output +10.8%
+All Soldiers HP +6%
+All Soldiers March Spd +6%"
+19,100,1_0.114+201_0.114+28_0.06+30_0.06,"{主城所有资源产量} +11.4%
+{主城金币产量} +11.4%
+{所有士兵} {生命} +6%
+{所有士兵} {行军速度} +6%",165934,"City All Resource Output +11.4%
+City Gold Output +11.4%
+All Soldiers HP +6%
+All Soldiers March Spd +6%"
+20,100,1_0.12+201_0.12+28_0.08+30_0.08,"{主城所有资源产量} +12%
+{主城金币产量} +12%
+{所有士兵} {生命} +8%
+{所有士兵} {行军速度} +8%",206460,"City All Resource Output +12%
+City Gold Output +12%
+All Soldiers HP +8%
+All Soldiers March Spd +8%"
+21,120,1_0.126+201_0.126+28_0.08+30_0.08,"{主城所有资源产量} +12.6%
+{主城金币产量} +12.6%
+{所有士兵} {生命} +8%
+{所有士兵} {行军速度} +8%",214540,"City All Resource Output +12.6%
+City Gold Output +12.6%
+All Soldiers HP +8%
+All Soldiers March Spd +8%"
+22,120,1_0.132+201_0.132+28_0.08+30_0.08,"{主城所有资源产量} +13.2%
+{主城金币产量} +13.2%
+{所有士兵} {生命} +8%
+{所有士兵} {行军速度} +8%",222774,"City All Resource Output +13.2%
+City Gold Output +13.2%
+All Soldiers HP +8%
+All Soldiers March Spd +8%"
+23,120,1_0.138+201_0.138+28_0.08+30_0.08,"{主城所有资源产量} +13.8%
+{主城金币产量} +13.8%
+{所有士兵} {生命} +8%
+{所有士兵} {行军速度} +8%",231162,"City All Resource Output +13.8%
+City Gold Output +13.8%
+All Soldiers HP +8%
+All Soldiers March Spd +8%"
+24,120,1_0.144+201_0.144+28_0.08+30_0.08,"{主城所有资源产量} +14.4%
+{主城金币产量} +14.4%
+{所有士兵} {生命} +8%
+{所有士兵} {行军速度} +8%",239704,"City All Resource Output +14.4%
+City Gold Output +14.4%
+All Soldiers HP +8%
+All Soldiers March Spd +8%"
+25,120,1_0.15+201_0.15+28_0.1+30_0.1,"{主城所有资源产量} +15%
+{主城金币产量} +15%
+{所有士兵} {生命} +10%
+{所有士兵} {行军速度} +10%",285200,"City All Resource Output +15%
+City Gold Output +15%
+All Soldiers HP +10%
+All Soldiers March Spd +10%"
+26,140,1_0.156+201_0.156+28_0.1+30_0.1,"{主城所有资源产量} +15.6%
+{主城金币产量} +15.6%
+{所有士兵} {生命} +10%
+{所有士兵} {行军速度} +10%",294750,"City All Resource Output +15.6%
+City Gold Output +15.6%
+All Soldiers HP +10%
+All Soldiers March Spd +10%"
+27,140,1_0.162+201_0.162+28_0.1+30_0.1,"{主城所有资源产量} +16.2%
+{主城金币产量} +16.2%
+{所有士兵} {生命} +10%
+{所有士兵} {行军速度} +10%",304454,"City All Resource Output +16.2%
+City Gold Output +16.2%
+All Soldiers HP +10%
+All Soldiers March Spd +10%"
+28,140,1_0.168+201_0.168+28_0.1+30_0.1,"{主城所有资源产量} +16.8%
+{主城金币产量} +16.8%
+{所有士兵} {生命} +10%
+{所有士兵} {行军速度} +10%",314312,"City All Resource Output +16.8%
+City Gold Output +16.8%
+All Soldiers HP +10%
+All Soldiers March Spd +10%"
+29,140,1_0.174+201_0.174+28_0.1+30_0.1,"{主城所有资源产量} +17.4%
+{主城金币产量} +17.4%
+{所有士兵} {生命} +10%
+{所有士兵} {行军速度} +10%",324324,"City All Resource Output +17.4%
+City Gold Output +17.4%
+All Soldiers HP +10%
+All Soldiers March Spd +10%"
+30,140,1_0.18+201_0.18+28_0.12+30_0.12,"{主城所有资源产量} +18%
+{主城金币产量} +18%
+{所有士兵} {生命} +12%
+{所有士兵} {行军速度} +12%",374790,"City All Resource Output +18%
+City Gold Output +18%
+All Soldiers HP +12%
+All Soldiers March Spd +12%"
+31,160,1_0.186+201_0.186+28_0.12+30_0.12,"{主城所有资源产量} +18.6%
+{主城金币产量} +18.6%
+{所有士兵} {生命} +12%
+{所有士兵} {行军速度} +12%",385810,"City All Resource Output +18.6%
+City Gold Output +18.6%
+All Soldiers HP +12%
+All Soldiers March Spd +12%"
+32,160,1_0.192+201_0.192+28_0.12+30_0.12,"{主城所有资源产量} +19.2%
+{主城金币产量} +19.2%
+{所有士兵} {生命} +12%
+{所有士兵} {行军速度} +12%",396984,"City All Resource Output +19.2%
+City Gold Output +19.2%
+All Soldiers HP +12%
+All Soldiers March Spd +12%"
+33,160,1_0.198+201_0.198+28_0.12+30_0.12,"{主城所有资源产量} +19.8%
+{主城金币产量} +19.8%
+{所有士兵} {生命} +12%
+{所有士兵} {行军速度} +12%",408312,"City All Resource Output +19.8%
+City Gold Output +19.8%
+All Soldiers HP +12%
+All Soldiers March Spd +12%"
+34,160,1_0.204+201_0.204+28_0.12+30_0.12,"{主城所有资源产量} +20.4%
+{主城金币产量} +20.4%
+{所有士兵} {生命} +12%
+{所有士兵} {行军速度} +12%",419794,"City All Resource Output +20.4%
+City Gold Output +20.4%
+All Soldiers HP +12%
+All Soldiers March Spd +12%"
+35,160,1_0.21+201_0.21+28_0.14+30_0.14,"{主城所有资源产量} +21%
+{主城金币产量} +21%
+{所有士兵} {生命} +14%
+{所有士兵} {行军速度} +14%",475230,"City All Resource Output +21%
+City Gold Output +21%
+All Soldiers HP +14%
+All Soldiers March Spd +14%"
+36,180,1_0.216+201_0.216+28_0.14+30_0.14,"{主城所有资源产量} +21.6%
+{主城金币产量} +21.6%
+{所有士兵} {生命} +14%
+{所有士兵} {行军速度} +14%",487720,"City All Resource Output +21.6%
+City Gold Output +21.6%
+All Soldiers HP +14%
+All Soldiers March Spd +14%"
+37,180,1_0.222+201_0.222+28_0.14+30_0.14,"{主城所有资源产量} +22.2%
+{主城金币产量} +22.2%
+{所有士兵} {生命} +14%
+{所有士兵} {行军速度} +14%",500364,"City All Resource Output +22.2%
+City Gold Output +22.2%
+All Soldiers HP +14%
+All Soldiers March Spd +14%"
+38,180,1_0.228+201_0.228+28_0.14+30_0.14,"{主城所有资源产量} +22.8%
+{主城金币产量} +22.8%
+{所有士兵} {生命} +14%
+{所有士兵} {行军速度} +14%",513162,"City All Resource Output +22.8%
+City Gold Output +22.8%
+All Soldiers HP +14%
+All Soldiers March Spd +14%"
+39,180,1_0.234+201_0.234+28_0.14+30_0.14,"{主城所有资源产量} +23.4%
+{主城金币产量} +23.4%
+{所有士兵} {生命} +14%
+{所有士兵} {行军速度} +14%",526114,"City All Resource Output +23.4%
+City Gold Output +23.4%
+All Soldiers HP +14%
+All Soldiers March Spd +14%"
+40,180,1_0.24+201_0.24+28_0.16+30_0.16,"{主城所有资源产量} +24%
+{主城金币产量} +24%
+{所有士兵} {生命} +16%
+{所有士兵} {行军速度} +16%",586520,"City All Resource Output +24%
+City Gold Output +24%
+All Soldiers HP +16%
+All Soldiers March Spd +16%"
+41,200,1_0.246+201_0.246+28_0.16+30_0.16,"{主城所有资源产量} +24.6%
+{主城金币产量} +24.6%
+{所有士兵} {生命} +16%
+{所有士兵} {行军速度} +16%",600480,"City All Resource Output +24.6%
+City Gold Output +24.6%
+All Soldiers HP +16%
+All Soldiers March Spd +16%"
+42,200,1_0.252+201_0.252+28_0.16+30_0.16,"{主城所有资源产量} +25.2%
+{主城金币产量} +25.2%
+{所有士兵} {生命} +16%
+{所有士兵} {行军速度} +16%",614594,"City All Resource Output +25.2%
+City Gold Output +25.2%
+All Soldiers HP +16%
+All Soldiers March Spd +16%"
+43,200,1_0.258+201_0.258+28_0.16+30_0.16,"{主城所有资源产量} +25.8%
+{主城金币产量} +25.8%
+{所有士兵} {生命} +16%
+{所有士兵} {行军速度} +16%",628862,"City All Resource Output +25.8%
+City Gold Output +25.8%
+All Soldiers HP +16%
+All Soldiers March Spd +16%"
+44,200,1_0.264+201_0.264+28_0.16+30_0.16,"{主城所有资源产量} +26.4%
+{主城金币产量} +26.4%
+{所有士兵} {生命} +16%
+{所有士兵} {行军速度} +16%",643284,"City All Resource Output +26.4%
+City Gold Output +26.4%
+All Soldiers HP +16%
+All Soldiers March Spd +16%"
+45,200,1_0.27+201_0.27+28_0.18+30_0.18,"{主城所有资源产量} +27%
+{主城金币产量} +27%
+{所有士兵} {生命} +18%
+{所有士兵} {行军速度} +18%",708660,"City All Resource Output +27%
+City Gold Output +27%
+All Soldiers HP +18%
+All Soldiers March Spd +18%"
+46,220,1_0.276+201_0.276+28_0.18+30_0.18,"{主城所有资源产量} +27.6%
+{主城金币产量} +27.6%
+{所有士兵} {生命} +18%
+{所有士兵} {行军速度} +18%",724090,"City All Resource Output +27.6%
+City Gold Output +27.6%
+All Soldiers HP +18%
+All Soldiers March Spd +18%"
+47,220,1_0.282+201_0.282+28_0.18+30_0.18,"{主城所有资源产量} +28.2%
+{主城金币产量} +28.2%
+{所有士兵} {生命} +18%
+{所有士兵} {行军速度} +18%",739674,"City All Resource Output +28.2%
+City Gold Output +28.2%
+All Soldiers HP +18%
+All Soldiers March Spd +18%"
+48,220,1_0.288+201_0.288+28_0.18+30_0.18,"{主城所有资源产量} +28.8%
+{主城金币产量} +28.8%
+{所有士兵} {生命} +18%
+{所有士兵} {行军速度} +18%",755412,"City All Resource Output +28.8%
+City Gold Output +28.8%
+All Soldiers HP +18%
+All Soldiers March Spd +18%"
+49,220,1_0.294+201_0.294+28_0.18+30_0.18,"{主城所有资源产量} +29.4%
+{主城金币产量} +29.4%
+{所有士兵} {生命} +18%
+{所有士兵} {行军速度} +18%",771304,"City All Resource Output +29.4%
+City Gold Output +29.4%
+All Soldiers HP +18%
+All Soldiers March Spd +18%"
+50,220,1_0.3+201_0.3+28_0.2+30_0.2,"{主城所有资源产量} +30%
+{主城金币产量} +30%
+{所有士兵} {生命} +20%
+{所有士兵} {行军速度} +20%",841650,"City All Resource Output +30%
+City Gold Output +30%
+All Soldiers HP +20%
+All Soldiers March Spd +20%"
+51,240,1_0.306+201_0.306+28_0.2+30_0.2,"{主城所有资源产量} +30.6%
+{主城金币产量} +30.6%
+{所有士兵} {生命} +20%
+{所有士兵} {行军速度} +20%",858550,"City All Resource Output +30.6%
+City Gold Output +30.6%
+All Soldiers HP +20%
+All Soldiers March Spd +20%"
+52,240,1_0.312+201_0.312+28_0.2+30_0.2,"{主城所有资源产量} +31.2%
+{主城金币产量} +31.2%
+{所有士兵} {生命} +20%
+{所有士兵} {行军速度} +20%",875604,"City All Resource Output +31.2%
+City Gold Output +31.2%
+All Soldiers HP +20%
+All Soldiers March Spd +20%"
+53,240,1_0.318+201_0.318+28_0.2+30_0.2,"{主城所有资源产量} +31.8%
+{主城金币产量} +31.8%
+{所有士兵} {生命} +20%
+{所有士兵} {行军速度} +20%",892812,"City All Resource Output +31.8%
+City Gold Output +31.8%
+All Soldiers HP +20%
+All Soldiers March Spd +20%"
+54,240,1_0.324+201_0.324+28_0.2+30_0.2,"{主城所有资源产量} +32.4%
+{主城金币产量} +32.4%
+{所有士兵} {生命} +20%
+{所有士兵} {行军速度} +20%",910174,"City All Resource Output +32.4%
+City Gold Output +32.4%
+All Soldiers HP +20%
+All Soldiers March Spd +20%"
+55,240,1_0.33+201_0.33+28_0.22+30_0.22,"{主城所有资源产量} +33%
+{主城金币产量} +33%
+{所有士兵} {生命} +22%
+{所有士兵} {行军速度} +22%",985490,"City All Resource Output +33%
+City Gold Output +33%
+All Soldiers HP +22%
+All Soldiers March Spd +22%"
+56,260,1_0.336+201_0.336+28_0.22+30_0.22,"{主城所有资源产量} +33.6%
+{主城金币产量} +33.6%
+{所有士兵} {生命} +22%
+{所有士兵} {行军速度} +22%",1003860,"City All Resource Output +33.6%
+City Gold Output +33.6%
+All Soldiers HP +22%
+All Soldiers March Spd +22%"
+57,260,1_0.342+201_0.342+28_0.22+30_0.22,"{主城所有资源产量} +34.2%
+{主城金币产量} +34.2%
+{所有士兵} {生命} +22%
+{所有士兵} {行军速度} +22%",1022384,"City All Resource Output +34.2%
+City Gold Output +34.2%
+All Soldiers HP +22%
+All Soldiers March Spd +22%"
+58,260,1_0.348+201_0.348+28_0.22+30_0.22,"{主城所有资源产量} +34.8%
+{主城金币产量} +34.8%
+{所有士兵} {生命} +22%
+{所有士兵} {行军速度} +22%",1041062,"City All Resource Output +34.8%
+City Gold Output +34.8%
+All Soldiers HP +22%
+All Soldiers March Spd +22%"
+59,260,1_0.354+201_0.354+28_0.22+30_0.22,"{主城所有资源产量} +35.4%
+{主城金币产量} +35.4%
+{所有士兵} {生命} +22%
+{所有士兵} {行军速度} +22%",1059894,"City All Resource Output +35.4%
+City Gold Output +35.4%
+All Soldiers HP +22%
+All Soldiers March Spd +22%"
+60,260,1_0.36+201_0.36+28_0.24+30_0.24,"{主城所有资源产量} +36%
+{主城金币产量} +36%
+{所有士兵} {生命} +24%
+{所有士兵} {行军速度} +24%",1140180,"City All Resource Output +36%
+City Gold Output +36%
+All Soldiers HP +24%
+All Soldiers March Spd +24%"
+61,280,1_0.366+201_0.366+28_0.24+30_0.24,"{主城所有资源产量} +36.6%
+{主城金币产量} +36.6%
+{所有士兵} {生命} +24%
+{所有士兵} {行军速度} +24%",1162105,"City All Resource Output +36.6%
+City Gold Output +36.6%
+All Soldiers HP +24%
+All Soldiers March Spd +24%"
+62,280,1_0.372+201_0.372+28_0.24+30_0.24,"{主城所有资源产量} +37.2%
+{主城金币产量} +37.2%
+{所有士兵} {生命} +24%
+{所有士兵} {行军速度} +24%",1180391,"City All Resource Output +37.2%
+City Gold Output +37.2%
+All Soldiers HP +24%
+All Soldiers March Spd +24%"
+63,280,1_0.378+201_0.378+28_0.24+30_0.24,"{主城所有资源产量} +37.8%
+{主城金币产量} +37.8%
+{所有士兵} {生命} +24%
+{所有士兵} {行军速度} +24%",1198803,"City All Resource Output +37.8%
+City Gold Output +37.8%
+All Soldiers HP +24%
+All Soldiers March Spd +24%"
+64,280,1_0.384+201_0.384+28_0.24+30_0.24,"{主城所有资源产量} +38.4%
+{主城金币产量} +38.4%
+{所有士兵} {生命} +24%
+{所有士兵} {行军速度} +24%",1217341,"City All Resource Output +38.4%
+City Gold Output +38.4%
+All Soldiers HP +24%
+All Soldiers March Spd +24%"
+65,280,1_0.39+201_0.39+28_0.26+30_0.26,"{主城所有资源产量} +39%
+{主城金币产量} +39%
+{所有士兵} {生命} +26%
+{所有士兵} {行军速度} +26%",1305249,"City All Resource Output +39%
+City Gold Output +39%
+All Soldiers HP +26%
+All Soldiers March Spd +26%"
+66,300,1_0.396+201_0.396+28_0.26+30_0.26,"{主城所有资源产量} +39.6%
+{主城金币产量} +39.6%
+{所有士兵} {生命} +26%
+{所有士兵} {行军速度} +26%",1324739,"City All Resource Output +39.6%
+City Gold Output +39.6%
+All Soldiers HP +26%
+All Soldiers March Spd +26%"
+67,300,1_0.402+201_0.402+28_0.26+30_0.26,"{主城所有资源产量} +40.2%
+{主城金币产量} +40.2%
+{所有士兵} {生命} +26%
+{所有士兵} {行军速度} +26%",1344355,"City All Resource Output +40.2%
+City Gold Output +40.2%
+All Soldiers HP +26%
+All Soldiers March Spd +26%"
+68,300,1_0.408+201_0.408+28_0.26+30_0.26,"{主城所有资源产量} +40.8%
+{主城金币产量} +40.8%
+{所有士兵} {生命} +26%
+{所有士兵} {行军速度} +26%",1364097,"City All Resource Output +40.8%
+City Gold Output +40.8%
+All Soldiers HP +26%
+All Soldiers March Spd +26%"
+69,300,1_0.414+201_0.414+28_0.26+30_0.26,"{主城所有资源产量} +41.4%
+{主城金币产量} +41.4%
+{所有士兵} {生命} +26%
+{所有士兵} {行军速度} +26%",1383965,"City All Resource Output +41.4%
+City Gold Output +41.4%
+All Soldiers HP +26%
+All Soldiers March Spd +26%"
+70,300,1_0.42+201_0.42+28_0.28+30_0.28,"{主城所有资源产量} +42%
+{主城金币产量} +42%
+{所有士兵} {生命} +28%
+{所有士兵} {行军速度} +28%",1476703,"City All Resource Output +42%
+City Gold Output +42%
+All Soldiers HP +28%
+All Soldiers March Spd +28%"
+71,320,1_0.426+201_0.426+28_0.28+30_0.28,"{主城所有资源产量} +42.6%
+{主城金币产量} +42.6%
+{所有士兵} {生命} +28%
+{所有士兵} {行军速度} +28%",1497523,"City All Resource Output +42.6%
+City Gold Output +42.6%
+All Soldiers HP +28%
+All Soldiers March Spd +28%"
+72,320,1_0.432+201_0.432+28_0.28+30_0.28,"{主城所有资源产量} +43.2%
+{主城金币产量} +43.2%
+{所有士兵} {生命} +28%
+{所有士兵} {行军速度} +28%",1518469,"City All Resource Output +43.2%
+City Gold Output +43.2%
+All Soldiers HP +28%
+All Soldiers March Spd +28%"
+73,320,1_0.438+201_0.438+28_0.28+30_0.28,"{主城所有资源产量} +43.8%
+{主城金币产量} +43.8%
+{所有士兵} {生命} +28%
+{所有士兵} {行军速度} +28%",1539541,"City All Resource Output +43.8%
+City Gold Output +43.8%
+All Soldiers HP +28%
+All Soldiers March Spd +28%"
+74,320,1_0.444+201_0.444+28_0.28+30_0.28,"{主城所有资源产量} +44.4%
+{主城金币产量} +44.4%
+{所有士兵} {生命} +28%
+{所有士兵} {行军速度} +28%",1560739,"City All Resource Output +44.4%
+City Gold Output +44.4%
+All Soldiers HP +28%
+All Soldiers March Spd +28%"
+75,320,1_0.45+201_0.45+28_0.3+30_0.3,"{主城所有资源产量} +45%
+{主城金币产量} +45%
+{所有士兵} {生命} +30%
+{所有士兵} {行军速度} +30%",1658307,"City All Resource Output +45%
+City Gold Output +45%
+All Soldiers HP +30%
+All Soldiers March Spd +30%"
+76,340,1_0.456+201_0.456+28_0.3+30_0.3,"{主城所有资源产量} +45.6%
+{主城金币产量} +45.6%
+{所有士兵} {生命} +30%
+{所有士兵} {行军速度} +30%",1680456,"City All Resource Output +45.6%
+City Gold Output +45.6%
+All Soldiers HP +30%
+All Soldiers March Spd +30%"
+77,340,1_0.462+201_0.462+28_0.3+30_0.3,"{主城所有资源产量} +46.2%
+{主城金币产量} +46.2%
+{所有士兵} {生命} +30%
+{所有士兵} {行军速度} +30%",1702732,"City All Resource Output +46.2%
+City Gold Output +46.2%
+All Soldiers HP +30%
+All Soldiers March Spd +30%"
+78,340,1_0.468+201_0.468+28_0.3+30_0.3,"{主城所有资源产量} +46.8%
+{主城金币产量} +46.8%
+{所有士兵} {生命} +30%
+{所有士兵} {行军速度} +30%",1725134,"City All Resource Output +46.8%
+City Gold Output +46.8%
+All Soldiers HP +30%
+All Soldiers March Spd +30%"
+79,340,1_0.474+201_0.474+28_0.3+30_0.3,"{主城所有资源产量} +47.4%
+{主城金币产量} +47.4%
+{所有士兵} {生命} +30%
+{所有士兵} {行军速度} +30%",1747662,"City All Resource Output +47.4%
+City Gold Output +47.4%
+All Soldiers HP +30%
+All Soldiers March Spd +30%"
+80,340,1_0.48+201_0.48+28_0.32+30_0.32,"{主城所有资源产量} +48%
+{主城金币产量} +48%
+{所有士兵} {生命} +32%
+{所有士兵} {行军速度} +32%",1850060,"City All Resource Output +48%
+City Gold Output +48%
+All Soldiers HP +32%
+All Soldiers March Spd +32%"
+81,360,1_0.486+201_0.486+28_0.32+30_0.32,"{主城所有资源产量} +48.6%
+{主城金币产量} +48.6%
+{所有士兵} {生命} +32%
+{所有士兵} {行军速度} +32%",1873540,"City All Resource Output +48.6%
+City Gold Output +48.6%
+All Soldiers HP +32%
+All Soldiers March Spd +32%"
+82,360,1_0.492+201_0.492+28_0.32+30_0.32,"{主城所有资源产量} +49.2%
+{主城金币产量} +49.2%
+{所有士兵} {生命} +32%
+{所有士兵} {行军速度} +32%",1897146,"City All Resource Output +49.2%
+City Gold Output +49.2%
+All Soldiers HP +32%
+All Soldiers March Spd +32%"
+83,360,1_0.498+201_0.498+28_0.32+30_0.32,"{主城所有资源产量} +49.8%
+{主城金币产量} +49.8%
+{所有士兵} {生命} +32%
+{所有士兵} {行军速度} +32%",1920878,"City All Resource Output +49.8%
+City Gold Output +49.8%
+All Soldiers HP +32%
+All Soldiers March Spd +32%"
+84,360,1_0.504+201_0.504+28_0.32+30_0.32,"{主城所有资源产量} +50.4%
+{主城金币产量} +50.4%
+{所有士兵} {生命} +32%
+{所有士兵} {行军速度} +32%",1944736,"City All Resource Output +50.4%
+City Gold Output +50.4%
+All Soldiers HP +32%
+All Soldiers March Spd +32%"
+85,360,1_0.51+201_0.51+28_0.34+30_0.34,"{主城所有资源产量} +51%
+{主城金币产量} +51%
+{所有士兵} {生命} +34%
+{所有士兵} {行军速度} +34%",2051964,"City All Resource Output +51%
+City Gold Output +51%
+All Soldiers HP +34%
+All Soldiers March Spd +34%"
+86,380,1_0.516+201_0.516+28_0.34+30_0.34,"{主城所有资源产量} +51.6%
+{主城金币产量} +51.6%
+{所有士兵} {生命} +34%
+{所有士兵} {行军速度} +34%",2076774,"City All Resource Output +51.6%
+City Gold Output +51.6%
+All Soldiers HP +34%
+All Soldiers March Spd +34%"
+87,380,1_0.522+201_0.522+28_0.34+30_0.34,"{主城所有资源产量} +52.2%
+{主城金币产量} +52.2%
+{所有士兵} {生命} +34%
+{所有士兵} {行军速度} +34%",2101710,"City All Resource Output +52.2%
+City Gold Output +52.2%
+All Soldiers HP +34%
+All Soldiers March Spd +34%"
+88,380,1_0.528+201_0.528+28_0.34+30_0.34,"{主城所有资源产量} +52.8%
+{主城金币产量} +52.8%
+{所有士兵} {生命} +34%
+{所有士兵} {行军速度} +34%",2126772,"City All Resource Output +52.8%
+City Gold Output +52.8%
+All Soldiers HP +34%
+All Soldiers March Spd +34%"
+89,380,1_0.534+201_0.534+28_0.34+30_0.34,"{主城所有资源产量} +53.4%
+{主城金币产量} +53.4%
+{所有士兵} {生命} +34%
+{所有士兵} {行军速度} +34%",2151960,"City All Resource Output +53.4%
+City Gold Output +53.4%
+All Soldiers HP +34%
+All Soldiers March Spd +34%"
+90,380,1_0.54+201_0.54+28_0.36+30_0.36,"{主城所有资源产量} +54%
+{主城金币产量} +54%
+{所有士兵} {生命} +36%
+{所有士兵} {行军速度} +36%",2264018,"City All Resource Output +54%
+City Gold Output +54%
+All Soldiers HP +36%
+All Soldiers March Spd +36%"

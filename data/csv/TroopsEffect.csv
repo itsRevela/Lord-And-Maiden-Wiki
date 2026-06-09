@@ -1,0 +1,15 @@
+﻿type,name,condition,number,addtion,addtion_des,name_en,addtion_des_en
+1,{初级} {步兵组合},1,2,25_500+35_500,{士兵} {生命}+5%*{士兵} {防御}+5%,Basic Infantry Combination,Soldier HP+5%*Soldier DEF+5%
+1,{初级} {弓兵组合},2,2,30_500+35_500,{士兵} {攻击}+5%*{士兵} {防御}+5%,Basic Archer Combination,Soldier ATK+5%*Soldier DEF+5%
+1,{初级} {骑兵组合},3,2,45_500+35_500,{士兵} {行军速度}+5%*{士兵} {防御}+5%,Basic Cavalry Combination,Soldier March Spd+5%*Soldier DEF+5%
+1,{初级} {战车组合},4,2,40_500+35_500,{士兵} {破坏}+5%*{士兵} {防御}+5%,Basic Chariot Combination,Soldier DES+5%*Soldier DEF+5%
+1,{高级} {步兵组合},1,3,25_1000+35_1000,{士兵} {生命}+10%*{士兵} {防御}+10%,Advanced Infantry Combination,Soldier HP+10%*Soldier DEF+10%
+1,{高级} {弓兵组合},2,3,30_1000+35_1000,{士兵} {攻击}+10%*{士兵} {防御}+10%,Advanced Archer Combination,Soldier ATK+10%*Soldier DEF+10%
+1,{高级} {骑兵组合},3,3,45_1000+35_1000,{士兵} {行军速度}+10%*{士兵} {防御}+10%,Advanced Cavalry Combination,Soldier March Spd+10%*Soldier DEF+10%
+1,{高级} {战车组合},4,3,40_1000+35_1000,{士兵} {破坏}+10%*{士兵} {防御}+10%,Advanced Chariot Combination,Soldier DES+10%*Soldier DEF+10%
+2,{初级} {人族组合},1,2,51_5+52_5+53_5+50_5,{英雄} {所有属性}+5,Basic Human Combination,Hero All Attributes+5
+2,{初级} {兽人组合},2,2,51_5+52_5+53_5+50_5,{英雄} {所有属性}+5,Basic Orc Combination,Hero All Attributes+5
+2,{初级} {精灵组合},3,2,51_5+52_5+53_5+50_5,{英雄} {所有属性}+5,Basic Elf Combination,Hero All Attributes+5
+2,{高级} {人族组合},1,3,51_10+52_10+53_10+50_10,{英雄} {所有属性}+10,Advanced Human Combination,Hero All Attributes+10
+2,{高级} {兽人组合},2,3,51_10+52_10+53_10+50_10,{英雄} {所有属性}+10,Advanced Orc Combination,Hero All Attributes+10
+2,{高级} {精灵组合},3,3,51_10+52_10+53_10+50_10,{英雄} {所有属性}+10,Advanced Elf Combination,Hero All Attributes+10

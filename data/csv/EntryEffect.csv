@@ -1,0 +1,80 @@
+﻿EffectType,Name,DataType,Size,Power,Name_en
+1,{步兵} {生命},1,1,0,Infantry HP
+2,{弓兵} {生命},1,1,0,Archer HP
+3,{骑兵} {生命},1,1,0,Cavalry HP
+4,{战车} {生命},1,1,0,Chariot HP
+5,{士兵} {生命},1,1,0,Soldier HP
+6,{步兵} {攻击},1,1,0,Infantry ATK
+7,{弓兵} {攻击},1,1,0,Archer ATK
+8,{骑兵} {攻击},1,1,0,Cavalry ATK
+9,{战车} {攻击},1,1,0,Chariot ATK
+10,{士兵} {攻击},1,1,0,Soldier ATK
+11,{步兵} {防御},1,1,0,Infantry DEF
+12,{弓兵} {防御},1,1,0,Archer DEF
+13,{骑兵} {防御},1,1,0,Cavalry DEF
+14,{战车} {防御},1,1,0,Chariot DEF
+15,{士兵} {防御},1,1,0,Soldier DEF
+16,{步兵} {破坏},1,1,0,Infantry DES
+17,{弓兵} {破坏},1,1,0,Archer DES
+18,{骑兵} {破坏},1,1,0,Cavalry DES
+19,{战车} {破坏},1,1,0,Chariot DES
+20,{士兵} {破坏},1,1,0,Soldier DES
+21,{步兵} {生命},2,10000,0,Infantry HP
+22,{弓兵} {生命},2,10000,0,Archer HP
+23,{骑兵} {生命},2,10000,0,Cavalry HP
+24,{战车} {生命},2,10000,0,Chariot HP
+25,{士兵} {生命},2,10000,0,Soldier HP
+26,{步兵} {攻击},2,10000,0,Infantry ATK
+27,{弓兵} {攻击},2,10000,0,Archer ATK
+28,{骑兵} {攻击},2,10000,0,Cavalry ATK
+29,{战车} {攻击},2,10000,0,Chariot ATK
+30,{士兵} {攻击},2,10000,0,Soldier ATK
+31,{步兵} {防御},2,10000,0,Infantry DEF
+32,{弓兵} {防御},2,10000,0,Archer DEF
+33,{骑兵} {防御},2,10000,0,Cavalry DEF
+34,{战车} {防御},2,10000,0,Chariot DEF
+35,{士兵} {防御},2,10000,0,Soldier DEF
+36,{步兵} {破坏},2,10000,0,Infantry DES
+37,{弓兵} {破坏},2,10000,0,Archer DES
+38,{骑兵} {破坏},2,10000,0,Cavalry DES
+39,{战车} {破坏},2,10000,0,Chariot DES
+40,{士兵} {破坏},2,10000,0,Soldier DES
+41,{步兵} {行军速度},2,10000,0,Infantry March Spd
+42,{弓兵} {行军速度},2,10000,0,Archer March Spd
+43,{骑兵} {行军速度},2,10000,0,Cavalry March Spd
+44,{战车} {行军速度},2,10000,0,Chariot March Spd
+45,{士兵} {行军速度},2,10000,0,Soldier March Spd
+46,PVE {造成伤害增加},2,10000,0,PVE DMG Dealt Increased
+47,PVP {造成伤害增加},2,10000,0,PVP DMG Dealt Increased
+48,PVE {受到伤害降低},2,10000,0,PVE DMG Taken Reduced
+49,PVP {受到伤害降低},2,10000,0,PVP DMG Taken Reduced
+50,{英雄} {出手速度},1,1,0,Hero ATK Spd
+51,{英雄} {攻击},1,1,0,Hero ATK
+52,{英雄} {防御},1,1,0,Hero DEF
+53,{英雄} {破坏},1,1,0,Hero DES
+54,{英雄} {带兵数量},1,1,0,Hero Soldiers Quantity
+101,{主城粮食产量},1,1,0,City Food Output
+102,{主城木材产量},1,1,0,City Wood Output
+103,{主城石料产量},1,1,0,City Stone Output
+104,{主城铁锭产量},1,1,0,City Iron Output
+105,{主城金币产量},1,1,0,City Gold Output
+106,{主城金币产量},2,10000,0,City Gold Output
+107,{体力恢复速度},2,10000,0,Vit Recovery Spd
+108,{行军速度},2,10000,0,March Spd
+111,{主城粮食产量},2,10000,0,City Food Output
+112,{主城木材产量},2,10000,0,City Wood Output
+113,{主城石料产量},2,10000,0,City Stone Output
+114,{主城铁锭产量},2,10000,0,City Iron Output
+115,{主城所有资源产量},2,10000,0,City All Resource Output
+116,{大世界所有资源产量},2,10000,0,Great World All Resource Output
+119,{最大} {体力},1,1,0,Max Vit
+120,{时尚值},1,1,0,Fashion Points
+131,{装备} {战术技能} {发动概率},2,10000,0,Equip Tactical Skill Activation Probability
+132,{装备} {追击技能} {发动概率},2,10000,0,Equip Pursuit Skill Activation Probability
+141,{建筑} {建造速度},2,10000,0,Building Build Spd
+142,{学院} {研究速度},2,10000,0,Academy Research Spd
+143,{铁匠铺制造速度},2,10000,0,Smithy Manufacturing Spd
+144,{医院治疗速度},2,10000,0,Hospital Heal Spd
+145,{士兵训练速度},2,10000,0,Soldier Training Spd
+146,{种植收益},2,10000,0,Planting Income
+147,{训练士兵} {资源消耗降低},2,10000,0,Train Soldiers Resource Consume Decrease

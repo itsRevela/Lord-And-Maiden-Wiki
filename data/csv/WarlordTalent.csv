@@ -1,0 +1,201 @@
+﻿TalentType,Name,TalentLv,NeedPoint,Des,Effect,Name_en,Des_en
+1,{种田},1,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},2,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},3,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},4,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},5,4,{主城农场产量} +2.4%,2_0.024,Farming,City Farm Output +2.4%
+1,{种田},6,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},7,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},8,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},9,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},10,5,{主城农场产量} +3%,2_0.03,Farming,City Farm Output +3%
+1,{种田},11,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},12,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},13,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},14,1,{主城农场产量} +0.6%,2_0.006,Farming,City Farm Output +0.6%
+1,{种田},15,5,{主城农场产量} +3.6%,2_0.036,Farming,City Farm Output +3.6%
+1,{种田},16,1,{主城农场产量} +1.2%,2_0.012,Farming,City Farm Output +1.2%
+1,{种田},17,1,{主城农场产量} +1.2%,2_0.012,Farming,City Farm Output +1.2%
+1,{种田},18,1,{主城农场产量} +1.2%,2_0.012,Farming,City Farm Output +1.2%
+1,{种田},19,1,{主城农场产量} +1.2%,2_0.012,Farming,City Farm Output +1.2%
+1,{种田},20,10,{主城农场产量} +9%,2_0.09,Farming,City Farm Output +9%
+2,{伐木},1,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},2,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},3,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},4,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},5,4,{主城伐木场产量} +2.4%,3_0.024,Lumbering,City Sawmill Output +2.4%
+2,{伐木},6,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},7,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},8,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},9,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},10,5,{主城伐木场产量} +3%,3_0.03,Lumbering,City Sawmill Output +3%
+2,{伐木},11,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},12,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},13,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},14,1,{主城伐木场产量} +0.6%,3_0.006,Lumbering,City Sawmill Output +0.6%
+2,{伐木},15,5,{主城伐木场产量} +3.6%,3_0.036,Lumbering,City Sawmill Output +3.6%
+2,{伐木},16,1,{主城伐木场产量} +1.2%,3_0.012,Lumbering,City Sawmill Output +1.2%
+2,{伐木},17,1,{主城伐木场产量} +1.2%,3_0.012,Lumbering,City Sawmill Output +1.2%
+2,{伐木},18,1,{主城伐木场产量} +1.2%,3_0.012,Lumbering,City Sawmill Output +1.2%
+2,{伐木},19,1,{主城伐木场产量} +1.2%,3_0.012,Lumbering,City Sawmill Output +1.2%
+2,{伐木},20,10,{主城伐木场产量} +9%,3_0.09,Lumbering,City Sawmill Output +9%
+3,{凿石},1,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},2,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},3,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},4,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},5,4,{主城采石场产量} +2.4%,4_0.024,Quarrying,City Quarry Production +2.4%
+3,{凿石},6,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},7,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},8,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},9,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},10,5,{主城采石场产量} +3%,4_0.03,Quarrying,City Quarry Production +3%
+3,{凿石},11,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},12,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},13,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},14,1,{主城采石场产量} +0.6%,4_0.006,Quarrying,City Quarry Production +0.6%
+3,{凿石},15,5,{主城采石场产量} +3.6%,4_0.036,Quarrying,City Quarry Production +3.6%
+3,{凿石},16,1,{主城采石场产量} +1.2%,4_0.012,Quarrying,City Quarry Production +1.2%
+3,{凿石},17,1,{主城采石场产量} +1.2%,4_0.012,Quarrying,City Quarry Production +1.2%
+3,{凿石},18,1,{主城采石场产量} +1.2%,4_0.012,Quarrying,City Quarry Production +1.2%
+3,{凿石},19,1,{主城采石场产量} +1.2%,4_0.012,Quarrying,City Quarry Production +1.2%
+3,{凿石},20,10,{主城采石场产量} +9%,4_0.09,Quarrying,City Quarry Production +9%
+4,{采矿},1,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},2,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},3,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},4,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},5,4,{主城铁矿场产量} +2.4%,5_0.024,Mining,City Ironminee Output +2.4%
+4,{采矿},6,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},7,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},8,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},9,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},10,5,{主城铁矿场产量} +3%,5_0.03,Mining,City Ironminee Output +3%
+4,{采矿},11,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},12,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},13,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},14,1,{主城铁矿场产量} +0.6%,5_0.006,Mining,City Ironminee Output +0.6%
+4,{采矿},15,5,{主城铁矿场产量} +3.6%,5_0.036,Mining,City Ironminee Output +3.6%
+4,{采矿},16,1,{主城铁矿场产量} +1.2%,5_0.012,Mining,City Ironminee Output +1.2%
+4,{采矿},17,1,{主城铁矿场产量} +1.2%,5_0.012,Mining,City Ironminee Output +1.2%
+4,{采矿},18,1,{主城铁矿场产量} +1.2%,5_0.012,Mining,City Ironminee Output +1.2%
+4,{采矿},19,1,{主城铁矿场产量} +1.2%,5_0.012,Mining,City Ironminee Output +1.2%
+4,{采矿},20,10,{主城铁矿场产量} +9%,5_0.09,Mining,City Ironminee Output +9%
+5,{理财},1,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},2,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},3,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},4,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},5,4,{主城金币产量} +2.4%,201_0.024,Financial Management,City Gold Output +2.4%
+5,{理财},6,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},7,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},8,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},9,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},10,5,{主城金币产量} +3%,201_0.03,Financial Management,City Gold Output +3%
+5,{理财},11,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},12,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},13,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},14,1,{主城金币产量} +0.6%,201_0.006,Financial Management,City Gold Output +0.6%
+5,{理财},15,5,{主城金币产量} +3.6%,201_0.036,Financial Management,City Gold Output +3.6%
+5,{理财},16,1,{主城金币产量} +1.2%,201_0.012,Financial Management,City Gold Output +1.2%
+5,{理财},17,1,{主城金币产量} +1.2%,201_0.012,Financial Management,City Gold Output +1.2%
+5,{理财},18,1,{主城金币产量} +1.2%,201_0.012,Financial Management,City Gold Output +1.2%
+5,{理财},19,1,{主城金币产量} +1.2%,201_0.012,Financial Management,City Gold Output +1.2%
+5,{理财},20,10,{主城金币产量} +9%,201_0.09,Financial Management,City Gold Output +9%
+6,{行军},1,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},2,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},3,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},4,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},5,4,{行军速度} +1.6%,30_0.016,Marching,March Spd +1.6%
+6,{行军},6,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},7,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},8,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},9,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},10,5,{行军速度} +2%,30_0.02,Marching,March Spd +2%
+6,{行军},11,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},12,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},13,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},14,1,{行军速度} +0.4%,30_0.004,Marching,March Spd +0.4%
+6,{行军},15,5,{行军速度} +2.4%,30_0.024,Marching,March Spd +2.4%
+6,{行军},16,1,{行军速度} +0.8%,30_0.008,Marching,March Spd +0.8%
+6,{行军},17,1,{行军速度} +0.8%,30_0.008,Marching,March Spd +0.8%
+6,{行军},18,1,{行军速度} +0.8%,30_0.008,Marching,March Spd +0.8%
+6,{行军},19,1,{行军速度} +0.8%,30_0.008,Marching,March Spd +0.8%
+6,{行军},20,10,{行军速度} +6%,30_0.06,Marching,March Spd +6%
+7,{体力},1,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},2,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},3,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},4,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},5,4,{体力恢复速度} +1.6%,35_0.016,Vit,Vit Recovery Spd +1.6%
+7,{体力},6,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},7,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},8,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},9,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},10,5,{体力恢复速度} +2%,35_0.02,Vit,Vit Recovery Spd +2%
+7,{体力},11,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},12,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},13,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},14,1,{体力恢复速度} +0.4%,35_0.004,Vit,Vit Recovery Spd +0.4%
+7,{体力},15,5,{体力恢复速度} +2.4%,35_0.024,Vit,Vit Recovery Spd +2.4%
+7,{体力},16,1,{体力恢复速度} +0.8%,35_0.008,Vit,Vit Recovery Spd +0.8%
+7,{体力},17,1,{体力恢复速度} +0.8%,35_0.008,Vit,Vit Recovery Spd +0.8%
+7,{体力},18,1,{体力恢复速度} +0.8%,35_0.008,Vit,Vit Recovery Spd +0.8%
+7,{体力},19,1,{体力恢复速度} +0.8%,35_0.008,Vit,Vit Recovery Spd +0.8%
+7,{体力},20,10,{体力恢复速度} +6%,35_0.06,Vit,Vit Recovery Spd +6%
+8,{训练},1,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},2,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},3,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},4,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},5,4,{士兵训练速度} +2.4%,13_0.024,Train,Soldier Training Spd +2.4%
+8,{训练},6,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},7,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},8,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},9,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},10,5,{士兵训练速度} +3%,13_0.03,Train,Soldier Training Spd +3%
+8,{训练},11,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},12,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},13,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},14,1,{士兵训练速度} +0.6%,13_0.006,Train,Soldier Training Spd +0.6%
+8,{训练},15,5,{士兵训练速度} +3.6%,13_0.036,Train,Soldier Training Spd +3.6%
+8,{训练},16,1,{士兵训练速度} +1.2%,13_0.012,Train,Soldier Training Spd +1.2%
+8,{训练},17,1,{士兵训练速度} +1.2%,13_0.012,Train,Soldier Training Spd +1.2%
+8,{训练},18,1,{士兵训练速度} +1.2%,13_0.012,Train,Soldier Training Spd +1.2%
+8,{训练},19,1,{士兵训练速度} +1.2%,13_0.012,Train,Soldier Training Spd +1.2%
+8,{训练},20,10,{士兵训练速度} +9%,13_0.09,Train,Soldier Training Spd +9%
+9,{治疗},1,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},2,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},3,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},4,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},5,4,{医院治疗速度} +2.4%,14_0.024,Heal,Hospital Heal Spd +2.4%
+9,{治疗},6,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},7,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},8,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},9,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},10,5,{医院治疗速度} +3%,14_0.03,Heal,Hospital Heal Spd +3%
+9,{治疗},11,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},12,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},13,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},14,1,{医院治疗速度} +0.6%,14_0.006,Heal,Hospital Heal Spd +0.6%
+9,{治疗},15,5,{医院治疗速度} +3.6%,14_0.036,Heal,Hospital Heal Spd +3.6%
+9,{治疗},16,1,{医院治疗速度} +1.2%,14_0.012,Heal,Hospital Heal Spd +1.2%
+9,{治疗},17,1,{医院治疗速度} +1.2%,14_0.012,Heal,Hospital Heal Spd +1.2%
+9,{治疗},18,1,{医院治疗速度} +1.2%,14_0.012,Heal,Hospital Heal Spd +1.2%
+9,{治疗},19,1,{医院治疗速度} +1.2%,14_0.012,Heal,Hospital Heal Spd +1.2%
+9,{治疗},20,10,{医院治疗速度} +9%,14_0.09,Heal,Hospital Heal Spd +9%
+10,{铁匠},1,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},2,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},3,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},4,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},5,4,{铁匠铺制造速度} +2.4%,250_0.024,Blacksmith,Smithy Manufacturing Spd +2.4%
+10,{铁匠},6,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},7,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},8,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},9,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},10,5,{铁匠铺制造速度} +3%,250_0.03,Blacksmith,Smithy Manufacturing Spd +3%
+10,{铁匠},11,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},12,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},13,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},14,1,{铁匠铺制造速度} +0.6%,250_0.006,Blacksmith,Smithy Manufacturing Spd +0.6%
+10,{铁匠},15,5,{铁匠铺制造速度} +3.6%,250_0.036,Blacksmith,Smithy Manufacturing Spd +3.6%
+10,{铁匠},16,1,{铁匠铺制造速度} +1.2%,250_0.012,Blacksmith,Smithy Manufacturing Spd +1.2%
+10,{铁匠},17,1,{铁匠铺制造速度} +1.2%,250_0.012,Blacksmith,Smithy Manufacturing Spd +1.2%
+10,{铁匠},18,1,{铁匠铺制造速度} +1.2%,250_0.012,Blacksmith,Smithy Manufacturing Spd +1.2%
+10,{铁匠},19,1,{铁匠铺制造速度} +1.2%,250_0.012,Blacksmith,Smithy Manufacturing Spd +1.2%
+10,{铁匠},20,10,{铁匠铺制造速度} +9%,250_0.09,Blacksmith,Smithy Manufacturing Spd +9%

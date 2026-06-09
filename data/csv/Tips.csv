@@ -1,0 +1,111 @@
+﻿Id,loadTip,Type,TypeName,des,TypeName_en,des_en
+10,1,1,{编队},"{统帅是队伍的核心,当统帅阵亡时,则战斗失败}",Formation,"The Commander Is The Core Of The Team; When The Commander Dies, The Battle Is Lost."
+30,0,1,{编队},{每个队伍必须配置统帅，且统帅兵力大于0},Formation,"Each team must be assigned a Commander, and the Commander's Strength must be greater than 0."
+50,1,1,{编队},"{当队伍使用相同种族的英雄时,可获得额外的增益效果}",Formation,"When The Team Uses Heroes Of The Same Race, Additional Gain Effects Can Be Obtained."
+70,1,1,{编队},"{当队伍使用相同类型的士兵时,可获得额外的增益效果}",Formation,"When The Team Uses Soldiers Of The Same Type, Additional Gain Effects Can Be Obtained."
+90,0,1,{编队},"{在没有嘲讽的情况下},{统帅被选为攻击目标的概率为20%}
+{前锋1被选为攻击目标的概率为40%}
+{前锋2被选为攻击目标的概率为40%}",Formation,"Target Selection (without Taunt):,Chance that Commander will be chosen as the target of ATK: 20%
+Chance that Striker 1 will be chosen as the target of ATK: 40%
+Chance that Striker 2 will be chosen as the target of ATK: 40%"
+110,0,2,{英雄战斗属性},0,Hero Combat Attributes,
+130,1,3,{技能},{技能生效顺序}：{被动技能}->{战略技能}->{战术技能}->{普通攻击}->{追击技能},Skill,Skill Activation Order：Passive Skill->Strategic Skill->Tactical Skill->Normal ATK->Pursuit Skill
+150,1,3,{技能},"{不同种类的技能所造成的相同技能效果可以叠加,例如战略技能和战术技能的造成伤害增加效果,相加后生效}",Skill,"The Same Skill Effects Caused By Different Types Of Skills Can Stack, E.g., The Damage Increase Effect Of Strategic Skills And Tactical Skills Will Take Effect After Adding Them Together."
+170,1,3,{技能},"{相同种类的技能所造成的相同技能效果无法叠加,例如2个战略技能的造成伤害增加效果,只取最大值生效}",Skill,"The Same Skill Effects Caused By The Same Type Of Skills Cannot Stack, E.g., The Damage Increase Effect Of Two Strategic Skills Will Only Take The Maximum Value."
+190,1,3,{技能},"{闪避}、{强袭}、{瞬法}、{超导}、{永恒}、{专注}、{嘲讽}、{援护},{是唯一状态效果,无法同时存在相同效果}",Skill,"Dodge、Assault、Instant、Superconducting、Eternal、Concentration、Taunts、Assist,Is A Unique Status Effect And Cannot Have The Same Effect Simultaneously."
+210,1,3,{技能},"{技能描述中的“2个我方部队”,将优先作用于除自己以外的2个友方部队}",Skill,"In The Skill Description, ""2 Of Our Troops"" Will Prioritize 2 Other Allied Troops Excluding Itself."
+230,1,3,{技能},{队伍中，无法存在2个完全相同的战略技能，包括技能石附加的技能},Skill,"The party cannot have 2 identical strategic skills, including those granted by skill stones."
+250,1,3,{技能},{技能描述中的“受x属性影响”均指的是施法者（即携带技能的英雄）},Skill,"""Affected by X Attribute"" in skill descriptions always refers to the caster (the hero equipped with the skill)"
+270,1,3,{技能},{治疗效果受士兵生命属性影响},Skill,The Healing Effect Is Affected By The Soldiers' HP Attribute
+290,1,3,{技能},{只有处于轻伤状态的士兵才可以在战斗中治疗，重伤或死亡的士兵无法治疗},Skill,Only soldiers with Slight Wound can be healed during combat; those with Severe Wound or Death cannot be healed
+310,1,3,{技能},"{混乱效果只作用于普通攻击和伤害型战术技能,普通攻击后续触发的追击也跟着受到影响}",Skill,The Chaos effect only applies to normal attacks and damage-dealing Tactical Skills. Subsequent Pursuit triggered by normal attacks is also affected.
+330,1,4,{士兵},"{不同等级的士兵存在压制效果,高等级士兵会对低等级士兵造成更多的伤害}",Soldier,"Soldiers Of Different Levels Have A Suppression Effect, And High-Level Soldiers Deal More Damage To Low-Level Soldiers"
+350,1,4,{士兵},"{不同类型的士兵存在克制效果},{步兵}->{弓兵}->{骑兵}->{步兵},{被克制时,造成伤害降低25%}",Soldier,"Soldiers Of Different Types Have A Restraint Effect,Infantry->Archer->Cavalry->Infantry,When Soldiers Are Restrained, Damage Dealt Is Reduced By 25%."
+370,1,5,{医院},"{轻伤士兵在回到营地时,会立即恢复为健康状态}",Hospital,Slight Wounded Soldiers Will Immediately Recover To A Healthy State When They Return To The Camp.
+390,1,5,{医院},"{当士兵处于重伤状态时,需要前往医院进行治疗}",Hospital,"When Soldiers Are Severely Wounded, They Need To Go To The Hospital For Treatment."
+410,1,5,{医院},"{当医院容量不足时,重伤士兵会直接阵亡}",Hospital,"When Hospital's Capacity Is Insufficient, Severely Wounded Soldiers Will Die."
+430,1,5,{医院},"{当队伍统帅阵亡时,会产生大量的重伤士兵}",Hospital,"When The Team's Commander Dies, A Large Number Of Severely Wounded Soldiers Will Be Generated."
+450,1,5,{医院},{轻伤士兵随着战斗的持续进行，每回合会有一定的比例转化为重伤或阵亡士兵},Hospital,"As combat continues, a certain percentage of Slight Wound soldiers will convert to Severe Wound or Death each round"
+470,1,6,{居民},"{工作会影响心情值},{居民处于闲置状态会自动恢复心情值}",Residents,"Working affects Mood Points,Idle residents automatically recover Mood Points"
+490,1,6,{居民},"{连续工作超过8小时,会影响健康值}",Residents,Working continuously over 8 hours affects Health Points
+510,1,6,{居民},{讨伐野蛮人营地将增加您的声望值},Residents,Raiding Barbarian Camps will increase your Prestige Points.
+530,1,6,{居民},{声望值越高，越容易有难民来投靠},Residents,Higher Prestige Points makes Refugees more likely to join you.
+550,1,6,{居民},{驱赶居民将减少您的声望值},Residents,Expelling residents will decrease your Prestige Points.
+570,1,6,{居民},{居民} {最终工作能力} = {工作能力}*{心情值}*{健康值},Residents,Residents Final Working Ability = Working Ability*Mood Points*Health Points
+590,0,6,{居民},"{最大} {声望值} = 5,000
+{难民} {最大} {刷新} {次数}  =  3 + ({声望值} / 1500)
+{难民} {刷新} {时间} 30{分钟}",Residents,"Max Prestige Points = 5,000
+Refugees Max Refresh Times  =  3 + (Prestige Points / 1500)
+Refugees Refresh Time 30Min"
+610,1,7,{大世界},{玩家主城周围的九宫格范围内都是可以占领的目标},Great World,All Targets Within The Nine-Square Grid Around The Player's Main City Are Occupiable.
+630,1,7,{大世界},"{占领核心矿点后可以获得势力范围,势力范围接壤的九宫格都是可以占领的目标}",Great World,"After Occupying The Core Mine, You Can Gain A Sphere Of Influence, And The Nine-Square Grids Adjacent To The Sphere Of Influence Are All Occupiable Targets."
+650,1,7,{大世界},"{占领矿点后可自动获取收益,但有时间限制,通过升级运输站可以提高占领时间和占领数量}",Great World,"After Occupying The Mine, You Can Automatically Obtain Resources, But There Is A Time Limit. Upgrading The Transport Station Can Increase The Occupation Time And The Number Of Occupations."
+670,1,7,{大世界},"{占领规则：消灭所有敌人后归最初宣战者所有,因此可由宣战者的好友协助宣战者占领目标}",Great World,"Occupation Rule: After Defeating All Enemies, It Belongs To The First Declarer Of War, So Friends Of The War Declarer Can Assist In Occupying The Target."
+690,1,7,{大世界},{建造营地可获得远距离补给能力},Great World,Building A Camp Provides Long-Range Supply Capability.
+691,1,7,{大世界},{离线时间超过14天时，您在大世界的城市将被随机迁移到其他地区},Great World,"When offline for more than 14 days, your city in the Great World will be randomly relocated to another area"
+710,0,8,{攻城战},{攻城战玩法需要创建/加入联盟，由盟主、副盟主宣战},Siege Battle,"Siege Battle requires creating/joining a Union, with the Leader or Deputy Leader declaring war."
+730,0,8,{攻城战},{攻城战以联盟为单位，需要有任意盟友的势力范围与要攻城的对象接壤},Siege Battle,"Siege Battle Is Based on Unions, And Need Any Ally's Sphere Of Influence Must Border The Target City To Be Attacked."
+750,0,8,{攻城战},{在攻城战中，需要将守军全部击败，并且有战车将城市的城墙彻底破坏，才可以最终占领城市},Siege Battle,"In A Siege Battle, You Need To Defeat All The Defenders And Have Chariots Completely Destroy The City Walls Before You Can Finally Capture The City."
+770,0,8,{攻城战},{当队伍统帅携带战车类型的士兵时，可以炮击建筑},Siege Battle,"When The Team Commander Has Chariot-type Soldiers, They Can Bombard Building"
+790,0,8,{攻城战},{所有进入联盟巨型投石车的队伍将在攻城战开启后随投石车自动开火},Siege Battle,All squads entering the Union Giant Trebuchet will automatically attack with it when the Siege Battle begins.
+810,0,8,{攻城战},{巨型投石车伤害值由所有队伍的破坏值决定},Siege Battle,The Giant Trebuchet's Destruction is determined by the combined Destruction Value of all squads.
+830,0,8,{攻城战},{城市占领每月1号重置，已占领的城市不能放弃、不能再次占领},Siege Battle,City occupation resets on the 1st of each month. Already occupied cities cannot be abandoned or reoccupied.
+850,0,9,{英雄进阶},{英雄进阶需要消耗相同的英雄卡，可使用万能进阶卡替代},Heroes Advance,"Hero Advance requires consuming identical Hero cards, which can be substituted with a Universal Advance Card."
+870,0,9,{英雄进阶},{英雄每次进阶可获得10点待分配点，并提升最大带兵数量},Heroes Advance,Each Hero Advance grants 10 Available Points and increases the Max Soldiers Quantity.
+890,0,9,{英雄进阶},{英雄最大进阶次数与英雄星级相同},Heroes Advance,The maximum number of Advance times for a Hero is the same as the Hero's star rating.
+910,0,10,{英雄突破},{英雄满进阶并且60级后将达到等级上限，使用突破卡或同星级卡突破可以提高英雄等级上限},Hero Breakthrough,"After a hero is fully Advanced and reaches level 60, it will hit the level cap. Using a Breakthrough Card or a card of the same star rating for Breakthrough will increase the hero's level cap."
+930,0,10,{英雄突破},"{4星英雄可以使用任意一张4星英雄卡作为突破材料},{突破后}：{可分配点}+3,{英雄} {最大等级}+1",Hero Breakthrough,"4★ Heroes can use any 4★ Hero card as Breakthrough material.,After Breakthrough：Allocable Points+3,Hero Max Level+1"
+950,0,10,{英雄突破},"{5星英雄可以使用任意一张5星英雄卡作为突破材料},{突破后}：{可分配点}+5,{英雄} {最大等级}+1",Hero Breakthrough,"5★ Heroes can use any 5★ Hero card as Breakthrough material.,After Breakthrough：Allocable Points+5,Hero Max Level+1"
+970,0,11,{比武大会},"{比武大会}-I
+{本活动为月度活动，每月1号-3号为报名时间。所有报名玩家将按战力选出128强后开始赛事，为保证赛事的公平，报名截止时的阵容为最终阵容，中途无法更换}",Tournament,"Tournament-I
+This Event Is A Monthly Event, And The Registration Period Is From The 1st To The 3rd Of Each Month. All Registered Players Will Be Selected Into The Top 128 Based On Their Power And The Competition Will Begin. In Order To Ensure The Fairness Of The Competition, The Lineup At The Time Of Registration Deadline Is The Final Lineup And Cannot Be Changed In The Middle."
+990,0,11,{比武大会},"{比武大会}-II
+{本活动为月度活动，每月16号-18号为报名时间。所有报名玩家将按战力选出128强后开始赛事，为保证赛事的公平，报名截止时的阵容为最终阵容，中途无法更换}",Tournament,"Tournament-II
+This Event Is A Monthly Event, And The Registration Period Is From The 16th To The 18th Of Each Month. All Registered Players Will Be Selected Into The Top 128 Based On Their Power And The Competition Will Begin. In Order To Ensure The Fairness Of The Competition, The Lineup At The Time Of Registration Deadline Is The Final Lineup And Cannot Be Changed In The Middle."
+1010,0,12,{领主} {装扮},{多套领主时装属性无法叠加生效，仅能选择1套设置生效},Lord Outfit,The attributes of multiple Lord Fashion sets cannot stack; only one set can be set to be active.
+1030,0,12,{领主} {装扮},{多套领主时装的时尚值可以叠加},Lord Outfit,The Fashion Points from multiple Lord Fashion sets can be stacked.
+1050,0,13,{体力说明},"{体力基础上限}：1500
+{体力基础恢复速度}：{每60秒恢复1点体力}
+{体力恢复}：
+(1).{体力可以通过体力药剂快速补充。}
+(2).{体力恢复速度可以通过分配领主天赋点提升。}
+(3).{体力恢复速度可以通过领主装备-光荣旗帜提升。}
+(4).{每日可在[活动]-[爱心便当]领取体力补给。}",Vit Explan,"Vit Base Cap：1500
+Vit Base Recovery Rate：Recovers 1 Vit every 60 seconds
+Vit Recovery：
+(1).Vit can be quickly replenished using Vit Potions.
+(2).Vit Recovery Rate can be increased by allocating Lord Talent Points.
+(3).Vit Recovery Rate can be increased by the Lord Equipment - Glory Banner.
+(4).Daily Vit supplies can be claimed in [Activity] - [Love Bento]."
+1070,0,14,{跨服规则},"(1){跨服} {遗迹}：{角色创建时间} >= 7 {天}
+(2){跨服} {神魔试炼}：{角色创建时间} >= 10 {天}
+(3){跨服} {深渊}：{角色创建时间} >= 14 {天}
+(4){跨服} {原始大陆} BOSS：{角色创建时间} >= 30 {天}
+>>{将提前3天在该副本右下角显示倒计时}
+(5){跨服} {好友}：{角色创建时间} >=30 {天}
+{添加好友时对方的角色创建时间也需>=30天}",Cross Server Rules,"(1)Cross Server Ruins：Role Creation Time >= 7 Day
+(2)Cross Server Divine Demon Trial：Role Creation Time >= 10 Day
+(3)Cross Server Abyss：Role Creation Time >= 14 Day
+(4)Cross Server Primordial Continent BOSS：Role Creation Time >= 30 Day
+>>A countdown will be displayed in the lower right corner of that instance 3 days in advance.
+(5)Cross Server Friend：Role Creation Time >=30 Day
+When adding friends, the friend's Role Creation Time must also be >=30 days."
+1090,0,15,{合区规则},"1.{重新随机所有玩家主城基地}（{并补发1个自定义迁城令,并重置迁城冷却时间}）
+2.{重置所有已占领的矿点}（{并按剩余时间立即结算未获取资源}）
+3.{重置所有联盟已占领的城市}（{并按剩余时间立即结算联盟未获取资源}）
+4.{不重置联盟合作关系}、{不重置首次占领}
+5.{删除所有玩家营地}（{并退还营地建造资源}）
+6.{删除所有联盟营地}、{巨型投石车}（{并退还联盟资源}）
+7.{补发}:{体力} x3000、{传送门冷却石} x100、{快速治疗包} x300
+8.{神魔试炼名人堂首次通关重置,重新打名人堂}
+9.{合区后迁城红圈重置,需要重新打关卡一步步缩小红圈}
+10.{不重置城池的保护时间,按最老一个区的保护时间计算}",Server Merge Rules,"1.Randomly relocate all players' Main Cities（and compensate 1 Custom Relocation Order, and reset the relocation cooldown.）
+2.Reset all occupied Mines（and immediately settle unobtained resources based on remaining time.）
+3.Reset all Union-occupied Cities（and immediately settle unobtained Union resources based on remaining time.）
+4.Do not reset Union cooperation relationships.、Do not reset First Occupation.
+5.Remove all player Camps（and refund camp construction resources.）
+6.Remove all Union Camps、Giant Trebuchet（and refund Union resources.）
+7.Compensate:Vit x3000、Portal Cooldown Stone x100、Quick Healing Pack x300
+8.Reset the first clearance of Divine Demon Trial Hall of Fame, requiring to rechallenge the Hall of Fame.
+9.After server merge, reset the relocation restricted zone; need to rechallenge stages to gradually reduce the restricted zone.
+10.Do not reset city protection time; calculate based on the oldest server's protection time."

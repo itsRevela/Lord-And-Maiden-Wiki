@@ -1,0 +1,221 @@
+﻿PropId,Source,Source_en
+1,{任务}#TaskPanel*{活动}#EventPanel*{成就}#AchievementsPanel*{荒原}#MainGatePanel*{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{成长基金}#ShopPanel_3*{商城}#ShopPanel,Quest#TaskPanel*Activity#EventPanel*Achievement#AchievementsPanel*Wilderness#MainGatePanel*Ruins-Dragon's Lair#TeamInfoPanel_8*Growth Fund#ShopPanel_3*Shop#ShopPanel
+2,{升级} {居民楼}#BuildUpPanel_6*{英雄} {派遣}#DispatchPanel*{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{世界首领}#WorldBossPanel*{竞技场}#PVPPanel_1,Upgrade Residence#BuildUpPanel_6*Hero Dispatch#DispatchPanel*Ruins-Dragon's Lair#TeamInfoPanel_8*World Boss#WorldBossPanel*Arena#PVPPanel_1
+3,{冒险商店}#MarketPanel_2*{行脚商人}#MarketPanel_8*{市场}#MarketPanel_1*{任务}#TaskPanel*{活动}#EventPanel*{每日特惠}#ShopPanel_1,Adventure Store#MarketPanel_2*Traveling Merchant#MarketPanel_8*Market#MarketPanel_1*Quest#TaskPanel*Activity#EventPanel*Daily Specials#ShopPanel_1
+4,{英雄} {转化}#HeroConvertExpPanel*{大世界} {首占奖励}#WorldPanel*{遗迹}-{修炼洞穴}#TeamInfoPanel_5*{挑战领主}#ChallengeLZPanel*{市场}#MarketPanel_2*{每日特惠}#ShopPanel_1*{冒险者计划}#ShopPanel_4,Hero Conversion#HeroConvertExpPanel*Great World First Occupation Rewards#WorldPanel*Ruins-Training Cave#TeamInfoPanel_5*Challenge Lord#ChallengeLZPanel*Market#MarketPanel_2*Daily Specials#ShopPanel_1*Adventurer's Plan#ShopPanel_4
+"5,1120,1121",{爱心便当}#EventPanel*{市场}#MarketPanel_1*{冒险商店}#MarketPanel_2*{行脚商人}#MarketPanel_8*{月卡}#ShopPanel_2,Love Bento#EventPanel*Market#MarketPanel_1*Adventure Store#MarketPanel_2*Traveling Merchant#MarketPanel_8*Monthly Card#ShopPanel_2
+6,{成就}#AchievementsPanel*{委托任务}#VipPanel*{每日特惠}#ShopPanel_1,Achievement#AchievementsPanel*Delegate Quest#VipPanel*Daily Specials#ShopPanel_1
+7,"{竞技场}#PVPPanel_1*{荣耀竞技场}#PVPPanel_2*{天梯赛}#PVPPanel_3*{野蛮人营地}#BarbarianCamp_3,9","Arena#PVPPanel_1*Glory Arena#PVPPanel_2*Ladder Tournament#PVPPanel_3*Barbarian Camp#BarbarianCamp_3,9"
+8,{联盟} {帮助}#UnionPanel*{联盟} {捐献}#UnionPanel*{攻城战}#WorldPanel,Union Help#UnionPanel*Union Donate#UnionPanel*Siege Battle#WorldPanel
+9,{帮助} {遗迹}#TeamInfoPanel*{帮助} {神魔试炼}#PVEPanel,Help Ruins#TeamInfoPanel*Help Divine Demon Trial#PVEPanel
+10,{充值}#RechargePanel,Recharge#RechargePanel
+11,{快速升级攻略}#UpDesPanel*{遗迹}#TeamInfoPanel_1*{遗迹}-{修炼洞穴}#TeamInfoPanel_5*{遗迹}-{次元之地}#TeamInfoPanel_6*{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{神魔试炼}#PVEPanel*{知识问答}#SceneChangePanel_6*{联盟} {首领}#UnionPanel*{主线任务}#TaskPanel_3*{支线任务}#TaskPanel_4,Fast Upgrade Guide#UpDesPanel*Ruins#TeamInfoPanel_1*Ruins-Training Cave#TeamInfoPanel_5*Ruins-Dimensional Land#TeamInfoPanel_6*Ruins-Dragon's Lair#TeamInfoPanel_8*Divine Demon Trial#PVEPanel*Knowledge Quiz#SceneChangePanel_6*Union Leader#UnionPanel*Main#TaskPanel_3*Side Quest#TaskPanel_4
+12,"{荒原}#PVEPanel+MainGatePanel*{哥布林遗迹}#TeamInfoPanel_11,0*{大世界}-{扫荡} {矿点}#WorldPanel*{遗迹}-{修炼洞穴}#TeamInfoPanel_5*{遗迹}-{次元之地}#TeamInfoPanel_6*{英雄} {派遣}#DispatchPanel*{图书馆}#LibraryPanel*{每日任务}#TaskPanel*{活动}#EventPanel","Wilderness#PVEPanel+MainGatePanel*Goblin Ruins#TeamInfoPanel_11,0*Great World-Sweep Mine#WorldPanel*Ruins-Training Cave#TeamInfoPanel_5*Ruins-Dimensional Land#TeamInfoPanel_6*Hero Dispatch#DispatchPanel*Library#LibraryPanel*Daily Quest#TaskPanel*Activity#EventPanel"
+13,{英雄} {派遣}#DispatchPanel,Hero Dispatch#DispatchPanel
+14,{种植} {种子}#FarmPanel*{知识问答}#SceneChangePanel_6,Planting Seed#FarmPanel*Knowledge Quiz#SceneChangePanel_6
+21~24,{特产运输}#Village*{升级} {建筑}#AffairsPanel*{占领} {矿点}#WorldPanel*{资源补给箱}#PackPanel,Specialty Transport#Village*Upgrade Building#AffairsPanel*Occupy Mine#WorldPanel*Resource Supply#PackPanel
+"1181,1182,1183,1184",{魔法园}#0,Magic Garden#0
+"1191,1192,1193",{限时回馈}#EventPanel_90,Limited Time Rewards#EventPanel_90
+"1052,1053,1054,1055,1104,1105,1110,1114,1115",{任务}#TaskPanel*{活动}#EventPanel*{市场}#MarketPanel_1*{荒原}#MainGatePanel*{遗迹}#TeamInfoPanel*{冒险者计划}#ShopPanel_4,Quest#TaskPanel*Activity#EventPanel*Market#MarketPanel_1*Wilderness#MainGatePanel*Ruins#TeamInfoPanel*Adventurer's Plan#ShopPanel_4
+1051,{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{世界首领}#WorldBossPanel*{竞技场}#PVPPanel_1*{荣耀竞技场}#PVPPanel_2,Ruins-Dragon's Lair#TeamInfoPanel_8*World Boss#WorldBossPanel*Arena#PVPPanel_1*Glory Arena#PVPPanel_2
+1010,{世界首领}#WorldBossPanel*{任务}#TaskPanel*{分解} {领主装备}#PackPanel_7*{交易所}#LordMarketPanel,World Boss#WorldBossPanel*Quest#TaskPanel*Dismantle Lord Equipment#PackPanel_7*Exchange#LordMarketPanel
+1124,{比武大会}#PVPPanel_4,Tournament#PVPPanel_4
+1125,{每日任务}#TaskPanel*{每周任务}#TaskPanel*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel*{比武大会}#MarketPanel_6*{海岛币} {商店}#MarketPanel_13*{丰收活动}#MarketPanel_7*{每日特惠}#ShopPanel_1,Daily Quest#TaskPanel*Weekly Quest#TaskPanel*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel*Tournament#MarketPanel_6*Island Coin Store#MarketPanel_13*Harvest#MarketPanel_7*Daily Specials#ShopPanel_1
+1126,{活动}#EventPanel*{英雄} {派遣}#DispatchPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{比武大会}#MarketPanel_6*{海岛币} {商店}#MarketPanel_13*{自选包}-B#PackPanel_1100,Activity#EventPanel*Hero Dispatch#DispatchPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Tournament#MarketPanel_6*Island Coin Store#MarketPanel_13*Optional Packages-B#PackPanel_1100
+1141~1147,{领主手册}#EventPanel,Lord Manual#EventPanel
+"1130,1135",{每日特惠}#ShopPanel_1,Daily Specials#ShopPanel_1
+"1099,1100",{每日特惠}#ShopPanel_1,Daily Specials#ShopPanel_1
+1101,{每日特惠}#ShopPanel_1*{超值礼包}#ShopPanel_1,Daily Specials#ShopPanel_1*Spree Packs#ShopPanel_1
+1061~1064,"{领地} {首领}#WildPos_-40,-45","Territory Leader#WildPos_-40,-45"
+1071~1074,{攻城战}#WorldPanel*{海岛争夺战}#SceneChangePanel_6,Siege Battle#WorldPanel*Island Conquest#SceneChangePanel_6
+1079,{海岛阵地战}#PVPPanel*{航海贸易}#MarineTradePanel*{委托任务}#VipPanel,Island Positional Battle#PVPPanel*Maritime Trade#MarineTradePanel*Delegate Quest#VipPanel
+1570,{陨铁商店}#MarketPanel_12*{海岛币} {商店}#MarketPanel_13*{海岛阵地战}#PVPPanel,Meteoric Iron Store#MarketPanel_12*Island Coin Store#MarketPanel_13*Island Positional Battle#PVPPanel
+2251~2255,{船舶图纸包}#PackPanel_1570*{交易所}#LordMarketPanel,Ship Drawings Pack#PackPanel_1570*Exchange#LordMarketPanel
+2256~2265,{船舶图纸包}#PackPanel_1570*{铁匠铺}#SmithyPanel*{交易所}#LordMarketPanel,Ship Drawings Pack#PackPanel_1570*Smithy#SmithyPanel*Exchange#LordMarketPanel
+2266~2275,{铁匠铺}#SmithyPanel*{交易所}#LordMarketPanel,Smithy#SmithyPanel*Exchange#LordMarketPanel
+2831~2855,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+3331~3342,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+3351~3392,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+1116,{分解} {符文}#PackPanel,Dismantle Runes#PackPanel
+1117,{深渊}#PVEPanel*{公会战}#UnionPanel,Abyss#PVEPanel*Union War#UnionPanel
+1118,{联盟商店}#MarketPanel_3*{深渊}#PVEPanel*{公会战}#UnionPanel,Union Store#MarketPanel_3*Abyss#PVEPanel*Union War#UnionPanel
+1119,{比武大会}#MarketPanel_6*{幸运转盘}#EventPanel_91*{幸运盲盒}#EventPanel_94,Tournament#MarketPanel_6*Lucky Wheel#EventPanel_91*Lucky Mystery Box#EventPanel_94
+50001~50900,{深渊}#PVEPanel*{公会战}#UnionPanel,Abyss#PVEPanel*Union War#UnionPanel
+1200,{市场}#MarketPanel_1*{主线任务}#TaskPanel_3*{领主手册}#EventPanel*{七日签到}#SevenDaySignPanel*{领地} {探索}#0,Market#MarketPanel_1*Main#TaskPanel_3*Lord Manual#EventPanel*Seven-day Sign-in#SevenDaySignPanel*Territory Explore#0
+1205,{荒原}#MainGatePanel*{任务}#TaskPanel*{活动}#EventPanel*{大世界}#WorldPanel*{市场}#MarketPanel_1*{冒险商店}#MarketPanel_2*{冒险者计划}#ShopPanel_4*{超值礼包}#ShopPanel_1*{限时回馈}#EventPanel_90,Wilderness#MainGatePanel*Quest#TaskPanel*Activity#EventPanel*Great World#WorldPanel*Market#MarketPanel_1*Adventure Store#MarketPanel_2*Adventurer's Plan#ShopPanel_4*Spree Packs#ShopPanel_1*Limited Time Rewards#EventPanel_90
+1210,{任务}#TaskPanel*{挑战领主}#ChallengeLZPanel*{市场}#MarketPanel_1*{冒险商店}#MarketPanel_2*{超值礼包}#ShopPanel_1*{限时回馈}#EventPanel_90,Quest#TaskPanel*Challenge Lord#ChallengeLZPanel*Market#MarketPanel_1*Adventure Store#MarketPanel_2*Spree Packs#ShopPanel_1*Limited Time Rewards#EventPanel_90
+1204,{市场}#MarketPanel_1*{冒险商店}#MarketPanel_2*{召唤卷}({自选})#PackPanel_1211*{限时回馈}#EventPanel_90,Market#MarketPanel_1*Adventure Store#MarketPanel_2*Summon Scroll(Optional)#PackPanel_1211*Limited Time Rewards#EventPanel_90
+1211,{市场}#MarketPanel_1*{生活点} {商店}#MarketPanel_11*{每日特惠}#ShopPanel_1*{超值礼包}#ShopPanel_1,Market#MarketPanel_1*Life Points Store#MarketPanel_11*Daily Specials#ShopPanel_1*Spree Packs#ShopPanel_1
+1531,{生活点} {商店}#MarketPanel_11,Life Points Store#MarketPanel_11
+1541~1549,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+"1215,1225",{冒险者计划}#ShopPanel_4,Adventurer's Plan#ShopPanel_4
+"1220,1222",{限时回馈}#EventPanel_90,Limited Time Rewards#EventPanel_90
+1230,{活动}#EventPanel*{英雄召唤}#SumPanel_2*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90,Activity#EventPanel*Hero Summon#SumPanel_2*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90
+1240,{红玉} {合成}#PackPanel_1241*{圣物召唤}#SumPanel_4*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90,Ruby Combine#PackPanel_1241*Relic Summon#SumPanel_4*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90
+1241,{圣物} {分解}#PackPanel_5*{圣物召唤}#SumPanel_4,Relic Dismantle#PackPanel_5*Relic Summon#SumPanel_4
+"1245,1250",{冒险者计划}#ShopPanel_4,Adventurer's Plan#ShopPanel_4
+1252,{冒险者计划}#ShopPanel_4,Adventurer's Plan#ShopPanel_4
+1251,{冒险者计划}#ShopPanel_4*{幸运盲盒}#EventPanel_94,Adventurer's Plan#ShopPanel_4*Lucky Mystery Box#EventPanel_94
+1253,{冒险者计划}#ShopPanel_4,Adventurer's Plan#ShopPanel_4
+1254,{友谊商店}#MarketPanel_4*{冒险者计划}#ShopPanel_4,Friendship Store#MarketPanel_4*Adventurer's Plan#ShopPanel_4
+"1255,1266",{活动}#EventPanel*{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{世界首领}#WorldBossPanel*{比武大会}-{排行奖励}#PVPPanel_4*{冒险等级}#VipPanel*{冒险商店}#MarketPanel_2*{陨铁商店}#MarketPanel_12,Activity#EventPanel*Ruins-Dragon's Lair#TeamInfoPanel_8*World Boss#WorldBossPanel*Tournament-Rank Rewards#PVPPanel_4*Adventure Level#VipPanel*Adventure Store#MarketPanel_2*Meteoric Iron Store#MarketPanel_12
+1265,{活动}#EventPanel*{遗迹}-{恶龙巢穴}#TeamInfoPanel_8*{冒险者计划}#ShopPanel_4*{冒险等级}#VipPanel*{冒险商店}#MarketPanel_2*{陨铁商店}#MarketPanel_12*{每日特惠}#ShopPanel_1,Activity#EventPanel*Ruins-Dragon's Lair#TeamInfoPanel_8*Adventurer's Plan#ShopPanel_4*Adventure Level#VipPanel*Adventure Store#MarketPanel_2*Meteoric Iron Store#MarketPanel_12*Daily Specials#ShopPanel_1
+1275,{联盟} {首领}#UnionPanel*{比武大会}#MarketPanel_6,Union Leader#UnionPanel*Tournament#MarketPanel_6
+1280,{碎片} {合成}#PackPanel_1275*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90*{幸运盲盒}#EventPanel_94,Fragment Combine#PackPanel_1275*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90*Lucky Mystery Box#EventPanel_94
+1285,{联盟商店}#MarketPanel_3*{挑战领主}#ChallengeLZPanel*{联盟} {首领}#UnionPanel*{比武大会}#MarketPanel_6,Union Store#MarketPanel_3*Challenge Lord#ChallengeLZPanel*Union Leader#UnionPanel*Tournament#MarketPanel_6
+1295,{挑战领主}#ChallengeLZPanel*{联盟} {首领}#UnionPanel*{比武大会}#MarketPanel_6,Challenge Lord#ChallengeLZPanel*Union Leader#UnionPanel*Tournament#MarketPanel_6
+1290,{碎片} {合成}#PackPanel_1285*{比武大会}#MarketPanel_6*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90,Fragment Combine#PackPanel_1285*Tournament#MarketPanel_6*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90
+1300,{碎片} {合成}#PackPanel_1295*{比武大会}#MarketPanel_6*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90*{幸运转盘}#EventPanel_91,Fragment Combine#PackPanel_1295*Tournament#MarketPanel_6*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90*Lucky Wheel#EventPanel_91
+1305,{遗迹}-{熔岩之地}#TeamInfoPanel_4*{荣誉商店}#MarketPanel_5,Ruins-Lava Land#TeamInfoPanel_4*Honor Store#MarketPanel_5
+1315,{遗迹}-{熔岩之地}#TeamInfoPanel_4*{荣誉商店}#MarketPanel_5*{比武大会}#MarketPanel_6,Ruins-Lava Land#TeamInfoPanel_4*Honor Store#MarketPanel_5*Tournament#MarketPanel_6
+1325,{遗迹}-{熔岩之地}#TeamInfoPanel_4*{比武大会}#MarketPanel_6,Ruins-Lava Land#TeamInfoPanel_4*Tournament#MarketPanel_6
+1310,{碎片} {合成}#PackPanel_1305,Fragment Combine#PackPanel_1305
+1320,{碎片} {合成}#PackPanel_1315*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90,Fragment Combine#PackPanel_1315*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90
+1330,{碎片} {合成}#PackPanel_1325*{成就}#AchievementsPanel_7*{限时回馈}#EventPanel_90*{幸运转盘}#EventPanel_91*{幸运盲盒}#EventPanel_94,Fragment Combine#PackPanel_1325*Achievement#AchievementsPanel_7*Limited Time Rewards#EventPanel_90*Lucky Wheel#EventPanel_91*Lucky Mystery Box#EventPanel_94
+1360,{英雄} {派遣}#DispatchPanel,Hero Dispatch#DispatchPanel
+1361~1364,{生活点} {商店}#MarketPanel_11*{联盟礼物}-{领土收益}#UnionPanel,Life Points Store#MarketPanel_11*Union Gift-Territory Income#UnionPanel
+1365,{联盟礼物}-{领土收益}#UnionPanel,Union Gift-Territory Income#UnionPanel
+1371,{生活点} {商店}#MarketPanel_11*{特产运输}#Village,Life Points Store#MarketPanel_11*Specialty Transport#Village
+1372~1374,{生活点} {商店}#MarketPanel_11,Life Points Store#MarketPanel_11
+1379,{生活点} {商店}#MarketPanel_11*{友谊商店}#MarketPanel_4*{英雄} {派遣}#DispatchPanel*{遗迹}#TeamInfoPanel_1*{世界首领}#PVEPanel*{领土} {宝箱}#UnionPanel*{攻城战}#WorldPanel*{英勇战士盛宴}#FeastSignPanel,Life Points Store#MarketPanel_11*Friendship Store#MarketPanel_4*Hero Dispatch#DispatchPanel*Ruins#TeamInfoPanel_1*World Boss#PVEPanel*Territory Chest#UnionPanel*Siege Battle#WorldPanel*Brave Warriors' Feast#FeastSignPanel
+1380,"{野蛮人营地}#BarbarianCamp_3,9*{生活点} {商店}#MarketPanel_11*{攻城战}#WorldPanel","Barbarian Camp#BarbarianCamp_3,9*Life Points Store#MarketPanel_11*Siege Battle#WorldPanel"
+"1381,1385",{商店}#MarketPanel_1,Store#MarketPanel_1
+"1382,1386","{野蛮人营地}#BarbarianCamp_3,9","Barbarian Camp#BarbarianCamp_3,9"
+"1383,1384,1387,1388","{野蛮人营地}#BarbarianCamp_3,9*{铁匠铺}#SmithyPanel","Barbarian Camp#BarbarianCamp_3,9*Smithy#SmithyPanel"
+"2501,2507,2513,2519,2525,2531",{特产运输}#Village*{生活点} {商店}#MarketPanel_11*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel,Specialty Transport#Village*Life Points Store#MarketPanel_11*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel
+"2502,2508,2514,2520,2526,2532",{铁匠铺} {合成}#SmithyPanel*{生活点} {商店}#MarketPanel_11*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel,Smithy Combine#SmithyPanel*Life Points Store#MarketPanel_11*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel
+"2503,2509,2515,2521,2527,2533",{铁匠铺} {合成}#SmithyPanel*{生活点} {商店}#MarketPanel_11*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel,Smithy Combine#SmithyPanel*Life Points Store#MarketPanel_11*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel
+"2504,2510,2516,2522,2528,2534",{铁匠铺} {合成}#SmithyPanel*{生活点} {商店}#MarketPanel_11*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel,Smithy Combine#SmithyPanel*Life Points Store#MarketPanel_11*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel
+"2505,2511,2517,2523,2529,2535",{铁匠铺} {合成}#SmithyPanel*{英雄} {派遣}#DispatchPanel*{联盟礼物}-{领土收益}#UnionPanel,Smithy Combine#SmithyPanel*Hero Dispatch#DispatchPanel*Union Gift-Territory Income#UnionPanel
+"2506,2512,2518,2524,2530,2536",{铁匠铺} {合成}#SmithyPanel*{英雄} {派遣}#DispatchPanel,Smithy Combine#SmithyPanel*Hero Dispatch#DispatchPanel
+1401~1405,"{哥布林遗迹}#TeamInfoPanel_11,0*{主线任务}#TaskPanel_3*{每日任务}#TaskPanel_1*{每周任务}#TaskPanel_2*{图书馆}#LibraryPanel*{活动}#EventPanel*{冒险者计划}#ShopPanel_4","Goblin Ruins#TeamInfoPanel_11,0*Main#TaskPanel_3*Daily Quest#TaskPanel_1*Weekly Quest#TaskPanel_2*Library#LibraryPanel*Activity#EventPanel*Adventurer's Plan#ShopPanel_4"
+"1450,1455,1460",{遗迹}-{沙漠遗迹}#TeamInfoPanel_2*{冒险商店}#MarketPanel_2*{丰收活动}#MarketPanel_7,Ruins-Desert Ruins#TeamInfoPanel_2*Adventure Store#MarketPanel_2*Harvest#MarketPanel_7
+"1465,1470",{遗迹}-{次元之地}#TeamInfoPanel_6*{冒险商店}#MarketPanel_2*{比武大会}#MarketPanel_6,Ruins-Dimensional Land#TeamInfoPanel_6*Adventure Store#MarketPanel_2*Tournament#MarketPanel_6
+1500,{遗迹}-{冰雪遗迹}#TeamInfoPanel_3,Ruins-Snow Ruins#TeamInfoPanel_3
+1505,{冒险商店}#MarketPanel_2,Adventure Store#MarketPanel_2
+"1515,1520",{遗迹}-{冰雪遗迹}#TeamInfoPanel_3*{丰收活动}#MarketPanel_7*{鲜花大作战}#SceneChangePanel_6,Ruins-Snow Ruins#TeamInfoPanel_3*Harvest#MarketPanel_7*Flower Frenzy#SceneChangePanel_6
+1525,{碎片} {合成}#PackPanel_1520,Fragment Combine#PackPanel_1520
+1600,{遗迹}-{丛林遗迹}#TeamInfoPanel_1*{冒险商店}#MarketPanel_2*{荣誉商店}#MarketPanel_5*{丰收活动}#MarketPanel_7*{陨铁商店}#MarketPanel_12*{海岛币} {商店}#MarketPanel_13,Ruins-Jungle Ruins#TeamInfoPanel_1*Adventure Store#MarketPanel_2*Honor Store#MarketPanel_5*Harvest#MarketPanel_7*Meteoric Iron Store#MarketPanel_12*Island Coin Store#MarketPanel_13
+1601,{冒险商店}#MarketPanel_2*{联盟商店}#MarketPanel_3*{友谊商店}#MarketPanel_4*{荣誉商店}#MarketPanel_5*{圣物召唤}#SumPanel_4,Adventure Store#MarketPanel_2*Union Store#MarketPanel_3*Friendship Store#MarketPanel_4*Honor Store#MarketPanel_5*Relic Summon#SumPanel_4
+1602~1605,{运营活动}#0,Operational Activities#0
+"1611,1612,1613",{遗迹}-{丛林遗迹}#TeamInfoPanel_1,Ruins-Jungle Ruins#TeamInfoPanel_1
+"1614,1615",{运营活动}#0,Operational Activities#0
+1621,{遗迹}-{丛林遗迹}#TeamInfoPanel_1*{联盟商店}#MarketPanel_3*{友谊商店}#MarketPanel_4*{荣誉商店}#MarketPanel_5,Ruins-Jungle Ruins#TeamInfoPanel_1*Union Store#MarketPanel_3*Friendship Store#MarketPanel_4*Honor Store#MarketPanel_5
+1622,{遗迹}-{丛林遗迹}#TeamInfoPanel_1*{圣物召唤}#SumPanel_4,Ruins-Jungle Ruins#TeamInfoPanel_1*Relic Summon#SumPanel_4
+1623,{遗迹}-{丛林遗迹}#TeamInfoPanel_1*{冒险商店}#MarketPanel_2,Ruins-Jungle Ruins#TeamInfoPanel_1*Adventure Store#MarketPanel_2
+"1624,1625",{运营活动}#0,Operational Activities#0
+1630,{每周任务}#TaskPanel_2,Weekly Quest#TaskPanel_2
+1123,{鲜花大作战}#SceneChangePanel_6,Flower Frenzy#SceneChangePanel_6
+1057~1060,{知识问答}#SceneChangePanel_6,Knowledge Quiz#SceneChangePanel_6
+"1212,1213",{限时回馈}#EventPanel_90,Limited Time Rewards#EventPanel_90
+1214,{召唤} {魔法使}#SumPanel_6*{幸运转盘}#EventPanel_91*{幸运盲盒}#EventPanel_94*{限时回馈}#EventPanel_90,Summon Magic Messenger#SumPanel_6*Lucky Wheel#EventPanel_91*Lucky Mystery Box#EventPanel_94*Limited Time Rewards#EventPanel_90
+"1700,1705,1710",{活动}#EventPanel,Activity#EventPanel
+1715,{丰收活动}#EventPanel,Harvest#EventPanel
+"1851,1852,1855,1856",{市场}#MarketPanel_1,Market#MarketPanel_1
+1901~1904,{比武大会}#PVPPanel_4,Tournament#PVPPanel_4
+1905,{成就}#AchievementsPanel_1,Achievement#AchievementsPanel_1
+1906,{成就}#AchievementsPanel_2,Achievement#AchievementsPanel_2
+1907,{成就}#AchievementsPanel_3,Achievement#AchievementsPanel_3
+1908,{成就}#AchievementsPanel_4,Achievement#AchievementsPanel_4
+1909,{成就}#AchievementsPanel_5,Achievement#AchievementsPanel_5
+1910,{成就}#AchievementsPanel_6,Achievement#AchievementsPanel_6
+1911,{成就}#AchievementsPanel_7,Achievement#AchievementsPanel_7
+2001~2026,{生产任务}#TaskPanel_5,Production Quest#TaskPanel_5
+2101~2130,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+2151~2156,{史诗稀有材料} {宝箱}#PackPanel_1600,Epic Rare Stuff Chest#PackPanel_1600
+1001,{陨铁商店}#MarketPanel_12*{生活点} {商店}#MarketPanel_11,Meteoric Iron Store#MarketPanel_12*Life Points Store#MarketPanel_11
+2200,{冒险商店}#MarketPanel_2*{陨铁商店}#MarketPanel_12,Adventure Store#MarketPanel_2*Meteoric Iron Store#MarketPanel_12
+2199,{海岛币} {商店}#MarketPanel_13,Island Coin Store#MarketPanel_13
+2201~2206,{遗迹}-{丛林遗迹}#TeamInfoPanel_1,Ruins-Jungle Ruins#TeamInfoPanel_1
+2207~2230,{铁匠铺}#SmithyPanel*{遗迹}-{丛林遗迹}#TeamInfoPanel_1,Smithy#SmithyPanel*Ruins-Jungle Ruins#TeamInfoPanel_1
+2231~2236,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+2601~2741,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+"1091,1095",{联盟商店}#MarketPanel_3*{友谊商店}#MarketPanel_4*{知识问答}#SceneChangePanel_6*{藏宝洞}#PVEPanel*{首领} {宝箱}#0*{领地} {宝箱}#0,Union Store#MarketPanel_3*Friendship Store#MarketPanel_4*Knowledge Quiz#SceneChangePanel_6*Treasure Cave#PVEPanel*Leader Chest#0*Territory Chest#0
+"1092,1093,1094,1096,1097,1098",{知识问答}#SceneChangePanel_6*{藏宝洞}#PVEPanel*{首领} {宝箱}#0*{领地} {宝箱}#0,Knowledge Quiz#SceneChangePanel_6*Treasure Cave#PVEPanel*Leader Chest#0*Territory Chest#0
+6003~6006,{生活点} {商店}#MarketPanel_11*{装饰建筑} {图纸包}#0,Life Points Store#MarketPanel_11*Decorative Building Drawing Packs#0
+6008~6012,{生活点} {商店}#MarketPanel_11*{装饰建筑} {图纸包}#0,Life Points Store#MarketPanel_11*Decorative Building Drawing Packs#0
+6023~6026,{生活点} {商店}#MarketPanel_11*{装饰建筑} {图纸包}#0,Life Points Store#MarketPanel_11*Decorative Building Drawing Packs#0
+6029~6032,{生活点} {商店}#MarketPanel_11*{装饰建筑} {图纸包}#0,Life Points Store#MarketPanel_11*Decorative Building Drawing Packs#0
+6001~6038,{装饰建筑} {图纸包}#0,Decorative Building Drawing Packs#0
+"6501,6502,6503",{领主手册}-{成长宝箱}-1#EventPanel*{领主时装} {图纸包}#0,Lord Manual-Growth Chest-1#EventPanel*Lord Fashion Drawing Packs#0
+"6504,6505,6506",{领主手册}-{成长宝箱}-4#EventPanel*{领主时装} {图纸包}#0,Lord Manual-Growth Chest-4#EventPanel*Lord Fashion Drawing Packs#0
+6507~6509,{领主时装} {图纸包}#0,Lord Fashion Drawing Packs#0
+"6510,6511,6512",{领主手册}-{成长宝箱}-7#EventPanel*{领主时装} {图纸包}#0,Lord Manual-Growth Chest-7#EventPanel*Lord Fashion Drawing Packs#0
+6513~6518,{领主时装} {图纸包}#0,Lord Fashion Drawing Packs#0
+"6519,6520,6521",{主线任务}-{章节} 9#TaskPanel_3*{领主时装} {图纸包}#0,Main-Chapter 9#TaskPanel_3*Lord Fashion Drawing Packs#0
+6522~6554,{领主时装} {图纸包}#0,Lord Fashion Drawing Packs#0
+"4023,4034,4041,4042,4053,4052,4050,4047,4058,4059,4060",{海岛阵地战} {商店}#MarketPanel_13,Island Positional Battle Store#MarketPanel_13
+4001~4022,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4024~4033,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4035~4040,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4501~4542,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4564~4566,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4573~4578,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4543~4545,{鲜花大作战}#SceneChangePanel_6,Flower Frenzy#SceneChangePanel_6
+4546~4548,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+4549~4551,{鲜花大作战}#SceneChangePanel_6,Flower Frenzy#SceneChangePanel_6
+4585~4587,{鲜花大作战}#SceneChangePanel_6,Flower Frenzy#SceneChangePanel_6
+"1136,1137,1138,1078",{沙漠探险}#SceneChangePanel_6,Desert Expedition#SceneChangePanel_6
+79501~79510,{沙漠探险}#SceneChangePanel_6,Desert Expedition#SceneChangePanel_6
+4741~4743,{运营活动}#PayAwardPanel,Operational Activities#PayAwardPanel
+4744~4749,{运营活动}#0,Operational Activities#0
+4751~4765,{兑换}#LordSkinSetPanel,Exchange#LordSkinSetPanel
+4951~4968,{幸运转盘}#EventPanel_91,Lucky Wheel#EventPanel_91
+3001~3174,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+3201~3212,{银质装备} {宝箱}#PackPanel_1290,Silver Equipment Chest#PackPanel_1290
+3301~3312,{金质装备} {宝箱}#PackPanel_1300,Gold Equipment Chest#PackPanel_1300
+3401~3404,{荣誉商店}#MarketPanel_5,Honor Store#MarketPanel_5
+3405~3408,{比武大会}#MarketPanel_6*{限时回馈}#EventPanel_90,Tournament#MarketPanel_6*Limited Time Rewards#EventPanel_90
+3415,{比武大会}#MarketPanel_6*{限时回馈}#EventPanel_90,Tournament#MarketPanel_6*Limited Time Rewards#EventPanel_90
+3409~3414,{史诗饰品} {宝箱}#PackPanel_1280,Epic Accessories Chest#PackPanel_1280
+3416,{史诗饰品} {宝箱}#PackPanel_1280,Epic Accessories Chest#PackPanel_1280
+2801~2812,{世界首领}#WorldBossPanel,World Boss#WorldBossPanel
+30001~30012,{世界首领}#WorldBossPanel,World Boss#WorldBossPanel
+30013~30036,{铁匠铺}#SmithyPanel,Smithy#SmithyPanel
+1243,{神魔试炼}#PVEPanel*{幸运转盘}#EventPanel_91*{幸运盲盒}#EventPanel_94,Divine Demon Trial#PVEPanel*Lucky Wheel#EventPanel_91*Lucky Mystery Box#EventPanel_94
+1267~1274,{神魔试炼}#PVEPanel,Divine Demon Trial#PVEPanel
+40001~40086,{神魔试炼}#PVEPanel,Divine Demon Trial#PVEPanel
+1151,{神魔试炼}({困难})#PVEPanel*{联盟商店}#MarketPanel_3*{丰收活动}#MarketPanel_7,Divine Demon Trial(Difficulty)#PVEPanel*Union Store#MarketPanel_3*Harvest#MarketPanel_7
+1152,{神魔试炼}({困难})#PVEPanel*{联盟商店}#MarketPanel_3*{丰收活动}#MarketPanel_7*{成就}#AchievementsPanel_7,Divine Demon Trial(Difficulty)#PVEPanel*Union Store#MarketPanel_3*Harvest#MarketPanel_7*Achievement#AchievementsPanel_7
+1153,{神魔试炼}({困难})#PVEPanel*{成就}#AchievementsPanel_7*{运营活动}#PayAwardPanel*{限时回馈}#EventPanel_90,Divine Demon Trial(Difficulty)#PVEPanel*Achievement#AchievementsPanel_7*Operational Activities#PayAwardPanel*Limited Time Rewards#EventPanel_90
+1154,{运营活动}#0,Operational Activities#0
+1720,{成就}#AchievementsPanel_7,Achievement#AchievementsPanel_7
+1721,{主线任务}#TaskPanel_3,Main#TaskPanel_3
+"1722,1723,1724",{运营活动}#0,Operational Activities#0
+"1165,1166,1725,1726",{英雄皮肤收集}#HeroSkinCCPanel,Hero Skin Collection#HeroSkinCCPanel
+3601~3640,{召唤} {魔法使}#SumPanel_6,Summon Magic Messenger#SumPanel_6
+2051~2056,{居民}-{钓鱼佬}#AffairsPanel,Residents-Angler#AffairsPanel
+1377,{居民}-{工匠}#AffairsPanel,Residents-Craftsman#AffairsPanel
+1378,{居民}-{研究员}#AffairsPanel,Residents-Researcher#AffairsPanel
+70001~70073,{攻城战}-{参战奖励}#WorldPanel,Siege Battle-Participate In Rewards#WorldPanel
+70101~70175,{原始大陆}-{参战奖励}#NewWorldMapPanel,Primordial Continent-Participate In Rewards#NewWorldMapPanel
+"1008,1009",{攻城战}-{参战奖励}#WorldPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Siege Battle-Participate In Rewards#WorldPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+72001~72049,{挑战领主}#ChallengeLZPanel,Challenge Lord#ChallengeLZPanel
+72050~72073,{攻城战}-{参战奖励}#WorldPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Siege Battle-Participate In Rewards#WorldPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+72101~72173,{攻城战}-{参战奖励}#WorldPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Siege Battle-Participate In Rewards#WorldPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+72201~72273,{攻城战}-{参战奖励}#WorldPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Siege Battle-Participate In Rewards#WorldPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+"1006,1007",{原始大陆}-{参战奖励}#NewWorldMapPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Primordial Continent-Participate In Rewards#NewWorldMapPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+71001~71060,{原始大陆}-{参战奖励}#NewWorldMapPanel*{联盟商店}#MarketPanel_3*{荣誉商店}#MarketPanel_5*{陨铁商店}#MarketPanel_12*{友谊商店}#MarketPanel_4,Primordial Continent-Participate In Rewards#NewWorldMapPanel*Union Store#MarketPanel_3*Honor Store#MarketPanel_5*Meteoric Iron Store#MarketPanel_12*Friendship Store#MarketPanel_4
+75001~75008,{遗迹}#TeamInfoPanel,Ruins#TeamInfoPanel
+75009~75014,{神魔试炼}#PVEPanel,Divine Demon Trial#PVEPanel
+75015~75024,{深渊}#PVEPanel,Abyss#PVEPanel
+75030,"{野蛮人营地}#BarbarianCamp_3,9","Barbarian Camp#BarbarianCamp_3,9"
+75031,{知识问答}#SceneChangePanel_6,Knowledge Quiz#SceneChangePanel_6
+75049~75057,{领地} {首领}#0,Territory Leader#0
+75067~75081,{竞技}#PVPPanel_1,PVP#PVPPanel_1
+78001~78012,{运营活动}#0,Operational Activities#0
+78301~78304,{运营活动}#0,Operational Activities#0
+78501~78503,{运营活动}#0,Operational Activities#0
+78551~78552,{藏宝洞}#PVEPanel,Treasure Cave#PVEPanel
+1003,{原始大陆} BOSS#NewWorldMapPanel*{落星岛}#NewWorldMapPanel,Primordial Continent BOSS#NewWorldMapPanel*Falling Star Island#NewWorldMapPanel
+"1002,1005,1004,2160,2161",{陨铁商店}#MarketPanel_12,Meteoric Iron Store#MarketPanel_12
+"75101,75102,78601,78602",{原始大陆} BOSS#NewWorldMapPanel,Primordial Continent BOSS#NewWorldMapPanel
+76001~76012,{领主考核}#PVEPanel,Lord's Proving#PVEPanel
+2100,{铁匠铺} {制作}#SmithyPanel*{荒原} {挂机收益}#MainGatePanel*{世界首领}-{个人版}#MyBossPanel*{原始大陆} {攻城战}#NewWorldMapPanel,Smithy Produce#SmithyPanel*Wilderness Idle Income#MainGatePanel*World Boss-Personal Edition#MyBossPanel*Primordial Continent Siege Battle#NewWorldMapPanel
+78901~78924,{运营活动}#ShopPanel_6,Operational Activities#ShopPanel_6
+4552~4563,{运营活动}#ShopPanel_6,Operational Activities#ShopPanel_6
+4567~4572,{运营活动}#ShopPanel_6,Operational Activities#ShopPanel_6
+1160,{幸运转盘}#EventPanel_91*{幸运盲盒}#EventPanel_94,Lucky Wheel#EventPanel_91*Lucky Mystery Box#EventPanel_94
+79101~79124,{幸运盲盒}#EventPanel_94,Lucky Mystery Box#EventPanel_94
+76501~76506,{攻城战}#WorldPanel,Siege Battle#WorldPanel
+76507~76512,{原始大陆} {攻城战}#NewWorldMapPanel,Primordial Continent Siege Battle#NewWorldMapPanel

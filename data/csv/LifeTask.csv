@@ -1,0 +1,115 @@
+﻿Type,GroupId,TaskId,TaskDes,TaskCon,TaskVal,Awards,TaskDes_en
+1,1,0,{完成下列所有任务},0,0,2021_1+1371_50+1621_50,Complete All The Following Quests
+1,1,1,{领主等级} 30,1,30,0,Lord Level 30
+1,1,2,{制造} {冷幽泉}({1阶}) x50,2105,50,0,Make Cold Spring(T1) x50
+1,1,3,{制造} {优质木材}({1阶}) x50,2104,50,0,Make Premium Wood(T1) x50
+1,2,0,{完成下列所有任务},0,0,2022_1+1372_50+1621_50,Complete All The Following Quests
+1,2,1,{领主等级} 45,1,45,0,Lord Level 45
+1,2,2,{制造} {攻击药剂}(1★) x10,2601,10,0,Make ATK Potion(1★) x10
+1,2,3,{制造} {防御药剂}(1★) x10,2602,10,0,Make DEF Potion(1★) x10
+1,2,4,{制造} {破坏药剂}(1★) x10,2603,10,0,Make DES Potion(1★) x10
+1,3,0,{完成下列所有任务},0,0,2023_1+1373_50+1622_50,Complete All The Following Quests
+1,3,1,{领主等级} 60,1,60,0,Lord Level 60
+1,3,2,{制造} {攻击药剂}(2★) x20,2604,20,0,Make ATK Potion(2★) x20
+1,3,3,{制造} {防御药剂}(2★) x20,2605,20,0,Make DEF Potion(2★) x20
+1,3,4,{制造} {破坏药剂}(2★) x20,2606,20,0,Make DES Potion(2★) x20
+1,3,5,{制造} {强壮药剂}(2★) x20,2607,20,0,Make Strong Potion(2★) x20
+1,4,0,{完成下列所有任务},0,0,2024_1+1374_50+1622_50,Complete All The Following Quests
+1,4,1,{领主等级} 75,1,75,0,Lord Level 75
+1,4,2,{制造} {攻击药剂}(3★) x30,2608,30,0,Make ATK Potion(3★) x30
+1,4,3,{制造} {防御药剂}(3★) x30,2609,30,0,Make DEF Potion(3★) x30
+1,4,4,{制造} {破坏药剂}(3★) x30,2610,30,0,Make DES Potion(3★) x30
+1,4,5,{制造} {强壮药剂}(3★) x30,2611,30,0,Make Strong Potion(3★) x30
+1,4,6,{制造} {迅捷药剂}(3★) x20,2612,20,0,Make Agility Potion(3★) x20
+1,5,0,{完成下列所有任务},0,0,2025_1+1375_50+1623_50,Complete All The Following Quests
+1,5,1,{领主等级} 90,1,90,0,Lord Level 90
+1,5,2,{制造} {攻击药剂}(4★) x50,2613,50,0,Make ATK Potion(4★) x50
+1,5,3,{制造} {防御药剂}(4★) x50,2614,50,0,Make DEF Potion(4★) x50
+1,5,4,{制造} {破坏药剂}(4★) x50,2615,50,0,Make DES Potion(4★) x50
+1,5,5,{制造} {强壮药剂}(4★) x50,2616,50,0,Make Strong Potion(4★) x50
+1,5,6,{制造} {迅捷药剂}(4★) x30,2617,30,0,Make Agility Potion(4★) x30
+1,5,7,{制造} {力量药剂}(4★) x30,2618,30,0,Make Power Potion(4★) x30
+1,5,8,{制造} {耐力药剂}(4★) x30,2619,30,0,Make Stamina Potion(4★) x30
+1,6,0,{完成下列所有任务},0,0,2026_1+1376_50+1623_50,Complete All The Following Quests
+1,6,1,{领主等级} 105,1,105,0,Lord Level 105
+1,6,2,{制造} {攻击药剂}(5★) x80,2620,80,0,Make ATK Potion(5★) x80
+1,6,3,{制造} {防御药剂}(5★) x80,2621,80,0,Make DEF Potion(5★) x80
+1,6,4,{制造} {破坏药剂}(5★) x80,2622,80,0,Make DES Potion(5★) x80
+1,6,5,{制造} {强壮药剂}(5★) x80,2623,80,0,Make Strong Potion(5★) x80
+1,6,6,{制造} {迅捷药剂}(5★) x50,2624,50,0,Make Agility Potion(5★) x50
+1,6,7,{制造} {力量药剂}(5★) x50,2625,50,0,Make Power Potion(5★) x50
+1,6,8,{制造} {耐力药剂}(5★) x50,2626,50,0,Make Stamina Potion(5★) x50
+1,6,9,{制造} {狂暴药剂}(5★) x50,2627,50,0,Make Berserk Potion(5★) x50
+2,1,0,{完成下列所有任务},0,0,2011_1+1371_50+1621_50,Complete All The Following Quests
+2,1,1,{领主等级} 25,1,25,0,Lord Level 25
+2,1,2,{制造} {玛瑙珠}({1阶}) x50,2106,50,0,Make Agate Bead(T1) x50
+2,1,3,{制造} {钨金}({1阶}) x50,2101,50,0,Make Tungsten Gold(T1) x50
+2,2,0,{完成下列所有任务},0,0,2012_1+1372_50+1621_50,Complete All The Following Quests
+2,2,1,{领主等级} 40,1,40,0,Lord Level 40
+2,2,2,{制造} {丰收石碑}-{粮食}(1★) x10,2701,10,0,Make Harvest Stele-Food(1★) x10
+2,2,3,{制造} {丰收石碑}-{木材}(1★) x10,2702,10,0,Make Harvest Stele-Wood(1★) x10
+2,2,4,{制造} {丰收石碑}-{石料}(1★) x10,2703,10,0,Make Harvest Stele-Stone(1★) x10
+2,3,0,{完成下列所有任务},0,0,2013_1+1373_50+1622_50,Complete All The Following Quests
+2,3,1,{领主等级} 55,1,55,0,Lord Level 55
+2,3,2,{制造} {丰收石碑}-{粮食}(2★) x20,2704,20,0,Make Harvest Stele-Food(2★) x20
+2,3,3,{制造} {丰收石碑}-{木材}(2★) x20,2705,20,0,Make Harvest Stele-Wood(2★) x20
+2,3,4,{制造} {丰收石碑}-{石料}(2★) x20,2706,20,0,Make Harvest Stele-Stone(2★) x20
+2,3,5,{制造} {丰收石碑}-{铁锭}(2★) x20,2707,20,0,Make Harvest Stele-Iron(2★) x20
+2,4,0,{完成下列所有任务},0,0,2014_1+1374_50+1622_50,Complete All The Following Quests
+2,4,1,{领主等级} 70,1,70,0,Lord Level 70
+2,4,2,{丰收石碑}-{粮食}(3★) x30,2708,30,0,Harvest Stele-Food(3★) x30
+2,4,3,{丰收石碑}-{木材}(3★) x30,2709,30,0,Harvest Stele-Wood(3★) x30
+2,4,4,{丰收石碑}-{石料}(3★) x30,2710,30,0,Harvest Stele-Stone(3★) x30
+2,4,5,{丰收石碑}-{铁锭}(3★) x30,2711,30,0,Harvest Stele-Iron(3★) x30
+2,4,6,{丰收石碑}-{金币}(3★) x30,2712,30,0,Harvest Stele-Gold Coin(3★) x30
+2,5,0,{完成下列所有任务},0,0,2015_1+1375_50+1623_50,Complete All The Following Quests
+2,5,1,{领主等级} 85,1,85,0,Lord Level 85
+2,5,2,{制造} {丰收石碑}-{粮食}(4★) x50,2713,50,0,Make Harvest Stele-Food(4★) x50
+2,5,3,{制造} {丰收石碑}-{木材}(4★) x50,2714,50,0,Make Harvest Stele-Wood(4★) x50
+2,5,4,{制造} {丰收石碑}-{石料}(4★) x50,2715,50,0,Make Harvest Stele-Stone(4★) x50
+2,5,5,{制造} {丰收石碑}-{铁锭}(4★) x50,2716,50,0,Make Harvest Stele-Iron(4★) x50
+2,5,6,{制造} {丰收石碑}-{金币}(4★) x40,2717,40,0,Make Harvest Stele-Gold Coin(4★) x40
+2,5,7,{制造} {秘纹石碑}-{粮食}(4★) x40,2718,40,0,Make Sigil Stele-Food(4★) x40
+2,5,8,{制造} {秘纹石碑}-{木材}(4★) x40,2719,40,0,Make Sigil Stele-Wood(4★) x40
+2,5,9,{制造} {秘纹石碑}-{石料}(4★) x40,2720,40,0,Make Sigil Stele-Stone(4★) x40
+2,6,0,{完成下列所有任务},0,0,2016_1+1376_50+1623_50,Complete All The Following Quests
+2,6,1,{领主等级} 100,1,100,0,Lord Level 100
+2,6,2,{制造} {丰收石碑}-{粮食}(5★) x80,2721,80,0,Make Harvest Stele-Food(5★) x80
+2,6,3,{制造} {丰收石碑}-{木材}(5★) x80,2722,80,0,Make Harvest Stele-Wood(5★) x80
+2,6,4,{制造} {丰收石碑}-{石料}(5★) x80,2723,80,0,Make Harvest Stele-Stone(5★) x80
+2,6,5,{制造} {丰收石碑}-{铁锭}(5★) x80,2724,80,0,Make Harvest Stele-Iron(5★) x80
+2,6,6,{制造} {丰收石碑}-{金币}(5★) x80,2725,80,0,Make Harvest Stele-Gold Coin(5★) x80
+2,6,7,{制造} {秘纹石碑}-{粮食}(5★) x40,2726,40,0,Make Sigil Stele-Food(5★) x40
+2,6,8,{制造} {秘纹石碑}-{木材}(5★) x40,2727,40,0,Make Sigil Stele-Wood(5★) x40
+2,6,9,{制造} {秘纹石碑}-{石料}(5★) x40,2728,40,0,Make Sigil Stele-Stone(5★) x40
+2,6,10,{制造} {秘纹石碑}-{铁锭}(5★) x40,2729,40,0,Make Sigil Stele-Iron(5★) x40
+2,6,11,{制造} {秘纹石碑}-{金币}(5★) x40,2730,40,0,Make Sigil Stele-Gold Coin(5★) x40
+3,1,0,{完成下列所有任务},0,0,2001_1+1371_50+1621_50,Complete All The Following Quests
+3,1,1,{领主等级} 20,1,20,0,Lord Level 20
+3,1,2,{制造} {轻蚕丝}({1阶}) x50,2102,50,0,Make Light Silk(T1) x50
+3,1,3,{制造} {皮革}({1阶}) x50,2103,50,0,Make Leather(T1) x50
+3,2,0,{完成下列所有任务},0,0,2002_1+1372_50+1621_50,Complete All The Following Quests
+3,2,1,{领主等级} 35,1,35,0,Lord Level 35
+3,2,2,{制造} {初心者}({头饰}) x1,4501,1,0,Make Beginner(Headwear) x1
+3,2,3,{制造} {初心者}({服饰}) x1,4502,1,0,Make Beginner(Clothing) x1
+3,2,4,{制造} {初心者}({饰品}) x1,4503,1,0,Make Beginner(Accessory) x1
+3,3,0,{完成下列所有任务},0,0,2003_1+1373_50+1622_50,Complete All The Following Quests
+3,3,1,{领主等级} 50,1,50,0,Lord Level 50
+3,3,2,{制造} {侍者}({头饰}) x1,4504,1,0,Make Attendant(Headwear) x1
+3,3,3,{制造} {侍者}({服饰}) x1,4505,1,0,Make Attendant(Clothing) x1
+3,3,4,{制造} {侍者}({饰品}) x1,4506,1,0,Make Attendant(Accessory) x1
+3,4,0,{完成下列所有任务},0,0,2004_1+1374_50+1622_50,Complete All The Following Quests
+3,4,1,{领主等级} 65,1,65,0,Lord Level 65
+3,4,2,{制造} {荣耀统治}({头饰}) x1,4510,1,0,Make Reign Glory(Headwear) x1
+3,4,3,{制造} {荣耀统治}({服饰}) x1,4511,1,0,Make Reign Glory(Clothing) x1
+3,4,4,{制造} {荣耀统治}({饰品}) x1,4512,1,0,Make Reign Glory(Accessory) x1
+3,5,0,{完成下列所有任务},0,0,2005_1+1375_50+1623_50,Complete All The Following Quests
+3,5,1,{领主等级} 80,1,80,0,Lord Level 80
+3,5,2,{制造} {仙侣奇缘}({头饰}) x1,4519,1,0,Make Afairy couple(Headwear) x1
+3,5,3,{制造} {仙侣奇缘}({服饰}) x1,4520,1,0,Make Afairy couple(Clothing) x1
+3,5,4,{制造} {仙侣奇缘}({饰品}) x1,4521,1,0,Make Afairy couple(Accessory) x1
+3,6,0,{完成下列所有任务},0,0,2006_1+1376_50+1623_50,Complete All The Following Quests
+3,6,1,{领主等级} 95,1,95,0,Lord Level 95
+3,6,2,{制造} {玫瑰之刃}({头饰}) x1,4528,1,0,Make Rose Blade(Headwear) x1
+3,6,3,{制造} {玫瑰之刃}({服饰}) x1,4529,1,0,Make Rose Blade(Clothing) x1
+3,6,4,{制造} {玫瑰之刃}({饰品}) x1,4530,1,0,Make Rose Blade(Accessory) x1

@@ -1,0 +1,16 @@
+# Raw/extracted/binary game artifacts (regenerable via tools/, and copyrighted — don't commit)
+extracted/
+decompiled/
+
+# Redundant with data/csv (regenerable via tools/parse_configs.py)
+data/json/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,206 @@
+﻿type,id,Chapter,name,des,condition,need_num,reward,skip,name_en,des_en
+0,10001,1,{新的篇章},{完成} {章节}-1 {所有内容},0,0,1200_10+1120_2+1110_40+3_100,3_100+1110_20,New Chapter,Complete Chapter-1 All Content
+0,10002,2,{集结的号角},{完成} {章节}-2 {所有内容},0,0,5052_2+19089_1+1403_100+4_200,3_160+1110_30,Horn Of Assembly,Complete Chapter-2 All Content
+0,10003,3,{蓬勃发展},{完成} {章节}-3 {所有内容},0,0,3007_1+3008_1+3009_1+3010_1+3011_1+3012_1,3_200+1110_40,Flourishing,Complete Chapter-3 All Content
+0,10004,4,{文明之光},{完成} {章节}-4 {所有内容},0,0,3402_1+3404_1+1110_80+3_200,3_240+1110_50,Light Of Civilization,Complete Chapter-4 All Content
+0,10005,5,{燃烧的雄心},{完成} {章节}-5 {所有内容},0,0,1130_3+1121_2+1403_200+4_400,3_300+1110_60,Burning Ambition,Complete Chapter-5 All Content
+0,10006,6,{剑与荣耀},{完成} {章节}-6 {所有内容},0,0,1135_3+1121_2+1222_1+1152_30,3_340+1110_70,Sword And Glory,Complete Chapter-6 All Content
+0,10007,7,{战意的觉醒},{完成} {章节}-7 {所有内容},0,0,1130_3+1135_3+1110_160+3_400,3_400+1110_80,Battle Awakening,Complete Chapter-7 All Content
+0,10008,8,{攻城略地},{完成} {章节}-8 {所有内容},0,0,30001_1+1121_3+1403_300+4_600,3_440+1110_90,Conquer And Siege,Complete Chapter-8 All Content
+0,10009,9,{混沌与秩序},{完成} {章节}-9 {所有内容},0,0,6519_1+6520_1+6521_1+1364_250+1624_250,3_500+1110_100,Chaos And Order,Complete Chapter-9 All Content
+0,10010,10,{群星闪耀之际},{完成} {章节}-10 {所有内容},0,0,1230_1+1125_20+1110_320+3_800,3_600+1110_120,When The Stars Shine,Complete Chapter-10 All Content
+0,10011,11,{英雄的战场},{完成} {章节}-11 {所有内容},0,0,1240_1+1125_20+1403_400+4_800,3_700+1110_140,Heroes Battlefields,Complete Chapter-11 All Content
+0,10012,12,{胜利的凯歌},{完成} {章节}-12 {所有内容},0,0,1721_1+5081_1+5102_1+5082_1,3_800+1110_160,Victory Anthem,Complete Chapter-12 All Content
+15,1,1,{主线任务},{讨伐} {野蛮人},1,1,1_50+3_5+1110_2+11_1000,"WildPos_67,14",Main,Raid Barbarian
+1,2,1,{主线任务},{升级} {市政厅} {等级} 2,1,2,1_50+3_5+1110_2+11_1000,BuildUpPanel_1,Main,Upgrade City Hall Lv 2
+7,3,1,{主线任务},{通关} {荒原}-1,1,1,1_50+3_5+1110_2+11_1000,MainGatePanel,Main,Clearance Wilderness-1
+3,4,1,{主线任务},{建造} {联盟中心},9,1,1_50+3_5+1110_2+11_1000,BuildPanel,Main,Build Union Center
+3,5,1,{主线任务},{建造} {学院},10,1,1_50+3_5+1110_2+11_1000,"BuildPanel_0,1,10",Main,Build Academy
+2,6,1,{主线任务},{研究} {采集技巧},1011,1,1_50+3_5+1110_2+11_1000,"SciencePanel_1,1011",Main,Research Gathering Technique
+2,7,1,{主线任务},{研究} {耕作技巧},1021,1,1_50+3_5+1110_2+11_1000,"SciencePanel_1,1021",Main,Research Farming Technique
+2,8,1,{主线任务},{研究} {栽植技巧},1022,1,1_50+3_5+1110_2+11_1000,"SciencePanel_1,1022",Main,Research Planting Technique
+15,9,1,{主线任务},{讨伐} {野蛮人}-2,2,1,1_50+3_5+1110_2+11_1000,"WildPos_1,100",Main,Raid Barbarian-2
+7,10,1,{主线任务},{通关} {荒原}-5,5,1,1_50+3_5+1110_2+11_1000,MainGatePanel,Main,Clearance Wilderness-5
+10,11,2,{主线任务},{召唤} {英雄} x10,2,10,1_50+3_8+1110_3+11_2000,SumPanel_1,Main,Summon Hero x10
+3,12,2,{主线任务},{建造} {弓兵营},15,1,1_50+3_8+1110_3+11_2000,"BuildPanel_0,2,15",Main,Build Archer Barracks
+12,13,2,{主线任务},{训练} {弓兵}(T1) x200,1,200,1_50+3_8+1110_3+11_2000,TrainPanel_2,Main,Train Archer(T1) x200
+3,14,2,{主线任务},{建造} {骑兵营},16,1,1_50+3_8+1110_3+11_2000,"BuildPanel_0,2,16",Main,Build Cavalry Barracks
+13,15,2,{主线任务},{训练} {骑兵}(T1) x200,1,200,1_50+3_8+1110_3+11_2000,TrainPanel_3,Main,Train Cavalry(T1) x200
+1,16,2,{主线任务},{升级} {市政厅} {等级} 3,1,3,1_50+3_8+1110_3+11_2000,BuildUpPanel_1,Main,Upgrade City Hall Lv 3
+3,17,2,{主线任务},{建造} {委托板},26,1,21_10000+22_10000+23_10000+24_5000,"BuildPanel_0,1,26",Main,Build Delegation Board
+10,18,2,{主线任务},{完成} {委托任务} x1,8,1,1_50+3_8+1110_3+11_2000,VipPanel,Main,Complete Delegate Quest x1
+1,19,2,{主线任务},{升级} {市政厅} {等级} 4,1,4,1_50+3_8+1110_3+11_2000,BuildUpPanel_1,Main,Upgrade City Hall Lv 4
+7,20,2,{主线任务},{通关} {荒原}-10,10,1,1_50+3_8+1110_3+11_2000,MainGatePanel,Main,Clearance Wilderness-10
+15,21,2,{主线任务},{讨伐} {野蛮人}-3,3,1,1_50+3_8+1110_3+11_2000,"WildPos_114,166",Main,Raid Barbarian-3
+10,22,2,{主线任务},{野外} {招募} T2 {步兵},305,1,1_50+3_8+1110_3+11_2000,"WildPos_102,196",Main,Field Recruit T2 Infantry
+10,23,2,{主线任务},{野外} {招募} T2 {骑兵},307,1,1_50+3_8+1110_3+11_2000,"WildPos_136,212",Main,Field Recruit T2 Cavalry
+10,24,2,{主线任务},{英雄} {装备} T2 {士兵},28,1,1_50+3_8+1110_3+11_2000,HeroTeamPanel,Main,Hero Equip T2 Soldier
+1,25,2,{主线任务},{升级} {市政厅} {等级} 5,1,5,1_50+3_8+1110_3+11_2000,BuildUpPanel_1,Main,Upgrade City Hall Lv 5
+3,26,2,{主线任务},{建造} {商店},12,1,1_50+3_8+1110_3+11_2000,"BuildPanel_0,1,12",Main,Build Store
+10,27,3,{主线任务},{进阶} {英雄},14,1,1_50+3_10+1110_4+11_4000,HeroPanel,Main,Advance Hero
+1,28,3,{主线任务},{升级} {市政厅} {等级} 6,1,6,1121_1+3_10+1110_4+11_4000,BuildUpPanel_1,Main,Upgrade City Hall Lv 6
+3,29,3,{主线任务},{建造} {情报站},19,1,1_50+3_10+1110_4+11_4000,"BuildPanel_0,2,19",Main,Build Information Station
+10,30,3,{主线任务},{派遣} {英雄} x1,6,1,1_50+3_10+1110_4+11_4000,DispatchPanel,Main,Dispatch Hero x1
+3,31,3,{主线任务},{建造} {运输站},7,1,1_50+3_10+1110_4+11_4000,"BuildPanel_0,1,7",Main,Build Transport Station
+9,32,3,{主线任务},{占领} {农场}({等级} 1),4001,1,1_50+3_10+1110_4+11_4000,"WorldPanel_4,1",Main,Occupy Farm(Lv 1)
+9,33,3,{主线任务},{占领} {伐木场}({等级} 1),5001,1,1_50+3_10+1110_4+11_4000,"WorldPanel_5,1",Main,Occupy Sawmill(Lv 1)
+2,34,3,{主线任务},{研究} {粮食收割},1031,1,1_50+3_10+1110_4+11_4000,"SciencePanel_1,1031",Main,Research Food Harvest
+2,35,3,{主线任务},{研究} {木材砍伐},1033,1,1_50+3_10+1110_4+11_4000,"SciencePanel_1,1033",Main,Research Wood Felling
+2,36,3,{主线任务},{研究} {建筑技巧},1032,1,1_50+3_10+1110_4+11_4000,"SciencePanel_1,1032",Main,Research Building Technique
+1,37,3,{主线任务},{升级} {市政厅} {等级} 7,1,7,1_50+3_10+1110_4+11_4000,BuildUpPanel_1,Main,Upgrade City Hall Lv 7
+3,38,3,{主线任务},{建造} {传送门},21,1,1_50+3_10+1110_4+11_4000,"BuildPanel_0,2,21",Main,Build Portal
+10,39,3,{主线任务},{使用} {传送门} x1,7,1,1_50+3_10+1110_4+11_4000,StarDoorPanel,Main,Use Portal x1
+9,40,3,{主线任务},{占领} {采石场}({等级} 1),6001,1,1_50+3_10+1110_4+11_4000,"WorldPanel_6,1",Main,Occupy Quarry(Lv 1)
+9,41,3,{主线任务},{占领} {铁矿场}({等级} 1),7001,1,1_50+3_10+1110_4+11_4000,"WorldPanel_7,1",Main,Occupy Ironmine(Lv 1)
+7,42,3,{主线任务},{通关} {荒原}-15,15,1,1_50+3_10+1110_4+11_4000,MainGatePanel,Main,Clearance Wilderness-15
+15,43,3,{主线任务},{讨伐} {野蛮人}-4,4,1,1_50+3_10+1110_4+11_4000,"WildPos_171,83",Main,Raid Barbarian-4
+10,44,3,{主线任务},{野外} {招募} T2 {弓兵},306,1,1_50+3_10+1110_4+11_4000,"WildPos_188,64",Main,Field Recruit T2 Archer
+10,45,3,{主线任务},{野外} {招募} T2 {战车},308,1,1_50+3_10+1110_4+11_4000,"WildPos_198,147",Main,Field Recruit T2 Chariot
+1,46,4,{主线任务},{升级} {市政厅} {等级} 8,1,8,1125_5+3_12+1110_5+11_6000,BuildUpPanel_1,Main,Upgrade City Hall Lv 8
+8,47,4,{主线任务},{通关} {丛林遗迹}-I,1001,1,1601_1+1621_100+1110_5+11_6000,"TeamInfoPanel_1,0,1",Main,Clearance Jungle Ruins-I
+3,48,4,{主线任务},{建造} {铁矿场},5,1,1_50+3_12+1110_5+11_6000,"BuildPanel_0,1,5",Main,Build Ironmine
+3,49,4,{主线任务},{建造} {铁匠铺},20,1,2201_1+2101_50+2104_50+11_6000,"BuildPanel_0,2,20",Main,Build Smithy
+1,50,4,{主线任务},{升级} {学院} {等级} 8,10,8,1_50+3_12+1110_5+11_6000,BuildUpPanel_10,Main,Upgrade Academy Lv 8
+2,51,4,{主线任务},{研究} {训练有素},2011,1,1_50+3_12+1110_5+11_6000,"SciencePanel_2,2011",Main,Research Well Trained
+2,52,4,{主线任务},{研究} {格斗术},2021,3,1_50+3_12+1110_5+11_6000,"SciencePanel_2,2021",Main,Research Combat Skill
+2,53,4,{主线任务},{研究} {木羽箭},2022,3,1_50+3_12+1110_5+11_6000,"SciencePanel_2,2022",Main,Research Wooden Feather Arrow
+2,54,4,{主线任务},{研究} {步兵}(T2),2031,1,1_50+3_12+1110_5+11_6000,"SciencePanel_2,2031",Main,Research Infantry(T2)
+11,55,4,{主线任务},"{训练} {步兵}(T2) x1,000",2,1000,1_50+3_12+1110_5+11_6000,TrainPanel_1,Main,"Train Infantry(T2) x1,000"
+2,56,4,{主线任务},{研究} {弓兵}(T2),2032,1,1_50+3_12+1110_5+11_6000,"SciencePanel_2,2032",Main,Research Archer(T2)
+12,57,4,{主线任务},"{训练} {弓兵}(T2) x1,000",2,1000,1_50+3_12+1110_5+11_6000,TrainPanel_2,Main,"Train Archer(T2) x1,000"
+7,58,4,{主线任务},{通关} {荒原}-20,20,1,1_50+3_12+1110_5+11_6000,MainGatePanel,Main,Clearance Wilderness-20
+6,59,4,{主线任务},{讨伐} {铁甲将军},1,1,1_50+3_12+1110_5+11_6000,"WildPos_-40,-45",Main,Raid Crocodile
+10,60,4,{主线任务},{英雄} {穿戴} {装备},27,1,1_50+3_12+1110_5+11_6000,HeroPanel,Main,Hero Wear Equip
+15,61,4,{主线任务},{讨伐} {野蛮人}-5,5,1,1_50+3_12+1110_5+11_6000,"WildPos_6,-56",Main,Raid Barbarian-5
+1,62,5,{主线任务},{升级} {市政厅} {等级} 9,1,9,1_75+3_15+1110_6+11_9000,BuildUpPanel_1,Main,Upgrade City Hall Lv 9
+3,63,5,{主线任务},{建造} {贸易站},13,1,1_75+3_15+1110_6+11_9000,"BuildPanel_0,1,13",Main,Build Trade Station
+10,64,5,{主线任务},{设置} {编队}-2,29,1,1_75+3_15+1110_6+11_9000,HeroTeamPanel,Main,Settings Formation-2
+10,65,5,{主线任务},{特产运输} x1,41,1,1_75+3_15+1110_6+11_9000,Village,Main,Specialty Transport x1
+1,66,5,{主线任务},{升级} {市政厅} {等级} 10,1,10,1_75+3_15+1110_6+11_9000,BuildUpPanel_1,Main,Upgrade City Hall Lv 10
+10,67,5,{主线任务},{挑战} {竞技场} x3,13,3,1_75+3_15+1110_6+11_9000,PVPPanel_1,Main,Challenge Arena x3
+7,68,5,{主线任务},{通关} {荒原}-30,30,1,1_75+3_15+1110_6+11_9000,MainGatePanel,Main,Clearance Wilderness-30
+10,69,5,{主线任务},{购买} {荒原} {宝箱}x1,15,1,1_75+3_15+1110_6+11_9000,MarketPanel_9,Main,Purchase Wilderness Chestx1
+4,70,5,{主线任务},{升级} {领主等级} 30,0,30,1_75+3_15+1110_6+11_9000,UpDesPanel,Main,Upgrade Lord Level 30
+8,71,5,{主线任务},{通关} {修炼洞穴}-I,5001,1,1403_50+4_50+1110_6+11_9000,"TeamInfoPanel_5,0,1",Main,Clearance Training Cave-I
+8,72,5,{主线任务},{通关} {沙漠遗迹}-I,2001,1,1460_30+3_15+1110_6+11_9000,"TeamInfoPanel_2,0,1",Main,Clearance Desert Ruins-I
+10,73,5,{主线任务},{升级} {英雄} {天赋},10,1,1_75+3_15+1110_6+11_9000,HeroPanel,Main,Upgrade Hero Talent
+1,74,5,{主线任务},{升级} {市政厅} {等级} 11,1,11,1_75+3_15+1110_6+11_9000,BuildUpPanel_1,Main,Upgrade City Hall Lv 11
+7,75,5,{主线任务},{通关} {荒原}-40,40,1,1_75+3_15+1110_6+11_9000,MainGatePanel,Main,Clearance Wilderness-40
+2,76,5,{主线任务},{研究} {采集强化},1041,1,1_75+3_15+1110_6+11_9000,"SciencePanel_1,1041",Main,Research Enhanced Gathering
+2,77,5,{主线任务},{研究} {科研},1052,1,1_75+3_15+1110_6+11_9000,"SciencePanel_1,1052",Main,Research Research
+15,78,5,{主线任务},{讨伐} {野蛮人}-6,6,1,1_75+3_15+1110_6+11_9000,"WildPos_-65,14",Main,Raid Barbarian-6
+6,79,5,{主线任务},{讨伐} {摩因},2,1,1_75+3_15+1110_6+11_9000,"WildPos_-86,119",Main,Raid Moin
+1,80,6,{主线任务},{升级} {市政厅} {等级} 12,1,12,1_75+3_17+1110_7+11_12000,BuildUpPanel_1,Main,Upgrade City Hall Lv 12
+3,81,6,{主线任务},{建造} {神殿},25,1,1151_20+1267_20+1271_20+11_12000,"BuildPanel_0,3,25",Main,Build Temple
+10,82,6,{主线任务},{神魔试炼} x2,42,2,1_75+3_17+1110_7+11_12000,PVEPanel,Main,Divine Demon Trial x2
+2,83,6,{主线任务},{研究} {开采技巧},1051,1,1_75+3_17+1110_7+11_12000,"SciencePanel_1,1051",Main,Research Mining Technique
+2,84,6,{主线任务},{研究} {采矿技巧},1053,1,1_75+3_17+1110_7+11_12000,"SciencePanel_1,1053",Main,Research Quarrying Technique
+4,85,6,{主线任务},{升级} {领主等级} 40,0,40,1_75+3_17+1110_7+11_12000,UpDesPanel,Main,Upgrade Lord Level 40
+8,86,6,{主线任务},{通关} {次元之地}-I,6001,1,1465_50+1470_50+1110_7+11_12000,"TeamInfoPanel_6,0,1",Main,Clearance Dimensional Land-I
+10,87,6,{主线任务},{技能} {觉醒} x1,24,1,1_75+3_17+1110_7+11_12000,SkillPanel,Main,Skill Awakening x1
+1,88,6,{主线任务},{升级} {市政厅} {等级} 13,1,13,1210_10+3_17+1110_7+11_12000,BuildUpPanel_1,Main,Upgrade City Hall Lv 13
+10,89,6,{主线任务},{召唤} {圣物} x10,9,10,1_75+3_17+1110_7+11_12000,SumPanel_4,Main,Summon Relic x10
+3,90,6,{主线任务},{建造} {图书馆},22,1,1_75+3_17+1110_7+11_12000,"BuildPanel_0,3,22",Main,Build Library
+7,91,6,{主线任务},{通关} {荒原}-60,60,1,1_75+3_17+1110_7+11_12000,MainGatePanel,Main,Clearance Wilderness-60
+2,92,6,{主线任务},{研究} {石料甄别},1061,1,1_75+3_17+1110_7+11_12000,"SciencePanel_1,1061",Main,Research Stone Screening
+2,93,6,{主线任务},{研究} {铁矿勘察},1063,1,1_75+3_17+1110_7+11_12000,"SciencePanel_1,1063",Main,Research Iron Ore Survey
+5,94,6,{主线任务},{升级} {英雄等级} 30,0,30,1_75+3_17+1110_7+11_12000,HeroPanel,Main,Upgrade Hero Level 30
+10,95,6,{主线任务},{解锁} {英雄} {技能槽}-3,18,1,1_75+3_17+1110_7+11_12000,HeroPanel,Main,Unlock Hero Skill Slot-3
+10,96,6,{主线任务},{装备} {技能} x2,5,2,1_75+3_17+1110_7+11_12000,HeroPanel,Main,Equip Skill x2
+8,97,6,{主线任务},{通关} {冰雪遗迹}-I,3001,1,1500_20+1515_1+1110_7+11_12000,"TeamInfoPanel_3,0,1",Main,Clearance Snow Ruins-I
+10,98,6,{主线任务},{升级} {英雄} {好感度} x1,20,1,1_75+3_17+1110_7+11_12000,HeroPanel,Main,Upgrade Hero Favorability x1
+15,99,6,{主线任务},{讨伐} {野蛮人}-7,7,1,1_75+3_17+1110_7+11_12000,"WildPos_-54,163",Main,Raid Barbarian-7
+6,100,6,{主线任务},{讨伐} {库里雷蒙},3,1,1_75+3_17+1110_7+11_12000,"WildPos_105,258",Main,Raid Currymont
+1,101,7,{主线任务},{升级} {市政厅} {等级} 14,1,14,1_75+3_20+1110_8+11_16000,BuildUpPanel_1,Main,Upgrade City Hall Lv 14
+1,102,7,{主线任务},{升级} {运输站} {等级} 14,7,14,1_75+3_20+1110_8+11_16000,BuildUpPanel_7,Main,Upgrade Transport Station Lv 14
+3,103,7,{主线任务},{建造} {博物馆},23,1,1_75+3_20+1110_8+11_16000,"BuildPanel_0,3,23",Main,Build Museum
+2,104,7,{主线任务},{研究} {地仓扩建},1062,1,1_75+3_20+1110_8+11_16000,"SciencePanel_1,1062",Main,Research Storehouse Expansion
+2,105,7,{主线任务},{研究} {小型运输车},1071,1,1_75+3_20+1110_8+11_16000,"SciencePanel_1,1071",Main,Research Transport Cart
+7,106,7,{主线任务},{通关} {荒原}-80,80,1,1_75+3_20+1110_8+11_16000,MainGatePanel,Main,Clearance Wilderness-80
+4,107,7,{主线任务},{升级} {领主等级} 50,0,50,1_75+3_20+1110_8+11_16000,UpDesPanel,Main,Upgrade Lord Level 50
+8,108,7,{主线任务},{通关} {恶龙巢穴}-I,8001,1,1265_5+3_20+1110_8+11_16000,"TeamInfoPanel_8,0,1",Main,Clearance Dragon's Lair-I
+1,109,7,{主线任务},{升级} {市政厅} {等级} 15,1,15,1_75+3_20+1110_8+11_16000,BuildUpPanel_1,Main,Upgrade City Hall Lv 15
+3,110,7,{主线任务},{建造} {教堂},24,1,1_75+3_20+1110_8+11_16000,"BuildPanel_0,3,24",Main,Build Church
+4,111,7,{主线任务},{升级} {领主等级} 60,0,60,1_75+3_20+1110_8+11_16000,UpDesPanel,Main,Upgrade Lord Level 60
+8,112,7,{主线任务},{通关} {修炼洞穴}-II,5002,1,1403_100+4_100+1110_8+11_16000,"TeamInfoPanel_5,0,2",Main,Clearance Training Cave-II
+15,113,7,{主线任务},{讨伐} {野蛮人}-8,8,1,1_75+3_20+1110_8+11_16000,"WildPos_191,260",Main,Raid Barbarian-8
+6,114,7,{主线任务},{讨伐} {赤达鲁},4,1,1_75+3_20+1110_8+11_16000,"WildPos_279,180",Main,Raid Chidaru
+1,115,8,{主线任务},{升级} {市政厅} {等级} 16,1,16,1_75+3_22+1110_9+11_20000,BuildUpPanel_1,Main,Upgrade City Hall Lv 16
+8,116,8,{主线任务},{通关} {丛林遗迹}-II,1002,1,1602_1+1622_100+1110_9+11_20000,"TeamInfoPanel_1,0,2",Main,Clearance Jungle Ruins-II
+8,117,8,{主线任务},{通关} {沙漠遗迹}-II,2002,1,1460_60+3_22+1110_9+11_20000,"TeamInfoPanel_2,0,2",Main,Clearance Desert Ruins-II
+10,118,8,{主线任务},{讨伐} {世界首领} x1,43,1,1010_50+3_22+1110_9+11_20000,PVEPanel,Main,Raid World Boss x1
+1,119,8,{主线任务},{升级} {学院} {等级} 16,10,16,1_75+3_22+1110_9+11_20000,BuildUpPanel_10,Main,Upgrade Academy Lv 16
+2,120,8,{主线任务},{研究} {步兵}(T3),2061,1,1_75+3_22+1110_9+11_20000,"SciencePanel_2,2061",Main,Research Infantry(T3)
+11,121,8,{主线任务},"{训练} {步兵}(T3) x5,000",3,5000,1_75+3_22+1110_9+11_20000,TrainPanel_1,Main,"Train Infantry(T3) x5,000"
+2,122,8,{主线任务},{研究} {弓兵}(T3),2062,1,1_75+3_22+1110_9+11_20000,"SciencePanel_2,2062",Main,Research Archer(T3)
+12,123,8,{主线任务},"{训练} {弓兵}(T3) x5,000",3,5000,1_75+3_22+1110_9+11_20000,TrainPanel_2,Main,"Train Archer(T3) x5,000"
+2,124,8,{主线任务},{研究} {浇灌},1081,1,1_75+3_22+1110_9+11_20000,"SciencePanel_1,1081",Main,Research Irrigation
+2,125,8,{主线任务},{研究} {施肥},1082,1,1_75+3_22+1110_9+11_20000,"SciencePanel_1,1082",Main,Research Fertilization
+15,126,8,{主线任务},{讨伐} {野蛮人}-9,9,1,1_75+3_22+1110_9+11_20000,"WildPos_255,58",Main,Raid Barbarian-9
+6,127,8,{主线任务},{讨伐} {莫里卡特},5,1,1_75+3_22+1110_9+11_20000,"WildPos_149,-75",Main,Raid Moricart
+9,128,8,{主线任务},{参加} {村庄} {攻城战},10001,1,1_75+3_22+1110_9+11_20000,WorldPanel,Main,Participate Village Siege Battle
+2,129,8,{主线任务},{研究} {割麦长镰},1091,1,1_75+3_22+1110_9+11_20000,"SciencePanel_1,1091",Main,Research Scythes
+2,130,8,{主线任务},{研究} {弯把锯},1093,1,1_75+3_22+1110_9+11_20000,"SciencePanel_1,1093",Main,Research Curved Saw
+4,131,9,{主线任务},{升级} {领主等级} 70,0,70,1_100+3_25+1110_10+11_25000,UpDesPanel,Main,Upgrade Lord Level 70
+8,132,9,{主线任务},{通关} {次元之地}-II,6002,1,1465_50+1470_50+1110_10+11_25000,"TeamInfoPanel_6,0,2",Main,Clearance Dimensional Land-II
+8,133,9,{主线任务},{通关} {冰雪遗迹}-II,3002,1,1500_40+1515_2+1110_10+11_25000,"TeamInfoPanel_3,0,2",Main,Clearance Snow Ruins-II
+7,134,9,{主线任务},{通关} {荒原}-120,120,1,1_100+3_25+1110_10+11_25000,MainGatePanel,Main,Clearance Wilderness-120
+5,135,9,{主线任务},{升级} {英雄等级} 50,0,50,1_100+3_25+1110_10+11_25000,HeroPanel,Main,Upgrade Hero Level 50
+10,136,9,{主线任务},{解锁} {英雄} {技能槽}-4,25,1,1_100+3_25+1110_10+11_25000,HeroPanel,Main,Unlock Hero Skill Slot-4
+8,137,9,{主线任务},{通关} {熔岩遗迹}-II,4002,1,1310_1+3_25+1110_10+11_25000,"TeamInfoPanel_4,0,2",Main,Clearance Lava Ruins-II
+10,138,9,{主线任务},{装备} {技能石} x1,26,1,1_100+3_25+1110_10+11_25000,HeroPanel,Main,Equip Skill Stone x1
+1,139,9,{主线任务},{升级} {市政厅} {等级} 19,1,19,1_100+3_25+1110_10+11_25000,BuildUpPanel_1,Main,Upgrade City Hall Lv 19
+10,140,9,{主线任务},{荣耀竞技场} x3,16,3,1_100+3_25+1110_10+11_25000,PVPPanel_2,Main,Glory Arena x3
+2,141,9,{主线任务},{研究} {构建原理},1092,1,1_100+3_25+1110_10+11_25000,"SciencePanel_1,1092",Main,Research Construction Principles
+2,142,9,{主线任务},{研究} {进阶科研},1101,1,1_100+3_25+1110_10+11_25000,"SciencePanel_1,1101",Main,Research Advanced Research
+15,143,9,{主线任务},{讨伐} {野蛮人}-10,10,1,1_100+3_25+1110_10+11_25000,"WildPos_124,306",Main,Raid Barbarian-10
+6,144,9,{主线任务},{讨伐} {杜丽莎},6,1,1_100+3_25+1110_10+11_25000,"WildPos_154,403",Main,Raid Teresa
+9,145,9,{主线任务},{参加} {小型要塞} {攻城战},10002,1,1_100+3_25+1110_10+11_25000,WorldPanel,Main,Participate Small Fortress Siege Battle
+4,146,10,{主线任务},{升级} {领主等级} 80,0,80,1_100+3_30+1110_12+11_30000,UpDesPanel,Main,Upgrade Lord Level 80
+8,147,10,{主线任务},{通关} {恶龙巢穴}-II,8002,1,1265_5+3_30+1110_12+11_30000,"TeamInfoPanel_8,0,2",Main,Clearance Dragon's Lair-II
+1,148,10,{主线任务},{升级} {市政厅} {等级} 21,1,21,1_100+3_30+1110_12+11_30000,BuildUpPanel_1,Main,Upgrade City Hall Lv 21
+8,149,10,{主线任务},{通关} {丛林遗迹}-III,1003,1,1603_1+1623_100+1110_12+11_30000,"TeamInfoPanel_1,0,3",Main,Clearance Jungle Ruins-III
+8,150,10,{主线任务},{通关} {沙漠遗迹}-III,2003,1,1460_66+1455_5+1110_12+11_30000,"TeamInfoPanel_2,0,3",Main,Clearance Desert Ruins-III
+10,151,10,{主线任务},{挑战领主} x1,23,1,1290_1+3_30+1110_12+11_30000,PVEPanel,Main,Challenge Lord x1
+1,152,10,{主线任务},{升级} {学院} {等级} 21,10,21,1_100+3_30+1110_12+11_30000,BuildUpPanel_10,Main,Upgrade Academy Lv 21
+2,153,10,{主线任务},{研究} {步兵}(T4),2101,1,1_100+3_30+1110_12+11_30000,"SciencePanel_2,2101",Main,Research Infantry(T4)
+11,154,10,{主线任务},"{训练} {步兵}(T4) x10,000",4,10000,1_100+3_30+1110_12+11_30000,TrainPanel_1,Main,"Train Infantry(T4) x10,000"
+2,155,10,{主线任务},{研究} {弓兵}(T4),2102,1,1_100+3_30+1110_12+11_30000,"SciencePanel_2,2102",Main,Research Archer(T4)
+12,156,10,{主线任务},"{训练} {弓兵}(T4) x10,000",4,10000,1_100+3_30+1110_12+11_30000,TrainPanel_2,Main,"Train Archer(T4) x10,000"
+7,157,10,{主线任务},{通关} {荒原}-160,160,1,1_100+3_30+1110_12+11_30000,MainGatePanel,Main,Clearance Wilderness-160
+15,158,10,{主线任务},{讨伐} {野蛮人}-11,11,1,1_100+3_30+1110_12+11_30000,"WildPos_-29,241",Main,Raid Barbarian-11
+6,159,10,{主线任务},{讨伐} {克拉肯},7,1,1_100+3_30+1110_12+11_30000,"WildPos_-199,29",Main,Raid Kraken
+9,160,10,{主线任务},{参加} {小型城镇} {攻城战},10003,1,1_100+3_30+1110_12+11_30000,WorldPanel,Main,Participate Small Town Siege Battle
+4,161,11,{主线任务},{升级} {领主等级} 90,0,90,1_100+3_35+1110_14+11_40000,UpDesPanel,Main,Upgrade Lord Level 90
+8,162,11,{主线任务},{通关} {修炼洞穴}-III,5003,1,1403_200+4_200+1110_14+11_40000,"TeamInfoPanel_5,0,3",Main,Clearance Training Cave-III
+8,163,11,{主线任务},{通关} {冰雪遗迹}-III,3003,1,1500_60+1515_3+1110_14+11_40000,"TeamInfoPanel_3,0,3",Main,Clearance Snow Ruins-III
+8,164,11,{主线任务},{通关} {熔岩遗迹}-III,4003,1,1320_1+3_35+1110_14+11_40000,"TeamInfoPanel_4,0,3",Main,Clearance Lava Ruins-III
+1,165,11,{主线任务},{升级} {市政厅} {等级} 23,1,23,1_100+3_35+1110_14+11_40000,BuildUpPanel_1,Main,Upgrade City Hall Lv 23
+10,166,11,{主线任务},{报名}/{竞猜} {比武大会},44,1,1124_500+3_35+1110_14+11_40000,PVPPanel_4,Main,Apply/Guess Tournament
+2,167,11,{主线任务},{研究} {骑兵}(T4),2103,1,1_100+3_35+1110_14+11_40000,"SciencePanel_2,2103",Main,Research Cavalry(T4)
+13,168,11,{主线任务},"{训练} {骑兵}(T4) x10,000",4,10000,1_100+3_35+1110_14+11_40000,TrainPanel_3,Main,"Train Cavalry(T4) x10,000"
+2,169,11,{主线任务},{研究} {战车}(T4),2104,1,1_100+3_35+1110_14+11_40000,"SciencePanel_2,2104",Main,Research Chariot(T4)
+14,170,11,{主线任务},"{训练} {战车}(T4) x10,000",4,10000,1_100+3_35+1110_14+11_40000,TrainPanel_4,Main,"Train Chariot(T4) x10,000"
+4,171,11,{主线任务},{升级} {领主等级} 100,0,100,1_100+3_35+1110_14+11_40000,UpDesPanel,Main,Upgrade Lord Level 100
+8,172,11,{主线任务},{通关} {恶龙巢穴}-III,8003,1,1265_5+3_35+1110_14+11_40000,"TeamInfoPanel_8,0,3",Main,Clearance Dragon's Lair-III
+8,173,11,{主线任务},{通关} {次元之地}-III,6003,1,1465_50+1470_50+1110_14+11_40000,"TeamInfoPanel_6,0,3",Main,Clearance Dimensional Land-III
+15,174,11,{主线任务},{讨伐} {野蛮人}-12,12,1,1_100+3_35+1110_14+11_40000,"WildPos_-95,-76",Main,Raid Barbarian-12
+6,175,11,{主线任务},{讨伐} {贝塞德},8,1,1_100+3_35+1110_14+11_40000,"WildPos_29,-209",Main,Raid Bayside
+9,176,11,{主线任务},{参加} {中型要塞} {攻城战},10004,1,1_100+3_35+1110_14+11_40000,WorldPanel,Main,Participate Medium Fortress Siege Battle
+4,177,12,{主线任务},{升级} {领主等级} 110,0,110,1_100+3_40+1110_16+11_50000,UpDesPanel,Main,Upgrade Lord Level 110
+8,178,12,{主线任务},{通关} {恶龙巢穴}-IV,8004,1,1265_5+3_40+1110_16+11_50000,"TeamInfoPanel_8,0,4",Main,Clearance Dragon's Lair-IV
+1,179,12,{主线任务},{升级} {市政厅} {等级} 25,1,25,1_100+3_40+1110_16+11_50000,BuildUpPanel_1,Main,Upgrade City Hall Lv 25
+8,180,12,{主线任务},{通关} {丛林遗迹}-IV,1004,1,1604_1+1624_100+1110_16+11_50000,"TeamInfoPanel_1,0,4",Main,Clearance Jungle Ruins-IV
+8,181,12,{主线任务},{通关} {沙漠遗迹}-IV,2004,1,1460_108+1455_10+1110_16+11_50000,"TeamInfoPanel_2,0,4",Main,Clearance Desert Ruins-IV
+8,182,12,{主线任务},{通关} {冰雪遗迹}-IV,3004,1,1500_100+1515_5+1110_16+11_50000,"TeamInfoPanel_3,0,4",Main,Clearance Snow Ruins-IV
+8,183,12,{主线任务},{通关} {熔岩遗迹}-IV,4004,1,1320_2+3_40+1110_16+11_50000,"TeamInfoPanel_4,0,4",Main,Clearance Lava Ruins-IV
+4,184,12,{主线任务},{升级} {领主等级} 120,0,120,1_100+3_40+1110_16+11_50000,UpDesPanel,Main,Upgrade Lord Level 120
+8,185,12,{主线任务},{通关} {修炼洞穴}-IV,5004,1,1403_300+4_300+1110_16+11_50000,"TeamInfoPanel_5,0,4",Main,Clearance Training Cave-IV
+1,186,12,{主线任务},{升级} {学院} {等级} 25,10,25,1_100+3_40+1110_16+11_50000,BuildUpPanel_10,Main,Upgrade Academy Lv 25
+2,187,12,{主线任务},{研究} {步兵}(T5),2151,1,1_100+3_40+1110_16+11_50000,"SciencePanel_2,2151",Main,Research Infantry(T5)
+11,188,12,{主线任务},"{训练} {步兵}(T5) x20,000",5,20000,1_100+3_40+1110_16+11_50000,TrainPanel_1,Main,"Train Infantry(T5) x20,000"
+2,189,12,{主线任务},{研究} {弓兵}(T5),2152,1,1_100+3_40+1110_16+11_50000,"SciencePanel_2,2152",Main,Research Archer(T5)
+12,190,12,{主线任务},"{训练} {弓兵}(T5) x20,000",5,20000,1_100+3_40+1110_16+11_50000,TrainPanel_2,Main,"Train Archer(T5) x20,000"
+15,191,12,{主线任务},{讨伐} {野蛮人}-13,13,1,1_100+3_40+1110_16+11_50000,"WildPos_287,81",Main,Raid Barbarian-13
+6,192,12,{主线任务},{讨伐} {卡塔},9,1,1_100+3_40+1110_16+11_50000,"WildPos_403,154",Main,Raid Carta
+9,193,12,{主线任务},{参加} {中型城镇} {攻城战},10005,1,1_100+3_40+1110_16+11_50000,WorldPanel,Main,Participate Medium Town Siege Battle

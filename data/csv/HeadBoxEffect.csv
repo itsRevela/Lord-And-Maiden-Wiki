@@ -1,0 +1,51 @@
+﻿id,Name,limitTime,effect,getdes,BuyPrice,NeedValue,Light,CB,Name_en,getdes_en
+1901,{比武大会}(I) No.1,2419200,0,{比武大会}(I) {排名奖励},0,0,6,3,Tournament(I) No.1,Tournament(I) Rank Rewards
+1902,{比武大会}(I) No.2,2419200,0,{比武大会}(I) {排名奖励},0,0,5,2,Tournament(I) No.2,Tournament(I) Rank Rewards
+1903,{比武大会}(I) No.4,2419200,0,{比武大会}(I) {排名奖励},0,0,4,1,Tournament(I) No.4,Tournament(I) Rank Rewards
+1904,{比武大会}(I) No.8,2419200,0,{比武大会}(I) {排名奖励},0,0,4,1,Tournament(I) No.8,Tournament(I) Rank Rewards
+1905,{传奇建造师},0,0,{成就} {奖励},0,0,5,5,Legendary Builder,Achievement Reward
+1906,{传奇科学家},0,0,{成就} {奖励},0,0,5,5,Legendary Scientist,Achievement Reward
+1907,{传奇英雄},0,0,{成就} {奖励},0,0,5,5,Legendary Hero,Achievement Reward
+1908,{传奇领主},0,0,{成就} {奖励},0,0,5,5,Legendary Lord,Achievement Reward
+1909,{传奇冒险家},0,0,{成就} {奖励},0,0,5,5,Legendary Adventurer,Achievement Reward
+1910,{传奇导师},0,0,{成就} {奖励},0,0,5,5,Legendary Mentor,Achievement Reward
+1911,{天下无双},0,0,{成就} {奖励},0,0,6,6,Peerless,Achievement Reward
+1912,{热心市民} I,0,0,{在遗迹副本中获得点赞},0,500,0,0,Hospitable Citizen I,Receive Liked In The Ruins Dungeon
+1913,{热心市民} II,0,0,{在遗迹副本中获得点赞},0,1000,4,0,Hospitable Citizen II,Receive Liked In The Ruins Dungeon
+1914,{国际友人} I,0,0,{在遗迹副本中获得点赞},0,2500,4,1,International Friends I,Receive Liked In The Ruins Dungeon
+1915,{国际友人} II,0,0,{在遗迹副本中获得点赞},0,5000,5,2,International Friends II,Receive Liked In The Ruins Dungeon
+1916,{老玩家} I,0,0,{创建角色} 365 {天},0,365,4,1,Veteran Player I,Create Role 365 Day
+1917,{老玩家} II,0,0,{创建角色} 730 {天},0,730,5,2,Veteran Player II,Create Role 730 Day
+1918,{宝鉴收藏家}-I,0,0,{激活} {英雄} {宝鉴},0,200,4,1,Collection Codex-I,Activate Hero Codex
+1919,{宝鉴收藏家}-II,0,0,{激活} {英雄} {宝鉴},0,400,5,2,Collection Codex-II,Activate Hero Codex
+1920,{宝鉴收藏家}-III,0,0,{激活} {英雄} {宝鉴},0,600,6,3,Collection Codex-III,Activate Hero Codex
+1931,{库洛兰德霸主},604800,0,{战斗力} {排行榜} No.1,0,0,5,7,Kuroland Overlord,Power Top No.1
+1932,{库洛兰德英雄},604800,0,{战斗力} {排行榜} No.2~No.3,0,0,5,8,Kuroland Hero,Power Top No.2~No.3
+1933,{库洛兰德强者},604800,0,{战斗力} {排行榜} No.4~No.6,0,0,4,9,Kuroland Powerful,Power Top No.4~No.6
+1934,{时尚达人},604800,0,{时尚值} {排行榜} No.1,0,0,5,10,Fashion Enthusiast,Fashion Points Top No.1
+1935,{时尚先锋},604800,0,{时尚值} {排行榜} No.2~No.3,0,0,5,11,Fashion Pioneer,Fashion Points Top No.2~No.3
+1936,{时尚精英},604800,0,{时尚值} {排行榜} No.4~No.6,0,0,4,12,Fashion Elite,Fashion Points Top No.4~No.6
+1937,{比武大会}(II) No.1,2419200,0,{比武大会}(II) {排名奖励},0,0,6,3,Tournament(II) No.1,Tournament(II) Rank Rewards
+1938,{比武大会}(II) No.2,2419200,0,{比武大会}(II) {排名奖励},0,0,5,2,Tournament(II) No.2,Tournament(II) Rank Rewards
+1939,{比武大会}(II) No.4,2419200,0,{比武大会}(II) {排名奖励},0,0,4,1,Tournament(II) No.4,Tournament(II) Rank Rewards
+1940,{比武大会}(II) No.8,2419200,0,{比武大会}(II) {排名奖励},0,0,4,1,Tournament(II) No.8,Tournament(II) Rank Rewards
+1950,{开拓者},0,0,{通关} {荒原},0,400,4,4,Pioneer,Clearance Wilderness
+1951,{召唤师} I,0,0,{英雄召唤},0,1000,4,4,Summoner I,Hero Summon
+1952,{召唤师} II,0,0,{英雄召唤},0,3000,5,5,Summoner II,Hero Summon
+1953,{魔法师} I,0,0,{圣物召唤},0,1000,4,4,Mage I,Relic Summon
+1954,{魔法师} II,0,0,{圣物召唤},0,3000,5,5,Mage II,Relic Summon
+1955,{蓝色妖姬},0,0,0,1888,0,0,0,Blue Rose,
+1956,{桃花},0,0,0,1888,0,0,0,Peach Blossom,
+1957,{鲜血伯爵},0,0,0,1888,0,0,0,Blood Count,
+1958,{狼少女},0,0,0,1888,0,0,0,Wolf Girl,
+1959,{钢铁之心},0,0,0,1888,0,0,0,Heart Of Steel,
+1960,{夜色},0,0,0,1888,0,0,0,Nightfall,
+1961,{彼岸花},0,0,0,4888,0,4,0,Higanbana,
+1962,{森林轻语},0,0,0,4888,0,4,0,Forest Whispers,
+1963,{初雪},0,0,0,4888,0,4,0,First Snow,
+1964,{骨龙},0,0,0,4888,0,4,0,Bone Dragon,
+1965,{圣诞},0,0,0,8888,0,5,0,Christmas,
+1966,{赤鬼},0,0,0,8888,0,5,0,Red Oni,
+1967,{小熊少女},0,0,0,8888,0,5,0,Little Bear Girl,
+1968,{电竞少女},0,0,0,8888,0,5,0,Esports Girl,
+1969,{蓝龙},0,0,0,8888,0,5,0,Blue Dragon,

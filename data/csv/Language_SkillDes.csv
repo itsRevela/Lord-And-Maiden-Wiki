@@ -1,0 +1,271 @@
+﻿Simplified_Text,Traditional_Text,English_Text,Japanese_Text,Korean_Text
+若敌人处于,若敵人處於,If The Enemy Is In,敵がいる場合,적이 있을 경우
+如果敌人死亡,如果敵人死亡,If The Enemy Dies,敵が死んだ場合,적이 죽으면
+如果生命大于50%,如果生命大於50%,If HP Is Greater Than 50%,HPが50%を超えている場合,HP가 50% 이상일 경우
+流血,流血,Bleed,出血,출혈
+禁锢,禁錮,Imprisoned,投獄,투옥
+迟缓,遲緩,Slow,遅い,느린
+破甲,破甲,Break Armor,鎧破,브레이크 아머
+虚弱,虛弱,Weak,弱い,약한
+生锈,生鏽,Rust,さび,녹
+破盾,破盾,Broken Shield,壊れた盾,깨진 방패
+疲劳,疲勞,Fatigue,疲勞,피로
+衰老,老化,Senescence,老化,노화
+触发,觸發,Trigger,トリガー,발동
+燃烧,燃燒,Burn,燃焼,연소
+咒术,咒術,Curse,呪い,저주
+自愈,自愈,Self-Heal,自己回復,자가 치유
+急救,急救,First Aid,応急の手当,구급
+极速,極速,Topspeed,極速,신속
+溅射,濺射,Splash,スプラッシュ,튀다
+预备,預備,Prepared,預備,준비
+离间,離間,Blood Sucking,吸血,흡혈
+受到致命伤害时，保留1点生命值,受到致命傷害時，保留1點生命值,"When Receiving Fatal DMG, Retain 1 HP",致命的ダメージを受けた時、HPを1維持,사망 시 HP 1 유지
+强制攻击某个对象,強制攻擊某個對象,Forcibly ATK an Object,オブジェクトを強制的に攻撃する,물체를 강제로 공격
+再次发动技能,再次發動技能,Activate The Skill Again,再度スキルを発動する,다시 스킬 발동
+生命最低,生命最低,Min HP,最小HP,최소 HP
+攻击最高,攻擊最高,ATK Highest,最高の攻撃力,가장 높은 공격
+不包含自己,不包含自己,Not Contain Itself,自分を含まない,자신을 포함하지 않음
+伤害吸收,傷害吸收,DMG Absorption,ダメージ吸収,피해 흡수
+并且,並且,And,そして,과
+但是,但是,But,しかし,하지만
+否则,否則,Else,そのほこの,그밖에
+免疫,免疫,Immune,免疫,면역
+增益,增益,Buff,Buff,Buff
+减益,減益,DeBuff,DeBuff,DeBuff
+专注,專注,Concentration,集中,집중
+缴械,繳械,Disarm,武装解除,무장 해제
+沉默,沉默,Silence,沈黙,침묵
+眩晕,眩暈,Stun,気絶,기절
+混乱,混亂,Chaos,混乱,혼란
+禁疗,禁療,Heal Ban,回復不能,치유 금지
+点燃,點燃,Ignite,発火,점화
+中毒,中毒,Poisoning,中毒,독이 든
+嘲讽,嘲諷,Taunts,挑発,도발
+净化,淨化,Purification,浄化,정화하다
+驱散,驅散,Dispersion,払い散らす,제거하다
+连击,連擊,Combo,コンボ,콤보
+闪避,閃避,Dodge,回避,회피
+叠加,疊加,Stacks,重複,중첩
+生命,HP,HP,生命値,HP
+攻击,攻擊,ATK,攻撃,공격
+防御,防禦,DEF,防御,방어
+破坏,破壞,DES,破壊,파괴
+出手速度,出手速度,ATK Spd,攻撃速度,공격 속도
+援护,援護,Assist,援護,지원
+强袭,強襲,Assault,強襲,강습
+永恒,永恆,Eternal,永遠,영구
+超导,超導,Superconducting,超導,초전도
+瞬法,瞬法,Instant,瞬発,즉시
+回合,回合,Rounds,ターン,회합
+每回合,每回合,Each Round,毎ターン,매 회합
+有几率,有幾率,A Chance to,チャンスはある,기회
+效果触发概率,效果觸發機率,Effect Trigger Probability,効果発動確率,효과 발동 확률
+技能触发概率,技能觸發機率,Skill Trigger Probability,スキル発動確率,스킬 발동 확률
+在第1回合,在第1回合,In The 1st Round,第1回合に,1회차에
+在第2回合,在第2回合,In The 2nd Round,第2回合に,2회차에
+在第3回合,在第3回合,In The 3rd Round,第3回合に,3회차에
+在第4回合,在第4回合,In The 4th Round,第4回合に,4회차에
+在第5回合,在第5回合,In The 5th Round,第5回合に,5회차에
+在第6回合,在第6回合,In The 6th Round,第6回合に,6회차에
+在第7回合,在第7回合,In The 7th Round,第7回合に,7회차에
+在第8回合,在第8回合,In The 8th Round,第8回合に,8회차에
+在前2回合,在前2回合,In The First 2 Rounds,最初の2回のターンに,처음 2회차 동안
+在前3回合,在前3回合,In The First 3 Rounds,最初の3回のターンに,처음 3회차 동안
+在前4回合,在前4回合,In The First 4 Rounds,最初の4回のターンに,처음 4회차 동안
+在前5回合,在前5回合,In The First 5 Rounds,最初の5回のターンに,처음 5회차 동안
+在前6回合,在前6回合,In The First 6 Rounds,最初の6回のターンに,처음 6회차 동안
+在前7回合,在前7回合,In The First 7 Rounds,最初の7回のターンに,처음 7회차 동안
+在前8回合,在前8回合,In The First 8 Rounds,最初の8回のターンに,처음 8회차 동안
+从第1回合起,從第1回合起,From The 1st Round,第1回合から,1회차부터
+从第2回合起,從第2回合起,From The 2nd Round,第2回合から,2회차부터
+从第3回合起,從第3回合起,From The 3rd Round,第3回合から,3회차부터
+从第4回合起,從第4回合起,From The 4th Round,第4回合から,4회차부터
+从第5回合起,從第5回合起,From The 5th Round,第5回合から,5회차부터
+从第6回合起,從第6回合起,From The 6th Round,第6回合から,6회차부터
+从第7回合起,從第7回合起,From The 7th Round,第7回合から,7회차부터
+从第8回合起,從第8回合起,From The 8th Round,第8回合から,8회차부터
+目标,目標,Target,目標,대상
+并且使目标敌人,並且使目標敵人,And Make The Target Enemy,そして目標を敵に,그리고 대상 적에게
+对1个敌方部队,對1個敵方部隊,To 1 Enemy Troop,1つの敵部隊に,적군 1개 부대에
+对2个敌方部队,對2個敵方部隊,To 2 Enemy Troops,2つの敵部隊に,적군 2개 부대에
+对3个敌方部队,對3個敵方部隊,To 3 Enemy Troops,3つの敵部隊に,적군 3개 부대에
+对1个敌方部队发动攻击,對1個敵方部隊發動攻擊,ATK 1 Enemy Troop,1つの敵部隊に攻撃を行う,적군 1개 부대에 공격을 가하다
+对2个敌方部队发动攻击,對2個敵方部隊發動攻擊,ATK 2 Enemy Troops,2つの敵部隊に攻撃を行う,적군 2개 부대에 공격을 가하다
+对3个敌方部队发动攻击,對3個敵方部隊發動攻擊,ATK 3 Enemy Troops,3つの敵部隊に攻撃を行う,적군 3개 부대에 공격을 가하다
+使双方所有部队,使雙方所有部隊,Make All Troops Of Both Sides,両軍の全部隊に対して,양측 모든 부대에게
+使1个敌方部队,使1個敵方部隊,Make 1 Of Enemy Troop,1つの敵部隊を,적군 1개 부대를
+使2个敌方部队,使2個敵方部隊,Make 2 Of Enemy Troops,2つの敵部隊を,적군 2개 부대를
+使3个敌方部队,使3個敵方部隊,Make 3 Of Enemy Troops,3つの敵部隊を,적군 3개 부대를
+自身部队,自身部隊,Own Troop,自身の部隊,자신의 부대
+使1个我方部队,使1個我方部隊,Make 1 Of our Troop,1つの味方部隊を,아군 1개 부대를
+使2个我方部队,使2個我方部隊,Make 2 Of our Troops,2つの味方部隊を,아군 2개 부대를
+使3个我方部队,使3個我方部隊,Make 3 Of our Troops,3つの味方部隊を,아군 3개 부대를
+受攻击属性影响,受攻擊屬性影響,Affected By ATK Attribute,攻撃属性の影響を受ける,공격 속성 영향을 받음
+受防御属性影响,受防禦屬性影響,Affected By DEF Attribute,防御属性の影響を受ける,방어 속성 영향을 받음
+受破坏属性影响,受破壞屬性影響,Affected By DES Attribute,破壊属性の影响を受ける,파괴 속성 영향을 받음
+受速度属性影响,受速度屬性影響,Affected By Spd Attribute,速度属性の影響を受ける,속도 속성 영향을 받음
+不受属性影响,不受屬性影響,Not Affected By Attribute,属性の影響を受けない,속성 제한 없음
+士兵生命属性提高,士兵生命屬性提高,Soldier HP Increased,兵士の健康属性UP,병사 생활속성 증가
+攻击属性提高,攻擊屬性提高,ATK Attribute Increased,攻撃属性UP,공격 속성 증가
+防御属性提高,防禦屬性提高,DEF Attribute Increased,防御属性UP,방어 속성 증가
+破坏属性提高,破壞屬性提高,DES Attribute Increased,破壊属性UP,파괴 속성 증가
+速度属性提高,速度屬性提高,Spd Attribute Increased,速度属性UP,속도 속성 증가
+所有属性提高,所有屬性提高,Increase All Attributes,全属性UP,모든 속성 증가
+攻击属性降低,攻擊屬性降低,ATK Reduced,攻撃属性DOWN,공격 속성 감소
+防御属性降低,防禦屬性降低,DEF Reduced,防御属性DOWN,방어 속성 감소
+破坏属性降低,破壞屬性降低,DES Reduced,破壊属性DOWN,파괴 속성 감소
+速度属性降低,速度屬性降低,Spd Attribute Reduced,速度属性DOWN,속도 속성 감소
+所有属性降低,所有屬性降低,All Attributes Reduced,全属性DOWN,모든 속성  감소
+造成伤害提高,造成傷害提高,DMG Dealt Increased,与えるダメージUP,주는 피해가 증가
+造成伤害降低,造成傷害降低,DMG Dealt Reduced,与えるダメージDOWN,주는 피해가 감소
+受到伤害提高,受到傷害提高,DMG Taken Increased,受けるダメージUP,받는 피해가 증가
+受到伤害降低,受到傷害降低,DMG Taken Reduced,受けるダメージDOWN,받는 피해가 감소
+造成伤害增加,造成傷害增加,DMG Dealt Increased,与えるダメージUP,주는 피해가 증가
+造成伤害减少,造成傷害減少,DMG Dealt Reduced,与えるダメージDOWN,주는 피해가 감소
+受到伤害增加,受到傷害增加,DMG Taken Increased,受けるダメージUP,받는 피해가 증가
+受到伤害减少,受到傷害減少,DMG Taken Reduced,受けるダメージDOWN,받는 피해가 감소
+普通攻击伤害提高,普通攻擊傷害提高,Normal ATK DMG Dealt Increased,与える通常攻撃のダメージUP,주는 정상적인 공격 피해가 증가
+普通攻击伤害降低,普通攻擊傷害降低,Normal DMG Dealt Reduced,与える通常攻撃のダメージDOWN,주는 정상적인 공격 피해가 감소
+战术技能伤害提高,戰術技能傷害提高,Tactical Skill DMG Dealt Increased,与える戦術スキルのダメージUP,주는 전술 기술 피해가 증가
+战术技能伤害降低,戰術技能傷害降低,Tactical Skill DMG Dealt Reduced,与える戦術スキルのダメージDOWN,주는 전술 기술 피해가 감소
+追击技能伤害提高,追擊技能傷害提高,Pursuit Skill DMG Dealt Increased,与える追撃スキルのダメージUP,주는 추격 기술 피해가 증가
+追击技能伤害降低,追擊技能傷害降低,Pursuit Skill DMG Dealt Reduced,与える追撃スキルのダメージDOWN,주는 추격 기술 피해가 감소
+受到普通攻击伤害提高,受到普通攻擊傷害提高,Normal DMG Taken Increased,受ける通常攻撃のダメージUP,받는 정상적인 공격 피해가 증가
+受到普通攻击伤害降低,受到普通攻擊傷害降低,Normal DMG Taken Reduced,受ける通常攻撃のダメージDOWN,받는 정상적인 공격 피해가 감소
+受到战术技能伤害提高,受到戰術技能傷害提高,Tactical Skill DMG Taken Increased,受ける戦術スキルのダメージUP,받는 전술 기술 피해가 증가
+受到战术技能伤害降低,受到戰術技能傷害降低,Reduce Tactical Skill DMG received,受ける戦術スキルのダメージDOWN,받는 전술 기술 피해가 감소
+受到追击技能伤害提高,受到追擊技能傷害提高,Pursuit Skill DMG Taken Increased,受ける追撃スキルのダメージUP,받는 추격 기술 피해가 증가
+受到追击技能伤害降低,受到追擊技能傷害降低,Pursuit Skill DMG Taken Reduced,受ける追撃スキルのダメージDOWN,받는 추격 기술 피해가 감소
+受到咒术伤害,受到咒術傷害,Curse DMG Taken,呪いのダメージを受ける,받는 저주 피해가
+受到燃烧伤害,受到燃燒傷害,Burning DMG Taken,燃焼のダメージを受ける,받는 연소 피해가
+受到咒术伤害降低,受到咒術傷害降低,Curse DMG Taken  Reduced,呪いのダメージを受けるDOWN,받는 저주 피해가 감소
+受到燃烧伤害降低,受到燃燒傷害降低,Burning DMG Taken Reduced,燃焼のダメージを受けるDOWN,받는 연소 피해가 감소
+恢复兵力,恢復兵力,Restore Life,兵力を回復,부대가 치유됨
+治疗系数,治療係數,Healing Coefficient,治療係数,치유 계수
+伤害系数,傷害係數,DMG Coefficient,ダメージ係数,피해 계수
+离间系数,離間係數,Blood Sucking Coefficien,吸血係数,흡혈 계수
+真实伤害基数,真實傷害基數,Real DMG Base,真のダメージベース,실제 피해 기반
+优先出手,優先出手,Prioritizes ATK,行動を優先する,공격을 우선시한다
+真实伤害,真實傷害,Real DMG,実ダメージ,리얼 상해
+溅射其他敌人,濺射其他敵人,Splash On Other Enemies,他の敵にスプラッシュ,다른 적들에게 스플래시
+普通攻击时,普通攻擊時,When ATK Normally,通常攻撃時,일반 공격 시
+发动战术技能时,發動戰術技能時,When Activating Tactical Skills,戦術スキル発動時,전술 스킬 발동 시
+发动需要准备的战术技能时,發動需要準備的戰術技能時,When Activating The Tactical Skills That Needed To Prepare,準備が必要な戦術スキル発動時,준비가 필요한 전술 스킬 발동 시
+发动不需要准备的战术技能时,發動不需要準備的戰術技能時,When Using A Tactical Skill That Does Not Require Preparation,準備不要の戦術スキル発動時,준비가 필요 없는 전술 스킬 발동 시
+发动追击技能时,發動追擊技巧時,When Launching Pursuit Skills,追撃スキル発動時,추적 스킬 발동 시
+受到普通攻击时,受到普通攻擊時,When Receiving A Normal ATK,通常攻撃を受けた時,일반 공격을 받을 때
+受到任意攻击时,受到任意攻擊時,When Receiving Any Normal ATK,任意攻撃を受けた時,어떤 공격을 받을 때
+受到任意伤害时,受到任意傷害時,When Receiving Any DMG,任意のダメージを受けた時,어떤 피해를 받을 때
+对目标发动追击,對目標發動追擊,Launch Pursuit ATK On Target,目標に追撃を行う,대상에게 추격을 가하다
+对其他目标再次发动追击,對其他目標再次發動追擊,Launch Another Pursuit On Other Targets,他の目标に再度追撃を行う,다른 대상을 다시 추격하다
+在每回合行动前,在每回合行動前,Before Each Round,各ターンの行動前に,매 턴 행동 전
+持续到战斗结束,持續到戰鬥結束,Until The End Of The Battle,戦闘終了まで続く,전투가 끝날 때까지 지속
+处于强袭状态,處於強襲狀態,In An Assaulted State,を強襲状態にして,습격스러운 상태에서
+处于专注状态,處於專注狀態,In A Focused State,を集中状態にして,집중된 상태에서
+处于缴械状态,處於繳械狀態,In A Disarmed State,を武装解除にして,무장 해제된 상태에서
+处于沉默状态,處於沉默狀態,In A Silenced State,を沈黙状態にして,침묵스러운 상태에서
+处于眩晕状态,處於眩暈狀態,In A Stunned State,を眩暈状態にして,기절스러운 상태에서
+处于混乱状态,處於混亂狀態,In A Chaos State,を混乱状態にして,혼란스러운 상태에서
+处于禁疗状态,處於禁療狀態,In A Forbidden Treatment State,を禁療状態にして,치유 금지된 상태에서
+处于嘲讽状态,處於嘲諷狀態,In A Provoked State,を嘲笑状態にして,도발스러운 상태에서
+处于永恒状态,處於永恆狀態,In An Eternal State,を永遠の状態にして,영구스러운 상태에서
+处于超导状态,處於超導狀態,In A Superconducting State,を超導状態にして,초전도스러운 상태에서
+处于瞬法状态,處於瞬法狀態,In A Swiftcast State,を瞬法の状態にして,즉시스러운 상태에서
+处于援护状态,處於援護狀態,In An Aid State,を援護状態にして,도움스러운 상태에서
+处于极速状态,處於極速狀態,In A Topspeed State,を極速状態にして,신속스러운 상태에서
+攻击附加真实伤害,攻擊附加真實傷害,ATK Adds Real DMG,攻撃は真のダメージを追加します,공격은 실제 피해를 추가합니다
+无法进行普通攻击,無法進行普通攻擊,Cannot Launch Normal ATK,通常攻撃を行うことができません,일반공격을 진행할 수 없습니다
+无法发动战术技能,無法發動戰術技能,Cannot Launch Tactical Skills,戦術技能を発動できなくなります,전술스킬을 발동할 수 없습니다
+无法行动,無法行動,Unable To Move,動くことが出来ない,움직일 수 없다
+进行无差别攻击,進行無差別攻擊,Carry Out Undifferentiated ATK,無差別攻撃を行い,무차별적인 공격을 가한다
+无法受到治疗效果,無法受到治療效果,Cannot Be Healed,治らない,치유될 수 없다
+持续1回合,持續1回合,Lasting For 1 Round,1ターン持続,1 턴 지속
+持续2回合,持續2回合,Lasting For 2 Rounds,2ターン持続,2 턴 지속
+持续3回合,持續3回合,Lasting For 3 Rounds,3ターン持続,3 턴 지속
+属性不会发生改变,屬性不會改變,Attribute Will Not Be Changed,属性は変更されず,속성은 변경되지 않습니다
+额外发动1次该战术技能,額外發動1次該戰術技能,Activate The Tactical Skill 1 Additional Time,戦術スキルをさらに1回アクティブにする,전술 스킬 1회 추가 활성화
+1回合准备时间,1回合準備時間,1 Round  Preparation Time,1ターン準備時間,1 턴 준비 시간
+减少1回合准备时间,減少1回合準備時間,Reduce Preparation Time By 1 Round,1ターン準備時間を短縮,1 턴 준비 시간 단축
+获得离间效果,獲得離間效果,Gain Blood Sucking Effect,吸血 を獲得し,흡혈 효과를 얻습니다
+造成伤害时将部分敌方士兵收编,造成傷害時將部分敵方士兵收編,Recruit Some Enemy Soldiers When Causing DMG,ダメージを与えた際、一部の敵兵を取り込む,피해를 줄 때 적군 일부를 편입
+"并保护我方部队,为其抵挡普通攻击","並保護我方部隊,為其抵擋普通攻擊",And Protect Our Troops From Normal ATK,味方部隊を保護し、通常攻撃を防ぐ,"아군 부대를 보호하고, 일반 공격을 막아줌"
+"获得1层护盾,可以抵挡1次伤害","獲得1層護盾,可以抵擋1次傷害","Gain 1 Layer Of Shield, Which Can Block 1 DMG",1層のシールドを獲得て、1回のダメージを防ぐことができます,1층의 방어막을 얻어 1회의 피해를 방어할 수 있습니다
+"获得2层护盾,可以抵挡2次伤害","獲得2層護盾,可以抵擋2次傷害","Gain 2 Layers Of Shield, Which Can Block 2 DMG",2層のシールドを獲得て、2回のダメージを防ぐことができます,2층의 방어막을 얻어 2회의 피해를 방어할 수 있습니다
+发动1次无视闪避和护盾的攻击,發動1次無視閃避和護盾的攻擊,Launch An ATK That Ignores Dodge And Shield,回避とシールドを無視して1回攻撃を行う,회피와 방패를 무시한 공격을 가한다
+在每回合行动前叠加1次,在每回合行動前疊加1次,Stack 1 Time Before Taking Action In Each Round,各ターンの行動前に1回重ねる,매 턴 행동 전 1회 중첩
+最多叠加10层,最多疊加10層,Up To 10 Layers,最大 10 レイヤーまでスタック可能,최대 10회 중첩
+不会受到反击效果,不會受到反擊效果,Will Not Be Affected by the Counter ATK Effect,反撃効果を受けない,반격 효과를 받지 않음
+净化由战术技能和追击技能带来的不良效果,淨化由戰術技能和追擊技能帶來的不良效果,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,戦術スキルや追撃スキルによる悪影響を浄化する,회피와 방패를 무시하고 1회 공격을 실행
+移除目标由战术技能和追击技能产生的增益效果,移除目標由戰術技能和追擊技巧所產生的增益效果,Dissolves The Beneficial Effect Of Tactical And Pursuit Skill,戦術スキルと追撃スキルによって対象に付与されたバフ効果を取り除く,전술 및 추격 스킬의 유익한 효과를 해소합니다
+发动1～3次攻击,發動1～3次攻擊,Launch 1-3 ATK,1～3回の攻撃を発動する,1~3회 공격 시작
+发动2～4次攻击,發動2～4次攻擊,Launch 2-4 ATK,2～4回の攻撃を発動する,2~4회 공격 시작
+发动3～5次攻击,發動3～5次攻擊,Launch 3-5 ATK,3～5回の攻撃を発動する,3~5회 공격 시작
+发动4～6次攻击,發動4～6次攻擊,Launch 4-6 ATK,4～6回の攻撃を発動する,4~6회 공격 시작
+发动3～7次攻击,發動3～7次攻擊,Launch 3-7 ATK,3～7回の攻撃を発動する,3~7회 공격 시작
+发动5～7次攻击,發動5～7次攻擊,Launch 5-7 ATK,5～7回の攻撃を発動する,5~7회 공격 시작
+对敌方统帅发动1次攻击,對敵方統帥發動1次攻擊,ATK The Enemy Commander 1 Time,敵の指揮官に1回攻撃する,적의 지휘관에게 1회 공격
+若目标已有燃烧效果,若目標已有燃燒效果,If The Target Has Burning Effect,目標がすでに燃焼効果を持っている場合,대상에게 화상 효과가 있는 경우
+若目标已有咒术效果,若目標已有咒術效果,If The Target Has Curse Effect,目标がすでに呪文効果を持っている場合,대상에게 저주 효과가 있는 경우
+则立即移除效果并造成伤害,則立即移除效果並造成傷害,Then Remove The Effect Immediately And Cause DMG,効果を即時に解除し、ダメージを与える,효과를 즉시 제거하고 피해를 줌
+使自己处于专注状态,使自己處於專注狀態,Put Yourself In A State Of Concentration,集中状態にする,자신을 집중 모드로 돌입
+获得1层护盾,獲得1層護盾,Gain 1 Layer Of Shield,1層のシールドを獲得,1층 방패 획득
+获得2层护盾,獲得2層護盾,Gain 2 Layers Of Shield,2層のシールドを獲得,2층 방패 획득
+可以抵挡1次伤害,可以抵擋1次傷害,Can Block 1 Instance Of DMG,1回のダメージを防ぐことができる,1회의 피해를 방어할 수 있다
+可以抵挡2次伤害,可以抵擋2次傷害,Can Block 2 Instances Of DMG,2回のダメージを防ぐことができる,2회의 피해를 방어할 수 있다
+并使,並使,And Make,さらに,그리고
+并保护我方部队,並保護我方部隊,And Protect Our Troops,そして味方部隊を守る,그리고 아군 부대를 보호
+为其抵挡普通攻击,為其抵擋普通攻擊,Block Regular ATK For It,そのために通常攻撃を防,그를 위해 일반 공격을 방어
+恢复士兵,恢復士兵,Restore Soldiers,士兵を回復する,병사 회복
+咒术伤害,咒術傷害,Curse DMG,呪文ダメージ,마법 대미지
+概率沉默,概率沉默,Probably Silence,沈黙可能,확률 침묵
+闪避概率,閃避概率,Dodge Probability,回避確率,회피 확률
+所有属性,所有屬性,All Attributes,全属性,모든 속성
+无法净化,無法淨化,Cannot Be purified,浄化できない,정화 불가
+造成战术技能伤害增加,造成戰術技能傷害增加,Tactical Skill DMG Dealt Increased,与える戦術スキルのダメージUP,주는 전술 기술 피해가 증가
+战斗开始前生效,戰鬥開始前生效,Effective Before Battle Starts,戦闘開始前に発動,전투 시작 전에 발동
+受技能等级影响,受技能等級影響,Affected By Skill Level,スキルレベルに影響される,스킬 레벨에 영향을 받음
+整场战斗中生效,整場戰鬥中生效,Effective Throughout The Battle,戦闘中ずっと発動,전투 전체에 걸쳐 발동
+已阵亡,已陣亡,Defeated,戦死,사망
+抵挡了本次伤害,抵擋了本次傷害,Resisted This DMG,このダメージにも耐えた,이러한 피해를 견뎌냈습니다
+效果已施加,效果已施加,Effect Applied,効果が適用された,효과가 적용되었습니다
+效果已触发,效果已觸發,Effect Triggered,効果がトリガーされた,효과가 발동되었습니다
+效果已生效,效果已生效,Effect Activated,効果が効力が生ずるされた,효과가 효력되었습니다
+效果已消失,效果已消失,Effect Disappeared,効果が消えるされた,효과가 사라졌습니다
+效果已更新,效果已更新,Effect Updated,効果が更新された,효과가 갱신되었습니다
+效果已驱散,效果已驅散,Effect Dispelled,効果が駆除された,효과가 제거되었습니다
+效果已净化,效果已净化,Effect Purified,効果が浄化された,효과가 정화되었습니다
+效果已存在,效果已存在,Effect Already Exists,効果が既に存在する,효과가 이미 존재합니다
+属性值已恢复,屬性值已恢復,Property Piont Restored,属性値は回復しました,속성 값이 복원되었습니다
+没有效果可以驱散,沒有效果可以驅散,No Effects To Dispel,駆除できる効果がない,제거할 수 있는 효과가 없음
+没有效果可以净化,沒有效果可以净化,No Effects To Purify,浄化できる効果がない,정화할 수 있는 효과가 없음
+效果无法替换,效果無法替換,Effect Cannot Be Replaced,効果は置き換えできない,효과를 대체할 수 없음
+无视闪避和护盾的攻击,無視閃避和護盾的攻擊,ATK That Ignores Dodge And Shield,回避やシールドを無視する攻撃,회피와 쉴드를 무시하는 공격
+洞察,洞察,Insight,洞察,통찰
+处于洞察状态,處於洞察狀態,In An Insight State,を洞察状態にして,통찰 스러운 상태에서
+所有追击技能发动概率提高,所有追擊技能發動機率提高,All Pursuit Skill Probabilities Increased,すべての追撃スキルの発動確率がUP,모든  추격 스킬 발동 확률 증가
+在下回合,在下回合,In The Next Round,次の回合,다음 회차
+额外进行2次追击,額外進行2次追擊,Perform 2 Additional Pursuits,追加の追撃攻撃を2回開始,추가 추적 공격 2회 실행
+额外进行3次追击,額外進行3次追擊,Perform 3 Additional Pursuits,追加の追撃攻撃を3回開始,추가 추적 공격 3회 실행
+使所有携带的追击技能,使所有攜帶的追擊技能,Make All Carried Pursuit Skills,全ての追撃スキルを,모두 존재 추적 스킬
+发动2～3次攻击,發動2～3次攻擊,Launch 2-3 ATK,2～3回の攻撃を発動する,2~3회 공격 시작
+则立即引爆敌人造成伤害,則立即引爆敵人造成傷害,Immediately detonates the enemy to cause damage,敵を即座に爆発させてダメージを与える,적을 즉시 폭발시켜 피해를 입힙니다.
+若目标处于燃烧状态,若目標處於燃燒狀態,If the target is Burning,目標が「燃焼」状態の場合,대상에게 화상 상태일 있는 경우
+若目标处于咒术状态,若目標處於咒術狀態,If the target is Cursed,目標が「呪術」状態の場合,대상에게 저주 상태일 있는 경우
+对处于燃烧状态的目标,對處於燃燒狀態的目標,For Targets in Burning state,燃焼状態の目標の場合に対して,연소 상태에 있는 대상에게
+对处于咒术状态的目标,對處於咒術狀態的目標,For Targets in Curse state,呪い状態の目標の場合に対して,저주 상태에 있는 대상에게
+持续2～4回合,持續2～4回合,Lasting For 2～4 Rounds,2～4ターン持続,2～4 턴 지속
+持续2～3回合,持續2～3回合,Lasting For 2～3 Rounds,2～3ターン持続,2～3 턴 지속
+受到咒术伤害或燃烧伤害时,受到咒術傷害或燃燒傷害時,When taking Curse or Burning DMG,呪いまたは燃焼ダメージを受けた時,저주 또는 연소 피해를 받을 때
+使受到咒术或燃烧伤害,使受到咒術或燃燒傷害,Make Curse or Burning DMG Taken,呪いまたは燃焼ダメージを受けさせる,저주 또는 연소 피해를 받게 합니다
+攻击有战术燃烧或咒术状态的敌人时,攻擊有戰術燃燒或咒術狀態的敵人時,When attacking an enemy with Tactical Burning or Curse status,戦術燃焼または呪い状態の敵を攻撃した時,전술 연소 또는 저주 상태의 적을 공격할 때
+立即按1.2倍结算所有剩余燃烧伤害和咒术伤害,立即按1.2倍結算所有剩餘燃燒傷害和咒術傷害,Immediately settle all remaining Burning and Curse DMG at 1.2x,残っている全ての燃焼ダメージと呪いダメージを1.2倍で即時清算,남은 모든 연소 피해와 저주 피해를 1.2배로 즉시 정산
+立即按1.3倍结算所有剩余燃烧伤害和咒术伤害,立即按1.3倍結算所有剩餘燃燒傷害和咒術傷害,Immediately settle all remaining Burning and Curse DMG at 1.3x,残っている全ての燃焼ダメージと呪いダメージを1.3倍で即時清算,남은 모든 연소 피해와 저주 피해를 1.3배로 즉시 정산
+燃烧和咒术效果移除,燃燒和咒術效果移除,Burning and Curse effects are removed,燃焼と呪い効果は解除される,연소 및 저주 효과 제거
+在发动攻击行为时,在發動攻擊行為時,When launching ATK,攻撃行動を発動する時,공격 행동 발동 시
+无视闪避和护盾,無視閃避和護盾,Ignores Dodge and Shield,回避とシールドを無視,회피와 실드를 무시
+无视兵种克制效果,無視兵種剋制效果,Ignores Soldier Restraint effects,兵士の抑制効果を無視,병사 상성 효과 무시
+多段攻击只判定首次,多段攻擊只判定首次,Multi-Stage Attack only triggers on the first hit,多段攻撃は初段のみ判定,다단 공격은 첫 타만 판정
+无论攻击目标是谁,無論攻擊目標是誰,Regardless of the attack target,攻撃対象が誰であっても,공격 대상이 누구든지
+对敌方统帅发起追击,對敵方統帥發起追擊,Launch a pursuit on the enemy Commander,敵の指揮官に追撃を発動する,적 지휘관에게 추격을 개시한다
+造成真实伤害提高,造成真實傷害提高,Real DMG Dealt Increased,与える実ダメージUP,주는 리얼 상해 증가

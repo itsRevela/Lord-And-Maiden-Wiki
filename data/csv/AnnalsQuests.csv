@@ -1,0 +1,244 @@
+﻿id,type,xt,Lv,Title,name,des,task_con,num,reward,star,skip,Title_en,name_en,des_en
+1,1,1,1,{建筑},{市政厅},{市政厅} Lv.6,1,6,1_100+6_100,1,0,Building,City Hall,City Hall Lv.6
+2,1,1,2,{建筑},{市政厅},{市政厅} Lv.11,1,11,1_200+6_200,2,0,Building,City Hall,City Hall Lv.11
+3,1,1,3,{建筑},{市政厅},{市政厅} Lv.16,1,16,1_300+6_300,3,0,Building,City Hall,City Hall Lv.16
+4,1,1,4,{建筑},{市政厅},{市政厅} Lv.21,1,21,1_400+6_400,4,0,Building,City Hall,City Hall Lv.21
+5,1,1,5,{建筑},{市政厅},{市政厅} Lv.25,1,25,1_500+6_500,5,0,Building,City Hall,City Hall Lv.25
+6,1,2,1,{建筑},{学院},{学院} Lv.6,10,6,1_100+6_100,1,0,Building,Academy,Academy Lv.6
+7,1,2,2,{建筑},{学院},{学院} Lv.11,10,11,1_100+6_100,1,0,Building,Academy,Academy Lv.11
+8,1,2,3,{建筑},{学院},{学院} Lv.16,10,16,1_200+6_200,2,0,Building,Academy,Academy Lv.16
+9,1,2,4,{建筑},{学院},{学院} Lv.21,10,21,1_200+6_200,2,0,Building,Academy,Academy Lv.21
+10,1,2,5,{建筑},{学院},{学院} Lv.25,10,25,1_300+6_300,3,0,Building,Academy,Academy Lv.25
+11,1,3,1,{建筑},{步兵营},{步兵营} Lv.6,14,6,1_100+6_100,1,0,Building,Infantry Barracks,Infantry Barracks Lv.6
+12,1,3,2,{建筑},{步兵营},{步兵营} Lv.11,14,11,1_100+6_100,1,0,Building,Infantry Barracks,Infantry Barracks Lv.11
+13,1,3,3,{建筑},{步兵营},{步兵营} Lv.16,14,16,1_200+6_200,2,0,Building,Infantry Barracks,Infantry Barracks Lv.16
+14,1,3,4,{建筑},{步兵营},{步兵营} Lv.21,14,21,1_200+6_200,2,0,Building,Infantry Barracks,Infantry Barracks Lv.21
+15,1,3,5,{建筑},{步兵营},{步兵营} Lv.25,14,25,1_300+6_300,3,0,Building,Infantry Barracks,Infantry Barracks Lv.25
+16,1,4,1,{建筑},{弓兵营},{弓兵营} Lv.6,15,6,1_100+6_100,1,0,Building,Archer Barracks,Archer Barracks Lv.6
+17,1,4,2,{建筑},{弓兵营},{弓兵营} Lv.11,15,11,1_100+6_100,1,0,Building,Archer Barracks,Archer Barracks Lv.11
+18,1,4,3,{建筑},{弓兵营},{弓兵营} Lv.16,15,16,1_200+6_200,2,0,Building,Archer Barracks,Archer Barracks Lv.16
+19,1,4,4,{建筑},{弓兵营},{弓兵营} Lv.21,15,21,1_200+6_200,2,0,Building,Archer Barracks,Archer Barracks Lv.21
+20,1,4,5,{建筑},{弓兵营},{弓兵营} Lv.25,15,25,1_300+6_300,3,0,Building,Archer Barracks,Archer Barracks Lv.25
+21,1,5,1,{建筑},{骑兵营},{骑兵营} Lv.6,16,6,1_100+6_100,1,0,Building,Cavalry Barracks,Cavalry Barracks Lv.6
+22,1,5,2,{建筑},{骑兵营},{骑兵营} Lv.11,16,11,1_100+6_100,1,0,Building,Cavalry Barracks,Cavalry Barracks Lv.11
+23,1,5,3,{建筑},{骑兵营},{骑兵营} Lv.16,16,16,1_200+6_200,2,0,Building,Cavalry Barracks,Cavalry Barracks Lv.16
+24,1,5,4,{建筑},{骑兵营},{骑兵营} Lv.21,16,21,1_200+6_200,2,0,Building,Cavalry Barracks,Cavalry Barracks Lv.21
+25,1,5,5,{建筑},{骑兵营},{骑兵营} Lv.25,16,25,1_300+6_300,3,0,Building,Cavalry Barracks,Cavalry Barracks Lv.25
+26,1,6,1,{建筑},{器械厂},{器械厂} Lv.6,17,6,1_100+6_100,1,0,Building,Siege Workshop,Siege Workshop Lv.6
+27,1,6,2,{建筑},{器械厂},{器械厂} Lv.11,17,11,1_100+6_100,1,0,Building,Siege Workshop,Siege Workshop Lv.11
+28,1,6,3,{建筑},{器械厂},{器械厂} Lv.16,17,16,1_200+6_200,2,0,Building,Siege Workshop,Siege Workshop Lv.16
+29,1,6,4,{建筑},{器械厂},{器械厂} Lv.21,17,21,1_200+6_200,2,0,Building,Siege Workshop,Siege Workshop Lv.21
+30,1,6,5,{建筑},{器械厂},{器械厂} Lv.25,17,25,1_300+6_300,3,0,Building,Siege Workshop,Siege Workshop Lv.25
+31,1,7,1,{建筑},{建筑等级},{所有建筑总等级} 90,-1,90,1_100+6_100,1,0,Building,Building Level,Total Building Level 90
+32,1,7,2,{建筑},{建筑等级},{所有建筑总等级} 180,-1,180,1_200+6_200,2,0,Building,Building Level,Total Building Level 180
+33,1,7,3,{建筑},{建筑等级},{所有建筑总等级} 270,-1,270,1_300+6_300,3,0,Building,Building Level,Total Building Level 270
+34,1,7,4,{建筑},{建筑等级},{所有建筑总等级} 360,-1,360,1_400+6_400,4,0,Building,Building Level,Total Building Level 360
+35,1,7,5,{建筑},{建筑等级},{所有建筑总等级} 450,-1,450,1_400+6_400,4,0,Building,Building Level,Total Building Level 450
+36,1,7,6,{建筑},{建筑等级},{所有建筑总等级} 540,-1,540,1_400+6_400,4,0,Building,Building Level,Total Building Level 540
+37,1,7,7,{建筑},{建筑等级},{所有建筑总等级} 630,-1,630,1_500+6_500,5,0,Building,Building Level,Total Building Level 630
+38,1,7,8,{建筑},{建筑等级},{所有建筑总等级} 720,-1,720,1_500+6_500,5,0,Building,Building Level,Total Building Level 720
+39,1,7,9,{建筑},{建筑等级},{所有建筑总等级} 810,-1,810,1_600+6_600,6,0,Building,Building Level,Total Building Level 810
+40,1,7,10,{建筑},{建筑等级},{所有建筑总等级} 900,-1,900,1_600+6_600,6,0,Building,Building Level,Total Building Level 900
+41,2,1,1,{科技},{步兵},{解锁}:{步兵}(T2),2031,1,1_100+6_100,1,0,Technology,Infantry,Unlock:Infantry(T2)
+42,2,1,2,{科技},{步兵},{解锁}:{步兵}(T3),2061,1,1_200+6_200,2,0,Technology,Infantry,Unlock:Infantry(T3)
+43,2,1,3,{科技},{步兵},{解锁}:{步兵}(T4),2101,1,1_300+6_300,3,0,Technology,Infantry,Unlock:Infantry(T4)
+44,2,1,4,{科技},{步兵},{解锁}:{步兵}(T5),2151,1,1_400+6_400,4,0,Technology,Infantry,Unlock:Infantry(T5)
+45,2,1,5,{科技},{步兵},{解锁}:{步兵}(T6),2181,1,1_500+6_500,5,0,Technology,Infantry,Unlock:Infantry(T6)
+46,2,2,1,{科技},{弓兵},{解锁}:{弓兵}(T2),2032,1,1_100+6_100,1,0,Technology,Archer,Unlock:Archer(T2)
+47,2,2,2,{科技},{弓兵},{解锁}:{弓兵}(T3),2062,1,1_200+6_200,2,0,Technology,Archer,Unlock:Archer(T3)
+48,2,2,3,{科技},{弓兵},{解锁}:{弓兵}(T4),2102,1,1_300+6_300,3,0,Technology,Archer,Unlock:Archer(T4)
+49,2,2,4,{科技},{弓兵},{解锁}:{弓兵}(T5),2152,1,1_400+6_400,4,0,Technology,Archer,Unlock:Archer(T5)
+50,2,2,5,{科技},{弓兵},{解锁}:{弓兵}(T6),2182,1,1_500+6_500,5,0,Technology,Archer,Unlock:Archer(T6)
+51,2,3,1,{科技},{骑兵},{解锁}:{骑兵}(T2),2033,1,1_100+6_100,1,0,Technology,Cavalry,Unlock:Cavalry(T2)
+52,2,3,2,{科技},{骑兵},{解锁}:{骑兵}(T3),2063,1,1_200+6_200,2,0,Technology,Cavalry,Unlock:Cavalry(T3)
+53,2,3,3,{科技},{骑兵},{解锁}:{骑兵}(T4),2103,1,1_300+6_300,3,0,Technology,Cavalry,Unlock:Cavalry(T4)
+54,2,3,4,{科技},{骑兵},{解锁}:{骑兵}(T5),2153,1,1_400+6_400,4,0,Technology,Cavalry,Unlock:Cavalry(T5)
+55,2,3,5,{科技},{骑兵},{解锁}:{骑兵}(T6),2183,1,1_500+6_500,5,0,Technology,Cavalry,Unlock:Cavalry(T6)
+56,2,4,1,{科技},{战车},{解锁}:{战车}(T2),2034,1,1_100+6_100,1,0,Technology,Chariot,Unlock:Chariot(T2)
+57,2,4,2,{科技},{战车},{解锁}:{战车}(T3),2064,1,1_200+6_200,2,0,Technology,Chariot,Unlock:Chariot(T3)
+58,2,4,3,{科技},{战车},{解锁}:{战车}(T4),2104,1,1_300+6_300,3,0,Technology,Chariot,Unlock:Chariot(T4)
+59,2,4,4,{科技},{战车},{解锁}:{战车}(T5),2154,1,1_400+6_400,4,0,Technology,Chariot,Unlock:Chariot(T5)
+60,2,4,5,{科技},{战车},{解锁}:{战车}(T6),2184,1,1_500+6_500,5,0,Technology,Chariot,Unlock:Chariot(T6)
+61,2,5,1,{科技},{科技等级},{所有科技总等级} 50,-1,50,1_100+6_100,1,0,Technology,Technology Level,Total Technology Level 50
+62,2,5,2,{科技},{科技等级},{所有科技总等级} 100,-1,100,1_200+6_200,2,0,Technology,Technology Level,Total Technology Level 100
+63,2,5,3,{科技},{科技等级},{所有科技总等级} 150,-1,150,1_300+6_300,3,0,Technology,Technology Level,Total Technology Level 150
+64,2,5,4,{科技},{科技等级},{所有科技总等级} 200,-1,200,1_400+6_400,4,0,Technology,Technology Level,Total Technology Level 200
+65,2,5,5,{科技},{科技等级},{所有科技总等级} 250,-1,250,1_400+6_400,4,0,Technology,Technology Level,Total Technology Level 250
+66,2,5,6,{科技},{科技等级},{所有科技总等级} 300,-1,300,1_400+6_400,4,0,Technology,Technology Level,Total Technology Level 300
+67,2,5,7,{科技},{科技等级},{所有科技总等级} 350,-1,350,1_500+6_500,5,0,Technology,Technology Level,Total Technology Level 350
+68,2,5,8,{科技},{科技等级},{所有科技总等级} 400,-1,400,1_500+6_500,5,0,Technology,Technology Level,Total Technology Level 400
+69,2,5,9,{科技},{科技等级},{所有科技总等级} 450,-1,450,1_600+6_600,6,0,Technology,Technology Level,Total Technology Level 450
+70,2,5,10,{科技},{科技等级},{所有科技总等级} 500,-1,500,1_600+6_600,6,0,Technology,Technology Level,Total Technology Level 500
+71,3,1,1,{英雄},{召唤英雄} 4★,{召唤英雄} {获得} 4★{英雄} x6,4,6,1_100+6_100,1,0,Hero,Summon Hero 4★,Summon Hero Get 4★Hero x6
+72,3,1,2,{英雄},{召唤英雄} 4★,{召唤英雄} {获得} 4★{英雄} x12,4,12,1_100+6_100,1,0,Hero,Summon Hero 4★,Summon Hero Get 4★Hero x12
+73,3,1,3,{英雄},{召唤英雄} 4★,{召唤英雄} {获得} 4★{英雄} x18,4,18,1_200+6_200,2,0,Hero,Summon Hero 4★,Summon Hero Get 4★Hero x18
+74,3,1,4,{英雄},{召唤英雄} 4★,{召唤英雄} {获得} 4★{英雄} x24,4,24,1_200+6_200,2,0,Hero,Summon Hero 4★,Summon Hero Get 4★Hero x24
+75,3,1,5,{英雄},{召唤英雄} 4★,{召唤英雄} {获得} 4★{英雄} x30,4,30,1_200+6_200,2,0,Hero,Summon Hero 4★,Summon Hero Get 4★Hero x30
+76,3,2,1,{英雄},{召唤英雄} 5★,{召唤英雄} {获得} 5★{英雄} x11,5,11,1_200+6_200,2,0,Hero,Summon Hero 5★,Summon Hero Get 5★Hero x11
+77,3,2,2,{英雄},{召唤英雄} 5★,{召唤英雄} {获得} 5★{英雄} x22,5,22,1_300+6_300,3,0,Hero,Summon Hero 5★,Summon Hero Get 5★Hero x22
+78,3,2,3,{英雄},{召唤英雄} 5★,{召唤英雄} {获得} 5★{英雄} x33,5,33,1_300+6_300,3,0,Hero,Summon Hero 5★,Summon Hero Get 5★Hero x33
+79,3,2,4,{英雄},{召唤英雄} 5★,{召唤英雄} {获得} 5★{英雄} x44,5,44,1_400+6_400,4,0,Hero,Summon Hero 5★,Summon Hero Get 5★Hero x44
+80,3,2,5,{英雄},{召唤英雄} 5★,{召唤英雄} {获得} 5★{英雄} x58,5,58,1_500+6_500,5,0,Hero,Summon Hero 5★,Summon Hero Get 5★Hero x58
+81,3,3,1,{英雄},{英雄} {升级},{任意英雄} {等级} 10,0,10,1_100+6_100,1,0,Hero,Hero Upgrade,Any Hero Lv 10
+82,3,3,2,{英雄},{英雄} {升级},{任意英雄} {等级} 30,0,30,1_100+6_100,1,0,Hero,Hero Upgrade,Any Hero Lv 30
+83,3,3,3,{英雄},{英雄} {升级},{任意英雄} {等级} 50,0,50,1_200+6_200,2,0,Hero,Hero Upgrade,Any Hero Lv 50
+84,3,3,4,{英雄},{英雄} {升级},{任意英雄} {等级} 60,0,60,1_300+6_300,3,0,Hero,Hero Upgrade,Any Hero Lv 60
+85,3,3,5,{英雄},{英雄} {升级},{任意英雄} {等级} 80,0,80,1_500+6_500,5,0,Hero,Hero Upgrade,Any Hero Lv 80
+86,3,4,1,{英雄},{英雄} {进阶},{任意英雄} {进阶等级} 1,0,1,1_100+6_100,1,0,Hero,Hero Advance,Any Hero Advanced Level 1
+87,3,4,2,{英雄},{英雄} {进阶},{任意英雄} {进阶等级} 2,0,2,1_100+6_100,1,0,Hero,Hero Advance,Any Hero Advanced Level 2
+88,3,4,3,{英雄},{英雄} {进阶},{任意英雄} {进阶等级} 3,0,3,1_200+6_200,2,0,Hero,Hero Advance,Any Hero Advanced Level 3
+89,3,4,4,{英雄},{英雄} {进阶},{任意英雄} {进阶等级} 4,0,4,1_300+6_300,3,0,Hero,Hero Advance,Any Hero Advanced Level 4
+90,3,4,5,{英雄},{英雄} {进阶},{任意英雄} {进阶等级} 5,0,5,1_500+6_500,5,0,Hero,Hero Advance,Any Hero Advanced Level 5
+91,3,5,1,{英雄},{英雄} {突破},{任意英雄} {突破等级} 4,0,4,1_100+6_100,1,0,Hero,Hero Breakthrough,Any Hero Breakthrough Level 4
+92,3,5,2,{英雄},{英雄} {突破},{任意英雄} {突破等级} 8,0,8,1_100+6_100,1,0,Hero,Hero Breakthrough,Any Hero Breakthrough Level 8
+93,3,5,3,{英雄},{英雄} {突破},{任意英雄} {突破等级} 12,0,12,1_200+6_200,2,0,Hero,Hero Breakthrough,Any Hero Breakthrough Level 12
+94,3,5,4,{英雄},{英雄} {突破},{任意英雄} {突破等级} 16,0,16,1_300+6_300,3,0,Hero,Hero Breakthrough,Any Hero Breakthrough Level 16
+95,3,5,5,{英雄},{英雄} {突破},{任意英雄} {突破等级} 20,0,20,1_500+6_500,5,0,Hero,Hero Breakthrough,Any Hero Breakthrough Level 20
+96,3,6,1,{英雄},{英雄} {天赋},{任意英雄} {激活} {天赋} x10,0,10,1_100+6_100,1,0,Hero,Hero Talent,Any Hero Activate Talent x10
+97,3,6,2,{英雄},{英雄} {天赋},{任意英雄} {激活} {天赋} x20,0,20,1_100+6_100,1,0,Hero,Hero Talent,Any Hero Activate Talent x20
+98,3,6,3,{英雄},{英雄} {天赋},{任意英雄} {激活} {天赋} x30,0,30,1_200+6_200,2,0,Hero,Hero Talent,Any Hero Activate Talent x30
+99,3,6,4,{英雄},{英雄} {天赋},{任意英雄} {激活} {天赋} x40,0,40,1_300+6_300,3,0,Hero,Hero Talent,Any Hero Activate Talent x40
+100,3,6,5,{英雄},{英雄} {天赋},{任意英雄} {激活} {天赋} x50,0,50,1_500+6_500,5,0,Hero,Hero Talent,Any Hero Activate Talent x50
+101,3,7,1,{英雄},{好感度},{任意英雄} {好感度} {等级} 4,0,4,1_100+6_100,1,0,Hero,Favorability,Any Hero Favorability Lv 4
+102,3,7,2,{英雄},{好感度},{任意英雄} {好感度} {等级} 6,0,6,1_100+6_100,1,0,Hero,Favorability,Any Hero Favorability Lv 6
+103,3,7,3,{英雄},{好感度},{任意英雄} {好感度} {等级} 8,0,8,1_200+6_200,2,0,Hero,Favorability,Any Hero Favorability Lv 8
+104,3,7,4,{英雄},{好感度},{任意英雄} {好感度} {等级} 10,0,10,1_300+6_300,3,0,Hero,Favorability,Any Hero Favorability Lv 10
+105,3,7,5,{英雄},{好感度},{任意英雄} {好感度} {誓约},0,11,1_500+6_500,5,0,Hero,Favorability,Any Hero Favorability Vow
+106,3,8,1,{英雄},{技能库},{技能库} {拥有} 5★{技能}(Lv.10) x9,0,9,1_100+6_100,1,0,Hero,Skills,Skills Own 5★Skill(Lv.10) x9
+107,3,8,2,{英雄},{技能库},{技能库} {拥有} 5★{技能}(Lv.10) x18,0,18,1_200+6_200,2,0,Hero,Skills,Skills Own 5★Skill(Lv.10) x18
+108,3,8,3,{英雄},{技能库},{技能库} {拥有} 5★{技能}(Lv.10) x27,0,27,1_300+6_300,3,0,Hero,Skills,Skills Own 5★Skill(Lv.10) x27
+109,3,8,4,{英雄},{技能库},{技能库} {拥有} 5★{技能}(Lv.10) x36,0,36,1_400+6_400,4,0,Hero,Skills,Skills Own 5★Skill(Lv.10) x36
+110,3,8,5,{英雄},{技能库},{技能库} {拥有} 5★{技能}(Lv.10) x45,0,45,1_500+6_500,5,0,Hero,Skills,Skills Own 5★Skill(Lv.10) x45
+111,4,1,1,{大世界},{农场},{首次占领} {农场} Lv.5,5,1,1_100+6_100,1,0,Great World,Farm,First Occupation Farm Lv.5
+112,4,1,2,{大世界},{农场},{首次占领} {农场} Lv.6,6,1,1_100+6_100,1,0,Great World,Farm,First Occupation Farm Lv.6
+113,4,1,3,{大世界},{农场},{首次占领} {农场} Lv.7,7,1,1_100+6_100,1,0,Great World,Farm,First Occupation Farm Lv.7
+114,4,1,4,{大世界},{农场},{首次占领} {农场} Lv.8,8,1,1_200+6_200,2,0,Great World,Farm,First Occupation Farm Lv.8
+115,4,1,5,{大世界},{农场},{首次占领} {农场} Lv.9,9,1,1_300+6_300,3,0,Great World,Farm,First Occupation Farm Lv.9
+116,4,2,1,{大世界},{伐木场},{首次占领} {伐木场} Lv.5,5,1,1_100+6_100,1,0,Great World,Sawmill,First Occupation Sawmill Lv.5
+117,4,2,2,{大世界},{伐木场},{首次占领} {伐木场} Lv.6,6,1,1_100+6_100,1,0,Great World,Sawmill,First Occupation Sawmill Lv.6
+118,4,2,3,{大世界},{伐木场},{首次占领} {伐木场} Lv.7,7,1,1_100+6_100,1,0,Great World,Sawmill,First Occupation Sawmill Lv.7
+119,4,2,4,{大世界},{伐木场},{首次占领} {伐木场} Lv.8,8,1,1_200+6_200,2,0,Great World,Sawmill,First Occupation Sawmill Lv.8
+120,4,2,5,{大世界},{伐木场},{首次占领} {伐木场} Lv.9,9,1,1_300+6_300,3,0,Great World,Sawmill,First Occupation Sawmill Lv.9
+121,4,3,1,{大世界},{采石场},{首次占领} {采石场} Lv.5,5,1,1_100+6_100,1,0,Great World,Quarry,First Occupation Quarry Lv.5
+122,4,3,2,{大世界},{采石场},{首次占领} {采石场} Lv.6,6,1,1_100+6_100,1,0,Great World,Quarry,First Occupation Quarry Lv.6
+123,4,3,3,{大世界},{采石场},{首次占领} {采石场} Lv.7,7,1,1_100+6_100,1,0,Great World,Quarry,First Occupation Quarry Lv.7
+124,4,3,4,{大世界},{采石场},{首次占领} {采石场} Lv.8,8,1,1_200+6_200,2,0,Great World,Quarry,First Occupation Quarry Lv.8
+125,4,3,5,{大世界},{采石场},{首次占领} {采石场} Lv.9,9,1,1_300+6_300,3,0,Great World,Quarry,First Occupation Quarry Lv.9
+126,4,4,1,{大世界},{铁矿场},{首次占领} {铁矿场} Lv.5,5,1,1_100+6_100,1,0,Great World,Ironmine,First Occupation Ironmine Lv.5
+127,4,4,2,{大世界},{铁矿场},{首次占领} {铁矿场} Lv.6,6,1,1_100+6_100,1,0,Great World,Ironmine,First Occupation Ironmine Lv.6
+128,4,4,3,{大世界},{铁矿场},{首次占领} {铁矿场} Lv.7,7,1,1_100+6_100,1,0,Great World,Ironmine,First Occupation Ironmine Lv.7
+129,4,4,4,{大世界},{铁矿场},{首次占领} {铁矿场} Lv.8,8,1,1_200+6_200,2,0,Great World,Ironmine,First Occupation Ironmine Lv.8
+130,4,4,5,{大世界},{铁矿场},{首次占领} {铁矿场} Lv.9,9,1,1_300+6_300,3,0,Great World,Ironmine,First Occupation Ironmine Lv.9
+131,4,5,1,{大世界},{攻城战},{首次占领} {村庄},1,1,1_100+6_100,1,0,Great World,Siege Battle,First Occupation Village
+132,4,5,2,{大世界},{攻城战},{首次占领} {小型要塞},2,1,1_200+6_200,2,0,Great World,Siege Battle,First Occupation Small Fortress
+133,4,5,3,{大世界},{攻城战},{首次占领} {小型城镇},3,1,1_300+6_300,3,0,Great World,Siege Battle,First Occupation Small Town
+134,4,5,4,{大世界},{攻城战},{首次占领} {中型要塞},4,1,1_400+6_400,4,0,Great World,Siege Battle,First Occupation Medium Fortress
+135,4,5,5,{大世界},{攻城战},{首次占领} {中型城镇},5,1,1_500+6_500,5,0,Great World,Siege Battle,First Occupation Medium Town
+136,4,5,6,{大世界},{攻城战},{首次占领} {大型要塞},6,1,1_600+6_600,6,0,Great World,Siege Battle,First Occupation Large Fortress
+137,4,5,7,{大世界},{攻城战},{首次占领} {大型城镇},7,1,1_800+6_800,8,0,Great World,Siege Battle,First Occupation Large Town
+138,4,5,8,{大世界},{攻城战},{首次占领} {首都王城},8,1,1_1000+6_1000,10,0,Great World,Siege Battle,First Occupation Capital City
+139,4,6,1,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {铁甲将军},1,5,1_100+6_100,1,0,Great World,Raid World Boss,Raid World Boss Crocodile
+140,4,6,2,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {摩因},2,5,1_100+6_100,1,0,Great World,Raid World Boss,Raid World Boss Moin
+141,4,6,3,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {库里雷蒙},3,5,1_200+6_200,2,0,Great World,Raid World Boss,Raid World Boss Currymont
+142,4,6,4,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {赤达鲁},4,5,1_200+6_200,2,0,Great World,Raid World Boss,Raid World Boss Chidaru
+143,4,6,5,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {莫里卡特},5,5,1_300+6_300,3,0,Great World,Raid World Boss,Raid World Boss Moricart
+144,4,6,6,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {杜丽莎},6,5,1_400+6_400,4,0,Great World,Raid World Boss,Raid World Boss Teresa
+145,4,6,7,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {克拉肯},7,5,1_500+6_500,5,0,Great World,Raid World Boss,Raid World Boss Kraken
+146,4,6,8,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {贝塞德},8,5,1_500+6_500,5,0,Great World,Raid World Boss,Raid World Boss Bayside
+147,4,6,9,{大世界},{讨伐} {世界首领},{讨伐} {世界首领} {卡塔},9,5,1_600+6_600,6,0,Great World,Raid World Boss,Raid World Boss Carta
+148,5,1,1,{冒险},{丛林遗迹},{通关} {丛林遗迹} I,1,1,1_100+6_100,1,0,ADV,Jungle Ruins,Clearance Jungle Ruins I
+149,5,1,2,{冒险},{丛林遗迹},{通关} {丛林遗迹} II,2,1,1_100+6_100,1,0,ADV,Jungle Ruins,Clearance Jungle Ruins II
+150,5,1,3,{冒险},{丛林遗迹},{通关} {丛林遗迹} III,3,1,1_200+6_200,2,0,ADV,Jungle Ruins,Clearance Jungle Ruins III
+151,5,1,4,{冒险},{丛林遗迹},{通关} {丛林遗迹} IV,4,1,1_300+6_300,3,0,ADV,Jungle Ruins,Clearance Jungle Ruins IV
+152,5,2,1,{冒险},{沙漠遗迹},{通关} {沙漠遗迹} I,1,1,1_100+6_100,1,0,ADV,Desert Ruins,Clearance Desert Ruins I
+153,5,2,2,{冒险},{沙漠遗迹},{通关} {沙漠遗迹} II,2,1,1_100+6_100,1,0,ADV,Desert Ruins,Clearance Desert Ruins II
+154,5,2,3,{冒险},{沙漠遗迹},{通关} {沙漠遗迹} III,3,1,1_200+6_200,2,0,ADV,Desert Ruins,Clearance Desert Ruins III
+155,5,2,4,{冒险},{沙漠遗迹},{通关} {沙漠遗迹} IV,4,1,1_300+6_300,3,0,ADV,Desert Ruins,Clearance Desert Ruins IV
+156,5,3,1,{冒险},{冰雪遗迹},{通关} {冰雪遗迹} I,1,1,1_100+6_100,1,0,ADV,Snow Ruins,Clearance Snow Ruins I
+157,5,3,2,{冒险},{冰雪遗迹},{通关} {冰雪遗迹} II,2,1,1_100+6_100,1,0,ADV,Snow Ruins,Clearance Snow Ruins II
+158,5,3,3,{冒险},{冰雪遗迹},{通关} {冰雪遗迹} III,3,1,1_200+6_200,2,0,ADV,Snow Ruins,Clearance Snow Ruins III
+159,5,3,4,{冒险},{冰雪遗迹},{通关} {冰雪遗迹} IV,4,1,1_300+6_300,3,0,ADV,Snow Ruins,Clearance Snow Ruins IV
+160,5,4,1,{冒险},{熔岩遗迹},{通关} {熔岩遗迹} I,1,1,1_100+6_100,1,0,ADV,Lava Ruins,Clearance Lava Ruins I
+161,5,4,2,{冒险},{熔岩遗迹},{通关} {熔岩遗迹} II,2,1,1_100+6_100,1,0,ADV,Lava Ruins,Clearance Lava Ruins II
+162,5,4,3,{冒险},{熔岩遗迹},{通关} {熔岩遗迹} III,3,1,1_200+6_200,2,0,ADV,Lava Ruins,Clearance Lava Ruins III
+163,5,4,4,{冒险},{熔岩遗迹},{通关} {熔岩遗迹} IV,4,1,1_300+6_300,3,0,ADV,Lava Ruins,Clearance Lava Ruins IV
+164,5,5,1,{冒险},{修炼洞穴},{通关} {修炼洞穴} I,1,1,1_100+6_100,1,0,ADV,Training Cave,Clearance Training Cave I
+165,5,5,2,{冒险},{修炼洞穴},{通关} {修炼洞穴} II,2,1,1_100+6_100,1,0,ADV,Training Cave,Clearance Training Cave II
+166,5,5,3,{冒险},{修炼洞穴},{通关} {修炼洞穴} III,3,1,1_200+6_200,2,0,ADV,Training Cave,Clearance Training Cave III
+167,5,5,4,{冒险},{修炼洞穴},{通关} {修炼洞穴} IV,4,1,1_300+6_300,3,0,ADV,Training Cave,Clearance Training Cave IV
+168,5,6,1,{冒险},{次元之地},{通关} {次元之地} I,1,1,1_100+6_100,1,0,ADV,Dimensional Land,Clearance Dimensional Land I
+169,5,6,2,{冒险},{次元之地},{通关} {次元之地} II,2,1,1_100+6_100,1,0,ADV,Dimensional Land,Clearance Dimensional Land II
+170,5,6,3,{冒险},{次元之地},{通关} {次元之地} III,3,1,1_200+6_200,2,0,ADV,Dimensional Land,Clearance Dimensional Land III
+171,5,6,4,{冒险},{次元之地},{通关} {次元之地} IV,4,1,1_300+6_300,3,0,ADV,Dimensional Land,Clearance Dimensional Land IV
+172,5,7,1,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {铁甲将军},1,1,1_100+6_100,1,0,ADV,Raid Territory Leader,Raid Territory Leader Crocodile
+173,5,7,2,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {摩因},2,1,1_100+6_100,1,0,ADV,Raid Territory Leader,Raid Territory Leader Moin
+174,5,7,3,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {库里雷蒙},3,1,1_200+6_200,2,0,ADV,Raid Territory Leader,Raid Territory Leader Currymont
+175,5,7,4,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {赤达鲁},4,1,1_200+6_200,2,0,ADV,Raid Territory Leader,Raid Territory Leader Chidaru
+176,5,7,5,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {莫里卡特},5,1,1_300+6_300,3,0,ADV,Raid Territory Leader,Raid Territory Leader Moricart
+177,5,7,6,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {杜丽莎},6,1,1_300+6_300,3,0,ADV,Raid Territory Leader,Raid Territory Leader Teresa
+178,5,7,7,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {克拉肯},7,1,1_400+6_400,4,0,ADV,Raid Territory Leader,Raid Territory Leader Kraken
+179,5,7,8,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {贝塞德},8,1,1_400+6_400,4,0,ADV,Raid Territory Leader,Raid Territory Leader Bayside
+180,5,7,9,{冒险},{讨伐} {领地首领},{讨伐} {领地首领} {卡塔},9,1,1_500+6_500,5,0,ADV,Raid Territory Leader,Raid Territory Leader Carta
+181,5,8,1,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} I,1,1,1_100+6_100,1,0,ADV,Dragon's Lair,Clearance Dragon's Lair I
+182,5,8,2,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} II,2,1,1_200+6_200,2,0,ADV,Dragon's Lair,Clearance Dragon's Lair II
+183,5,8,3,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} III,3,1,1_300+6_300,3,0,ADV,Dragon's Lair,Clearance Dragon's Lair III
+184,5,8,4,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} IV,4,1,1_400+6_400,4,0,ADV,Dragon's Lair,Clearance Dragon's Lair IV
+185,5,8,5,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} V,5,1,1_500+6_500,5,0,ADV,Dragon's Lair,Clearance Dragon's Lair V
+186,5,8,6,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} VI,6,1,1_500+6_500,5,0,ADV,Dragon's Lair,Clearance Dragon's Lair VI
+187,5,8,7,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} VII,7,1,1_600+6_600,6,0,ADV,Dragon's Lair,Clearance Dragon's Lair VII
+188,5,8,8,{冒险},{恶龙巢穴},{通关} {恶龙巢穴} VIII,8,1,1_700+6_700,7,0,ADV,Dragon's Lair,Clearance Dragon's Lair VIII
+189,6,1,1,{社交},{好友},{拥有} {好友} 5,0,5,1_100+6_100,1,0,Socializing,Friend,Own Friend 5
+190,6,1,2,{社交},{好友},{拥有} {好友} 10,0,10,1_100+6_100,1,0,Socializing,Friend,Own Friend 10
+191,6,1,3,{社交},{好友},{拥有} {好友} 15,0,15,1_100+6_100,1,0,Socializing,Friend,Own Friend 15
+192,6,1,4,{社交},{好友},{拥有} {好友} 20,0,20,1_100+6_100,1,0,Socializing,Friend,Own Friend 20
+193,6,1,5,{社交},{好友},{拥有} {好友} 25,0,25,1_100+6_100,1,0,Socializing,Friend,Own Friend 25
+194,6,1,6,{社交},{好友},{拥有} {好友} 30,0,30,1_100+6_100,1,0,Socializing,Friend,Own Friend 30
+195,6,1,7,{社交},{好友},{拥有} {好友} 40,0,40,1_100+6_100,1,0,Socializing,Friend,Own Friend 40
+196,6,1,8,{社交},{好友},{拥有} {好友} 50,0,50,1_100+6_100,1,0,Socializing,Friend,Own Friend 50
+197,6,2,1,{社交},{援助好友},"{援助好友} {资源} 1,000,000",0,1000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 1,000,000"
+198,6,2,2,{社交},{援助好友},"{援助好友} {资源} 2,000,000",0,2000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 2,000,000"
+199,6,2,3,{社交},{援助好友},"{援助好友} {资源} 3,000,000",0,3000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 3,000,000"
+200,6,2,4,{社交},{援助好友},"{援助好友} {资源} 4,000,000",0,4000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 4,000,000"
+201,6,2,5,{社交},{援助好友},"{援助好友} {资源} 5,000,000",0,5000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 5,000,000"
+202,6,2,6,{社交},{援助好友},"{援助好友} {资源} 6,000,000",0,6000000,1_100+6_100,1,0,Socializing,Assist Friend,"Assist Friend Resources 6,000,000"
+203,6,2,7,{社交},{援助好友},"{援助好友} {资源} 8,000,000",0,8000000,1_200+6_200,2,0,Socializing,Assist Friend,"Assist Friend Resources 8,000,000"
+204,6,2,8,{社交},{援助好友},"{援助好友} {资源} 12,000,000",0,12000000,1_300+6_300,3,0,Socializing,Assist Friend,"Assist Friend Resources 12,000,000"
+205,6,2,9,{社交},{援助好友},"{援助好友} {资源} 16,000,000",0,16000000,1_300+6_300,3,0,Socializing,Assist Friend,"Assist Friend Resources 16,000,000"
+206,6,2,10,{社交},{援助好友},"{援助好友} {资源} 20,000,000",0,20000000,1_300+6_300,3,0,Socializing,Assist Friend,"Assist Friend Resources 20,000,000"
+207,6,3,1,{社交},{帮助盟友加速},{帮助盟友加速} x40,0,40,1_100+6_100,1,0,Socializing,Help Ally Speedup,Help Ally Speedup x40
+208,6,3,2,{社交},{帮助盟友加速},{帮助盟友加速} x80,0,80,1_100+6_100,1,0,Socializing,Help Ally Speedup,Help Ally Speedup x80
+209,6,3,3,{社交},{帮助盟友加速},{帮助盟友加速} x120,0,120,1_100+6_100,1,0,Socializing,Help Ally Speedup,Help Ally Speedup x120
+210,6,3,4,{社交},{帮助盟友加速},{帮助盟友加速} x200,0,200,1_200+6_200,2,0,Socializing,Help Ally Speedup,Help Ally Speedup x200
+211,6,3,5,{社交},{帮助盟友加速},{帮助盟友加速} x280,0,280,1_200+6_200,2,0,Socializing,Help Ally Speedup,Help Ally Speedup x280
+212,6,3,6,{社交},{帮助盟友加速},{帮助盟友加速} x360,0,360,1_200+6_200,2,0,Socializing,Help Ally Speedup,Help Ally Speedup x360
+213,6,3,7,{社交},{帮助盟友加速},{帮助盟友加速} x480,0,480,1_300+6_300,3,0,Socializing,Help Ally Speedup,Help Ally Speedup x480
+214,6,3,8,{社交},{帮助盟友加速},{帮助盟友加速} x600,0,600,1_300+6_300,3,0,Socializing,Help Ally Speedup,Help Ally Speedup x600
+215,6,3,9,{社交},{帮助盟友加速},{帮助盟友加速} x720,0,720,1_300+6_300,3,0,Socializing,Help Ally Speedup,Help Ally Speedup x720
+216,6,4,1,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x40,0,40,1_100+6_100,1,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x40
+217,6,4,2,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x80,0,80,1_100+6_100,1,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x80
+218,6,4,3,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x120,0,120,1_100+6_100,1,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x120
+219,6,4,4,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x200,0,200,1_200+6_200,2,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x200
+220,6,4,5,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x280,0,280,1_200+6_200,2,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x280
+221,6,4,6,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x360,0,360,1_200+6_200,2,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x360
+222,6,4,7,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x480,0,480,1_300+6_300,3,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x480
+223,6,4,8,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x600,0,600,1_300+6_300,3,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x600
+224,6,4,9,{社交},{在遗迹副本中获得点赞},{在遗迹副本中获得点赞} x720,0,720,1_300+6_300,3,0,Socializing,Receive Liked In The Ruins Dungeon,Receive Liked In The Ruins Dungeon x720
+225,6,6,1,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x40,0,40,1_100+6_100,1,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x40
+226,6,6,2,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x80,0,80,1_100+6_100,1,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x80
+227,6,6,3,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x120,0,120,1_100+6_100,1,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x120
+228,6,6,4,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x200,0,200,1_200+6_200,2,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x200
+229,6,6,5,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x280,0,280,1_200+6_200,2,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x280
+230,6,6,6,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x360,0,360,1_200+6_200,2,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x360
+231,6,6,7,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x480,0,480,1_300+6_300,3,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x480
+232,6,6,8,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x600,0,600,1_300+6_300,3,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x600
+233,6,6,9,{社交},{其他玩家拜访您的城市获得点赞},{其他玩家拜访您的城市获得点赞} x720,0,720,1_300+6_300,3,0,Socializing,Other players receive Likes when they visit your city,Other players receive Likes when they visit your city x720
+234,6,5,1,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x20,0,20,1_100+6_100,1,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x20
+235,6,5,2,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x40,0,40,1_100+6_100,1,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x40
+236,6,5,3,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x60,0,60,1_100+6_100,1,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x60
+237,6,5,4,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x100,0,100,1_200+6_200,2,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x100
+238,6,5,5,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x140,0,140,1_200+6_200,2,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x140
+239,6,5,6,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x180,0,180,1_200+6_200,2,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x180
+240,6,5,7,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x240,0,240,1_300+6_300,3,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x240
+241,6,5,8,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x300,0,300,1_300+6_300,3,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x300
+242,6,5,9,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x360,0,360,1_300+6_300,3,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x360
+243,6,5,10,{社交},{协助盟友占领5级以上资源点},{协助盟友占领5级以上资源点} x420,0,420,1_300+6_300,3,0,Socializing,Assist Ally Occupy Level 5+ Resource Points,Assist Ally Occupy Level 5+ Resource Points x420

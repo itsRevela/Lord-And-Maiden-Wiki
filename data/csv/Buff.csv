@@ -1,0 +1,77 @@
+﻿buffId,Name,Type,Name_en
+5,{造成伤害提高},1,DMG Dealt Increased
+6,{造成伤害降低},-1,DMG Dealt Reduced
+7,{受到伤害提高},-1,DMG Taken Increased
+8,{受到伤害降低},1,DMG Taken Reduced
+9,{攻击属性提高},1,ATK Attribute Increased
+10,{防御属性提高},1,DEF Attribute Increased
+11,{破坏属性提高},1,DES Attribute Increased
+12,{速度属性提高},1,Spd Attribute Increased
+13,{所有属性提高},1,Increase All Attributes
+14,{攻击属性降低},-1,ATK Reduced
+15,{防御属性降低},-1,DEF Reduced
+16,{破坏属性降低},-1,DES Reduced
+17,{速度属性降低},-1,Spd Attribute Reduced
+18,{所有属性降低},-1,All Attributes Reduced
+19,{攻击属性提高},1,ATK Attribute Increased
+20,{防御属性提高},1,DEF Attribute Increased
+21,{破坏属性提高},1,DES Attribute Increased
+22,{速度属性提高},1,Spd Attribute Increased
+23,{所有属性提高},1,Increase All Attributes
+24,{攻击属性降低},-1,ATK Reduced
+25,{防御属性降低},-1,DEF Reduced
+26,{破坏属性降低},-1,DES Reduced
+27,{速度属性降低},-1,Spd Attribute Reduced
+28,{所有属性降低},-1,All Attributes Reduced
+29,{普通攻击伤害提高},1,Normal ATK DMG Dealt Increased
+30,{普通攻击伤害降低},-1,Normal DMG Dealt Reduced
+31,{战术技能伤害提高},1,Tactical Skill DMG Dealt Increased
+32,{战术技能伤害降低},-1,Tactical Skill DMG Dealt Reduced
+33,{追击技能伤害提高},1,Pursuit Skill DMG Dealt Increased
+34,{追击技能伤害降低},-1,Pursuit Skill DMG Dealt Reduced
+35,{受到普通攻击伤害提高},-1,Normal DMG Taken Increased
+36,{受到普通攻击伤害降低},1,Normal DMG Taken Reduced
+37,{受到战术技能伤害提高},-1,Tactical Skill DMG Taken Increased
+38,{受到战术技能伤害降低},1,Reduce Tactical Skill DMG received
+39,{受到追击技能伤害提高},-1,Pursuit Skill DMG Taken Increased
+40,{受到追击技能伤害降低},1,Pursuit Skill DMG Taken Reduced
+42,{士兵生命属性提高},1,Soldier HP Increased
+43,{受到咒术伤害降低},1,Curse DMG Taken  Reduced
+44,{受到燃烧伤害降低},1,Burning DMG Taken Reduced
+47,{造成真实伤害提高},1,Real DMG Dealt Increased
+70,{强袭},1,Assault
+73,{护盾},1,Shield
+74,{急救},1,First Aid
+79,{概率极速},1,
+80,{概率连击},1,
+81,{概率反击},1,
+82,{概率溅射},1,
+83,{眩晕}({预备}),-1,Stun(Prepared)
+84,{缴械}({预备}),-1,Disarm(Prepared)
+85,{沉默}({预备}),-1,Silence(Prepared)
+86,{混乱}({预备}),-1,Chaos(Prepared)
+87,{治疗},0,Heal
+88,{瞬法},1,Instant
+89,{永恒},0,Eternal
+106,{离间},1,Blood Sucking
+107,{自愈},1,Self-Heal
+108,{燃烧},-1,Burn
+109,{咒术},-1,Curse
+111,{概率闪避},1,
+113,{专注},1,Concentration
+114,{眩晕},-1,Stun
+115,{缴械},-1,Disarm
+116,{沉默},-1,Silence
+117,{混乱},-1,Chaos
+118,{嘲讽},-1,Taunts
+119,{禁疗},-1,Heal Ban
+120,{援护},1,Assist
+125,{超导},1,Superconducting
+139,{净化},1,Purification
+140,{偷袭},1,Sneak Attack
+150,{洞察},1,Insight
+154,{奥术飞弹},-1,Arcane Missile
+155,{精准打击},1,Precision Strike
+157,{助燃},-1,Combustion Aid
+158,{元素爆炸},1,Element Burs
+159,{追击} {溅射},1,Pursuit Splash

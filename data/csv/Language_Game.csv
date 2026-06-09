@@ -1,0 +1,2412 @@
+﻿Simplified_Text,Traditional_Text,English_Text,Japanese_Text,Korean_Text
+无,無,Nothing,無,없음
+我,我,Me,私,나
+系统,系統,System,システム,시스템
+账号,賬號,ID,ID,ID
+密码,密碼,Password,パスワード,암호
+点击,點擊,Click,クリック,클릭
+登录,登錄,Login,ログイン,로그인
+注册,註冊,Register,創建,만들기
+男,男,Male,男,남성
+女,女,Female,女,여성
+确认,確認,Confirm,確認,확인
+确定,確定,OK,確定,확인
+取消,取消,Cancel,キャンセル,취소
+提示,提示,Tips,ヒント,알림
+内容,內容,Content,内容,내용을
+输入,輸入,Enter,入力,입력
+发送,發送,Send,送信,보내기
+手机号,手機號,Phone Number,電話番号,핸드폰 번호
+验证码,驗證碼,Captcha,検証コード,인증코드
+服务器,伺服器,Server,サーバー,서버
+选择服务器,選擇伺服器,Select Server,サーバー選択,서버 선택
+更换服务器,更換伺服器,Change Server,サーバーを変更,서버 변경
+选择支付方式,選擇支付方式,Select Payment Method,支払い方法を選択する,지불방식을 선택해주세요
+支付方式,支付方式,Payment Method,支払い方式,지불 방식
+需支付,需支付,Payable,支払いを要する,지불이 필요합니다
+支付宝,Alipay,Alipay,Alipay,Alipay
+微信,WeChat,WeChat,WeChat,WeChat
+不存在,不存在,Nonexistent,存在しない,존재하지 않는다
+旗帜,旗幟,Banner,旗,깃발
+创建,創建,Create,創建,생성
+进入,進入,Enter,入力,들어가다
+兑换,兌換,Exchange,両替,교환
+提供,提供,Supply,供給,공급
+需求,需求,Need,需要,수요
+任意,任意,Any,任意,어느
+交换,交換,Exchange,交換,교환
+兑换码,兌換碼,CDK,CDK,CDK
+激活码,激活碼,Activation Code,アクティベーションコード,활성 코드
+编号,編號,ID,番号付け,번호
+信息,信息,Info,情報,정보
+查看,查看,Check,チェック,수표
+详情,詳情,Details,詳細,정보
+维护,維護,Maintain,整備中,정비 중
+流畅,流暢,Smooth,円滑,원활
+拥挤,擁擠,Crowded,混雑,혼잡
+爆满,爆滿,Full,満員,포만
+昵称,昵稱,Nickname,ニックネーム,닉네임
+头像,頭像,Via,顔写真,아바타
+头像框,頭像框,Frame,写真枠,아바타 틀
+改名,改名,Rename,改名,수정
+名称,名稱,Name,名前,이름
+帧率,幀率,Frame Rate,フレームレート,프레임 속도
+简体中文,簡體中文,Simplified Chinese,簡体字中国語,중국어 간체
+繁体中文,繁體中文,Traditional Chinese,繁体字中国語,중국어 번체
+英语,英語,English,英語,영어
+日语,日語,Japanese,日本語,일본어
+韩语,韓語,Korean,韓国語,한국어
+背景,背景,Background,背景,배경
+声音,聲音,Sound,サウンド,소리
+音乐,音乐,Music,BGM,배경 음악
+音效,音效,Sound,効果音,효과음
+语言,語言,Language,言語,언어
+其它,其它,Other,它の,또 다른
+其他,其他,Other,他の,또 다른
+错误,錯誤,Error,エラー,오류
+正确,正確,Correct,正しい,알맞은
+异常,異常,Error,エラー,오류
+区域,區域,Region,エリア,구역
+转区,轉區,Change Server,転区,서버 변경
+称号,稱號,Title,称号,칭호
+军衔,軍銜,Military Rank,階級,군사 칭호
+设置,設置,Settings,設定,설정
+屏蔽,屏蔽,Block,ブロック,차단
+解除,解除,Remove,解除,해제
+同意,同意,Agree,同意,수락
+拒绝,拒絕,Decline,拒絶,거절하다
+关注,關注,Focus,注目,주목
+无效,無效,Invalid,無効,무효
+删除账号,刪除賬號,Delete,アカウント削除,계정 삭제
+登录账号,登錄賬號,Login,アカウントログイン,계정 로그인
+注册账号,註冊賬號,Register,アカウント創建,만들기 계정
+切换账号,切換賬號,Switch Account,アカウント切替,계정전환
+游客登录,遊客登錄,Guest,ゲストログイン,게스트 로그인
+最近登录,最近登錄,Last Login,前回ログイン,최근 로그인
+声音设置,聲音設置,Sound Settings,サウンド設定,소리 설정
+其他设置,其他設置,Other Settings,他の設定,기타 설정
+语言设置,語言設置,Language Settings,言語設定,언어 설정
+选择地区,選擇地區,Select Region,選択領域,지역 선택
+个人信息,個人信息,Profile,個人情報,개인 정보
+个性装扮,個性裝扮,Special Style,個性的な装飾,개성 장식
+更换昵称,更換昵稱,Change Nickname,ニックネーム変更,닉네임 변경
+繁荣度,繁榮度,Prosperity,繁栄度,번영도
+文明度,文明度,Civilization,文明度,문명도
+在线,在線,Online,オンライン,온라인
+离线,離線,Offline,オフライン,오프 라인
+角色,角色,Role,キャラクター,역할
+创建角色,創建角色,Create Role,キャラクター創建,생성 역할
+全体角色,全體角色,All Role,キャラクターリスト,모든 역할
+角色编号,角色編號,ID,ID,ID
+角色名称,角色名稱,Role Name,キャラクター名,역할 이름
+角色列表,角色列表,Role List,キャラクターリスト,역할 목록
+玩家,玩家,Player,プレイヤー,플레이어
+玩家编号,玩家編號,ID,ID,ID
+玩家名称,玩家名稱,Player Name,プレイヤー名,플레이어 이름
+联盟,聯盟,Union,同盟,클랜
+联盟名称,聯盟名稱,Union Name,同盟名,클랜 이름
+联盟公告,聯盟公告,Union Announcement,同盟公告,클랜 공고
+联盟等级,聯盟等級,Union Level,同盟レベル,클랜 레벌
+联盟科技,聯盟科技,Union Technology,同盟技術,클랜 과학
+联盟人数,聯盟人數,Number Of Union Members,同盟の人数,클랜 인구
+联盟礼物,聯盟禮物,Union Gift,同盟贈り物,클랜 선물
+联盟频道,聯盟頻道,Union Channel,同盟チャネル,클랜 채널
+联盟信息,聯盟信息,Union Info,同盟情報,클랜 정보
+创建联盟,創建聯盟,Create Union,同盟創建,클랜 생성
+联盟成员,聯盟成員,Union Members,同盟会員,클랜 회원
+联盟中心,聯盟中心,Union Center,同盟センター,클랜 센터
+联盟领土,聯盟領土,Union Territory,同盟領土,클랜 영토
+所属联盟,所屬聯盟,Affiliation Union,所属同盟,클랜 소속
+报名联盟,報名聯盟,Participating Union,参加同盟,가입 클랜
+联盟仓库,聯盟倉庫,Union Storehouse,同盟倉庫,클랜 창고
+联盟商店,聯盟商店,Union Store,同盟ショップ,클랜 상점
+联盟粮食,聯盟糧食,Union Food,同盟食料,클랜 식량
+联盟木材,聯盟木材,Union Wood,同盟木材,클랜 목재
+联盟石材,聯盟石材,Union Stone,同盟石材,클랜 석재
+联盟铁锭,聯盟鐵錠,Union Iron,同盟鉄塊,클랜쇠 뭉치
+联盟邀请,聯盟邀請,Union Invitation,同盟招待,클랜 초대
+盟主,盟主,Leader,盟主,지도자
+副盟主,副盟主,Deputy Leader,副盟主,부 지도자
+联系盟主,聯系盟主,Contact Leader,盟主と連絡する,연락 지도자
+转让盟主,轉讓盟主,Transfer Leader,盟主譲渡,이양 지도자
+接任盟主,接任盟主,Take Over As Leader,盟主引継,인수 지도자
+盟友,盟友,Ally,盟友,클랜
+盟友商队,盟友商隊,Ally's Caravan,盟友キャラバン,클랜 상단
+盟友城市,盟友城市,Ally's City,盟友都市,클랜 도시
+拜访盟友,拜訪盟友,Visit Ally,盟友を訪問する,클랜 방문
+盟友列表,盟友列表,Ally List,盟友リスト,클랜 목록
+帮助盟友加速,幫助盟友加速,Help Ally Speedup,盟友の加速を支援する,클랜 가속 지원
+屏蔽个人聊天信息,屏蔽個人聊天信息,Block Personal Msg,個人チャット情報をブロック,개인 채팅 차단
+屏蔽系统信息,屏蔽系統信息,Block System Msg,システム情報をブロック,시스템 정보 차단
+屏蔽地区频道,屏蔽地區頻道,Block Regional Channels,地域チャンネルをブロック,지역 채널 차단
+隐藏消费信息,隱藏消費信息,Hide Consumption Msg,消費情報を隠す,소비 정보 숨기기
+特效,特效,VFX,VFX,VFX
+品质,品質,Quality,品质,품질
+劣质,劣質,Bad,不良,불량
+难度,難度,Difficulty,難易度,난이도
+普通,普通,Normal,通常,일반
+困难,困難,Difficulty,困難,어려움
+噩梦,噩夢,Nightmares,悪夢,악몽
+稀有,稀有,Rare,希少,희귀
+卓越,卓越,Excellent,優秀な,훌륭 한
+完美,完美,Perfect,完璧,완벽 한
+史诗,史詩,Epic,エピック,서사시
+传奇,傳奇,Legend,伝説,전설
+击杀,擊殺,Kill,キル,처치
+进攻,進攻,Attack,攻撃,공격
+防守,防守,Defense,防衛,방어
+段位,段位,Dan Rank,段位,무대
+青铜,青銅,Bronze,ブロンズ,브론즈
+白银,白銀,Silver,シルバー,실버
+黄金,黃金,Gold,金,금
+钻石,鑽石,Diamond,ダイヤモンド,다이아몬드
+王者,王者,Challenger,チャレンジャー,챌린저
+以下,以下,Following,以下,다음과 같은
+显示,顯示,Display,表示,표시
+隐藏,隱藏,Hide,非表示,표시 안함
+外观,外觀,Outfit,外観,모습
+切换,切換,Switch,変更,변경
+幻化,幻化,Change,変換,변화
+皮肤,皮膚,Skin,スキン,피부
+装扮,裝扮,Outfit,装飾,장식
+赛季,賽季,Season,シーズン,시즌
+秒,秒,S,秒,초
+分钟,分鐘,Min,分,분
+分,分,Min,分,분
+小时,小時,H,時,시간
+时,時,H,時,시간
+天,天,Day,日,일
+周,週,Week,週,일주
+永久,永久,Permanent,永久,영구
+万,W,W,万,만
+千,K,K,K,K
+休息,休息,Rest,休み,쉬다
+小贴士,小貼士,Tips,ヒント,팁
+备注,備註,Note,注意,주의
+公用,公用,Public,公共,공적인
+公共,公共,Public,公共,공적인
+地图,地圖,Map,マップ,지도
+坐标,座標,Coordinates,座標,좌표
+真实,真實,Real,現実,리얼
+模拟,模擬,Simulate,模擬,모의
+战斗,戰鬥,Battle,戦闘,전투
+胜利,勝利,Victory,勝利,승리
+失败,失敗,Fail,敗北,실패
+僵持,僵持,Stalemate,僵持,교착
+成功,成功,Success,成功,성공
+跳过,跳過,Skip,スキップ,스킵
+恢复,恢復,Restore,回復,회복
+提高,提高,Increase,UP,증가
+降低,降低,Decrease,DOWN,감소
+提交,提交,Submit,提出,등록
+获取,獲取,GET,獲得,획득
+成长,成長,Growth,成長,자라는 것
+广告,AD,AD,AD,AD
+播放,播放,Play,視聴,재생
+聊天,聊天,Chat,チャット,채팅
+短信,短信,SMS,SMS,SMS
+分辨率,分辨率,Resolution,解像度,해상도
+全屏,全屏,Full Screen,全画面,전체 화면
+翻译错误,翻譯錯誤,Translation Error,翻訳エラー,번역 오류
+编队,編隊,Formation,チーム,편성
+舰队,艦隊,Fleet,艦隊,함대
+团队,團隊,Team,チーム,팀
+世界,世界,World,世界,세계
+跨服,跨服,Cross Server,クロスサーバー,크로스 서버
+弹幕,彈幕,Scrolling text,弾幕,연발 사격
+私聊,私聊,Private Msg,ししん,대화
+团队招募,團隊招募,Team Recruit,チーム募集,팀 모집
+世界频道,世界頻道,World Channel,世界チャネル,세계 채널
+系统邮件,系統郵件,System Mail,システムメール,시스템 메일
+私聊邮件,私聊郵件,Private Mail,ししんメール,개인 메일
+警告邮件,警告郵件,Warning Mail,警告メール,경고 메일
+聊天消息,聊天消息,Chat Msg,チャット情報,채팅 메시지
+进阶,進階,Advance,進階,진급
+星,★,★,★,★
+1月,1月,January,1月,1월
+2月,2月,February,2月,2월
+3月,3月,March,3月,3월
+4月,4月,April,4月,4월
+5月,5月,May,5月,5월
+6月,6月,June,6月,6월
+7月,7月,July,7月,7월
+8月,8月,August,8月,8월
+9月,9月,September,9月,9월
+10月,10月,October,10月,10월
+11月,11月,November,11月,11월
+12月,12月,December,12月,12월
+第一天,第一天,1st Day,1日目,1일차
+第二天,第二天,2nd Day,2日目,2일차
+第三天,第三天,3rd Day,3日目,3일차
+第四天,第四天,4th Day,4日目,4일차
+第五天,第五天,5th Day,5日目,5일차
+第六天,第六天,6th Day,6日目,6일차
+第七天,第七天,7th Day,7日目,7일차
+下周一,下週一,Next Monday,来週の月曜日,다음주 월요일
+周一,週一,Monday,月曜日,월요일
+周二,週二,Tuesday,火曜日,화요일
+周三,週三,Wednesday,水曜日,수요일
+周四,週四,Thursday,木曜日,목요일
+周五,週五,Friday,金曜日,금요일
+周六,週六,Saturday,土曜日,토요일
+周天,週天,Sunday,日曜日,일요일
+周日,週日,Sunday,日曜日,일요일
+￥6,$0.99,$0.99,$0.99,$0.99
+￥12,$1.99,$1.99,$1.99,$1.99
+￥18,$2.99,$2.99,$2.99,$2.99
+￥30,$4.99,$4.99,$4.99,$4.99
+￥68,$9.99,$9.99,$9.99,$9.99
+￥98,$14.99,$14.99,$14.99,$14.99
+￥128,$19.99,$19.99,$19.99,$19.99
+￥198,$29.99,$29.99,$29.99,$29.99
+￥258,$39.99,$39.99,$39.99,$39.99
+￥328,$49.99,$49.99,$49.99,$49.99
+￥388,$59.99,$59.99,$59.99,$59.99
+￥418,$64.99,$64.99,$64.99,$64.99
+￥648,$99.99,$99.99,$99.99,$99.99
+今日,今日,Today,今日,오늘
+明日,明日,Tomorrow,明日,내일
+权限,權限,Jurisdiction,管轄権,관할권
+修改,修改,Modify,変更,수정
+调整,調整,Adjust,調整,조정
+调整职务,調整職務,Adjust,職務を調整,직무 조정
+职务任命,職務任命,Appointment,職務の任命,직무 임명
+职务权限,職務權限,Authority,職務権限,직무 권한
+指挥官,指揮官,Commander,指揮官,지휘관
+指挥长,指揮長,Commander,指揮長,지휘장
+事务长,事務長,Officer,事務長,사무장
+外交长,外交長,Diplomatist,外務大臣,외교장
+外交家,外交家,Diplomat,外交官,외교관
+佣兵,傭兵,Mercenary,雇い兵,용병
+守军,守軍,Defender,守備軍,수비군
+守卫,守衛,Guard,守衛,수비
+圣女,聖女,Saintess,聖女,성녀
+战神,戰神,Mars,戦神,아레스
+叛军,叛軍,Rebels,反乱軍,반란군
+领主,領主,Lord,領主,영주
+统帅,統帥,Commander,統帥,리더
+敌军,敵軍,Enemy,敵軍,적군
+系统守军,系統守軍,System Troops,系統守備軍,시스템 방위군
+荒原敌军,荒原敵軍,Wilderness Enemy,荒野の敵軍,황야 적군
+遗迹敌军,遺跡敵軍,Ruins Enemy,敵の遺跡,유적 적군
+活动敌军,活動敵軍,Activity Enemy,敵軍を動かす,이벤트 적군
+产出,產出,Output,產出,산출
+用途,用途,Application,用途,용도
+来源,來源,Source,源,원천
+范围,範圍,Scope,範囲,범위
+广泛,廣泛,Widely,広く,널리
+装备,裝備,Equip,装備,장착
+方案,方案,Plan,プラン,계획
+消耗,消耗,Consume,消耗,소모
+战力,戰力,Power,戦關力,전투력
+评分,評分,Score,評価,평점
+经验,經驗,EXP,EXP,EXP
+觉醒,覺醒,Awakening,覚醒,각성
+培养,培養,Train,育成,성장
+突破,突破,Breakthrough,突破,돌파
+提升,提升,Enhance,上昇,승급
+增加,增加,Increase,増加,늘
+减少,減少,Reduce,減少,줄
+状态,狀態,State,状態,상태
+选择,選擇,Select,選択,선택
+卸下,卸下,Remove,解除,장착해제
+替换,替換,Replace,交代,교체
+更换,更換,Change,変更,변경
+强化,強化,Enhance,強化,강화
+保存,保存,Save,保存,저장
+解雇,解僱,Dismiss,解雇,해고하다
+鉴定,鑑定,Identify,鑑定,감정
+功能,功能,Function,機能,기능
+新功能,新功能,New Function,新機能,새로운 기능
+领土,領土,Territory,領土,영토
+宣战,宣戰,Declare War,宣戦,전쟁을 선포
+礼物,禮物,Gift,贈り物,선물
+发布,發布,Distribute,分配,배포
+组合,組合,Combination,組み合わせ,조합
+邀请,邀請,Invite,招待,초대
+召集,召集,Clump,招集,소집
+解散,解散,Dissolve,解散,해산
+退出,退出,Exit,終了,탈퇴
+捐献,捐獻,Donate,寄付,기부
+任命,任命,Appoint,任命,명하다
+职务,職務,Post,職務,위치
+管理员,管理員,Manager,管理者,관리자
+成员,成員,Members,会員,회원
+精英成员,精英成員,Elite Member,エリート会員,엘리트 회원
+成员列表,成員列表,Member List,会員リスト,회원 목록
+列表,列表,List,リスト,목록
+清单,清單,List,リスト,목록
+杂货,雜貨,Sundry,雑货,잡화
+荣誉,榮譽,Honor,名誉,명예
+友谊,友誼,Friendship,友情,우정
+标签,標簽,Tag,ラベル,태그
+房间,房間,Room,部屋,방
+切换房间,切換房間,Switch,部屋変更,방을 바꾸다
+危险,危險,Danger,危険,위험
+安全,安全,Safety,安全,안전
+线,線,Line,ライン,채널
+销毁,銷毀,Destroy,破壊,파괴하다
+摧毁,摧毁,Destroy,破壊,파괴하다
+损毁,損毀,Damaged,破損,손상된
+移除,移除,Remove,削除,제거
+转化,轉化,Conversion,変換,전환
+转化率,轉換率,Conversion Rate,変換率,전환율
+成功率,成功率,Success Rate,成功率,성공률
+新,New,New,New,New
+当前,當前,Current,現在,현재
+前往,前往,GO,行く,움직임
+好友,好友,Friend,親友,친구
+添加好友,添加好友,Add Friend,親友追加,친구 추가
+邀请好友,邀請好友,Invite Friend,親友招待,친구 초대
+申请好友,申請好友,Apply For Friend,親友申請,친구 신청
+删除好友,刪除好友,Delete Friend,親友削除,친구 삭제
+援助好友,援助好友,Assist Friend,親友を援助,친구 지원
+挑战领主,挑戰領主,Challenge Lord,領主に挑戦,영주에게 도전
+冒险商店,冒險商店,Adventure Store,冒険ショップ,모험 상점
+友谊商店,友誼商店,Friendship Store,友情ショップ,우정 상점
+荣誉商店,榮譽商店,Honor Store,名誉ショップ,명예 상점
+荒原商店,荒原商店,Wilderness Store,荒原ショップ,황야 상점
+战功商店,戰功商店,Meritorious Store,戦功ショップ,전공 상점
+商店购物,商店購物,Shopping Store,ショッピング,상점 쇼핑
+商店购买,商店購買,Store Purchase,ショップ購入,상점 구매
+套装效果,套裝效果,Set Effects,セット効果,세트 효과
+关税,關稅,Tariff,関税,관세
+领土战报名,領土戰報名,Registration,領土戦参加,영토 전쟁 등록
+领土战,領土戰,Territory War,領土戦,영토 전쟁
+战斗僵持,戰鬥僵持,Stalemate,戦闘僵持,전투 교착 상태
+领地叛军,領地叛軍,Territory Rebels,領地の反乱軍,영토 수령
+资源采集,資源採集,Resource Collection,資源採集,자원 채집
+野外侦察,野外偵察,Field Scouting,野外偵察,야외 정찰
+伤兵规则,傷兵規則,Injured Rules,傷兵ルール,부상병 규칙
+体力说明,體力說明,Vit Explan,体力説明,체력 설명
+士兵属性,士兵屬性,Soldier Attribute,士兵の属性,병사 속성
+奖励,獎勵,Reward,報酬,보상
+领取奖励,領取獎勵,Claim Rewards,受け取る報酬,보상 수령
+升级奖励,升級獎勵,Upgrade Rewards,進級報酬,업그레이드 보상
+每日奖励,每日獎勵,Daily Rewards,毎日の報酬,일일 보상
+赛季奖励,賽季獎勵,Season Rewards,シーズン報酬,시즌 보상
+参战奖励,參戰獎勵,Participate In Rewards,参戦報酬,참전 보상
+占领奖励,占領獎勵,Occupation Rewards,占領報酬,점령 보상
+预约奖励,預約獎勵,Appointment Rewards,予約報酬,예약 보상
+活动奖励,活動獎勵,Activity Rewards,活動報酬,활동 보상
+惊喜奖励,驚喜獎勵,Surprise Rewards,サプライズ報酬,놀람 보상
+完成奖励,完成獎勵,Completion Rewards,完了報酬,완료 보상
+奖励预览,獎勵預覽,Rewards Preview,報酬プレビュー,보상 시사
+奖励内容,獎勵內容,Rewards Content,報酬内容,보상 내용을
+排名奖励,排名獎勵,Rank Rewards,ランキング報酬,랭킹 보상
+获胜奖励,獲勝獎勵,Victory Rewards,勝利の報酬,승리 보상
+失败奖励,失敗獎勵,Fail Rewards,失敗の報酬,실패 보상
+关税奖励,關稅獎勵,Tariff Rewards,関税報酬,관세 보상
+团队奖励,團隊獎勵,Team Rewards,チームの報酬,팀 보상
+战功奖励,戰功獎勵,Meritorious Rewards,功績のある報酬,전공 보상
+首占奖励,首占獎勵,First Occupation Rewards,初回占拠報酬,첫 점령 보상
+领土战奖励,領土戰獎勳,Territory War Rewards,領土戦報酬,영토 전쟁 보상
+获得奖励,獲得獎勵,Get Rewards,報酬入手,획득 보상
+稀有奖励,稀有獎勵,Rare Rewards,希少報酬,희귀 보상
+排行奖励,排行獎勵,Rank Rewards,ランキング報酬,랭킹 보상
+运输奖励,運輸獎勵,Transport Rewards,輸送報酬,운송 보상
+道具,道具,Prop,道具,아이템
+我的道具,我的道具,My Props,私の道具,내 아이템
+道具信息,道具信息,Prop Info,道具情報,아이템 정보
+异常道具,異常道具,Error Props,間違った道具,아이템 버그
+道具来源,道具來源,Prop Source,道具のソース,아이템 출처
+可选道具,可選道具,Selectable Props,オプションの道具,선택 가능한 아이템
+专属道具,專屬道具,Exclusive Props,専属道具,전속 아이템
+容量,容量,Capacity,容量,용량
+医院容量,醫院容量,Hospital Capacity,病院収容量,병원 용량
+储备士兵容量,儲備士兵容量,Reserve Soldiers Capacity,予備兵士容量,저장 병사 용량
+重伤,重傷,Severe Wound,重傷,중상
+轻伤,輕傷,Slight Wound,軽傷,경상
+治疗伤员,治療傷員,Healing Wounded,負傷者を治療,부상자 치료
+阵亡,陣亡,Death,戦死,전사
+健康士兵,健康士兵,Health,健康な兵士,건강한 병사
+轻伤士兵,輕傷士兵,Slight Wound,軽傷の兵士,경상 병사
+重伤士兵,重傷士兵,Severe Wound,重傷の兵士,중상 병사
+阵亡士兵,陣亡士兵,Death,戦死した兵士,전사한 병사
+有新的邮件,有新的郵件,New Mail,新しいメール,새로운 메일
+有新的战报,有新的戰報,New Battlelog,新しい戦報,새로운 전투 보고
+有新的好友申请,有新的好友申請,New Friend Apply,新しい親友申請,새로운 친구 신청
+有新的联盟申请,有新的聯盟申請,New Union Apply,新しい同盟申請,새로운 클랜 신청
+有新的私聊消息,有新的私聊消息,New Private Msg,新しいししん,새로운 개인 대화
+有新的联盟礼物,有新的聯盟禮物,New Union Gift,新しい同盟贈り物,새로운 클랜 선물
+聊天消息间隔,聊天消息间隔,Chat Msg Interval,チャットの間隔,채팅 간격
+在世界频道发送消息,在世界頻道發送訊息,Send A Msg On The World Channel,世界チャンネルでメッセージを送信する,세계 채널에 메시지 전송
+传来了新的消息,傳來了新的消息,New Msg Received,新しいニュース,새로운 소식
+手续费,手續費,Service Fee,サービス料,봉사료
+非常危险,非常危險,Very Dangerous,非常に危険,매우 위험
+抵达坐标,抵達坐標,Location,位置,도착 위치
+删除,刪除,Delete,削除,삭제
+删除已读,刪除已讀,Delete All,既読削除,읽음 삭제
+可能出现的,可能出現的,Possible,発生する可能性,가능한
+获取途径,獲取途徑,Source,獲得経路,획득 경로
+获取当前等级装备,獲取當前等級裝備,Get Current Level Of Equipment,現在のレベル装備を獲得,현재 레벨 장비 얻기
+可锻造,可鍛造,Forgeable,鍛造可能,제작 가능
+熔炼,熔煉,Smelt,製錬,제련
+修复,修復,Repair,修理,수리
+阵型,陣型,Formations,陣形,편성
+队列,隊列,Queue,隊列,대기열
+可研究,可研究,Researchable,研究可能,연구 가능
+工作列表,工作列表,Work List,ワークリスト,작업 목록
+工作队列,工作隊列,Work Queue,作業隊列,작업 대기열
+制造队列,制造隊列,Make Queue,製造隊列,제조 대기열
+研究队列,研究隊列,Research Queue,研究キュー,연구 대기열
+研究能力,研究能力,Research Ability,研究能力,연구 능력
+医院加速,醫院加速,Hospital Speedup,病院加速,병원 가속
+训练加速,訓練加速,Training Speedup,訓練加速,훈련 가속
+研究加速,研究加速,Research Speedup,研究加速,연구 촉진
+进度,進度,Progress,進捗,진행
+收集进度,收集進度,Collect Progress,収集進捗,수집 진행
+探索进度,探索進度,Explore Progress,探検する進捗,탐사 진행
+研究进度,研究進度,Research Progress,研究進捗,연구 진행
+占领进度,占領進度,Occupation Progress,占領進捗,점령 진행
+宝鉴进度,寶鑑進度,Codex Progress,図鑑進捗,보감 진행
+英雄攻击,英雄攻擊,Hero ATK,ヒーローアタック,영웅 공격
+英雄防御,英雄防禦,Hero DEF,ヒーローディフェンス,영웅 방어
+英雄破坏,英雄破壞,Hero DES,ヒーロー破壊,영웅 파괴
+出手速度,出手速度,ATK Spd,攻撃速度,공격 속도
+英雄出手速度,英雄出手速度,Hero ATK Spd,ヒーロー攻撃速度,영웅 공격 속도
+移动速度,移動速度,Moving Spd,移動速度,움직임 속도
+训练速度,訓練速度,Training Spd,訓練速度,훈련 속도
+治疗速度,治療速度,Healing Spd,治療速度,치료 속도
+攻击强化,攻擊強化,ATK Enhance,攻撃強化,공격 강화
+防御强化,防禦強化,DEF Enhance,防御強化,방어 강화
+建筑加成,建築加成,Building Bonus,建築ボーナス,건축 보너스
+科技加成,科技加成,Technology Bonus,科技ボーナス,기술 보너스
+属性,屬性,Attribute,属性,속성
+基础属性,基礎屬性,Basic Attribute,基礎属性,기본 속성
+高级属性,高級屬性,Advanced Attribute,高級属性,고급 속성
+查看属性,查看屬性,Attribute,チェック属性,수표 속성
+组合属性,組合屬性,Combination Attributes,組み合わせ属性,조합 속성
+英雄全属性,英雄全屬性,Heroes All Attributes,ヒーロー全属性,영웅 모든 속성
+获得,獲得,Get,入手,획득
+可获得,可獲得,Can Get,入手可能,획득 가능
+拥有,擁有,Own,所有する,가지다
+未拥有,未擁有,Not Owned,所有していない,가지고 있지 않다
+购买,購買,Purchase,購入,구매
+可购买,可購買,Can Purchase,購入可能,구매 가능
+完成,完成,Complete,完成する,완료
+未完成,未完成,Undone,未完成,미 완료
+未达成,未達成,Undone,未達成,미 달성
+领取,領取,Claim,受け取る,수령
+可领取,可領取,Claim,受け取り可能,수령 가능
+未就绪,未就緒,Not Ready,未準備,미 준비
+建造,建造,Build,建造,건설
+未建造,未建造,Not Built,未建造,미 건설
+可建造数量,可建造數量,Buildable Quantity,建造できる数量,건설 가능 수량
+布置,佈置,Deploy,配置,배치
+扫荡,掃蕩,Sweep,掃蕩,소탕
+解锁,解鎖,Unlock,解除,잠금 해제한
+未解锁,未解鎖,Locked,未解除,미 잠금 해제한
+可解锁,解鎖,Unlockable,解除可能,잠금 해제한 가능
+加入,加入,Join,参加,가입
+未加入,未加入,Not Joined,未参加,미 가입
+未激活,未激活,Inactivated,不活化,비활성화
+未装配,未裝配,Unassembled,未組立,미 조립
+未上榜,未上榜,Unranked,リストにない,등록되지 않음
+未选择,未選擇,No Selected,未選択,선택 안함
+报名,報名,Apply,参加,가입
+未报名,未報名,Not Registered,未参加,미 가입
+报名结束,報名結束,Registration End,終了,가입 마감
+报名争夺,報名爭奪,Registration,競争の参加,경쟁 가입
+开启,開啟,Unlock,開封,열림
+未开启,未開啟,Not Unlock,未開封,미 열림
+明日开启,明日開啟,Unlock Tomorrow,明日開封,내일 열림
+开启时间,開啟時間,Unlock Time,開封時間,열림 시간
+学习,學習,Learn,学習,학습
+未学习,未學習,Not Learned,未学習,미 학습
+可学习次数,可學習次數,Learnable Times,学習可能回数,학습 가능 횟수
+已学习英雄,已學習英雄,Learned Heroes,ヒーローを学習済み,이미 학습한 영웅
+开始学习,開始學習,Start Learning,学習を始める,학습 시작
+学习技能,學習技能,Learn Skill,学習スキル,스킬 학습
+学习经验,學習經驗,Learn EXP,学習経験,학습 경험
+学习时间,學習時間,Learn Time,学習時間,학습 시간
+学习位,學習位,Learn Seat,学習場所,학습 위치
+需要申请,需要申請,Application Required,申請が必要,신청 필요
+申请,申請,Apply,申請,신청
+申请加入,申請加入,Apply Join,参加申請,가입 신청
+申请审核,申請審核,Apply Review,申請審査,신청 심사
+有效期,有效期,Validity Period,有効期間,유효기간
+签到,簽到,Sign-in,出勤,출석
+七日签到,七日簽到,Seven-day Sign-in,7日間出勤,7일 출석
+累计签到,累計簽到,Cumulative Sign-in,累積出勤,누적 출석
+连续签到,連續簽到,Continuous Sign-in,連続出勤,연속 출석
+签到基金,簽到基金,Sign-in Fund,出勤基金,출석 펀드
+签到天数,簽到天數,Sign-in Days,出勤日数,출석 일수
+连续签到天数,連續簽到天數,Continuous Sign-in Days,連続ログイン日数,연속 출석 일수
+签到总天数,簽到總天數,Total Sign-in Days,累計ログイン日数,총 출석 일수
+特惠,特惠,Special Offers,特価,특가
+招募特惠,招募特惠,Recruitment Specials,募集特価,모집 특가
+每日特惠,每日特惠,Daily Specials,毎日特価,일일 특가
+每日签到奖励,每日簽到獎勵,Daily Sign-in Rewards,毎日のログイン報酬,일일 출석 보상
+七日特惠签到,七日特惠簽到,7-Day Specials Sign-in,7日特価ログイン,7일 특가 출석
+每日特惠7日包,每日特惠7日包,Daily Specials 7-Day Pack,毎日特価7日パック,매일 특가 7일 패키지
+家族,家族,Clan,家族,가족
+族长,族長,Clan Chief,族长,족장
+家族名称,家族名稱,Clan Name,家族名,가족 이름
+收集能力,收集能力,Collect Ability,収集能力,수집 능력
+主线关卡,主線關卡,Main Level,主なレベル,메인 레벨
+新手卡池,新手卡池,Beginner Pool,新人プール,신입 풀
+队伍,隊伍,Team,チーム,팀
+创建队伍,創建隊伍,Create Team,チーム創建,팀 생성
+加入队伍,加入隊伍,Join Team,参加チーム,가입 팀
+队伍英雄,隊伍英雄,Team's Heroes,チームの英雄,팀 히어로
+我的队伍,我的隊伍,My Team,私のチーム,나의 팀
+参战队伍,參戰隊伍,Participate Teams,参戦チーム,참전 부대
+寻找队伍,尋找隊伍,Looking for Team,チーム募集中,팀 찾기
+队伍评分,隊伍評分,Team Power,チーム戦力,팀 전투력
+队伍名称,隊伍名稱,Team Name,チーム名,팀 이름
+队伍信息,隊伍信息,Team Info,チーム情報,팀 정보
+队伍兵力,隊伍兵力,Team Strength,チームの兵力,팀 병력
+出战队伍,出戰隊伍,Playing Team,出戦チーム,출전 팀
+驻军队伍数,駐軍隊伍數,Number Of Guard Soldiers,駐在軍伍数,주둔 부대 수
+驻防队伍总兵力,駐防隊伍總兵力,Total Strength Of The Garrison,駐屯防衛隊の総兵力,주둔 부대 전체 병력
+队伍数,隊伍數,Number Of Teams,チームの数,대열 수
+部队加成,部隊加成,Troop Bonus,部隊ボーナス,부대 보너스
+蛮族部队,蠻族部隊,Barbarian Troops,野蛮な勢力,바바리안 부대
+部队数,部隊數,Number Of Troops,部隊数,부대 수
+部队总数,部隊總數,Total Number Of Troops,部隊総数,부대 총 수
+角色等级,角色等級,Role Level,キャラクターレベル,캐릭터 레벨
+开放等级,開放等級,Open Level,開放レベル,개방 레벨
+开放新地图,開放新地圖,Open New Map,新しいマップを解放,새로운 지도 개방
+全部跳过,全部跳過,Skip All,全部省略,모두 건너뛰기
+观看广告,觀看廣告,Watch AD,視聴広告,재생 광고
+观看次数,觀看次數,Watch Times,視聴回数,시청 횟수
+首次胜利,首次勝利,First Victory,初勝利,첫 승리
+战斗加速,戰鬥加速,Speedup,戦闘加速,전투 가속
+自动战斗,自動戰鬥,Auto Battle,自動戦闘,자동 전투
+自动采矿,自動採礦,Auto Mining,自動採鉱,자동 채굴
+自动,自動,Auto,自動,자동
+伤害统计,傷害統計,DMG Statistics,ダメージ統計,피해 통계
+伤害测试,傷害測試,DMG Test,ダメージテスト,피해 시험
+讨伐,討伐,Raid,討伐,토벌
+成就,成就,Achievement,実績,성과
+赠送给您,贈送給您,Gift To You,あなたへの贈り物,선물 드리기
+补偿,補償,Compensate,補償,보상하다
+村庄,村莊,Village,村,마을
+基础版,基礎版,Basic Version,基礎版,기본 버전
+进阶版,進階版,Advanced Version,進化版,진급 버전
+扩展包,擴充包,Extension Packs,拡張パック,확장팩
+无时限,無時限,No Time Limit,時間制限なし,시간 제한 없음
+特权,特權,Privilege,特権,특권
+终身限购,終身限購,Buying Limit,生涯購入,영구 한정
+需要支付,需要支付,Pay Required,支払いが必要,지불 필요
+当前余额,當前餘額,Current Balance,現在の残高,현재 잔액
+额外赠送,額外贈送,Extra Gift,余分な贈り物,추가 선물
+开放新等级,開放新等級,Open New Level,新しいレベルを開放,새로운 레벨 개방
+暂未开放,暫未開放,Not Yet Open,まだ開いていない,아직 열리지 않은
+倒计时,倒計時,Countdown,秒読み,초읽기
+扩建,擴建,Expand,拡張,확장
+加速,加速,Speedup,加速,가속
+解锁外观,解鎖外觀,Unlock Outfit,外観を解除,외형 해제
+联盟点,聯盟點,Union Points,同盟ポイント,클랜점
+科技点,科技點,Technology Points,技術ポイント,과학점
+能量点,能量點,Energy Points,エネルギーポイント,에너지점
+荣誉点,榮譽點數,Honor Points,名誉ポイント,명예점
+友情点,友情點,Friendship Points,友情ポイント,우정점
+情报点,情報點,Intelligence Points,情報ポイント,정보점
+天赋点,天賦點,Talent Points,天賦ポイント,재능점
+大世界资源点,大世界資源點,Great World Resource Points,大世界資源ポイント,큰세계 자원 포인트
+配点,配點,Add Point,配分,포인트 분배
+洗点,洗點,Reset Point,再振り分け,포인트 리셋
+待分配点,待分配點,Available Points,可用ポイント,가용점
+可分配点,可分配點,Allocable Points,配布可能ポイント,할당 가능한
+推荐加点,推薦加點,Recommend,推薦,추천
+积分,積分,Points,積分,포인트
+狩猎积分,狩獵積分,Hunting Points,狩猟積分,사냥 포인트
+积分统计,積分統計,Points Statistics,積分統計,적분 통계
+红方积分,紅方積分,Red Points,赤方積分,빨간 적분
+蓝方积分,藍方積分,Blue Points,青方積分,푸른 적분
+赛季积分,賽季積分,Season Points,シーズン積分,시즌 포인트
+积分排名,積分排名,Integral Rank,ポイントランキング,포인트 랭킹
+击溃积分,擊殺積分,Kill Points,撃破ポイント,처치 포인트
+驻守积分,駐守積分,Guard Points,駐屯ポイント,주둔 포인트
+投入积分,投入積分,Invest Points,投資積分,포인트 사용
+庆典积分,慶典積分,Celebration Points,お祝い積分,축하 포인트
+运营活动,運營活動,Operational Activities,運営活動,운영 활동
+活动抽奖,活動抽獎,Activity Lottery,活動抽選,활동 추첨
+活动期间登陆,活動期間登陸,Login During Event Period,活動期間中ログイン,활동 기간 중 로그인
+活动期间消耗红宝石,活動期間消耗紅寶石,Consume Gems During Event Period,活動期間中に红宝石を消耗,활동 기간 중 보석 소모
+活动期间充值兰德币,活動期間充值蘭德幣,Recharge Rand Coins During Event Period,活動期間中にランド通貨をチャージ,활동 기간 중 랜드 통화 충전
+材料,材料,Stuff,素材,재료
+材料消耗,材料消耗,Stuff Consum,素材消耗,재료 소모
+基础材料,基礎材料,Basic Stuff,基礎素材,기초 재료
+获得材料,獲得材料,Get Stuff,素材の入手,재료 획득
+选择材料,選擇材料,Select Stuff,素材の選択,재료 선택
+需要材料,需要材料,Stuff Required,必要な素材,필요 재료
+差异补偿,差異補償,Differential Compensation,差額補償,차이 보상
+强制召回,強制召回,Forced Recall,強制召喚,강제 호출
+收购清单,收購清單,Buying List,購入リスト,획득 목록
+连胜次数,連勝次數,Winning Streak,連勝回数,연승 횟수
+最高伤害,最高傷害,Max DMG,最大ダメージ,최대 피해
+伤害列表,傷害列表,DMG List,ダメージリスト,피해 목록
+总伤害,總傷害,DMG Total,総ダメージ,총 피해
+时光之力,時光之力,Time Power,時の力,시간의 힘
+挂机收益,掛機收益,Idle Income,放置収入,방치 수익
+兑换物品,兌換物品,Exchange Item,両替イテム,교환 아이템
+兑换次数,兌換次數,Exchange Times,両替回数,교환 횟수
+购买次数,購買次數,Purchase Times,購入回数,구매 횟수
+挑战次数,挑戰次數,Challenge Times,挑戦回数,도전 횟수
+支出,支出,Pay Out,支出,지출
+任意位置,任意位置,Any Position,任意の位置,어느 서나
+历史,歷史,History,歴史,역사
+通行证,通行證,Access Pass,アクセスパス,접근 티켓
+观战,觀戰,Watch Game,観戦,게임 시청
+匹配,匹配,Match,マッチ,매칭
+社群,社群,Community,コミュニティ,커뮤니티
+商城,商城,Shop,モール,쇼핑몰
+商店,商店,Store,ショップ,상점
+市场,市場,Market,市場,시장
+交易所,交易所,Exchange,取引所,거래 장소
+活动,活動,Activity,活動,활동
+编年史,編年史,Chronicle,クロニクル,역대기
+邮件,郵件,Mail,メール,메일
+战报,戰報,Battlelog,戦報,전투 보고
+日志,紀錄,Log,ログ,로그
+矿点,礦點,Mine,採鉱場,채굴장
+核心矿点,核心礦點,Core Mine,コア採鉱場,핵심 채굴장
+产量,產量,Output,産出,생산량
+开采速度,開採速度,Mining Spd,マイニング速度,채굴 속도
+资源,資源,Resources,資源,자원
+活跃度,活躍度,Activeness,活動度,활동도
+好感度,好感度,Favorability,好感度,호감도
+特产,特產,Specialty,特産品,특산품
+情报值,情報值,Intelligence Points,情報値,정보 수치
+手册,手冊,Manual,手冊,수첩
+梦可可的爱心便当,夢可可的愛心便當,Monccoco's Love Bento,モンコッコの愛心弁当,몽코코의 사랑의 도시락
+爱心便当,愛心便當,Love Bento,愛心弁当,사랑의 도시락
+领主手册,領主手冊,Lord Manual,領主手冊,영주 수첩
+领主装备,領主裝備,Lord Equipment,領主装備,영주 장비
+领主银币,領主銀幣,Lord Silver Coins,領主銀貨,영주 은화
+英雄装备,英雄裝備,Hero Equipment,ヒーロー装備,영웅 장비
+写真集,寫真集,Photo Album,写真集,사진집
+左饰品,左飾品,Left Accessory,左飾品,왼쪽 장신구
+右饰品,右飾品,Right Accessory,右飾品,오른쪽 장신구
+宝鉴,寶鑑,Codex,図鑑,보감
+饰品,飾品,Accessory,飾品,장신구
+神殿,神殿,Temple,神殿,신전
+神女试炼,神女試煉,Goddess Trial,神女の試練,여신의 시험
+神魔试炼,神魔試煉,Divine Demon Trial,神魔の試練,신과 마의 시험
+神魔卡,神魔卡,Divine Demon Card,神魔カード,신과 마 카드
+神女卡,神女卡,Goddess Card,神女カード,여신 카드
+红包,紅包,Red Envelope,お年玉,복돈
+光明,光明,Light,光明,광명
+黑暗,黑暗,Dark,暗闇,어둠
+光明卡,光明卡,Light Card,光明カード,광명 카드
+黑暗卡,黑暗卡,Dark Card,暗闇カード,어둠 카드
+药剂,藥劑,Potion,ポーション,물약
+石碑,石碑,Stele,石碑,석비
+技能石,技能石,Skill Stone,スキルストーン,스킬스톤
+时尚值,時尚值,Fashion Points,人気ポイント,패션 포인트
+时尚等级,時尚等級,Fashion Level,人気レベル,패션 레벌
+头饰,頭飾,Headwear,頭飾,머리 장식
+服饰,服飾,Clothing,衣装,복장
+背饰,背飾,Back Accessory,背中装飾,뒷장식
+护盾,護盾,Shield,シールド,방패
+护甲,護甲,Armor,防具,갑옷
+裁缝,裁縫,Tailor,裁縫師,재봉사
+工匠,工匠,Craftsman,工匠,장인
+药剂师,藥劑師,Pharmacist,薬剤師,약제사
+名人堂,名人堂,Hall of Fame,名誉の殿堂,명예의 전당
+修缮,修繕,Repair,修繕,수선
+行脚商人,行腳商人,Traveling Merchant,行脚商人,행상
+礼包,禮包,Packs,モール,선물 팩
+首次,首次,First,初め,첫 번째
+充值,儲值,Recharge,チャージ,충전
+首充礼包,首充禮包,First Packs,初チャージパック,첫충 패키지
+限时礼包,限時禮包,Limited Packs,期間限定,리미트 패키지
+累计充值,累計儲值,Cumulative Recharge,累積チャージ,누적 충전
+每日充值,每日儲值,Daily Recharge,毎日のチャージ,일일 충전
+充值天数,儲值天數,Recharge Days,チャージ日数,충전 일수
+免费礼包,免費禮包,Free Packs,無料パック,무료 패키지
+超值礼包,超值禮包,Spree Packs,お得なパック,값진  패키지
+新手礼包,新手禮包,Beginner Packs,初心者パック,초보자 패키지
+活动礼包,活動禮包,Activity Packs,活動パック,활동 패키지
+每日免费礼包,每日免費禮包,Daily Free Packs,毎日無料のパック,일일 무료 패키지
+每日礼包,每日禮包,Daily Packs,毎日パック,일일 패키지
+每周礼包,每週禮包,Weekly Packs,毎週パック,주간 패키지
+每月礼包,每月禮包,Monthly Packs,毎月パック,월간 패키지
+宝石商店,寶石商店,Gem Store,宝石ショップ,보석 상점
+超值月卡,超值月卡,Spree Monthly Card,お得な月額カード,슈퍼 월정액
+专属礼包,專屬禮包,Exclusive Packs,専属パック,전용 패키지
+成长活动,成長活動,Growth Activities,成長活動,성장 활동
+庆典活动,慶典活動,Celebration Activities,お祝い活動,축전 활동
+庆典,慶典,Celebration,お祝い,축전
+节日活动,節日活動,Festival,まつり活動,제전 활동
+节日副本,節日副本,Festival Dungeon,まつりダンジョン,제전 던전
+节日礼包,節日禮包,Festival Packs,まつりパック,제전 패키지
+节日活动期间,節日活動期間,During The Festival,まつり活動期間,제전 활동 동안
+周年庆活动,週年慶活動,Anniversary,周年記念活動,기념일 활동
+活动日历,活動日曆,Schedule,活動カレンダー,활동 달력
+城主声望,城主聲望,Prestige,城主人気,성주 명성
+声望,聲望,Prestige,人気,명성
+声望礼包,聲望禮包,Prestige Packs,人気パック,명성 패키지
+声望点数,聲望點數,Prestige Points,人気点数,명성 포인트
+声望福利,聲望福利,Prestige Welfare,人気福祉,명성혜택
+声望商店,聲望商店,Prestige Store,威信ショップ,명성상점
+新人专享,新人專享,Newb Only,新人限定,초보자 전용
+新人福利,新人福利,Newb Welfare,新規プレイヤー特典,초보자 복지
+地图宝箱,地圖寶箱,Map Chest,地図の宝箱,지도 보물 상자
+掉落宝箱,掉落寶箱,Drop Chest,ドロップ宝箱,보물 상자 드랍
+寻找宝藏,尋找寶藏,Looking For Treasure,宝物を探しています,보물 찾기
+碎片合成,碎片合成,Compound,合成,합성
+召唤,召喚,Summon,召喚,소환
+召唤英雄,召喚英雄,Summon Hero,ヒーロー召喚,영웅 소환
+英雄召唤,英雄召喚,Hero Summon,ヒーロー召喚,영웅 소환
+圣物召唤,聖物召喚,Relic Summon,聖物召喚,성물 소환
+召唤专属装备,召喚專屬裝備,Summon Exclusive Equipment,専属装備召喚,전용 장비 소환
+天梯赛,天梯賽,Ladder Tournament,ラダー大会,래더 대회
+阶,階,Tier,階級,단계
+荣耀竞技场,榮耀競技場,Glory Arena,栄光アリーナ,영광의 전장
+充值水晶,充值水晶,Recharge Crystal,クリスタルチャージ,크리스탈 충전
+豪华月卡,豪華月卡,Luxury Card,豪華月カード,프리미엄 월정액
+最初的陪伴,最初的陪伴,Initial Companionship,初めての伴侶,초기 동행
+对建筑使用加速点,對建築使用加速點,Use Speedup Points on Building,建築に加速ポイントを使用,건축에 가속 포인트 사용
+对科技使用加速点,對科技使用加速點,Use Speedup Points on Technology,技術に加速ポイントを使用,과학 기술에 가속 포인트 사용
+每日累充,每日累充,Daily Recharge,每日累積チャージ,일일 누적 충전
+每日充值额外福利,每日充值額外福利,Daily Recharge Extra Welfare,毎日のリチャージ追加特典,일일 충전 추가 혜택
+今日累计支付,今日累計支付,Total Payment Today,今日の累積支払い,오늘의 누적 결제
+免费,免費,Free,無料,무료
+免费次数,免費次數,Free Times,無料回数,무료 횟수
+推荐,推薦,Recommend,推薦,추천
+限购,限購,Limit,限定,한정
+成长基金,成長基金,Growth Fund,成長ファンド,성장 펀드
+基金,基金,Fund,ファンド,펀드
+冒险者计划,冒險者計劃,Adventurer's Plan,冒険者計画,모험가 계획
+星空计划,星空計劃,Starry Sky Plan,宇宙計画,우주계획
+薪火计划,薪火計劃,Daily Plan,日間計画,일일 계획
+冒险计划,冒險計畫,Adventure Plan,冒険計画,모험 계획
+制造方案,製造方案,Manufacturing Plan,製造プラン,제조 계획
+编队方案,編隊方案,Formation Plan,編隊プラン,편대 계획
+我的方案,我的方案,My Plan,私のプラン,나의 계획
+热门推荐,熱門推薦,Popular Recommend,人気推薦,인기 추천
+热门方案,熱門方案,Popular Plan,人気のプラン,인기 계획
+消耗体力,消耗體力,Consume Vit,体力消耗,체력 소모
+资源消耗,資源消耗,Resources Consum,資源消耗,자원 소모
+全部,全部,All,全体,전체
+一键使用,一鍵使用,Use All,すべて使用,모두 사용
+一键强化,一鍵強化,Enhance All,すべて強化,모두 강화
+一键附魔,一鍵附魔,Enchant All,すべてのエンチャント,모두 마법
+一键派遣,一键派遣,Quick Dispatch,クイック派遣,빠른 파견
+一键领取,一鍵領取,Claim All,すべて受け取る,모두 수령
+一键删除,一鍵刪除,Delete All,すべて削除,모두 삭제
+一键赠送,一鍵贈送,Gift All,すべて贈る,모두 선물
+一键升级,一鍵升級,Upgrade All,すべて進級,모두 업그레이드
+一键装备,一鍵裝備,Quick Equip,クイック装備,빠른 장착
+一键卸下,一鍵卸下,Remove All,すべて解除,모두 장착해제
+一键已读,一鍵已讀,Read All,すべて既読,모두 읽혔습니다
+一键融合,一鍵融合,Fusion All,すべて融合,모두 융합
+一键入库,一鍵入庫,Quick Warehoused,クイック入庫,빠른 창고에 보관
+一键补充,一鍵補充,Quick Refill,クイック追加,빠른 보충
+一键放入,一鍵放入,Put In All,すべて入れる,모두 넣어
+一键补兵,一鍵補兵,Quick Refill Troops,クイック兵士補充,빠른 병사 보충
+所有,所有,All,すべて,모든
+所有玩家,所有玩家,All Players,すべてのプレイヤー,모든 플레이어
+所有资源,所有資源,All Resources,すべての資源,모든 자원
+所有内容,所有內容,All Content,すべての内容,모든 내용
+所有建筑总等级,所有建築總等級,Total Building Level,すべての建築の総レベル,모든 건축의 총 레벨
+所有科技总等级,所有科技總等級,Total Technology Level,すべての技術の総レベル,모든  과학 총 레벨
+完成下列所有任务,完成下列所有任務,Complete All The Following Quests,以下のすべての任務を完了させる,다음의 모든 임무를 완료하십시오
+领取所有首次占领奖励,領取所有首次佔領獎勳,Claim All First Occupation Rewards,すべての初回占領報酬を受け取る,모든 최초 점령 보상 받기
+赠送,贈送,Gift,贈る,선물
+分解,分解,Dismantle,分解,분해
+可分解,可分解,Dissoluble,分解可能,분해성
+分解英雄,分解英雄,Dismantle Hero,分解ヒーロー,영웅 분해
+分解预览,分解預覽,Dismantle Preview,分解プレビュー,분해 미리보기
+分解技能,分解技能,Dismantle Skill,スキル分解,스킬 분해
+匿名玩家,匿名玩家,Anonymous Player,匿名のプレイヤー,익명 플레이어
+玩家城市,玩家城市,Player's City,プレイヤー都市,플레이어 도시
+玩家队伍,玩家隊伍,Player's Team,プレイヤーチーム,플레이어 팀
+玩家等级,玩家等級,Player Level,プレイヤーレベル,플레이어 등급
+附近的玩家,附近的玩家,Nearby Players,近くのプレイヤー,근처의 플레이어
+开始,開始,Start,開始,시작
+结束,结束,End,終了,종료
+开始游戏,開始遊戲,Start,ゲームを開始,게임 시작
+退出游戏,退出遊戲,Exit,ゲームを終了します,게임 탈퇴
+开始准备,開始準備,Ready,準備開始,준비 시작
+继续准备,繼續準備,Continue Ready,準備継続,계속 준비
+战斗开始,戰鬥開始,Start,戦闘開始,전투 시작
+战斗结束,戰鬥結束,End,戦闘終了,전투 종료
+跳过战斗,跳過戰鬥,Skip,戦闘省略,전투 건너뛰기
+经济,經濟,Economy,経済,경제
+军事,軍事,Military,軍事,군사
+外交,外交,Diplomatic,外交,외교적
+建筑,建築,Building,建築,건축
+科技,科技,Technology,技術,과학
+研究,研究,Research,研究,연구
+市政厅,市政厅,City Hall,市役所,시청
+农场,農場,Farm,農場,농장
+伐木场,伐木場,Sawmill,伐採所,벌목장
+采石场,採石場,Quarry,採石場,채석장
+铁矿场,鐵礦場,Ironmine,鉄鉱山,철광
+居民楼,居民樓,Residence,住宅,주택
+运输站,運輸站,Transport Station,運輸所,운송소
+学院,學院,Academy,学院,학원
+贸易站,貿易站,Trade Station,貿易所,무역소
+步兵营,步兵營,Infantry Barracks,歩兵訓練所,보병 대대
+弓兵营,弓兵營,Archer Barracks,弓兵訓練所,궁병 대대
+骑兵营,騎兵營,Cavalry Barracks,騎兵訓練所,기병 대대
+器械厂,器械廠,Siege Workshop,器械工場,기계 공장
+冒险者公会,冒險者公會,Adventurer Guild,冒険者ギルド,모험가 길드
+铁匠铺,鐵匠鋪,Smithy,鍛冶屋,대장간
+传送门,传送门,Portal,ポータル,전송문
+图书馆,圖書館,Library,図書館,도서관
+医院,醫院,Hospital,医院,병원
+情报站,情報站,Information Station,情報所,정보센터
+银行,銀行,Bank,銀行,은행
+教堂,教堂,Church,教会,교회
+传送碑,傳送碑,Teleport Stele,転送碑,전송석
+金矿场,金礦場,Gold Mine,金鉱,금광
+宝石矿场,寶石礦場,Gem Mine,ジェムマイン,보석 광산
+生命之泉,生命之泉,Fountain Life,生命の泉,생명의 샘
+歌剧院,歌劇院,Opera House,劇場,오페라 극장
+装饰建筑,裝飾建築,Decorative Building,装飾建築,장식 건축
+雕像,雕像,Statue,立像,조각상
+树木,樹木,Tree,木,나무
+花草,花草,Flowers,花草,꽃들
+地砖,地磚,Floor Tile,タイル,바닥 타일
+罗马柱,羅馬柱,Roman Column,ローマ柱,로마 기둥
+路灯,路燈,Street Lamp,街灯,가로등
+喷泉,噴泉,Fountain,噴水,분수
+大型建筑,大型建築,Huge Building,大型建築,대형 건축
+锋芒毕露,鋒芒畢露,Sharp Edge,キラキラ,자체발광
+风间日记,風間日記,Diary Of Wind,風間日記,바람의 일기
+金色遥想,金色遙想,Golden Memory,金色の夢,금색의 꿈
+鲜花城堡,鮮花城堡,Flower Fort,花の城,플라워 성
+举办宴会,舉辦宴會,Hold Feast,宴会開催,연회 개최
+小型宴会,小型宴會,Small Feast,小型宴会,소형 연회
+中型宴会,中型宴會,Medium Feast,中型宴会,중형 연회
+大型宴会,大型宴會,Large Feast,大型宴会,대형 연회
+竞技场,競技場,Arena,アリーナ,경기장
+大世界,大世界,Great World,大世界,큰세계
+野蛮人要塞,野蠻人城寨,Barbarian Fortress,野蛮人城塞,바바리안 요새
+荒原,荒原,Wilderness,荒原,황야
+遗迹,遺跡,Ruins,遺跡,유적
+野外,野外,Field,野外,필드
+城市,城市,City,都市,도시
+关隘,關隘,Pass,関所,요새
+首都王城,首都王城,Capital City,首都王城,수도 왕성
+王城,王城,Imperial Capital,王城,왕성
+大型城镇,大型城鎮,Large Town,大型町,대형 도시
+大型要塞,大型要塞,Large Fortress,大型要塞,대형 요새
+中型城镇,中型城鎮,Medium Town,中型町,중형 도시
+中型要塞,中型要塞,Medium Fortress,中型要塞,중형 요새
+小型城镇,小型城鎮,Small Town,小型町,소형 도시
+小型要塞,小型要塞,Small Fortress,小型要塞,소형 요새
+小型城市,小型城市,Small City,小型都市,소형 도시
+大型城市,大型城市,Large City,大型都市,대형 도시
+极简模式,極簡模式,Minimalist,簡易モード,간단 모드
+常规模式,常規模式,Normal,通常モード,일반 모드
+噩梦模式,噩夢模式,Nightmare,悪夢モード,악몽 모드
+副本,副本,Dungeon,ダンジョン,던전
+讨伐副本,討伐副本,Raid Dungeon,討伐 ダンジョン,토벌 던전
+团队副本,團隊副本,Team Dungeon,チームダンジョン,팀 던전
+深渊来袭,深淵來襲,Abyss Coming,深淵襲来,심연이 온다
+熔岩之地,熔岩之地,Lava Land,溶岩の地,용암 지대
+遗迹副本,遺跡副本,Ruins Dungeon,遺跡ダンジョン,유적 던전
+沙漠遗址,沙漠遺址,Desert Ruins,砂漠遺跡,사막 유적
+地下洞穴,地下洞穴,Underground Cave,地下洞窟,지하 동굴
+丛林遗迹,叢林遺跡,Jungle Ruins,ジャングル遺跡,정글 유적
+修炼洞穴,修煉洞穴,Training Cave,修練洞窟,수련 동굴
+神话沙漠,神話沙漠,mythical Desert,神話砂漠,신화의 사막
+沙漠遗迹,沙漠遺跡,Desert Ruins,砂漠遺跡,사막 유적
+冰雪遗迹,冰雪遺跡,Snow Ruins,氷雪遺跡,빙설 유적
+熔岩遗迹,熔岩遺跡,Lava Ruins,溶岩遺跡,용암 유적
+恶龙巢穴,惡龍巢穴,Dragon's Lair,悪竜の巣穴,악룡의 둥지
+首领,首領,Leader,首領,수령
+领地首领,領地首領,Territory Leader,領地の首領,영토 수령
+魔物首领,魔物首領,Demon Boss,魔物 Boss,몬스터 수령
+野外首领,野外首領,Field Boss,野外 Boss,야외 수령
+世界首领,世界首領,World Boss,世界 Boss,월드 수령
+蛮族首领,蠻族首領,Barbarian Leader,野蛮の首領,바바리안 수령
+大世界首领,大世界首領,Great World Leader,大世界の首領,대세계 수령
+迷雾幻境,迷霧幻境,Misty Land,ミスティランド,안개환상
+比武大会,比武大會,Tournament,武道大會,무술 대회
+金色平原,金色平原,Golden Plain,黄金平原,금빛 평원
+试炼之塔,試煉之塔,Tower Of Trials,試練の塔,시련의 탑
+家园收获,家園收穫,Homeland Harvest,ホーム収穫,가정 수확
+黄金圣所,黃金聖所,Golden Sanctuary,黄金の聖域,황금 성소
+随机拜访,隨機拜訪,Random Visit,ランダム訪問,무작위 방문
+领土战争,領土戰爭,Territory War,領土戦争,영토 전쟁
+外骨骼,外骨骼,Armor,装甲,외골격
+士兵外骨骼,士兵外骨骼,Soldier Armor,兵士の装甲,병사 외골격
+回城传送门,回城傳送門,City Portal,街へのポータル,도시로 돌아가는 전송문
+定点传送门,定點傳送門,Point Portal,ポイントポータル,지점 전송문
+集结传送门,集結傳送門,Rally Portal,ラリーポータル,집결 전송문
+军团传送门,軍團傳送門,Legion Portal,レギオンポータル,스쿼드 전송문
+随机迁城令,隨機遷城令,Random Relocation Order,ランダム都市移転令,무작위 재배치 순서
+定点迁城令,定點遷城令,Fixed-point Relocation Order,指定場所都市移転令,고정 소수점 재배치 순서
+命中,命中,Accuracy,命中,명중
+未命中,未命中,Miss,逃す,미스
+通用,通用,Universal,汎用,만능인
+专用,專用,Special,特殊,특별한
+传送,傳送,Teleport,テレポート,전송
+移动,移動,Move,移動,움직임
+行动,行動,Action,行動,작용
+待命,待命,Standby,待機,대기
+攻击,攻擊,ATK,攻撃,공격
+驻守,駐守,Guard,駐屯地,수비대
+占领,佔領,Occupy,占領,점령
+未占领,未佔領,Not Occupied,未占領,점령 않음
+通关,通關,Clearance,クリア,클리어
+福利,福利,Welfare,福祉,혜택
+限时,限時,Limited,期間限定,리미트
+必出,必出,GET,獲得,얻다
+上阵,上陣,Deploy,出陣,출전하기
+下阵,下陣,Remove,出陣解除,출전해제
+买入,買入,Buy,買入,매입
+卖出,賣出,Sell,売却,매출
+售出,售出,Sell,売却,판매
+出售,出售,Sell,売却,판매
+价格,價格,Price,価格,가격
+原价,原價,Old Price,原価,이전 가격
+现价,現價,Now Price,現価,현재 가격
+买入价格,買入價格,Buy Price,買入価格,매입 가격
+卖出价格,賣出價格,Sell Price,売却価格,매출 가격
+数量,數量,Quantity,数量,수량
+需要数量,需要数量,Required Quantity,数量必要,필요 수량
+合成数量,合成數量,Combine Quantity,合成数量,합성 수량
+击溃数量,擊潰數量,Kills,撃破数量,격파 수량
+最大数量,最大數量,Max Quantity,最大数量,최대 수량
+升级数量,升級數量,Upgrade Quantity,進級数量,업그레이드 수량
+训练数量,訓練數量,Training Quantity,訓練数量,훈련 수량
+拥有数量,擁有數量,Owned Quantity,保有数,보유 수량
+选择数量,選擇數量,Select Quantity,選択数量,수량 선택
+购买数量,購買數量,Purchase Quantity,購入数量,구매 수량
+售出数量,售出數量,Sell Quantity,売却数量,판매 수량
+卖出数量,賣出數量,Sell Quantity,売却数量,매출 수량
+带兵数量,帶兵數量,Soldiers Quantity,兵士数,지휘한 병력 수량
+完成数量,完成数量,Completion Quantity,完了数量,완료 수량
+剩余数量,剩余數量,Quantity,残量,남은 수량
+最大使用数量,最大使用數量,Max Usage,最大使用数量,최대 사용 수량
+最大出售数量,最大出售數量,Max Sales,最大売却数量,최대 판매 수량
+派遣编队数量,派遣編隊數量,Dispatch Team Quantity,派遣編成数量,파견 편성 수량
+最大带兵数量,最大帶兵數量,Max Soldiers Quantity,最大引兵数,최대 병력 수량
+英雄卡最大数量,英雄卡最大數量,Max Number Of Hero Cards,ヒーローカードの最大数量,영웅 카드 최대 수량
+单次制造材料数量,單次制造材料數量,Stuff Quantity Per Manufacturing,単回製造素材数量,1회 제조 재료 수량
+材料制造队列,材料制造隊列,Stuff Manufacturing Queue,素材製造隊列,재료 제조 대기열
+库存数,庫存數,Inventory,在庫数,재고량
+击溃,擊潰,Kills,撃破,격파
+合成,合成,Combine,合成,합성
+融合,融合,Fusion,融合,융합
+最大,Max,Max,Max,Max
+最大战斗时间,最大戰鬥時間,Max Battle Time,最大戦闘時間,최대 전투 시간
+最大离线收益时间,最大離線收益時間,Max Offline Income Time,最大オフライン収益時間,최대 오프라인 수익 시간
+最大人数,最大人數,Max Number Of People,最大人数,최대 플레이어 수
+最大采集时间,最大採集時間,Max Collection Time,最大収集時間,최대 수집 시간
+最大占领数,最大佔領數,Max Occupation Number,最大占領数,최대 점령 수량
+最大使用次数,最大使用次數,Max Usage Times,最大使用回数,최대 사용 횟수
+使用次数,使用次數,Usage Times,使用回数,사용 횟수
+最大觉醒点数,最大覺醒點數,Max Awakening Points,最大目覚めポイント,최대 각성 포인트
+级,Lv,Lv,Lv,Lv
+等级,Lv,Lv,Lv,Lv
+等级上限,等級上限,Level Upper,レベル上限,레벨 상한
+最大等级,最大等級,Max Level,最大レベル,최대 레벨
+剩余次数,剩餘次數,Remaining Times,残り回数,남은 횟수
+剩余时间,剩餘時間,Remaining Time,残り時間,남은 시간
+剩余士兵,剩余士兵,Remaining Soldiers,残り兵士,남은 병사
+本周剩余次数,本週剩餘次數,Remaining Times This Week,今週の残り回数,이번 주 남은 횟수
+库存,庫存,Inventory,在庫,재고
+不足,不足,Not Enough,不足,부족
+次数,次數,Times,回数,횟수
+极限挑战,極限挑戰,Extreme Challenge,極限の挑戦,극한의 도전
+生效,生效,Effective,発効,효과적인
+生效时间,生效時間,Effective Time,発効時間,효과적인 시간
+最近登录时间,最近登錄時間,Last Login Time,前回のログイン時間,최근 로그인 시간
+开启宝箱时间,開啟寶箱時間,Chest Unlock Time,宝箱の開封時間,상자 열림 시간
+时间,時間,Time,時間,시간
+复活时间,復活時間,Revive Time,復活時間,부활 시간
+结束时间,結束時間,The End Of Time,終了時間,종료시간
+保护时间,保護時間,Protection Period,保護時間,보호 기간
+持续时间,持續時間,Duration,持続時間,지속 시간
+活动时间,活動時間,Activity Time,活動時間,활동 시간
+结算时间,結算時間,Settlement Time,決算時間,결산 시간
+停战时间,停戰時間,Truce Time,休戦時間,휴전 시간
+离线时间,離線時間,Offline Time,オフライン時間,오프라인 시간
+免费时间,免費時間,Free Time,無料時間,무료 시간
+探索时间,探索時間,Explore Time,時間を探る,탐색 시간
+预估时间,預估時間,Estimated Time,予想時間,예상 시간
+额外探索时间,額外探索時間,Extra Time To Explore,探索する余分な時間,추가 탐색 시간
+免费召唤时间,免費召喚時間,Free Summon Time,無料召喚時間,무료 소환 시간
+最低加速时间,最低加速時間,Min Speedup Time,最低加速時間,최소 가속 시간
+冷却时间,CD,CD,CD,CD
+复活,復活,Revive,復活,부활
+自动复活时间,自動復活時間,Auto Revive Time,自動復活時間,자동 부활 시간
+立即复活,立即復活,Immediate,直ちに復活,즉시 부활
+立即获得,立即獲得,GET,即時入手,지금 받기
+立即帮助,立即幫助,Immediate,即時支援,지금 지원
+立即加入,立即加入,Join Now,直ちに加入,지금 가입
+立即前往,立即前往,Immediate,即時行く,지금 이동
+立即研究,立即研究,Immediate,直ちに研究する,즉시 연구
+立即补充,立即補充,Add Immediately,すぐに補充します,지금 추가
+立即升级,立即升級,Immediate,即時進級,즉시 업그레이드
+立即强征,立即強征,Immediate,直ちに強征する,즉시 강제 모집
+立即征收,立即征收,Immediate,即時徴収,즉시 징수
+立即完成,立即完成,Immediate,今すぐ完成,즉시 완료
+重置,重置,Reset,リセット,초기화
+重置时间,重置時間,Reset Time,リセット時間,시간 초기화
+刷新时间,刷新時間,Refresh Time,リフレッシュ時間,리셋 시간
+每月1号,每月1號,1st of Every Month,毎月1日,매월 1일
+掉落装备数量,掉落裝備數量,Drop Equipment Quantity,装備ドロップ数量,드롭된 장비 수량
+掉落概率,掉落概率,Drop Probability,出現確率,드랍확률
+概率,概率,Probability,確率,확률
+综合概率,綜合概率,Comprehensive Probability,総合確率,등장 확률
+出现概率,出現概率,Appear Probability,出現確率,나타날 확률
+均有概率获得,均有概率獲得,Equal Chance To Get,均等に入手確率あり,모두 확률로 획득
+有概率获得,有概率獲得,Chance To Get,入手確率あり,확률로 획득
+发动概率,發動概率,Activation Probability,発動確率,발동 확률
+获得概率,獲得概率,Acquisition Probability,入手確率,확률 획득
+伤害排行榜,傷害排行榜,DMG Top,ダメージランキング,피해 순위
+排行奖励次数,排行獎勵次數,Rank Rewards Times,ランキング報酬回数,랭킹 보상 횟수
+准备,準備,Ready,準備,준비
+未准备,未準備,Not Ready,準備ができていない,준비 안 됨
+使用,使用,Use,使用,사용
+派遣,派遣,Dispatch,派遣,파견
+探索,探索,Explore,探検,탐사
+探索荒原,探索荒原,Explore Wilderness,荒原探検,황야 탐사
+探索荒野,探索荒野,Explore Wilderness,荒野探検,황야 탐사
+可重复使用,可重複使用,Reusable,再繰り返し使用可能,재사용 가능
+可重复,可重複,Repeatable,繰り返し可能,반복 가능
+重复,重複,Repeat,繰り返し,중복
+搜索,搜索,Search,検索,검색
+批次,批次,Batch,バッチ,일괄
+收藏,收藏,Favorites,集める,수집
+挑战,挑戰,Challenge,挑戦,도전
+制造,制造,Make,製造,제작
+生产,生產,Produce,生産,생산
+层数,層數,Layers,階数,층수
+我的,我的,My,私の,내 것
+类型,類型,Type,種類,타입
+附加,附加,Extra,追加,추가
+挂机,掛機,Idle,放置,방치
+体质,體質,Physique,体質,체질
+生活,生活,Life,生活,생활
+贸易,貿易,Trade,貿易,무역
+加工,加工,Process,処理,가공
+放入,放入,Put In,入れる,넣어
+取出,取出,Take Out,取り出す,빼기
+事件,事件,Events,イベント,활동
+损失,損失,Loss,損失,손실
+阵营,陣營,Camp,陣営,캠프
+继承,繼承,Inherit,繼承,계승
+替补,替補,Substitute,代替,대체
+序章,序章,Preface,序章,프롤로그
+章节,章節,Chapter,章,장
+剧情,劇情,Plot,ストーリー,스토리
+宝藏,寶藏,Treasure,宝物,보물
+或者,或者,Or,または,또는
+分享,分享,Share,シェア,공유
+遗忘,遺忘,Forget,忘却,잊기
+采集,采集,Collect,採集する,채집
+召回,召回,Recall,リコール,호출
+返回,返回,Return,戻る,돌아가기
+堆积,堆積,Accumulation,堆積,저장
+税收,稅收,Tax,税金,세
+征收,征收,Levy,徴収,징수
+普通征收,普通征收,Normal Levy,通常徴収,일반징수
+税收额,稅收額,Tax Yield,税金額,세금액
+强征,強征,Forcibly Levied,強制徴収,강제 모집
+储备,儲備,Reserve,予備,저장
+资源储量,資源儲量,Resources Reserve,資源貯蔵量,자원 저장량
+冒险游记,冒險遊記,Adventure Diary,冒険旅行,모험 여행
+锻造,鍛造,Forge,鍛造,단조
+内政,內政,Affairs,内務,내정
+资源建筑,資源建築,Resources Building,資源建築,자원 건축
+生长周期,生長周期,Livespan,成長周期,성장주기
+士兵,士兵,Soldier,兵士,병사
+增益,增益,Buff,ゲイン,이익
+临时增益,臨時增益,Temporary Buff,一時ゲイン,임시 이익
+装饰,裝飾,Decoration,装飾,장식
+座位,座位,Seat,座席,자리
+演练,演練,Drill,練習,연습
+战斗力,戰鬥力,Power,戦關力,전투력
+最小战斗力,最小戰鬥力,Min Power,最小戦關力,제한 전투력
+提升战力,提升戰力,Enhance Power,戦關力を向上させる,전투력 증가
+助战,助戰,Help,助け,도움
+助战请求,助戰請求,Request Help,助けを求める,도움 요청
+求助,求助,Request Help,助けを求める,도움 요청
+排行榜,排行榜,Top,ランキング,순위
+排名,排名,Rank,ランキング,랭킹
+击败,擊敗,Defeat,撃破,처치
+终结了,終結了,Ended,終了,종료
+大杀特杀,大殺特殺,Killing Spree,大殺戮,대량 처치
+主宰战场,主宰戰場,Dominate Battlefield,支配戦場,지배 전장
+已经超神,已經超神,Super God,超神,슈퍼 갓
+进阶经验,進階經驗,Advanced EXP,進階経験,진급 경험
+英雄获得经验,英雄獲得經驗,EXP Get By Hero,ヒーロー入手できる経験値,영웅이 얻은 경험
+英雄觉醒,英雄覺醒,Hero Awakening,ヒーロー覚醒,영웅 각성
+采集状态,采集狀態,Collection State,採集状態,채집 상태
+当前状态,當前狀態,Current State,現在の状態,현재 상태
+不包含,不包含,Exclude,含まない,포함하지
+参考值,參考值,Reference,参照,참조
+完成度,完成度,Progress,達成度,달성도
+条件,條件,Condition,条件,조건
+加入条件,加入條件,Join Conditions,参加条件,가입 조건
+解锁条件,解鎖條件,Unlock Conditions,解除条件,해제 조건
+前置条件,前置條件,Prerequisites,前提条件,선행 조건
+完成条件,完成條件,Completion Conditions,完了条件,완료 조건
+使用条件,使用條件,Usage Conditions,使用条件,사용 조건
+奖励领取条件,獎勵領取條件,Rewards Claim Conditions,報酬受給条件,보상 수령 조건
+捐献次数,捐獻次數,Donate Times,寄付回数,기부 횟수
+特殊装扮,特殊裝扮,Special Outfit,特殊装飾,특수 장식
+特殊,特殊,Special,特殊,특수
+新兵,新兵,Recruit,新兵,신병
+下士,下士,Corporal,下士,하사
+中士,中士,Sergeant,中士,중사
+上士,上士,Sergeant,上士,상사
+少尉,少尉,Second Lieutenant,少尉,소위
+中尉,中尉,Lieutenant,中尉,중위
+上尉,上尉,Captain,大尉,대위
+少校,少校,Major,少佐,소령
+中校,中校,Lieutenant Colonel,中佐,중령
+上校,上校,Colonel,大佐,대령
+少将,少將,Major General,少将,소장
+中将,中將,Lieutenant General,中将,중장
+上将,上將,Admiral,大将,대장
+大将,大將,General,大将,대장
+元帅,元帥,Marshal,元帥,원수
+阵容,陣容,Lineup,陣容,진영
+推荐阵容,推薦陣容,Recommend Lineup,推奨陣容,추천 진영
+羁绊,羈絆,Fetters,絆,굴레
+查看成长,查看成長,Growth,成長確認,성장 수표
+英雄进阶,英雄進階,Heroes Advance,ヒーロー進階,영웅 진급
+跳过剧情,跳過劇情,Skip The Story,話を省略,이야기 건너뛰기
+配置,配置,Setup,設定,설정
+征兵,征兵,Conscription,徴兵する,병사 모집
+互换,互換,Exchange,互換,교환
+次元之地,次元之地,Dimensional Land,次元の地,차원의 땅
+审核,審核,Review,審査する,심사
+贡献榜,貢獻榜,Contribution Top,貢献,공헌 순위
+人数,人數,Number Of People,人数,인구
+转让,轉讓,Transfer,譲渡,양도
+报告,報告,Report,報告,보고
+充值到账,充值到賬,Recharge Credited,購入に成功,충전 결제
+我方胜利,我方勝利,Victory,勝利,승리
+陷入僵持,陷入僵持,Impasse,僵持に陥る,교착 상태
+我方战败,我方戰敗,Defeat,敗北,실패
+战报详情,戰報詳情,Battlelog Details,戦報の詳細,상세 보고
+查看详情,查看詳情,Details,詳細確認,수표 상세
+分享战报,分享戰報,Share,共有戦報,공유 보고
+挑战记录,挑戰記錄,Challenge Record,挑戦記録,도전 기록
+刷新,刷新,Refresh,更新,새로 고침
+刷新对手,刷新對手,Refresh Rival,敵をリフレッシュする,상대 새로고침
+可刷新次数,可刷新次數,Refreshable Times,更新可能回数,새로고침 가능 횟수
+创建房间,創建房間,Create,部屋創建,방 생성
+选择遗迹,選擇遺跡,Select Ruins,遺跡選択,유적 선택
+选择难度,選擇難度,Select Difficulty,難易度選択,난이도 선택
+房间号,房間號,Room ID,部屋番号,방 번호
+房间名称,房間名稱,Room Name,部屋名,방 이름
+房间密码,房間密碼,Password,部屋のパスワード,방 비밀번호
+体力上限,體力上限,Vit Upper,体力上限,체력 상한
+完成配置,完成配置,Complete Setup,完了設定,완료 설정
+分享编队,分享編隊,Share Formation,編成共有,편성 공유
+招募,招募,Recruit,募集,모집
+全阵容招募,全陣容招募,All Recruit,全陣容募集,전 진영 모집
+卡池详情,卡池詳情,Can Get,カードプール詳細,카드 정보
+金币招募,金幣招募,Gold Recruit,金貨募集,금화 모집
+限定招募,限定招募,Up Recruit,限定募集,한정 모집
+神兵现世,神兵現世,World Artifact,世界の神兵,신병현세
+侦察,偵察,Scout,偵察,정찰
+发展,發展,Develop,発展,발전
+战争,戰爭,War,戦争,전쟁
+每日,每日,Daily,毎日,일일
+治疗,治療,Heal,治療,치료
+训练,訓練,Train,訓練,훈련
+建筑加速,建築加速,Building Speedup,建築加速,건축 가속
+侦察报告,偵察報告,Scout Report,偵察報告,정찰 보고
+侦察员,偵察員,Scout,偵察員,정찰원
+补充,補充,Add,追加,보충
+占地,占地,Space,場所をとる,부지
+补充资源,補充資源,Add Resources,資源補充,자원을 보충
+城墙,城墻,Wall,城壁,성벽
+城市外观,城市外觀,City's Outfit,都市の外観,도시 외관
+最近联系,最近聯系,Last Contact,前回連絡,최근 연락
+榜首,No.1,No.1,No.1,No1
+我的排名,我的排名,My Rank,ランキング,나의 랭킹
+本次免费,本次免費,Free,今回は無料です,이번 무료
+半价,半價,Half Price,半値,반값
+设为防守阵容,設為防守陣容,Set As Defensive Lineup,防御陣容に設定,수비진 구성
+获得传奇英雄,獲得傳奇英雄,Get A Legendary Hero,伝説のヒーローを入手,전설적인 영웅을 얻으세요
+增益总效果,增益總效果,Total Gain Effects,ゲイン縂効果,총 증가 효과
+增益效果,增益效果,Gain Effect,ゲイン効果,증가 효과
+稀有物品奖励次数,稀有物品獎勵次數,Rare Item Rewards Times,希少イテム報酬回数,희귀 아이템 보상 횟수
+总战斗力,總戰鬥力,Total Power,総戦力,총 전투력
+拜访领地,拜訪領地,Visit Territory,領地を訪問する,영토 방문
+加入黑名单,加入黑名單,Add To Blacklist,ブラックリストに追加,블랙리스트에 추가
+移除黑名单,移除黑名單,Remove From Blacklist,ブラックリストから削除,블랙리스트에 제거
+普通攻击,普通攻擊,Normal ATK,通常攻撃,일반 공격
+引用布局,引用佈局,Refer Layout,引用レイアウト,배치 인용
+玩法介绍,玩法介紹,Gameplay Introduction,プレイ紹介,플레이 소개
+发送邀请,發送邀請,Invite,招待を送る,초대 보내기
+体力,體力,Vit,体力,체력
+英雄背景,英雄背景,Backstory,英雄背景,영웅 배경
+拜访,拜訪,Visit,訪問,방문
+举报,舉報,Impeach,告発,신고
+举报理由,舉報理由,Reasons For Impeachment,告発の理由,신고 이유
+储存量,儲存量,Storage,貯蔵量,저장량
+补货,補貨,Add Goods,補充,보충
+发起攻击,發起攻擊,Launch ATK,攻撃を始める,공격 개시
+增援,增援,Reinforce,増援,증원
+撤退,撤退,Retreat,撤退,철수
+撤离,撤退,Retreat,撤退,철수
+全部撤退,全部撤退,Retreat All,全部撤退,전부 철수하다
+解锁进阶版,解鎖進階版,Unlock Advanced Version,解除昇進版,하드모드 해제
+勇者版,勇者版,Brave Version,勇者版,용자 모드
+挑战结果,挑戰結果,Challenge Result,挑戦結果,도전 결과
+挑战胜利,挑戰勝利,Victory,挑戦勝利,도전 승리
+挑战失败,挑戰失敗,Fail,挑戦失敗,도전 실패
+关卡数,關卡數,Levels,レベル,관문 수
+首次通关奖励,首次通關獎勵,Rewards For First Clearance,初回通関報酬,첫 클리어 보상
+星级评定,星級評定,Star Rating,星級の評定,성급 평가
+游戏公告,遊戲公告,Announcement,ゲームの公告,게임 공고
+驻守城市,駐守城市,Guard City,都市に駐屯する,도시 주둔
+占领方,占領方,Occupying Party,占領側,점령 측
+进入战场,進入戰場,Enter,戦場に入力る,전장 진입
+事件详情,事件詳情,Event Details,イベント詳細,사건 세부정보
+交易,交易,Trade,取引,거래
+援助资源,援助資源,Assist Resources,資源を援助,원조 자원
+接收上限,接收上限,Receive Upper,受信上限,수신 한도
+实际获得,實際獲得,Actually Obtained,実際に獲得,실제 획득
+的城市,的城市,'s City,の都市,도시
+待公布,待公布,To Be Announced,公布する,발표 예정
+急救,急救,First Aid,応急の手当,구급
+被动施加回合,被動施加回合,Passive Exertion Round,受け身ラウンド,패시브 효과 턴
+战前准备回合,戰前準備回合,Pre War Preparation Round,戦前準備ラウンド,전투 전 준비 턴
+回合,回合,Round,ラウンド,턴
+随机的,隨機的,Random,ランダムな,무작위의
+随机,隨機,Random,ランダム,무작위
+自定义,自定義,Customize,カスタマイズ,자체 정의
+稀有度,稀有度,Rarity,希少度,희귀도
+传奇建造师,傳奇建造師,Legendary Builder,伝説の建築家,전설의 건축가
+传奇科学家,傳奇科學家,Legendary Scientist,伝説の科学者,전설의 과학자
+传奇英雄,傳奇英雄,Legendary Hero,伝説のヒーロー,전설의 영웅
+传奇领主,傳奇領主,Legendary Lord,伝説の領主,전설의 영주
+传奇冒险家,傳奇冒險家,Legendary Adventurer,伝説の冒険家,전설의 모험가
+传奇导师,傳奇導師,Legendary Mentor,伝説の指導者,전설의 멘토
+天下无双,天下無雙,Peerless,天下無双,천하무적
+新的篇章,新的篇章,New Chapter,新しい章,새로운 챕터
+集结的号角,集結的號角,Horn Of Assembly,集結ラッパ,집결 나팔
+蓬勃发展,蓬勃發展,Flourishing,生々発展する,번영하다
+文明之光,文明之光,Light Of Civilization,文明の光,문명 빛
+燃烧的雄心,燃燒的雄心,Burning Ambition,燃える野心,타오르는 야망
+剑与荣耀,劍與榮耀,Sword And Glory,剣と栄光,검과 영광
+攻城略地,攻城略地,Conquer And Siege,攻城略地,공성
+战意的觉醒,戰意的覺醒,Battle Awakening,戦意の覚醒,전의의 각성
+混沌与秩序,混沌與秩序,Chaos And Order,混沌と秩序,혼돈과 질서
+群星闪耀之际,群星閃耀之際,When The Stars Shine,星が瞬く間に,뭇별들이 빛 날 무렵
+英雄的战场,英雄的戰場,Heroes Battlefields,ヒーローの戦場,영웅의 전쟁터
+胜利的凯歌,勝利的凱歌,Victory Anthem,勝利の凱歌,승리의 서곡
+城市扩充,城市擴充,City Expansion,都市拡大,도시 확충
+囤积资源,囤積資源,Hoard Resources,資源の蓄積,자원 비축
+驱逐叛军,驅逐叛軍,Expel The Rebels,反乱軍の追放,반군 퇴치
+蛮族的挑衅,蠻族的挑釁,Barbarian Provocation,蛮族の挑発,바바리안의 도발
+荒原勇者,荒原勇者,Wilderness Brave,荒原の勇者,황야 용자
+遗迹探险家,遺跡探險家,Ruins Explorer,遺跡探険家,유적 탐험가
+力量的召唤,力量的召喚,Summon The Power,力の召喚,힘의 소환
+第一战,第一戰,First Battle,第1戦,제 1 전
+遗迹之谜,遺跡之謎,Ruins Mystery,遺跡の謎,유적의 비밀
+破晓之征,破曉之征,Dawn Campaign,暁の陣,여명의 징후
+共同的荣耀,共同的榮耀,Common Glory,共同の栄光,모두의 영광
+深渊宝藏,深淵寶藏,Abyss Treasure,深淵の宝,심연의 보물
+旷世之争,曠世之爭,A World Of Strife,絶世の争い,당대에 견 줄 만한 싸움
+永恒的王座,永恒的王座,Eternal Throne,永遠の王座,영원의 왕좌
+攻城拔寨,攻城拔寨,City Siege,城攻め,성곽 포위
+驱逐隐患,驅逐隱患,Hazard Cleanup,隠れた危険の排除,숨겨진 위험 제거
+清除祸端,清除禍端,Eliminate The Bane,危険の排除,화근을 제거
+仁心,仁心,Great Physician,慈悲深い,친절한 마음
+守护坚盾,守護堅盾,Infantry Training,守護の盾,수호자 방패
+速攻利箭,速攻利箭,Archer Training,急攻の矢,날카로운 화살
+征服铁骑,征服鐵騎,Cavalry Training,征服騎兵,정복 기병
+毁灭机械,毀滅機械,Siege Vehicle Training,壊滅機械,파괴 기계
+共同成长,共同成長,Growth Together,共に成長,동반 성장
+征战之力,征戰之力,War Power,征戦の力,전쟁의 힘
+资源生产,資源生產,Resources Produce,資源生産,자원 생산
+建筑大师,建築大師,Master Architect,建築大家,건축가
+科研专家,科研專家,Scientific Expert,科学家,과학 전문가
+急不可耐,急不可耐,Impatient,気が早い,참을성 없는
+应急物资,應急物資,Emergency Supply,応急物質,비상 용품
+贸易之都,貿易之都,Trade Capital,貿易の都,무역의 도시
+繁荣之城,繁榮之城,Prosperous City,繁栄の城,번영의 도시
+如虎添翼,如虎添翼,Tiger With Wings,虎の翼を得る,호랑이의 날개를 달다
+领地危机,領地危機,Territory Crisis,領地危機,영토 위기
+奇迹之都,奇跡之都,Newborn,奇跡の都,기적의 성
+英雄邀请,英雄邀請,Heroes Invitation,ヒーロー招待,영웅 초대
+天赋之才,天賦之才,Gifted Talent,天賦の才,타고난 인재
+宝物爱好者,寶物愛好者,Treasure Collector,宝物愛好者,보물 애호가
+精兵强将,精兵強將,Elite Troops,精鋭部隊,정예 부대
+统治者,統治者,Ruler,統治者,지배자
+同舟共济,同舟共濟,Mutual Help,協力共済,서로 돕는
+装饰爱好者,裝飾愛好者,Decoration Manor,装飾愛好者,장식 애호가
+千锤百炼,千錘百煉,Blacksmith,鍛えに鍛える,여러번 단련하다
+了如指掌,了如指掌,Reconnaissance,熟知,완벽히 이해하다
+丰收活动,豐收活動,Harvest,収穫活動,수확 행사
+全力以赴,全力以赴,Go All Out,全力を尽くす,전력을 다하다
+长治久安,長治久安,Long-term security,長治久安,장치구안
+开疆扩土,開疆擴土,Expand Fief,領土を広げる,영토를 확장하다
+富可敌国,富可敵國,Rich As A Nation,富が国に匹敵する,국가로서 부유하다
+都城建设,都城建設,Capital City Construction,都城建設,도시 건설
+科学发展,科學發展,Scientific Development,科学発展,과학 발전
+天命之人,天命之人,Man of Destiny,天命の人,천명지인
+神兵降世,神兵降世,Soldier Advent,神兵降臨,신병 강림
+柯罗诺斯,柯羅諾斯,Chronos,クロノス,크로노스
+哥伦温,哥倫溫,Columwin,コロンウィン,콜럼빈
+艾洛尼亚,艾洛尼亞,Alonia,アロニア,알로니아
+塞纳里奥,塞納里奧,Cenario,シナリオ,시나리오
+特瑞吉,特瑞吉,Terigy,トリージ,테리지
+赫利莱特,赫利萊特,Hullilet,ハリレット,훌리렛
+斯塔莱特,斯塔萊特,Starlight,スターライト,스타라이터
+摩恩莱特,摩恩萊特,Moonlight,ムーンライト,모엔라이트
+曼利布莱特,曼利布萊特,Manly Bright,マンリー・ブライト,맨리 브라이트
+阿米忒斯,阿米忒斯,Amittes,アメテウス,아미테시
+塔里诺兹,塔里諾茲,Terinoz,タリノズ,타리노즈
+瑞瑟斯奥,瑞瑟斯奧,Reeseo,リーセオ,리에소
+德米雷特,德米雷特,Demirette,デミレット,데미레트
+欧忒克西,歐忒克西,Otexi,オテコシ,오테크시
+洛耶奥利,洛耶奧利,Lorjeoly,ロジョリ,로예올리오
+菲斯蕾西,菲絲蕾西,Fiseracey,フェスラシー,피시라시
+巴塞罗纳,巴塞羅納,Barcelona,バルセロナ,바르셀로나
+桑西勒尔,桑西勒爾,Sanciler,サンシール,산실러
+塔米尼尔,塔米尼爾,Taminio,タミニル,타미니루
+萨弥洛尔,薩彌洛爾,Samelor,サミロール,싸미에르
+卡洛维尔,卡洛維爾,Carlowville,カーロウビル,칼로우빌
+布奥德尔,布奧德爾,Beodel,ブオデル,부오델
+阿迪娜尔,阿迪娜爾,Adinar,アディナール,아르디나르
+海姆达尔,海姆達爾,Heimdal,ヘイムダル,헤임달
+格兰维尔,格蘭維爾,Granville,グランビル,그랜빌
+迪勒瑞,迪勒瑞,Dillery,ディレリー,딜러리
+维艾西,維艾西,Viasy,ビアシ,웨이어시
+格莱墨,格萊墨,Grammer,グライマー,그레모어
+戈维恩,戈維恩,Gwynn,グウィン,가웨인
+弗波斯,弗波斯,Phobos,フォボス,포보스
+茵特利,茵特利,Intery,イントリー,인터리
+塞曼吉,塞吉曼,Sajeman,セッジマン,싸이지만
+多洛斯,多洛斯,Dolos,ドロス,돌로스
+诺尔沃,諾爾沃,Norvo,ノルボ,노르보
+艾维瑞休,艾維瑞休,Averihugh,アベリヒュー,아베리흐
+瑞昂佩休,瑞昂佩休,Leonpersue,レオンペルス,레온페르수
+阿帕特,阿帕特,Apatte,アファト,아파트
+艾姆帕瑞斯,艾姆帕瑞斯,Emparris,エンパリス,엠프레스
+欧德修斯,歐德修斯,Odysseus,オデュッセウス,오디세우스
+菲欧西斯,菲歐西斯,Feosisy,フェオシス,메이어스
+赫格尼斯,赫格尼斯,Hegnes,ヘグネス,헤그네스
+皮斯缇斯,皮斯緹斯,Pisttis,ピストリウス,피티스
+菲洛忒斯,菲洛忒斯,Philotes,フィロテス,필리토스
+阿忒弥斯,阿忒彌斯,Artemis,アルテミス,아르테미스
+沃勒欧斯,沃勒歐斯,Walleos,ヴォレオス,왈레오스
+拉克西斯,拉克西斯,Laksis,ラクシス,락시스
+科韦纳斯,科韋納斯,Corvinas,コウェナス,코비나스
+卡巴纳斯,卡巴納斯,Cabanas,カバナス,카바나
+帕纳莫斯,帕納莫斯,Panamos,パナモス,파나모스
+弗罗里,弗羅里,Flory,フローリー,플로리
+雷纳穆,雷納穆,Rainham,レナモ,레나모
+斯坦洛,斯坦洛,Stanlow,スタンロー,스탠로우
+塞尔比,塞爾比,Selby,セルビー,셀비
+塔伯特,塔伯特,Tarbert,ターバート,타버트
+波特兰,波特蘭,Portland,ポートランド,포틀랜드
+芬纳特,芬納特,Finnart,フェンナート,핀아트
+帕瑞斯,帕瑞斯,Parisy,パリシ,파리시
+拉瓦洛,拉瓦洛,Ravalo,ラバロ,라발로
+赫柏尔,赫柏爾,Herbal,ヘベル,허바이얼
+蒂耶普,蒂耶普,Thiep,ディエップ,디에프
+昂蒂弗,昂蒂弗,Antif,アンティーフ,안티퍼
+斯库鲁,斯庫魯,Skoorum,スクル,스쿠루
+洛维萨,洛維薩,Lovisa,ロヴィーサ,로비사
+哈米纳,哈米納,Harmina,ハミナ,하미나
+罗德萨,羅德薩,Rodesa,ロドサ,로드사
+托昂斯,托昂斯,Torance,トーランス,토랜스
+科伦纳,科倫納,Coruna,コレンナ,코루나
+茵契特,茵契特,Inchette,インチルート,인치터
+阿德拉,阿德拉,Adora,アドラ,아도라
+库塞尔,庫塞爾,Kussel,クーゼル,쿠셀
+瓦赫兰,瓦赫蘭,Wahran,ワッハーブ,왓하부
+贝佳亚,貝佳亞,Bejaia,ベガヤ,베자이아
+帕伦克,帕倫克,Palenque,パレンケ,팔렝케
+维兹多,維茲多,Vezido,ウィズドウ,위즈도우
+克瑞吉,克瑞吉,Cragy,クレイギ,쿠레이기
+庇丽弗,庇麗弗,Bellev,ベルビュー,벨뷰
+格瑞迪,格瑞迪,Gridy,グリディ,구리디
+科瑞姆,科瑞姆,Corem,コーリム,코리무
+康特瑞奥,康特瑞奧,Contreo,コントレオ,콘토레오
+伊特洛,伊特洛,Itro,イトロ,이토로
+自然风光秀丽，动植物资源丰富，盛产兽皮，为该地区主要经济来源。,自然風光秀麗，動植物資源豐富，盛產獸皮，為該地區主要經濟來源。,"Beautiful Natural Scenery, Rich in Animal and Plant Resources, Rich in Animal Skin, As the Main Economic Source of the Region.",自然の風光明媚な、動植物資源が豊富で、豊富な獣皮、この地域の主要な経済源です。,자연 경치가 수려하고 동식물 자원이 풍부하며 동물 가죽을 많이 생산하여 이 지역의 주요 경제 원천입니다.
+地形复杂，拥有大陆上最繁茂的森林，里面生长着大量自带奇香的花果。,地形復雜，擁有大陸上最繁茂的森林，裏面生長著大量自帶奇香的花果。,"Complex Terrain, with the Mainland's Most Lush Forests, Which Grow a Large Number of Exotic Flowers and Fruits.",地形は復雑で、大陸で最も繁茂した森林があり、そこには珍しい香りのする花や実がたくさん生えている。,지형이 복잡하고 대륙에서 가장 무성한 숲을 끼고 있으며 그 안에 대량의 향기가 나는 꽃과 과일이 자라고 있습니다.
+文娱产业兴盛，艺术熏陶地，盛产大理石、雕像等文化产物。,文娛產業興盛，藝術熏陶地，盛產大理石、雕像等文化產物。,"Cultural and Entertainment Industry Flourished, Art Smoked Pottery, Rich in Porcelain, Statues and Other Cultural Products.",娯楽産業が盛んで、芸术が盛んで、大理石や雕刻などの文化的産物が豊富である。,"문화 오락 산업이 번창하고 예술적인 영향을 받으며 대리석, 조각상 등 문화적산물을 많이 생산합니다."
+手工业极为发达，生产能力强，城民热情好客，热衷于制作各类布料。,手工業極為發達，生產能力強，城民熱情好客，熱衷於制作各類布料。,"The Handicraft Industry Is Very Developed, the Production Ability Is Strong, the City People Are Hospitable, Keen to Make All Kinds of Cloth.",手工業が発達し、生産能力が高く、人々は親切で、あらゆる種類の布地を作ることに熱心だった。,수공업이 발달하고 생산 능력이 뛰어나며 도시 사람들은 손님 접대를 좋아하고 각종 옷감을 만드는데 열중하고있다.
+历史悠久，有最早的文字记载，考古学者的聚集地，也是茶饮的发源地。,歷史悠久，有最早的文字記載，考古學者的聚集地，也是茶飲的發源地。,"With a Long History and the Earliest Written Records, It Is Also the Birthplace of Tea.",歴史は悠久で、最古の文字の記録があり、考古学者が集まっている場所でもあり、お茶を飲む発祥の地でもあります。,"역사가 유구하고 최초의 문자 기록이 있으며 고고학자들의 집결지, 그리고 차문화의 발상지입니다."
+气候复杂多变，昼夜温差较大，有丰富的矿产资源，是各类宝石的原产地。,氣候復雜多變，晝夜溫差較大，有豐富的礦產資源，是各類寶石的原產地。,"The Climate Is Complex and Changeable, the Temperature Difference Between Day and Night Is Large, There Are Rich Mineral Resources, Is the Origin of All Kinds of Gems.",気候は復雑で変化が激しく、昼夜の温度差が大きく、鉱物資源が豊富で、様々な宝石の原産地となっています。,기후가 복잡하고 변화가 많으며 일교차가 크고 풍부한 광산 자원이 있어 각종 보석의 원산지입니다.
+库洛兰德大陆迎来的新的强者,庫洛蘭德大陸迎來的新的強者,The Continent of Kroland Welcomes a New Powerful Being.,クローランド大陸に新たな強者が登場,크롤랜드 대륙이 맞이한 새로운 강자
+尊敬的领主大人，欢迎回到您的领地,尊敬的領主大人，歡迎回到您的領地,"Honorable Lord, Welcome Back to Your Territory.",尊敬する領主様、お帰りなさいませ。あなたの領地へようこそ,"존경하는 영주님, 귀하의 영지로 돌아오신 것을 환영합니다"
+这是冒险者公会为您准备的开拓者补给，愿您旅途愉快,這是冒險者公會為您準備的開拓者補給，願您旅途愉快,This Is the Pioneer Supply Prepared for You by the Adventurers' Guild. Have a Pleasant Journey.,こちらは冒険者ギルドがご用意した開拓者の補給品です。どうぞ旅をお楽しみください,이것은 모험자 길드에서 준비한 개척자 보급품입니다 즐거운 여행 되세요
+战略,戰略,Strategic,戦略,전략
+战术,戰術,Tactical,戦術,전술
+被动,被動,Passive,パッシブ,패시브
+追击,追擊,Pursuit,追撃,추격
+战略技能,戰略技能,Strategic Skill,戦略スキル,전략 스킬
+战术技能,戰術技能,Tactical Skill,戦術スキル,전술 스킬
+主动技能,主動技能,Active Skill,アクティブスキル,능동 스킬
+被动技能,被動技能,Passive Skill,パッシブスキル,패시브 스킬
+追击技能,追擊技能,Pursuit Skill,追撃スキル,추격 스킬
+技能等级,技能等級,Skill Level,スキルレベル,스킬 레벨
+技能库,技能庫,Skills,スキル,스킬
+技能详情,技能詳情,Skill Details,スキル詳細,스킬 정보
+技能类型,技能類型,Skill Type,スキルの種類,스킬 타입
+天赋技能,天賦技能,Talent Skill,天賦スキル,재능스킬
+技能中断,技能中斷,Skill Interruption,スキル中断,스킬 캔슬
+提升任意英雄等级,提升任意英雄等級,Enhance Any Hero Level,任意のヒーローのレベルを上昇,어느 영웅의 레벨을 증가시킵니다
+提升任意技能等级,提升任意技能等級,Enhance Any Skill Level,任意のスキルのレベルを上昇,어느 기술의 레벨을 증가시킵니다
+派遣英雄收集情报,派遣英雄收集情報,Dispatch Heroes To Collect Intelligence,派遣されたヒーローが情報を収集,파견된 영웅이 정보 수집
+技能觉醒,技能覺醒,Skill Awakening,スキル覚醒,스킬 각성
+通用技能,通用技能,Universal Skill,汎用スキル,범용 스킬
+拆解技能,拆解技能,Dismantle Skill,分解スキル,분해 기술
+拆解,拆解,Dismantle,分解,분해
+技能解锁,技能解鎖,Skill Unlock,スキル解除,기술 해제
+技能评分,技能評分,Skill Score,スキル評価,스킬 전투력
+领主评分,領主評分,Lord Score,領主評価,영주 전투력
+技能发动数,技能發動數,Skills Used,スキル発動数,스킬 발동수
+生活技能,生活技能,Life Skill,生活スキル,생활 스킬
+技能,技能,Skill,スキル,스킬
+技能槽,技能槽,Skill Slot,スキルスロット,스킬 슬롯
+装备槽,裝備槽,Equipment Slot,装備スロット,장비 슬롯
+技能模块,技能模組,Skill Modules,スキルモジュール,스킬 모듈
+装备模块,裝備模組,Equipment Modules,装備モジュール,장비 모듈
+效果,效果,Effect,効果,효과
+效率,效率,Efficiency,効率,효율
+组合效果,組合效果,Combination Effects,組み合わせ効果,조합 효과
+整体效果,整體效果,Total Effects,全体効果,전체 효과
+激活效果,激活效果,Activate Effect,活性化効果,활성화 효과
+当前效果,當前效果,Current Effect,現在の効果,현재 효과
+升级,升級,Upgrade,進級,업그레이드
+升级效果,升級效果,Upgrade Effect,進級効果,업그레이드 효과
+附加效果,附加效果,Extra Effect,追加効果,추가 효과
+称号效果,稱號效果,Title Effect,称号効果,칭호 효과
+效果类型,效果類型,Effect Type,効果種類,효과 유형
+当前称号,當前稱號,Current Title,現在の称号,현재 칭호
+升级称号,升級稱號,Upgrade Title,進級称号,업그레이드 칭호
+升级条件,升級條件,Upgrade Conditions,進級条件,업그레이드 조건
+级别,級別,Level,レベル,등급
+建筑升级,建築升級,Building Upgrade,進級,건축 업그레이드
+建筑信息,建築信息,Building Info,建築情報,건축 정보
+建造队列,建造隊列,Build Queue,建造隊列,건설 대기열
+我方,我方,Our,味方,아군
+敌方,敵方,Enemy,敵軍,적군
+进攻方,進攻方,Attacker,攻撃者,공격자
+防守方,防守方,Defender,守備者,방어자
+我方全体,我方全體,All Teammates,味方全体,아군  일동
+敌方全体,敵方全體,All Enemies,全体敵軍,적군 일동
+敌方单体,敵方單體,Single Enemy,敵軍単体,적군 단일
+敌方联盟,敵方聯盟,Enemy Union,敵の同盟,적 클랜
+我方联盟,我方聯盟,Our Union,味方の同盟,우리측 클랜
+我方队伍,我方隊伍,Our Teams,味方のチーム,우리측 대열
+敌方队伍,敵方隊伍,Enemy Teams,敵チーム,적 대열
+援助,援助,Assist,援助,지원
+协助,協助,Assist,支援,지원
+激活,激活,Activate,活性化,활성화
+冒险,冒險,ADV,冒険,모험
+社交,社交,Socializing,社交,사교 활동
+誓约,誓約,Vow,誓い,서약을
+领地,領地,Territory,領地,영토
+好感,好感,Affection,好感,호감
+背包,背包,Pack,バック,배낭
+自选,自選,Optional,自選,선택 가능
+参加,參加,Participate,参加,참가
+竞技,競技,PVP,競技,경쟁
+收益,收益,Income,収益,수익
+空闲,空閒,Idle,空き,쉬는
+英雄,英雄,Hero,ヒーロー,영웅
+停止,停止,Stop,やめる,중지
+必定,必定,Must,必ず,반드시
+优惠,優惠,Discount,優待,혜택
+统计,統計,Statistics,統計,통계
+伤害,傷害,Damage,ダメージ,피해
+引用,引用,Refer,引用,인용
+营地,營地,Camp,キャンプ,캠프
+距离,距離,Distance,距離,거리
+初级,初級,Basic,初級,기본
+高级,進階,Advanced,高級,고급
+种族,種族,Race,種族,종족
+人族,人族,Human,人間,인간
+兽人,獸人,Orc,獸族,오크
+精灵,精靈,Elf,精靈,엘프
+步兵组合,步兵組合,Infantry Combination,歩兵組み合わせ,보병 조합
+弓兵组合,弓兵組合,Archer Combination,弓兵組み合わせ,궁병 조합
+骑兵组合,騎兵組合,Cavalry Combination,騎兵組み合わせ,기병 조합
+战车组合,戰車組合,Chariot Combination,戦車組み合わせ,전차 조합
+人族组合,人族組合,Human Combination,人間組み合わせ,인족 조합
+兽人组合,獸人組合,Orc Combination,獸族組み合わせ,오크 조합
+精灵组合,精靈組合,Elf Combination,精靈組み合わせ,엘프 조합
+种族组合效果,種族組合效果,Race Combination Effects,種族組み合わせ効果,종족 조합 효과
+士兵组合效果,士兵組合效果,Soldier Combination Effects,兵士組み合わせ効果,병사 조합 효과
+任务,任務,Quest,任務,임무
+遗迹组队,遺跡組隊,Ruins Dungeon,遺跡チーム,유적 편대
+主城,主城,City,主城,메인 성
+关卡,關卡,Level,ステージ,스테이지
+贸易路线,貿易路線,Trade Route,貿易ルート,무역 노선
+主线,主線,Main,主線,메인
+争夺战,爭奪戰,Contest War,争奪戦,쟁탈전
+价值,價值,Worth,価値,가치
+每日任务,每日任務,Daily Quest,毎日任務,일일 임무
+每周任务,每周任務,Weekly Quest,毎週任務,주간 임무
+主线任务,主線任務,Main,主な任務,메인 임무
+支线任务,支線任務,Side Quest,支線任務,서브 임무
+委托任务,委托任務,Delegate Quest,委託任務,위임 임무
+本期任务,本期任務,Period Quest,今期任務,주기 임무
+生产任务,生產任務,Production Quest,生産任務,생산 임무
+生活任务,生活任務,Life Quest,生活任務,생활 임무
+势力任务,勢力任務,Faction Quest,派閥任務,파벌 임무
+势力等级,勢力等級,Faction Level,派閥レベル,파벌 레벨
+冒险者等级,冒險等級,Adventure Level,冒険者レベル,모험 레벨
+领主等级,領主等級,Lord Level,領主レベル,영주 레벨
+英雄等级,英雄等級,Hero Level,ヒーローレベル,영웅 레벨
+建筑等级,建築等級,Building Level,建築レベル,건축 레벨
+科技等级,科技等級,Technology Level,技術レベル,과학 레벨
+进阶等级,進階等級,Advanced Level,進階レベル,진급 레벨
+突破等级,突破等級,Breakthrough Level,突破レベル,돌파 레벨
+冒险等级,冒險等級,Adventure Level,冒険レベル,모험 레벨
+指挥官等级,指揮官等級,Commander Level,指揮官レベル,지휘관 레벨
+周卡,週卡,Weekly Card,週刊カード,주간 카드
+月卡,月卡,Monthly Card,月額カード,월간 카드
+年卡,年卡,Year Card,年額カード,연간 카드
+永久卡,永久卡,Permanent Card,永久カード,영구 카드
+充值卡,儲值卡,Recharge Card,チャージカード,충전 카드
+累计,累計,Cumulative,累積,총계
+获得途径,獲得途徑,Get Source,入手方法,획득 경로
+获得道具,獲得道具,Get Rewards,入手道具,획득 아이템
+累计获得,累計獲得,Obtain A Total Of,累積入手,누적 획득
+累计消费,累計消費,Consume A Total Of,累積消費,누적 소비
+预计获得,預計獲得,Estimated Get,予想入手,예상 획득
+每日获得,每日獲得,Daily Get,毎日入手,받기 일일
+每日福利,每日福利,Daily Welfare,毎日福祉,일일 혜택
+运输,運輸,Transport,輸送,운송
+运输货物,運輸貨物,Transport Goods,貨物輸送,운송 화물
+确认运输,確認運輸,Confirm Transport,輸送を確認,운송 확인
+运输量,運輸量,Transport Volume,運送量,수송량
+取消运输,取消運輸,Cancel Transport,輸送をキャンセル,운송 취소
+特产运输,特產運輸,Specialty Transport,特産品輸送,특산물 운송
+特产运输小队,特產運輸小隊,Specialty Transport Team,特産品輸送隊列,특산물 운송 팀
+单次税收额,單次稅收額,Single Tax,単回税額,단일 세금액
+累计税收额,累計稅收額,Total Tax,累積税額,누적 세금액
+调整税收,調整稅收,Adjust Tax,税金調整,세금액 조정
+突袭要求,突襲要求,Raid Requirements,突襲要求,습격 조건
+资源需求,資源需求,Resources Need,資源需要,자원 수요
+原产地,原產地,Origin,原産地,원산지
+大世界资源,大世界資源,Great World Resources,大世界資源,대세계 자원
+可被帮助次数,可被幫助次數,Times That Can Be Helped,支援を受けた回数,도움 가능 횟수
+训练上限,訓練上限,Training Upper,訓練上限,훈련 상한
+快速加入,快速加入,Quick Join,クイック参加,빠른 가입
+减半,減半,Halving,半減,반감하다
+最大装备次数,最大裝備次數,Max Equip Times,最大装備回数,최대 장착 횟수
+升至最大,升至最大,Upgrade To Max,上昇最大,최대로 승급
+每日接收资源上限,每日接收資源上限,Daily Resources Collection Upper,毎日受け取れる資源上限,일일 자원 수신 상한
+天赋,天賦,Talent,天賦,재능
+将城市迁移至随机地点,將城市遷移至隨機地點,Move The City To A Random Location,都市をランダムな場所に移動する,도시를 무작위 위치로 이동
+修改角色昵称,修改角色暱稱,Modify Role Name,キャラクター名のを変更す,역할 이름 변경
+负重,負重,Weight,負荷,적재량
+准备回合,準備回合,Prepare Round,準備ラウンド,준비 턴
+引爆,引爆,Detonate,誘爆,폭파
+所有士兵,所有士兵,All Soldiers,すべて兵士,모든 병사
+任意英雄,任意英雄,Any Hero,任意のヒーロー,어느 영웅
+首次占领,首次佔領,First Occupation,初回占領,최초 점령하다
+领土占领,領土占領,Territory Occupation,領土占領,영토 점령
+攻城战,攻城戰,Siege Battle,攻城戦,공성전
+战斗报告,戰鬥報告,Battle Report,戦闘報告,전투 보고서
+领土收益,領土收益,Territory Income,領土収益,영토 수익
+放弃,放棄,Quit,あきらめる,포기하다
+剧情玩法,劇情玩法,Plot Play,プロットプレイ,스토리 플레이 방법
+回顾,回顧,Review,レビュー,회고
+剧情回顾,劇情回顧,Plot Review,プロットレビュー,스토리 회고
+第,第,Chapter,第,챕터
+未完待续,未完待續,To Be Continued,終わらないまま続く,다음에 계속
+征战,征戰,Movement,運動,정복
+镇压,鎮壓,Suppress,抑圧する,진압
+攻,攻,Attack,攻撃,공격
+防,防,Defense,から守り,방어
+强壮,強壯,Strong,強い,강인
+坚韧,堅韌,Tough,タフ,끈기
+加成效果,加成效果,Bonus Effect,付加効果,추가 효과
+战败,戰敗,Defeat,不合格,패배
+竞猜,競猜,Guess,推測,퀴즈
+发起邀请,邀請,Invite,招待,초대하기
+外援,外援,Foreign Aid,対外援助,외부 지원
+转区卡,轉區卡,Migration Card,移民カード,지역 이전 카드
+连胜,连胜,Winning Streak,連勝,연승
+结算,結算,Settlement,決済,결제
+原大陆,原大陸,Original Continent,元の大陸,원대륙
+回归,回歸,Return,戻る,반품
+必定获得,必定獲得,Must Get,獲得,반드시 획득
+宴会容纳人数,宴會容納人數,Feast Capacity,宴会収容人数,연회 수용 인구
+我的货物,我的貨物,My Goods,私の荷物,내 화물
+我的商队,我的商隊,My Caravan,私の隊商,내 상단
+我的负重,我的負重,My Weight,私の重荷,나의 적재량
+贸易商品,貿易商品,Trade Goods,貿易商品,무역 상품
+小道消息,小道消息,Gossip,裏話,가십
+城市类型,城市類型,City Type,都市の種類,도시 타입
+城市名称,城市名稱,City Name,都市名,도시 이름
+突袭,突襲,Raid,突襲,습격
+点赞,點贊,Liked,お気に入り,좋아요 누르기
+为您点赞,為您點贊,Liked For You,あなたにいいね,당신을 위해 좋아요
+为他/她点赞,為他/她點贊,Liked For Him/Her,彼/彼女のように,좋아요 눌러주기
+布局点赞,佈局點贊,Layout Liked,レイアウトにお気に入り,배치 좋아요
+准备就绪,準備就緒,Ready,準備が整う,준비완료
+关卡名称,關卡名稱,Level Name,レベル名,관문 이름
+取消准备,取消準備,Cancel,キャンセル準備,준비 취소
+攻方阵容,攻方陣容,Offensive Lineup,攻撃陣容,공격 진영
+守方阵容,守方陣容,Defenders Lineup,防御陣容,방어 진영
+设置阵容,設置陣容,Set Lineup,陣容を設ける,진영 설정
+首次通关,首次通關,First Clearance,初回クリア,첫 클리어런스
+首次通关时间,首次通關時間,First Clearance Time,初回クリア時間,첫 클리어런스 시간
+全服首次通关,全服首次通關,Server First Clearance,全サーバー初回クリア,전 서버 첫 클리어런스
+全服首次通关奖励,全服首次通關獎勵,Server First Clearance Rewards,全サーバー初回クリア報酬,전 서버 첫 클리어런스 보상
+全服首次通关红包,全服首次通關紅包,Server First Clearance Red Envelope,全サーバー初回クリアお年玉,전 서버 첫 클리어런스 복돈
+幸运转盘,幸運轉盤,Lucky Wheel,ラッキールーレット,행운의 룰렛
+时装扭蛋,時裝扭蛋,Fashion Gacha,コスチュームガチャ,패션 뽑기
+领主时装,領主時裝,Lord Fashion,領主クチュール,영주 꾸뛰르
+限时回馈,限時回饋,Limited Time Rewards,期間限定報酬,리미트 보상
+回收,回收,Recycle,リサイクル,재활용
+表情,表情,Emoji,絵文字,이모티콘
+图纸包,圖紙包,Drawing Packs,図面パック,그림 팩
+库洛兰德霸主,庫洛蘭德霸主,Kuroland Overlord,クロランド覇者,크롤랜드 패왕
+库洛兰德英雄,庫洛蘭德英雄,Kuroland Hero,クロランドヒーロー,크롤랜드 영웅
+库洛兰德强者,庫洛蘭德强者,Kuroland Powerful,クロランド強者,크롤랜드 강자
+时尚达人,時尚達人,Fashion Enthusiast,人気愛好家,패션 애호가
+时尚先锋,時尚先鋒,Fashion Pioneer,人気開拓者,패션 개척자
+时尚精英,時尚精英,Fashion Elite,人気エリート,패션 엘리트
+上,上,Up,上,위
+下,下,Down,下,미만
+左,左,Left,左,왼쪽
+右,右,Right,右,우측에
+限时福利,限時福利,Limited Time Welfare,期間限定福祉,리미트  혜택
+所有英雄,所有英雄,All Heroes,すべてヒーロー,모든  영웅
+模拟战斗,模擬戰鬥,Simulated Battle,模擬戦闘,모의 전투
+真实战斗,真實戰鬥,Real Battle,現実戦闘,리얼 전투
+模拟战斗没有奖励,模擬戰鬥沒有獎勵,No Rewards For Simulated Battle,模擬戦闘には報酬はありません,모의  전투 대한 보상 없음
+野蛮人,野蠻人,Barbarian,野蛮人,바바리안
+还原,還原,Reduction,還元,절감
+每日特惠3日包,每日特惠3日包,Daily Specials 3-Day Pack,毎日特価3日パック,매일 특가 3일 패키지
+每日特惠1日包,每日特惠1日包,Daily Specials 1-Day Pack,毎日特価1日パック,매일 특가 1일 패키지
+长按可查看道具详情,長按可查看道具詳情,Long Press To View Item Details,長押しで道具の詳細を確認できます,길게 누르면 아이템 세부 정보를 볼 수 있습니다
+档,檔,Class,級,레벨
+抽奖卷,抽獎卷,Lottery Scroll,抽選卷,추첨권
+可保留至下期活动继续使用,可保留至下期活動繼續使用,Can Be Retained For Use In The Next Event,次回の活動まで引き続き使用できます,다음 활동까지 계속 사용할 수 있습니다
+对守军造成伤害,對守軍造成傷害,Deal DMG To The Defender,守備軍にダメージを与えます,수비군에게 피해를 입힙니다
+对城墙造成伤害,對城墻造成傷害,Deal DMG To The Wall,城壁にダメージを与えます,성벽에 피해를 입힙니다
+未设置英雄编队,未設置英雄編隊,Hero Formation Not Set,ヒーロー編成が設定されていません,영웅 편성이 미설정
+未领取,未領取,Not Claimd,未受け取,미수령
+委托板,委托板,Delegation Board,委託板,위임 게시판
+无法移动到相同位置,無法移動到相同位置,Cannot Move To The Same Location,同じ位置には移動できません,동일 위치로 이동할 수 없습니다
+不能摆放当前位置,不能擺放當前位置,Cannot Place At The Current Location,現在の位置に配置できません,현재 위치에 배치할 수 없습니다
+距离下场战斗开启时间,距離下場戰鬥開啓時間,Time Until Next Battle Starts,次の戦闘開始までの時間,다음 전투 시작까지 남은 시간
+每抽必得,每抽必得,Basic Rewards,基礎報酬,기본 보상
+抽奖,抽獎,Lottery,抽選,추첨
+确认后本轮将无法变更奖池，是否继续？,確認后本輪將無法變更獎池，是否繼續？,"After Confirmation, The Reward Pool For This Round Cannot Be Changed. Continue?",確認後、このラウンドの賞池は変更できません。続行しますか？,확인 후 이번 라운드의 보상 풀은 변경할 수 없습니다. 계속하시겠습니까?
+轮数,輪數,Round Number,ラウンド数,라운드 수
+我的奖池,我的獎池,My Reward Pool,私の賞池,나의 보상 풀
+宝鉴评分,寶鑑評分,Codex Score,図鑑評価,보감 평점
+下一轮,下一輪,Next Round,次のラウンド,다음 라운드
+编辑,編輯,Edit,編集,편집
+关闭,關閉,Close,閉じる,닫기
+兑换卷,兌換卷,Exchange Scroll,両替券,교환권
+成长宝箱,成長寶箱,Growth Chest,成長宝箱,성장 상자
+包含,包含,Include,含む,포함
+使用后获得以下道具,使用後將獲得以下道具,"After Use, You Will Get The Following Props",使用後、以下の道具が得られます,사용 후 아이템은 다음과 같습니다
+建筑队列已满，最多2个建筑同时进行建造,建築隊列已滿，最多2個建築同時进行建造,"The Building Queue Is Full, A Maximum Of 2 Buildings Can Be Constructed Simultaneously.",建築キューが満杯です。同時に建築できるのは最大2件までです,건설 대기열이 가득 찼습니다. 동시에 최대 2개의 건물을 건설할 수 있습니다
+英雄未觉醒，无法重置,英雄未覺醒，無法重置,The Hero Has Not Awakened And Cannot Be Reset,ヒーローが覚醒していないため、リセットできません,영웅이 각성되지 않아 초기화할 수 없습니다
+已存在相同英雄,已存在相同英雄,The same hero already exists,同じヒーローがすでに存在する,같은 영웅이 이미 존재합니다
+已使用,已使用,Used,使用済み,사용됨
+蛮族入侵,蠻族入侵,Barbarian Invasion,蛮族の侵略,바바리안 침략
+默认,默認,Default,デフォルト,기본
+藏宝洞,藏寶洞,Treasure Cave,宝の洞窟,보물 동굴
+请选择队伍,請選擇隊伍,Please Select Team,チームを選択してください,팀을 선택해 주세요
+本服务器首次通关奖励,本伺服器首次通關獎勵,First Clearance Reward On This Server,このサーバーでの初回クリア報酬,이 서버에서의 첫 클리어 보상
+跨服组队,跨服組隊,Cross Server Team,クロスサーバーパーティー,크로스 서버 팀
+相同英雄卡,相同英雄卡,Same Hero Card,同じヒーローカード,같은 영웅 카드
+相同稀有度英雄卡,相同稀有度英雄卡,Same Rarity Hero Card,同じ希少度のヒーローカード,동일 희귀도 영웅 카드
+回归签到,回歸簽到,Return Sign-in,戻る出勤,반품 출석
+抽奖环节已结束,抽獎環節已結束,Lottery Phase Has Ended,抽選セッションは終了しました,추첨 세션이 종료되었습니다
+有新的联盟公告,有新的聯盟公告,New Union Announcement,新しい同盟公告,새로운 클랜 공고
+无法引用,無法引用,Can't Refer,引用できません,인용할 수 없습니다
+所有队伍,所有隊伍,All Teams,全てのチーム,모든 팀
+需要在主城待命,需要在主城待命,Must Stand By In The Main City,主城で待機する必要があります,주 도시에서 대기해야 합니다
+防守阵容,防守陣容,Defense Lineup,防御陣容,수비 진용
+召唤记录,召喚記錄,Summon Record,召喚記録,소환 기록
+穿戴,穿戴,Wear,装着,착용
+报名时间,報名時間,Registration Time,参加時間,가입 시간
+客服,客服,Service,顧客サービス,고객센터
+世界等级,世界等級,World Level,ワールドレベル,세계 레벌
+快速升级攻略,快速升級攻略,Fast Upgrade Guide,進級速攻ガイド,빠른 레벨업 가이드
+树群,樹群,Tree Cluster,樹木群,나무 군락
+次,次,Times,回,회
+英雄培养手册,英雄培養手冊,Hero Train Manual,ヒーロー育成手冊,영웅 양성 매뉴얼
+绑定账号,綁定帳號,Bind Account,アカウント紐付け,계정 연결
+邮箱,郵箱,Email,ポスト,우편함
+绑定,綁定,Bind,紐付け,제본
+英雄成长助力包,英雄成長助力包,Hero Growth Support Packs,ヒーロー成長サポートパック,영웅 성장 지원 패키지
+找回账号,找回帳號,Recover Account,アカウントを復元,계정 복구
+培养计划,培養計劃,Train Plan,育成計画,양성 계획
+任意联盟,任意聯盟,Any Union,任意の同盟,임의의 클랜
+简化其他玩家模型,簡化其他玩家模型,Simplify Other Players' Models,他のプレイヤーのモデルを簡略化,다른 플레이어 모델 단순화
+简化模型,簡化模型,Simplify Models,モデルを簡略化,모델 단순화
+故事,故事,Story,ストーリー,스토리
+找回密码,找回密碼,Recover Password,パスワードを復元,비밀번호 찾기
+友好联盟,友好聯盟,Friendly Union,友好同盟,우호 클랜
+结盟,結盟,Ally,同盟を結ぶ,동맹을 맺다
+没有管理员处于在线状态,沒有管理員處於線上狀態,No Administrator Is Online,管理者がオンラインではありません,관리자가 온라인이 아닙니다
+合作联盟,合作聯盟,Cooperation Union,協力同盟,협력 클랜
+申请与您的联盟成为合作联盟关系,申請與您的聯盟成為合作聯盟關係,Apply To Become A Cooperative Union With Your Union,あなたの同盟と協力同盟になるために申請する,귀하의 클랜과 협력 클랜이 되기 위해 지원하세요
+攻城战期间无法解除合作关系,攻城戰期間無法解除合作關係,Cooperation Cannot Be Terminated During Siege Battle,攻城戦期間中は協力関係を解除できません,공성전 기간 동안 협력 관계를 해제할 수 없습니다
+攻城战期间无法建立合作关系,攻城戰期間無法建立合作關係,Cooperation Cannot Be Established During Siege Battle,攻城戦期間中は協力関係を結ぶことができません,공성전 기간 동안 협력 관계를 맺을 수 없습니다
+设备,設備,Device,デバイス,기기
+未绑定,未綁定,Unbound,未紐付け,미바인딩
+圣物成长助力包,聖物成長助力包,Relic Growth Support Packs,聖物成長サポートパック,성물 성장 지원 패키지
+野蛮人营地,野蠻人營地,Barbarian Camp,野蛮人のキャンプ,바바리안 캠프
+生活点,生活點,Life Points,生活ポイント,생활 포인트
+小麦,小麥,Wheat,小麦,밀
+果树,果樹,Fruit Tree,果樹,과일 나무
+生长周期,生長週期,Growth Cycle,成長周期,성장 주기
+种子,種子,Seed,種,씨앗
+种植,種植,Planting,栽培,재배
+收获,收穫,Harvest,収穫,수확
+传送门冷却石,传送门冷卻石,Portal Cooldown Stone,ポータル冷却石,전송문 냉각석
+每日拾取上限,每日拾取上限,Daily Pickup Limit,每日ピックアップ上限,일일 획득 상한
+偷走了,偷走了,Stole,盗んだ,훔쳤다
+记录,記錄,Record,記録,기록
+藏宝洞钥匙,藏寶洞鑰匙,Treasure Cave Key,宝の洞窟の鍵,보물 동굴 열쇠
+最大,最大,Max,最大,최대
+最小,最小,Min,最小,최소
+等级范围,等級範圍,Level Scope,レベル範囲,레벨 범위
+浇水,澆水,Watering,水やり,물주기
+物资箱,物資箱,Supply Chest,物資箱,물자 상자
+最近距离对象,最近距離對象,Nearest Target,最も近いターゲット,최근접 대상
+不会赛季重置,不會賽季重置,Won't Reset With Season,シーズンリセットなし,시즌 초기화 없음
+查看个人进度,查看個人進度,View Personal Progress,個人進捗を確認,개인 진행도 확인
+幻想广场,幻想广场,Fantasy Plaza,幻想広場,환상 광장
+限时礼包返场专区,限時禮包返場專區,Limited Packs Relaunch Zone,期間限定パッケージ再登場コーナー,기간 한정 패키지 재등장 코너
+个人进度,個人進度,Personal Progress,個人進捗,개인 진행도
+奖励在首次通关时通过邮件发送,獎勵在首次通關時通過郵件發送,Rewards Will Be Sent Via Mail Upon First Clearance,初回クリア時に報酬をメールで送付します,보상은 첫 클리어 시 메일로 발송됩니다
+个人进度不会重置,個人進度不會重置,Personal Progress Will Not Reset,個人の進捗はリセットされません,개인 진행도는 초기화되지 않습니다
+仅供参考,僅供參考,For reference only,参考のみ,참고용
+沙漠探险,沙漠探險,Desert Expedition,砂漠探検,사막 탐험
+鲜花大作战,鮮花大作戰,Flower Frenzy,花の大戦い,플라워 프렌지
+知识问答,知識問答,Knowledge Quiz,知識クイズ,지식 퀴즈
+切磋,切磋,Duel,決闘,결투
+拒绝队伍查看,拒絕隊伍查看,Disable Team Inspection,チーム閲覧拒否,팀 조회 거부
+拒绝队伍切磋,拒絕隊伍切磋,Disable Team Duels,チーム決闘拒否,팀 결투 거부
+联赛,聯賽,League,リーグ,리그
+公会战,公會戰,Union War,ギルド戦,동맹 전쟁
+所有参与讨伐的公会成员均可获得奖励,所有參與討伐的公會成員均可獲得獎勵,All Union Members Participating In The Raid Will Receive Rewards,討伐に参加した全ギルドメンバーに報酬が支給されます,토벌에 참여한 모든 길드원에게 보상 지급
+联盟首领战已开启,聯盟首領戰已開啟,Union Leader Battle Has Begun,同盟首領戦が開始されました,연합 보스전이 시작되었습니다
+请领主们前往幻想广场,請領主們前往幻想廣場,"Lords, Please Proceed To Fantasy Plaza",領主様は幻想広場へお進みください,영주님들께서는 환상 광장으로 이동해 주세요
+距离太远,距離太遠,Too far away,距離が遠すぎます,거리가 너무 멉니다
+进行中,進行中,In Progress,進行中,진행 중
+知识问答活动即将开启，请各位领主大人前往幻想广场准备,知識問答活動即將開啟，請各位領主大人前往幻想廣場準備,"The Knowledge Quiz event is about to begin, please proceed to Fantasy Plaza to prepare",知識クイズイベントがまもなく開始します、領主様は幻想広場へお進みください,"지식 퀴즈 이벤트가 곧 시작됩니다, 영주님들께서는 환상 광장으로 이동해 주세요"
+快速治疗包,快速治療包,Quick Healing Pack,即効治療パック,빠른 치료 패키지
+下一关,下一關,Next Level,次のステージ,다음 스테이지
+"联盟BOSS战期间,无法变更成员",聯盟BOSS戰期間，無法變更成員,"During The Union BOSS Battle, Members Cannot Be Changed",同盟BOSS討伐中はメンバー変更不可,연합 BOSS 토벌 중에는 멤버 변경이 제한됩니다
+性别,性別,Gender,性別,성별
+性别转换卡,性別轉換卡,Gender Change Card,性別変更カード,성별 변경 카드
+转换角色性别,轉換角色性別,Change Character Gender,キャラクターの性別を変更,캐릭터 성별 변경
+库洛兰德大陆,庫洛蘭德大陸,Kurorand Continent,クローランド大陸,크롤랜드 대륙
+布局,佈局,Layout,レイアウト,배치
+长按并滑动可批量建造,長按並滑動可批量建造,Long press and slide to batch-build,長押ししてスライドすると一括建設可能,길게 누른 후 슬라이드하면 일괄 건설 가능
+再次挑战,再次挑戰,Retry,再挑戦,재도전
+深渊,深淵,Abyss,深淵,심연
+符文,符文,Runes,ルーン,룬
+快速升级,快速升級,Quickly Upgrade,素早くレベルアップ,빠른 레벨업
+快速移动,快速移動,Quickly Movement,速い動き,빠른  움직임
+进入营地的队伍,進入營地的隊伍,Enter Camp With Troops,キャンプに入る部隊,캠프 진입 부대
+占领高级矿点，通过扫荡可以快速升级,佔領高級礦點，透過掃蕩可以快速升級,Occupy High-Level Mine and quickly upgrade through Sweep,"高級の採鉱場を占領,掃蕩機能で素早くレベルアップ","점령 고급 채굴장, 소탕을 통해 빠른 레벨업"
+攻城战以联盟为单位，需要有任意盟友的势力范围与要攻城的对象接壤,攻城戰以聯盟為單位，需要有任意盟友的勢力範圍與要攻城的對象接壤,"Siege Battle Is Based on Unions, And Need Any Ally's Sphere Of Influence Must Border The Target City To Be Attacked.",攻城戦は同盟に基づいて行われ、攻撃対象となる目標都市と盟友の勢力範囲が接している必要あり,"공성전은 클랜에 기반을 두고 있으며, 공격을 받으려면 동맹국의 영향권이 목표 도시와 접해 있어야 합니다."
+有任意联盟成员的势力范围与目标接壤,有任意聯盟成員的勢力範圍與目標接壤,Any Union Member's Sphere Of Influence Borders The Target,目標都市と同盟会員の勢力範囲が接している必要あり,어느 클랜 회원 영향권은 목표물과 접하고 있습니다.
+在攻城战中，需要将守军全部击败，并且有战车将城市的城墙彻底破坏，才可以最终占领城市,在攻城戰中，需要將守軍全部擊敗，並且有戰車將城市的城牆徹底破壞，才可以最終佔領城市,"In A Siege Battle, You Need To Defeat All The Defenders And Have Chariots Completely Destroy The City Walls Before You Can Finally Capture The City.",攻城戦では、最終的に都市を占領する前に、すべての守備軍を打ち負かし、戦車で城壁を完全に破壊する必要があります。,포위 공성전서는 모든 수비군을 물리치고 전차로 성벽을 완전히 파괴해야만 도시를 점령할 수 있습니다.
+炮击,砲擊,Bombard,砲撃,포격
+需要队伍统帅携带战车,需隊伍統帥攜帶戰車,Need Commander To Carry Chariot,チーム統帥は戦車を装置ぶ必要がある,팀 리더 필요하다 장비 전차
+新玩家特别补贴,新玩家特別補貼,Special Subsidy For New Players,新規プレイヤーへの特別手当,신규 플레이어를 위한 특별 수당
+奖励由角色与服务器时间差异决定,獎勵由角色與伺服器時間差異決定,Rewards Are Determined By The Time Difference Between The Character And The Server,報酬はキャラクターとサーバーの時間差によって決まります,보상은 캐릭터와 서버 간의 시간 차이에 따라 결정됩니다.
+每周拾取上限,每週拾取上限,Weekly Pickup Limit,每週ピックアップ上限,주간 획득 상한
+再次获得奖励,再次獲得獎勵,Get Rewarded Again,再び報酬を獲得,다시 보상을 받으세요
+前锋,前鋒,Striker,前衛,아방가르드
+英雄战斗属性,英雄戰鬥屬性,Hero Combat Attributes,ヒーロー戦闘属性,영웅 전투 속성
+英雄属性效果,英雄屬性效果,Hero Attribute Effects,ヒーロー属性効果,영웅 속성   효과
+攻击值=英雄攻击值+携带士兵攻击值,攻擊值=英雄攻擊值+攜帶士兵攻擊值,ATK = Hero ATK + Soldier ATK,攻撃力 = ヒーロー攻撃力 + 兵士攻撃力,공격력 = 영웅 공격력 + 병사 공격력
+防御值=英雄防御值+携带士兵防御值,防禦值=英雄防禦值+攜帶士兵防禦值,DEF = Hero DEF + Soldier DEF,防御力 = ヒーロー防御力 + 兵士防御力,방어력 = 영웅 방어력 + 병사 방어력
+破坏值=英雄破坏值+携带士兵破坏值,破壞值=英雄破壞值+攜帶士兵破壞值,DES = Hero DES + Soldier DES,破壊力 = ヒーロー破壊力 + 兵士破壊力,파괴력 = 영웅 파괴력 + 병사 파괴력
+提高进行攻击的基础伤害(包括咒术、燃烧)。,提高進行攻擊的基礎傷害(包括咒術、燃燒)。,"Increases base ATK DMG (includes Curse, Burn)",基本攻撃ダメージUP(呪い、燃焼含む),"공격의 기본 데미지를 증가시킵니다(저주, 연소 포함)"
+提高技能中“强袭”效果。,提陞技能中「強襲」效果。,"Enhances ""Assault"" effects in skills",スキルの「強襲」効果強化,"스킬 ""강습"" 효과 강화"
+降低受到攻击的基础伤害(包括咒术、燃烧)。,降低受到攻擊的基礎傷害(包括咒術、燃燒)。,"Reduces base ATK DMG taken (includes Curse, Burn)",受ける基本攻撃ダメージDOWN(呪い、燃焼含む),"공격의 기본 데미지를 감소시킵니다(저주, 연소 포함)"
+提高技能中的使目标“属性提高”效果。,提高技能中的使目標「屬性提高」效果。,"Boosts ""Attribute Increase"" effects on targets",スキルの「属性UP」効果強化,"스킬 ""속성 증가"" 효과 강화"
+提高技能中的使目标“受到伤害降低”效果。,提高技能中的使目標「受到傷害降低」效果。,"Enhances ""DMG Taken Reduced"" effects on targets",スキルの「受けるダメージDOWN」効果強化,"스킬 ""받는 피해가 감소"" 효과 강화"
+提高技能中的使目标“属性降低”效果。,提高技能中的使目標「屬性降低」效果。,"Strengthens ""Attribute Decrease"" effects on targets",スキルの「属性DOWN」効果強化,"스킬 ""속성 감소"" 효과 강화"
+提高技能中的使目标“造成伤害降低”效果。,提高技能中的使目標「造成傷害降低」效果。,"Improves ""DMG Dealt Reduced"" effects on targets",スキルの「与えるダメージDOWN」効果強化,"스킬 ""주는 피해가 감소"" 효과 강화"
+提高技能中的使目标“受到伤害提高”效果。,提高技能中的使目標「受到傷害提高」效果。,"Amplifies ""DMG Taken Increased"" effects on targets",スキルの「受けるダメージUP」効果強化,"스킬 ""받는 피해가 증가"" 효과 강화"
+影响战斗中行动顺序。,影響戰鬥中行動順序。,Affects the order of actions in combat,戦闘中の行動順序に影響します,전투 중 행동 순서에 영향을
+提高技能中的使目标“造成伤害提高”效果。,提高技能中的使目標「造成傷害提高」效果。,"Enhances ""DMG Dealt Increased"" effects on targets",スキルの「与えるダメージUP」効果強化,"스킬 ""주는 피해가 증가"" 효과 강화"
+在没有嘲讽的情况下,在沒有嘲諷的情況下,Target Selection (without Taunt):,ターゲット選択規則(挑発なし時):,타겟 선택 규칙(도발 없을 시):
+统帅被选为攻击目标的概率为20%,統帥被選為攻擊目標的機率為20%,Chance that Commander will be chosen as the target of ATK: 20%,統帥が攻撃対象として選ばれる確率: 20%,리더가 공격 대상으로 선택될 확률: 20%
+前锋1被选为攻击目标的概率为40%,前鋒1被選為攻擊目標的機率為40%,Chance that Striker 1 will be chosen as the target of ATK: 40%,前衛1が攻撃対象として選ばれる確率: 40%,아방가르드 1이 공격 대상으로 선택될 확률: 40%
+前锋2被选为攻击目标的概率为40%,前鋒2被選為攻擊目標的機率為40%,Chance that Striker 2 will be chosen as the target of ATK: 40%,前衛2が攻撃対象として選ばれる確率: 40%,아방가르드 2이 공격 대상으로 선택될 확률: 40%
+技能石装配规则：战略技能在队伍配置时只能使用一次，战术、被动、追击技能可以额外使用一次技能石,技能石組裝規則：戰略技能在隊伍配置時只能使用一次，戰術、被動、追擊技能可以額外使用一次技能石,"Skill Stone Equipping Rules:Strategic Skill: Can only equip one stone per team, Tactical/Passive/Pursuit Skills: May equip +1 additional stone.",スキルストーン装備ルール：戦略スキル：チーム編成時1つのみ装備可，戦術/パッシブ/追撃スキル：追加で1ストーン装備可能,"스킬스톤 장착 규칙：전략 스킬: 팀당 1개 스톤만 장착 가능,전술/패시브/추격 스킬: 스톤 1개 추가 장착 가능"
+同步,同步,Synergy,シナジー,시너지
+投石车,投石車,Trebuchet,トレビュシェット,트레뷰셋
+巨型投石车,巨型投石車,Giant Trebuchet,巨大トレビュシェット,대형 트레뷰셋
+公会战为跨服模拟战斗,公會戰為跨服模擬戰鬥,Union Wars are cross-server simulated battles,ギルド戦はクロスサーバー模擬戦闘です,동맹 전쟁은 크로스서버 시뮬레이션 전투입니다
+士兵规则：按携带类型统一为T5等级,士兵規則：按攜帶類型統一為T5等級,Soldier Rules: All soldiers carried are unified as T5 level,兵士のルール: 運ばれる兵士はすべてT5レベルに統一される,병사 규칙: 운반하는 모든 병사가 T5레벨로 통일됩니다.
+科技、建筑效果在公会战中不生效,科技、建築效果在公會戰中不生效,Technology and Building effects are disabled in Union Wars,技術・建築効果はギルド戦では無効,기술 및 건물 효과는 동맹 전쟁서 적용되지 않음
+符文不会额外增加技能，只增加已装备技能的效果,符文不會額外增加技能，只增強已裝備技能的效果,"Runes do not grant additional skills, but only enhance the effects of already equipped skills",ルーンは新規スキルを追加せず、装備済みスキルの効果のみを強化します,"룬은 추가 스킬을 부여하지 않으며, 장착된 스킬의 효과만 강화합니다"
+屏幕震动,畫面震動,Screen Shake,画面振動,화면 흔들림
+指令语音,指令語音,Voice Commands,音声コマンド,음성 명령
+飞行英雄,飛行英雄,Flying Hero,フライングヒーロー,비행 영웅
+快捷键,快速鍵,Hotkeys,ショートカット,단축키
+常用,常用,Common,よく使う,자주 사용
+回退,回退,Return,後退する,폴백
+悠闲午后,悠閒午後,Leisure afternoon,のんびりた午後,여유로운 오후
+交互式建筑,互動式建築,interactive building,インタラクティブな建築,인터랙티브 건축
+人口,人口,Population,人口,인구
+居民,居民,Residents,居住者,거주자
+难民,難民,Refugees,難民,난민
+驱离,驅離,Expel,追い払う,제명
+有一伙难民希望加入您的城市,有一群難民希望加入您的城市,A group of refugees want to join your city,難民のグループがあなたの街に加わりたいと考えています,난민 그룹이 당신의 도시에 합류하고 싶어합니다.
+是否接受,是否接受,Do you accept?,受け入れますか？,수락하시나요?
+接受,接受,Accept,受け入れる,수용하다
+赶走他们,趕走他們,Expel them,追い払え,그들을 몰아내다
+普通型,普通型,General type,一般形態,흔한 유형
+劳动型,勞動型,Labor type,労働形態,노동 유형
+研究型,研究型,Research type,研究形態,연구 유형
+健康值,健康值,Health Points,健康ポイント,건강 포인트
+心情值,心情值,Mood Points,気分ポイント,기분 포인트
+加班,加班,Overtime,残業する,초과 근무하다
+工资,薪資,Salary,給料,샐러리
+工作时间,工作時間,Working hours,勤務時間,근로시간
+工作场所,工作場所,Workplace,職場,근로 장소
+农妇,農婦,Peasant Woman,農婦,시골 처녀
+工匠,工匠,Artisan,工匠,장인
+研究员,研究員,Researcher,研究員,연구원
+钓鱼佬,釣魚佬,Angler,釣り人,낚시꾼
+劳动能力,勞動能力,Labor Ability,労働能力,노동 능력
+采集能力,採集能力,Gathering Ability,収集能力,수집 능력
+建造能力,建造能力,Building Ability,建築能力,건설 능력
+钓鱼能力,釣魚能力,Fishing Ability,釣り能力,낚시 능력
+工作效率,工作效率,Work Efficiency,作業効率,작업 효율
+击杀BOSS时，离线时间小于12小时或在线联盟成员均会获得奖励,擊殺BOSS時，離線時間小於12小時或在線聯盟成員均可獲得獎勵,"When killing a BOSS, all members of the alliance who are offline < 12 hours or online will receive rewards.",BOSS撃破時、12時間以内に離脱していた、または現在オンライン中の同盟メンバー全員が報酬を受け取ります。,"BOSS 처치 시, 12시간 이내 오프라인 상태였거나 현재 온라인인 연맹원 모두 보상을 획득합니다。"
+声望值,聲望值,Prestige Points,人気ポイント,명성 포인트
+驱赶居民将减少您的声望值,驅趕居民將減少您的聲望值,Expelling residents will decrease your Prestige Points.,居住者を追い出すと人気ポイントが減少します。,주민을 내쫓으면 명성 포인트가 감소합니다.
+讨伐野蛮人营地将增加您的声望值,討伐野蠻人營地將增加您的聲望值,Raiding Barbarian Camps will increase your Prestige Points.,野蛮人のキャンプを討伐すると人気ポイントが増加します。,바바리안 캠프 토벌 시 명성 포인트가 증가합니다.
+声望值越高，越容易有难民来投靠,聲望值越高，越容易有難民來投靠,Higher Prestige Points makes Refugees more likely to join you.,人気ポイントが高いほど、難民が加入しやすくなります。,명성 포인트가 높을수록 난민이 더 많이 찾아옵니다
+有新的难民希望加入您的城邦,有新的難民希望加入您的城邦,New refugees seek to join your city-state!,新しい難民があなたの都市国家への加入を希望しています,새로운 난민이 당신의 도시 국가에 합류하기를 원합니다
+淡水鱼,淡水魚,Freshwater Fish,淡水魚,담수어
+工作能力,工作能力,Working Ability,作業能力,작업 능력
+最终工作能力,最終工作能力,Final Working Ability,最終作業能力,최종 작업 능력
+工作超过8小时影响心情值,工作超過8小時影響心情值,Working >8h affects Mood Points,8時間超の作業で気分ポイント影響,8시간 이상 근무하면 기분 포인트에 영향을 미침
+工作超过12小时影响健康值,工作超過12小時影響健康值,Working >12h affects Health Points,12時間超の作業で健康ポイント影響,12시간 이상 근무하면 건강 포인트에 영향을 미침
+工匠的锤子,工匠的錘子,Artisan's Hammer,工匠の槌子,장인의 망치
+研究员的图纸,研究員的圖紙,Researcher's Drawings,研究員の図面,연구원의 그림
+工作会影响心情值,工作會影響心情值,Working affects Mood Points,作業は気分ポイントに影響します,작업은 기분 포인트에 영향을 미칩니다
+居民处于闲置状态会自动恢复心情值,居民處於閒置狀態會自動恢復心情值,Idle residents automatically recover Mood Points,住民が待機状態だと気分ポイントが自動回復,주민이 대기 상태일 때 기분 포인트치 자동 회복
+"连续工作超过8小时,会影响健康值",連續工作超過8小時，會影響健康值,Working continuously over 8 hours affects Health Points,8時間以上の連続作業は健康ポイントに影響,8시간 이상 연속 작업 시 건강 포인트치 영향
+心情值恢复,心情值恢復,Mood Points Restore,気分ポイントの回復,기분 포인트 회복
+健康值恢复,健康值恢復,Health Points Restore,健康ポイントの回復,건강 포인트 회복
+博物馆,博物館,Museum,博物館,박물관
+职业,職業,Occupation,職業,직업
+基础消耗,基礎消耗,Basic Consume,基礎消耗,기본 소모
+工作消耗,工作消耗,Working Consume,作業消耗,작업 소모
+批量派遣,大量派遣,Batch  Dispatch,一括派遣,배치 발송
+制作,製作,Produce,生産,생산
+钓鱼,釣魚,Fishing,釣り,어업
+心情非常糟糕，无法工作,心情非常糟糕，無法工作,"Very bad mood, unable to work",気分ポイントが最低です-作業不可,불행하고 일할 수 없다
+健康状况非常糟糕，无法工作,健康狀況非常糟糕，無法工作,"Very bad health, unable to work",健康状態が最低です-作業不可,건강이 매우 좋지 않아 일할 수 없음
+正在工作中,正在工作中,At Work,作業中,작업 중
+今日剩余次数,今日剩餘次數,Today's Remaining Times,今日の残り回数,오늘 남은 라운드
+工作成果,工作成果,Work Results,仕事の結果,작업 결과
+最多叠加24小时,最多叠加24小時,Stacks Up To Most 24 Hours,最大24時間までスタック,최대 24시간 중첩
+批量操作,大量操作,Batch Operations,一括操作,배치 작업
+奖励找回,獎勵找回,Recover Reward,報酬を復元,보상 복구
+最多累积7天,最多累積7天,Accumulation Up To Most 7 Days,最大7日間の累積,최대 7일 누적
+新手推荐,新手推薦,Beginner Recommend,初心者推薦,초보자 추천
+优先使用奖励次数,優先使用獎勵次數,Use Reward Times First,報酬回数の優先使用,보상 횟수 우선 사용
+库洛兰德盛宴,庫洛蘭德盛宴,Kuroland Feast,クロランドの饗宴,크롤랜드의 향연
+城市建设盛宴,城市建設盛宴,City Construction Feast,都市建設の饗宴,도시 건설 향연
+英雄集结盛宴,英雄集結盛宴,Hero Gathering Feast,ヒーロー集結の饗宴,영웅 모임 향연
+圣物出没盛宴,聖物出沒盛宴,Relic Haunting Feast,聖物の出現の饗宴,성물의 향연
+探索遗迹盛宴,探索遺跡盛宴,Explore Ruins Feast,遺跡探検の饗宴,유적 탐험 향연
+联盟的盛宴,聯盟的盛宴,Union Feast,同盟の饗宴,클랜의 향연
+新世界盛宴,新世界盛宴,New World Feast,新世界の饗宴,신세계 향연
+时尚盛宴,時尚盛宴,Fashion Feast,人気の饗宴,패션의 향연
+先驱者盛宴,先驅者盛宴,Pioneer Feast,開拓者の饗宴,개척자 향연
+合服,合服,Server Merger,マージサーバー,서버 병합
+14天签到奖励,14天簽到獎勵,14-day Sign-in Rewards,14日間のログイン報酬,14일 출석인 보상
+盛宴,盛宴,Feast,饗宴,향연
+库洛兰德徽章,庫洛蘭德徽章,Kuroland Badge,クロランドのバッジ,크롤랜드의 뱃지
+库洛兰德,庫洛蘭德,Kuroland,クロランド,크롤랜드
+徽章,徽章,Badge,バッジ,뱃지
+"放置失败,该位置已放置其他建筑","放置失敗,該位置已放置其他建築","Placement failed, another building has been placed at this location",配置に失敗しました。他の建物がこの位置に配置されています,배치에 실패했습니다. 이 위치에 다른 건물이 배치되었습니다.
+税率,稅率,Tax Rate,税率,세율
+队伍中，无法存在2个完全相同的战略技能，包括技能石附加的技能,隊伍中，無法存在2個完全相同的戰略技能，包括技能石附加的技能,"The party cannot have 2 identical strategic skills, including those granted by skill stones.",パーティ内には、スキルストーンで付与されたスキルを含め、完全に同一の戦略スキルを2つ存在させることはできません。,파티 내에는 스킬 스톤으로 부여된 스킬을 포함해 완전히 동일한 전략 스킬 2개가 존재할 수 없습니다.
+坐骑,坐騎,Mounts,マウント,마운트
+烈焰王冠,烈焰王冠,Blazing Diadem,炎の王冠,불꽃 왕관
+黄金圣杯,黃金聖杯,Golden Grail,黄金の聖杯,황금 성배
+宠物,寵物,Pet,ペット,펫
+魔法使,魔法使,Magic Messenger,魔法使い,마법사
+魔法使召唤卷,魔法使召喚卷,Magic Messenger Summon Scroll,魔法使い召喚卷,마법사 소환권
+雪藤猫,雪藤貓,Snowvine Cat,雪のつる猫,설등고양이
+岩石术士,岩石術士,Rock Geomancer,石術師,바위 술사
+熔岩使,熔岩使,Lava Messenger,ラーヴァ使い,용암술사
+风叶蛇,風葉蛇,Windleaf Serpent,風葉蛇,바람잎뱀
+咕噜岩,咕嚕岩,Gurgle Rock,グルルロック,골룸 바위
+疾风狐,疾風狐,Swift Fox,疾風狐,스위프트 폭스
+雪狐,雪狐,Snow Fox,ユキギツネ,설여우
+铁甲兽,鐵甲獸,Ironclad Beast,鉄の獣,철갑수
+冰凌鲨,冰凌鯊,Ice Shark,アイスシャーク,얼음 상어
+龙龟,龍龜,Dragon Turtle,ドラゴンタートル,용거북
+魔法使成长助力包,魔法使成長助力包,Magic Messenger Growth Support Packs,魔法使い成長サポートパック,마법사 성장 지원 패키지
+召唤魔法使,召喚魔法使,Summon Magic Messenger,魔法使い召喚,마법사 소환
+普通敌人,普通敵人,Normal Enemy,通常敵,보통 적
+跳过动画,跳過動畫,Skip,スキップ,스킵
+初心者盛宴,初心者盛宴,Beginner's Feast,初心者の饗宴,초심자 향연
+求浇水,求澆水,Need Watering,水やり求む,물주기 요청
+求点赞,求點讚,Begging Likes,いいね懇願,좋아요 간청
+北境世界,北境世界,Northland World,北境世界,노스랜드 월드
+落星岛,落星島,Falling Star Island,落星島,떨어지는 별 섬
+恶龙要塞,惡龍要塞,Dragon's Fortress,悪竜の要塞,악룡의 요새
+巨型,巨型,Giant,巨大,거대한
+预设,預設,Presets,プリセット,프리셋
+原始大陆,原始大陸,Primordial Continent,原始大陸,원시 대륙
+哥布林的要塞,哥布林的要塞,Goblin Fortress,ゴブリンの要塞,고블린 요새
+哥布林的王庭,哥布林的王庭,Goblin Palace,ゴブリンの王庭,고블린 궁전
+亡灵军团的要塞,亡靈軍團的要塞,Undead Army's Fortress,アンデッド軍団の要塞,언데드 군대의 요새
+亡灵军团的总坛,亡靈軍團的總壇,Undead Army's Altar,アンデッド軍団の本部,언데드 군대의 제단
+自选包,自選包,Optional Packages,自選パック,선택 가능 패키지
+日限购,日限購,Daily Purchase Limit,日別購入制限,일일 구매 제한
+周限购,周限購,Weekly Purchase Limit,週間購入制限,주간 구매 제한
+月限购,月限購,Monthly Purchase Limit,月間購入制限,월간 구매 제한
+使用后可自行选择以下道具中的1个,使用後可自行選擇以下道具中的1個,"After use, select 1 prop from the following",使用後、以下の道具から1つを選択可能,사용 후 아래 아이템 중 1개를 선택할 수 있습니다
+所有在编队的英雄,所有在編隊的英雄,All heroes in your formation,編成中の全てのヒーロー,편성 중 모든 영웅
+预约宣战,預約宣戰,Scheduled War Declaration,予約宣戦,예약하다 선전 포고
+立即宣战,立即宣戰,Declare War Immediately,即時宣戦,즉시 선전 포고
+哥布林遗迹,哥布林遺跡,Goblin Ruins,ゴブリン遺跡,고블린 유적
+距离开战倒计时,距離開戰倒計時,Countdown to Battle Start,開戦までのカウントダウン,선전 포고 카운트다운
+已存在,已存在,Already Exists,既に存在,이미 존재함
+使用后获得英雄技能,使用後獲得英雄技能,Grants hero skill when used,使用後ヒーロースキルを獲得,사용 후 영웅 스킬 획득
+若已有该技能则转化为技能经验,若已擁有該技能則轉化為技能經驗,"If the skill is already owned, converts it to skill EXP",既に所持している場合、スキル経験値に変換,이미 보유한 스킬일 경우 스킬 경험치로 전환
+初心者技能包,初心者技能包,Beginner Skill Pack,初心者スキルパック,초심자 스킬 패키지
+参与攻城战，奖励将通过邮件及时发放,參與攻城戰，獎勵將通過郵件即時發放,Participants in Siege Battles will receive rewards via mail immediately,攻城戦参加者にはメールで即時報酬を配布,공성전 참여 시 메일로 보상 즉시 지급
+未参与攻城战，可在服务器首次通关后15日，消耗周奖励次数直接领取,未參與攻城戰，可在伺服器首次通關後15日內，消耗周獎勵次數直接領取,Non-participants in Siege Battles can claim rewards directly within 15 days after server first clear by consuming weekly reward times,攻城戦に未参加のプレイヤーは、サーバー初クリアから15日後に週間報酬回数を消費して直接受け取れます,공성전에 참여하지 않은 플레이어는 서버 최초 클리어 후 15일 이후 주간 보상 횟수를 소모하여 보상을 획득할 수 있습니다.
+所有进入联盟巨型投石车的队伍将在攻城战开启后随投石车自动开火,所有進入聯盟巨型投石車的隊伍將在攻城戰開啟後隨投石車自動發動攻擊,All squads entering the Union Giant Trebuchet will automatically attack with it when the Siege Battle begins.,同盟の巨大トレビュシェットに入った全部隊は、攻城戦開始時に自動的に攻撃を行います,클랜 대형 투석기에 진입한 모든 부대는 공성전 시작 시 자동으로 공격을 수행합니다
+巨型投石车伤害值由所有队伍的破坏值决定,巨型投石車的傷害值由所有隊伍的破壞值總和決定,The Giant Trebuchet's Destruction is determined by the combined Destruction Value of all squads.,巨大トレビュシェットのダメージは全部隊の破壊力値の合計で決定されます,대형 트레뷰셋의 피해량은 모든 부대의 파괴력 수치 합계로 결정됩니다
+招募新人,招募新人,Recruiting Newb,新規メンバー募集中,초보자 환영
+快捷分享,快速分享,Quick Share,クイックシェア,빠른 공유
+魔力结晶,魔力結晶,Magic Crystal,マナクリスタル,마력 결정
+普通联盟成员,普通聯盟成員,Ordinary Union Members,一般同盟メンバ,일반 연합원
+自动移除对象仅普通联盟成员，不包含精英及以上成员,自動移除對象僅限普通聯盟成員，不包含精英及以上成員,"Auto-remove targets only ordinary Union Members, excluding elite and higher members",自動削除の対象は一般同盟メンバーのみで、エリート以上のメンバーは含まれません。,"자동 제거 대상은 일반 연맹 구성원만이며, 엘리트 이상 구성원은 포함되지 않습니다."
+自动移除联盟成员,自動移除聯盟成員,Auto-remove Union Members,同盟メンバーの自動削除,연맹 연합원 자동 제거
+书籍,書籍,Books,書籍,책
+收藏品,收藏品,Collections,収集品,콜렉션
+游记,遊記,Travel Notes,旅行記,여행기
+日记,日記,Diary,日記,일기
+杂记,雜記,Misc Notes,雑記,잡기
+唯一道具，仅会获得1次,唯一道具，僅獲得1次,"Unique Prop, can only be obtained once",ユニーク道具、一度だけ入手可能です。,"고유 아이템, 한 번만 획득 가능"
+历练证书,歷練證書,Trials Credential,試練の証,시련 증표
+训练手册,訓練手冊,Training Manual,訓練手冊,훈련 수첩
+传记,傳記,Biography,伝記,전기
+人物传记集,人物傳記集,Biographical Collection,人物伝記集,인물 전기 모음집
+使用率,使用率,Usage Rate,使用率,사용률
+上传,上傳,Upload,アップロード,업로드
+作者,作者,Author,著者,작가
+历练合集,歷練合集,Trials Compendium,試練集成,시련 모음집
+训练手册合集,訓練手冊合集,Training Manuals Compendium,訓練手冊集成,훈련 수첩 모음집
+秘闻,秘聞,Anecdote,秘話,비화
+确认将该方案公开上传至热门方案？,確認將該方案公開上傳至熱門方案？,Confirm publishing this Plan to Popular Plans?,このプランを人気のプランとして公開しますか？,이 계획을 인기 계획으로 공개하시겠습니까？
+请添加一段方案描述,請添加一段方案描述,Please add a Plan description,プランの説明文を追加してください,계획 설명을 추가해 주세요
+个人,個人,Personal,個人,개인
+种植收益,種植收益,Planting Income,栽培収益,재배 수익
+市政办公室,市政辦公室,Municipal Office,政務室,도시집무실
+我的事务官,我的事務官,My Officer,マイオフィサー,나의 관리관
+更换事务官,更換事務官,Replace Officer,オフィサーを交換,관리관 교체
+事务官,事務官,Officer,オフィサー,관리관
+返还,返還,Return,返還,반환
+原始之证,原始之證,Primordial Certificate,原始の証,원시의 증표
+预览,預覽,Preview,プレビュー,시사
+身高,身高,Height,身長,키
+生日,生日,Birthday,誕生日,생일
+兴趣爱好,興趣愛好,Interests,趣味,취미
+性格,性格,Personality,性格,성격
+据点建造凭证,據點建造憑證,Outpost Construction Permit,拠点建設許可証,거점 건설 허가증
+陨铁矿,隕鐵礦,Meteoric Iron Mine,隕鉄鉱山,운석 철광산
+陨铁商店,隕鐵商店,Meteoric Iron Store,隕鉄ショップ,운석 철광산 상점
+成长计划,成長計劃,Growth Path,成長計画,성장 경로
+汇总,匯總,Summary,概要,요약
+资源消耗降低,資源消耗降低,Resource Consume Decrease,資源消耗DOWN,자원 소모 감소
+攻城,攻城,Attack City,城攻め,포위 공격
+训练士兵,訓練士兵,Train Soldiers,兵士を訓練,병사 훈련
+可以在交易所互换,可在交易所互換,Can be exchanged on Exchange,取引所で交換可能,거래소에서 교환 가능
+战马,戰馬,Warhorse,軍馬,군마
+温泉池,溫泉池,Hot Spring Pool,温泉池,온천 연못
+小于5分钟,小於5分鐘,Less than 5 mins,5分未満,5분 미만
+浮标文字,浮標文字,Floating Text,浮き文字,떠있는 글자
+引导任务,引導任務,Tutorial Quest,ガイド付き任務,안내 임무
+每次捐献奖励,每次捐獻獎勵,Reward per Donation,寄付ごとの報酬,기부당 보상
+在落星岛,在落星島,On Falling Star Island,落星島で,떨어지는 별 섬에서
+英勇战士盛宴,英勇戰士盛宴,Brave Warriors' Feast,勇猛なる戦士の饗宴,용맹한 전사의 향연
+落星岛只能传送前往,落星島只能傳送前往,Falling Star Island is only accessible by teleportation,落星島にはテレポートでのみ行けます,떨어지는 별 섬은 텔레포트로만 이동 가능합니다
+据点,據點,Outpost,拠点,거점
+个人档案,個人檔案,Personal Profile,プロフィール,프로필
+姓名,姓名,Name,名前,이름
+请选择你周围包含鲜花的格子,請選擇你周圍包含鮮花的格子,Select adjacent tiles containing flowers,周囲の花があるマスを選択してください,주변에 꽃이 있는 칸을 선택하세요
+快捷用语,快捷用語,Quick Chat,クイックチャット,퀵 채팅
+月季花,月季花,Chinese Rose,コウシンバラ,차이나로즈
+输出,輸出,DPS,DPS,DPS
+治疗,治療,Healer,回復役,힐러
+控制,控制,CC,制御役,컨트롤러
+增益,增益,Buffer,強化役,버퍼
+减益,減益,Debuffer,弱化役,디버퍼
+本服务器有任意联盟通关大型关卡,本伺服器有任意聯盟通關大型關卡,Any Union on this server has cleared a Large level,このサーバーには、大きなレベルをクリアした同盟が1つあります,이 서버의 어느 한 클랜이 대규모 레벨을 클리어했습니다.
+自动帮助盟友,自動幫助盟友,Auto assist allies,自動的に同盟メンバーを支援,자동 지원 클랜
+配音,配音,Dubbing,吹替え,더빙
+反馈,回饋,Feedback,フィードバック,피드백
+资源转换,資源轉換,Resource Conversion,資源変換,자원 전환
+英雄手册,英雄手冊,Hero Manual,ヒーロー手冊,영웅 수첩
+性别转换,性別轉換,Gender Change,性別変更,성별 변경
+庄园,莊園,Manor,荘園,장원
+我的庄园,我的莊園,My Manor,マイ荘園,나의 장원
+批量,大量,Batch,一括,일괄
+一键种植,一鍵種植,Quick Planting,クイック植栽,원클릭 심기
+一键浇水,一鍵澆水,Quick Watering,クイック水やり,원클릭 물주기
+一键采摘,一鍵採摘,Quick Picking,クイック収穫,원클릭 수확
+战报提示,戰報提示,Battlelog Tips,戦報ヒント,전투 보고 알림
+暂停,暫停,Pause,停止,정지
+下一场,下一場,Next,次へ,다음
+匹配中,匹配中,Matchmaking,マッチング中,매칭 중
+再来一局,再來一局,Play Again,もう一度,다시 하기
+缺少装饰组件,缺少裝飾組件,Decoration Parts Missing,装飾パーツ不足,장식 부품 부족
+是否继续引用,是否繼續引用,Continue Referencing?,続行しますか？,계속하시겠습니까?
+锁定装饰建筑,鎖定裝飾建築,Lock Decorations,装飾を固定,장식 고정
+福袋,福袋,Lucky Bag,福袋,복주머니
+福袋礼包,福袋禮包,Lucky Gift Bag,福袋パック,복주머니 선물세트
+领主天赋点,領主天賦點,Lord Talent Points,領主天賦ポイント,영주 재능점
+扩展卡,擴展卡,Expansion Card,拡張カード,확장 카드
+使用后消耗领主经验,使用後消耗領主經驗,Consumes Lord EXP when used,使用時に領主EXPを消費,사용 시 영주 경험치 소모
+需要额外消耗领主经验,需要額外消耗領主經驗,Requires additional Lord EXP,追加で領主EXPを消費します,추가 영주 경험치가 소모됩니다
+扩展书,擴展書,Expansion Book,拡張書,확장서
+领主知识书,領主知識書,Lord Knowledge Book,領主の知識書,영주의 지식서
+年龄,年齡,Age,年齢,나이
+在倒计时内选择与您相邻的格子,在倒計時內選擇與您相鄰的格子,Select adjacent grids within the countdown,カウントダウン内に隣接するグリッドを選択,카운트다운 안에 인접한 그리드를 선택
+若所在格子仅有您一人则获得鲜花,若所在格子僅有您一人則獲得鮮花,"If you are the only one in the grid, you will receive flowers",そのグリッドに自分だけがいる場合、花を獲得,해당 그리드에 자신만 있는 경우 꽃을 획득
+若有多人选择相同位置，则都不获得鲜花,若有多人選擇相同位置，則都不獲得鮮花,"If multiple players choose the same location, none will receive flowers",複数のプレイヤーが同じ場所を選択した場合、誰も花を獲得できない,"여러 플레이어가 같은 위치를 선택한 경우, 모두 꽃을 획득하지 못함"
+游戏规则,遊戲規則,Game Rules,ゲームルール,게임 규칙
+全天开放,全天開放,Open all day,終日開放,24시간 개방
+答题时间除外,答題時間除外,Except during quiz times,クイズ時間を除く,퀴즈 시간 제외
+"即将开启知识问答,暂时无法参与","即將開啟知識問答,暫時無法參與","Knowledge Quiz is about to start, temporarily unable to participate",知識クイズ開始直前のため、一時参加不可,"지식 퀴즈 시작 준비 중, 일시적으로 참여 불가"
+点击任意空白处停止自动战斗,點擊任意空白處停止自動戰鬥,Click any blank area to stop auto-battle,任意の空白箇所をクリックすると、自動戦闘が停止します,임의의 빈 공간을 클릭하면 자동 전투가 멈춥니다
+答题活动每天最多参加一次,答題活動每天最多參加一次,Knowledge Quiz event can be joined once per day at most,知識クイズイベントは1日1回まで参加可能,지식 퀴즈 이벤트는 하루에 최대 1회 참여 가능
+上限,上限,Upper,上限,상한
+装扮中,裝扮中,Decorating,着飾る中,장식 중
+收起,收起,Collapse,折りたたむ,접기
+展开,展開,Expand,展開する,펼치기
+赛区,賽區,Division,リーグ,경기장
+组,組,Group,グループ,그룹
+击杀BOSS时，离线时间小于24小时或在线联盟成员均会获得奖励,擊殺BOSS時，離線時間小於24小時或在線聯盟成員均可獲得獎勵,"When killing a BOSS, all members of the alliance who are offline < 24 hours or online will receive rewards.",BOSS撃破時、24時間以内に離脱していた、または現在オンライン中の同盟メンバー全員が報酬を受け取ります。,"BOSS 처치 시, 24시간 이내 오프라인 상태였거나 현재 온라인인 연맹원 모두 보상을 획득합니다。"
+正在输入,正在輸入,Typing,入力中,입력 중
+领地内的部分资源会在每个月初刷新,領地內的部分資源會在每個月初刷新,Some resources within the territory will refresh at the beginning of each month,領地内の一部リソースは毎月月初にリセットされます,영지 내 일부 자원은 매월 초에 새로고침됩니다
+考核,考核,Trial,試練,시험
+领主考核,領主考核,Lord's Proving,領主の試練,영주의 시험
+考核目标,考核目標,Trial Objectives,試練目標,시험 목표
+击败对手,擊敗對手,Defeat the opponent,相手を倒す,상대를 처치하라
+特殊要求,特殊要求,Special Requirements,特別な要求,특별 요구 사항
+己方没有任何英雄阵亡,己方沒有任何英雄陣亡,No hero casualties on our side,自軍に英雄の戦死者なし,아군 영웅 사상자 없음
+己方士兵伤亡率小于25%,己方士兵傷亡率小於25%,Our soldier casualty rate <25%,自軍の士兵損傷率は <25%,아군 사상자율이 <25%
+敌方士兵伤亡率大于75%,敵方士兵傷亡率大於75%,Enemy soldier casualty rate >75%,敵軍の士兵損傷率は >75%,적군 사상자율이 >75%
+在前4回合斩首敌方统帅,在前4回合斬首敵方統帥,Defeat the enemy commander within the first 4 rounds,最初の4ラウンド内に敵将を撃破,첫 4라운드 내 적 지휘관 처치
+只能出战人族英雄,只能出戰人族英雄,Only human heroes can be deployed,人間族の英雄のみ出撃可能,인간족 영웅만 출전 가능
+只能出战兽人英雄,只能出戰獸人英雄,Only orc heroes can be deployed,獸族の英雄のみ出撃可能,오크족 영웅만 출전 가능
+只能出战精灵英雄,只能出戰精靈英雄,Only elf heroes can be deployed,精靈族の英雄のみ出撃可能,엘프족 영웅만 출전 가능
+用3支队伍战胜5支队伍,用3支隊伍戰勝5支隊伍,Defeat 5 troops with 3 troops,3つのチームで5つのチームに勝つ,3개의 팀으로 5개의 팀을 이기다
+选择需要替换的英雄,選擇需要替換的英雄,Select the hero to be replaced,交代するヒーローを選択,교체할 영웅을 선택하세요
+考核官,考核官,Trial Master,試練官,심사관
+全英雄试玩,全英雄试玩,Trial All Heroes,全英雄試用可能,모든 영웅 체험 가능
+考核官每周一更换,考核官每周一更换,Trial Master refreshes every Monday,審査官は毎週月曜日に更新,심사관은 매주 월요일마다 갱신
+每日奖励次数,每日獎勵次數,Daily Reward Times,デイリーボーナス回数,일일 보상 횟수
+每周奖励次数,每週獎勵次數,Weekly Reward Times,ウィークリーボーナス回数,주간 보상 횟수
+通过这种方式领取将无法获得参战奖励与排行奖励,通過這種方式領取將無法獲得參戰獎勵與排行獎勵,Claiming rewards this way will make you Unable to obtain battle rewards and ranking rewards,この方法で報酬を受け取ると、参戦報酬とランキング報酬は獲得できません,이 방법으로 보상을 수령하면 참전 보상과 랭킹 보상을 획득할 수 없습니다
+托管战斗,託管戰鬥,Battle Hosting,ホスティング,호스팅
+托管中,託管中,Auto Progress,おまかせ中,위탁 중
+在后台自行战斗，连续失败3次后停止,在後台自行戰鬥，連續失敗3次後停止,"Fights automatically in the background, stops after 3 consecutive losses",バックグラウンドで自動戦闘を行い、3回連続で敗北すると停止,"백그라운드에서 자동으로 전투하며, 3회 연속 패배 시 중지"
+关闭当前界面或退出游戏均不会受到影响,關閉當前界面或退出遊戲均不會受到影響,Closing the current interface or exiting the game will not affect it,現在のインターフェースを閉じたり、ゲームを終了したりしても影響を受けません,현재 인터페이스를 닫거나 게임을 종료해도 영향을 받지 않습니다
+求编队,求編隊,Request Team Formation,編成をリクエスト,팀 구성 요청
+为您浇水,為您澆水,Watered For You,が農場に水やり,가 농장에 물 줌
+个人版,個人版,Personal Edition,個人版,개인판
+已收藏,已收藏,Favorited,すでに収集済み,이미 수집됨
+寻找,尋找,Find,検索,검색
+超值,超值,Value,お得,초특가
+已失效,已失效,Expired,期限切れ,만료됨
+签到领取大量抽卡卷,簽到領取大量抽卡卷,Sign In to Get a Large Number of Summon Scrolls,ログインして大量召喚卷を獲得,로그인하고 대량의 소환서 획득
+T0辅助，次日就送,T0輔助，隔天就送,"T0 Support, Given the Next Day",T0補助キャラ、翌日即時プレゼント,"T0보조 캐릭터,다음 날 즉시 지급"
+今日帮助浇水已获得最大生活点,今日幫助澆水已獲得最大生活點,Maximum Life Points already received from helping with watering today,本日は水やり協助で獲得可能な生活ポイントが上限に達しました,오늘 물주기 도움으로 최대 생활 포인트를 이미 획득함
+来迟一步，已浇水完毕,來遲一步，已澆水完畢,"Too late, already watered",遅かった、もう水やり完了,"늦었어요, 이미 물주기 완료됨"
+已浇水,已澆水,Already watered,水やり済み,물주기 완료
+限时获得,限時獲得,Limited Editio,期間限定,기간 한정
+进攻这里,進攻這裡,Attack here,ここを攻撃,여기 공격
+防守这里,防守這裡,Defend here,ここを防衛,여기 방어
+撤离这里,撤離這裡,Retreat from here,ここから撤退,여기서 철수
+岛屿争夺战,島嶼爭奪戰,Island Battle,島の戦い,섬 전투
+水晶大本营,水晶大本營,Crystal Base,クリスタルベース,크리스털 기지
+进攻方登陆点,進攻方登陸點,Attacker Landing Site,攻撃側上陸地点,공격자 상륙 지점
+防守方据点,防守方據點,Defender's Base,防衛側基地,수비자 기지
+小型岛屿,小型島嶼,Small Island,小型島,소형 섬
+中型岛屿,中型島嶼,Medium Island,中型島,중형 섬
+大型岛屿,大型島嶼,Large Island,大型島,대형 섬
+岩垂要塞,岩垂要塞,Iwadare Fortress,岩垂要塞,이와다레 요새
+对方已开启月卡,對方已開啟月卡,The other party has activated the Monthly Card.,相手は月額カードを利用中です,상대방이 월정액 이용권을 활성화했습니다.
+对方已开启豪华月卡,對方已開啟豪華月卡,The other party has activated the Luxury Card.,相手は豪華月カードを利用中です,상대방이 프리미엄 월정액 이용권을 활성화했습니다.
+已装备,已裝備,Equipped,装備済み,장착됨
+通关阵容,通關陣容,Clearance Lineup,クリア編成,클리어 편성
+伤亡率,傷亡率,Casualty Rate,損傷率,피해율
+选择要赠送的好友,選擇要贈送的好友,Select a friend to gift,贈り物をするフレンドを選択,선물할 친구 선택
+请输入新密码,請輸入新密碼,Please enter a new password,新しいパスワードを入力してください,새 비밀번호를 입력하세요
+为你编队,為你編隊,Make a team for you,あなたのために編成する,너를 위해 팀을 구성한다
+运输中,運輸中,In Transit,輸送中,수송 중
+回城后自动补充士兵,回城後自動補充士兵,Automatically replenish troops after returning to city,帰城後自動的に士兵を補充,귀성 후 자동으로 병사 보충
+补充士兵,補充士兵,Replenish troops,士兵を補充,병사 보충
+该设置适用于一键补兵,該設置適用於一鍵補兵,This setting applies to Quick Refill Troops,この設定はクイック兵士補充に適用されます,해당 설정은 빠른 병사 보충에 적용됩니다
+关闭点击特效,關閉點擊特效,Close Click Effects,クリックエフェクトを閉じる,클릭 이펙트 닫기
+城市扩充4次后可以使用,城市擴充4次後可以使用,Available after 4 City Expansions,都市拡大4回後に利用可能,도시 확충 4회 후 사용 가능
+已培养,已培養,Trained,育成済み,성장 완료
+请前往Steam平台充值,請前往Steam平台充值,Please go to Steam Platform to recharge,Steamプラットフォームでチャージしてください,Steam 플랫폼에서 충전해 주세요
+可占领,可佔領,Occupiable,占領可能,점령 가능
+目标点,目標點,Objective,目標地点,목표 지점
+建筑总览,建築總覽,All Buildings,建築物一覧,건물 개요
+可以一格一格逐步前往,可以一格一格逐步前往,Can move step by step,1マスずつ逐步的に移動可能,한 칸씩 단계적으로 이동 가능
+海岛争夺战期间无法变更公会成员,海島爭奪戰期間無法變更公會成員,Cannot change guild members during Island Conquest,島争奪戦期間中はギルドメンバーを変更できません,섬 쟁탈전 기간 동안 길드원을 변경할 수 없습니다
+积分奖励,積分獎勵,Points Rewards,ポイント報酬,포인트 보상
+我的积分,我的積分,My Points,マイポイント,마이 포인트
+海岛争夺战,海島爭奪戰,Island Conquest,島争奪戦,섬 쟁탈전
+海岛商店,海島商店,Island Store,島商店,섬 상점
+海岛晶石,海島晶石,Island Crystal,島晶石,섬 수정
+生长药剂,生長藥劑,Growth Potion,成長ポーション,성장 포션
+使庄园内种植的种子加速生长1小时,使莊園內種植的種子加速生長1小時,Accelerates growth of planted seeds in the Manor by 1 hour,荘園内に植えられた種子の成長を1時間加速します,장원 내 심어진 씨앗의 성장을 1시간 가속합니다
+建造【神殿】建筑后可使用星光卡,建造【神殿】建築後可使用星光卡,Starlight Cards can be used after constructing the [Temple] building.,スターライトカードは[神殿]を建設した後に使用できます。,[사원] 건물을 건설한 후 별빛 카드를 사용할 수 있습니다.
+建造【神殿】建筑后可使用神魔卡,建造【神殿】建築後可使用神魔卡,God and Demon Cards can be used after constructing the [Temple] building.,神と悪魔のカードは[神殿]を建設した後に使用できます。,[사원] 건물을 건설한 후에는 신카드와 마왕카드를 사용할 수 있습니다.
+战报不提示红点,戰報不提示紅點,Battlelog no red dot notification,戦報の赤点通知なし,전투 보고 빨간 점 알림 없음
+在情报站派遣,在情報站派遣,Dispatch at Information Station,情報所で派遣,情報所で派遣
+按玩家使用率排序,按玩家使用率排序,Sort by Player Usage Rate,プレイヤー使用率でソート,플레이어 사용률로 정렬
+"进阶消耗的英雄将以""英雄卡""道具的形式放入背包","進階消耗的英雄將以""英雄卡""道具的形式放入背包","Heroes consumed for Advancement will be converted into ""Hero Card"" items in your pack",進階で消費した英雄は「ヒーローカード」アイテムとしてバッグに追加されます,"진급에 소모된 영웅은 ""영웅 카드"" 아이템으로 배낭에 들어갑니다"
+派遣中,派遣中,Dispatching,派遣中,파견 중
+结束派遣,結束派遣,End Dispatch,派遣を終了,파견 종료
+新服务器开放时间：每月1号和每月15号,新伺服器開放時間：每月1號和每月15號,New Server Opening Schedule: 1st and 15th of each month,新サーバー開放時間：毎月1日と15日,신규 서버 오픈 시간：매월 1일과 15일
+发来了新的消息,發來了新的消息,sent a new message,から新しいメッセージが届きました,에게서 새로운 메시지가 도착했습니다
+触发相遇事件,觸發相遇事件,Trigger Encounter Event,遭遇イベント発動,만남 이벤트 발동
+地点,地點,Location,場所,장소
+街道,街道,Street,街路,거리
+酒馆,酒館,Tavern,酒場,주점
+郊外,郊外,Outskirts,郊外,교외
+只有处于轻伤状态的士兵才可以在战斗中治疗，重伤或死亡的士兵无法治疗,只有處於輕傷狀態的士兵才可以在戰鬥中治療，重傷或死亡的士兵無法治療,Only soldiers with Slight Wound can be healed during combat; those with Severe Wound or Death cannot be healed,軽傷の兵士のみ戦闘中に治療可能、重傷の兵士または戦死は治療不可,"경상 병사만 전투 중 치료 가능, 중상 병사 또는 전사는 치료 불가"
+轻伤士兵随着战斗的持续进行，每回合会有一定的比例转化为重伤或阵亡士兵,輕傷士兵隨著戰鬥的持續進行，每回合會有一定的比例轉化為重傷或陣亡士兵,"As combat continues, a certain percentage of Slight Wound soldiers will convert to Severe Wound or Death each round",戦闘が続くにつれ、軽傷の兵士は各ラウンドで一定の割合が重傷の兵士または戦死に転化する,전투가 지속됨에 따라 매 턴마다 일정 비율의 경상 병사가 중상 병사 또는 전사로 전환됨
+在战场中的士兵伤情逐渐恶化，由轻伤转为重伤或死亡,在戰場中的士兵傷情逐漸惡化，由輕傷轉為重傷或死亡,"On the battlefield, soldiers' injuries gradually worsen, changing from Slight Wound to Severe Wound or Death",戦場では兵士の傷情が徐々に悪化し、軽傷から重傷または戦死に転化する,"전장에서 병사들의 부상이 점점 악화되어, 경상에서 중상 또는 전사로 전환된다"
+约会,約會,Date,デート,데이트
+触发约会事件,觸發約會事件,Trigger Date Event,デートイベント発動,데이트 이벤트 발동
+选择约会场所,選擇約會場所,Choose Date Location,デート場所を選択,데이트 장소 선택
+虽然来市政办公室约会非常的突兀，但是你知道的我是个工作狂,雖然來市政辦公室約會非常突兀，但是你知道的我是個工作狂,"Though coming to the Municipal Office for a date is quite unusual, but you know I'm a workaholic",政務室でデートするのはとても奇妙ですが、あなたも知っての通り私は仕事の鬼です,"도시집무실에서 데이트하는 것은 매우 어색하지만, 알다시피 저는 워커홀릭이에요"
+今天有一个提案挺有意思，是关于让居民24h工作的,今天有個提案挺有意思，是關於讓居民24h工作的,There's an interesting proposal today about making residents work 24/7,今日なかなか面白い提案があります、住民に24時間労働させることについてです,"오늘 꽤 흥미로운 제안이 하나 있어요, 주민들이 24시간 일하게 하는 것에 관한 거죠"
+虽然我是城主，但今天吃饭还是要AA的。,雖然我是城主，但今天吃飯還是要AA的,"Although I'm the lord, we're going Dutch today",私は城主ですが、今日の食事は割り勘にします,"비저는 성주이지만, 오늘 식사는 더치페이 할게요"
+想吃点什么吗？,想吃點什麼嗎？,What would you like to eat?,何か食べたいものは？,뭐 먹을래요?
+今天我请客，你尽管喝。,今天我請客，你儘管喝,"It's my treat today, drink as much as you want",今日は私のおごりです、存分に飲んでください,"오늘은 제가 살게요, 마음껏 드세요"
+这个酒馆的兔女郎有点眼熟。,這個酒館的兔女郎有點眼熟,The bunny girl at this tavern looks familiar,この酒場のバニーガールはどこかで見た覚えが,이 주점의 바니 걸이 좀 익숙한데요
+这里的环境真不错，我们一起走走吧。,這裡的環境真不錯，我們一起走走吧,"The environment here is really nice, let's take a walk together",ここは環境が本当に素敵ですね、一緒に散歩しましょう,"여기 환경이 정말 좋네요, 함께 걸어요"
+你今天穿的真好看。,你今天穿的真好看,You look really beautiful today,あなた今日の服とても素敵ですね,오늘 입은 옷 정말 예뻐요
+士兵克制关系,士兵克制關係,Soldier Restraint Relationships,兵士の抑制関係,병사 상성 관계
+无克制关系,無克制關係,No Restraint Relationship,抑制関係なし,상성 관계 없음
+存在新版本道具,存在新版本道具,New version items exist,新しいバージョンのアイテムが存在します,새로운 버전 항목이 있습니다
+请更换最新客户端,請更換最新客戶端,Please update to the latest client.,最新のクライアントに更新してください。,최신 클라이언트로 업데이트해 주세요.
+接着上回的对话,接著上回的對話,Continuing from last conversation,前回の對話の続き,지난 대화에 이어서
+新的对话,新的對話,New dialogue,新しい対話,새로운 대화
+热气球,熱氣球,Hot balloon,熱気球,열기구
+大世界死亡复活点,大世界死亡復活點,Great World Death Respawn Point,大世界デスリスポーン地点,큰세계 죽음 부활 지점
+最近据点,最近據點,Nearest Outpost,最寄りの拠点,가장 가까운 거점
+圣诞之夜盛宴,聖誕之夜盛宴,Christmas Night Feast,聖夜の饗宴,성야의 향연
+节日,節日,Festival,祭典,축제
+社区,社群,Community,コミュニティ,커뮤니티
+功能建筑摆放完整的预设方案才可引用,功能建築擺放完整的預設方案才可引用,Only preset plans with all functional buildings placed can be referenced.,機能建築を全て配置したプリセットプランのみ参照可能です.,기능 건물이 모두 배치된 프리셋만 불러오기 할 수 있습니다.
+确认将该方案公开上传至社区？,確認將該方案公開上傳至社群？,Confirm publicly uploading this plan to the community?,このプランをコミュニティに公開アップロードしますか？,이 프리셋을 커뮤니티에 공개 업로드하시겠습니까?
+审核中,審核中,Under Review,審査中,심사 중
+预览中,預覽中,Preview,プレビュー中,미리 보기
+元旦盛宴,元旦盛宴,New Year's Feast,元旦の饗宴,원단 향연
+预设方案,預設方案,Preset Plan,プリセットプラン,프리셋
+多套领主时装属性无法叠加生效，仅能选择1套设置生效,多套領主時裝屬性無法疊加生效，僅能選擇1套設定生效,The attributes of multiple Lord Fashion sets cannot stack; only one set can be set to be active.,複数の領主クチュールの属性は重複して適用されず、1セットのみを設定して有効にすることができます。,"여러 영주 꾸뛰르의 속성은 중첩 적용되지 않으며, 1개 세트만 선택하여 설정 활성화할 수 있습니다."
+多套领主时装的时尚值可以叠加,多套領主時裝的時尚值可以疊加,The Fashion Points from multiple Lord Fashion sets can be stacked.,複数の領主クチュールの人気ポイントは累算できます。,여러 영주 꾸뛰르의 패션 포인트는 중첩됩니다.
+已通关,已通關,Cleared,クリア済み,클리어 완료
+未通关,未通關,Not Cleared,未クリア,클리어 안 됨
+排行奖励找回,排行獎勵找回,Rank Reward Recovery,ランキング報酬復元,랭킹 보상 복구
+永久卡特权：排行奖励找回,永久卡特權：排行獎勵找回,Permanent Card Benefit: Rank Reward Recovery,永久カード特典：ランキング報酬復元,영구 카드 특권: 랭킹 보상 복구
+只能找回已通关过的BOSS，按排行6-10名的奖励找回,只能找回已通關過的BOSS，按排行6-10名的獎勵找回,Only cleared BOSS can have rewards recovered. Rewards are recovered based on rank 6-10.,クリア済みのBOSSに限り、ランキング6-10位の報酬に基づいて復元されます,"클리어한 BOSS에 한해, 랭킹 6-10위 보상 기준으로 복구됩니다"
+找回奖励次数,找回獎勵次數,Recover Reward Times,報酬復元回数,보상 복구 횟수
+记忆空间,記憶空間,Memory Space,記憶空間,기억 공간
+记忆片段,記憶片段,Memory Fragment,記憶の断片,기억 조각
+记忆碎片,記憶碎片,Memory Shard,記憶の欠片,기억 파편
+通关遗迹后的可扫荡次数,通關遺跡後的可掃蕩次數,Sweep Count Available After Clearing Ruins,遺跡クリア後の掃蕩可能回数,유적 클리어 후 소탕 가능 횟수
+遗迹结束时,遺跡結束時,When the Ruins End,遺跡終了時,유적 종료 시
+已摆放完整,已擺放完整,Has been fully placed,配置完了,배치 완료
+功能建筑未摆放完整,功能建筑未擺放完整,Functional buildings are not fully placed.,機能建築が全て配置されていません。,기능 건물이 모두 배치되지 않았습니다.
+收藏方案已被作者删除,收藏方案已被作者刪除,The saved plan has been deleted by its author.,保存されたプランは作者により削除されました,저장된 플랜이 작성자에 의해 삭제되었습니다
+以实时皮肤收集数据为准,以實時皮膚收集數據為準,Based on real-time skin collection data.,リアルタイムのスキン収集データを基準とします,실시간 스킨 수집 데이터를 기준으로 합니다.
+重置英雄皮肤再解锁新英雄皮肤不会增加收集进度,重置英雄皮膚再解鎖新英雄皮膚不會增加收集進度,Resetting a hero skin and then unlocking a new hero skin will not increase collection progress.,ヒーロースキンをリセットして新たなヒーロースキンを解除しても、収集進捗は増加しません,영웅 피부를 초기화하고 새로운 영웅 피부를 잠금 해제해도 수집 진행도는 증가하지 않습니다.
+自动中,自動中,Auto In Progress,自動中,자동 중
+引用当前布局,引用當前佈局,Refer Current Layout,現在のレイアウトを引用,현재 배치 인용
+加油包,加油包,Boost Pack,応援パック,부스트 팩
+元旦,元旦,New Year's Day,元旦です,새해 첫날
+春节,春節,Spring Festival,旧正月には,설날
+国庆,國慶,National Day,國慶節,국경절
+中秋,中秋,Mid-Autumn Festival,中秋節,중추절
+端午节,端午節,Dragon Boat Festival,端午の節句,단오절
+劳动节,勞動節,Labour Day,メーデー,노동절
+其他玩家拜访您的城市获得点赞,其他玩家拜訪您的城市獲得點贊,Other players receive Likes when they visit your city,他のプレイヤーがあなたの都市を訪問していいねを獲得します,다른 플레이어가 당신의 도시를 방문하여 좋아요를 얻습니다
+年兽,年獸,New Year Beast,年獣,설 짐승
+烟花,煙花,Fireworks,花火,불꽃
+先锋队,先鋒隊,Pioneer Team,先鋒チーム,선봉 팀
+攻城队,攻城隊,Siege Team,攻城チーム,공성 팀
+冲锋队,衝鋒隊,Assault Team,突撃チーム,돌격 팀
+炮击队,砲擊隊,Bombardment Team,砲撃チーム,포격 팀
+服务器合并公告,伺服器合併公告,Server Merge Announcement,マージサーバーのお知らせ,서버 병합 공고
+更新公告,更新公告,Update Announcement,アップデートのお知らせ,업데이트 공고
+临时复活点,臨時復活點,Temporary Respawn Point,一時リスポーン地点,임시 부활 지점
+"占领水晶后解锁的建筑,占领方的队伍死亡后,从此建筑复活,占领方的队伍也可以进入此建筑恢复兵力",佔領水晶後解鎖的建築。佔領方的隊伍死亡後，可從此建築復活；佔領方的隊伍也可進入此建築恢復兵力。,"A structure unlocked after occupying the Crystal. After death, the occupying team respawns from this structure and can also enter it to restore troops.",水晶占領後に解除される建物。占領側のチームが死亡後、この建物から復活し、またこの建物に入り兵力を回復できる。,"크리스탈 점령 후 해금되는 건물. 점령 측 팀이 죽은 후 이 건물에서 부활하며, 이 건물에 들어가 병력을 회복할 수 있습니다."
+登陆点,登陸點,Landing Site,上陸地点,상륙 지점
+"每个颜色的阵营都有各自的登陆点,当队伍阵亡后,若没有占领水晶,则从登陆点复活,登陆点也可恢复兵力",每個顏色的陣營都有各自的登陸點。當隊伍陣亡後，若沒有佔領水晶，則從登陸點復活。登陸點也可恢復兵力。,"Each color faction has its own Landing Site. When a team is wiped out, if the Crystal is not occupied, they respawn from the Landing Site. The Landing Site can also restore troops.",各色陣営にはそれぞれの上陸地点があります。チームが全滅した後、水晶を占領していない場合は上陸地点から復活し、上陸地点でも兵力を回復できます。,"각 색상 진영마다 각자의 상륙 지점이 있습니다. 팀이 전멸했을 때 크리스탈을 점령하지 않았다면 상륙 지점에서 부활하며, 상륙 지점에서도 병력을 회복할 수 있습니다."
+黎明之剑,黎明之劍,Dawnblade,黎明の剣,여명의 검
+"占领此建筑后,本阵营的所有队伍均会获得'造成伤害提高'效果",佔領此建築後，本陣營的所有隊伍均會獲得「造成傷害提高」效果。,"After occupying this structure, all teams of your faction gain the 'DMG Dealt Increased' effect.",この建物を占領後、自陣営の全チームが「与えるダメージUP」効果を獲得します。,"이 건물을 점령한 후, 아군 진영의 모든 팀이 '주는 피해가 증가' 효과를 획득합니다."
+守护之盾,守護之盾,Guardian Shield,守護の盾,수호의 방패
+"占领此建筑后,本阵营的所有队伍均会获得'受到伤害降低'效果",佔領此建築後，本陣營的所有隊伍均會獲得「受到傷害降低」效果。,"After occupying this structure, all teams of your faction gain the 'DMG Taken Reduced' effect.",この建物を占領後、自陣営の全チームが「受けるダメージDOWN」効果を獲得します。,"이 건물을 점령한 후, 아군 진영의 모든 팀이 '받는 피해가 감소' 효과를 획득합니다."
+水晶,水晶,Crystal,クリスタル,크리스탈
+"决定战场胜利的建筑,占领该建筑会解锁临时复活点",決定戰場勝利的建築。佔領該建築會解鎖臨時復活點。,The structure that determines victory in the battlefield. Occupying it unlocks the Temporary Respawn Point.,戦場の勝利を決定する建物。これを占領すると一時リスポーン地点が解除されます。,전장의 승리를 결정하는 건물. 이 건물을 점령하면 임시 부활 지점이 해금됩니다.
+胜利条件,勝利條件,Victory Condition,勝利条件,승리 조건
+"活动结束时,占领该建筑的阵营胜利,如果双方都没有占领水晶,则总积分多的阵营胜利,若积分也相同,则双方均判定为失败",活動結束時，佔領該建築的陣營勝利。如果雙方都沒有佔領水晶，則總積分多的陣營勝利；若積分也相同，則雙方均判定為失敗。,"At the end of the event, the faction occupying this structure wins. If neither side occupies the Crystal, the faction with the higher total score wins. If scores are tied, both sides are considered defeated.",イベント終了時、この建物を占領している陣営が勝利します。双方とも水晶を占領していない場合は、総スコアが多い陣営が勝利します。スコアも同じ場合は、双方が敗北と判定されます。,"이벤트 종료 시, 이 건물을 점령한 진영이 승리합니다. 양측 모두 크리스탈을 점령하지 않았다면 총 점수가 더 많은 진영이 승리합니다. 점수도 동일할 경우, 양측 모두 패배로 판정됩니다."
+"交通节点,若据点内有不同阵营的玩家,会立即发生交战",交通節點，若據點內有不同陣營的玩家，會立即發生交戰。,"Traffic Node. If players from different factions are inside the Outpost, combat will trigger immediately.",交通拠点。拠点内に異なる陣営のプレイヤーがいる場合、即時交戦が発生します。,교통 거점. 거점 내에 서로 다른 진영의 플레이어가 있으면 즉시 전투가 발생합니다.
+高亮据点,高亮據點,Highlighted Outpost,ハイライト拠点,하이라이트 거점
+"在所有据点中,有部分据点是处于高亮状态的,进入这种据点,可持续获得个人积分",在所有據點中，有部分據點處於高亮狀態。進入這種據點，可持續獲得個人積分。,"Among all Outposts, some are in a highlighted state. Entering such an Outpost grants continuous personal score.",全ての拠点の中で、一部の拠点はハイライト状態です。このような拠点に入ると、持続的に個人スコアを獲得できます。,모든 거점 중 일부 거점은 하이라이트 상태입니다. 이러한 거점에 들어가면 지속적으로 개인 점수를 획득할 수 있습니다.
+每个颜色的阵营都有各自的登陆点,每個顏色的陣營都有各自的登陸點,Each color faction has its own Landing Site,各色陣営にはそれぞれの上陸地点があります,각 색상 진영마다 각자의 상륙 지점이 있습니다
+"当队伍阵亡后,若没有占领水晶,则从登陆点复活,登陆点可恢复兵力,敌方队伍无法进入",當隊伍陣亡後，若沒有佔領水晶，則從登陸點復活，登陸點可恢復兵力，敵方隊伍無法進入。,"When a team is wiped out, if the Crystal is not occupied, they respawn from the Landing Site. The Landing Site can restore troops and is inaccessible to enemy teams",チームが全滅した後、水晶を占領していない場合は上陸地点から復活します。上陸地点では兵力を回復でき、敵チームは進入できません。,"팀이 전멸했을 때 크리스탈을 점령하지 않았다면 상륙 지점에서 부활합니다. 상륙 지점에서 병력을 회복할 수 있으며, 적 팀은 들어갈 수 없습니다."
+"交通节点,若据点内有不同阵营的玩家,会立即发生交战",交通節點，若據點內有不同陣營的玩家，會立即發生交戰。,"Traffic Node. If players from different factions are inside the Outpost, combat will trigger immediately",交通拠点。拠点内に異なる陣営のプレイヤーがいる場合、即時交戦が発生します。,교통 거점. 거점 내에 서로 다른 진영의 플레이어가 있으면 즉시 전투가 발생합니다.
+"进入高亮据点,可持续获得个人积分",進入高亮據點，可持續獲得個人積分。,Entering a Highlighted Outpost grants continuous personal score.,ハイライト拠点に入ると、持続的に個人スコアを獲得できます。,하이라이트 거점에 들어가면 지속적으로 개인 점수를 획득할 수 있습니다.
+双方队伍发生战斗,雙方隊伍發生戰鬥,Teams from both sides engage in combat,双方のチームが戦闘を開始します,양측 팀이 전투를 벌입니다
+"占领此建筑后,本阵营的所有队伍均会获得'受到伤害降低'效果,离开建筑后效果消失",佔領此建築後，本陣營的所有隊伍均會獲得‘受到傷害降低’效果，離開建築後效果消失。,"After occupying this structure, all teams of your faction gain the 'DMG Taken Reduced' effect. The effect is lost upon leaving the structure.",この建物を占領後、自陣営の全チームが「受けるダメージDOWN」効果を獲得します。建物を離れると効果は消失します。,"이 건물을 점령한 후, 아군 진영의 모든 팀이 '받는 피해가 감소' 효과를 획득합니다. 건물을 떠나면 효과가 사라집니다."
+"占领此建筑后,本阵营的所有队伍均会获得'造成伤害提高'效果,离开建筑后效果消失",佔領此建築後，本陣營的所有隊伍均會獲得‘造成傷害提高’效果，離開建築後效果消失。,"After occupying this structure, all teams of your faction gain the 'DMG Dealt Increased' effect. The effect is lost upon leaving the structure.",この建物を占領後、自陣営の全チームが「与えるダメージUP」効果を獲得します。建物を離れると効果は消失します。,"이 건물을 점령한 후, 아군 진영의 모든 팀이 '주는 피해가 증가' 효과를 획득합니다. 건물을 떠나면 효과가 사라집니다."
+占领水晶后解锁临时复活点,佔領水晶後解鎖臨時復活點,Occupying the Crystal unlocks the Temporary Respawn Point.,水晶を占領すると、一時リスポーン地点が解除されます。,크리스탈을 점령하면 임시 부활 지점이 해금됩니다.
+"占领方的队伍死亡后,从此建筑复活,占领方的队伍也可以进入此建筑恢复兵力",佔領方的隊伍死亡後，從此建築復活，佔領方的隊伍也可以進入此建築恢復兵力。,"After death, the occupying team respawns from this structure and can also enter it to restore troops.",占領側のチームが死亡後、この建物から復活し、またこの建物に入り兵力を回復できます。,"점령 측 팀이 죽은 후 이 건물에서 부활하며, 이 건물에 들어가 병력을 회복할 수 있습니다."
+"活动结束时,占领该建筑的阵营胜利",活動結束時，佔領該建築的陣營勝利。,"At the end of the event, the faction occupying this structure wins.",イベント終了時、この建物を占領している陣営が勝利します。,"이벤트 종료 시, 이 건물을 점령한 진영이 승리합니다."
+"如果双方都没有占领水晶,则总积分多的阵营胜利",如果雙方都沒有佔領水晶，則總積分多的陣營勝利。,"If neither side occupies the Crystal, the faction with the higher total score wins.",双方とも水晶を占領していない場合は、総スコアが多い陣営が勝利します。,양측 모두 크리스탈을 점령하지 않았다면 총 점수가 더 많은 진영이 승리합니다.
+"若积分也相同,则双方均判定为失败",若積分也相同，則雙方均判定為失敗。,"If scores are tied, both sides are considered defeated.",スコアも同じ場合は、双方が敗北と判定されます。,"점수도 동일할 경우, 양측 모두 패배로 판정됩니다."
+蓝队,藍隊,Blue Team,ブルーチーム,블루 팀
+红队,紅隊,Red Team,レッドチーム,레드 팀
+连杀,連殺,Kill Streak,連続キル,연속 킬
+规则,規則,Rules,ルール,규칙
+介绍,介紹,Introduction,紹介,소개
+个人积分,個人積分,Personal Score,個人スコア,개인 점수
+"战斗结束后,奖励通过邮件发送",戰鬥結束後，獎勵透過郵件發送。,"After the battle ends, rewards are sent via mail.",戦闘終了後、報酬はメールで送信されます。,"전투 종료 후, 보상은 메일로 발송됩니다."
+注意,注意,Note,注意,주의
+离开,離開,Leave,離脱,떠나기
+这里,這裡,Here,ここ,여기
+岛屿争夺战即将开启，请各位领主大人前往幻想广场准备,島嶼爭奪戰即將開啟，請各位領主大人前往幻想廣場準備,"Island Battle is about to begin, please proceed to Fantasy Plaza to prepare",島の戦いがまもなく開始します、領主様は幻想広場へお進みください,"섬 전투가 곧 시작됩니다, 영주님들께서는 환상 광장으로 이동해 주세요"
+回放,回放,Replay,リプレイ,다시보기
+试玩,試玩,Trial Version,体験版,체험판
+阵地战,陣地戰,Positional Battle,陣地戦,위치전
+个人击杀,個人擊殺,Personal Kill,個人キル,개인 킬
+赛场,賽場,Arena,競技場,아레나
+击杀榜,擊殺榜,Kill Rank,キルランキング,킬 순위표
+红方阵营,紅方陣營,Red Camp,レッド陣営,레드 캠프
+蓝方阵营,藍方陣營,Blue Camp,ブルー陣営,블루 캠프
+阵地徽章,陣地徽章,Positional Badge,陣地バッジ,위치 배지
+骰子,骰子,Dice,サイコロ,주사위
+金骰子,金骰子,Golden Dice,金のサイコロ,황금 주사위
+神灯,神燈,Magic Lamp,魔法のランプ,마법 램프
+星星,星星,Star,スター,별
+路牌,路牌,Road Sign,道路標識,길 표지판
+累计圈数,累計圈數,Cumulative Laps,累積周回数,총계 랩 수
+累计星星,累計星星,Cumulative Stars,累積スター,총계 별
+新年特惠,新年特惠,New Year Sale,新年特価,새해 특가
+永久限购,永久限購,Limited Forever,永久限定購入,영구 한정 구매
+通过聊天获得的好感度重置时不返还,通過聊天獲得的好感度重置時不返還,Favorability gained through chat is not refunded upon Reset,チャットで獲得した好感度はリセット時に返還されません,채팅으로 획득한 호감도는 초기화 시 반환되지 않습니다
+即将开启,即將開啟,About to Begin,まもなく開始,곧 시작
+跨服玩法,跨服玩法,Cross Server Gameplay,クロスサーバープレイ,크로스 서버 플레이
+士兵等级统一平衡为T5等级,士兵等級統一平衡為T5等級,Soldier levels are uniformly balanced to T5,兵士レベルがT5レベルに統一調整される,병사 레벨이 T5 레벨로 균일하게 밸런스 조정됩니다
+新年红包,新年紅包,New Year Red Envelope,新年のお年玉,새해 복돈
+最多50名玩家领取,最多50名玩家領取,Up to 50 players can claim,最大50名のプレイヤーが受け取れます,최대 50명의 플레이어가 받을 수 있습니다
+精准打击,精準打擊,Precision Strike,精密打撃,정밀 타격
+神马城堡,神馬城堡,Divine Horse Fort,神馬城,신마 성
+求助,求助,Help,ヘルプ,도움말
+回答出正确答案,回答出正确答案,Answer Correctly,正解を答える,정답을 맞히다
+帮助次数,幫助次數,Helped Times,支援を回数,도움 횟수
+下一题,下一題,Next,次の問題,다음 문제
+自动攻城,自動攻城,Auto Siege,自動攻城め,자동 공성
+严寒北境,嚴寒北境,Frozen North,厳寒の北境,혹한의 북부
+风暴海洋,風暴海洋,Stormy Ocean,嵐の海,폭풍의 바다
+天空之城,天空之城,Sky City,天空の城,하늘 성
+北境军团的要塞,北境軍團的要塞,North Legion Fortress,北境軍団の要塞,북부 군단의 요새
+北境军团的首都,北境軍團的首都,North Legion Capital,北境軍団の首都,북부 군단의 수도
+海鲨军团的要塞,海鯊軍團的要塞,Shark Legion Fortress,海鮫軍団の要塞,해상어 군단의 요새
+海鲨军团的总队,海鯊軍團的總隊,Shark Legion HQ,海鮫軍団の総隊,해상어 군단의 본부
+空域守卫的要塞,空域守衛的要塞,Skyguard Fortress,空域守衛の要塞,공역 수호대의 요새
+空域守卫的城邦,空域守衛的城邦,Skyguard City,空域守衛の城邦,공역 수호대의 성국
+请命令队伍攻击任意守军,請命令隊伍攻擊任意守軍,Order your team to attack any Defender,部隊に任意の守備軍を攻撃するよう命令してください,팀에 임의의 수비군을 공격하도록 명령하십시오
+设置密码的房间无法分享,設置密碼的房間無法分享,Rooms with passwords cannot be shared,パスワード設定中のルームは共有できません,암호가 설정된 방은 공유할 수 없습니다
+已加入,已加入,Joined,参加済み,가입됨
+屏蔽系统奖励提示,屏蔽系統獎勵提示,Block System Reward Popups,システム報酬ポップアップをブロック,시스템 보상 알림 차단
+大学,大學,University,大学,대학
+造船厂,造船廠,Shipyard,造船所,조선소
+船舶航行速度,船舶航行速度,Ship Navigation Speed,船舶航行速度,선박 항해 속도
+船舶贸易所得金币收益,船舶貿易所得金幣收益,Gold Income from Ship Trade,船舶貿易によるゴールド収入,선박 무역 골드 수익
+贸易特产,貿易特產,Trade Specialty,貿易特産品,무역 특산품
+船舶传送石,船舶傳送石,Ship Teleportation Stone,船舶テレポート石,선박 텔레포트석
+当船舶处于空仓状态时可快速传送回港口,當船舶處於空倉狀態時可快速傳送回港口,"When the ship is empty, it can quickly teleport back to the port",船舶が空荷の状態の時、港へ高速転送できます,선박이 공창 상태일 때 항구로 빠르게 텔레포트할 수 있습니다
+特级贸易特产,特級貿易特產,Premium Trade Specialty,特級貿易特産品,특급 무역 특산품
+航海贸易,航海貿易,Maritime Trade,航海貿易,항해 무역
+Q版,Q版,Cute,可愛い,귀엽다
+海岛币,海島幣,Island Coin,島コイン,섬 코인
+海岛阵地战,海島陣地戰,Island Positional Battle,島陣地戦,섬 위치전
+港口,港口,Port,港,항구
+优先选择货架中价值最高的特产进行贸易,優先選擇貨架中價值最高的特產進行貿易,Prioritize trading the specialty with the highest value in the cargo rack,貨物棚の中で最も価値の高い特産品を優先して貿易する,화물 선반에서 가장 가치가 높은 특산품을 우선적으로 무역하기
+急缺,急缺,Short,不足中,급부족
+开始贸易,開始貿易,Start Trade,貿易開始,무역 시작
+循环次数,循環次數,Number of Cycles,周回数,반복 횟수
+货架,貨架,Cargo Rack,貨物棚,화물 선반
+货物携带数,貨物攜帶數,Cargo Capacity,貨物携帯数,화물 적재량
+贸易,貿易,Trade,貿易,무역
+贸易收获,貿易收穫,Trade Gains,貿易収穫,무역 수확
+等待运输并贩卖的特产,等待運輸並販賣的特產,Specialties Waiting to be Transported and Sold,輸送・販売待ちの特産品,운송 및 판매 대기 중인 특산품
+自动传送,自動傳送,Auto Teleport,自動転送,자동 텔레포트
+全部取出,全部取出,Take All,すべて取り出す,전체 꺼내기
+放入,放入,Put In,入れる,넣기
+取出,取出,Take Out,取り出す,꺼내기
+日常订单,日常订单,Daily Order,日常注文,일일 주문
+海岛订单,海島订单,Island Order,島の注文,섬 주문
+航海学院,航海學院,Navigation Academy,航海学院,항해 학원
+神马宫殿,神馬宮殿,Divine Horse Palace,神馬宮殿,신마 궁전
+英雄皮肤收集,英雄皮膚收集,Hero Skin Collection,ヒーロースキン収集,영웅 스킨 수집
+英雄皮肤,英雄皮膚,Hero Skin,ヒーロースキン,영웅 스킨
+选择要放入货架的特产,選擇要放入貨架的特產,Select the specialty to put into the cargo rack,貨物棚に入れる特産品を選択,화물 선반에 넣을 특산품 선택
+"货船每次循环贸易中,自动消耗传送石返回起始点",貨船每次循環貿易中，自動消耗傳送石返回起始點,"During each trade cycle, the cargo ship automatically consumes Teleport Stones to return to the starting point",各貿易サイクルにおいて、貨物船は自動的にテレポート石ンを消費して出発地点に戻ります,화물선은 순환 무역을 할 때마다 텔레포트석을 자동 소비하여 출발점으로 돌아간다
+启航之地,啟航之地,Departure Place,出発の地,출항지
+已达到最大好感度,已達到最大好感度,has reached maximum Favorability,の好感度が最大に達しました,의 호감도가 최대치에 도달했습니다
+删除中,刪除中,Deleting,削除中,삭제 중
+一键扫荡,一鍵掃蕩,Quick Sweep,クイック掃蕩,빠른 소탕
+游记商人,遊記商人,Travelogue Merchant,旅行記商人,여행기 상인
+使用传送石召回,使用傳送石召回,Use Teleportation Stone to Recall,テレポート石を使用してリコール,선박 텔레포트석을 사용하여 호출
+是否确认,是否確認,Confirm?,確認しますか?,확인하시겠습니까?
+使用传送石召回将丢弃所有船上的货物,使用傳送石召回將丟棄所有船上的貨物,Using Teleportation Stone to Recall will discard all goods on the ship.,テレポート石を使用してリコールすると、船内の貨物がすべて破棄されます。,선박 텔레포트석을 사용하여 호출하면 배에 있는 모든 화물이 버려집니다.
+魔法园,魔法園,Magic Garden,魔法の庭,마법의 정원
+最初的约定,最初的約定,Original Promise,最初の約束,최초의 약속
+明日继续,明日繼續,Continue Tomorrow,続きは明日,내일 계속하기
+限领,限領,Limited Claim,限定受け取り,한정 수령
+第1天,第1天,1st Day,1日目,1일차
+第2天,第2天,2nd Day,2日目,2일차
+第3天,第3天,3rd Day,3日目,3일차
+第4天,第4天,4th Day,4日目,4일차
+第5天,第5天,5th Day,5日目,5일차
+第6天,第6天,6th Day,6日目,6일차
+第7天,第7天,7th Day,7日目,7일차
+第8天,第8天,8th Day,8日目,8일차
+第9天,第9天,9th Day,9日目,9일차
+第10天,第10天,10th Day,10日目,10일차
+第11天,第11天,11th Day,11日目,11일차
+第12天,第12天,12th Day,12日目,12일차
+第13天,第13天,13th Day,13日目,13일차
+第14天,第14天,14th Day,14日目,14일차
+新手礼物,新手禮物,Novice Gift,初心者贈り物,초보자 선물
+一键配置,一鍵配置,Quick Setup,クイック設定,빠른 설정
+最强5星英雄任你选择,最強5★英雄任你選擇,Choose any strongest 5★ hero you like,最強の5★ヒーローをお好きに選べ,최강의 5★ 영웅을 마음껏 선택하세요
+五一特惠,五一特惠,Labor Day Specials,労働節特価,노동절 특가
+国庆特惠,國慶特惠,National Day Specials,国慶節特価,국경절 특가
+节日特惠,節日特惠,Holiday Specials,祝日特価,명절 특가

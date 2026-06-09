@@ -1,0 +1,34 @@
+﻿fundId,Buildtype,NeedLv,funName,GoPanel,funName_en
+1,11,1,{英雄召唤},SumPanel_1,Hero Summon
+2,10,1,{研究},SciencePanel_1,Research
+3,9,1,{联盟},UnionPanel,Union
+4,12,1,{庄园},-1,Manor
+5,19,1,{英雄} {派遣},DispatchPanel,Hero Dispatch
+6,21,1,{传送门},0,Portal
+7,13,1,{行脚商人},MarketPanel_8,Traveling Merchant
+9,20,1,{装备} {制造},SmithyPanel,Equip Make
+11,22,1,{图书馆},LibraryPanel,Library
+30,26,1,{委托任务},VipPanel,Delegate Quest
+16,1,2,{荒原},-1,Wilderness
+12,1,3,{签到},SevenDaySignPanel,Sign-in
+13,1,4,{成就},-1,Achievement
+32,1,5,{英雄培养手册},-1,Hero Train Manual
+14,1,8,{商城},-1,Shop
+15,1,6,{大世界},WorldPanel,Great World
+8,1,7,{好友},FriendPanel,Friend
+17,1,8,{遗迹},TeamInfoPanel,Ruins
+29,1,9,{特产运输},WorldPanel,Specialty Transport
+19,1,10,{竞技场},PVPPanel_1,Arena
+18,1,11,{居民},AffairsPanel,Residents
+26,1,12,{神魔试炼},PVEPanel,Divine Demon Trial
+10,1,13,{圣物召唤},SumPanel_4,Relic Summon
+21,1,14,{天梯赛},PVPPanel_3,Ladder Tournament
+31,1,15,{深渊},PVEPanel,Abyss
+28,1,16,{世界首领},WorldBossPanel,World Boss
+22,1,17,{挑战领主},ChallengeLZPanel,Challenge Lord
+20,1,18,{荣耀竞技场},PVPPanel_2,Glory Arena
+23,1,19,{比武大会},PVPPanel_4,Tournament
+33,-1,80,{英雄} {宝鉴},PlayerInfoPanel,Hero Codex
+24,-1,30,{修炼洞穴},TeamInfoPanel_5,Training Cave
+25,-1,40,{次元之地},TeamInfoPanel_6,Dimensional Land
+27,-1,50,{恶龙巢穴},TeamInfoPanel_8,Dragon's Lair

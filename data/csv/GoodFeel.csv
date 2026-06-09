@@ -1,0 +1,13 @@
+﻿lv,upLvExp,costProp,des,value,des_en
+0,100,1515_1,{无},0,Nothing
+1,200,1515_2,{英雄全属性} +1,1,Heroes All Attributes +1
+2,300,1515_3,{英雄全属性} +2,2,Heroes All Attributes +2
+3,500,1515_5,{英雄全属性} +3,3,Heroes All Attributes +3
+4,700,1515_7,{英雄全属性} +5,5,Heroes All Attributes +5
+5,900,1515_9,{英雄全属性} +7,7,Heroes All Attributes +7
+6,1200,1515_12,{英雄全属性} +9,9,Heroes All Attributes +9
+7,1500,1515_15,{英雄全属性} +12,12,Heroes All Attributes +12
+8,1800,1515_18,{英雄全属性} +15,15,Heroes All Attributes +15
+9,2300,1515_28,{英雄全属性} +18,18,Heroes All Attributes +18
+10,3000,1525_1,{英雄全属性} +22,22,Heroes All Attributes +22
+11,99999999,0,{英雄全属性} +30,30,Heroes All Attributes +30
