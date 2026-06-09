@@ -121,8 +121,10 @@ In The First 3 Rounds,Make 2 Of Enemy Troops,DEF Reduced(Affected By DES Attribu
 Own Troop,ATK Attribute Increased(Affected By DEF Attribute)
 *Rarity ★3 · Max uses/battle: 2*
 
+Featured in **2** [recommended team(s)](../../Teams/Recommended-Teams.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

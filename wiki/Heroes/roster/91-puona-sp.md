@@ -144,8 +144,10 @@ Own Troop,When Receiving A Normal ATK,100% Counterattack
 | 3 | DMG Coefficient +0.084 |
 | 4 | DMG Coefficient +0.112 |
 
+Featured in **2** [recommended team(s)](../../Teams/Recommended-Teams.md) · Part of **20** [hero codex set(s)](../../Codex/Codex.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

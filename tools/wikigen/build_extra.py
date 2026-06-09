@@ -645,10 +645,70 @@ def gen_cumulative_costs(write, tbl, R):
 
 
 # --------------------------------------------------------------------------- #
+# Equipment & glossary
+# --------------------------------------------------------------------------- #
+_GEAR_SLOT = {"1": "Weapon", "2": "Armor", "3": "Pants", "4": "Helmet",
+              "5": "Bracers", "6": "Boots", "7": "Accessory", "8": "Accessory"}
+
+
+def gen_equipment(write, tbl, R):
+    """Player equipment = PropInfo type 3. Effect decodes via the EntryEffect
+    attribute catalog; Value is the gear's Power."""
+    gear = [r for r in load("PropInfo") if r.get("type") == "3"]
+    by_slot = collections.OrderedDict()
+    for r in gear:
+        by_slot.setdefault(r.get("PosType", "?"), []).append(r)
+    lines = ["Player equipment, grouped by slot. Each piece grants the listed attribute bonuses "
+             "(decoded against the [Attribute catalog](../Reference/Attributes.md)) and Power. "
+             "Rarity runs ★1 (White) → ★6 (Red).", ""]
+    for slot in sorted(by_slot, key=lambda x: int(x) if x.isdigit() else 99):
+        items = sorted(by_slot[slot], key=lambda r: (int(r.get("rare") or 0), int(r["id"])))
+        lines.append("## %s" % _GEAR_SLOT.get(slot, "Slot " + slot))
+        body = [[r["id"], clean(r.get("name_en") or r.get("name")), "★" + (r.get("rare") or "?"),
+                 R.expand_effects(r.get("Effect")), fmt_num(r.get("Value"))] for r in items]
+        lines += tbl(["ID", "Name", "Rarity", "Bonuses", "Power"], body)
+        lines.append("")
+    write("Items/Equipment.md", "Equipment / Gear", "Items", lines)
+
+
+def gen_glossary(write, tbl, R):
+    terms = [
+        ("ATK / AD", "Attack — the hero/troop's offensive power stat."),
+        ("DEF", "Defense — reduces incoming damage."),
+        ("Ruin / DES / DMG", "The same stat (\"Ruin\"): a destruction/penetration offensive stat. "
+                             "Shown as **Ruin** in stat tables, **DES**/**DMG** in some skill and buff text, and **R** in the leaderboards."),
+        ("Speed / SP", "Determines turn order in battle; not part of the offensive/defensive total."),
+        ("RST", "A hero's recommended troop & stat-point archetype (which troop type the hero is built for and "
+                "how unallocated stat points are distributed). See [Stats & Formulas](../Mechanics/Stats-and-Formulas.md)."),
+        ("RPoint", "Free stat points a hero can allocate (distributed per the hero's RST archetype)."),
+        ("Power", "A rating of overall strength. Total Power = Building + Science + Hero + Skill + Lord + Codex Power "
+                  "(computed server-side). Most config tables list the Power each level/item contributes."),
+        ("Troop types", "Infantry, Archer, Cavalry, Chariot — each soldier has a type with a restraint relationship "
+                        "(see [Game Tips](Tips.md) for the restraint cycle and combat rules)."),
+        ("Skill types", "Strategic, Tactical, Passive, Pursuit — see the [Skill Catalog](../Heroes/Skills.md)."),
+        ("Hero role", "DPS / Heal / CC (Control) / Buff / Debuff."),
+        ("Awaken", "Levelling a skill to raise its effect; per-level effects are on each hero's page."),
+        ("Advance (Adv) Lv", "A codex/collection level that scales hero-codex set bonuses."),
+        ("Favorability / GoodFeel", "Hero affinity track granting a global all-hero stat bonus. See [Favorability](../Progression/Favorability.md)."),
+        ("VIP", "Spending-based account tier granting cumulative buffs and daily bonuses. See [VIP](../Progression/VIP.md)."),
+        ("Cloud", "Fog-of-war world-map territory tiles (referenced by city/wilderness unlock requirements)."),
+        ("Stamina / Cost", "Action-point cost to run a dungeon or activity."),
+        ("Currencies", "Gems, Gold Coin, Honor Points, Union Points, Friendship Points, Life Points and event "
+                       "currencies — see [Shops](../Items/Shops.md) for what each buys."),
+    ]
+    lines = ["A reference for the recurring terms, stat abbreviations and game-specific jargon used "
+             "across this wiki.", ""]
+    lines += tbl(["Term", "Meaning"], [[t, d] for t, d in terms])
+    write("Reference/Glossary.md", "Glossary", "Reference", lines)
+
+
+# --------------------------------------------------------------------------- #
 def register(write, tbl, R):
     gen_overview(write, tbl, R)
     gen_hero_leaderboards(write, tbl, R)
     gen_cumulative_costs(write, tbl, R)
+    gen_equipment(write, tbl, R)
+    gen_glossary(write, tbl, R)
     gen_feature_unlocks(write, tbl, R)
     gen_building_unlocks(write, tbl, R)
     gen_item_sources(write, tbl, R)

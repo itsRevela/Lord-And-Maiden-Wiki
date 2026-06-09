@@ -144,8 +144,10 @@ Make 2 Of Enemy Troops,In A Silenced State,Cannot Launch Tactical Skills,Lasting
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+Featured in **5** [recommended team(s)](../../Teams/Recommended-Teams.md) · Part of **24** [hero codex set(s)](../../Codex/Codex.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

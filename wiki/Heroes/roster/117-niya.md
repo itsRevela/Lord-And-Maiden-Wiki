@@ -162,8 +162,10 @@ When ATK Normally,Launch Pursuit ATK On Target,And 40%/35%/30% Probability,Perfo
 | 4 | Skill Trigger Probability +6.4% |
 | 5 | Skill Trigger Probability +8.0% |
 
+Part of **24** [hero codex set(s)](../../Codex/Codex.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

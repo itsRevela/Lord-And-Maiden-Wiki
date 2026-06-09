@@ -144,8 +144,10 @@ In The First 3 Rounds,Make 2 Of our Troops,Pursuit Skill DMG Dealt Increased(Aff
 | 4 | Pursuit Skill DMG Dealt Increased +7.2%(Not Affected By Attribute) |
 | 5 | Pursuit Skill DMG Dealt Increased +9.0%(Not Affected By Attribute) |
 
+Featured in **2** [recommended team(s)](../../Teams/Recommended-Teams.md) · Part of **24** [hero codex set(s)](../../Codex/Codex.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

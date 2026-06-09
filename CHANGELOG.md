@@ -13,6 +13,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Skill Catalog **"Used by"** column (reverse index of which heroes carry each skill).
 - **Cumulative Costs (to Max)** — total resources + time to max every building and
   to fully complete the tech tree (independently cross-checked).
+- **Equipment / Gear** page — all player gear (PropInfo type 3) by slot, with
+  decoded attribute bonuses (via the EntryEffect catalog) and Power.
+- **Glossary** — stat abbreviations and game-specific jargon (Ruin/DES/DMG, RST,
+  Power composition, troop types, currencies, …).
+- Hero pages now cross-link to the recommended teams and codex sets that feature
+  them, plus the Lv 80 leaderboards.
+- Campaign page gained an **Enemy Lv** column (decoded from the AI-formation params).
+
+### Changed
+- Hero Codex set bonuses are now decoded (e.g. "Infantry HP +2") instead of showing
+  raw `EffectType`/`EffectVal`; required heroes link to their pages.
+- Skill Catalog gained a legend for the `Max Use` / `Ready Rd` columns.
 - **`tools/wikigen/build_extra.py`** — 19 additional wiki pages covering every
   remaining player-facing config: feature/building unlock gates, item sources,
   shops, recharge/gift packs, choice chests, gift-code rewards, relic dungeons,

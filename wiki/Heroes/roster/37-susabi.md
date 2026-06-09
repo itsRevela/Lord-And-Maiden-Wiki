@@ -144,8 +144,10 @@ Own Troop,Curse DMG Taken Reduced(Affected By DEF Attribute),And Increase All At
 | 3 | Curse DMG Taken Reduced +12%(Not Affected By Attribute) |
 | 4 | Curse DMG Taken Reduced +16%(Not Affected By Attribute) |
 
+Featured in **4** [recommended team(s)](../../Teams/Recommended-Teams.md) · Part of **20** [hero codex set(s)](../../Codex/Codex.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

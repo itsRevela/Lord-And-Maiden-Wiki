@@ -76,6 +76,7 @@
 
 ### Items
 - [Choice Chests](Items/Choice-Chests.md)
+- [Equipment / Gear](Items/Equipment.md)
 - [Gift Code Rewards](Items/Gift-Code-Rewards.md)
 - [Item Sources (How to Obtain)](Items/Item-Sources.md)
 - [Items & Resources (Props)](Items/Items.md)
@@ -86,4 +87,5 @@
 - [Avatar Frames](Reference/Avatar-Frames.md)
 - [Chat Emojis](Reference/Emojis.md)
 - [Game Tips](Reference/Tips.md)
+- [Glossary](Reference/Glossary.md)
 

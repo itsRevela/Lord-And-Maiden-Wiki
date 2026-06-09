@@ -205,13 +205,15 @@ def gen_troop_combos():
 
 def gen_codex():
     rows = load("CodexInfo")
-    lines = ["Hero codex sets — collecting the listed heroes grants the set bonus and Power.", "",
-             "*`Effect Type`/`Effect Val` are the raw set-bonus parameters from the data.*", ""]
+    lines = ["Hero codex sets — collecting the listed heroes grants the set bonus (and Power). "
+             "The bonus scales with the set's Advance level.", ""]
     body = []
     for r in rows:
-        heroes = " / ".join(R.hero_name(h) for h in r["NeedHeroList"].split("_") if h)
-        body.append([r["CodexId"], r["Rare"], r.get("AdLv", ""), heroes, r["EffectType"], r["EffectVal"]])
-    lines += tbl(["Codex ID", "Rare", "Adv Lv", "Heroes Required", "Effect Type", "Effect Val"], body)
+        heroes = " / ".join("[%s](../Heroes/roster/%s-%s.md)" % (R.hero_name(h), h, _slug(R.hero_name(h)))
+                            for h in r["NeedHeroList"].split("_") if h)
+        bonus = "%s +%s" % (R.effect_name(r["EffectType"]), r["EffectVal"])
+        body.append([r["CodexId"], "★" + r["Rare"], r.get("AdLv", ""), heroes, bonus])
+    lines += tbl(["Codex ID", "Rarity", "Adv Lv", "Heroes Required", "Set Bonus"], body)
     write("Codex/Codex.md", "Hero Codex (Collections)", "Codex & Collections", lines)
 
 
@@ -263,6 +265,18 @@ def gen_heroes():
 
 
 def gen_hero_pages(heroes):
+    # reverse indices: which recommended teams / codex sets feature each hero
+    team_map = collections.Counter()
+    for r in load("Recommend"):
+        for i in (1, 2, 3):
+            hh = r.get("HeroNum%d" % i, "0")
+            if hh not in ("0", ""):
+                team_map[hh] += 1
+    codex_map = collections.Counter()
+    for r in load("CodexInfo"):
+        for hh in r["NeedHeroList"].split("_"):
+            if hh:
+                codex_map[hh] += 1
     for h in heroes:
         hid = h["id"]
         nm = R.hero_name(hid)
@@ -344,9 +358,18 @@ def gen_hero_pages(heroes):
                     L += tbl(["Skill Lv", "Effect"],
                              [[a["Lv"], clean(a.get("des_en") or a.get("des"))] for a in aw])
             L.append("")
+        appears = []
+        if team_map.get(hid):
+            appears.append("Featured in **%d** [recommended team(s)](../../Teams/Recommended-Teams.md)" % team_map[hid])
+        if codex_map.get(hid):
+            appears.append("Part of **%d** [hero codex set(s)](../../Codex/Codex.md)" % codex_map[hid])
+        if appears:
+            L.append(" · ".join(appears))
+            L.append("")
         L.append("---")
         L.append("**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · "
-                 "[Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)")
+                 "[Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · "
+                 "[Lv 80 Leaderboards](../Hero-Leaderboards.md)")
         write("Heroes/roster/%s-%s.md" % (hid, _slug(nm)), nm, "_hidden", L)
 
 
@@ -370,7 +393,9 @@ def gen_skills():
     lines = ["Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. "
              "Skills level up (\"awaken\") — see per-level effects on each hero's page. "
              "`Impact` is the skill's base power coefficient; `Init`/`+Lv` show base value and per-level gain. "
-             "`Used by` lists heroes that carry the skill innately.", ""]
+             "`Used by` lists heroes that carry the skill innately.", "",
+             "*Legend: `Max Use` = uses per battle (0 = unlimited); `Ready Rd` = first round the skill "
+             "can fire (0 = available from round 1).*", ""]
     for st in sorted(by_t, key=lambda x: int(x)):
         lines.append("## %s Skills" % SKILL_TYPE_NAME.get(st, "Type " + st))
         body = []
@@ -579,13 +604,16 @@ def gen_bosses():
 def gen_campaign():
     rows = load("MainGate")
     lines = ["Main campaign stages (\"gates\"). Beat the enemy formation to clear; each grants a "
-             "first-clear reward and passive idle Income.", "",
+             "first-clear reward and passive idle Income. **Enemy Lv** is the first AI-formation "
+             "parameter (the trailing `_x_y` values are enemy stat-scaling multipliers).", "",
              "*%d stages total.*" % len(rows), ""]
     body = []
     for r in rows:
-        body.append([r["gateNum"], r.get("NeedLv", ""), R.expand_ai(r.get("AiInfo")),
+        params = (r.get("AiInfo") or "").partition("_")[2]
+        elv = params.split("_")[0] if params else "—"
+        body.append([r["gateNum"], r.get("NeedLv", ""), elv, R.expand_ai(r.get("AiInfo")),
                      R.expand_props(r.get("FirstAward"))])
-    lines += tbl(["Stage", "Lord Lv", "Enemy Formation", "First-Clear Reward"], body)
+    lines += tbl(["Stage", "Lord Lv", "Enemy Lv", "Enemy Formation", "First-Clear Reward"], body)
     write("World/Campaign.md", "Campaign (Main Gates)", "PvE & World", lines)
 
 

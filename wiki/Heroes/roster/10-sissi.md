@@ -117,8 +117,10 @@ Make 2 Of our Troops,Restore Life
 From The 5th Round,Make 2 Of our Troops,Before Each Round,Restore Life
 *Rarity ★3 · Max uses/battle: 2*
 
+Featured in **2** [recommended team(s)](../../Teams/Recommended-Teams.md)
+
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

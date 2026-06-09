@@ -2,6 +2,8 @@
 
 Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills level up ("awaken") — see per-level effects on each hero's page. `Impact` is the skill's base power coefficient; `Init`/`+Lv` show base value and per-level gain. `Used by` lists heroes that carry the skill innately.
 
+*Legend: `Max Use` = uses per battle (0 = unlimited); `Ready Rd` = first round the skill can fire (0 = available from round 1).*
+
 ## Strategic Skills
 | ID | Name | Rarity | Max Use | Ready Rd | Impact | Init | +/Lv | Description | Used by |
 |---|---|---|---|---|---|---|---|---|---|
