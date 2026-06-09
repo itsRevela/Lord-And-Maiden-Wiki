@@ -241,6 +241,8 @@ def gen_heroes():
              "with per-level **growth**; effective stat at level *L* = `base + floor(growth × L)`. "
              "Hero max level is **%d**. Click a hero for full per-level tables, skills, and lore." % (len(heroes), HERO_MAX_LEVEL),
              "",
+             "- **A/D/R/S** = **A**ttack / **D**efense / **R**uin (the destruction stat, also called "
+             "*DES* / *DMG*) / **S**peed.",
              "- **Rarity**: 2–5 (higher = rarer). **Race**: hero faction (1–3). "
              "**Role**: DPS / Heal / CC / Buff / Debuff. **RST**: recommended troop & stat-point archetype.",
              "- Skills are linked to the [Skill catalog](Skills.md).", ""]
@@ -415,7 +417,9 @@ def gen_ai_heroes():
     heroes = [h for h in load("HeroInfo") if not R.is_named_hero(h["id"])]
     heroes.sort(key=lambda h: int(h["id"]))
     lines = ["Non-roster heroes used by AI / enemies / events (%d). Same stat model as "
-             "[playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`." % len(heroes), ""]
+             "[playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`." % len(heroes), "",
+             "**A/D/R/S** = **A**ttack / **D**efense / **R**uin (the destruction stat, also called "
+             "*DES* / *DMG*) / **S**peed.", ""]
     body = []
     for h in heroes:
         body.append([h["id"], R.hero_name(h["id"]), "★" + h["rare"], RACE_NAME.get(h["type"], h["type"]),

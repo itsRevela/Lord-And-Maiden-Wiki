@@ -2,6 +2,8 @@
 
 Non-roster heroes used by AI / enemies / events (128). Same stat model as [playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`.
 
+**A/D/R/S** = **A**ttack / **D**efense / **R**uin (the destruction stat, also called *DES* / *DMG*) / **S**peed.
+
 | ID | Name | Rarity | Race | Base A/D/R/S | Growth A/D/R/S |
 |---|---|---|---|---|---|
 | 1001 | Crocodile | ★5 | Orc | 105/99/141/75 | 1.75/1.65/2.35/1.25 |

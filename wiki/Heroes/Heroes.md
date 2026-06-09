@@ -2,6 +2,7 @@
 
 The playable hero roster (122 heroes). Stats shown are **base** (level 0 reference) with per-level **growth**; effective stat at level *L* = `base + floor(growth × L)`. Hero max level is **80**. Click a hero for full per-level tables, skills, and lore.
 
+- **A/D/R/S** = **A**ttack / **D**efense / **R**uin (the destruction stat, also called *DES* / *DMG*) / **S**peed.
 - **Rarity**: 2–5 (higher = rarer). **Race**: hero faction (1–3). **Role**: DPS / Heal / CC / Buff / Debuff. **RST**: recommended troop & stat-point archetype.
 - Skills are linked to the [Skill catalog](Skills.md).
 
