@@ -561,13 +561,13 @@ def gen_hero_leaderboards(write, tbl, R):
         nm = R.hero_name(h["id"])
         link = "[%s](roster/%s-%s.md)" % (nm, h["id"], _slug(nm))
         rows.append({"h": h, "nm": nm, "link": link, "A": a, "D": d, "R": ru, "S": sp,
-                     "T": a + d + ru, "role": R.hero_role(h["id"])})
+                     "T": a + d + ru + sp, "role": R.hero_role(h["id"])})
     lines = ["End-game (Lv %d) computed stats for every named hero, using "
-             "`stat(80) = base + floor(growth × 80)`. Speed is a turn-order stat and is listed "
-             "separately from the offensive/defensive total. Use this to compare heroes at the "
+             "`stat(80) = base + floor(growth × 80)`. **Total** is the sum of all four stats "
+             "(Attack + Defense + Ruin + Speed). Use this to compare heroes at the "
              "level cap." % HERO_MAX_LEVEL, ""]
     # top tables per stat
-    for key, label in [("A", "Attack"), ("D", "Defense"), ("R", "Ruin"), ("S", "Speed"), ("T", "ATK+DEF+Ruin Total")]:
+    for key, label in [("A", "Attack"), ("D", "Defense"), ("R", "Ruin"), ("S", "Speed"), ("T", "Total Stats")]:
         top = sorted(rows, key=lambda x: -x[key])[:15]
         lines += ["## Top 15 by %s (Lv %d)" % (label, HERO_MAX_LEVEL), ""]
         lines += tbl(["#", "Hero", "★", "Role", label],
