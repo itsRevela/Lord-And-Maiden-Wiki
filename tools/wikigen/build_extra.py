@@ -567,7 +567,7 @@ def gen_hero_leaderboards(write, tbl, R):
              "separately from the offensive/defensive total. Use this to compare heroes at the "
              "level cap." % HERO_MAX_LEVEL, ""]
     # top tables per stat
-    for key, label in [("A", "Attack"), ("D", "Defense"), ("R", "Ruin"), ("T", "ATK+DEF+Ruin Total")]:
+    for key, label in [("A", "Attack"), ("D", "Defense"), ("R", "Ruin"), ("S", "Speed"), ("T", "ATK+DEF+Ruin Total")]:
         top = sorted(rows, key=lambda x: -x[key])[:15]
         lines += ["## Top 15 by %s (Lv %d)" % (label, HERO_MAX_LEVEL), ""]
         lines += tbl(["#", "Hero", "★", "Role", label],

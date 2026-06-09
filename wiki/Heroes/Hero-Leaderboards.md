@@ -62,6 +62,26 @@ End-game (Lv 80) computed stats for every named hero, using `stat(80) = base + f
 | 14 | [Cthugha](roster/32-cthugha.md) | 5 | DPS | 192 |
 | 15 | [Aguria](roster/95-aguria.md) | 5 | DPS | 186 |
 
+## Top 15 by Speed (Lv 80)
+
+| # | Hero | ★ | Role | Speed |
+|---|---|---|---|---|
+| 1 | [Eros·Sp](roster/65-eros-sp.md) | 5 | Buff | 237 |
+| 2 | [Yaya](roster/90-yaya.md) | 5 | Buff | 234 |
+| 3 | [Eurella](roster/107-eurella.md) | 5 | Buff | 234 |
+| 4 | [Thefis·Sp](roster/64-thefis-sp.md) | 5 | CC (Control) | 223 |
+| 5 | [Lumi](roster/113-lumi.md) | 5 | Buff | 223 |
+| 6 | [Cliodna](roster/3-cliodna.md) | 5 | Buff | 222 |
+| 7 | [Zoe·Sp](roster/77-zoe-sp.md) | 5 | DPS | 222 |
+| 8 | [Yao Lin](roster/112-yao-lin.md) | 5 | Buff | 222 |
+| 9 | [Bettina](roster/104-bettina.md) | 5 | DPS | 216 |
+| 10 | [Nyx](roster/116-nyx.md) | 5 | DPS | 216 |
+| 11 | [Perris](roster/22-perris.md) | 5 | DPS | 214 |
+| 12 | [Duffy·Sp](roster/78-duffy-sp.md) | 5 | CC (Control) | 210 |
+| 13 | [Isabelle](roster/118-isabelle.md) | 5 | Heal | 210 |
+| 14 | [Yaya·Sp](roster/122-yaya-sp.md) | 5 | Buff | 204 |
+| 15 | [Vanessa·Sp](roster/75-vanessa-sp.md) | 5 | CC (Control) | 201 |
+
 ## Top 15 by ATK+DEF+Ruin Total (Lv 80)
 
 | # | Hero | ★ | Role | ATK+DEF+Ruin Total |
