@@ -585,10 +585,70 @@ def gen_hero_leaderboards(write, tbl, R):
     write("Heroes/Hero-Leaderboards.md", "Hero Stat Leaderboards (Lv 80)", "Heroes & Lord", lines)
 
 
+def gen_cumulative_costs(write, tbl, R):
+    """Total resources + time to fully max each building and the whole tech tree
+    (sum of every per-level cost). Pure summation from BuildNeed / ScienceInfo."""
+    def _i(v):
+        try:
+            return int(float(v or 0))
+        except ValueError:
+            return 0
+
+    lines = ["Total resources and time to take each system from start to its **maximum level** — "
+             "the sum of every per-level cost. Useful for long-term planning. "
+             "Times are raw build/research time before any speedups.", ""]
+
+    # buildings
+    bn = load("BuildNeed")
+    by_b = collections.OrderedDict()
+    for r in bn:
+        by_b.setdefault(r["id"], []).append(r)
+    lines += ["## Buildings — cost to max level", ""]
+    body = []
+    tot = {k: 0 for k in ("food", "wood", "stone", "iron", "time")}
+    for bid, lvls in by_b.items():
+        agg = {k: sum(_i(l.get(k)) for l in lvls) for k in tot}
+        for k in tot:
+            tot[k] += agg[k]
+        body.append([R.build_name(bid), max(_i(l["lv"]) for l in lvls),
+                      fmt_num(str(agg["food"])), fmt_num(str(agg["wood"])),
+                      fmt_num(str(agg["stone"])), fmt_num(str(agg["iron"])), secs(agg["time"])])
+    body.append(["**All buildings (total)**", "—",
+                 "**%s**" % fmt_num(str(tot["food"])), "**%s**" % fmt_num(str(tot["wood"])),
+                 "**%s**" % fmt_num(str(tot["stone"])), "**%s**" % fmt_num(str(tot["iron"])),
+                 "**%s**" % secs(tot["time"])])
+    lines += tbl(["Building", "Max Lv", "Food", "Wood", "Stone", "Iron", "Total Time"], body)
+    lines.append("")
+
+    # research
+    sci = load("ScienceInfo")
+    by_s = collections.OrderedDict()
+    for r in sci:
+        by_s.setdefault(r["id"], []).append(r)
+    lines += ["## Research — cost to fully complete the tech tree", ""]
+    body = []
+    tot = {k: 0 for k in ("food", "wood", "stone", "iron", "time")}
+    for sid, lvls in by_s.items():
+        agg = {k: sum(_i(l.get(k)) for l in lvls) for k in tot}
+        for k in tot:
+            tot[k] += agg[k]
+        nm = clean(lvls[0].get("name_en") or lvls[0].get("name"))
+        body.append([nm, max(_i(l["lv"]) for l in lvls),
+                      fmt_num(str(agg["food"])), fmt_num(str(agg["wood"])),
+                      fmt_num(str(agg["stone"])), fmt_num(str(agg["iron"])), secs(agg["time"])])
+    body.append(["**Entire tech tree (total)**", "—",
+                 "**%s**" % fmt_num(str(tot["food"])), "**%s**" % fmt_num(str(tot["wood"])),
+                 "**%s**" % fmt_num(str(tot["stone"])), "**%s**" % fmt_num(str(tot["iron"])),
+                 "**%s**" % secs(tot["time"])])
+    lines += tbl(["Tech", "Max Lv", "Food", "Wood", "Stone", "Iron", "Total Time"], body)
+    write("Progression/Cumulative-Costs.md", "Cumulative Costs (to Max)", "Progression", lines)
+
+
 # --------------------------------------------------------------------------- #
 def register(write, tbl, R):
     gen_overview(write, tbl, R)
     gen_hero_leaderboards(write, tbl, R)
+    gen_cumulative_costs(write, tbl, R)
     gen_feature_unlocks(write, tbl, R)
     gen_building_unlocks(write, tbl, R)
     gen_item_sources(write, tbl, R)

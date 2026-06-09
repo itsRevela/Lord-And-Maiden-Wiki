@@ -52,6 +52,7 @@
 
 ### Progression
 - [Building & City Unlocks](Progression/Building-Unlocks.md)
+- [Cumulative Costs (to Max)](Progression/Cumulative-Costs.md)
 - [Favorability (GoodFeel)](Progression/Favorability.md)
 - [Feature Unlock Levels](Progression/Feature-Unlocks.md)
 - [Lord Outfits](Progression/Lord-Outfits.md)

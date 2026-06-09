@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Game Overview & Getting Started** page (grounded intro, core-systems hub,
+  currency glossary, feature-unlock order).
+- **Hero Stat Leaderboards (Lv 80)** — computed end-game stats for all 122 named
+  heroes: Top-15 by ATK/DEF/Ruin/Total plus a full sortable table.
+- Skill Catalog **"Used by"** column (reverse index of which heroes carry each skill).
+- **Cumulative Costs (to Max)** — total resources + time to max every building and
+  to fully complete the tech tree (independently cross-checked).
 - **`tools/wikigen/build_extra.py`** — 19 additional wiki pages covering every
   remaining player-facing config: feature/building unlock gates, item sources,
   shops, recharge/gift packs, choice chests, gift-code rewards, relic dungeons,
