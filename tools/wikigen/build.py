@@ -446,6 +446,9 @@ def gen_props():
     lines = ["Master catalog of every item / resource / material (\"prop\") in the game, "
              "grouped by internal type. Prop IDs are referenced throughout the wiki "
              "(costs, rewards, effects).", "",
+             "> **Type 3** items are player equipment — see the decoded "
+             "[Equipment / Gear](Equipment.md) page for their stat bonuses and Power. "
+             "For where to obtain items, see [Item Sources](Item-Sources.md).", "",
              "| Type | Count |", "|---|---|"]
     for t in sorted(by_t, key=lambda x: int(x) if x.isdigit() else 0):
         lines.append("| Type %s | %d |" % (t, len(by_t[t])))
@@ -514,7 +517,20 @@ def gen_mechanics():
         "per-round data, kills and MVPs. The exact damage equation is therefore not present "
         "in the client. What the client (and this wiki) provides: effective hero/troop stats, "
         "skill and buff definitions, and troop-composition bonuses. "
-        "See [Buffs](Buffs.md) (`+1` beneficial, `-1` detrimental).",
+        "See [Buffs](Buffs.md) (`+1` beneficial, `-1` detrimental).", "",
+        "### Combat rules *(from in-game tips)*",
+        "These battle rules are stated by the game itself (full list on [Game Tips](../Reference/Tips.md)):",
+        "",
+        "- **Troop restraint:** Infantry → Archer → Cavalry → Infantry. A restrained troop deals "
+        "**−25% damage**, so matching your lead troop type against the enemy matters.",
+        "- **Target selection (no Taunt):** Commander **20%**, Striker 1 **40%**, Striker 2 **40%**.",
+        "- **Skill activation order:** Passive → Strategic → Tactical → Normal ATK → Pursuit.",
+        "- **Skill-effect stacking:** the same effect from *different* skill types stacks (added "
+        "together); the same effect from the *same* skill type does **not** stack (only the highest "
+        "value applies). A party cannot field two identical Strategic skills (including from skill stones).",
+        "- **Chaos** affects only normal attacks and damage-dealing Tactical skills (and Pursuits they trigger).",
+        "- **Hospital:** as combat continues, a share of Slightly-Wounded soldiers convert to "
+        "Severely-Wounded or Dead each round.",
     ]
     write("Mechanics/Stats-and-Formulas.md", "Stats, Formulas & Mechanics", "Mechanics", L)
 

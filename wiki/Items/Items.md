@@ -2,6 +2,8 @@
 
 Master catalog of every item / resource / material ("prop") in the game, grouped by internal type. Prop IDs are referenced throughout the wiki (costs, rewards, effects).
 
+> **Type 3** items are player equipment — see the decoded [Equipment / Gear](Equipment.md) page for their stat bonuses and Power. For where to obtain items, see [Item Sources](Item-Sources.md).
+
 | Type | Count |
 |---|---|
 | Type 1 | 978 |
