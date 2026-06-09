@@ -1,6 +1,6 @@
 # Crafting & Production
 
-Crafting / production recipes. **Time** is per craft (seconds). **Max** is the max stack/queue size.
+Crafting / production recipes. **Time** is the base time per craft (before speedups). **Max** is the max stack/queue size.
 
 ## Process
 | Recipe ID | Output | Inputs | Time | Max |

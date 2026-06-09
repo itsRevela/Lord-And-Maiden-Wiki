@@ -5,8 +5,8 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-178-1f6feb)
-![Heroes](https://img.shields.io/badge/heroes-122-8957e5)
+![Pages](https://img.shields.io/badge/pages-182-1f6feb)
+![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
 

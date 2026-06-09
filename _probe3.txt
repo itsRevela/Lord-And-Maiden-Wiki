@@ -1,0 +1,8 @@
+NPCData rows: 24
+Rare distribution: {'1': 4, '2': 4, '3': 4, '4': 4, '5': 4, '6': 4}
+Rare 1 -> weights ['30']
+Rare 2 -> weights ['20']
+Rare 3 -> weights ['10']
+Rare 4 -> weights ['5']
+Rare 5 -> weights ['3']
+Rare 6 -> weights ['1']

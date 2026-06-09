@@ -117,7 +117,7 @@ def gen_formulas():
     by_type = collections.OrderedDict()
     for r in rows:
         by_type.setdefault(clean(r.get("TypeName_en") or r.get("TypeName")), []).append(r)
-    lines = ["Crafting / production recipes. **Time** is per craft (seconds). "
+    lines = ["Crafting / production recipes. **Time** is the base time per craft (before speedups). "
              "**Max** is the max stack/queue size.", ""]
     for tn, fl in by_type.items():
         lines.append("## %s" % (tn or "Misc"))
@@ -168,7 +168,7 @@ def gen_vip():
     for r in rows:
         body.append([r["vip_lv"], fmt_num(r["upExp"]), R.desc(r.get("buff_text_en") or r.get("buff_text")),
                      R.expand_props(r.get("daily_bonus"))])
-    lines += tbl(["VIP", "EXP Req.", "Buffs (cumulative)", "Daily Bonus"], body)
+    lines += tbl(["VIP", "EXP Req. (cumulative)", "Buffs (cumulative)", "Daily Bonus"], body)
     write("Progression/VIP.md", "VIP Levels", "Progression", lines)
 
 
@@ -184,9 +184,11 @@ def gen_style():
 
 def gen_buffs():
     rows = load("Buff")
-    lines = ["Combat/effect buff catalog. **Type +1** = beneficial, **-1** = detrimental.", ""]
+    lines = ["Combat/effect buff catalog. **Type**: `+1` = beneficial, `-1` = detrimental, "
+             "`0` = neutral / special (e.g. a state like Eternal).", ""]
+    type_label = {"1": "good (+1)", "-1": "bad (-1)", "0": "neutral (0)"}
     body = [[r["buffId"], clean(r.get("Name_en") or r.get("Name")),
-             "good (+1)" if r["Type"] == "1" else ("bad (-1)" if r["Type"] == "-1" else r["Type"])]
+             type_label.get(r["Type"], r["Type"])]
             for r in rows]
     lines += tbl(["Buff ID", "Name", "Type"], body)
     write("Mechanics/Buffs.md", "Buffs & Debuffs", "Mechanics", lines)
@@ -414,7 +416,7 @@ def gen_skills():
 
 
 def gen_ai_heroes():
-    heroes = [h for h in load("HeroInfo") if not R.is_named_hero(h["id"])]
+    heroes = [h for h in load("HeroInfo") if not R.is_named_hero(h["id"]) and not R.is_card(h["id"])]
     heroes.sort(key=lambda h: int(h["id"]))
     lines = ["Non-roster heroes used by AI / enemies / events (%d). Same stat model as "
              "[playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`." % len(heroes), "",
@@ -508,7 +510,8 @@ def gen_mechanics():
         "Each of the 4 types (Infantry, Archer, Cavalry, Chariot) has tiers T1–T6. "
         "Composition bonuses: [Troop Combinations](../Military/Troop-Combinations.md).", "",
         "## Build / research / craft time",
-        "Base times come straight from the data (seconds): buildings [`time`](../Buildings/Buildings.md), "
+        "Base times come straight from the data and are shown as human-readable durations "
+        "(e.g. `2h 30m`): buildings [`time`](../Buildings/Buildings.md), "
         "research [`time`](../Research/Science.md), crafting [`NeedTime`](../Crafting/Formulas.md). "
         "In-game speedups and reductions are applied on top (server-validated).", "",
         "## Power",

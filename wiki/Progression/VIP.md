@@ -2,7 +2,7 @@
 
 VIP levels, EXP required, cumulative buffs and daily bonuses.
 
-| VIP | EXP Req. | Buffs (cumulative) | Daily Bonus |
+| VIP | EXP Req. (cumulative) | Buffs (cumulative) | Daily Bonus |
 |---|---|---|---|
 | 0 | 0 | Max Number Of Hero Cards+20 | Resource Supply(M) ×2, Speedup Points ×1 |
 | 1 | 200 | Max Number Of Hero Cards+30 City All Resource Output+2% | Resource Supply(M) ×4, Speedup Points ×2 |

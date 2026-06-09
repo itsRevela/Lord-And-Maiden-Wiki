@@ -24,6 +24,12 @@ def _dash(v, zero=("0", "", "0_0")):
     return "—" if v in zero else v
 
 
+def _limit(v):
+    """A purchase/run limit where 0 (or blank) means unlimited."""
+    v = (v or "").strip()
+    return "∞" if v in ("0", "") else v
+
+
 # Translation tables for source columns the game ships only in Chinese.
 # (Verified term-by-term; the strings are fully compositional.)
 _ACDK_TR = [
@@ -207,8 +213,9 @@ def gen_shops(write, tbl, R):
     for r in rows:
         by.setdefault(r["storetype"], []).append(r)
     lines = ["All purchasable goods across the game's shops, grouped by shop. "
-             "The currency column doubles as the shop's identity (e.g. Honor Points = Arena shop, "
-             "Union Points = Alliance shop).", ""]
+             "Each shop's heading lists the currency(ies) it uses — which usually identifies it "
+             "(e.g. Honor Points = Arena shop, Union Points = Alliance shop), though some shops "
+             "(like Shop 1) accept more than one. **Buy Limit** ∞ = unlimited.", ""]
     for st, items in sorted(by.items(), key=lambda x: int(x[0])):
         curs = []
         for r in items:
@@ -217,7 +224,7 @@ def gen_shops(write, tbl, R):
                 curs.append(c)
         lines.append("## Shop %s — %s" % (st, " / ".join(curs)))
         body = [[R.prop_name(r["propId"]), R.prop_name(r["pricetype"]), fmt_num(r["price"]),
-                 _dash(r.get("limit")) or "∞", _dash(r.get("NeedLv"))] for r in items]
+                 _limit(r.get("limit")), _dash(r.get("NeedLv"))] for r in items]
         lines += tbl(["Item", "Currency", "Price", "Buy Limit", "Unlock Lv"], body)
         lines.append("")
     write("Items/Shops.md", "Shops & Stores", "City & Economy", lines)
@@ -233,7 +240,7 @@ def gen_recharge(write, tbl, R):
     for gt, items in by.items():
         lines.append("## Pack Group %s" % gt)
         body = [[clean(r.get("name_en") or r.get("name")), fmt_num(r.get("price")),
-                 _dash(r.get("limit")) or "∞", R.expand_props(r.get("content"))] for r in items]
+                 _limit(r.get("limit")), R.expand_props(r.get("content"))] for r in items]
         lines += tbl(["Pack", "Price", "Limit", "Contents"], body)
         lines.append("")
     write("Items/Recharge-Packs.md", "Recharge & Gift Packs", "City & Economy", lines)
@@ -278,7 +285,7 @@ def gen_relics(write, tbl, R):
         fam = clean(ds[0].get("Name_en") or "").rsplit(" ", 1)[0] or ("Dungeon %s" % ft)
         lines.append("## %s" % fam)
         body = [[clean(r.get("Name_en") or r.get("Name")), _dash(r.get("Cost")),
-                 _dash(r.get("MaxPlayerCt")), _dash(r.get("DayMaxCt")) or "∞",
+                 _dash(r.get("MaxPlayerCt")), _limit(r.get("DayMaxCt")),
                  enemy_level(r.get("AiInfo")), enemy_units(R, r.get("AiInfo")),
                  expand_drops(R, r.get("Reward"))] for r in ds]
         lines += tbl(["Dungeon", "Stamina", "Max Players", "Daily Runs", "Enemy Lv", "Enemies", "Rewards"], body)
@@ -371,10 +378,12 @@ def gen_world_structures(write, tbl, R):
 # --------------------------------------------------------------------------- #
 def gen_hero_skins(write, tbl, R):
     rows = load("HeroSkin")
-    lines = ["Purchasable hero skins. Each skin also grants a small permanent stat bonus.", ""]
+    lines = ["Purchasable hero skins. Each skin also grants a small permanent stat bonus. "
+             "Skins are bought with **Rand Coin** (the real-money recharge currency) or unlocked "
+             "with a **Hero Skin Scroll**; the Price column is the Rand Coin cost.", ""]
     body = [[R.hero_name(r["HeroNum"]), r.get("SkinId", ""), fmt_num(r.get("Price")),
              clean(R.resolve_tokens(r.get("Effects_en") or r.get("Effects")))] for r in rows]
-    lines += tbl(["Hero", "Skin", "Price (Gems)", "Bonus"], body)
+    lines += tbl(["Hero", "Skin", "Price (Rand Coin)", "Bonus"], body)
     write("Heroes/Hero-Skins.md", "Hero Skins", "Heroes & Lord", lines)
 
 
@@ -582,6 +591,27 @@ def gen_hero_leaderboards(write, tbl, R):
                    format(r["A"], ","), format(r["D"], ","), format(r["R"], ","),
                    format(r["S"], ","), format(r["T"], ",")]
                   for r in full])
+    lines.append("")
+    # by role, each ordered by Total
+    lines += ["## By Role (Lv %d)" % HERO_MAX_LEVEL, "",
+              "Every hero grouped by combat role, ordered by Total stats within each role.", ""]
+    by_role = collections.OrderedDict()
+    for r in sorted(rows, key=lambda x: -x["T"]):
+        by_role.setdefault(r["role"], []).append(r)
+    role_order = ["DPS", "Heal", "CC (Control)", "Buff", "Debuff"]
+    for role in role_order + [x for x in by_role if x not in role_order]:
+        rs = by_role.get(role)
+        if not rs:
+            continue
+        label = "Other / Unspecified" if role in ("—", "") else role
+        lines += ["### %s (%d)" % (label, len(rs)), ""]
+        lines += tbl(["Hero", "★", "Race", "Archetype", "ATK", "DEF", "Ruin", "Speed", "Total"],
+                     [[r["link"], r["h"]["rare"], RACE_NAME.get(r["h"]["type"], r["h"]["type"]),
+                       RST_ARCHETYPE.get(r["h"]["RST"], r["h"]["RST"]).split(" (")[0],
+                       format(r["A"], ","), format(r["D"], ","), format(r["R"], ","),
+                       format(r["S"], ","), format(r["T"], ",")]
+                      for r in rs])
+        lines.append("")
     write("Heroes/Hero-Leaderboards.md", "Hero Stat Leaderboards (Lv 80)", "Heroes & Lord", lines)
 
 

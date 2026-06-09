@@ -1,6 +1,6 @@
 # Buffs & Debuffs
 
-Combat/effect buff catalog. **Type +1** = beneficial, **-1** = detrimental.
+Combat/effect buff catalog. **Type**: `+1` = beneficial, `-1` = detrimental, `0` = neutral / special (e.g. a state like Eternal).
 
 | Buff ID | Name | Type |
 |---|---|---|
@@ -55,9 +55,9 @@ Combat/effect buff catalog. **Type +1** = beneficial, **-1** = detrimental.
 | 84 | Disarm(Prepared) | bad (-1) |
 | 85 | Silence(Prepared) | bad (-1) |
 | 86 | Chaos(Prepared) | bad (-1) |
-| 87 | Heal | 0 |
+| 87 | Heal | neutral (0) |
 | 88 | Instant | good (+1) |
-| 89 | Eternal | 0 |
+| 89 | Eternal | neutral (0) |
 | 106 | Blood Sucking | good (+1) |
 | 107 | Self-Heal | good (+1) |
 | 108 | Burn | bad (-1) |

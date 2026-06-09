@@ -1,8 +1,8 @@
 # Hero Skins
 
-Purchasable hero skins. Each skin also grants a small permanent stat bonus.
+Purchasable hero skins. Each skin also grants a small permanent stat bonus. Skins are bought with **Rand Coin** (the real-money recharge currency) or unlocked with a **Hero Skin Scroll**; the Price column is the Rand Coin cost.
 
-| Hero | Skin | Price (Gems) | Bonus |
+| Hero | Skin | Price (Rand Coin) | Bonus |
 |---|---|---|---|
 | Lumi | 1 | 680 | Allocable Points +1 |
 | Faye·Sp | 1 | 680 | Allocable Points +1 |

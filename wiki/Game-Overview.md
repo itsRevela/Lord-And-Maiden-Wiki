@@ -4,7 +4,7 @@
 
 ## Core Systems
 
-- **[Heroes](Heroes/Heroes.md)** — 122 named heroes (max level 80), each with growth stats, skills, talents and lore. See the **[Lv 80 Leaderboards](Heroes/Hero-Leaderboards.md)** to compare end-game stats.
+- **[Heroes](Heroes/Heroes.md)** — 118 named heroes (max level 80), each with growth stats, skills, talents and lore. See the **[Lv 80 Leaderboards](Heroes/Hero-Leaderboards.md)** to compare end-game stats.
 - **[Skills](Heroes/Skills.md)** — Strategic / Tactical / Passive / Pursuit, with awaken levels.
 - **[City & Buildings](Buildings/Buildings.md)** — per-level costs, times and unlocks.
 - **[Soldiers](Soldiers/Soldiers.md)** & **[Troop Combinations](Military/Troop-Combinations.md)** — 4 types, tiered.

@@ -55,7 +55,7 @@ When a hero leads troops, surplus attribute points are auto-allocated by their R
 Soldier base stats and recruit/cure costs are fixed per tier — see [Soldiers](../Soldiers/Soldiers.md). Each of the 4 types (Infantry, Archer, Cavalry, Chariot) has tiers T1–T6. Composition bonuses: [Troop Combinations](../Military/Troop-Combinations.md).
 
 ## Build / research / craft time
-Base times come straight from the data (seconds): buildings [`time`](../Buildings/Buildings.md), research [`time`](../Research/Science.md), crafting [`NeedTime`](../Crafting/Formulas.md). In-game speedups and reductions are applied on top (server-validated).
+Base times come straight from the data and are shown as human-readable durations (e.g. `2h 30m`): buildings [`time`](../Buildings/Buildings.md), research [`time`](../Research/Science.md), crafting [`NeedTime`](../Crafting/Formulas.md). In-game speedups and reductions are applied on top (server-validated).
 
 ## Power
 Total Power is **computed server-side** and sent to the client as a breakdown:

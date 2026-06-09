@@ -5,42 +5,42 @@ Relic dungeons (instanced raids). Rewards are weighted random drops; the listed 
 ## Goblin Ruins
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Goblin Ruins I | 1 | 5 | — | 15 | Goblin Archer 4★, Goblin Warrior 4★, Goblin Guardian 4★, Goblin Assassin 4★, Goblin Leader | Lord Exp x30,000, Hero Exp Book(II) x25, Hero Exp Book(III) x12, Hero Exp Book(IV) x6, Quick Healing Pack x3, Goblin Ruins-Trials Credential x1 |
-| Goblin Ruins II | 2 | 5 | — | 30 | Goblin Assassin 4★, Goblin Archer 4★, Goblin Guardian 4★, Goblin Warrior 4★, Goblin Leader | Lord Exp x90,000, Hero Exp Book(II) x60, Hero Exp Book(III) x28, Hero Exp Book(IV) x12, Quick Healing Pack x9, Goblin Ruins-Trials Credential x1 |
-| Goblin Ruins III | 3 | 5 | — | 45 | Goblin Warrior 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Assassin 5★, Goblin Leader | Lord Exp x170,000, Hero Exp Book(II) x100, Hero Exp Book(III) x50, Hero Exp Book(IV) x21, Quick Healing Pack x20, Goblin Ruins-Trials Credential x1 |
-| Goblin Ruins IV | 3 | 5 | — | 60 | Goblin Warrior 5★, Goblin Guardian 5★, Goblin Archer 5★, Goblin Assassin 5★, Goblin Leader | Lord Exp x210,000, Hero Exp Book(II) x120, Hero Exp Book(III) x56, Hero Exp Book(IV) x23, Quick Healing Pack x25, Goblin Ruins-Trials Credential x1 |
+| Goblin Ruins I | 1 | 5 | ∞ | 15 | Goblin Archer 4★, Goblin Warrior 4★, Goblin Guardian 4★, Goblin Assassin 4★, Goblin Leader | Lord Exp x30,000, Hero Exp Book(II) x25, Hero Exp Book(III) x12, Hero Exp Book(IV) x6, Quick Healing Pack x3, Goblin Ruins-Trials Credential x1 |
+| Goblin Ruins II | 2 | 5 | ∞ | 30 | Goblin Assassin 4★, Goblin Archer 4★, Goblin Guardian 4★, Goblin Warrior 4★, Goblin Leader | Lord Exp x90,000, Hero Exp Book(II) x60, Hero Exp Book(III) x28, Hero Exp Book(IV) x12, Quick Healing Pack x9, Goblin Ruins-Trials Credential x1 |
+| Goblin Ruins III | 3 | 5 | ∞ | 45 | Goblin Warrior 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Assassin 5★, Goblin Leader | Lord Exp x170,000, Hero Exp Book(II) x100, Hero Exp Book(III) x50, Hero Exp Book(IV) x21, Quick Healing Pack x20, Goblin Ruins-Trials Credential x1 |
+| Goblin Ruins IV | 3 | 5 | ∞ | 60 | Goblin Warrior 5★, Goblin Guardian 5★, Goblin Archer 5★, Goblin Assassin 5★, Goblin Leader | Lord Exp x210,000, Hero Exp Book(II) x120, Hero Exp Book(III) x56, Hero Exp Book(IV) x23, Quick Healing Pack x25, Goblin Ruins-Trials Credential x1 |
 
 ## Jungle Ruins
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Jungle Ruins I | 1 | 5 | — | 15 | Little mage 3★, Elf 3★, Moin | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Equipment Drawings Chest(T1) x1, Equipment Stuff Chest(T1) x75, Jungle Ruins-Trials Credential x1 |
-| Jungle Ruins II | 2 | 5 | — | 30 | Big Elf 4★, Archmage 4★, Moin | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Equipment Drawings Chest(T2) x1, Equipment Stuff Chest(T2) x50, Jungle Ruins-Trials Credential x1 |
-| Jungle Ruins III | 3 | 5 | — | 45 | Archmage 5★, Big Elf 5★, Moricart | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Equipment Drawings Chest(T3) x1, Equipment Stuff Chest(T3) x25, Jungle Ruins-Trials Credential x1 |
-| Jungle Ruins IV | 3 | 5 | — | 60 | Archmage 5★, Big Elf 5★, Moricart | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Equipment Drawings Chest(T3) x1, Equipment Stuff Chest(T3) x25, Epic Rare Stuff Chest x1, Jungle Ruins-Trials Credential x1 |
+| Jungle Ruins I | 1 | 5 | ∞ | 15 | Little mage 3★, Elf 3★, Moin | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Equipment Drawings Chest(T1) x1, Equipment Stuff Chest(T1) x75, Jungle Ruins-Trials Credential x1 |
+| Jungle Ruins II | 2 | 5 | ∞ | 30 | Big Elf 4★, Archmage 4★, Moin | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Equipment Drawings Chest(T2) x1, Equipment Stuff Chest(T2) x50, Jungle Ruins-Trials Credential x1 |
+| Jungle Ruins III | 3 | 5 | ∞ | 45 | Archmage 5★, Big Elf 5★, Moricart | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Equipment Drawings Chest(T3) x1, Equipment Stuff Chest(T3) x25, Jungle Ruins-Trials Credential x1 |
+| Jungle Ruins IV | 3 | 5 | ∞ | 60 | Archmage 5★, Big Elf 5★, Moricart | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Equipment Drawings Chest(T3) x1, Equipment Stuff Chest(T3) x25, Epic Rare Stuff Chest x1, Jungle Ruins-Trials Credential x1 |
 
 ## Desert Ruins
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Desert Ruins I | 1 | 5 | — | 15 | Little mage 3★, Elf 3★, Crocodile | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Desert Ruins-Trials Credential x1 |
-| Desert Ruins II | 2 | 5 | — | 30 | Big Elf 4★, Archmage 4★, Crocodile | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Hero Talent Stone x3, Talent Breakthrough Stone Fragment x3, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Desert Ruins-Trials Credential x1 |
-| Desert Ruins III | 3 | 5 | — | 45 | Archmage 5★, Big Elf 5★, Bayside | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Hero Talent Stone x5, Talent Breakthrough Stone Fragment x5, Hero Talent Stone x2, Talent Breakthrough Stone Fragment x2, Desert Ruins-Trials Credential x1 |
-| Desert Ruins IV | 3 | 5 | — | 60 | Big Elf 5★, Archmage 5★, Bayside | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Hero Talent Stone x6, Talent Breakthrough Stone Fragment x6, Hero Talent Stone x2, Talent Breakthrough Stone Fragment x2, Desert Ruins-Trials Credential x1 |
+| Desert Ruins I | 1 | 5 | ∞ | 15 | Little mage 3★, Elf 3★, Crocodile | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Desert Ruins-Trials Credential x1 |
+| Desert Ruins II | 2 | 5 | ∞ | 30 | Big Elf 4★, Archmage 4★, Crocodile | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Hero Talent Stone x3, Talent Breakthrough Stone Fragment x3, Hero Talent Stone x1, Talent Breakthrough Stone Fragment x1, Desert Ruins-Trials Credential x1 |
+| Desert Ruins III | 3 | 5 | ∞ | 45 | Archmage 5★, Big Elf 5★, Bayside | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Hero Talent Stone x5, Talent Breakthrough Stone Fragment x5, Hero Talent Stone x2, Talent Breakthrough Stone Fragment x2, Desert Ruins-Trials Credential x1 |
+| Desert Ruins IV | 3 | 5 | ∞ | 60 | Big Elf 5★, Archmage 5★, Bayside | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Hero Talent Stone x6, Talent Breakthrough Stone Fragment x6, Hero Talent Stone x2, Talent Breakthrough Stone Fragment x2, Desert Ruins-Trials Credential x1 |
 
 ## Snow Ruins
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Snow Ruins I | 1 | 5 | — | 15 | Little mage 3★, Elf 3★, Currymont | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Flowers x3, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
-| Snow Ruins II | 2 | 5 | — | 30 | Archmage 4★, Big Elf 4★, Currymont | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Flowers x7, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
-| Snow Ruins III | 3 | 5 | — | 45 | Big Elf 5★, Archmage 5★, Teresa | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Flowers x11, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
-| Snow Ruins IV | 3 | 5 | — | 60 | Archmage 5★, Big Elf 5★, Teresa | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Flowers x12, Love Chocolate x1, Oath Ring Fragment x1, Snow Ruins-Trials Credential x1 |
+| Snow Ruins I | 1 | 5 | ∞ | 15 | Little mage 3★, Elf 3★, Currymont | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, Flowers x3, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
+| Snow Ruins II | 2 | 5 | ∞ | 30 | Archmage 4★, Big Elf 4★, Currymont | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, Flowers x7, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
+| Snow Ruins III | 3 | 5 | ∞ | 45 | Big Elf 5★, Archmage 5★, Teresa | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, Flowers x11, Love Chocolate x1, Snow Ruins-Trials Credential x1 |
+| Snow Ruins IV | 3 | 5 | ∞ | 60 | Archmage 5★, Big Elf 5★, Teresa | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, Flowers x12, Love Chocolate x1, Oath Ring Fragment x1, Snow Ruins-Trials Credential x1 |
 
 ## Lava Ruins
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Lava Ruins I | 1 | 5 | — | 15 | Elf 3★, Little mage 3★, Chidaru | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, 3★Skill Stone Chest Fragments x1, 4★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
-| Lava Ruins II | 2 | 5 | — | 30 | Big Elf 4★, Archmage 4★, Chidaru | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, 3★Skill Stone Chest Fragments x1, 4★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
-| Lava Ruins III | 3 | 5 | — | 45 | Big Elf 5★, Archmage 5★, Carta | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, 4★Skill Stone Chest Fragments x1, 5★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
-| Lava Ruins IV | 3 | 5 | — | 60 | Big Elf 5★, Archmage 5★, Carta | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, 4★Skill Stone Chest Fragments x1, 5★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
+| Lava Ruins I | 1 | 5 | ∞ | 15 | Elf 3★, Little mage 3★, Chidaru | Lord Exp x30,000, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3, 3★Skill Stone Chest Fragments x1, 4★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
+| Lava Ruins II | 2 | 5 | ∞ | 30 | Big Elf 4★, Archmage 4★, Chidaru | Lord Exp x90,000, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9, 3★Skill Stone Chest Fragments x1, 4★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
+| Lava Ruins III | 3 | 5 | ∞ | 45 | Big Elf 5★, Archmage 5★, Carta | Lord Exp x170,000, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20, 4★Skill Stone Chest Fragments x1, 5★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
+| Lava Ruins IV | 3 | 5 | ∞ | 60 | Big Elf 5★, Archmage 5★, Carta | Lord Exp x210,000, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25, 4★Skill Stone Chest Fragments x1, 5★Skill Stone Chest Fragments x1, Lava Ruins-Trials Credential x1 |
 
 ## Training Cave
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
@@ -153,42 +153,42 @@ Relic dungeons (instanced raids). Rewards are weighted random drops; the listed 
 ## Goblin
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Goblin Leader-I | 1 | 5 | — | 65 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
-| Goblin Leader-II | 2 | 5 | — | 70 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
-| Goblin Leader-III | 3 | 5 | — | 75 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
-| Goblin Leader-IV | 3 | 5 | — | 80 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Warrior 5★, Goblin Guardian 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
+| Goblin Leader-I | 1 | 5 | ∞ | 65 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
+| Goblin Leader-II | 2 | 5 | ∞ | 70 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
+| Goblin Leader-III | 3 | 5 | ∞ | 75 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Guardian 5★, Goblin Warrior 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
+| Goblin Leader-IV | 3 | 5 | ∞ | 80 | Goblin Assassin 5★, Goblin Archer 5★, Goblin Warrior 5★, Goblin Guardian 5★, Goblin Leader | Goblin Leader-Anecdote x1, Goblin Leader-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
 
 ## Skeleton
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Skeleton King-I | 1 | 5 | — | 65 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
-| Skeleton King-II | 2 | 5 | — | 70 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
-| Skeleton King-III | 3 | 5 | — | 75 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
-| Skeleton King-IV | 3 | 5 | — | 80 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Mage 5★, Undead Warrior 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
+| Skeleton King-I | 1 | 5 | ∞ | 65 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
+| Skeleton King-II | 2 | 5 | ∞ | 70 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
+| Skeleton King-III | 3 | 5 | ∞ | 75 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Warrior 5★, Undead Mage 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
+| Skeleton King-IV | 3 | 5 | ∞ | 80 | Skeleton Guardian 5★, Skeleton Archer 5★, Undead Mage 5★, Undead Warrior 5★, Skeleton King | Skeleton King-Anecdote x1, Skeleton King-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
 
 ## Northern
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Northern Lord-I | 1 | 5 | — | 65 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
-| Northern Lord-II | 2 | 5 | — | 70 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
-| Northern Lord-III | 3 | 5 | — | 75 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
-| Northern Lord-IV | 3 | 5 | — | 80 | Frost Guardian 5★, Frost Thief 5★, Frost Gladiator 5★, Frost Warrior 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
+| Northern Lord-I | 1 | 5 | ∞ | 65 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
+| Northern Lord-II | 2 | 5 | ∞ | 70 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
+| Northern Lord-III | 3 | 5 | ∞ | 75 | Frost Guardian 5★, Frost Thief 5★, Frost Warrior 5★, Frost Gladiator 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
+| Northern Lord-IV | 3 | 5 | ∞ | 80 | Frost Guardian 5★, Frost Thief 5★, Frost Gladiator 5★, Frost Warrior 5★, Northern Lord | Northern Lord-Anecdote x1, Northern Lord-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
 
 ## Shark
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Shark Lord-I | 1 | 5 | — | 65 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
-| Shark Lord-II | 2 | 5 | — | 70 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
-| Shark Lord-III | 3 | 5 | — | 75 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
-| Shark Lord-IV | 3 | 5 | — | 80 | Shark Guardian 5★, Shark Thief 5★, Shark Elite 5★, Shark Assassin 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
+| Shark Lord-I | 1 | 5 | ∞ | 65 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
+| Shark Lord-II | 2 | 5 | ∞ | 70 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
+| Shark Lord-III | 3 | 5 | ∞ | 75 | Shark Guardian 5★, Shark Thief 5★, Shark Assassin 5★, Shark Elite 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
+| Shark Lord-IV | 3 | 5 | ∞ | 80 | Shark Guardian 5★, Shark Thief 5★, Shark Elite 5★, Shark Assassin 5★, Shark Lord | Shark Lord-Anecdote x1, Shark Lord-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
 
 ## Skywarden-I
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |
 |---|---|---|---|---|---|---|
-| Skywarden-I | 1 | 5 | — | 65 | Sky Warrior 5★, Sky Archer 5★, Skyguard 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
-| Skywarden-II | 2 | 5 | — | 70 | Skyguard 5★, Sky Archer 5★, Sky Warrior 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
-| Skywarden-III | 3 | 5 | — | 75 | Skyguard 5★, Sky Archer 5★, Sky Warrior 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
-| Skywarden-IV | 3 | 5 | — | 80 | Skyguard 5★, Sky Archer 5★, Sky Assassin 5★, Sky Warrior 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
+| Skywarden-I | 1 | 5 | ∞ | 65 | Sky Warrior 5★, Sky Archer 5★, Skyguard 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x10, Resource Supply(M) x6, Speedup Points x3, Quick Healing Pack x3 |
+| Skywarden-II | 2 | 5 | ∞ | 70 | Skyguard 5★, Sky Archer 5★, Sky Warrior 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x22, Resource Supply(M) x18, Speedup Points x9, Quick Healing Pack x9 |
+| Skywarden-III | 3 | 5 | ∞ | 75 | Skyguard 5★, Sky Archer 5★, Sky Warrior 5★, Sky Assassin 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x36, Resource Supply(L) x8, Speedup Points x20, Quick Healing Pack x20 |
+| Skywarden-IV | 3 | 5 | ∞ | 80 | Skyguard 5★, Sky Archer 5★, Sky Assassin 5★, Sky Warrior 5★, Skywarden | Skywarden-Anecdote x1, Skywarden-Trials Credential x1, Meteoric Iron Mine x40, Resource Supply(L) x10, Speedup Points x25, Quick Healing Pack x25 |
 
 ## Crocodile
 | Dungeon | Stamina | Max Players | Daily Runs | Enemy Lv | Enemies | Rewards |

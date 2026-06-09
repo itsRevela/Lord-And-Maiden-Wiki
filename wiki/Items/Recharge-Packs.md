@@ -5,9 +5,9 @@ Paid packs and gift bundles. *Price* is the value shown in-game. Contents are re
 ## Pack Group 1
 | Pack | Price | Limit | Contents |
 |---|---|---|---|
-| Monthly Card | 300 | — | Gems ×1,500, Adventurer Points ×300 |
-| Luxury Card | 680 | — | Gems ×3,400, Adventurer Points ×680 |
-| Permanent Card | 2,580 | — | Gems ×12,900, Adventurer Points ×2,580 |
+| Monthly Card | 300 | ∞ | Gems ×1,500, Adventurer Points ×300 |
+| Luxury Card | 680 | ∞ | Gems ×3,400, Adventurer Points ×680 |
+| Permanent Card | 2,580 | ∞ | Gems ×12,900, Adventurer Points ×2,580 |
 
 ## Pack Group 2
 | Pack | Price | Limit | Contents |
@@ -33,14 +33,14 @@ Paid packs and gift bundles. *Price* is the value shown in-game. Contents are re
 ## Pack Group 4
 | Pack | Price | Limit | Contents |
 |---|---|---|---|
-| Gemsx300 | 60 | — | Gems ×300, Adventurer Points ×60 |
-| Gemsx1,500 | 300 | — | Gems ×1,500, Adventurer Points ×300 |
-| Gemsx3,400 | 680 | — | Gems ×3,400, Adventurer Points ×680 |
-| Gemsx4,900 | 980 | — | Gems ×4,900, Adventurer Points ×980 |
-| Gemsx6,400 | 1,280 | — | Gems ×6,400, Adventurer Points ×1,280 |
-| Gemsx12,900 | 2,580 | — | Gems ×12,900, Adventurer Points ×2,580 |
-| Gemsx19,400 | 3,880 | — | Gems ×19,400, Adventurer Points ×3,880 |
-| Gemsx32,400 | 6,480 | — | Gems ×32,400, Adventurer Points ×6,480 |
+| Gemsx300 | 60 | ∞ | Gems ×300, Adventurer Points ×60 |
+| Gemsx1,500 | 300 | ∞ | Gems ×1,500, Adventurer Points ×300 |
+| Gemsx3,400 | 680 | ∞ | Gems ×3,400, Adventurer Points ×680 |
+| Gemsx4,900 | 980 | ∞ | Gems ×4,900, Adventurer Points ×980 |
+| Gemsx6,400 | 1,280 | ∞ | Gems ×6,400, Adventurer Points ×1,280 |
+| Gemsx12,900 | 2,580 | ∞ | Gems ×12,900, Adventurer Points ×2,580 |
+| Gemsx19,400 | 3,880 | ∞ | Gems ×19,400, Adventurer Points ×3,880 |
+| Gemsx32,400 | 6,480 | ∞ | Gems ×32,400, Adventurer Points ×6,480 |
 
 ## Pack Group 6
 | Pack | Price | Limit | Contents |

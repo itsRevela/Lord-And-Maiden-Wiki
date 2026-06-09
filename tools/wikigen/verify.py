@@ -83,7 +83,8 @@ def cross_checks():
     # hero roster count == named heroes in HeroInfo (have HeroDes)
     hi = list(csv.DictReader(open(os.path.join(CSV, "HeroInfo.csv"), encoding="utf-8-sig")))
     hd = set(r["id"] for r in csv.DictReader(open(os.path.join(CSV, "HeroDes.csv"), encoding="utf-8-sig")))
-    named = [h for h in hi if h["id"] in hd]
+    cards = {"81", "82", "83", "102"}  # non-hero "card" items in HeroDes (see resolver.HERO_CARDS)
+    named = [h for h in hi if h["id"] in hd and h["id"] not in cards]
     roster_files = len(os.listdir(os.path.join(WIKI, "Heroes", "roster")))
     msgs.append("named heroes=%d, roster pages=%d -> %s" %
                 (len(named), roster_files, "OK" if len(named) == roster_files else "MISMATCH"))

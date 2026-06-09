@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- Hero Leaderboards **"By Role"** section — every hero grouped by role (DPS/Heal/CC/Buff/
+  Debuff/Other), ordered by Total stats within each role.
+
+### Fixed (from a 4-subagent inconsistency sweep)
+- **Attribute bonuses now render flat vs percent correctly.** `expand_effects` ignored the
+  EntryEffect `DataType`; it now matches the in-game `GetEntryDes` formula — DataType 1 = flat
+  `+N`, DataType 2 = `+(N/Size×100)%`. E.g. Long Sword reads "Soldier ATK +1, Soldier ATK +2%"
+  (was "×1, ×200"). Affects Equipment and Item Collections.
+- **Excluded 4 non-hero "card" items** (Universal Advanced/Codex Card, Skill Exp Card,
+  Breakthrough Card — placeholder 58/58/58/58 stats) from the hero roster, leaderboards and
+  AI-hero list; the real playable count is **118**. Removed their stale roster pages.
+- **Unlimited limits now show ∞** (Shops Buy Limit, Recharge Limit, Relic Daily Runs) — the
+  `_dash(...) or "∞"` idiom was dead code that always rendered "—".
+- Hero Skins price relabeled **Price (Rand Coin)** with a note (skins use Rand Coin or a Hero
+  Skin Scroll, not Gems — verified against the decompiled skin-purchase code).
+- Removed inaccurate "(seconds)" claims on Crafting and Stats-and-Formulas (those Time columns
+  render human-readable durations).
+- Buff **Type 0** now labeled "neutral (0)" and documented in the legend.
+- VIP "EXP Req." labeled **(cumulative)**; Shops intro no longer claims every shop has a single
+  identifying currency (Shop 1 uses two); README badges updated (182 pages, 118 heroes).
 - **Glossary greatly expanded** (17 → ~70 terms + a 16-row currency table), reorganised into
   six categories (Stats & hero terms, Battle & skills, City/economy/troops, Progression &
   collections, PvE/World/Alliance, Currencies). Driven by a 4-subagent sweep of the whole

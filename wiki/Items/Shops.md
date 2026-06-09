@@ -1,6 +1,6 @@
 # Shops & Stores
 
-All purchasable goods across the game's shops, grouped by shop. The currency column doubles as the shop's identity (e.g. Honor Points = Arena shop, Union Points = Alliance shop).
+All purchasable goods across the game's shops, grouped by shop. Each shop's heading lists the currency(ies) it uses — which usually identifies it (e.g. Honor Points = Arena shop, Union Points = Alliance shop), though some shops (like Shop 1) accept more than one. **Buy Limit** ∞ = unlimited.
 
 ## Shop 1 — Gold Coin / Gems
 | Item | Currency | Price | Buy Limit | Unlock Lv |
@@ -9,9 +9,9 @@ All purchasable goods across the game's shops, grouped by shop. The currency col
 | Fruit Tree Seed-I | Gold Coin | 150 | 100 | — |
 | Hero Summon Scroll(Newb) | Gold Coin | 60,000 | 1 | — |
 | Summon Scroll(Optional) | Gold Coin | 120,000 | 1 | — |
-| Hero Summon Scroll | Gems | 400 | — | — |
-| Relic Summon Scroll | Gems | 400 | — | — |
-| Magic Messenger Summon Scroll | Gems | 400 | — | — |
+| Hero Summon Scroll | Gems | 400 | ∞ | — |
+| Relic Summon Scroll | Gems | 400 | ∞ | — |
+| Magic Messenger Summon Scroll | Gems | 400 | ∞ | — |
 | Vit Potion(S) | Gems | 500 | 10 | — |
 | Vit Potion(L) | Gems | 1,000 | 5 | — |
 | Speedup Points | Gems | 5 | 999 | — |
@@ -218,8 +218,8 @@ All purchasable goods across the game's shops, grouped by shop. The currency col
 |---|---|---|---|---|
 | Falling Star Island-Outpost Construction Permit | Meteoric Iron Mine | 50 | 2 | — |
 | Gems Supply | Meteoric Iron Mine | 100 | 2 | — |
-| Mithril Ingot | Meteoric Iron Mine | 2 | — | — |
-| Thunderwood | Meteoric Iron Mine | 1 | — | — |
+| Mithril Ingot | Meteoric Iron Mine | 2 | ∞ | — |
+| Thunderwood | Meteoric Iron Mine | 1 | ∞ | — |
 | Lord Knowledge Book | Meteoric Iron Mine | 50 | 10 | — |
 | Gold Coin Supply(L) | Meteoric Iron Mine | 2 | 50 | — |
 | Resource Supply(L) | Meteoric Iron Mine | 3 | 200 | — |

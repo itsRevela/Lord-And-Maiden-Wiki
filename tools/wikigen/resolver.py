@@ -18,6 +18,9 @@ HERO_ROLE = {"1": "DPS", "2": "Heal", "3": "CC (Control)", "4": "Buff", "5": "De
 RACE_NAME = {"1": "Human", "2": "Orc", "3": "Elf"}   # GetHeroRaceDesTip
 NPC_JOB = {"1": "Peasant Woman", "2": "Craftsman", "3": "Researcher", "4": "Angler"}  # GetJobDes
 HERO_MAX_LEVEL = 80   # verified: code level brackets reach 80; UpExp type 2 = 1..80
+# HeroDes ids that are NOT real heroes — advancement/codex/skill/breakthrough "cards"
+# (placeholder 58/58/58/58 stats); excluded from the roster, leaderboard and AI list.
+HERO_CARDS = {"81", "82", "83", "102"}
 
 
 def load(name):
@@ -116,16 +119,31 @@ class Resolver:
         r = self.entry.get(str(eid).strip())
         return clean(r.get("Name_en") or r.get("Name")) if r else ("Attr#" + str(eid))
 
+    def effect_value(self, eid, val):
+        """Render one attribute bonus exactly as the game does (GetEntryDes):
+        DataType 1 = flat '+value'; DataType 2 = percent '+(value/Size*100)%'."""
+        name = self.effect_name(eid)
+        r = self.entry.get(str(eid).strip())
+        if r and (r.get("DataType") or "").strip() == "2":
+            try:
+                pct = float(val) / (float(r.get("Size") or "1") or 1.0) * 100.0
+                return "%s +%s%%" % (name, ("%.2f" % pct).rstrip("0").rstrip("."))
+            except ValueError:
+                pass
+        return "%s +%s" % (name, fmt_num(val))
+
     def expand_effects(self, s, sep="+"):
-        """'111_200+115_50' -> 'Infantry HP ×200, ...' using the EntryEffect catalog."""
+        """'111_200+115_50' -> 'City Food Output +2%, ...' using the EntryEffect catalog
+        (flat vs percent per DataType, matching the in-game tooltip)."""
         s = (s or "").strip()
         if not s or s == "0":
             return "—"
         out = []
         for tok in s.split(sep):
+            tok = tok.strip()
             if "_" in tok:
                 eid, _, val = tok.partition("_")
-                out.append("%s ×%s" % (self.effect_name(eid), fmt_num(val)))
+                out.append(self.effect_value(eid, val))
             elif tok:
                 out.append(self.effect_name(tok))
         return ", ".join(out)
@@ -138,8 +156,14 @@ class Resolver:
             return clean(text)
         return clean(re.sub(r"\{([^{}]*)\}", lambda m: self.loc_en(m.group(1)) or m.group(0), text))
 
+    def is_card(self, hid):
+        # HeroDes contains 4 non-hero "card" items (Universal Advanced/Codex,
+        # Skill Exp, Breakthrough) with placeholder 58/58/58/58 stats — not heroes.
+        return str(hid) in HERO_CARDS
+
     def is_named_hero(self, hid):
-        return str(hid) in self.herodes
+        h = str(hid)
+        return h in self.herodes and h not in HERO_CARDS
 
     def hero_role(self, hid):
         r = self.herodes.get(str(hid))

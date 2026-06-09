@@ -1,6 +1,6 @@
 # Heroes (Roster)
 
-The playable hero roster (122 heroes). Stats shown are **base** (level 0 reference) with per-level **growth**; effective stat at level *L* = `base + floor(growth × L)`. Hero max level is **80**. Click a hero for full per-level tables, skills, and lore.
+The playable hero roster (118 heroes). Stats shown are **base** (level 0 reference) with per-level **growth**; effective stat at level *L* = `base + floor(growth × L)`. Hero max level is **80**. Click a hero for full per-level tables, skills, and lore.
 
 - **A/D/R/S** = **A**ttack / **D**efense / **R**uin (the destruction stat, also called *DES* / *DMG*) / **S**peed.
 - **Rarity**: 2–5 (higher = rarer). **Race**: hero faction (1–3). **Role**: DPS / Heal / CC / Buff / Debuff. **RST**: recommended troop & stat-point archetype.
@@ -43,9 +43,6 @@ The playable hero roster (122 heroes). Stats shown are **base** (level 0 referen
 | 78 | [Duffy·Sp](roster/78-duffy-sp.md) | ★5 | Orc | CC (Control) | Archer | 74/45/42/70 | 1.87/1.13/1.05/1.75 | Jungle Chase (Pursuit) · Ghost Bound (Pursuit) · Glitter (Pursuit) |
 | 79 | [Iris·Sp](roster/79-iris-sp.md) | ★5 | Elf | DPS | Archer | 79/44/60/47 | 1.98/1.12/1.52/1.18 | Knight Charge (Tactical) · Spirit Strike (Tactical) · Suicide Attack (Tactical) |
 | 80 | [Darby·Sp](roster/80-darby-sp.md) | ★5 | Orc | Buff | Cavalry | 55/76/58/42 | 1.38/1.92/1.45/1.05 | Elk Armor (Tactical) · Elf Deer (Strategic) · Devout (Strategic) |
-| 81 | [Universal Advanced Card](roster/81-universal-advanced-card.md) | ★5 | Elf | — | Infantry | 58/58/58/58 | 1.45/1.45/1.45/1.45 | Watch The Fun (Strategic) |
-| 82 | [Universal Codex Card](roster/82-universal-codex-card.md) | ★5 | Elf | — | Infantry | 58/58/58/58 | 1.45/1.45/1.45/1.45 | Watch The Fun (Strategic) |
-| 83 | [Skill Exp Card](roster/83-skill-exp-card.md) | ★5 | Human | — | Infantry | 58/58/58/58 | 1.45/1.45/1.45/1.45 | Watch The Fun (Strategic) |
 | 84 | [Monccoco](roster/84-monccoco.md) | ★5 | Human | CC (Control) | Cavalry | 42/75/48/66 | 1.07/1.88/1.2/1.65 | Nightmare (Tactical) · Song Dream (Tactical) · Dream Eater (Tactical) |
 | 86 | [Synaga](roster/86-synaga.md) | ★5 | Elf | DPS | Archer | 78/50/55/48 | 1.97/1.25/1.38/1.2 | Flame Combo (Tactical) · Spirit Strike (Tactical) · Thorn Cross (Tactical) |
 | 88 | [Perris·Sp](roster/88-perris-sp.md) | ★5 | Human | DPS | Archer | 67/62/40/62 | 1.68/1.55/1.02/1.55 | Evil Spirit (Strategic) · Unmoving (Strategic) · Chasing Sun (Pursuit) |
@@ -59,7 +56,6 @@ The playable hero roster (122 heroes). Stats shown are **base** (level 0 referen
 | 99 | [Thiel](roster/99-thiel.md) | ★5 | Orc | DPS | Archer | 77/48/62/44 | 1.93/1.2/1.55/1.12 | Binding Slash (Tactical) · Radiant Slash (Tactical) · Soul Bound (Tactical) |
 | 100 | [Phila](roster/100-phila.md) | ★5 | Human | DPS | Archer | 78/44/56/54 | 1.95/1.1/1.4/1.35 | Tactical Superb (Passive) · Tactical Burst (Passive) · Master Tactical (Passive) |
 | 101 | [orlando](roster/101-orlando.md) | ★5 | Human | Buff | Cavalry | 47/74/45/64 | 1.18/1.86/1.14/1.62 | Mana Storage (Strategic) · Elemental Burst (Tactical) · Tactical Burst (Passive) |
-| 102 | [Breakthrough Card](roster/102-breakthrough-card.md) | ★5 | Elf | — | Infantry | 58/58/58/58 | 1.45/1.45/1.45/1.45 | Watch The Fun (Strategic) |
 | 103 | [Shady](roster/103-shady.md) | ★5 | Elf | DPS | Archer | 76/48/58/48 | 1.92/1.2/1.46/1.22 | Annihilation (Tactical) · Purgatory Trial (Tactical) · Suicide Attack (Tactical) |
 | 104 | [Bettina](roster/104-bettina.md) | ★5 | Orc | DPS | Archer | 65/44/50/72 | 1.64/1.1/1.25/1.81 | Emerald Dance (Passive) · Master Tactical (Passive) · Sneak Attack (Passive) |
 | 105 | [Madeline](roster/105-madeline.md) | ★5 | Human | Buff | Cavalry | 64/74/47/46 | 1.62/1.85/1.18/1.15 | Boost Morale (Strategic) · Army Attack (Strategic) · Stationed (Strategic) |
