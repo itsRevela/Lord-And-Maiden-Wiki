@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Strategy & Guides** — 8 community-strategy pages rebuilt (in the wiki's voice, with
+  attribution) from Lofthouse's archived Steam guides, kept in a separate `build_guides.py`
+  module and clearly banner-marked as player knowledge rather than extracted data:
+  Battle Mechanics, Status Effects, Team Building, Build Order & City Hall Progression,
+  Territory Wars & Raids, Event Schedule, Prestige/Titles/Troop-Armour, and Spending &
+  F2P Tips. Information from the guides' screenshots was transcribed (no images reproduced)
+  and cross-checked against the data where possible — e.g. the in-battle **Attack
+  composition** worked example was verified (`204×1.03 + (90+81) = 381.12`, and the troop
+  value 90 matches a real SoldierInfo stat), and the City-Hall-25 progression is confirmed
+  by `need_build`. The root README gained a "Strategy & Guides" navigation block.
 - **Game Overview & Getting Started** page (grounded intro, core-systems hub,
   currency glossary, feature-unlock order).
 - **Hero Stat Leaderboards (Lv 80)** — computed end-game stats for all 122 named

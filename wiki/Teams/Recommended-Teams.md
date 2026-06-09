@@ -1,6 +1,6 @@
 # Recommended Teams & Builds
 
-Developer-recommended hero teams and skill loadouts (great starting builds). Each team is 3 heroes; skills are listed per hero. Hero pages link back here via their "Featured in N recommended teams" note.
+Developer-recommended hero teams and skill loadouts (great starting builds). Each team is 3 heroes; skills are listed per hero. Hero pages link back here via their "Featured in N recommended teams" note. New to team-building? See the [Team Building Guide](Team-Building.md).
 
 ## Beginner Teams (5)
 | ID | Category | Hero 1 | Hero 2 | Hero 3 |

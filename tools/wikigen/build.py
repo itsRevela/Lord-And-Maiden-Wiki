@@ -96,7 +96,8 @@ def gen_science():
     by_id = collections.OrderedDict()
     for r in rows:
         by_id.setdefault(r["id"], []).append(r)
-    lines = ["Research / technology tree. Each tech has multiple levels with rising cost and effect.", ""]
+    lines = ["Research / technology tree. Each tech has multiple levels with rising cost and effect. "
+             "For what to research and in what order, see [Build Order & City Hall Progression](../Progression/Build-Order.md).", ""]
     for sid, lvls in by_id.items():
         nm = clean(lvls[0].get("name_en") or lvls[0].get("name"))
         lines.append("### %s" % nm)
@@ -519,7 +520,9 @@ def gen_mechanics():
         "skill and buff definitions, and troop-composition bonuses. "
         "See [Buffs](Buffs.md) (`+1` beneficial, `-1` detrimental).", "",
         "### Combat rules *(from in-game tips)*",
-        "These battle rules are stated by the game itself (full list on [Game Tips](../Reference/Tips.md)):",
+        "These battle rules are stated by the game itself (full list on [Game Tips](../Reference/Tips.md)). "
+        "For a player-written walkthrough of how a fight resolves, see [Battle Mechanics](Battle-Mechanics.md) "
+        "and [Status Effects](Status-Effects.md):",
         "",
         "- **Troop restraint:** Infantry → Archer → Cavalry → Infantry. A restrained troop deals "
         "**−25% damage**, so matching your lead troop type against the enemy matters.",
@@ -539,7 +542,8 @@ def gen_recommend():
     rows = load("Recommend")
     lines = ["Developer-recommended hero teams and skill loadouts (great starting builds). "
              "Each team is 3 heroes; skills are listed per hero. Hero pages link back here "
-             "via their \"Featured in N recommended teams\" note.", ""]
+             "via their \"Featured in N recommended teams\" note. "
+             "New to team-building? See the [Team Building Guide](Team-Building.md).", ""]
     groups = collections.OrderedDict([("Beginner Teams", []), ("Popular Plans", [])])
     for r in rows:
         cat = R.desc(r.get("Des_en") or r.get("Des"))
@@ -826,6 +830,8 @@ def main():
     gen_entry_effects()
     import build_extra
     build_extra.register(write, tbl, R)
+    import build_guides
+    build_guides.register(write, tbl, R)
     gen_home()
     print("generated %d pages in %s" % (len(PAGES), WIKI))
     for sec, title, rel in PAGES:

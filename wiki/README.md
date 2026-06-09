@@ -12,8 +12,10 @@
 - [Game Overview & Getting Started](Game-Overview.md)
 
 ### Mechanics
+- [Battle Mechanics](Mechanics/Battle-Mechanics.md)
 - [Buffs & Debuffs](Mechanics/Buffs.md)
 - [Stats, Formulas & Mechanics](Mechanics/Stats-and-Formulas.md)
+- [Status Effects](Mechanics/Status-Effects.md)
 
 ### Heroes & Lord
 - [AI / Enemy Heroes](Heroes/AI-Heroes.md)
@@ -26,6 +28,7 @@
 
 ### Teams & Builds
 - [Recommended Teams & Builds](Teams/Recommended-Teams.md)
+- [Team Building Guide](Teams/Team-Building.md)
 
 ### Military
 - [Soldiers (Troops)](Soldiers/Soldiers.md)
@@ -37,6 +40,7 @@
 - [Recharge & Gift Packs](Items/Recharge-Packs.md)
 - [Research / Technology](Research/Science.md)
 - [Shops & Stores](Items/Shops.md)
+- [Spending & Free-to-Play Tips](Items/Spending-Guide.md)
 
 ### PvE & World
 - [Bosses](World/Bosses.md)
@@ -51,18 +55,22 @@
 
 ### Alliance
 - [Alliance Research](Alliance/Union-Research.md)
+- [Territory Wars & Raids](Alliance/Territory-Wars-and-Raids.md)
 
 ### Progression
+- [Build Order & City Hall Progression](Progression/Build-Order.md)
 - [Building & City Unlocks](Progression/Building-Unlocks.md)
 - [Cumulative Costs (to Max)](Progression/Cumulative-Costs.md)
 - [Favorability (GoodFeel)](Progression/Favorability.md)
 - [Feature Unlock Levels](Progression/Feature-Unlocks.md)
 - [Lord Outfits](Progression/Lord-Outfits.md)
+- [Prestige, Titles & Troop Armour](Progression/Player-Systems.md)
 - [Ship Levels](Progression/Ship.md)
 - [Style Level](Progression/Style.md)
 - [VIP Levels](Progression/VIP.md)
 
 ### Quests & Events
+- [Event Schedule](Quests/Event-Schedule.md)
 - [Minigames](Quests/Minigames.md)
 - [Quests & Events](Quests/Quests-and-Events.md)
 

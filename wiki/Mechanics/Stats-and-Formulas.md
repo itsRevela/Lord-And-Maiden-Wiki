@@ -68,7 +68,7 @@ Each system contributes its `power` value (e.g. each building level, each tech l
 Battles are resolved on the server. The client sends the chosen troops (`CSLogic_StartFight`) and receives a **Battle Report** containing the result, per-round data, kills and MVPs. The exact damage equation is therefore not present in the client. What the client (and this wiki) provides: effective hero/troop stats, skill and buff definitions, and troop-composition bonuses. See [Buffs](Buffs.md) (`+1` beneficial, `-1` detrimental).
 
 ### Combat rules *(from in-game tips)*
-These battle rules are stated by the game itself (full list on [Game Tips](../Reference/Tips.md)):
+These battle rules are stated by the game itself (full list on [Game Tips](../Reference/Tips.md)). For a player-written walkthrough of how a fight resolves, see [Battle Mechanics](Battle-Mechanics.md) and [Status Effects](Status-Effects.md):
 
 - **Troop restraint:** Infantry → Archer → Cavalry → Infantry. A restrained troop deals **−25% damage**, so matching your lead troop type against the enemy matters.
 - **Target selection (no Taunt):** Commander **20%**, Striker 1 **40%**, Striker 2 **40%**.

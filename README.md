@@ -102,6 +102,16 @@ cross-checked against the source files.
 [Avatar Frames](wiki/Reference/Avatar-Frames.md) ·
 [Chat Emojis](wiki/Reference/Emojis.md)
 
+**📘 Strategy & Guides** *(player knowledge, rebuilt from community Steam guides by [Lofthouse](https://github.com/itsRevela/Lord-And-Maiden-Guides) — may be out of date)*
+[Battle Mechanics](wiki/Mechanics/Battle-Mechanics.md) ·
+[Status Effects](wiki/Mechanics/Status-Effects.md) ·
+[Team Building Guide](wiki/Teams/Team-Building.md) ·
+[Build Order & City Hall Progression](wiki/Progression/Build-Order.md) ·
+[Territory Wars & Raids](wiki/Alliance/Territory-Wars-and-Raids.md) ·
+[Event Schedule](wiki/Quests/Event-Schedule.md) ·
+[Prestige, Titles & Troop Armour](wiki/Progression/Player-Systems.md) ·
+[Spending & Free-to-Play Tips](wiki/Items/Spending-Guide.md)
+
 ## ✅ Accuracy
 
 Every page is **generated from the game's own data files** — no hand-typed numbers.

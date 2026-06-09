@@ -1,6 +1,6 @@
 # Research / Technology
 
-Research / technology tree. Each tech has multiple levels with rising cost and effect.
+Research / technology tree. Each tech has multiple levels with rising cost and effect. For what to research and in what order, see [Build Order & City Hall Progression](../Progression/Build-Order.md).
 
 ### Gathering Technique
 | Lv | Power | Food | Wood | Stone | Iron | Time | Req. Building | Effect |
