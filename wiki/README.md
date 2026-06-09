@@ -6,6 +6,9 @@
 
 ## Table of Contents
 
+### Overview
+- [Game Overview & Getting Started](Game-Overview.md)
+
 ### Mechanics
 - [Buffs & Debuffs](Mechanics/Buffs.md)
 - [Stats, Formulas & Mechanics](Mechanics/Stats-and-Formulas.md)
@@ -13,6 +16,7 @@
 ### Heroes & Lord
 - [AI / Enemy Heroes](Heroes/AI-Heroes.md)
 - [Hero Skins](Heroes/Hero-Skins.md)
+- [Hero Stat Leaderboards (Lv 80)](Heroes/Hero-Leaderboards.md)
 - [Hero Talents](Heroes/Hero-Talents.md)
 - [Heroes (Roster)](Heroes/Heroes.md)
 - [Lord Talents](Heroes/Lord-Talents.md)

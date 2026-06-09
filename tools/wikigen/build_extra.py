@@ -11,7 +11,12 @@ table-of-contents (build.PAGES) as the core generators.
 import re
 import collections
 
-from resolver import load, fmt_num, clean, secs, SOLDIER_TYPE
+from resolver import (load, fmt_num, clean, secs, SOLDIER_TYPE,
+                      RACE_NAME, RST_ARCHETYPE, HERO_MAX_LEVEL)
+
+
+def _slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "x"
 
 
 def _dash(v, zero=("0", "", "0_0")):
@@ -491,7 +496,99 @@ def gen_emojis(write, tbl, R):
 
 
 # --------------------------------------------------------------------------- #
+# Overview / synthesis pages
+# --------------------------------------------------------------------------- #
+def gen_overview(write, tbl, R):
+    lines = [
+        "**Lord and Maiden** is a strategy / city-management game: you grow a city of "
+        "buildings, recruit and level a roster of named heroes, train four troop types, "
+        "research technology, and fight through a PvE campaign, world & alliance bosses, "
+        "trials and PvP — solo and in an alliance. Every number on this wiki is extracted "
+        "directly from the game's data files.", "",
+        "## Core Systems", "",
+        "- **[Heroes](Heroes/Heroes.md)** — %d named heroes (max level %d), each with growth "
+        "stats, skills, talents and lore. See the **[Lv 80 Leaderboards](Heroes/Hero-Leaderboards.md)** "
+        "to compare end-game stats." % (sum(1 for h in load("HeroInfo") if R.is_named_hero(h["id"])), HERO_MAX_LEVEL),
+        "- **[Skills](Heroes/Skills.md)** — Strategic / Tactical / Passive / Pursuit, with awaken levels.",
+        "- **[City & Buildings](Buildings/Buildings.md)** — per-level costs, times and unlocks.",
+        "- **[Soldiers](Soldiers/Soldiers.md)** & **[Troop Combinations](Military/Troop-Combinations.md)** — 4 types, tiered.",
+        "- **[Research](Research/Science.md)** & **[Alliance Research](Alliance/Union-Research.md)**.",
+        "- **[Crafting](Crafting/Formulas.md)**, **[Shops](Items/Shops.md)**, **[Item Sources](Items/Item-Sources.md)**.",
+        "- **PvE**: **[Campaign](World/Campaign.md)**, **[Relic Dungeons](World/Relic-Dungeons.md)**, "
+        "**[Bosses](World/Bosses.md)**, **[Trials](World/Trials.md)**, **[Warlord Challenge](World/Warlord-Challenge.md)**.",
+        "- **Progression**: **[VIP](Progression/VIP.md)**, **[Favorability](Progression/Favorability.md)**, "
+        "**[Feature Unlocks](Progression/Feature-Unlocks.md)**.",
+        "- **Reference**: **[Stats & Formulas](Mechanics/Stats-and-Formulas.md)** (start here for the math).", "",
+    ]
+    # currency glossary (the pricetype props used across shops)
+    si = load("StoreInfo")
+    cur = []
+    seen = set()
+    for r in sorted(si, key=lambda x: int(x.get("pricetype") or 0)):
+        pt = r.get("pricetype")
+        if pt and pt not in seen:
+            seen.add(pt)
+            cur.append([R.prop_name(pt)])
+    if cur:
+        lines += ["## Currencies", "",
+                  "Currencies the game spends across its shops (full price lists in "
+                  "**[Shops](Items/Shops.md)** and **[Recharge Packs](Items/Recharge-Packs.md)**):", ""]
+        lines += tbl(["Currency"], cur)
+        lines.append("")
+    # early progression order
+    uf = sorted(load("UnLockFun"), key=lambda r: (int(r.get("NeedLv") or 0), r.get("Buildtype") or ""))
+    if uf:
+        lines += ["## Feature Unlock Order", "",
+                  "The sequence features open up as you progress (also on "
+                  "**[Feature Unlocks](Progression/Feature-Unlocks.md)**):", ""]
+        body = []
+        for r in uf:
+            bt = (r.get("Buildtype") or "").strip()
+            bld = "Special / Event" if bt in ("-1", "0", "") else R.build_name(bt)
+            body.append([r.get("NeedLv", ""), clean(r.get("funName_en") or r.get("funName")), bld])
+        lines += tbl(["Req. Lv", "Feature", "Building"], body)
+    write("Game-Overview.md", "Game Overview & Getting Started", "Overview", lines)
+
+
+def gen_hero_leaderboards(write, tbl, R):
+    heroes = [h for h in load("HeroInfo") if R.is_named_hero(h["id"])]
+    rows = []
+    for h in heroes:
+        a = R.hero_stat_at(h["attack"], h["attack_grow"], HERO_MAX_LEVEL)
+        d = R.hero_stat_at(h["defense"], h["defense_grow"], HERO_MAX_LEVEL)
+        ru = R.hero_stat_at(h["ruin"], h["ruin_grow"], HERO_MAX_LEVEL)
+        sp = R.hero_stat_at(h["speed"], h["speed_grow"], HERO_MAX_LEVEL)
+        nm = R.hero_name(h["id"])
+        link = "[%s](roster/%s-%s.md)" % (nm, h["id"], _slug(nm))
+        rows.append({"h": h, "nm": nm, "link": link, "A": a, "D": d, "R": ru, "S": sp,
+                     "T": a + d + ru, "role": R.hero_role(h["id"])})
+    lines = ["End-game (Lv %d) computed stats for every named hero, using "
+             "`stat(80) = base + floor(growth × 80)`. Speed is a turn-order stat and is listed "
+             "separately from the offensive/defensive total. Use this to compare heroes at the "
+             "level cap." % HERO_MAX_LEVEL, ""]
+    # top tables per stat
+    for key, label in [("A", "Attack"), ("D", "Defense"), ("R", "Ruin"), ("T", "ATK+DEF+Ruin Total")]:
+        top = sorted(rows, key=lambda x: -x[key])[:15]
+        lines += ["## Top 15 by %s (Lv %d)" % (label, HERO_MAX_LEVEL), ""]
+        lines += tbl(["#", "Hero", "★", "Role", label],
+                     [[i + 1, r["link"], r["h"]["rare"], r["role"], format(r[key], ",")] for i, r in enumerate(top)])
+        lines.append("")
+    # full table sorted by total
+    lines += ["## All Heroes — Lv %d Stats" % HERO_MAX_LEVEL, ""]
+    full = sorted(rows, key=lambda x: -x["T"])
+    lines += tbl(["Hero", "★", "Race", "Role", "Archetype", "ATK", "DEF", "Ruin", "Speed", "Total"],
+                 [[r["link"], r["h"]["rare"], RACE_NAME.get(r["h"]["type"], r["h"]["type"]), r["role"],
+                   RST_ARCHETYPE.get(r["h"]["RST"], r["h"]["RST"]).split(" (")[0],
+                   format(r["A"], ","), format(r["D"], ","), format(r["R"], ","),
+                   format(r["S"], ","), format(r["T"], ",")]
+                  for r in full])
+    write("Heroes/Hero-Leaderboards.md", "Hero Stat Leaderboards (Lv 80)", "Heroes & Lord", lines)
+
+
+# --------------------------------------------------------------------------- #
 def register(write, tbl, R):
+    gen_overview(write, tbl, R)
+    gen_hero_leaderboards(write, tbl, R)
     gen_feature_unlocks(write, tbl, R)
     gen_building_unlocks(write, tbl, R)
     gen_item_sources(write, tbl, R)

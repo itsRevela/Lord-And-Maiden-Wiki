@@ -355,9 +355,22 @@ def gen_skills():
     by_t = collections.OrderedDict()
     for r in rows:
         by_t.setdefault(r["ST"], []).append(r)
+    # reverse index: which named heroes innately carry each (ST, ID) skill
+    users = {}
+    for h in load("HeroInfo"):
+        if not R.is_named_hero(h["id"]):
+            continue
+        nm = R.hero_name(h["id"])
+        page = "roster/%s-%s.md" % (h["id"], _slug(nm))
+        for i in (0, 1, 2):
+            key = (h["skill%d_type" % i], h["skill%d_id" % i])
+            if key == ("0", "0"):
+                continue
+            users.setdefault(key, []).append("[%s](%s)" % (nm, page))
     lines = ["Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. "
              "Skills level up (\"awaken\") — see per-level effects on each hero's page. "
-             "`Impact` is the skill's base power coefficient; `Init`/`+Lv` show base value and per-level gain.", ""]
+             "`Impact` is the skill's base power coefficient; `Init`/`+Lv` show base value and per-level gain. "
+             "`Used by` lists heroes that carry the skill innately.", ""]
     for st in sorted(by_t, key=lambda x: int(x)):
         lines.append("## %s Skills" % SKILL_TYPE_NAME.get(st, "Type " + st))
         body = []
@@ -365,8 +378,9 @@ def gen_skills():
             body.append([r["ID"], clean(r.get("Name_en") or r.get("Name")), "★" + r["Rare"],
                          r.get("MaxUse", "0"), r.get("ReadyRound", "0"),
                          r.get("ImpactBy", ""), r.get("InitVal", ""), r.get("UpVal", ""),
-                         clean(r.get("Des_en") or r.get("Des"))])
-        lines += tbl(["ID", "Name", "Rarity", "Max Use", "Ready Rd", "Impact", "Init", "+/Lv", "Description"], body)
+                         clean(r.get("Des_en") or r.get("Des")),
+                         ", ".join(users.get((st, r["ID"]), [])) or "—"])
+        lines += tbl(["ID", "Name", "Rarity", "Max Use", "Ready Rd", "Impact", "Init", "+/Lv", "Description", "Used by"], body)
         lines.append("")
     write("Heroes/Skills.md", "Skill Catalog", "Heroes & Lord", lines)
 
