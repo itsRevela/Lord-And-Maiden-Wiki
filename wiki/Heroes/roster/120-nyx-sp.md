@@ -119,7 +119,7 @@ In the end, the kingdom launched a crusade against the Silent Altar. They could 
 
 ## Skills
 ### Eternal Flame — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops(DMG Coefficient 1.0),And Make The Target Enemy Before Each Round,Curse DMG Taken,Lasting For 2～3 Rounds
+1 Round Preparation Time,ATK 3 Enemy Troops(DMG Coefficient 1.0),And Make The Target Enemy Before Each Round,Curse DMG Taken,Lasting For 2~3 Rounds
 *Rarity ★5 · Ready on round 1*
 
 ### Combustion Aid — *Strategic*
@@ -146,6 +146,8 @@ Own Troop,When attacking an enemy with Tactical Burning or Curse status,A Chance
 | 4 | Effect Trigger Probability +9.6% |
 | 5 | Effect Trigger Probability +12.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -146,6 +146,8 @@ Own Troop,In An Eternal State,Attribute Will Not Be Changed,And DMG Taken Reduce
 | 4 | DMG Taken Reduced +5.6%(Not Affected By Attribute) |
 | 5 | DMG Taken Reduced +7.0%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

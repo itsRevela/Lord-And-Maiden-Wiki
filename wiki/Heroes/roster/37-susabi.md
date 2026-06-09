@@ -119,11 +119,11 @@ Some say she only appears during times of crisis for the beastmen, while others 
 
 ## Skills
 ### Fox Spell — *Tactical*
-1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds
+1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds
 *Rarity ★4 · Ready on round 1*
 
 ### Magic Storm — *Tactical*
-1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds
+1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -134,16 +134,18 @@ Some say she only appears during times of crisis for the beastmen, while others 
 | 4 | Skill Trigger Probability +6.4% |
 
 ### Magic Cloak — *Passive*
-Own Troop,Curse DMG Taken  Reduced(Affected By DEF Attribute),And Increase All Attributes 3.6(Affected By DEF Attribute)
+Own Troop,Curse DMG Taken Reduced(Affected By DEF Attribute),And Increase All Attributes 3.6(Affected By DEF Attribute)
 *Rarity ★4 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
 |---|---|
-| 1 | Curse DMG Taken  Reduced +4%(Not Affected By Attribute) |
-| 2 | Curse DMG Taken  Reduced +8%(Not Affected By Attribute) |
-| 3 | Curse DMG Taken  Reduced +12%(Not Affected By Attribute) |
-| 4 | Curse DMG Taken  Reduced +16%(Not Affected By Attribute) |
+| 1 | Curse DMG Taken Reduced +4%(Not Affected By Attribute) |
+| 2 | Curse DMG Taken Reduced +8%(Not Affected By Attribute) |
+| 3 | Curse DMG Taken Reduced +12%(Not Affected By Attribute) |
+| 4 | Curse DMG Taken Reduced +16%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

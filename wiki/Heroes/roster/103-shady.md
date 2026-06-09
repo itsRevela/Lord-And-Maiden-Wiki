@@ -123,7 +123,7 @@ ATK 1 Enemy Troop,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attrib
 *Rarity ★5*
 
 ### Purgatory Trial — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops
+1 Round Preparation Time,ATK 2 Enemy Troops
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ ATK 2 Enemy Troops,But Own Troop,DMG Taken Increased 20%(Not Affected By Attribu
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -20,7 +20,7 @@ Under the moonlight, the two blades gleamed in harmony. Amidst the flashing stee
 | Line | Text |
 |---|---|
 | Summon | Well, I'm back. What kind of eyes are you looking at? |
-| Tap 1 | Hurry up!  Why am I always running ahead? |
+| Tap 1 | Hurry up! Why am I always running ahead? |
 | Tap 2 | Ao blare ~ ~ ~... Ahem, no, I'm! Not! The Wolf! |
 | Tap 3 | Lend it to you and give it back to me |
 
@@ -119,7 +119,7 @@ Under the moonlight, the two blades gleamed in harmony. Amidst the flashing stee
 
 ## Skills
 ### Moon Wolf — *Tactical*
-1 Round  Preparation Time,ATK The Enemy Commander 1 Time,And Make The Target Enemy DEF Reduced 9.6%(Affected By DES Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,ATK The Enemy Commander 1 Time,And Make The Target Enemy DEF Reduced 9.6%(Affected By DES Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Ready on round 1*
 
 ### Evil Fruit — *Tactical*
@@ -135,7 +135,7 @@ ATK The Enemy Commander 1 Time,And Make The Target Enemy 33%Probability In A Stu
 | 5 | Skill Trigger Probability +6.0% |
 
 ### Beast King Seal — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ ATK The Enemy Commander 1 Time,And Make The Target Enemy 33%Probability In A Stu
 | 4 | Skill Trigger Probability +7.2% |
 | 5 | Skill Trigger Probability +9.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

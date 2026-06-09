@@ -10,7 +10,7 @@ Height 166cm · Age 510 · Birthday 11/1 · Character: Tough,Steady · Interest:
 ## Background
 When a shooting star streaks across the sky and the night sky bursts into brilliant light; when the dawn replaces the dark night and a new day quietly arrives, Utija knows that that moment is getting closer and closer.
 
-She began to carefully arrange the formation and adjust the flow of spiritual power, ensuring that every detail was perfect.  She believed that that person would arrive as promised, bringing with them the light of hope.
+She began to carefully arrange the formation and adjust the flow of spiritual power, ensuring that every detail was perfect. She believed that that person would arrive as promised, bringing with them the light of hope.
 
 That was an existence capable of changing everything, a person who could dispel the darkness and bring light. Although the world in her dreams was still filled with despair and the course of fate pointed towards the unknown, Utija never wavered in her faith.
 
@@ -135,7 +135,7 @@ Make 2 Of our Troops,Restore Life
 | 5 | Skill Trigger Probability +7.0% |
 
 ### Healing Time — *Tactical*
-1 Round  Preparation Time,Make 3 Of our Troops,Restore Life
+1 Round Preparation Time,Make 3 Of our Troops,Restore Life
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ Make 2 Of our Troops,Restore Life
 | 4 | Skill Trigger Probability +7.2% |
 | 5 | Skill Trigger Probability +9.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

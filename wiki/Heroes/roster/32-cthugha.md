@@ -123,7 +123,7 @@ ATK 3 Enemy Troops,And Make The Target Enemy Before Each Round,Burning DMG Taken
 *Rarity ★5*
 
 ### Erythema Imprint — *Tactical*
-1 Round  Preparation Time,Make 3 Of Enemy Troops,Tactical Skill DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,Make 3 Of Enemy Troops,Tactical Skill DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -135,7 +135,7 @@ ATK 3 Enemy Troops,And Make The Target Enemy Before Each Round,Burning DMG Taken
 | 5 | Skill Trigger Probability +9.0% |
 
 ### Flame Bash — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ ATK 3 Enemy Troops,And Make The Target Enemy Before Each Round,Burning DMG Taken
 | 4 | Skill Trigger Probability +7.2% |
 | 5 | Skill Trigger Probability +9.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -1,0 +1,100 @@
+wiki/Teams/Recommended-Teams.md:7  | 1001 | ★Beginner Recommend★ | **Patra**<br/>Ghost Bone, Rift, Tactical Burst, 
+wiki/Teams/Recommended-Teams.md:8  | 1002 | ★Beginner Recommend★ | **Phila**<br/>Tactical Superb, Evil Fruit, Bone 
+wiki/Teams/Recommended-Teams.md:9  | 1003 | ★Beginner Recommend★ | **SusaMaki·Sp**<br/>Higanbana, Purgatory Trial, 
+wiki/Teams/Recommended-Teams.md:10  | 1004 | Popular Plan_1 | **Synaga**<br/>Flame Combo, Arrows Volley, Rift, Eleme
+wiki/Teams/Recommended-Teams.md:11  | 1005 | Popular Plan_2 | **Synaga**<br/>Flame Combo, Endless Destroy, Rift, Tho
+wiki/Teams/Recommended-Teams.md:12  | 1006 | Popular Plan_3 | **Patra**<br/>Ghost Bone, Thorn Cross, Tactical Burst,
+wiki/Teams/Recommended-Teams.md:13  | 1007 | Popular Plan_4 | **Patra**<br/>Ghost Bone, Thorn Cross, Tactical Burst,
+wiki/Teams/Recommended-Teams.md:14  | 1008 | Popular Plan_5 | **SusaMaki·Sp**<br/>Higanbana, Purgatory Trial, Spirit
+wiki/Teams/Recommended-Teams.md:15  | 1009 | Popular Plan_6 | **SusaMaki·Sp**<br/>Higanbana, Purgatory Trial, Spirit
+wiki/Teams/Recommended-Teams.md:16  | 1010 | Popular Plan_7 | **Thiel**<br/>Binding Slash, Thorn Cross, Tactical Bur
+wiki/Teams/Recommended-Teams.md:17  | 1011 | Popular Plan_8 | **Thiel**<br/>Binding Slash, Deadly Scythe, Tactical B
+wiki/Teams/Recommended-Teams.md:18  | 1012 | Popular Plan_9 | **Zoe·Sp**<br/>Spiritbound, Surprise Attack, Star Fiel
+wiki/Teams/Recommended-Teams.md:19  | 1013 | Popular Plan_10 | **Zoe·Sp**<br/>Spiritbound, Surprise Attack, Ghost Bo
+wiki/Teams/Recommended-Teams.md:20  | 1014 | Popular Plan_11 | **Mia·Sp**<br/>Violent Chop, Deadly Scythe, Rift, Tho
+wiki/Teams/Recommended-Teams.md:21  | 1015 | Popular Plan_12 | **Mia·Sp**<br/>Violent Chop, Arrows Volley, Element A
+wiki/Teams/Recommended-Teams.md:22  | 1016 | Popular Plan_13 | **Hana**<br/>Hunt Instinct, Star Field, Surprise Atta
+wiki/Teams/Recommended-Teams.md:23  | 1017 | Popular Plan_14 | **Hana**<br/>Hunt Instinct, Glitter, Star Field, Whit
+wiki/Teams/Recommended-Teams.md:24  | 1018 | Popular Plan_15 | **Cthugha·Sp**<br/>Exploding Flame, Chain Arrows, Fla
+wiki/Teams/Recommended-Teams.md:25  | 1019 | Popular Plan_16 | **Vanessa·Sp**<br/>Ghost Flame, Master Tactical, Seal
+wiki/Teams/Recommended-Teams.md:26  | 1020 | Popular Plan_17 | **Dolly**<br/>Sky Rain Arrows, Arrows Volley, Element
+wiki/Teams/Recommended-Teams.md:27  | 1021 | Popular Plan_18 | **Dolly**<br/>Sky Rain Arrows, Arrows Volley, Element
+wiki/Teams/Recommended-Teams.md:28  | 1022 | Popular Plan_19 | **Zoe**<br/>Demon Slash, Raid, Dragon Roar, Radiant S
+wiki/Teams/Recommended-Teams.md:29  | 1023 | Popular Plan_20 | **Zoe**<br/>Demon Slash, Raid, Dragon Roar, Radiant S
+wiki/Teams/Recommended-Teams.md:30  | 1024 | Popular Plan_21 | **Roland**<br/>Epee Storm, Rift, Thorn Cross, Peerles
+wiki/Teams/Recommended-Teams.md:31  | 1025 | Popular Plan_22 | **Roland**<br/>Epee Storm, Element Affinity, Peerless
+wiki/Teams/Recommended-Teams.md:32  | 1026 | Popular Plan_23 | **Batory·Sp**<br/>Moon Wolf, Element Affinity, Purgat
+wiki/Teams/Recommended-Teams.md:33  | 1027 | Popular Plan_24 | **Batory·Sp**<br/>Moon Wolf, Purgatory Trial, Demon B
+wiki/Teams/Recommended-Teams.md:34  | 1028 | Popular Plan_25 | **Utia·Sp**<br/>Phantom Vortex, Tactical Burst, Evil 
+wiki/Teams/Recommended-Teams.md:35  | 1029 | Popular Plan_26 | **Utia·Sp**<br/>Phantom Vortex, Tactical Burst, Evil 
+wiki/Teams/Recommended-Teams.md:36  | 1030 | Popular Plan_27 | **Shady**<br/>Annihilation, Master Tactical, Chain Ar
+wiki/Teams/Recommended-Teams.md:37  | 1031 | Popular Plan_28 | **Shady**<br/>Annihilation, Master Tactical, Chain Ar
+wiki/Teams/Recommended-Teams.md:38  | 1032 | Popular Plan_29 | **Aguria**<br/>Flowlight Slash, Holy-light Chop, Chai
+wiki/Teams/Recommended-Teams.md:39  | 1033 | Popular Plan_30 | **Perris**<br/>Taboo Seal, Master Tactical, Bone Blad
+wiki/Teams/Recommended-Teams.md:40  | 1034 | Popular Plan_31 | **Perris**<br/>Taboo Seal, Holy-light Chop, Bone Blad
+wiki/Teams/Recommended-Teams.md:41  | 1035 | Popular Plan_32 | **Cliodna**<br/>Sheep Game, Sky Tear Arrow, Green Tea
+wiki/Teams/Recommended-Teams.md:42  | 1036 | Popular Plan_33 | **Utija**<br/>Blessed Shield, Light Baptism, Healing 
+wiki/Teams/Recommended-Teams.md:43  | 1037 | Popular Plan_34 | **Eros**<br/>Spirit Bondage, Bone Blade, Fire Emblem,
+wiki/Teams/Recommended-Teams.md:44  | 1038 | Popular Plan_35 | **Eros**<br/>Spirit Bondage, Bone Blade, Fire Emblem,
+wiki/Teams/Recommended-Teams.md:45  | 1039 | Popular Plan_36 | **Belala**<br/>Thunder Slash, Holy Chase, Chase Exper
+wiki/Teams/Recommended-Teams.md:46  | 1040 | Popular Plan_37 | **Perris·Sp**<br/>Evil Spirit, Magnificent, Rainy Cha
+wiki/Teams/Recommended-Teams.md:47  | 1041 | Popular Plan_38 | **Duffy·Sp**<br/>Jungle Chase, Star Field, Ghost Boun
+wiki/Teams/Recommended-Teams.md:48  | 1042 | Popular Plan_39 | **SusaMaki**<br/>Flash Fire, Ghost Bound, Glitter, Wh
+wiki/Teams/Recommended-Teams.md:49  | 1043 | Popular Plan_40 | **Duffy·Sp**<br/>Jungle Chase, Star Field, Ghost Boun
+wiki/Teams/Recommended-Teams.md:50  | 1044 | Popular Plan_41 | **SusaMaki**<br/>Flash Fire, Ghost Bound, Glitter, Wh
+wiki/Teams/Recommended-Teams.md:51  | 1045 | Popular Plan_42 | **Vanessa**<br/>Blazing Claw, Suicide Attack, Holy-li
+wiki/Teams/Recommended-Teams.md:52  | 1046 | Popular Plan_43 | **Vanessa**<br/>Blazing Claw, Suicide Attack, Holy-li
+wiki/Teams/Recommended-Teams.md:53  | 1047 | Popular Plan_44 | **Lenna**<br/>Seal Chaos, Holy-light Chop, Chain Arro
+wiki/Teams/Recommended-Teams.md:54  | 1048 | Popular Plan_45 | **Lenna**<br/>Seal Chaos, Holy-light Chop, Chain Arro
+wiki/Teams/Recommended-Teams.md:55  | 1049 | Popular Plan_46 | **Luna**<br/>Shinkoku, Unmoving, Healing Bell, Healin
+wiki/Teams/Recommended-Teams.md:56  | 1050 | Popular Plan_47 | **Aguria·Sp**<br/>Swift Thrust, Tactical Burst, Maste
+wiki/Teams/Recommended-Teams.md:57  | 1051 | Popular Plan_48 | **Susabi·Sp**<br/>Fox Illusion, Doom, Sin Judgment, R
+wiki/Teams/Recommended-Teams.md:58  | 1052 | Popular Plan_49 | **Mia**<br/>Divine Punish, Penetrate Gun, Heart Chain
+wiki/Teams/Recommended-Teams.md:59  | 1053 | Popular Plan_50 | **Mia**<br/>Divine Punish, Penetrate Gun, Polaris, He
+wiki/Teams/Recommended-Teams.md:60  | 1054 | Popular Plan_51 | **Phila**<br/>Tactical Superb, Evil Fruit, Bone Blade
+wiki/Teams/Recommended-Teams.md:61  | 1055 | Popular Plan_52 | **Phila**<br/>Tactical Superb, Holy-light Chop, Suici
+wiki/Teams/Recommended-Teams.md:62  | 1056 | Popular Plan_53 | **Serena**<br/>Life And Death, War Drum, Smoke Smothe
+wiki/Teams/Recommended-Teams.md:63  | 1057 | Popular Plan_54 | **Derifa·Sp**<br/>Dilemma, Fireball, Dragon Roar, Dem
+wiki/Teams/Recommended-Teams.md:64  | 1058 | Popular Plan_55 | **Cthugha**<br/>Blazing Sword, Spirit Gather, Holy-li
+wiki/Teams/Recommended-Teams.md:65  | 1059 | Popular Plan_56 | **Bettina**<br/>Emerald Dance, Purgatory Trial, Spiri
+wiki/Teams/Recommended-Teams.md:66  | 1060 | Popular Plan_57 | **Bettina**<br/>Emerald Dance, Chain Arrows, Suicide 
+wiki/Teams/Recommended-Teams.md:67  | 1061 | Popular Plan_58 | **Satoru**<br/>Gray World, Agile, Angel Blesse, Song 
+wiki/Teams/Recommended-Teams.md:68  | 1062 | Popular Plan_59 | **Sera**<br/>Butterfly Strike, Element Affinity, Purg
+wiki/Teams/Recommended-Teams.md:69  | 1063 | Popular Plan_60 | **Sera**<br/>Butterfly Strike, Spirit Gather, Purgato
+wiki/Teams/Recommended-Teams.md:70  | 1064 | ★Beginner Plan1★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Sus
+wiki/Teams/Recommended-Teams.md:71  | 1065 | ★Beginner Plan2★ | **Duffy**<br/>Field, Rose Blade, Sword Break | **Sus
+wiki/Teams/Recommended-Teams.md:72  | 1066 | Popular Plan_61 | **Utia**<br/>Vines Entwine, Sparkly Flowers, Charged 
+wiki/Teams/Recommended-Teams.md:73  | 1067 | Popular Plan_62 | **Angie·Sp**<br/>Magic Book, Gospel, Elf Elegy | **Sl
+wiki/Teams/Recommended-Teams.md:74  | 1068 | Popular Plan_63 | **Utia**<br/>Vines Entwine, Sparkly Flowers, Charged 
+wiki/Teams/Recommended-Teams.md:75  | 1069 | Popular Plan_64 | **Duffy**<br/>Field, Cat Blade, Rose Blade | **Bellon
+wiki/Teams/Recommended-Teams.md:76  | 1070 | Popular Plan_65 | **Luka**<br/>Broken Arrow, Flowers Sword, Rose Blade 
+wiki/Teams/Recommended-Teams.md:77  | 1071 | Popular Plan_66 | **Bast**<br/>Precise Shoot, Charged Slash, Just Rulin
+wiki/Teams/Recommended-Teams.md:78  | 1072 | Popular Plan_67 | **Bast**<br/>Precise Shoot, Charged Slash, Just Rulin
+wiki/Teams/Recommended-Teams.md:79  | 1073 | Popular Plan_68 | **Batory**<br/>Wolf Blade, Chase Dark, Chasing Moon |
+wiki/Teams/Recommended-Teams.md:80  | 1074 | Popular Plan_69 | **Slider**<br/>Mad Knife, Flowers Sword, Rose Sword |
+wiki/Teams/Recommended-Teams.md:81  | 1075 | Popular Plan_70 | **Rukia**<br/>Power Faith, Skyland, Energy Magic | **
+wiki/Teams/Recommended-Teams.md:82  | 1076 | Popular Plan_71 | **Cureka**<br/>Deafening, Pierce Arrow, Turbid Curren
+wiki/Teams/Recommended-Teams.md:83  | 1077 | Popular Plan_72 | **Angie·Sp**<br/>Magic Book, Star Moon Shell, Energy 
+wiki/Teams/Recommended-Teams.md:84  | 1078 | Popular Plan_73 | **Nicole**<br/>Fly Flowers, Flowers Sword, Sharp Claw
+wiki/Teams/Recommended-Teams.md:85  | 1079 | Popular Plan_74 | **Nicole**<br/>Fly Flowers, Cat Blade, Sharp Claw | *
+wiki/Teams/Recommended-Teams.md:86  | 1080 | Popular Plan_75 | **Derifa**<br/>Sakura Strawberry, Wind Blessing, Spri
+wiki/Teams/Recommended-Teams.md:87  | 1081 | Popular Plan_76 | **Asmodeus**<br/>Startled Arrow, Just Ruling, Rose Bl
+wiki/Teams/Recommended-Teams.md:88  | 1082 | Popular Plan_77 | **Darby**<br/>Lost Sheep, Chase Dark, Chasing Moon | 
+wiki/Teams/Recommended-Teams.md:89  | 1083 | Popular Plan_78 | **Puona·Sp**<br/>Broken Mirror, Rose Sword, Flowers S
+wiki/Teams/Recommended-Teams.md:90  | 1084 | Popular Plan_79 | **Gremory**<br/>Night Fall, Seal Arrow, Soul Shot | *
+wiki/Teams/Recommended-Teams.md:91  | 1085 | Popular Plan_80 | **Angie**<br/>Natural Magic, Walking Beasts, Arrow Ra
+wiki/Teams/Recommended-Teams.md:92  | 1086 | Popular Plan_81 | **Angie**<br/>Natural Magic, Sharp Claw, Through Clou
+wiki/Teams/Recommended-Teams.md:93  | 1087 | Popular Plan_82 | **Darby**<br/>Lost Sheep, Chase Dark, Chasing Moon | 
+wiki/Teams/Recommended-Teams.md:94  | 1088 | Popular Plan_83 | **Batory**<br/>Wolf Blade, Chase Dark, Chasing Moon |
+wiki/Teams/Recommended-Teams.md:95  | 1089 | Popular Plan_84 | **Bonnie**<br/>Knight Talent, Sparkly Flowers, Cat Bl
+wiki/Teams/Recommended-Teams.md:96  | 1090 | Popular Plan_85 | **Bonnie**<br/>Knight Talent, Sparkly Flowers, Cat Bl
+wiki/Teams/Recommended-Teams.md:97  | 1091 | Popular Plan_86 | **Seimaki**<br/>Ghost Slash, Sword Break, Hopeless | 
+wiki/Teams/Recommended-Teams.md:98  | 1092 | Popular Plan_87 | **Seimaki**<br/>Ghost Slash, Sword Break, Hopeless | 
+wiki/Teams/Recommended-Teams.md:99  | 1093 | Popular Plan_88 | **Sylph**<br/>Swift, Concentrate, King Destroy | **He
+wiki/Teams/Recommended-Teams.md:100  | 1094 | Popular Plan_89 | **Fisis**<br/>Remnant Moonlight, Sword Break, Sonic A
+wiki/Teams/Recommended-Teams.md:101  | 1095 | Popular Plan_90 | **Doll Zero**<br/>Ripple, Sword Break, Frost | **Siss
+wiki/Teams/Recommended-Teams.md:102  | 1096 | Popular Plan_91 | **Doll Zero**<br/>Ripple, Sword Break, Frost | **Undi
+wiki/Teams/Recommended-Teams.md:103  | 1097 | Popular Plan_92 | **Abbey**<br/>Dazzle Feather, King Destroy, Confuse |
+wiki/Teams/Recommended-Teams.md:104  | 1098 | Popular Plan_93 | **Olrun**<br/>Burning Sky, Sword Break, Hopeless | **
+wiki/Teams/Recommended-Teams.md:105  | 1099 | Popular Plan_94 | **Thetis**<br/>Blade Shadow, Sword Break, Victory Swo
+wiki/Teams/Recommended-Teams.md:106  | 1100 | Popular Plan_95 | **Thetis**<br/>Blade Shadow, Sword Break, Victory Swo

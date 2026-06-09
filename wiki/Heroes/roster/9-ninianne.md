@@ -135,6 +135,8 @@ Own Troop,Before Each Round,Restore Life
 | 3 | Healing Coefficient +0.138 |
 | 4 | Healing Coefficient +0.184 |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

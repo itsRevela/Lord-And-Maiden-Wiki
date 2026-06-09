@@ -2,14 +2,14 @@
 
 Every game feature/panel and the building level that unlocks it. Build the listed structure to the required level to open the feature.
 
-| Feature | Required Building | Building Lv |
+| Feature | Required Building | Required Lv |
 |---|---|---|
 | Research | Academy | 1 |
 | Hero Summon | Adventurer Guild | 1 |
-| Training Cave | Build#-1 | 30 |
-| Dimensional Land | Build#-1 | 40 |
-| Dragon's Lair | Build#-1 | 50 |
-| Hero Codex | Build#-1 | 80 |
+| Training Cave | Special / Event | 30 |
+| Dimensional Land | Special / Event | 40 |
+| Dragon's Lair | Special / Event | 50 |
+| Hero Codex | Special / Event | 80 |
 | Wilderness | City Hall | 2 |
 | Sign-in | City Hall | 3 |
 | Achievement | City Hall | 4 |

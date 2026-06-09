@@ -119,7 +119,7 @@ Of course, Darby can be really cute sometimes. For example, she would save a por
 
 ## Skills
 ### Field — *Strategic*
-In The First 3 Rounds,Own Troop,DMG Dealt Increased(Affected By Spd Attribute),And In A Focused State,Immune: Disarm、Silence、Stun、Chaos、Taunts
+In The First 3 Rounds,Own Troop,DMG Dealt Increased(Affected By Spd Attribute),And In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★4*
 
 ### Cat Blade — *Tactical*
@@ -134,7 +134,7 @@ ATK 1 Enemy Troop
 | 4 | Skill Trigger Probability +5.6% |
 
 ### Sharp Claw — *Tactical*
-1 Round  Preparation Time,ATK 1 Enemy Troop
+1 Round Preparation Time,ATK 1 Enemy Troop
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ ATK 1 Enemy Troop
 | 3 | Skill Trigger Probability +5.4% |
 | 4 | Skill Trigger Probability +7.2% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

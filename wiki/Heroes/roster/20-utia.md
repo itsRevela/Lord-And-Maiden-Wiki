@@ -134,7 +134,7 @@ ATK 3 Enemy Troops
 | 4 | Skill Trigger Probability +5.6% |
 
 ### Walking Beasts — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops
+1 Round Preparation Time,ATK 2 Enemy Troops
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ ATK 3 Enemy Troops
 | 3 | Skill Trigger Probability +5.4% |
 | 4 | Skill Trigger Probability +7.2% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

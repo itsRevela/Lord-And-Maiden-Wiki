@@ -146,6 +146,8 @@ Own Troop,Before Each Round,40%Probability Tactical Skill DMG Dealt Increased(Af
 | 4 | Tactical Skill DMG Dealt Increased +16%(Not Affected By Attribute) |
 | 5 | Tactical Skill DMG Dealt Increased +20%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -135,7 +135,7 @@ From The 1st Round,Own Troop,Before Each Round,Restore Life,And DEF Attribute In
 | 5 | Healing Coefficient +0.280 |
 
 ### Sacred Feather — *Passive*
-Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★5 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、C
 | 4 | Effect Trigger Probability +8.8% |
 | 5 | Effect Trigger Probability +11.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

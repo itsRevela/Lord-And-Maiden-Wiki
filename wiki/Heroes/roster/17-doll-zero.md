@@ -110,13 +110,15 @@ Height 155cm · Age 14 · Birthday 7/7 · Character: Sensitive,Delicate · Inter
 
 ## Skills
 ### Ripple — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops
+1 Round Preparation Time,ATK 2 Enemy Troops
 *Rarity ★3 · Ready on round 1*
 
 ### Track — *Pursuit*
 When ATK Normally,Launch Pursuit ATK On Target
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

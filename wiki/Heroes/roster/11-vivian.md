@@ -114,7 +114,7 @@ Own Troop,Gain 1 Layer Of Shield, Which Can Block 1 DMG,And DMG Dealt Increased(
 *Rarity ★4*
 
 ### Charged Slash — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops
+1 Round Preparation Time,ATK 3 Enemy Troops
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -135,6 +135,8 @@ When ATK Normally,Own Troop Gain Blood Sucking Effect,Recruit Some Enemy Soldier
 | 3 | Skill Trigger Probability +4.8% |
 | 4 | Skill Trigger Probability +6.4% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

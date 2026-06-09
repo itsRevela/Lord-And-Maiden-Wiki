@@ -44,11 +44,33 @@ def fmt_num(s):
         return s
 
 
+# Supplemental translations for source strings the game ships without an English
+# field and that are absent from localization.json (verified term-by-term).
+_CJK_FIX = {
+    "概率极速": "Chance Haste",
+    "概率连击": "Chance Combo",
+    "概率反击": "Chance Counter",
+    "概率溅射": "Chance Splash",
+    "概率闪避": "Chance Dodge",
+    "受到追击伤害提高": "takes increased Pursuit damage",
+}
+
+
 def clean(text):
-    """Strip leftover { } localization braces and tidy separators for display."""
+    """Strip leftover { } localization braces and tidy separators for display.
+
+    Also normalises full-width CJK punctuation that leaks in from machine-translated
+    source fields (：、～) to ASCII, applies a small supplemental CJK->EN map for
+    terms the game ships untranslated, and collapses runs of whitespace.
+    """
     if text is None:
         return ""
-    return text.replace("{", "").replace("}", "").replace("\n", " ").strip()
+    t = text.replace("{", "").replace("}", "").replace("\n", " ")
+    for cn, en in _CJK_FIX.items():
+        if cn in t:
+            t = t.replace(cn, en)
+    t = t.replace("：", ": ").replace("、", ", ").replace("～", "~")
+    return re.sub(r"\s{2,}", " ", t).strip()
 
 
 # Soldier type + RST archetype names (verified from decompiled code)
@@ -192,7 +214,16 @@ class Resolver:
 
     def buff_name(self, bid):
         r = self.buff.get(str(bid).strip())
-        return clean(r.get("name_en") or r.get("name")) if r else ("Buff#" + str(bid))
+        if not r:
+            return "Buff#" + str(bid)
+        return clean(r.get("Name_en") or r.get("name_en") or r.get("Name") or r.get("name")) or ("Buff#" + str(bid))
+
+    def desc(self, text):
+        """Display helper for in-game effect/description fields that use '_' as a
+        label->value separator and '$' between entries (e.g. 'Min Speedup Time_+30S',
+        'Reserve Soldiers Capacity_1,800,000$Number Of Troops_1')."""
+        t = clean(text).replace("$", ", ").replace("_", " ")
+        return re.sub(r"\s{2,}", " ", t).strip()
 
     def skill_name(self, st, sid):
         r = self.skill.get((str(st), str(sid)))
@@ -221,12 +252,22 @@ class Resolver:
         return ", ".join(out)
 
     def need_build(self, s):
-        """'10_2' -> 'Sawmill Lv 2' ; '0_0' -> '—'."""
+        """'10_2' -> 'Sawmill Lv 2' ; '10_4+18_4' -> 'Academy Lv 4 + Hospital Lv 4' ;
+        bare id '11' (ScienceInfo style) -> 'Adventurer Guild' ; '0'/'0_0' -> '—'."""
         s = (s or "").strip()
-        if not s or s == "0_0":
+        if not s or s in ("0", "0_0"):
             return "—"
-        bid, _, lv = s.partition("_")
-        return "%s Lv %s" % (self.build_name(bid), lv)
+        parts = []
+        for tok in s.split("+"):
+            tok = tok.strip()
+            if not tok or tok in ("0", "0_0"):
+                continue
+            if "_" in tok:
+                bid, _, lv = tok.partition("_")
+                parts.append("%s Lv %s" % (self.build_name(bid), lv))
+            else:
+                parts.append(self.build_name(tok))
+        return " + ".join(parts) or "—"
 
 
 def secs(s):

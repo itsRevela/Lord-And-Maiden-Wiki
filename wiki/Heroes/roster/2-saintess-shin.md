@@ -133,7 +133,7 @@ From The 5th Round,Make 2 Of Enemy Troops,Tactical Skill DMG Dealt Reduced(Affec
 | 5 | Tactical Skill DMG Dealt Reduced +9.0%(Not Affected By Attribute) |
 
 ### Charm — *Tactical*
-1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds
+1 Round Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ From The 5th Round,Make 2 Of Enemy Troops,Tactical Skill DMG Dealt Reduced(Affec
 | 4 | Skill Trigger Probability +7.2% |
 | 5 | Skill Trigger Probability +9.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

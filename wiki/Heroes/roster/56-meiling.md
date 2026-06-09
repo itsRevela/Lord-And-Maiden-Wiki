@@ -121,6 +121,8 @@ When ATK Normally,Launch Pursuit ATK On Target
 Own Troop,DEF Attribute Increased(Affected By DEF Attribute)
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

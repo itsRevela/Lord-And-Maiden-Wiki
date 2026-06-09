@@ -59,7 +59,7 @@ def gen_buildings():
         lines.append("")
         body = []
         for l in sorted(lvls, key=lambda x: int(x["lv"])):
-            eff = clean(l.get("des_en")) or R.expand_props(l.get("effect"))
+            eff = R.desc(l.get("des_en")) or R.expand_props(l.get("effect"))
             body.append([l["lv"], fmt_num(l["food"]), fmt_num(l["wood"]), fmt_num(l["stone"]),
                          fmt_num(l["iron"]), secs(l["time"]), fmt_num(l["power"]),
                          R.need_build(l["need_build"]), eff])
@@ -105,7 +105,7 @@ def gen_science():
             body.append([l["lv"], fmt_num(l["power"]), fmt_num(l["food"]), fmt_num(l["wood"]),
                          fmt_num(l["stone"]), fmt_num(l["iron"]), secs(l["time"]),
                          R.need_build(l["need_build"]) if l.get("need_build", "0") not in ("0", "") else "—",
-                         clean(l.get("des_en"))])
+                         R.desc(l.get("des_en"))])
         lines += tbl(["Lv", "Power", "Food", "Wood", "Stone", "Iron", "Time", "Req. Building", "Effect"], body)
         lines.append("")
     write("Research/Science.md", "Research / Technology", "City & Economy", lines)
@@ -126,6 +126,16 @@ def gen_formulas():
                          secs(r["NeedTime"]), r["Max"]])
         lines += tbl(["Recipe ID", "Output", "Inputs", "Time", "Max"], body)
         lines.append("")
+    qa = load("FormulaQuickAdd")
+    if qa:
+        lines.append("## Quick-Add Yields")
+        lines.append("The crafting UI's \"quick add\" shortcut: how much of a base material converts into "
+                     "a target output. `Multiplier` is the raw conversion factor from the game data.")
+        lines.append("")
+        body = [[r["ID"], R.prop_name(r.get("basePropId")), R.prop_name(r.get("boxPropId")),
+                 fmt_num(r.get("propMutil"))] for r in qa]
+        lines += tbl(["ID", "Base Material", "Target Output", "Multiplier"], body)
+        lines.append("")
     write("Crafting/Formulas.md", "Crafting & Production", "City & Economy", lines)
 
 
@@ -142,7 +152,7 @@ def gen_talents(config, title, relpath, has_props):
             row = [r["TalentLv"], r.get("NeedPoint", "")]
             if has_props:
                 row.append(R.expand_props(r.get("NeedProps")))
-            row.append(clean(r.get("Des_en") or r.get("Des")))
+            row.append(R.desc(r.get("Des_en") or r.get("Des")))
             body.append(row)
         head = ["Lv", "Points"] + (["Items"] if has_props else []) + ["Effect"]
         lines += tbl(head, body)
@@ -155,7 +165,7 @@ def gen_vip():
     lines = ["VIP levels, EXP required, cumulative buffs and daily bonuses.", ""]
     body = []
     for r in rows:
-        body.append([r["vip_lv"], fmt_num(r["upExp"]), clean(r.get("buff_text_en") or r.get("buff_text")),
+        body.append([r["vip_lv"], fmt_num(r["upExp"]), R.desc(r.get("buff_text_en") or r.get("buff_text")),
                      R.expand_props(r.get("daily_bonus"))])
     lines += tbl(["VIP", "EXP Req.", "Buffs (cumulative)", "Daily Bonus"], body)
     write("Progression/VIP.md", "VIP Levels", "Progression", lines)
@@ -166,7 +176,7 @@ def gen_style():
     lines = ["Style / charm level progression and its city bonuses.", ""]
     body = []
     for r in rows:
-        body.append([r["StyleLv"], fmt_num(r["NeedVal"]), fmt_num(r["Power"]), clean(r.get("Des_en") or r.get("Des"))])
+        body.append([r["StyleLv"], fmt_num(r["NeedVal"]), fmt_num(r["Power"]), R.desc(r.get("Des_en") or r.get("Des"))])
     lines += tbl(["Style Lv", "Req. Value", "Power", "Effect"], body)
     write("Progression/Style.md", "Style Level", "Progression", lines)
 
@@ -334,6 +344,9 @@ def gen_hero_pages(heroes):
                     L += tbl(["Skill Lv", "Effect"],
                              [[a["Lv"], clean(a.get("des_en") or a.get("des"))] for a in aw])
             L.append("")
+        L.append("---")
+        L.append("**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · "
+                 "[Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)")
         write("Heroes/roster/%s-%s.md" % (hid, _slug(nm)), nm, "_hidden", L)
 
 
@@ -365,12 +378,10 @@ def gen_ai_heroes():
              "[playable heroes](Heroes.md): `stat(L) = base + floor(growth × L)`." % len(heroes), ""]
     body = []
     for h in heroes:
-        skills = " · ".join(nm for st, sid, nm, sk in _hero_skills(h))
         body.append([h["id"], R.hero_name(h["id"]), "★" + h["rare"], RACE_NAME.get(h["type"], h["type"]),
                      "%s/%s/%s/%s" % (h["attack"], h["defense"], h["ruin"], h["speed"]),
-                     "%s/%s/%s/%s" % (h["attack_grow"], h["defense_grow"], h["ruin_grow"], h["speed_grow"]),
-                     skills or "—"])
-    lines += tbl(["ID", "Name", "Rarity", "Race", "Base A/D/R/S", "Growth A/D/R/S", "Skills"], body)
+                     "%s/%s/%s/%s" % (h["attack_grow"], h["defense_grow"], h["ruin_grow"], h["speed_grow"])])
+    lines += tbl(["ID", "Name", "Rarity", "Race", "Base A/D/R/S", "Growth A/D/R/S"], body)
     write("Heroes/AI-Heroes.md", "AI / Enemy Heroes", "Heroes & Lord", lines)
 
 
@@ -475,7 +486,7 @@ def gen_recommend():
              "Each team is 3 heroes; skills are listed per hero.", ""]
     body = []
     for r in rows:
-        cells = [r["RecId"], clean(r.get("Des_en") or r.get("Des"))]
+        cells = [r["RecId"], R.desc(r.get("Des_en") or r.get("Des"))]
         for i in (1, 2, 3):
             h = r.get("HeroNum%d" % i, "0")
             sk = R.skill_list(r.get("SkillNum%d" % i, ""))
@@ -488,7 +499,7 @@ def gen_recommend():
 def gen_favorability():
     rows = load("GoodFeel")
     lines = ["Hero favorability (\"GoodFeel\") levels — raise affinity for a global all-hero stat bonus.", ""]
-    body = [[r["lv"], fmt_num(r["upLvExp"]), R.expand_props(r.get("costProp")), clean(r.get("des_en") or r.get("des"))]
+    body = [[r["lv"], fmt_num(r["upLvExp"]), R.expand_props(r.get("costProp")), R.desc(r.get("des_en") or r.get("des"))]
             for r in rows]
     lines += tbl(["Lv", "EXP", "Cost / Level", "Effect"], body)
     write("Progression/Favorability.md", "Favorability (GoodFeel)", "Progression", lines)
@@ -526,7 +537,7 @@ def gen_union_science():
         for l in sorted(lvls, key=lambda x: int(x["lv"])):
             body.append([l["lv"], fmt_num(l["power"]),
                          "%s/%s/%s/%s/%s" % (l["union_Ci"], l["union_Si"], l["union_Fe"], l["union_Ue"], l["union_Gold"]),
-                         secs(l["time"]), clean(l.get("des_en"))])
+                         secs(l["time"]), R.desc(l.get("des_en"))])
         lines += tbl(["Lv", "Power", "Cost Ci/Si/Fe/Ue/Gold", "Time", "Effect"], body)
         lines.append("")
     write("Alliance/Union-Research.md", "Alliance Research", "Alliance", lines)
@@ -657,11 +668,11 @@ def gen_tips():
         by_t.setdefault(clean(r.get("TypeName_en") or r.get("TypeName")), []).append(r)
     lines = ["In-game loading tips and mechanics hints, grouped by topic.", ""]
     for tn, tl in by_t.items():
+        tips = [d for d in (clean(r.get("des_en") or r.get("des")) for r in tl) if d and d != "0"]
+        if not tips:
+            continue
         lines.append("### %s" % (tn or "General"))
-        for r in tl:
-            d = clean(r.get("des_en") or r.get("des"))
-            if d:
-                lines.append("- " + d)
+        lines += ["- " + d for d in tips]
         lines.append("")
     write("Reference/Tips.md", "Game Tips", "Reference", lines)
 

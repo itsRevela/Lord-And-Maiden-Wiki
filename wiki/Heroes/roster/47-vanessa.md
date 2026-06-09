@@ -146,6 +146,8 @@ ATK 1 Enemy Troop,And Make The Target Enemy DMG Dealt Reduced 8.0%(Affected By D
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

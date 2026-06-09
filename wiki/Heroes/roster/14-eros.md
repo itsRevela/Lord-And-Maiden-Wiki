@@ -119,7 +119,7 @@ The battle ended in an instant, the tentacles dissipating into smoke. It was les
 
 ## Skills
 ### Spirit Bondage — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round
+1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round
 *Rarity ★5 · Ready on round 1*
 
 ### Magic Spear — *Tactical*
@@ -146,6 +146,8 @@ Make 2 Of Enemy Troops,In A Disarmed State,Cannot Launch Normal ATK,Lasting For 
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

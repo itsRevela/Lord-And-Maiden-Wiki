@@ -125,7 +125,7 @@ Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 
 | 4 | Skill Trigger Probability +4.8% |
 
 ### Poetry Cloud — *Tactical*
-1 Round  Preparation Time,Make 2 Of our Troops,Restore Life
+1 Round Preparation Time,Make 2 Of our Troops,Restore Life
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -135,6 +135,8 @@ Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 
 | 3 | Skill Trigger Probability +4.8% |
 | 4 | Skill Trigger Probability +6.4% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

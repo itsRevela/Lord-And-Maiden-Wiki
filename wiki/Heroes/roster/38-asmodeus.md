@@ -135,6 +135,8 @@ Make 2 Of Enemy Troops,DMG Dealt Reduced(Affected By DES Attribute),Lasting For 
 | 3 | Skill Trigger Probability +3.6% |
 | 4 | Skill Trigger Probability +4.8% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

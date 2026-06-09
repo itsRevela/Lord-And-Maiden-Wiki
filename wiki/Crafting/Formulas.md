@@ -668,6 +668,136 @@ Crafting / production recipes. **Time** is per craft (seconds). **Max** is the m
 | 10980 | Jade Feather Beauty(Clothing) | Tailor Certificate(6★) ×1, Fashion Drawings-Jade Feather Beauty(Clothing) ×1, T5 Light Silk ×100, T5 Leather ×100, Animal Skin(T6) ×100, Silk(T6) ×100 | 2d 12h | 1 |
 | 10990 | Jade Feather Beauty(Accessory) | Tailor Certificate(6★) ×1, Fashion Drawings-Jade Feather Beauty(Accessory) ×1, T5 Light Silk ×100, T5 Leather ×100, Animal Skin(T6) ×100, Silk(T6) ×100 | 2d 12h | 1 |
 
+## Quick-Add Yields
+The crafting UI's "quick add" shortcut: how much of a base material converts into a target output. `Multiplier` is the raw conversion factor from the game data.
+
+| ID | Base Material | Target Output | Multiplier |
+|---|---|---|---|
+| 10 | Gold Coin | Gold Coin Supply | 1,000 |
+| 11 | Gold Coin | Gold Coin Supply(L) | 3,888 |
+| 12 | Food | Food Supply | 2,000 |
+| 13 | Food | Resource Supply(Customize) | 2,000 |
+| 14 | Food | Resource Supply(Customize) | 10,000 |
+| 15 | Food | Resource Supply(M) | 500 |
+| 16 | Food | Resource Supply(L) | 2,500 |
+| 17 | Wood | Wood Supply | 2,000 |
+| 18 | Wood | Resource Supply(Customize) | 2,000 |
+| 19 | Wood | Resource Supply(Customize) | 10,000 |
+| 20 | Wood | Resource Supply(M) | 500 |
+| 21 | Wood | Resource Supply(L) | 2,500 |
+| 22 | Stone | Stone Supply | 2,000 |
+| 23 | Stone | Resource Supply(Customize) | 2,000 |
+| 24 | Stone | Resource Supply(Customize) | 10,000 |
+| 25 | Stone | Resource Supply(M) | 500 |
+| 26 | Stone | Resource Supply(L) | 2,500 |
+| 27 | Iron | Iron Supply | 1,000 |
+| 28 | Iron | Resource Supply(Customize) | 1,000 |
+| 29 | Iron | Resource Supply(Customize) | 5,000 |
+| 30 | Iron | Resource Supply(M) | 250 |
+| 31 | Iron | Resource Supply(L) | 1,250 |
+| 50 | Weapons Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 60 | Clothes Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 70 | Shorts Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 80 | Helmets Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 90 | Gloves Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 100 | Boots Drawings(T1) | Equipment Drawings Chest(T1) | 1 |
+| 110 | Weapons Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 120 | Clothes Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 130 | Shorts Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 140 | Helmets Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 150 | Gloves Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 160 | Boots Drawings(T2) | Equipment Drawings Chest(T2) | 1 |
+| 170 | Weapons Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 180 | Clothes Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 190 | Shorts Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 200 | Helmets Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 210 | Gloves Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 220 | Boots Drawings(T3) | Equipment Drawings Chest(T3) | 1 |
+| 230 | Weapons Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 240 | Clothes Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 250 | Shorts Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 260 | Helmets Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 270 | Gloves Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 280 | Boots Drawings(T4) | Equipment Drawings Chest(T4) | 1 |
+| 290 | Weapons Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 300 | Clothes Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 310 | Shorts Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 320 | Helmets Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 330 | Gloves Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 340 | Boots Drawings(T5) | Equipment Drawings Chest(T5) | 1 |
+| 350 | T1 Tungsten Gold | Equipment Stuff Chest(T1) | 1 |
+| 360 | T1 Light Silk | Equipment Stuff Chest(T1) | 1 |
+| 370 | T1 Leather | Equipment Stuff Chest(T1) | 1 |
+| 380 | T1 Premium Wood | Equipment Stuff Chest(T1) | 1 |
+| 390 | T1 Cold Spring | Equipment Stuff Chest(T1) | 1 |
+| 400 | T1 Agate Bead | Equipment Stuff Chest(T1) | 1 |
+| 410 | T2 Tungsten Gold | Equipment Stuff Chest(T2) | 1 |
+| 420 | T2 Light Silk | Equipment Stuff Chest(T2) | 1 |
+| 430 | T2 Leather | Equipment Stuff Chest(T2) | 1 |
+| 440 | T2 Premium Wood | Equipment Stuff Chest(T2) | 1 |
+| 450 | T2 Cold Spring | Equipment Stuff Chest(T2) | 1 |
+| 460 | T2 Agate Bead | Equipment Stuff Chest(T2) | 1 |
+| 470 | T3 Tungsten Gold | Equipment Stuff Chest(T3) | 1 |
+| 480 | T3 Light Silk | Equipment Stuff Chest(T3) | 1 |
+| 490 | T3 Leather | Equipment Stuff Chest(T3) | 1 |
+| 500 | T3 Premium Wood | Equipment Stuff Chest(T3) | 1 |
+| 510 | T3 Cold Spring | Equipment Stuff Chest(T3) | 1 |
+| 520 | T3 Agate Bead | Equipment Stuff Chest(T3) | 1 |
+| 530 | T4 Tungsten Gold | Equipment Stuff Chest(T4) | 1 |
+| 540 | T4 Light Silk | Equipment Stuff Chest(T4) | 1 |
+| 550 | T4 Leather | Equipment Stuff Chest(T4) | 1 |
+| 560 | T4 Premium Wood | Equipment Stuff Chest(T4) | 1 |
+| 570 | T4 Cold Spring | Equipment Stuff Chest(T4) | 1 |
+| 580 | T4 Agate Bead | Equipment Stuff Chest(T4) | 1 |
+| 590 | T5 Tungsten Gold | Equipment Stuff Chest(T5) | 1 |
+| 600 | T5 Light Silk | Equipment Stuff Chest(T5) | 1 |
+| 610 | T5 Leather | Equipment Stuff Chest(T5) | 1 |
+| 620 | T5 Premium Wood | Equipment Stuff Chest(T5) | 1 |
+| 630 | T5 Cold Spring | Equipment Stuff Chest(T5) | 1 |
+| 640 | T5 Agate Bead | Equipment Stuff Chest(T5) | 1 |
+| 650 | Gilded Stone | Epic Rare Stuff Chest | 1 |
+| 660 | Star Moon Line | Epic Rare Stuff Chest | 1 |
+| 670 | Silver Silk Satin | Epic Rare Stuff Chest | 1 |
+| 680 | Black Coral | Epic Rare Stuff Chest | 1 |
+| 690 | Silver Scale | Epic Rare Stuff Chest | 1 |
+| 700 | Phoenix Feather | Epic Rare Stuff Chest | 1 |
+| 710 | Animal Skin(T1) | Specialty Customize(T1) | 1 |
+| 720 | Animal Skin(T2) | Specialty Customize(T2) | 1 |
+| 730 | Animal Skin(T3) | Specialty Customize(T3) | 1 |
+| 740 | Animal Skin(T4) | Specialty Customize(T4) | 1 |
+| 750 | Animal Skin(T5) | Specialty Customize(T5) | 1 |
+| 760 | Animal Skin(T6) | Specialty Customize(T6) | 1 |
+| 770 | Silk(T1) | Specialty Customize(T1) | 1 |
+| 780 | Silk(T2) | Specialty Customize(T2) | 1 |
+| 790 | Silk(T3) | Specialty Customize(T3) | 1 |
+| 800 | Silk(T4) | Specialty Customize(T4) | 1 |
+| 810 | Silk(T5) | Specialty Customize(T5) | 1 |
+| 820 | Silk(T6) | Specialty Customize(T6) | 1 |
+| 830 | Spices(T1) | Specialty Customize(T1) | 1 |
+| 840 | Spices(T2) | Specialty Customize(T2) | 1 |
+| 850 | Spices(T3) | Specialty Customize(T3) | 1 |
+| 860 | Spices(T4) | Specialty Customize(T4) | 1 |
+| 870 | Spices(T5) | Specialty Customize(T5) | 1 |
+| 880 | Spices(T6) | Specialty Customize(T6) | 1 |
+| 890 | Lindera Tea(T1) | Specialty Customize(T1) | 1 |
+| 900 | Lindera Tea(T2) | Specialty Customize(T2) | 1 |
+| 910 | Lindera Tea(T3) | Specialty Customize(T3) | 1 |
+| 920 | Lindera Tea(T4) | Specialty Customize(T4) | 1 |
+| 930 | Lindera Tea(T5) | Specialty Customize(T5) | 1 |
+| 940 | Lindera Tea(T6) | Specialty Customize(T6) | 1 |
+| 950 | Marble(T1) | Specialty Customize(T1) | 1 |
+| 960 | Marble(T2) | Specialty Customize(T2) | 1 |
+| 970 | Marble(T3) | Specialty Customize(T3) | 1 |
+| 980 | Marble(T4) | Specialty Customize(T4) | 1 |
+| 990 | Marble(T5) | Specialty Customize(T5) | 1 |
+| 1000 | Marble(T6) | Specialty Customize(T6) | 1 |
+| 1010 | Jewelry(T1) | Specialty Customize(T1) | 1 |
+| 1020 | Jewelry(T2) | Specialty Customize(T2) | 1 |
+| 1030 | Jewelry(T3) | Specialty Customize(T3) | 1 |
+| 1040 | Jewelry(T4) | Specialty Customize(T4) | 1 |
+| 1050 | Jewelry(T5) | Specialty Customize(T5) | 1 |
+| 1060 | Jewelry(T6) | Specialty Customize(T6) | 1 |
+
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

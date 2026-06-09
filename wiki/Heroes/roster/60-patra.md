@@ -146,6 +146,8 @@ Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute)
 | 4 | Real DMG Base +4.8 |
 | 5 | Real DMG Base +6.0 |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

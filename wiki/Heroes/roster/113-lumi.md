@@ -146,6 +146,8 @@ Own Troop,A Chance to,Make All Carried Pursuit Skills 100% Trigger
 | 4 | Effect Trigger Probability +5.6% |
 | 5 | Effect Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

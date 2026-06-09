@@ -117,11 +117,11 @@ Now Sera serves as a blade against the Dibuk cult. Though the sword's patterns h
 
 ## Skills
 ### Butterfly Strike — *Tactical*
-1 Round  Preparation Time,ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round
+1 Round Preparation Time,ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round
 *Rarity ★5 · Ready on round 1*
 
 ### Mushin — *Tactical*
-1 Round  Preparation Time,ATK 1 Enemy Troop
+1 Round Preparation Time,ATK 1 Enemy Troop
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ When ATK Normally,Launch Pursuit ATK On Target,And 40%/30% Probability,Perform 2
 | 4 | Skill Trigger Probability +7.2% |
 | 5 | Skill Trigger Probability +9.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

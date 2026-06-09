@@ -6,7 +6,7 @@ The game's narrative. Spoilers ahead.
 
 > After the Great Demon-Slaying War five hundred years ago, the continent of Krorand flourished under the rule of the king, with all races living in peace. Now, the demon lord has returned, inciting chaos and imprisoning the king. According to the prophecy of the stars, only by uniting the great lords to form the Dawnbreaker Sword can they successfully repel the demons and restore order to the continent...
 
-> You have arrived at a remote village, which will become your fresh starting point. By recruiting villagers and constructing infrastructure, you'll gradually restore vitality to the settlement.  Duffy Join Team Susabi Join Team Puona Join Team
+> You have arrived at a remote village, which will become your fresh starting point. By recruiting villagers and constructing infrastructure, you'll gradually restore vitality to the settlement. Duffy Join Team Susabi Join Team Puona Join Team
 
 > The villagers joined the military camp, and after training, a powerful army gradually took shape. With the same belief, people gathered here to end the chaos, protect their homes, and create a new era. They went all out and vowed to write an immortal legend. When the drums of war sounded, this army, united by dreams and beliefs, would write a new chapter with victory. The rallying horn not only summoned the soldiers, but also awakened hope...
 

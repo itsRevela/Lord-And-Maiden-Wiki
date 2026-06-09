@@ -119,11 +119,11 @@ Recently, Synaga received a new mission issued by Saintess Shin - to protect the
 
 ## Skills
 ### Flame Combo — *Tactical*
-1 Round  Preparation Time,To 2 Enemy Troops,Launch 4-6 ATK
+1 Round Preparation Time,To 2 Enemy Troops,Launch 4-6 ATK
 *Rarity ★5 · Ready on round 1*
 
 ### Spirit Strike — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops
+1 Round Preparation Time,ATK 3 Enemy Troops
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ To 2 Enemy Troops,Launch 2-4 ATK
 | 4 | Skill Trigger Probability +4.8% |
 | 5 | Skill Trigger Probability +6.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

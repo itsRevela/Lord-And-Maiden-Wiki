@@ -41,16 +41,16 @@ Combat/effect buff catalog. **Type +1** = beneficial, **-1** = detrimental.
 | 39 | Pursuit Skill DMG Taken Increased | bad (-1) |
 | 40 | Pursuit Skill DMG Taken Reduced | good (+1) |
 | 42 | Soldier HP Increased | good (+1) |
-| 43 | Curse DMG Taken  Reduced | good (+1) |
+| 43 | Curse DMG Taken Reduced | good (+1) |
 | 44 | Burning DMG Taken Reduced | good (+1) |
 | 47 | Real DMG Dealt Increased | good (+1) |
 | 70 | Assault | good (+1) |
 | 73 | Shield | good (+1) |
 | 74 | First Aid | good (+1) |
-| 79 | 概率极速 | good (+1) |
-| 80 | 概率连击 | good (+1) |
-| 81 | 概率反击 | good (+1) |
-| 82 | 概率溅射 | good (+1) |
+| 79 | Chance Haste | good (+1) |
+| 80 | Chance Combo | good (+1) |
+| 81 | Chance Counter | good (+1) |
+| 82 | Chance Splash | good (+1) |
 | 83 | Stun(Prepared) | bad (-1) |
 | 84 | Disarm(Prepared) | bad (-1) |
 | 85 | Silence(Prepared) | bad (-1) |
@@ -62,7 +62,7 @@ Combat/effect buff catalog. **Type +1** = beneficial, **-1** = detrimental.
 | 107 | Self-Heal | good (+1) |
 | 108 | Burn | bad (-1) |
 | 109 | Curse | bad (-1) |
-| 111 | 概率闪避 | good (+1) |
+| 111 | Chance Dodge | good (+1) |
 | 113 | Concentration | good (+1) |
 | 114 | Stun | bad (-1) |
 | 115 | Disarm | bad (-1) |

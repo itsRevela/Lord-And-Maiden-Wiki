@@ -146,6 +146,8 @@ ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 9.6(Affected By DES Att
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

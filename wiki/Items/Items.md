@@ -16,124 +16,124 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 ## Type 1 (978)
 | ID | Name | Rarity | Description |
 |---|---|---|---|
-| 1 | Gems | ★0 | Application：Shopping Store |
-| 2 | Gold Coin | ★0 | Application：Shopping Store |
-| 3 | Speedup Points | ★0 | Application：Build/Research Speedup 5 Min |
-| 4 | Skill Exp | ★0 | Application：Enhance Skill Level |
-| 5 | Vit | ★0 | Application：Great World Action |
-| 6 | Adventurer Points | ★0 | Application：Enhance Adventure Level |
-| 7 | Honor Points | ★0 | Application：Exchange Item |
-| 8 | Union Points | ★0 | Application：Exchange Item |
-| 9 | Friendship Points | ★0 | Application：Exchange Item |
-| 10 | Rand Coin | ★0 | Application：Shopping Store |
-| 11 | Lord Exp | ★0 | Application：Enhance Lord Level |
-| 12 | Hero Exp | ★0 | Application：Enhance Hero Level |
-| 13 | Intelligence Points | ★0 | Application：Exchange Item |
-| 14 | Life Points | ★0 | Application：Exchange Item |
-| 21 | Food | ★0 | Application：Build/Research |
-| 22 | Wood | ★0 | Application：Build/Research |
-| 23 | Stone | ★0 | Application：Build/Research |
-| 24 | Iron | ★0 | Application：Build/Research |
-| 221 | Union-Food | ★0 | Application：Build/Research |
-| 222 | Union-Wood | ★0 | Application：Build/Research |
-| 223 | Union-Stone | ★0 | Application：Build/Research |
-| 224 | Union-Iron | ★0 | Application：Build/Research |
-| 225 | Union-Gold Coin | ★0 | Application：Build/Research |
-| 301 | Infantry-T1 | ★1 | Application：Get Soldier |
-| 302 | Archer-T1 | ★1 | Application：Get Soldier |
-| 303 | Cavalry-T1 | ★1 | Application：Get Soldier |
-| 304 | Chariot-T1 | ★1 | Application：Get Soldier |
-| 305 | Infantry-T2 | ★2 | Application：Get Soldier |
-| 306 | Archer-T2 | ★2 | Application：Get Soldier |
-| 307 | Cavalry-T2 | ★2 | Application：Get Soldier |
-| 308 | Chariot-T2 | ★2 | Application：Get Soldier |
-| 309 | Infantry-T3 | ★3 | Application：Get Soldier |
-| 310 | Archer-T3 | ★3 | Application：Get Soldier |
-| 311 | Cavalry-T3 | ★3 | Application：Get Soldier |
-| 312 | Chariot-T3 | ★3 | Application：Get Soldier |
-| 313 | Infantry-T4 | ★4 | Application：Get Soldier |
-| 314 | Archer-T4 | ★4 | Application：Get Soldier |
-| 315 | Cavalry-T4 | ★4 | Application：Get Soldier |
-| 316 | Chariot-T4 | ★4 | Application：Get Soldier |
-| 317 | Infantry-T5 | ★5 | Application：Get Soldier |
-| 318 | Archer-T5 | ★5 | Application：Get Soldier |
-| 319 | Cavalry-T5 | ★5 | Application：Get Soldier |
-| 320 | Chariot-T5 | ★5 | Application：Get Soldier |
-| 321 | Infantry-T6 | ★6 | Application：Get Soldier |
-| 322 | Archer-T6 | ★6 | Application：Get Soldier |
-| 323 | Cavalry-T6 | ★6 | Application：Get Soldier |
-| 324 | Chariot-T6 | ★6 | Application：Get Soldier |
-| 1001 | Lord Knowledge Book | ★4 | Application：Lord Talent Points +1 Max Usage：200 Tips:Requires additional Lord EXP |
-| 1002 | Falling Star Island-Outpost Construction Permit | ★4 | Application：Falling Star Island Build |
-| 1003 | Meteoric Iron Mine | ★3 | Application：Shopping Store |
-| 1004 | Gold Coin Supply(L) | ★4 | After Use Get：Gold Coin x3,888 |
-| 1005 | Gems Supply | ★6 | After Use Get：Gems x888 |
-| 1006 | Training Manuals Compendium | ★3 | After Use Get：Random Training Manual Or Lord Exp x40,000 |
-| 1007 | Training Manuals Compendium | ★4 | After Use Get：Random Training Manual Or Lord Exp x100,000 |
-| 1008 | Biographical Collection | ★3 | After Use Get：Random Lord Biography Or Lord Exp x20,000 |
-| 1009 | Biographical Collection | ★4 | After Use Get：Random Lord Biography Or Lord Exp x50,000 |
-| 1010 | Lord Silver Coins | ★5 | Application：Upgrade Lord Equipment |
-| 1011 | Wilderness Chest-20 | ★4 | After Use Get： 1.Hero Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
-| 1012 | Wilderness Chest-40 | ★4 | After Use Get： 1.Hero Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
-| 1013 | Wilderness Chest-60 | ★4 | After Use Get： 1.Hero Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
-| 1014 | Wilderness Chest-80 | ★4 | After Use Get： 1.Hero Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
-| 1015 | Wilderness Chest-100 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1016 | Wilderness Chest-120 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1017 | Wilderness Chest-140 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1018 | Wilderness Chest-160 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1019 | Wilderness Chest-180 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1020 | Wilderness Chest-200 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1021 | Wilderness Chest-220 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1022 | Wilderness Chest-240 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1023 | Wilderness Chest-260 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1024 | Wilderness Chest-280 | ★5 | After Use Get： 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1025 | Wilderness Chest-300 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1026 | Wilderness Chest-320 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1027 | Wilderness Chest-340 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1028 | Wilderness Chest-360 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1029 | Wilderness Chest-380 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1030 | Wilderness Chest-400 | ★6 | After Use Get： 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1031 | Lord Chest-Lv.10 | ★4 | After Use Get： 1.Relic Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
-| 1032 | Lord Chest-Lv.20 | ★4 | After Use Get： 1.Relic Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
-| 1033 | Lord Chest-Lv.30 | ★4 | After Use Get： 1.Relic Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
-| 1034 | Lord Chest-Lv.40 | ★4 | After Use Get： 1.Relic Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
-| 1035 | Lord Chest-Lv.50 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1036 | Lord Chest-Lv.60 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1037 | Lord Chest-Lv.70 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1038 | Lord Chest-Lv.80 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1039 | Lord Chest-Lv.90 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1040 | Lord Chest-Lv.100 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1041 | Lord Chest-Lv.110 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1042 | Lord Chest-Lv.120 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1043 | Lord Chest-Lv.130 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1044 | Lord Chest-Lv.140 | ★5 | After Use Get： 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
-| 1045 | Lord Chest-Lv.150 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1046 | Lord Chest-Lv.160 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1047 | Lord Chest-Lv.170 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1048 | Lord Chest-Lv.180 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1049 | Lord Chest-Lv.190 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1050 | Lord Chest-Lv.200 | ★6 | After Use Get： 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
-| 1051 | Gold Coin Supply | ★3 | After Use Get：Gold Coin x1,000 |
-| 1052 | Food Supply | ★2 | After Use Get：Food x2,000 |
-| 1053 | Wood Supply | ★2 | After Use Get：Wood x2,000 |
-| 1054 | Stone Supply | ★2 | After Use Get：Stone x2,000 |
-| 1055 | Iron Supply | ★3 | After Use Get：Iron x1,000 |
-| 1056 | Knowledge Quiz Chest-V | ★6 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Hero Summon Scroll、Fashion Drawings、B |
-| 1057 | Knowledge Quiz Chest-I | ★3 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Hero Summon Scroll、Fashion Drawings、B |
-| 1058 | Knowledge Quiz Chest-II | ★3 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Hero Summon Scroll、Fashion Drawings、B |
-| 1059 | Knowledge Quiz Chest-III | ★4 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Hero Summon Scroll、Fashion Drawings、B |
-| 1060 | Knowledge Quiz Chest-IV | ★5 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Hero Summon Scroll、Fashion Drawings、B |
-| 1061 | Leader Chest(R3) | ★3 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Fashion  |
-| 1062 | Leader Chest(R4) | ★4 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Fashion  |
-| 1063 | Leader Chest(R5) | ★5 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Fashion  |
-| 1064 | Leader Chest(R6) | ★6 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Fashion  |
-| 1071 | Territory Chest(R3) | ★3 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Relic Summon Scroll、Fashion |
-| 1072 | Territory Chest(R4) | ★4 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Relic Summon Scroll、Fashion |
-| 1073 | Territory Chest(R5) | ★5 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Relic Summon Scroll、Fashion |
-| 1074 | Territory Chest(R6) | ★6 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Relic Summon Scroll、Fashion |
-| 1078 | Desert Expedition Chest | ★5 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Relic Summon Scroll、Fashion |
-| 1079 | Island Coin | ★3 | Application：Shopping Store |
-| 1080 | Gems Lucky Bag | ★5 | Randomly Get After Use：Gems Probability：60%，Gems x88 Probability：25%，Gems x188 Probability |
+| 1 | Gems | ★0 | Application: Shopping Store |
+| 2 | Gold Coin | ★0 | Application: Shopping Store |
+| 3 | Speedup Points | ★0 | Application: Build/Research Speedup 5 Min |
+| 4 | Skill Exp | ★0 | Application: Enhance Skill Level |
+| 5 | Vit | ★0 | Application: Great World Action |
+| 6 | Adventurer Points | ★0 | Application: Enhance Adventure Level |
+| 7 | Honor Points | ★0 | Application: Exchange Item |
+| 8 | Union Points | ★0 | Application: Exchange Item |
+| 9 | Friendship Points | ★0 | Application: Exchange Item |
+| 10 | Rand Coin | ★0 | Application: Shopping Store |
+| 11 | Lord Exp | ★0 | Application: Enhance Lord Level |
+| 12 | Hero Exp | ★0 | Application: Enhance Hero Level |
+| 13 | Intelligence Points | ★0 | Application: Exchange Item |
+| 14 | Life Points | ★0 | Application: Exchange Item |
+| 21 | Food | ★0 | Application: Build/Research |
+| 22 | Wood | ★0 | Application: Build/Research |
+| 23 | Stone | ★0 | Application: Build/Research |
+| 24 | Iron | ★0 | Application: Build/Research |
+| 221 | Union-Food | ★0 | Application: Build/Research |
+| 222 | Union-Wood | ★0 | Application: Build/Research |
+| 223 | Union-Stone | ★0 | Application: Build/Research |
+| 224 | Union-Iron | ★0 | Application: Build/Research |
+| 225 | Union-Gold Coin | ★0 | Application: Build/Research |
+| 301 | Infantry-T1 | ★1 | Application: Get Soldier |
+| 302 | Archer-T1 | ★1 | Application: Get Soldier |
+| 303 | Cavalry-T1 | ★1 | Application: Get Soldier |
+| 304 | Chariot-T1 | ★1 | Application: Get Soldier |
+| 305 | Infantry-T2 | ★2 | Application: Get Soldier |
+| 306 | Archer-T2 | ★2 | Application: Get Soldier |
+| 307 | Cavalry-T2 | ★2 | Application: Get Soldier |
+| 308 | Chariot-T2 | ★2 | Application: Get Soldier |
+| 309 | Infantry-T3 | ★3 | Application: Get Soldier |
+| 310 | Archer-T3 | ★3 | Application: Get Soldier |
+| 311 | Cavalry-T3 | ★3 | Application: Get Soldier |
+| 312 | Chariot-T3 | ★3 | Application: Get Soldier |
+| 313 | Infantry-T4 | ★4 | Application: Get Soldier |
+| 314 | Archer-T4 | ★4 | Application: Get Soldier |
+| 315 | Cavalry-T4 | ★4 | Application: Get Soldier |
+| 316 | Chariot-T4 | ★4 | Application: Get Soldier |
+| 317 | Infantry-T5 | ★5 | Application: Get Soldier |
+| 318 | Archer-T5 | ★5 | Application: Get Soldier |
+| 319 | Cavalry-T5 | ★5 | Application: Get Soldier |
+| 320 | Chariot-T5 | ★5 | Application: Get Soldier |
+| 321 | Infantry-T6 | ★6 | Application: Get Soldier |
+| 322 | Archer-T6 | ★6 | Application: Get Soldier |
+| 323 | Cavalry-T6 | ★6 | Application: Get Soldier |
+| 324 | Chariot-T6 | ★6 | Application: Get Soldier |
+| 1001 | Lord Knowledge Book | ★4 | Application: Lord Talent Points +1 Max Usage: 200 Tips:Requires additional Lord EXP |
+| 1002 | Falling Star Island-Outpost Construction Permit | ★4 | Application: Falling Star Island Build |
+| 1003 | Meteoric Iron Mine | ★3 | Application: Shopping Store |
+| 1004 | Gold Coin Supply(L) | ★4 | After Use Get: Gold Coin x3,888 |
+| 1005 | Gems Supply | ★6 | After Use Get: Gems x888 |
+| 1006 | Training Manuals Compendium | ★3 | After Use Get: Random Training Manual Or Lord Exp x40,000 |
+| 1007 | Training Manuals Compendium | ★4 | After Use Get: Random Training Manual Or Lord Exp x100,000 |
+| 1008 | Biographical Collection | ★3 | After Use Get: Random Lord Biography Or Lord Exp x20,000 |
+| 1009 | Biographical Collection | ★4 | After Use Get: Random Lord Biography Or Lord Exp x50,000 |
+| 1010 | Lord Silver Coins | ★5 | Application: Upgrade Lord Equipment |
+| 1011 | Wilderness Chest-20 | ★4 | After Use Get: 1.Hero Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
+| 1012 | Wilderness Chest-40 | ★4 | After Use Get: 1.Hero Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
+| 1013 | Wilderness Chest-60 | ★4 | After Use Get: 1.Hero Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
+| 1014 | Wilderness Chest-80 | ★4 | After Use Get: 1.Hero Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
+| 1015 | Wilderness Chest-100 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1016 | Wilderness Chest-120 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1017 | Wilderness Chest-140 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1018 | Wilderness Chest-160 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1019 | Wilderness Chest-180 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1020 | Wilderness Chest-200 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1021 | Wilderness Chest-220 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1022 | Wilderness Chest-240 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1023 | Wilderness Chest-260 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1024 | Wilderness Chest-280 | ★5 | After Use Get: 1.Hero Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1025 | Wilderness Chest-300 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1026 | Wilderness Chest-320 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1027 | Wilderness Chest-340 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1028 | Wilderness Chest-360 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1029 | Wilderness Chest-380 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1030 | Wilderness Chest-400 | ★6 | After Use Get: 1.Hero Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1031 | Lord Chest-Lv.10 | ★4 | After Use Get: 1.Relic Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
+| 1032 | Lord Chest-Lv.20 | ★4 | After Use Get: 1.Relic Summon Scroll x5 2.Hero Exp Book(III) x100 3.Skill Exp x100 |
+| 1033 | Lord Chest-Lv.30 | ★4 | After Use Get: 1.Relic Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
+| 1034 | Lord Chest-Lv.40 | ★4 | After Use Get: 1.Relic Summon Scroll x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 |
+| 1035 | Lord Chest-Lv.50 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1036 | Lord Chest-Lv.60 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1037 | Lord Chest-Lv.70 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1038 | Lord Chest-Lv.80 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1039 | Lord Chest-Lv.90 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1040 | Lord Chest-Lv.100 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1041 | Lord Chest-Lv.110 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1042 | Lord Chest-Lv.120 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1043 | Lord Chest-Lv.130 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1044 | Lord Chest-Lv.140 | ★5 | After Use Get: 1.Relic Summon Scroll x20 2.Hero Exp Book(III) x500 3.Skill Exp x500 |
+| 1045 | Lord Chest-Lv.150 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1046 | Lord Chest-Lv.160 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1047 | Lord Chest-Lv.170 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1048 | Lord Chest-Lv.180 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1049 | Lord Chest-Lv.190 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1050 | Lord Chest-Lv.200 | ★6 | After Use Get: 1.Relic Summon Scroll x30 2.Hero Exp Book(III) x1000 3.Skill Exp x1000 |
+| 1051 | Gold Coin Supply | ★3 | After Use Get: Gold Coin x1,000 |
+| 1052 | Food Supply | ★2 | After Use Get: Food x2,000 |
+| 1053 | Wood Supply | ★2 | After Use Get: Wood x2,000 |
+| 1054 | Stone Supply | ★2 | After Use Get: Stone x2,000 |
+| 1055 | Iron Supply | ★3 | After Use Get: Iron x1,000 |
+| 1056 | Knowledge Quiz Chest-V | ★6 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Hero Summon Scroll, Fashion Drawi |
+| 1057 | Knowledge Quiz Chest-I | ★3 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Hero Summon Scroll, Fashion Drawi |
+| 1058 | Knowledge Quiz Chest-II | ★3 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Hero Summon Scroll, Fashion Drawi |
+| 1059 | Knowledge Quiz Chest-III | ★4 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Hero Summon Scroll, Fashion Drawi |
+| 1060 | Knowledge Quiz Chest-IV | ★5 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Hero Summon Scroll, Fashion Drawi |
+| 1061 | Leader Chest(R3) | ★3 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Fa |
+| 1062 | Leader Chest(R4) | ★4 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Fa |
+| 1063 | Leader Chest(R5) | ★5 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Fa |
+| 1064 | Leader Chest(R6) | ★6 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Fa |
+| 1071 | Territory Chest(R3) | ★3 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Relic Summon Scroll, F |
+| 1072 | Territory Chest(R4) | ★4 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Relic Summon Scroll, F |
+| 1073 | Territory Chest(R5) | ★5 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Relic Summon Scroll, F |
+| 1074 | Territory Chest(R6) | ★6 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Relic Summon Scroll, F |
+| 1078 | Desert Expedition Chest | ★5 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Relic Summon Scroll, F |
+| 1079 | Island Coin | ★3 | Application: Shopping Store |
+| 1080 | Gems Lucky Bag | ★5 | Randomly Get After Use: Gems Probability: 60%，Gems x88 Probability: 25%，Gems x188 Probabil |
 | 1081 | Server First Clearance Red Envelope-I | ★3 | Divine Demon Trial Server First Clearance Red Envelope-I |
 | 1082 | Server First Clearance Red Envelope-II | ★3 | Divine Demon Trial Server First Clearance Red Envelope-II |
 | 1083 | Server First Clearance Red Envelope-III | ★3 | Divine Demon Trial Server First Clearance Red Envelope-III |
@@ -144,231 +144,231 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 | 1088 | Server First Clearance Red Envelope-VIII | ★5 | Divine Demon Trial Server First Clearance Red Envelope-VIII |
 | 1089 | Server First Clearance Red Envelope-IX | ★6 | Divine Demon Trial Server First Clearance Red Envelope-IX |
 | 1090 | Server First Clearance Red Envelope-X | ★6 | Divine Demon Trial Server First Clearance Red Envelope-X |
-| 1091 | Decorative Building Drawing Packs(R3) | ★3 | Randomly Get After Use：Building Drawings(3★) |
-| 1092 | Decorative Building Drawing Packs(R4) | ★4 | Randomly Get After Use：Building Drawings(3★~4★) |
-| 1093 | Decorative Building Drawing Packs(R5) | ★5 | Randomly Get After Use：Building Drawings(3★~5★) |
-| 1094 | Decorative Building Drawing Packs(R6) | ★6 | Randomly Get After Use：Building Drawings(3★~6★) |
-| 1095 | Lord Fashion Drawing Packs(R3) | ★3 | Randomly Get After Use：Fashion Drawings(1★~3★) |
-| 1096 | Lord Fashion Drawing Packs(R4) | ★4 | Randomly Get After Use：Fashion Drawings(1★~4★) |
-| 1097 | Lord Fashion Drawing Packs(R5) | ★5 | Randomly Get After Use：Fashion Drawings(2★~5★) |
-| 1098 | Lord Fashion Drawing Packs(R6) | ★6 | Randomly Get After Use：Fashion Drawings(2★~6★) |
+| 1091 | Decorative Building Drawing Packs(R3) | ★3 | Randomly Get After Use: Building Drawings(3★) |
+| 1092 | Decorative Building Drawing Packs(R4) | ★4 | Randomly Get After Use: Building Drawings(3★~4★) |
+| 1093 | Decorative Building Drawing Packs(R5) | ★5 | Randomly Get After Use: Building Drawings(3★~5★) |
+| 1094 | Decorative Building Drawing Packs(R6) | ★6 | Randomly Get After Use: Building Drawings(3★~6★) |
+| 1095 | Lord Fashion Drawing Packs(R3) | ★3 | Randomly Get After Use: Fashion Drawings(1★~3★) |
+| 1096 | Lord Fashion Drawing Packs(R4) | ★4 | Randomly Get After Use: Fashion Drawings(1★~4★) |
+| 1097 | Lord Fashion Drawing Packs(R5) | ★5 | Randomly Get After Use: Fashion Drawings(2★~5★) |
+| 1098 | Lord Fashion Drawing Packs(R6) | ★6 | Randomly Get After Use: Fashion Drawings(2★~6★) |
 | 1099 | Optional Packages-A | ★3 | After use, select 1 prop from the following 1.Speedup Points x50 2.Resource Supply(Customi |
 | 1100 | Optional Packages-B | ★4 | After use, select 1 prop from the following 1.Vit Potion(L) x1 2.Relic Certificate x6 3.Pr |
 | 1101 | Optional Packages-C | ★5 | After use, select 1 prop from the following 1.Universal Advanced Card-Fragment x2 2.Breakt |
-| 1104 | Resource Supply(S) | ★1 | After Use Get： Food x100 Wood x100 Stone x100 Iron x50 |
-| 1105 | Resource Supply(M) | ★2 | After Use Get： Food x500 Wood x500 Stone x500 Iron x250 |
-| 1110 | Resource Supply(L) | ★3 | After Use Get： Food x2,500 Wood x2,500 Stone x2,500 Iron x1,250 |
-| 1114 | Resource Supply(Customize) | ★2 | Selectable After Use： Food x2,000 Or Wood x2,000 Or Stone x2,000 Or Iron x1,000 |
-| 1115 | Resource Supply(Customize) | ★3 | Selectable After Use： Food x10,000 Or Wood x10,000 Or Stone x10,000 Or Iron x5,000 |
-| 1116 | Runes-Fragment | ★3 | Application：Upgrade Runes |
-| 1117 | 4★Runes(Random) | ★4 | Randomly Get After Use：4★Runes |
-| 1118 | 5★Runes(Random) | ★5 | Randomly Get After Use：5★Runes |
-| 1119 | 5★Runes(Customize) | ★5 | After Use Get：Customize 5★Runes |
-| 1120 | Vit Potion(S) | ★3 | After Use Get：Vit +500 |
-| 1121 | Vit Potion(L) | ★4 | After Use Get：Vit +1,000 |
-| 1123 | Chinese Rose | ★4 | Application：Exchange Item |
-| 1124 | Courage Voucher | ★4 | Application：Exchange Item |
-| 1125 | Relic Certificate | ★4 | Application：Enter Ruins Dungeon |
-| 1126 | Primordial Certificate | ★4 | Application：Challenge Primordial Continent BOSS |
-| 1130 | Training Token | ★4 | Application：Training Cave Challenge Times+1 |
-| 1135 | Dimensional Stone | ★4 | Application：Dimensional Land Challenge Times+1 |
-| 1136 | Desert Expedition Star | ★4 | Application：Exchange Item |
-| 1137 | Dice | ★3 | Application：Desert Expedition |
-| 1138 | Golden Dice | ★5 | Application：Desert Expedition |
-| 1140 | Beginner Packs | ★4 | After Use Get：Hero-Lafayette x1 1.Skill-Sword Break x1 2.Skill-Rose Blade x1 3.Skill-Anabi |
-| 1141 | Growth Chest-1 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x100 3.Skill Exp x100 4 |
-| 1142 | Growth Chest-2 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x150 3.Skill Exp x150 4 |
-| 1143 | Growth Chest-3 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 4 |
-| 1144 | Growth Chest-4 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x250 3.Skill Exp x250 4 |
-| 1145 | Growth Chest-5 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x300 3.Skill Exp x300 4 |
-| 1146 | Growth Chest-6 | ★5 | After Use Get： 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x350 3.Skill Exp x350 4 |
-| 1147 | Growth Chest-7 | ★5 | After Use Get： 1.Customize 5★Hero 2.Hero Exp Book(III) x400 3.Skill Exp x400 4.Reign Glory |
-| 1151 | Starlight Card-Fragment(T3) | ★3 | Application：Combine Customize T3 Starlight Card Required Quantity：20 Tips：Starlight Cards  |
-| 1152 | Starlight Card-Fragment(T4) | ★4 | Application：Combine Customize T4 Starlight Card Required Quantity：30 Tips：Starlight Cards  |
-| 1153 | Starlight Card-Fragment(T5) | ★5 | Application：Combine Customize T5 Starlight Card Required Quantity：40 Tips：Starlight Cards  |
-| 1154 | Starlight Card-Fragment(T6) | ★6 | Application：Combine Customize T6 Starlight Card Required Quantity：50 Tips：Starlight Cards  |
-| 1160 | Starlight Card(T6)-Customize | ★6 | After Use Get：Customize T6 Starlight Card Tips：Starlight Cards can be used after construct |
-| 1165 | Lord Fashion Drawing Packs(CustomizeR5) | ★5 | After Use Get：Customize Lord Fashion Drawings(R5) |
-| 1166 | Lord Fashion Drawing Packs(CustomizeR6) | ★6 | After Use Get：Customize Lord Fashion Drawings(R6) |
-| 1172 | New Year Red Envelope-I | ★3 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Relic Su |
-| 1173 | New Year Red Envelope-II | ★5 | Randomly Get After Use：Gems、Gold Coin、Speedup Points、Resources、Hero Summon Scroll、Relic Su |
-| 1181 | Magic Messenger Fragment(T3) | ★3 | Application：Combine Magic Messenger(T3)(Random) Required Quantity：30 |
-| 1182 | Magic Messenger Fragment(T4) | ★4 | Application：Combine Magic Messenger(T4)(Random) Required Quantity：40 |
-| 1183 | Magic Messenger Fragment(T5) | ★5 | Application：Combine Magic Messenger(T5)(Random) Required Quantity：50 |
-| 1184 | Magic Messenger Fragment(T6) | ★6 | Application：Combine Magic Messenger(T6)(Random) Required Quantity：60 |
-| 1191 | Magic Messenger Fragment(T4) | ★4 | Application：Combine Magic Messenger(T4)(Customize) Required Quantity：40 |
-| 1192 | Magic Messenger Fragment(T5) | ★5 | Application：Combine Magic Messenger(T5)(Customize) Required Quantity：50 |
-| 1193 | Magic Messenger Fragment(T6) | ★6 | Application：Combine Magic Messenger(T6)(Customize) Required Quantity：60 |
-| 1200 | Hero Summon Scroll(Newb) | ★5 | Application：Summon Hero |
-| 1204 | Magic Messenger Summon Scroll | ★5 | Application：Summon Magic Messenger |
-| 1205 | Hero Summon Scroll | ★5 | Application：Summon Hero |
-| 1210 | Relic Summon Scroll | ★5 | Application：Summon Relic |
-| 1211 | Summon Scroll(Optional) | ★5 | Selectable After Use：Hero Summon Scrollx1 Or Relic Summon Scrollx1 Or Magic Messenger Summ |
-| 1212 | Magic Messenger(T4)(Customize) | ★4 | After Use Get：Customize Magic Messenger(T4) |
-| 1213 | Magic Messenger(T5)(Customize) | ★5 | After Use Get：Customize Magic Messenger(T5) |
-| 1214 | Magic Messenger(T6)(Customize) | ★6 | After Use Get：Customize Magic Messenger(T6) |
-| 1215 | 4★Hero(Random) | ★4 | After Use Get：Random 4★Hero |
-| 1220 | 4★Hero(Customize) | ★4 | After Use Get：Customize 4★Hero |
-| 1221 | 4★Relic(Random) | ★4 | After Use Get：Random 4★Hero Relic |
-| 1222 | 4★Relic(Customize) | ★4 | After Use Get：Customize 4★Hero Relic |
-| 1225 | 5★Hero(Random) | ★5 | After Use Get：Random 5★Hero |
-| 1230 | 5★Hero(Customize) | ★5 | After Use Get：Customize 5★Hero |
-| 1235 | 5★Relic(Random) | ★5 | After Use Get：Random 5★Hero Relic |
-| 1240 | 5★Relic(Customize) | ★5 | After Use Get：Customize 5★Hero Relic |
-| 1241 | Ruby | ★5 | Application：Combine 5★Relic(Customize) Required Quantity：50 |
-| 1243 | Divine Demon Blood | ★4 | Application：Upgrade Divine Demon Card |
-| 1245 | Hero Skin Scroll-Fragment | ★5 | Application：Combine Hero Skin Scroll Required Quantity：20 |
-| 1250 | Hero Skin Scroll | ★5 | Application：Exchange Hero Skin |
-| 1251 | Lord Fashion Exchange Scroll | ★5 | Application：Exchange Lord Fashion |
-| 1252 | Lord Fashion Exchange Scroll-Fragment | ★5 | Application：Combine Lord Fashion Exchange Scroll Required Quantity：20 |
-| 1253 | Fashion Scroll | ★5 | Selectable After Use： (1)Hero Skin Scroll-Fragment x5 (2)Lord Fashion Exchange Scroll-Frag |
-| 1254 | Emoji Scroll | ★5 | Application：Unlock Emoji(Fashion Points +5) |
-| 1255 | Breakthrough Card-Fragment | ★5 | Application：Combine Breakthrough Card Required Quantity：50  Breakthrough Card(A card that  |
-| 1265 | Universal Advanced Card-Fragment | ★5 | Application：Combine Universal Advanced Card Required Quantity：50  Universal Advanced Card( |
-| 1266 | Universal Codex Card-Fragment | ★5 | Application：Combine Universal Codex Card Required Quantity：50  Universal Codex Card(Can be |
-| 1267 | Divine Demon Card-Fragment(T3) | ★3 | Application：Combine Customize T3 Light Divine Demon Card Required Quantity：20 Tips：God and |
-| 1268 | Divine Demon Card-Fragment(T4) | ★4 | Application：Combine Customize T4 Light Divine Demon Card Required Quantity：30 Tips：God and |
-| 1269 | Divine Demon Card-Fragment(T5) | ★5 | Application：Combine Customize T5 Light Divine Demon Card Required Quantity：40 Tips：God and |
-| 1270 | Divine Demon Card-Fragment(T6) | ★6 | Application：Combine Customize T6 Light Divine Demon Card Required Quantity：50 Tips：God and |
-| 1271 | Divine Demon Card-Fragment(T3) | ★3 | Application：Combine Customize T3 Dark Divine Demon Card Required Quantity：20 Tips：God and  |
-| 1272 | Divine Demon Card-Fragment(T4) | ★4 | Application：Combine Customize T4 Dark Divine Demon Card Required Quantity：30 Tips：God and  |
-| 1273 | Divine Demon Card-Fragment(T5) | ★5 | Application：Combine Customize T5 Dark Divine Demon Card Required Quantity：40 Tips：God and  |
-| 1274 | Divine Demon Card-Fragment(T6) | ★6 | Application：Combine Customize T6 Dark Divine Demon Card Required Quantity：50 Tips：God and  |
-| 1275 | Epic Accessories Chest Fragments | ★5 | Application：Combine Epic Accessories Chest Required Quantity：50 |
-| 1280 | Epic Accessories Chest | ★5 | After Use Get：Customize Epic Accessories |
-| 1285 | Silver Equipment Chest Fragments | ★4 | Application：Combine Silver Equipment Chest Required Quantity：50 |
-| 1290 | Silver Equipment Chest | ★4 | After Use Get：Customize Silver Equipment |
-| 1295 | Gold Equipment Chest Fragments | ★5 | Application：Combine Gold Equipment Chest Required Quantity：50 |
-| 1300 | Gold Equipment Chest | ★5 | After Use Get：Customize Gold Equipment |
-| 1305 | 3★Skill Stone Chest Fragments | ★3 | Application：Combine 3★Skill Stone Chest Required Quantity：50 |
-| 1310 | 3★Skill Stone Chest | ★3 | After Use Get：Customize 3★Skill Stone |
-| 1315 | 4★Skill Stone Chest Fragments | ★4 | Application：Combine 4★Skill Stone Chest Required Quantity：50 |
-| 1320 | 4★Skill Stone Chest | ★4 | After Use Get：Customize 4★Skill Stone |
-| 1325 | 5★Skill Stone Chest Fragments | ★5 | Application：Combine 5★Skill Stone Chest Required Quantity：50 |
-| 1330 | 5★Skill Stone Chest | ★5 | After Use Get：Customize 5★Skill Stone |
-| 1360 | Specialty Supply | ★3 | After Use Get：Random Specialty T1 Probability：33% T2 Probability：25% T3 Probability：18% T4 |
-| 1361 | Specialty Supply(T1) | ★1 | After Use Get：Random Specialty(T1) |
-| 1362 | Specialty Supply(T2) | ★2 | After Use Get：Random Specialty(T2) |
-| 1363 | Specialty Supply(T3) | ★3 | After Use Get：Random Specialty(T3) |
-| 1364 | Specialty Supply(T4) | ★4 | After Use Get：Random Specialty(T4) |
-| 1365 | Specialty Supply(T5) | ★5 | After Use Get：Random Specialty(T5) |
-| 1366 | Specialty Supply(T6) | ★6 | After Use Get：Random Specialty(T6) |
-| 1371 | Specialty Customize(T1) | ★1 | After Use Get：Customize Specialty(T1) |
-| 1372 | Specialty Customize(T2) | ★2 | After Use Get：Customize Specialty(T2) |
-| 1373 | Specialty Customize(T3) | ★3 | After Use Get：Customize Specialty(T3) |
-| 1374 | Specialty Customize(T4) | ★4 | After Use Get：Customize Specialty(T4) |
-| 1375 | Specialty Customize(T5) | ★5 | After Use Get：Customize Specialty(T5) |
-| 1376 | Specialty Customize(T6) | ★6 | After Use Get：Customize Specialty(T6) |
-| 1377 | Artisan's Hammer | ★3 | Application：Build Speedup 1 Min |
-| 1378 | Researcher's Drawings | ★3 | Application：Research Speedup 1 Min |
+| 1104 | Resource Supply(S) | ★1 | After Use Get: Food x100 Wood x100 Stone x100 Iron x50 |
+| 1105 | Resource Supply(M) | ★2 | After Use Get: Food x500 Wood x500 Stone x500 Iron x250 |
+| 1110 | Resource Supply(L) | ★3 | After Use Get: Food x2,500 Wood x2,500 Stone x2,500 Iron x1,250 |
+| 1114 | Resource Supply(Customize) | ★2 | Selectable After Use: Food x2,000 Or Wood x2,000 Or Stone x2,000 Or Iron x1,000 |
+| 1115 | Resource Supply(Customize) | ★3 | Selectable After Use: Food x10,000 Or Wood x10,000 Or Stone x10,000 Or Iron x5,000 |
+| 1116 | Runes-Fragment | ★3 | Application: Upgrade Runes |
+| 1117 | 4★Runes(Random) | ★4 | Randomly Get After Use: 4★Runes |
+| 1118 | 5★Runes(Random) | ★5 | Randomly Get After Use: 5★Runes |
+| 1119 | 5★Runes(Customize) | ★5 | After Use Get: Customize 5★Runes |
+| 1120 | Vit Potion(S) | ★3 | After Use Get: Vit +500 |
+| 1121 | Vit Potion(L) | ★4 | After Use Get: Vit +1,000 |
+| 1123 | Chinese Rose | ★4 | Application: Exchange Item |
+| 1124 | Courage Voucher | ★4 | Application: Exchange Item |
+| 1125 | Relic Certificate | ★4 | Application: Enter Ruins Dungeon |
+| 1126 | Primordial Certificate | ★4 | Application: Challenge Primordial Continent BOSS |
+| 1130 | Training Token | ★4 | Application: Training Cave Challenge Times+1 |
+| 1135 | Dimensional Stone | ★4 | Application: Dimensional Land Challenge Times+1 |
+| 1136 | Desert Expedition Star | ★4 | Application: Exchange Item |
+| 1137 | Dice | ★3 | Application: Desert Expedition |
+| 1138 | Golden Dice | ★5 | Application: Desert Expedition |
+| 1140 | Beginner Packs | ★4 | After Use Get: Hero-Lafayette x1 1.Skill-Sword Break x1 2.Skill-Rose Blade x1 3.Skill-Anab |
+| 1141 | Growth Chest-1 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x100 3.Skill Exp x100 4 |
+| 1142 | Growth Chest-2 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x150 3.Skill Exp x150 4 |
+| 1143 | Growth Chest-3 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x200 3.Skill Exp x200 4 |
+| 1144 | Growth Chest-4 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x250 3.Skill Exp x250 4 |
+| 1145 | Growth Chest-5 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x300 3.Skill Exp x300 4 |
+| 1146 | Growth Chest-6 | ★5 | After Use Get: 1.Hero Summon Scroll(Newb) x10 2.Hero Exp Book(III) x350 3.Skill Exp x350 4 |
+| 1147 | Growth Chest-7 | ★5 | After Use Get: 1.Customize 5★Hero 2.Hero Exp Book(III) x400 3.Skill Exp x400 4.Reign Glory |
+| 1151 | Starlight Card-Fragment(T3) | ★3 | Application: Combine Customize T3 Starlight Card Required Quantity: 20 Tips: Starlight Car |
+| 1152 | Starlight Card-Fragment(T4) | ★4 | Application: Combine Customize T4 Starlight Card Required Quantity: 30 Tips: Starlight Car |
+| 1153 | Starlight Card-Fragment(T5) | ★5 | Application: Combine Customize T5 Starlight Card Required Quantity: 40 Tips: Starlight Car |
+| 1154 | Starlight Card-Fragment(T6) | ★6 | Application: Combine Customize T6 Starlight Card Required Quantity: 50 Tips: Starlight Car |
+| 1160 | Starlight Card(T6)-Customize | ★6 | After Use Get: Customize T6 Starlight Card Tips: Starlight Cards can be used after constru |
+| 1165 | Lord Fashion Drawing Packs(CustomizeR5) | ★5 | After Use Get: Customize Lord Fashion Drawings(R5) |
+| 1166 | Lord Fashion Drawing Packs(CustomizeR6) | ★6 | After Use Get: Customize Lord Fashion Drawings(R6) |
+| 1172 | New Year Red Envelope-I | ★3 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Re |
+| 1173 | New Year Red Envelope-II | ★5 | Randomly Get After Use: Gems, Gold Coin, Speedup Points, Resources, Hero Summon Scroll, Re |
+| 1181 | Magic Messenger Fragment(T3) | ★3 | Application: Combine Magic Messenger(T3)(Random) Required Quantity: 30 |
+| 1182 | Magic Messenger Fragment(T4) | ★4 | Application: Combine Magic Messenger(T4)(Random) Required Quantity: 40 |
+| 1183 | Magic Messenger Fragment(T5) | ★5 | Application: Combine Magic Messenger(T5)(Random) Required Quantity: 50 |
+| 1184 | Magic Messenger Fragment(T6) | ★6 | Application: Combine Magic Messenger(T6)(Random) Required Quantity: 60 |
+| 1191 | Magic Messenger Fragment(T4) | ★4 | Application: Combine Magic Messenger(T4)(Customize) Required Quantity: 40 |
+| 1192 | Magic Messenger Fragment(T5) | ★5 | Application: Combine Magic Messenger(T5)(Customize) Required Quantity: 50 |
+| 1193 | Magic Messenger Fragment(T6) | ★6 | Application: Combine Magic Messenger(T6)(Customize) Required Quantity: 60 |
+| 1200 | Hero Summon Scroll(Newb) | ★5 | Application: Summon Hero |
+| 1204 | Magic Messenger Summon Scroll | ★5 | Application: Summon Magic Messenger |
+| 1205 | Hero Summon Scroll | ★5 | Application: Summon Hero |
+| 1210 | Relic Summon Scroll | ★5 | Application: Summon Relic |
+| 1211 | Summon Scroll(Optional) | ★5 | Selectable After Use: Hero Summon Scrollx1 Or Relic Summon Scrollx1 Or Magic Messenger Sum |
+| 1212 | Magic Messenger(T4)(Customize) | ★4 | After Use Get: Customize Magic Messenger(T4) |
+| 1213 | Magic Messenger(T5)(Customize) | ★5 | After Use Get: Customize Magic Messenger(T5) |
+| 1214 | Magic Messenger(T6)(Customize) | ★6 | After Use Get: Customize Magic Messenger(T6) |
+| 1215 | 4★Hero(Random) | ★4 | After Use Get: Random 4★Hero |
+| 1220 | 4★Hero(Customize) | ★4 | After Use Get: Customize 4★Hero |
+| 1221 | 4★Relic(Random) | ★4 | After Use Get: Random 4★Hero Relic |
+| 1222 | 4★Relic(Customize) | ★4 | After Use Get: Customize 4★Hero Relic |
+| 1225 | 5★Hero(Random) | ★5 | After Use Get: Random 5★Hero |
+| 1230 | 5★Hero(Customize) | ★5 | After Use Get: Customize 5★Hero |
+| 1235 | 5★Relic(Random) | ★5 | After Use Get: Random 5★Hero Relic |
+| 1240 | 5★Relic(Customize) | ★5 | After Use Get: Customize 5★Hero Relic |
+| 1241 | Ruby | ★5 | Application: Combine 5★Relic(Customize) Required Quantity: 50 |
+| 1243 | Divine Demon Blood | ★4 | Application: Upgrade Divine Demon Card |
+| 1245 | Hero Skin Scroll-Fragment | ★5 | Application: Combine Hero Skin Scroll Required Quantity: 20 |
+| 1250 | Hero Skin Scroll | ★5 | Application: Exchange Hero Skin |
+| 1251 | Lord Fashion Exchange Scroll | ★5 | Application: Exchange Lord Fashion |
+| 1252 | Lord Fashion Exchange Scroll-Fragment | ★5 | Application: Combine Lord Fashion Exchange Scroll Required Quantity: 20 |
+| 1253 | Fashion Scroll | ★5 | Selectable After Use: (1)Hero Skin Scroll-Fragment x5 (2)Lord Fashion Exchange Scroll-Frag |
+| 1254 | Emoji Scroll | ★5 | Application: Unlock Emoji(Fashion Points +5) |
+| 1255 | Breakthrough Card-Fragment | ★5 | Application: Combine Breakthrough Card Required Quantity: 50 Breakthrough Card(A card that |
+| 1265 | Universal Advanced Card-Fragment | ★5 | Application: Combine Universal Advanced Card Required Quantity: 50 Universal Advanced Card |
+| 1266 | Universal Codex Card-Fragment | ★5 | Application: Combine Universal Codex Card Required Quantity: 50 Universal Codex Card(Can b |
+| 1267 | Divine Demon Card-Fragment(T3) | ★3 | Application: Combine Customize T3 Light Divine Demon Card Required Quantity: 20 Tips: God  |
+| 1268 | Divine Demon Card-Fragment(T4) | ★4 | Application: Combine Customize T4 Light Divine Demon Card Required Quantity: 30 Tips: God  |
+| 1269 | Divine Demon Card-Fragment(T5) | ★5 | Application: Combine Customize T5 Light Divine Demon Card Required Quantity: 40 Tips: God  |
+| 1270 | Divine Demon Card-Fragment(T6) | ★6 | Application: Combine Customize T6 Light Divine Demon Card Required Quantity: 50 Tips: God  |
+| 1271 | Divine Demon Card-Fragment(T3) | ★3 | Application: Combine Customize T3 Dark Divine Demon Card Required Quantity: 20 Tips: God a |
+| 1272 | Divine Demon Card-Fragment(T4) | ★4 | Application: Combine Customize T4 Dark Divine Demon Card Required Quantity: 30 Tips: God a |
+| 1273 | Divine Demon Card-Fragment(T5) | ★5 | Application: Combine Customize T5 Dark Divine Demon Card Required Quantity: 40 Tips: God a |
+| 1274 | Divine Demon Card-Fragment(T6) | ★6 | Application: Combine Customize T6 Dark Divine Demon Card Required Quantity: 50 Tips: God a |
+| 1275 | Epic Accessories Chest Fragments | ★5 | Application: Combine Epic Accessories Chest Required Quantity: 50 |
+| 1280 | Epic Accessories Chest | ★5 | After Use Get: Customize Epic Accessories |
+| 1285 | Silver Equipment Chest Fragments | ★4 | Application: Combine Silver Equipment Chest Required Quantity: 50 |
+| 1290 | Silver Equipment Chest | ★4 | After Use Get: Customize Silver Equipment |
+| 1295 | Gold Equipment Chest Fragments | ★5 | Application: Combine Gold Equipment Chest Required Quantity: 50 |
+| 1300 | Gold Equipment Chest | ★5 | After Use Get: Customize Gold Equipment |
+| 1305 | 3★Skill Stone Chest Fragments | ★3 | Application: Combine 3★Skill Stone Chest Required Quantity: 50 |
+| 1310 | 3★Skill Stone Chest | ★3 | After Use Get: Customize 3★Skill Stone |
+| 1315 | 4★Skill Stone Chest Fragments | ★4 | Application: Combine 4★Skill Stone Chest Required Quantity: 50 |
+| 1320 | 4★Skill Stone Chest | ★4 | After Use Get: Customize 4★Skill Stone |
+| 1325 | 5★Skill Stone Chest Fragments | ★5 | Application: Combine 5★Skill Stone Chest Required Quantity: 50 |
+| 1330 | 5★Skill Stone Chest | ★5 | After Use Get: Customize 5★Skill Stone |
+| 1360 | Specialty Supply | ★3 | After Use Get: Random Specialty T1 Probability: 33% T2 Probability: 25% T3 Probability: 18 |
+| 1361 | Specialty Supply(T1) | ★1 | After Use Get: Random Specialty(T1) |
+| 1362 | Specialty Supply(T2) | ★2 | After Use Get: Random Specialty(T2) |
+| 1363 | Specialty Supply(T3) | ★3 | After Use Get: Random Specialty(T3) |
+| 1364 | Specialty Supply(T4) | ★4 | After Use Get: Random Specialty(T4) |
+| 1365 | Specialty Supply(T5) | ★5 | After Use Get: Random Specialty(T5) |
+| 1366 | Specialty Supply(T6) | ★6 | After Use Get: Random Specialty(T6) |
+| 1371 | Specialty Customize(T1) | ★1 | After Use Get: Customize Specialty(T1) |
+| 1372 | Specialty Customize(T2) | ★2 | After Use Get: Customize Specialty(T2) |
+| 1373 | Specialty Customize(T3) | ★3 | After Use Get: Customize Specialty(T3) |
+| 1374 | Specialty Customize(T4) | ★4 | After Use Get: Customize Specialty(T4) |
+| 1375 | Specialty Customize(T5) | ★5 | After Use Get: Customize Specialty(T5) |
+| 1376 | Specialty Customize(T6) | ★6 | After Use Get: Customize Specialty(T6) |
+| 1377 | Artisan's Hammer | ★3 | Application: Build Speedup 1 Min |
+| 1378 | Researcher's Drawings | ★3 | Application: Research Speedup 1 Min |
 | 1379 | Quick Healing Pack | ★3 | Hospital Heal Time -5Min |
 | 1380 | Portal Cooldown Stone | ★3 | Portal CD -5Min |
-| 1381 | Wheat Seed-I | ★1 | Livespan：2H Harvest：Life Points x200 |
-| 1382 | Wheat Seed-II | ★2 | Livespan：2H Harvest：Life Points x400 |
-| 1383 | Wheat Seed-III | ★3 | Livespan：4H Harvest：Life Points x800 |
-| 1384 | Wheat Seed-IV | ★4 | Livespan：6H Harvest：Life Points x1200 |
-| 1385 | Fruit Tree Seed-I | ★1 | Livespan：8H Harvest：Life Points x640 |
-| 1386 | Fruit Tree Seed-II | ★2 | Livespan：8H Harvest：Life Points x1280 |
-| 1387 | Fruit Tree Seed-III | ★3 | Livespan：16H Harvest：Life Points x2560 |
-| 1388 | Fruit Tree Seed-IV | ★4 | Livespan：24H Harvest：Life Points x3840 |
+| 1381 | Wheat Seed-I | ★1 | Livespan: 2H Harvest: Life Points x200 |
+| 1382 | Wheat Seed-II | ★2 | Livespan: 2H Harvest: Life Points x400 |
+| 1383 | Wheat Seed-III | ★3 | Livespan: 4H Harvest: Life Points x800 |
+| 1384 | Wheat Seed-IV | ★4 | Livespan: 6H Harvest: Life Points x1200 |
+| 1385 | Fruit Tree Seed-I | ★1 | Livespan: 8H Harvest: Life Points x640 |
+| 1386 | Fruit Tree Seed-II | ★2 | Livespan: 8H Harvest: Life Points x1280 |
+| 1387 | Fruit Tree Seed-III | ★3 | Livespan: 16H Harvest: Life Points x2560 |
+| 1388 | Fruit Tree Seed-IV | ★4 | Livespan: 24H Harvest: Life Points x3840 |
 | 1400 | Growth Potion | ★3 | Accelerates growth of planted seeds in the Manor by 1 hour |
-| 1401 | Hero Exp Book(I) | ★2 | After Use Get：Hero Exp +1,000 |
-| 1402 | Hero Exp Book(II) | ★3 | After Use Get：Hero Exp +2,000 |
-| 1403 | Hero Exp Book(III) | ★4 | After Use Get：Hero Exp +5,000 |
-| 1404 | Hero Exp Book(IV) | ★5 | After Use Get：Hero Exp +10,000 |
-| 1405 | Hero Exp Book(V) | ★6 | After Use Get：Hero Exp +20,000 |
-| 1421 | Skill Exp Bead(I) | ★2 | After Use Get：Skill Exp +50 |
-| 1422 | Skill Exp Bead(II) | ★3 | After Use Get：Skill Exp +100 |
-| 1423 | Skill Exp Bead(III) | ★4 | After Use Get：Skill Exp +250 |
-| 1424 | Skill Exp Bead(IV) | ★5 | After Use Get：Skill Exp +500 |
-| 1425 | Skill Exp Bead(V) | ★6 | After Use Get：Skill Exp +1,000 |
-| 1450 | Talent Breakthrough Stone Fragment | ★4 | Application：Combine Talent Breakthrough Stone Required Quantity：10 |
-| 1455 | Talent Breakthrough Stone | ★5 | Application：Enhance Hero Talent |
-| 1460 | Hero Talent Stone | ★4 | Application：Enhance Hero Talent |
-| 1465 | Strategic Skill Awakening Stone | ★4 | Awakening：Strategic Skill、Passive Skill |
-| 1470 | Tactical Skill Awakening Stone | ★4 | Awakening：Tactical Skill、Pursuit Skill |
-| 1500 | Flowers | ★2 | Application：HeroFavorability +5 |
-| 1505 | Perfume | ★3 | Application：HeroFavorability +25 |
-| 1515 | Love Chocolate | ★4 | Application：Breakthrough Hero Favorability |
-| 1520 | Oath Ring Fragment | ★5 | Application：Combine Oath Ring Required Quantity：50 |
-| 1525 | Oath Ring | ★5 | Application：Vow Hero |
+| 1401 | Hero Exp Book(I) | ★2 | After Use Get: Hero Exp +1,000 |
+| 1402 | Hero Exp Book(II) | ★3 | After Use Get: Hero Exp +2,000 |
+| 1403 | Hero Exp Book(III) | ★4 | After Use Get: Hero Exp +5,000 |
+| 1404 | Hero Exp Book(IV) | ★5 | After Use Get: Hero Exp +10,000 |
+| 1405 | Hero Exp Book(V) | ★6 | After Use Get: Hero Exp +20,000 |
+| 1421 | Skill Exp Bead(I) | ★2 | After Use Get: Skill Exp +50 |
+| 1422 | Skill Exp Bead(II) | ★3 | After Use Get: Skill Exp +100 |
+| 1423 | Skill Exp Bead(III) | ★4 | After Use Get: Skill Exp +250 |
+| 1424 | Skill Exp Bead(IV) | ★5 | After Use Get: Skill Exp +500 |
+| 1425 | Skill Exp Bead(V) | ★6 | After Use Get: Skill Exp +1,000 |
+| 1450 | Talent Breakthrough Stone Fragment | ★4 | Application: Combine Talent Breakthrough Stone Required Quantity: 10 |
+| 1455 | Talent Breakthrough Stone | ★5 | Application: Enhance Hero Talent |
+| 1460 | Hero Talent Stone | ★4 | Application: Enhance Hero Talent |
+| 1465 | Strategic Skill Awakening Stone | ★4 | Awakening: Strategic Skill, Passive Skill |
+| 1470 | Tactical Skill Awakening Stone | ★4 | Awakening: Tactical Skill, Pursuit Skill |
+| 1500 | Flowers | ★2 | Application: HeroFavorability +5 |
+| 1505 | Perfume | ★3 | Application: HeroFavorability +25 |
+| 1515 | Love Chocolate | ★4 | Application: Breakthrough Hero Favorability |
+| 1520 | Oath Ring Fragment | ★5 | Application: Combine Oath Ring Required Quantity: 50 |
+| 1525 | Oath Ring | ★5 | Application: Vow Hero |
 | 1531 | Ship Teleportation Stone | ★2 | When the ship is empty, it can quickly teleport back to the port |
-| 1541 | Trade Specialty-I | ★3 | Application：Maritime Trade |
-| 1542 | Trade Specialty-II | ★3 | Application：Maritime Trade |
-| 1543 | Trade Specialty-III | ★3 | Application：Maritime Trade |
-| 1544 | Trade Specialty-IV | ★3 | Application：Maritime Trade |
-| 1545 | Trade Specialty-V | ★3 | Application：Maritime Trade |
-| 1546 | Trade Specialty-VI | ★3 | Application：Maritime Trade |
-| 1547 | Trade Specialty-VII | ★3 | Application：Maritime Trade |
-| 1548 | Trade Specialty-VIII | ★3 | Application：Maritime Trade |
-| 1549 | Trade Specialty-IX | ★3 | Application：Maritime Trade |
-| 1570 | Ship Drawings Pack | ★3 | After Use Get：Random Drawings(R1-R3) |
-| 1600 | Epic Rare Stuff Chest | ★5 | Selectable After Use： Gilded Stone、Star Moon Line、Silver Silk Satin、Black Coral、Silver Sca |
-| 1601 | Equipment Drawings Chest(T1) | ★1 | After Use Get：Customize Equipment Drawings(T1) |
-| 1602 | Equipment Drawings Chest(T2) | ★2 | After Use Get：Customize Equipment Drawings(T2) |
-| 1603 | Equipment Drawings Chest(T3) | ★3 | After Use Get：Customize Equipment Drawings(T3) |
-| 1604 | Equipment Drawings Chest(T4) | ★4 | After Use Get：Customize Equipment Drawings(T4) |
-| 1605 | Equipment Drawings Chest(T5) | ★5 | After Use Get：Customize Equipment Drawings(T5) |
-| 1611 | Equipment Drawings Chest(T1) | ★1 | After Use Get：Random Equipment Drawings(T1) |
-| 1612 | Equipment Drawings Chest(T2) | ★2 | After Use Get：Random Equipment Drawings(T2) |
-| 1613 | Equipment Drawings Chest(T3) | ★3 | After Use Get：Random Equipment Drawings(T3) |
-| 1614 | Equipment Drawings Chest(T4) | ★4 | After Use Get：Random Equipment Drawings(T4) |
-| 1615 | Equipment Drawings Chest(T5) | ★5 | After Use Get：Random Equipment Drawings(T5) |
-| 1621 | Equipment Stuff Chest(T1) | ★1 | After Use Get：Customize Equipment Stuff(T1) |
-| 1622 | Equipment Stuff Chest(T2) | ★2 | After Use Get：Customize Equipment Stuff(T2) |
-| 1623 | Equipment Stuff Chest(T3) | ★3 | After Use Get：Customize Equipment Stuff(T3) |
-| 1624 | Equipment Stuff Chest(T4) | ★4 | After Use Get：Customize Equipment Stuff(T4) |
-| 1625 | Equipment Stuff Chest(T5) | ★5 | After Use Get：Customize Equipment Stuff(T5) |
-| 1630 | Treasure Cave Key | ★5 | Application：Unlock Treasure Cave |
-| 1631 | Treasure Cave Key-Fragment | ★5 | Application：Combine Treasure Cave Key Required Quantity：50 |
-| 1705 | Limited Time Rewards-Lottery Scroll | ★5 | Application：Limited Time Rewards Activity Lottery Can Be Retained For Use In The Next Even |
-| 1706 | Lucky Wheel-Lottery Scroll | ★6 | Application：Lucky Wheel Activity Lottery Can Be Retained For Use In The Next Event |
-| 1707 | Lucky Egg | ★5 | Application：Exchange Item Can Be Retained For Use In The Next Event |
-| 1708 | Lucky Mystery Box-Lottery Scroll | ★6 | Application：Lucky Mystery Box Activity Lottery Can Be Retained For Use In The Next Event |
-| 1709 | Lucky Crystal | ★5 | Application：Exchange Item Can Be Retained For Use In The Next Event |
-| 1710 | Celebration Fireworks | ★4 | After Use Get：Surprise Rewards |
-| 1715 | Celebration Badge | ★5 | Application：Exchange Item |
-| 1716 | Kuroland Badge | ★5 | Application：Exchange Item |
-| 1720 | Outfit-Sharp Edge | ★5 | Unlock：City Hall Outfit-Sharp Edge Training Spd+5% Healing Spd+5% Fashion Points +60 |
-| 1721 | Outfit-Diary Of Wind | ★5 | Unlock：City Hall Outfit-Diary Of Wind All Soldiers HP+5% All Soldiers DEF+5% Fashion Point |
-| 1722 | Outfit-Golden Memory | ★5 | Unlock：City Hall Outfit-Golden Memory All Soldiers ATK+5% All Soldiers DES+5% Fashion Poin |
-| 1723 | Outfit-Flower Fort | ★5 | Unlock：City Hall Outfit-Flower Fort City All Resource Output+20% City Gold Output+20% Fash |
-| 1724 | Outfit-Iwadare Fortress | ★6 | Unlock：City Hall Outfit-Iwadare Fortress All Soldiers HP+5% All Soldiers DEF+5% All Soldie |
-| 1725 | Outfit-Divine Horse Palace | ★5 | Unlock：City Hall Outfit-Divine Horse Palace Smithy Manufacturing Spd+30% Fashion Points +9 |
-| 1726 | Outfit-Fairy Tale Wish | ★5 | Unlock：City Hall Outfit-Fairy Tale Wish Planting Income+15% Fashion Points +90 |
-| 1851 | Relocation Order(Random) | ★3 | Move The City To A Random Location CD：24 H |
-| 1852 | Relocation Order(Customize) | ★4 | Move The City To A Specified Location CD：7 Day |
-| 1855 | Rename Card | ★3 | Application：Modify Role Name |
-| 1856 | Gender Change Card | ★4 | Application：Change Character Gender |
-| 1861 | Osmanthus | ★2 | After Use Get：Decorative Building |
-| 1862 | Tilia | ★2 | After Use Get：Decorative Building |
-| 1863 | Coconut | ★2 | After Use Get：Decorative Building |
-| 1864 | Pine | ★2 | After Use Get：Decorative Building |
-| 1865 | Epipremnum | ★2 | After Use Get：Decorative Building |
-| 1866 | Veronica Plant | ★2 | After Use Get：Decorative Building |
-| 1867 | Lavand | ★2 | After Use Get：Decorative Building |
-| 1868 | Coralberry | ★2 | After Use Get：Decorative Building |
-| 1901 | Tournament(I) No.1 | ★6 | After Use Get：Frame(Validity Period：28Day) |
-| 1902 | Tournament(I) No.2 | ★5 | After Use Get：Frame(Validity Period：28Day) |
-| 1903 | Tournament(I) No.4 | ★4 | After Use Get：Frame(Validity Period：28Day) |
-| 1904 | Tournament(I) No.8 | ★4 | After Use Get：Frame(Validity Period：28Day) |
-| 1905 | Legendary Builder | ★5 | After Use Get：Frame |
-| 1906 | Legendary Scientist | ★5 | After Use Get：Frame |
-| 1907 | Legendary Hero | ★5 | After Use Get：Frame |
-| 1908 | Legendary Lord | ★5 | After Use Get：Frame |
-| 1909 | Legendary Adventurer | ★5 | After Use Get：Frame |
-| 1910 | Legendary Mentor | ★5 | After Use Get：Frame |
-| 1911 | Peerless | ★6 | After Use Get：Frame |
-| 1931 | Kuroland Overlord | ★6 | After Use Get：Frame(Validity Period：7Day) |
-| 1932 | Kuroland Hero | ★5 | After Use Get：Frame(Validity Period：7Day) |
-| 1933 | Kuroland Powerful | ★5 | After Use Get：Frame(Validity Period：7Day) |
-| 1934 | Fashion Enthusiast | ★6 | After Use Get：Frame(Validity Period：7Day) |
-| 1935 | Fashion Pioneer | ★5 | After Use Get：Frame(Validity Period：7Day) |
-| 1936 | Fashion Elite | ★5 | After Use Get：Frame(Validity Period：7Day) |
-| 1937 | Tournament(II) No.1 | ★6 | After Use Get：Frame(Validity Period：28Day) |
-| 1938 | Tournament(II) No.2 | ★5 | After Use Get：Frame(Validity Period：28Day) |
-| 1939 | Tournament(II) No.4 | ★4 | After Use Get：Frame(Validity Period：28Day) |
-| 1940 | Tournament(II) No.8 | ★4 | After Use Get：Frame(Validity Period：28Day) |
+| 1541 | Trade Specialty-I | ★3 | Application: Maritime Trade |
+| 1542 | Trade Specialty-II | ★3 | Application: Maritime Trade |
+| 1543 | Trade Specialty-III | ★3 | Application: Maritime Trade |
+| 1544 | Trade Specialty-IV | ★3 | Application: Maritime Trade |
+| 1545 | Trade Specialty-V | ★3 | Application: Maritime Trade |
+| 1546 | Trade Specialty-VI | ★3 | Application: Maritime Trade |
+| 1547 | Trade Specialty-VII | ★3 | Application: Maritime Trade |
+| 1548 | Trade Specialty-VIII | ★3 | Application: Maritime Trade |
+| 1549 | Trade Specialty-IX | ★3 | Application: Maritime Trade |
+| 1570 | Ship Drawings Pack | ★3 | After Use Get: Random Drawings(R1-R3) |
+| 1600 | Epic Rare Stuff Chest | ★5 | Selectable After Use: Gilded Stone, Star Moon Line, Silver Silk Satin, Black Coral, Silver |
+| 1601 | Equipment Drawings Chest(T1) | ★1 | After Use Get: Customize Equipment Drawings(T1) |
+| 1602 | Equipment Drawings Chest(T2) | ★2 | After Use Get: Customize Equipment Drawings(T2) |
+| 1603 | Equipment Drawings Chest(T3) | ★3 | After Use Get: Customize Equipment Drawings(T3) |
+| 1604 | Equipment Drawings Chest(T4) | ★4 | After Use Get: Customize Equipment Drawings(T4) |
+| 1605 | Equipment Drawings Chest(T5) | ★5 | After Use Get: Customize Equipment Drawings(T5) |
+| 1611 | Equipment Drawings Chest(T1) | ★1 | After Use Get: Random Equipment Drawings(T1) |
+| 1612 | Equipment Drawings Chest(T2) | ★2 | After Use Get: Random Equipment Drawings(T2) |
+| 1613 | Equipment Drawings Chest(T3) | ★3 | After Use Get: Random Equipment Drawings(T3) |
+| 1614 | Equipment Drawings Chest(T4) | ★4 | After Use Get: Random Equipment Drawings(T4) |
+| 1615 | Equipment Drawings Chest(T5) | ★5 | After Use Get: Random Equipment Drawings(T5) |
+| 1621 | Equipment Stuff Chest(T1) | ★1 | After Use Get: Customize Equipment Stuff(T1) |
+| 1622 | Equipment Stuff Chest(T2) | ★2 | After Use Get: Customize Equipment Stuff(T2) |
+| 1623 | Equipment Stuff Chest(T3) | ★3 | After Use Get: Customize Equipment Stuff(T3) |
+| 1624 | Equipment Stuff Chest(T4) | ★4 | After Use Get: Customize Equipment Stuff(T4) |
+| 1625 | Equipment Stuff Chest(T5) | ★5 | After Use Get: Customize Equipment Stuff(T5) |
+| 1630 | Treasure Cave Key | ★5 | Application: Unlock Treasure Cave |
+| 1631 | Treasure Cave Key-Fragment | ★5 | Application: Combine Treasure Cave Key Required Quantity: 50 |
+| 1705 | Limited Time Rewards-Lottery Scroll | ★5 | Application: Limited Time Rewards Activity Lottery Can Be Retained For Use In The Next Eve |
+| 1706 | Lucky Wheel-Lottery Scroll | ★6 | Application: Lucky Wheel Activity Lottery Can Be Retained For Use In The Next Event |
+| 1707 | Lucky Egg | ★5 | Application: Exchange Item Can Be Retained For Use In The Next Event |
+| 1708 | Lucky Mystery Box-Lottery Scroll | ★6 | Application: Lucky Mystery Box Activity Lottery Can Be Retained For Use In The Next Event |
+| 1709 | Lucky Crystal | ★5 | Application: Exchange Item Can Be Retained For Use In The Next Event |
+| 1710 | Celebration Fireworks | ★4 | After Use Get: Surprise Rewards |
+| 1715 | Celebration Badge | ★5 | Application: Exchange Item |
+| 1716 | Kuroland Badge | ★5 | Application: Exchange Item |
+| 1720 | Outfit-Sharp Edge | ★5 | Unlock: City Hall Outfit-Sharp Edge Training Spd+5% Healing Spd+5% Fashion Points +60 |
+| 1721 | Outfit-Diary Of Wind | ★5 | Unlock: City Hall Outfit-Diary Of Wind All Soldiers HP+5% All Soldiers DEF+5% Fashion Poin |
+| 1722 | Outfit-Golden Memory | ★5 | Unlock: City Hall Outfit-Golden Memory All Soldiers ATK+5% All Soldiers DES+5% Fashion Poi |
+| 1723 | Outfit-Flower Fort | ★5 | Unlock: City Hall Outfit-Flower Fort City All Resource Output+20% City Gold Output+20% Fas |
+| 1724 | Outfit-Iwadare Fortress | ★6 | Unlock: City Hall Outfit-Iwadare Fortress All Soldiers HP+5% All Soldiers DEF+5% All Soldi |
+| 1725 | Outfit-Divine Horse Palace | ★5 | Unlock: City Hall Outfit-Divine Horse Palace Smithy Manufacturing Spd+30% Fashion Points + |
+| 1726 | Outfit-Fairy Tale Wish | ★5 | Unlock: City Hall Outfit-Fairy Tale Wish Planting Income+15% Fashion Points +90 |
+| 1851 | Relocation Order(Random) | ★3 | Move The City To A Random Location CD: 24 H |
+| 1852 | Relocation Order(Customize) | ★4 | Move The City To A Specified Location CD: 7 Day |
+| 1855 | Rename Card | ★3 | Application: Modify Role Name |
+| 1856 | Gender Change Card | ★4 | Application: Change Character Gender |
+| 1861 | Osmanthus | ★2 | After Use Get: Decorative Building |
+| 1862 | Tilia | ★2 | After Use Get: Decorative Building |
+| 1863 | Coconut | ★2 | After Use Get: Decorative Building |
+| 1864 | Pine | ★2 | After Use Get: Decorative Building |
+| 1865 | Epipremnum | ★2 | After Use Get: Decorative Building |
+| 1866 | Veronica Plant | ★2 | After Use Get: Decorative Building |
+| 1867 | Lavand | ★2 | After Use Get: Decorative Building |
+| 1868 | Coralberry | ★2 | After Use Get: Decorative Building |
+| 1901 | Tournament(I) No.1 | ★6 | After Use Get: Frame(Validity Period: 28Day) |
+| 1902 | Tournament(I) No.2 | ★5 | After Use Get: Frame(Validity Period: 28Day) |
+| 1903 | Tournament(I) No.4 | ★4 | After Use Get: Frame(Validity Period: 28Day) |
+| 1904 | Tournament(I) No.8 | ★4 | After Use Get: Frame(Validity Period: 28Day) |
+| 1905 | Legendary Builder | ★5 | After Use Get: Frame |
+| 1906 | Legendary Scientist | ★5 | After Use Get: Frame |
+| 1907 | Legendary Hero | ★5 | After Use Get: Frame |
+| 1908 | Legendary Lord | ★5 | After Use Get: Frame |
+| 1909 | Legendary Adventurer | ★5 | After Use Get: Frame |
+| 1910 | Legendary Mentor | ★5 | After Use Get: Frame |
+| 1911 | Peerless | ★6 | After Use Get: Frame |
+| 1931 | Kuroland Overlord | ★6 | After Use Get: Frame(Validity Period: 7Day) |
+| 1932 | Kuroland Hero | ★5 | After Use Get: Frame(Validity Period: 7Day) |
+| 1933 | Kuroland Powerful | ★5 | After Use Get: Frame(Validity Period: 7Day) |
+| 1934 | Fashion Enthusiast | ★6 | After Use Get: Frame(Validity Period: 7Day) |
+| 1935 | Fashion Pioneer | ★5 | After Use Get: Frame(Validity Period: 7Day) |
+| 1936 | Fashion Elite | ★5 | After Use Get: Frame(Validity Period: 7Day) |
+| 1937 | Tournament(II) No.1 | ★6 | After Use Get: Frame(Validity Period: 28Day) |
+| 1938 | Tournament(II) No.2 | ★5 | After Use Get: Frame(Validity Period: 28Day) |
+| 1939 | Tournament(II) No.4 | ★4 | After Use Get: Frame(Validity Period: 28Day) |
+| 1940 | Tournament(II) No.8 | ★4 | After Use Get: Frame(Validity Period: 28Day) |
 | 60001 | Sword Break | ★3 | Grants hero skill when used (If the skill is already owned, converts it to skill EXP) |
 | 60002 | Rose Blade | ★4 | Grants hero skill when used (If the skill is already owned, converts it to skill EXP) |
 | 60003 | Anabiosis | ★4 | Grants hero skill when used (If the skill is already owned, converts it to skill EXP) |
@@ -866,21 +866,21 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 | 75055 | Kraken-Trials Credential | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 75056 | Bayside-Trials Credential | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 75057 | Carta-Trials Credential | ★6 | Codex Collections(Unique Prop, can only be obtained once) |
-| 75067 | Arena-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 75068 | Arena-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 75069 | Arena-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 75070 | Ladder Tournament-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 75071 | Ladder Tournament-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 75072 | Ladder Tournament-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 75073 | Glory Arena-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 75074 | Glory Arena-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 75075 | Glory Arena-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 75076 | Tournament(I)-Trials Credential(I) | ★4 | Codex Collections(Validity Period：15 Day) |
-| 75077 | Tournament(I)-Trials Credential(II) | ★5 | Codex Collections(Validity Period：15 Day) |
-| 75078 | Tournament(I)-Trials Credential(III) | ★6 | Codex Collections(Validity Period：15 Day) |
-| 75079 | Tournament(II)-Trials Credential(I) | ★4 | Codex Collections(Validity Period：15 Day) |
-| 75080 | Tournament(II)-Trials Credential(II) | ★5 | Codex Collections(Validity Period：15 Day) |
-| 75081 | Tournament(II)-Trials Credential(III) | ★6 | Codex Collections(Validity Period：15 Day) |
+| 75067 | Arena-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 75068 | Arena-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 75069 | Arena-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 75070 | Ladder Tournament-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 75071 | Ladder Tournament-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 75072 | Ladder Tournament-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 75073 | Glory Arena-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 75074 | Glory Arena-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 75075 | Glory Arena-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 75076 | Tournament(I)-Trials Credential(I) | ★4 | Codex Collections(Validity Period: 15 Day) |
+| 75077 | Tournament(I)-Trials Credential(II) | ★5 | Codex Collections(Validity Period: 15 Day) |
+| 75078 | Tournament(I)-Trials Credential(III) | ★6 | Codex Collections(Validity Period: 15 Day) |
+| 75079 | Tournament(II)-Trials Credential(I) | ★4 | Codex Collections(Validity Period: 15 Day) |
+| 75080 | Tournament(II)-Trials Credential(II) | ★5 | Codex Collections(Validity Period: 15 Day) |
+| 75081 | Tournament(II)-Trials Credential(III) | ★6 | Codex Collections(Validity Period: 15 Day) |
 | 75101 | Goblin Leader-Trials Credential | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 75102 | Skeleton King-Trials Credential | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 75103 | Northern Lord-Trials Credential | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
@@ -898,18 +898,18 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 | 76010 | Lord's Proving-Trials Credential(X) | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 76011 | Lord's Proving-Trials Credential(XI) | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
 | 76012 | Lord's Proving-Trials Credential(XII) | ★5 | Codex Collections(Unique Prop, can only be obtained once) |
-| 76501 | Pioneer Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 76502 | Pioneer Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 76503 | Pioneer Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 76504 | Siege Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 76505 | Siege Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 76506 | Siege Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 76507 | Assault Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 76508 | Assault Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 76509 | Assault Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
-| 76510 | Bombardment Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period：7 Day) |
-| 76511 | Bombardment Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period：7 Day) |
-| 76512 | Bombardment Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period：7 Day) |
+| 76501 | Pioneer Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 76502 | Pioneer Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 76503 | Pioneer Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 76504 | Siege Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 76505 | Siege Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 76506 | Siege Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 76507 | Assault Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 76508 | Assault Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 76509 | Assault Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
+| 76510 | Bombardment Team-Trials Credential(I) | ★3 | Codex Collections(Validity Period: 7 Day) |
+| 76511 | Bombardment Team-Trials Credential(II) | ★4 | Codex Collections(Validity Period: 7 Day) |
+| 76512 | Bombardment Team-Trials Credential(III) | ★5 | Codex Collections(Validity Period: 7 Day) |
 | 78001 | Columwin-Anecdote | ★6 | Codex Collections(Unique Prop, can only be obtained once) |
 | 78002 | Alonia-Anecdote | ★6 | Codex Collections(Unique Prop, can only be obtained once) |
 | 78003 | Cenario-Anecdote | ★6 | Codex Collections(Unique Prop, can only be obtained once) |
@@ -998,589 +998,589 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 ## Type 2 (583)
 | ID | Name | Rarity | Description |
 |---|---|---|---|
-| 2001 | Tailor Certificate(1★) | ★1 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2002 | Tailor Certificate(2★) | ★2 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2003 | Tailor Certificate(3★) | ★3 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2004 | Tailor Certificate(4★) | ★4 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2005 | Tailor Certificate(5★) | ★5 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2006 | Tailor Certificate(6★) | ★6 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2011 | Craftsman Certificate(1★) | ★1 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2012 | Craftsman Certificate(2★) | ★2 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2013 | Craftsman Certificate(3★) | ★3 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2014 | Craftsman Certificate(4★) | ★4 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2015 | Craftsman Certificate(5★) | ★5 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2016 | Craftsman Certificate(6★) | ★6 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2021 | Pharmacist Certificate(1★) | ★1 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2022 | Pharmacist Certificate(2★) | ★2 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2023 | Pharmacist Certificate(3★) | ★3 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2024 | Pharmacist Certificate(4★) | ★4 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2025 | Pharmacist Certificate(5★) | ★5 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2026 | Pharmacist Certificate(6★) | ★6 | Application：Produce/Make (Require To Have A Certificate, But Not Consumed When Manufacturi |
-| 2051 | Freshwater Fish(1★) | ★1 | Application：Delegate Quest、Exchange Life Points |
-| 2052 | Freshwater Fish(2★) | ★2 | Application：Delegate Quest、Exchange Life Points |
-| 2053 | Freshwater Fish(3★) | ★3 | Application：Delegate Quest、Exchange Life Points |
-| 2054 | Freshwater Fish(4★) | ★4 | Application：Delegate Quest、Exchange Life Points |
-| 2055 | Freshwater Fish(5★) | ★5 | Application：Delegate Quest、Exchange Life Points |
-| 2056 | Freshwater Fish(6★) | ★6 | Application：Delegate Quest、Exchange Life Points |
-| 2100 | Hematite | ★3 | Application：Produce/Make |
-| 2101 | T1 Tungsten Gold | ★1 | Application：Produce/Make |
-| 2102 | T1 Light Silk | ★1 | Application：Produce/Make |
-| 2103 | T1 Leather | ★1 | Application：Produce/Make |
-| 2104 | T1 Premium Wood | ★1 | Application：Produce/Make |
-| 2105 | T1 Cold Spring | ★1 | Application：Produce/Make |
-| 2106 | T1 Agate Bead | ★1 | Application：Produce/Make |
-| 2107 | T2 Tungsten Gold | ★2 | Application：Produce/Make |
-| 2108 | T2 Light Silk | ★2 | Application：Produce/Make |
-| 2109 | T2 Leather | ★2 | Application：Produce/Make |
-| 2110 | T2 Premium Wood | ★2 | Application：Produce/Make |
-| 2111 | T2 Cold Spring | ★2 | Application：Produce/Make |
-| 2112 | T2 Agate Bead | ★2 | Application：Produce/Make |
-| 2113 | T3 Tungsten Gold | ★3 | Application：Produce/Make |
-| 2114 | T3 Light Silk | ★3 | Application：Produce/Make |
-| 2115 | T3 Leather | ★3 | Application：Produce/Make |
-| 2116 | T3 Premium Wood | ★3 | Application：Produce/Make |
-| 2117 | T3 Cold Spring | ★3 | Application：Produce/Make |
-| 2118 | T3 Agate Bead | ★3 | Application：Produce/Make |
-| 2119 | T4 Tungsten Gold | ★4 | Application：Produce/Make |
-| 2120 | T4 Light Silk | ★4 | Application：Produce/Make |
-| 2121 | T4 Leather | ★4 | Application：Produce/Make |
-| 2122 | T4 Premium Wood | ★4 | Application：Produce/Make |
-| 2123 | T4 Cold Spring | ★4 | Application：Produce/Make |
-| 2124 | T4 Agate Bead | ★4 | Application：Produce/Make |
-| 2125 | T5 Tungsten Gold | ★5 | Application：Produce/Make |
-| 2126 | T5 Light Silk | ★5 | Application：Produce/Make |
-| 2127 | T5 Leather | ★5 | Application：Produce/Make |
-| 2128 | T5 Premium Wood | ★5 | Application：Produce/Make |
-| 2129 | T5 Cold Spring | ★5 | Application：Produce/Make |
-| 2130 | T5 Agate Bead | ★5 | Application：Produce/Make |
-| 2151 | Gilded Stone | ★5 | Application：Produce/Make |
-| 2152 | Star Moon Line | ★5 | Application：Produce/Make |
-| 2153 | Silver Silk Satin | ★5 | Application：Produce/Make |
-| 2154 | Black Coral | ★5 | Application：Produce/Make |
-| 2155 | Silver Scale | ★5 | Application：Produce/Make |
-| 2156 | Phoenix Feather | ★5 | Application：Produce/Make |
-| 2160 | Mithril Ingot | ★6 | Application：Produce/Make |
-| 2161 | Thunderwood | ★3 | Application：Produce/Make |
-| 2199 | Drawing Advanced Manual(R6) | ★6 | Application：Produce/Make |
-| 2200 | Drawing Advanced Manual(R5) | ★5 | Application：Produce/Make |
-| 2201 | Weapons Drawings(T1) | ★1 | Application：Produce/Make |
-| 2202 | Clothes Drawings(T1) | ★1 | Application：Produce/Make |
-| 2203 | Shorts Drawings(T1) | ★1 | Application：Produce/Make |
-| 2204 | Helmets Drawings(T1) | ★1 | Application：Produce/Make |
-| 2205 | Gloves Drawings(T1) | ★1 | Application：Produce/Make |
-| 2206 | Boots Drawings(T1) | ★1 | Application：Produce/Make |
-| 2207 | Weapons Drawings(T2) | ★2 | Application：Produce/Make |
-| 2208 | Clothes Drawings(T2) | ★2 | Application：Produce/Make |
-| 2209 | Shorts Drawings(T2) | ★2 | Application：Produce/Make |
-| 2210 | Helmets Drawings(T2) | ★2 | Application：Produce/Make |
-| 2211 | Gloves Drawings(T2) | ★2 | Application：Produce/Make |
-| 2212 | Boots Drawings(T2) | ★2 | Application：Produce/Make |
-| 2213 | Weapons Drawings(T3) | ★3 | Application：Produce/Make |
-| 2214 | Clothes Drawings(T3) | ★3 | Application：Produce/Make |
-| 2215 | Shorts Drawings(T3) | ★3 | Application：Produce/Make |
-| 2216 | Helmets Drawings(T3) | ★3 | Application：Produce/Make |
-| 2217 | Gloves Drawings(T3) | ★3 | Application：Produce/Make |
-| 2218 | Boots Drawings(T3) | ★3 | Application：Produce/Make |
-| 2219 | Weapons Drawings(T4) | ★4 | Application：Produce/Make |
-| 2220 | Clothes Drawings(T4) | ★4 | Application：Produce/Make |
-| 2221 | Shorts Drawings(T4) | ★4 | Application：Produce/Make |
-| 2222 | Helmets Drawings(T4) | ★4 | Application：Produce/Make |
-| 2223 | Gloves Drawings(T4) | ★4 | Application：Produce/Make |
-| 2224 | Boots Drawings(T4) | ★4 | Application：Produce/Make |
-| 2225 | Weapons Drawings(T5) | ★5 | Application：Produce/Make |
-| 2226 | Clothes Drawings(T5) | ★5 | Application：Produce/Make |
-| 2227 | Shorts Drawings(T5) | ★5 | Application：Produce/Make |
-| 2228 | Helmets Drawings(T5) | ★5 | Application：Produce/Make |
-| 2229 | Gloves Drawings(T5) | ★5 | Application：Produce/Make |
-| 2230 | Boots Drawings(T5) | ★5 | Application：Produce/Make |
-| 2231 | Weapons Drawings(T6) | ★6 | Application：Produce/Make |
-| 2232 | Clothes Drawings(T6) | ★6 | Application：Produce/Make |
-| 2233 | Shorts Drawings(T6) | ★6 | Application：Produce/Make |
-| 2234 | Helmets Drawings(T6) | ★6 | Application：Produce/Make |
-| 2235 | Gloves Drawings(T6) | ★6 | Application：Produce/Make |
-| 2236 | Boots Drawings(T6) | ★6 | Application：Produce/Make |
-| 2251 | Hull Drawings(R1) | ★1 | Application：Produce/Make |
-| 2252 | Mast Drawings(R1) | ★1 | Application：Produce/Make |
-| 2253 | Sail Drawings(R1) | ★1 | Application：Produce/Make |
-| 2254 | Rudder Drawings(R1) | ★1 | Application：Produce/Make |
-| 2255 | Cargo Rack Drawings(R1) | ★1 | Application：Produce/Make |
-| 2256 | Hull Drawings(R2) | ★2 | Application：Produce/Make |
-| 2257 | Mast Drawings(R2) | ★2 | Application：Produce/Make |
-| 2258 | Sail Drawings(R2) | ★2 | Application：Produce/Make |
-| 2259 | Rudder Drawings(R2) | ★2 | Application：Produce/Make |
-| 2260 | Cargo Rack Drawings(R2) | ★2 | Application：Produce/Make |
-| 2261 | Hull Drawings(R3) | ★3 | Application：Produce/Make |
-| 2262 | Mast Drawings(R3) | ★3 | Application：Produce/Make |
-| 2263 | Sail Drawings(R3) | ★3 | Application：Produce/Make |
-| 2264 | Rudder Drawings(R3) | ★3 | Application：Produce/Make |
-| 2265 | Cargo Rack Drawings(R3) | ★3 | Application：Produce/Make |
-| 2266 | Hull Drawings(R4) | ★4 | Application：Produce/Make |
-| 2267 | Mast Drawings(R4) | ★4 | Application：Produce/Make |
-| 2268 | Sail Drawings(R4) | ★4 | Application：Produce/Make |
-| 2269 | Rudder Drawings(R4) | ★4 | Application：Produce/Make |
-| 2270 | Cargo Rack Drawings(R4) | ★4 | Application：Produce/Make |
-| 2271 | Hull Drawings(R5) | ★5 | Application：Produce/Make |
-| 2272 | Mast Drawings(R5) | ★5 | Application：Produce/Make |
-| 2273 | Sail Drawings(R5) | ★5 | Application：Produce/Make |
-| 2274 | Rudder Drawings(R5) | ★5 | Application：Produce/Make |
-| 2275 | Cargo Rack Drawings(R5) | ★5 | Application：Produce/Make |
-| 2501 | Animal Skin(T1) | ★1 | Application：Produce/Make(Gridy Specialty) |
-| 2502 | Animal Skin(T2) | ★2 | Application：Produce/Make(Gridy Specialty) |
-| 2503 | Animal Skin(T3) | ★3 | Application：Produce/Make(Gridy Specialty) |
-| 2504 | Animal Skin(T4) | ★4 | Application：Produce/Make(Gridy Specialty) |
-| 2505 | Animal Skin(T5) | ★5 | Application：Produce/Make(Gridy Specialty) |
-| 2506 | Animal Skin(T6) | ★6 | Application：Produce/Make(Gridy Specialty) |
-| 2507 | Silk(T1) | ★1 | Application：Produce/Make(Cragy Specialty) |
-| 2508 | Silk(T2) | ★2 | Application：Produce/Make(Cragy Specialty) |
-| 2509 | Silk(T3) | ★3 | Application：Produce/Make(Cragy Specialty) |
-| 2510 | Silk(T4) | ★4 | Application：Produce/Make(Cragy Specialty) |
-| 2511 | Silk(T5) | ★5 | Application：Produce/Make(Cragy Specialty) |
-| 2512 | Silk(T6) | ★6 | Application：Produce/Make(Cragy Specialty) |
-| 2513 | Spices(T1) | ★1 | Application：Produce/Make(Contreo Specialty) |
-| 2514 | Spices(T2) | ★2 | Application：Produce/Make(Contreo Specialty) |
-| 2515 | Spices(T3) | ★3 | Application：Produce/Make(Contreo Specialty) |
-| 2516 | Spices(T4) | ★4 | Application：Produce/Make(Contreo Specialty) |
-| 2517 | Spices(T5) | ★5 | Application：Produce/Make(Contreo Specialty) |
-| 2518 | Spices(T6) | ★6 | Application：Produce/Make(Contreo Specialty) |
-| 2519 | Lindera Tea(T1) | ★1 | Application：Produce/Make(Vezido Specialty) |
-| 2520 | Lindera Tea(T2) | ★2 | Application：Produce/Make(Vezido Specialty) |
-| 2521 | Lindera Tea(T3) | ★3 | Application：Produce/Make(Vezido Specialty) |
-| 2522 | Lindera Tea(T4) | ★4 | Application：Produce/Make(Vezido Specialty) |
-| 2523 | Lindera Tea(T5) | ★5 | Application：Produce/Make(Vezido Specialty) |
-| 2524 | Lindera Tea(T6) | ★6 | Application：Produce/Make(Vezido Specialty) |
-| 2525 | Marble(T1) | ★1 | Application：Produce/Make(Corem Specialty) |
-| 2526 | Marble(T2) | ★2 | Application：Produce/Make(Corem Specialty) |
-| 2527 | Marble(T3) | ★3 | Application：Produce/Make(Corem Specialty) |
-| 2528 | Marble(T4) | ★4 | Application：Produce/Make(Corem Specialty) |
-| 2529 | Marble(T5) | ★5 | Application：Produce/Make(Corem Specialty) |
-| 2530 | Marble(T6) | ★6 | Application：Produce/Make(Corem Specialty) |
-| 2531 | Jewelry(T1) | ★1 | Application：Produce/Make(Bellev Specialty) |
-| 2532 | Jewelry(T2) | ★2 | Application：Produce/Make(Bellev Specialty) |
-| 2533 | Jewelry(T3) | ★3 | Application：Produce/Make(Bellev Specialty) |
-| 2534 | Jewelry(T4) | ★4 | Application：Produce/Make(Bellev Specialty) |
-| 2535 | Jewelry(T5) | ★5 | Application：Produce/Make(Bellev Specialty) |
-| 2536 | Jewelry(T6) | ★6 | Application：Produce/Make(Bellev Specialty) |
-| 2601 | ATK Potion(1★) | ★1 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2602 | DEF Potion(1★) | ★1 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2603 | DES Potion(1★) | ★1 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2604 | ATK Potion(2★) | ★2 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2605 | DEF Potion(2★) | ★2 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2606 | DES Potion(2★) | ★2 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2607 | Strong Potion(2★) | ★2 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2608 | ATK Potion(3★) | ★3 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2609 | DEF Potion(3★) | ★3 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2610 | DES Potion(3★) | ★3 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2611 | Strong Potion(3★) | ★3 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2612 | Agility Potion(3★) | ★3 | Duration：60 Min,Stacks Up To Most 2 Hours |
-| 2613 | ATK Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2614 | DEF Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2615 | DES Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2616 | Strong Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2617 | Agility Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours |
-| 2618 | Power Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2619 | Stamina Potion(4★) | ★4 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2620 | ATK Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2621 | DEF Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2622 | DES Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2623 | Strong Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2624 | Agility Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours |
-| 2625 | Power Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2626 | Stamina Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2627 | Berserk Potion(5★) | ★5 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2628 | ATK Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2629 | DEF Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2630 | DES Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2631 | Strong Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2632 | Agility Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours |
-| 2633 | Power Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2634 | Stamina Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2635 | Berserk Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2636 | Combat Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2637 | Persistence Potion(6★) | ★6 | Duration：60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
-| 2701 | Harvest Stele-Food(1★) | ★1 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2702 | Harvest Stele-Wood(1★) | ★1 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2703 | Harvest Stele-Stone(1★) | ★1 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2704 | Harvest Stele-Food(2★) | ★2 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2705 | Harvest Stele-Wood(2★) | ★2 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2706 | Harvest Stele-Stone(2★) | ★2 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2707 | Harvest Stele-Iron(2★) | ★2 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2708 | Harvest Stele-Food(3★) | ★3 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2709 | Harvest Stele-Wood(3★) | ★3 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2710 | Harvest Stele-Stone(3★) | ★3 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2711 | Harvest Stele-Iron(3★) | ★3 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2712 | Harvest Stele-Gold Coin(3★) | ★3 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2713 | Harvest Stele-Food(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2714 | Harvest Stele-Wood(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2715 | Harvest Stele-Stone(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2716 | Harvest Stele-Iron(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2717 | Harvest Stele-Gold Coin(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2718 | Sigil Stele-Food(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2719 | Sigil Stele-Wood(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2720 | Sigil Stele-Stone(4★) | ★4 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2721 | Harvest Stele-Food(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2722 | Harvest Stele-Wood(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2723 | Harvest Stele-Stone(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2724 | Harvest Stele-Iron(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2725 | Harvest Stele-Gold Coin(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2726 | Sigil Stele-Food(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2727 | Sigil Stele-Wood(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2728 | Sigil Stele-Stone(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2729 | Sigil Stele-Iron(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2730 | Sigil Stele-Gold Coin(5★) | ★5 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2731 | Harvest Stele-Food(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2732 | Harvest Stele-Wood(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2733 | Harvest Stele-Stone(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2734 | Harvest Stele-Iron(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2735 | Harvest Stele-Gold Coin(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2736 | Sigil Stele-Food(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2737 | Sigil Stele-Wood(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2738 | Sigil Stele-Stone(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2739 | Sigil Stele-Iron(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2740 | Sigil Stele-Gold Coin(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2741 | Sigil Stele-Vit(6★) | ★6 | Duration：360 Min,Stacks Up To Most 24 Hours |
-| 2801 | Harvest Scepter(Fragment) | ★3 | Application：Produce/Make |
-| 2802 | Wisdom Scepter(Fragment) | ★3 | Application：Produce/Make |
-| 2803 | Golden Ring(Fragment) | ★3 | Application：Produce/Make |
-| 2804 | Blacksmith's Ring(Fragment) | ★3 | Application：Produce/Make |
-| 2805 | Rally Banner(Fragment) | ★3 | Application：Produce/Make |
-| 2806 | Holy Banner(Fragment) | ★3 | Application：Produce/Make |
-| 2807 | War Scepter(Fragment) | ★3 | Application：Produce/Make |
-| 2808 | Courage Scepter(Fragment) | ★3 | Application：Produce/Make |
-| 2809 | Light Earring(Fragment) | ★3 | Application：Produce/Make |
-| 2810 | Dark Earring(Fragment) | ★3 | Application：Produce/Make |
-| 2811 | Glory Banner(Fragment) | ★3 | Application：Produce/Make |
-| 2812 | Gale Banner(Fragment) | ★3 | Application：Produce/Make |
-| 2831 | Hull(R1) | ★1 | Application：Build Freighter |
-| 2832 | Mast(R1) | ★1 | Application：Build Freighter |
-| 2833 | Sail(R1) | ★1 | Application：Build Freighter |
-| 2834 | Rudder(R1) | ★1 | Application：Build Freighter |
-| 2835 | Cargo Rack(R1) | ★1 | Application：Build Freighter |
-| 2836 | Hull(R2) | ★2 | Application：Upgrade Freighter |
-| 2837 | Mast(R2) | ★2 | Application：Upgrade Freighter |
-| 2838 | Sail(R2) | ★2 | Application：Upgrade Freighter |
-| 2839 | Rudder(R2) | ★2 | Application：Upgrade Freighter |
-| 2840 | Cargo Rack(R2) | ★2 | Application：Upgrade Freighter |
-| 2841 | Hull(R3) | ★3 | Application：Upgrade Freighter |
-| 2842 | Mast(R3) | ★3 | Application：Upgrade Freighter |
-| 2843 | Sail(R3) | ★3 | Application：Upgrade Freighter |
-| 2844 | Rudder(R3) | ★3 | Application：Upgrade Freighter |
-| 2845 | Cargo Rack(R3) | ★3 | Application：Upgrade Freighter |
-| 2846 | Hull(R4) | ★4 | Application：Upgrade Freighter |
-| 2847 | Mast(R4) | ★4 | Application：Upgrade Freighter |
-| 2848 | Sail(R4) | ★4 | Application：Upgrade Freighter |
-| 2849 | Rudder(R4) | ★4 | Application：Upgrade Freighter |
-| 2850 | Cargo Rack(R4) | ★4 | Application：Upgrade Freighter |
-| 2851 | Hull(R5) | ★5 | Application：Upgrade Freighter |
-| 2852 | Mast(R5) | ★5 | Application：Upgrade Freighter |
-| 2853 | Sail(R5) | ★5 | Application：Upgrade Freighter |
-| 2854 | Rudder(R5) | ★5 | Application：Upgrade Freighter |
-| 2855 | Cargo Rack(R5) | ★5 | Application：Upgrade Freighter |
-| 4001 | Decorative Building(Sycamore) | ★4 | After Use Get：Decorative Building |
-| 4002 | Decorative Building(Sakura) | ★4 | After Use Get：Decorative Building |
-| 4003 | Decorative Building(Camphora) | ★3 | After Use Get：Decorative Building |
-| 4004 | Decorative Building(Bellflower) | ★3 | After Use Get：Decorative Building |
-| 4005 | Decorative Building(Tulip) | ★3 | After Use Get：Decorative Building |
-| 4006 | Decorative Building(Morning Glory) | ★3 | After Use Get：Decorative Building |
-| 4007 | Decorative Building(Ivy) | ★4 | After Use Get：Decorative Building |
-| 4008 | Decorative Building(Baroque Streetlight) | ★3 | After Use Get：Decorative Building |
-| 4009 | Decorative Building(Gothic Streetlight) | ★3 | After Use Get：Decorative Building |
-| 4010 | Decorative Building(Rococo Streetlight) | ★3 | After Use Get：Decorative Building |
-| 4011 | Decorative Building(Gold-Inlaid Column) | ★3 | After Use Get：Decorative Building |
-| 4012 | Decorative Building(Spiral Column) | ★3 | After Use Get：Decorative Building |
-| 4013 | Decorative Building(Musical Fountain) | ★4 | After Use Get：Decorative Building |
-| 4014 | Decorative Building(Lotus Fountain) | ★4 | After Use Get：Decorative Building |
-| 4015 | Decorative Building(Layered Fountain) | ★5 | After Use Get：Decorative Building |
-| 4016 | Decorative Building(Saintess Statue) | ★4 | After Use Get：Decorative Building |
-| 4017 | Decorative Building(Warrior Statue) | ★4 | After Use Get：Decorative Building |
-| 4018 | Decorative Building(Snowman) | ★4 | After Use Get：Decorative Building |
-| 4019 | Decorative Building(Snowman Beast) | ★6 | After Use Get：Decorative Building |
-| 4020 | Decorative Building(Leisure afternoon) | ★4 | After Use Get：Decorative Building |
-| 4021 | Decorative Building-Hot Spring Pool(S) | ★4 | After Use Get：Decorative Building |
-| 4022 | Decorative Building-Hot Spring Pool(M) | ★5 | After Use Get：Decorative Building |
-| 4023 | Decorative Building-Hot Spring Pool(L) | ★6 | After Use Get：Decorative Building |
-| 4024 | Decorative Building-Flower Arch-1 | ★3 | After Use Get：Decorative Building |
-| 4025 | Decorative Building-Flower Arch-2 | ★3 | After Use Get：Decorative Building |
-| 4026 | Decorative Building-Vine Arch-1 | ★3 | After Use Get：Decorative Building |
-| 4027 | Decorative Building-Vine Arch-2 | ★3 | After Use Get：Decorative Building |
-| 4028 | Decorative Building-Festival Tent | ★4 | After Use Get：Decorative Building |
-| 4029 | Decorative Building-Festival Blackboard | ★4 | After Use Get：Decorative Building |
-| 4030 | Decorative Building-Festival Trees-1 | ★3 | After Use Get：Decorative Building |
-| 4031 | Decorative Building-Festival Trees-2 | ★3 | After Use Get：Decorative Building |
-| 4032 | Decorative Building-Festival Trees-3 | ★3 | After Use Get：Decorative Building |
-| 4033 | Decorative Building-Festival Trees-4 | ★3 | After Use Get：Decorative Building |
-| 4034 | Decorative Building-Cloud Sofa | ★5 | After Use Get：Decorative Building |
-| 4035 | Decorative Building-Tree Stump | ★4 | After Use Get：Decorative Building |
-| 4036 | Decorative Building-Round Coffee Table | ★4 | After Use Get：Decorative Building |
-| 4037 | Decorative Building-Round Dining Table-1 | ★4 | After Use Get：Decorative Building |
-| 4038 | Decorative Building-Round Dining Table-2 | ★4 | After Use Get：Decorative Building |
-| 4039 | Decorative Building-Long Dining Table-1 | ★4 | After Use Get：Decorative Building |
-| 4040 | Decorative Building-Long Dining Table-2 | ★4 | After Use Get：Decorative Building |
-| 4041 | Decorative Building-Christmas Tree | ★4 | After Use Get：Decorative Building |
-| 4042 | Decorative Building-Carousel | ★6 | After Use Get：Decorative Building |
-| 4043 | Decorative Building-Totem Pole | ★3 | After Use Get：Decorative Building |
-| 4044 | Decorative Building-Holy Water Basin | ★3 | After Use Get：Decorative Building |
-| 4045 | Decorative Building-Chinese Rockery-I | ★3 | After Use Get：Decorative Building |
-| 4046 | Decorative Building-Chinese Rockery-II | ★3 | After Use Get：Decorative Building |
-| 4047 | Decorative Building-Swimming Pool | ★5 | After Use Get：Decorative Building |
-| 4048 | Decorative Building-Cat Fountain(M) | ★5 | After Use Get：Decorative Building |
-| 4049 | Decorative Building-Cat Fountain(L) | ★6 | After Use Get：Decorative Building |
-| 4050 | Decorative Building-Archangel Statue | ★5 | After Use Get：Decorative Building |
-| 4051 | Decorative Building-Cat Statue | ★5 | After Use Get：Decorative Building |
-| 4052 | Decorative Building-Goddess Statue | ★5 | After Use Get：Decorative Building |
-| 4053 | Decorative Building-Christmas Snow Globe | ★6 | After Use Get：Decorative Building |
-| 4054 | Decorative Building-Ginkgo-II | ★4 | After Use Get：Decorative Building |
-| 4055 | Decorative Building-Sakura-II | ★4 | After Use Get：Decorative Building |
-| 4056 | Decorative Building-Rose Bed | ★3 | After Use Get：Decorative Building |
-| 4057 | Decorative Building-Rose | ★3 | After Use Get：Decorative Building |
-| 4058 | Decorative Building-Swan Pond | ★5 | After Use Get：Decorative Building |
-| 4059 | Decorative Building-Rose Trellis | ★5 | After Use Get：Decorative Building |
-| 4060 | Decorative Building-Platform | ★5 | After Use Get：Decorative Building |
-| 4061 | Decorative Building-Red Stone Table-1 | ★4 | After Use Get：Decorative Building |
-| 4062 | Decorative Building-Red Stone Table-2 | ★4 | After Use Get：Decorative Building |
-| 4063 | Decorative Building-Yellow Stone Table-1 | ★4 | After Use Get：Decorative Building |
-| 4064 | Decorative Building-Yellow Stone Table-2 | ★4 | After Use Get：Decorative Building |
-| 4501 | Beginner(Headwear) | ★1 | After Use Get：Lord Fashion |
-| 4502 | Beginner(Clothing) | ★1 | After Use Get：Lord Fashion |
-| 4503 | Beginner(Accessory) | ★1 | After Use Get：Lord Fashion |
-| 4504 | Attendant(Headwear) | ★2 | After Use Get：Lord Fashion |
-| 4505 | Attendant(Clothing) | ★2 | After Use Get：Lord Fashion |
-| 4506 | Attendant(Accessory) | ★2 | After Use Get：Lord Fashion |
-| 4507 | Meow Fun(Headwear) | ★2 | After Use Get：Lord Fashion |
-| 4508 | Meow Fun(Clothing) | ★2 | After Use Get：Lord Fashion |
-| 4509 | Meow Fun(Accessory) | ★2 | After Use Get：Lord Fashion |
-| 4510 | Reign Glory(Headwear) | ★3 | After Use Get：Lord Fashion |
-| 4511 | Reign Glory(Clothing) | ★3 | After Use Get：Lord Fashion |
-| 4512 | Reign Glory(Accessory) | ★3 | After Use Get：Lord Fashion |
-| 4513 | Snow Pompom(Headwear) | ★3 | After Use Get：Lord Fashion |
-| 4514 | Snow Pompom(Clothing) | ★3 | After Use Get：Lord Fashion |
-| 4515 | Snow Pompom(Accessory) | ★3 | After Use Get：Lord Fashion |
-| 4516 | Iron Overlord(Headwear) | ★3 | After Use Get：Lord Fashion |
-| 4517 | Iron Overlord(Clothing) | ★3 | After Use Get：Lord Fashion |
-| 4518 | Iron Overlord(Accessory) | ★3 | After Use Get：Lord Fashion |
-| 4519 | Afairy couple(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4520 | Afairy couple(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4521 | Afairy couple(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4522 | Night Thief(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4523 | Night Thief(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4524 | Night Thief(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4525 | Urban Pioneer(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4526 | Urban Pioneer(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4527 | Urban Pioneer(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4528 | Rose Blade(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4529 | Rose Blade(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4530 | Rose Blade(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4531 | Brilliant Star(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4532 | Brilliant Star(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4533 | Brilliant Star(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4534 | Bulbasaur(Headwear) | ★2 | After Use Get：Lord Fashion |
-| 4535 | Bulbasaur(Clothing) | ★2 | After Use Get：Lord Fashion |
-| 4536 | Bulbasaur(Accessory) | ★2 | After Use Get：Lord Fashion |
-| 4537 | Cowboy Cat(Headwear) | ★3 | After Use Get：Lord Fashion |
-| 4538 | Cowboy Cat(Clothing) | ★3 | After Use Get：Lord Fashion |
-| 4539 | Cowboy Cat(Accessory) | ★3 | After Use Get：Lord Fashion |
-| 4540 | Autumn Sun(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4541 | Autumn Sun(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4542 | Autumn Sun(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4543 | Shell Parl(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4544 | Shell Parl(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4545 | Shell Parl(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4546 | Muppet Encounter(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4547 | Muppet Encounter(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4548 | Muppet Encounter(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4549 | Spring Letter(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4550 | Spring Letter(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4551 | Spring Letter(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4552 | Azure Shikigami(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4553 | Azure Shikigami(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4554 | Azure Shikigami(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4555 | Stellar Covenant(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4556 | Stellar Covenant(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4557 | Stellar Covenant(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4558 | Fantasia(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4559 | Fantasia(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4560 | Fantasia(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4561 | Verdant Whisper(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4562 | Verdant Whisper(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4563 | Verdant Whisper(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4564 | Blossom Picnic(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4565 | Blossom Picnic(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4566 | Blossom Picnic(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4567 | Snow Fox(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4568 | Snow Fox(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4569 | Snow Fox(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4570 | Vine Elf(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4571 | Vine Elf(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4572 | Vine Elf(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4573 | Halloween Night(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4574 | Halloween Night(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4575 | Halloween Night(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4576 | Jade Feather Beauty(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4577 | Jade Feather Beauty(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4578 | Jade Feather Beauty(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4579 | Christmas Carol(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4580 | Christmas Carol(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4581 | Christmas Carol(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4582 | Rose Veil Shadow(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4583 | Rose Veil Shadow(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4584 | Rose Veil Shadow(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4585 | All the best(Headwear) | ★4 | After Use Get：Lord Fashion |
-| 4586 | All the best(Clothing) | ★4 | After Use Get：Lord Fashion |
-| 4587 | All the best(Accessory) | ★4 | After Use Get：Lord Fashion |
-| 4741 | Deep Blue Song(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4742 | Deep Blue Song(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4743 | Deep Blue Song(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4744 | Pharaoh Legend(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4745 | Pharaoh Legend(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4746 | Pharaoh Legend(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4747 | Gilded Fantasy(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4748 | Gilded Fantasy(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4749 | Gilded Fantasy(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4751 | Dark Phantom(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4752 | Dark Phantom(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4753 | Dark Phantom(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4754 | Arcane Bringer(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4755 | Arcane Bringer(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4756 | Arcane Bringer(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4757 | Moonlit Hunter(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4758 | Moonlit Hunter(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4759 | Moonlit Hunter(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4760 | Glaze Oath(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4761 | Glaze Oath(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4762 | Glaze Oath(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4763 | Abyssal Siren(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4764 | Abyssal Siren(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4765 | Abyssal Siren(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4766 | Lantern Night Watch(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4767 | Lantern Night Watch(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4768 | Lantern Night Watch(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4769 | Nautical Log(Headwear) | ★5 | After Use Get：Lord Fashion |
-| 4770 | Nautical Log(Clothing) | ★5 | After Use Get：Lord Fashion |
-| 4771 | Nautical Log(Accessory) | ★5 | After Use Get：Lord Fashion |
-| 4951 | Tide Reaver(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4952 | Tide Reaver(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4953 | Tide Reaver(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4954 | Immortal Myth(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4955 | Immortal Myth(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4956 | Immortal Myth(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4957 | Abyss King(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4958 | Abyss King(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4959 | Abyss King(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4960 | Dark Angel(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4961 | Dark Angel(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4962 | Dark Angel(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4963 | Crown Romance(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4964 | Crown Romance(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4965 | Crown Romance(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 4966 | Thousand Faces(Headwear) | ★6 | After Use Get：Lord Fashion |
-| 4967 | Thousand Faces(Clothing) | ★6 | After Use Get：Lord Fashion |
-| 4968 | Thousand Faces(Accessory) | ★6 | After Use Get：Lord Fashion |
-| 6001 | Building Drawings(Sycamore) | ★4 | Application：Make Decorative Building |
-| 6002 | Building Drawings(Sakura) | ★4 | Application：Make Decorative Building |
-| 6003 | Building Drawings(Camphora) | ★3 | Application：Make Decorative Building |
-| 6004 | Building Drawings(Bellflower) | ★3 | Application：Make Decorative Building |
-| 6005 | Building Drawings(Tulip) | ★3 | Application：Make Decorative Building |
-| 6006 | Building Drawings(Morning Glory) | ★3 | Application：Make Decorative Building |
-| 6007 | Building Drawings(Ivy) | ★4 | Application：Make Decorative Building |
-| 6008 | Building Drawings(Baroque Streetlight) | ★3 | Application：Make Decorative Building |
-| 6009 | Building Drawings(Gothic Streetlight) | ★3 | Application：Make Decorative Building |
-| 6010 | Building Drawings(Rococo Streetlight) | ★3 | Application：Make Decorative Building |
-| 6011 | Building Drawings(Gold-Inlaid Column) | ★3 | Application：Make Decorative Building |
-| 6012 | Building Drawings(Spiral Column) | ★3 | Application：Make Decorative Building |
-| 6013 | Building Drawings(Musical Fountain) | ★4 | Application：Make Decorative Building |
-| 6014 | Building Drawings(Lotus Fountain) | ★4 | Application：Make Decorative Building |
-| 6015 | Building Drawings(Layered Fountain) | ★5 | Application：Make Decorative Building |
-| 6016 | Building Drawings(Saintess Statue) | ★4 | Application：Make Decorative Building |
-| 6017 | Building Drawings(Warrior Statue) | ★4 | Application：Make Decorative Building |
-| 6018 | Building Drawings(Snowman) | ★4 | Application：Make Decorative Building |
-| 6019 | Building Drawings(Snowman Beast) | ★6 | Application：Make Decorative Building |
-| 6020 | Building Drawings(Leisure afternoon) | ★4 | Application：Make Decorative Building |
-| 6021 | Building Drawings-Hot Spring Pool(S) | ★4 | Application：Make Decorative Building |
-| 6022 | Building Drawings-Hot Spring Pool(M) | ★5 | Application：Make Decorative Building |
-| 6023 | Building Drawings-Flower Arch-1 | ★3 | Application：Make Decorative Building |
-| 6024 | Building Drawings-Flower Arch-2 | ★3 | Application：Make Decorative Building |
-| 6025 | Building Drawings-Vine Arch-1 | ★3 | Application：Make Decorative Building |
-| 6026 | Building Drawings-Vine Arch-2 | ★3 | Application：Make Decorative Building |
-| 6027 | Building Drawings-Festival Tent | ★4 | Application：Make Decorative Building |
-| 6028 | Building Drawings-Festival Blackboard | ★4 | Application：Make Decorative Building |
-| 6029 | Building Drawings-Festival Trees-1 | ★3 | Application：Make Decorative Building |
-| 6030 | Building Drawings-Festival Trees-2 | ★3 | Application：Make Decorative Building |
-| 6031 | Building Drawings-Festival Trees-3 | ★3 | Application：Make Decorative Building |
-| 6032 | Building Drawings-Festival Trees-4 | ★3 | Application：Make Decorative Building |
-| 6033 | Building Drawings-Tree Stump | ★4 | Application：Make Decorative Building |
-| 6034 | Building Drawings-Round Coffee Table | ★4 | Application：Make Decorative Building |
-| 6035 | Building Drawings-Round Dining Table-1 | ★4 | Application：Make Decorative Building |
-| 6036 | Building Drawings-Round Dining Table-2 | ★4 | Application：Make Decorative Building |
-| 6037 | Building Drawings-Long Dining Table-1 | ★4 | Application：Make Decorative Building |
-| 6038 | Building Drawings-Long Dining Table-2 | ★4 | Application：Make Decorative Building |
-| 6039 | Building Drawings-Totem Pole | ★3 | Application：Make Decorative Building |
-| 6040 | Building Drawings-Holy Water Basin | ★3 | Application：Make Decorative Building |
-| 6041 | Building Drawings-Chinese Rockery-I | ★3 | Application：Make Decorative Building |
-| 6042 | Building Drawings-Chinese Rockery-II | ★3 | Application：Make Decorative Building |
-| 6043 | Building Drawings-Cat Fountain(M) | ★5 | Application：Make Decorative Building |
-| 6044 | Building Drawings-Cat Fountain(L) | ★6 | Application：Make Decorative Building |
-| 6045 | Building Drawings-Cat Statue | ★5 | Application：Make Decorative Building |
-| 6046 | Building Drawings-Ginkgo-II | ★4 | Application：Make Decorative Building |
-| 6047 | Building Drawings-Sakura-II | ★4 | Application：Make Decorative Building |
-| 6048 | Building Drawings-Rose Bed | ★3 | Application：Make Decorative Building |
-| 6049 | Building Drawings-Rose | ★3 | Application：Make Decorative Building |
-| 6050 | Building Drawings-Red Stone Table-1 | ★4 | Application：Make Decorative Building |
-| 6051 | Building Drawings-Red Stone Table-2 | ★4 | Application：Make Decorative Building |
-| 6052 | Building Drawings-Yellow Stone Table-1 | ★4 | Application：Make Decorative Building |
-| 6053 | Building Drawings-Yellow Stone Table-2 | ★4 | Application：Make Decorative Building |
-| 6501 | Fashion Drawings-Beginner(Headwear) | ★1 | Application：Make Beginner(Headwear)(Fashion Points +5) |
-| 6502 | Fashion Drawings-Beginner(Clothing) | ★1 | Application：Make Beginner(Clothing)(Fashion Points +10) |
-| 6503 | Fashion Drawings-Beginner(Accessory) | ★1 | Application：Make Beginner(Accessory)(Fashion Points +10) |
-| 6504 | Fashion Drawings-Attendant(Headwear) | ★2 | Application：Make Attendant(Headwear)(Fashion Points +10) |
-| 6505 | Fashion Drawings-Attendant(Clothing) | ★2 | Application：Make Attendant(Clothing)(Fashion Points +20) |
-| 6506 | Fashion Drawings-Attendant(Accessory) | ★2 | Application：Make Attendant(Accessory)(Fashion Points +20) |
-| 6507 | Fashion Drawings-Meow Fun(Headwear) | ★2 | Application：Make Meow Fun(Headwear)(Fashion Points +10) |
-| 6508 | Fashion Drawings-Meow Fun(Clothing) | ★2 | Application：Make Meow Fun(Clothing)(Fashion Points +20) |
-| 6509 | Fashion Drawings-Meow Fun(Accessory) | ★2 | Application：Make Meow Fun(Accessory)(Fashion Points +20) |
-| 6510 | Fashion Drawings-Reign Glory(Headwear) | ★3 | Application：Make Reign Glory(Headwear)(Fashion Points +15) |
-| 6511 | Fashion Drawings-Reign Glory(Clothing) | ★3 | Application：Make Reign Glory(Clothing)(Fashion Points +30) |
-| 6512 | Fashion Drawings-Reign Glory(Accessory) | ★3 | Application：Make Reign Glory(Accessory)(Fashion Points +30) |
-| 6513 | Fashion Drawings-Snow Pompom(Headwear) | ★3 | Application：Make Snow Pompom(Headwear)(Fashion Points +15) |
-| 6514 | Fashion Drawings-Snow Pompom(Clothing) | ★3 | Application：Make Snow Pompom(Clothing)(Fashion Points +30) |
-| 6515 | Fashion Drawings-Snow Pompom(Accessory) | ★3 | Application：Make Snow Pompom(Accessory)(Fashion Points +30) |
-| 6516 | Fashion Drawings-Iron Overlord(Headwear) | ★3 | Application：Make Iron Overlord(Headwear)(Fashion Points +15) |
-| 6517 | Fashion Drawings-Iron Overlord(Clothing) | ★3 | Application：Make Iron Overlord(Clothing)(Fashion Points +30) |
-| 6518 | Fashion Drawings-Iron Overlord(Accessory) | ★3 | Application：Make Iron Overlord(Accessory)(Fashion Points +30) |
-| 6519 | Fashion Drawings-Afairy couple(Headwear) | ★4 | Application：Make Afairy couple(Headwear)(Fashion Points +20) |
-| 6520 | Fashion Drawings-Afairy couple(Clothing) | ★4 | Application：Make Afairy couple(Clothing)(Fashion Points +40) |
-| 6521 | Fashion Drawings-Afairy couple(Accessory) | ★4 | Application：Make Afairy couple(Accessory)(Fashion Points +40) |
-| 6522 | Fashion Drawings-Night Thief(Headwear) | ★4 | Application：Make Night Thief(Headwear)(Fashion Points +20) |
-| 6523 | Fashion Drawings-Night Thief(Clothing) | ★4 | Application：Make Night Thief(Clothing)(Fashion Points +40) |
-| 6524 | Fashion Drawings-Night Thief(Accessory) | ★4 | Application：Make Night Thief(Accessory)(Fashion Points +40) |
-| 6525 | Fashion Drawings-Urban Pioneer(Headwear) | ★4 | Application：Make Urban Pioneer(Headwear)(Fashion Points +20) |
-| 6526 | Fashion Drawings-Urban Pioneer(Clothing) | ★4 | Application：Make Urban Pioneer(Clothing)(Fashion Points +40) |
-| 6527 | Fashion Drawings-Urban Pioneer(Accessory) | ★4 | Application：Make Urban Pioneer(Accessory)(Fashion Points +40) |
-| 6528 | Fashion Drawings-Rose Blade(Headwear) | ★5 | Application：Make Rose Blade(Headwear)(Fashion Points +25) |
-| 6529 | Fashion Drawings-Rose Blade(Clothing) | ★5 | Application：Make Rose Blade(Clothing)(Fashion Points +50) |
-| 6530 | Fashion Drawings-Rose Blade(Accessory) | ★5 | Application：Make Rose Blade(Accessory)(Fashion Points +50) |
-| 6531 | Fashion Drawings-Brilliant Star(Headwear) | ★6 | Application：Make Brilliant Star(Headwear)(Fashion Points +30) |
-| 6532 | Fashion Drawings-Brilliant Star(Clothing) | ★6 | Application：Make Brilliant Star(Clothing)(Fashion Points +60) |
-| 6533 | Fashion Drawings-Brilliant Star(Accessory) | ★6 | Application：Make Brilliant Star(Accessory)(Fashion Points +60) |
-| 6534 | Fashion Drawings-Bulbasaur(Headwear) | ★2 | Application：Make Bulbasaur(Headwear)(Fashion Points +10) |
-| 6535 | Fashion Drawings-Bulbasaur(Clothing) | ★2 | Application：Make Bulbasaur(Clothing)(Fashion Points +20) |
-| 6536 | Fashion Drawings-Bulbasaur(Accessory) | ★2 | Application：Make Bulbasaur(Accessory)(Fashion Points +20) |
-| 6537 | Fashion Drawings-Cowboy Cat(Headwear) | ★3 | Application：Make Cowboy Cat(Headwear)(Fashion Points +15) |
-| 6538 | Fashion Drawings-Cowboy Cat(Clothing) | ★3 | Application：Make Cowboy Cat(Clothing)(Fashion Points +30) |
-| 6539 | Fashion Drawings-Cowboy Cat(Accessory) | ★3 | Application：Make Cowboy Cat(Accessory)(Fashion Points +30) |
-| 6540 | Fashion Drawings-Autumn Sun(Headwear) | ★4 | Application：Make Autumn Sun(Headwear)(Fashion Points +20) |
-| 6541 | Fashion Drawings-Autumn Sun(Clothing) | ★4 | Application：Make Autumn Sun(Clothing)(Fashion Points +40) |
-| 6542 | Fashion Drawings-Autumn Sun(Accessory) | ★4 | Application：Make Autumn Sun(Accessory)(Fashion Points +40) |
-| 6543 | Fashion Drawings-Muppet Encounter(Headwear) | ★4 | Application：Make Muppet Encounter(Headwear)(Fashion Points +20) |
-| 6544 | Fashion Drawings-Muppet Encounter(Clothing) | ★4 | Application：Make Muppet Encounter(Clothing)(Fashion Points +40) |
-| 6545 | Fashion Drawings-Muppet Encounter(Accessory) | ★4 | Application：Make Muppet Encounter(Accessory)(Fashion Points +40) |
-| 6546 | Fashion Drawings-Blossom Picnic(Headwear) | ★4 | Application：Make Blossom Picnic(Headwear)(Fashion Points +20) |
-| 6547 | Fashion Drawings-Blossom Picnic(Clothing) | ★4 | Application：Make Blossom Picnic(Clothing)(Fashion Points +40) |
-| 6548 | Fashion Drawings-Blossom Picnic(Accessory) | ★4 | Application：Make Blossom Picnic(Accessory)(Fashion Points +40) |
-| 6549 | Fashion Drawings-Halloween Night(Headwear) | ★5 | Application：Make Halloween Night(Headwear)(Fashion Points +25) |
-| 6550 | Fashion Drawings-Halloween Night(Clothing) | ★5 | Application：Make Halloween Night(Clothing)(Fashion Points +50) |
-| 6551 | Fashion Drawings-Halloween Night(Accessory) | ★5 | Application：Make Halloween Night(Accessory)(Fashion Points +50) |
-| 6552 | Fashion Drawings-Jade Feather Beauty(Headwear) | ★6 | Application：Make Jade Feather Beauty(Headwear)(Fashion Points +30) |
-| 6553 | Fashion Drawings-Jade Feather Beauty(Clothing) | ★6 | Application：Make Jade Feather Beauty(Clothing)(Fashion Points +60) |
-| 6554 | Fashion Drawings-Jade Feather Beauty(Accessory) | ★6 | Application：Make Jade Feather Beauty(Accessory)(Fashion Points +60) |
+| 2001 | Tailor Certificate(1★) | ★1 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2002 | Tailor Certificate(2★) | ★2 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2003 | Tailor Certificate(3★) | ★3 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2004 | Tailor Certificate(4★) | ★4 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2005 | Tailor Certificate(5★) | ★5 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2006 | Tailor Certificate(6★) | ★6 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2011 | Craftsman Certificate(1★) | ★1 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2012 | Craftsman Certificate(2★) | ★2 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2013 | Craftsman Certificate(3★) | ★3 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2014 | Craftsman Certificate(4★) | ★4 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2015 | Craftsman Certificate(5★) | ★5 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2016 | Craftsman Certificate(6★) | ★6 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2021 | Pharmacist Certificate(1★) | ★1 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2022 | Pharmacist Certificate(2★) | ★2 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2023 | Pharmacist Certificate(3★) | ★3 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2024 | Pharmacist Certificate(4★) | ★4 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2025 | Pharmacist Certificate(5★) | ★5 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2026 | Pharmacist Certificate(6★) | ★6 | Application: Produce/Make (Require To Have A Certificate, But Not Consumed When Manufactur |
+| 2051 | Freshwater Fish(1★) | ★1 | Application: Delegate Quest, Exchange Life Points |
+| 2052 | Freshwater Fish(2★) | ★2 | Application: Delegate Quest, Exchange Life Points |
+| 2053 | Freshwater Fish(3★) | ★3 | Application: Delegate Quest, Exchange Life Points |
+| 2054 | Freshwater Fish(4★) | ★4 | Application: Delegate Quest, Exchange Life Points |
+| 2055 | Freshwater Fish(5★) | ★5 | Application: Delegate Quest, Exchange Life Points |
+| 2056 | Freshwater Fish(6★) | ★6 | Application: Delegate Quest, Exchange Life Points |
+| 2100 | Hematite | ★3 | Application: Produce/Make |
+| 2101 | T1 Tungsten Gold | ★1 | Application: Produce/Make |
+| 2102 | T1 Light Silk | ★1 | Application: Produce/Make |
+| 2103 | T1 Leather | ★1 | Application: Produce/Make |
+| 2104 | T1 Premium Wood | ★1 | Application: Produce/Make |
+| 2105 | T1 Cold Spring | ★1 | Application: Produce/Make |
+| 2106 | T1 Agate Bead | ★1 | Application: Produce/Make |
+| 2107 | T2 Tungsten Gold | ★2 | Application: Produce/Make |
+| 2108 | T2 Light Silk | ★2 | Application: Produce/Make |
+| 2109 | T2 Leather | ★2 | Application: Produce/Make |
+| 2110 | T2 Premium Wood | ★2 | Application: Produce/Make |
+| 2111 | T2 Cold Spring | ★2 | Application: Produce/Make |
+| 2112 | T2 Agate Bead | ★2 | Application: Produce/Make |
+| 2113 | T3 Tungsten Gold | ★3 | Application: Produce/Make |
+| 2114 | T3 Light Silk | ★3 | Application: Produce/Make |
+| 2115 | T3 Leather | ★3 | Application: Produce/Make |
+| 2116 | T3 Premium Wood | ★3 | Application: Produce/Make |
+| 2117 | T3 Cold Spring | ★3 | Application: Produce/Make |
+| 2118 | T3 Agate Bead | ★3 | Application: Produce/Make |
+| 2119 | T4 Tungsten Gold | ★4 | Application: Produce/Make |
+| 2120 | T4 Light Silk | ★4 | Application: Produce/Make |
+| 2121 | T4 Leather | ★4 | Application: Produce/Make |
+| 2122 | T4 Premium Wood | ★4 | Application: Produce/Make |
+| 2123 | T4 Cold Spring | ★4 | Application: Produce/Make |
+| 2124 | T4 Agate Bead | ★4 | Application: Produce/Make |
+| 2125 | T5 Tungsten Gold | ★5 | Application: Produce/Make |
+| 2126 | T5 Light Silk | ★5 | Application: Produce/Make |
+| 2127 | T5 Leather | ★5 | Application: Produce/Make |
+| 2128 | T5 Premium Wood | ★5 | Application: Produce/Make |
+| 2129 | T5 Cold Spring | ★5 | Application: Produce/Make |
+| 2130 | T5 Agate Bead | ★5 | Application: Produce/Make |
+| 2151 | Gilded Stone | ★5 | Application: Produce/Make |
+| 2152 | Star Moon Line | ★5 | Application: Produce/Make |
+| 2153 | Silver Silk Satin | ★5 | Application: Produce/Make |
+| 2154 | Black Coral | ★5 | Application: Produce/Make |
+| 2155 | Silver Scale | ★5 | Application: Produce/Make |
+| 2156 | Phoenix Feather | ★5 | Application: Produce/Make |
+| 2160 | Mithril Ingot | ★6 | Application: Produce/Make |
+| 2161 | Thunderwood | ★3 | Application: Produce/Make |
+| 2199 | Drawing Advanced Manual(R6) | ★6 | Application: Produce/Make |
+| 2200 | Drawing Advanced Manual(R5) | ★5 | Application: Produce/Make |
+| 2201 | Weapons Drawings(T1) | ★1 | Application: Produce/Make |
+| 2202 | Clothes Drawings(T1) | ★1 | Application: Produce/Make |
+| 2203 | Shorts Drawings(T1) | ★1 | Application: Produce/Make |
+| 2204 | Helmets Drawings(T1) | ★1 | Application: Produce/Make |
+| 2205 | Gloves Drawings(T1) | ★1 | Application: Produce/Make |
+| 2206 | Boots Drawings(T1) | ★1 | Application: Produce/Make |
+| 2207 | Weapons Drawings(T2) | ★2 | Application: Produce/Make |
+| 2208 | Clothes Drawings(T2) | ★2 | Application: Produce/Make |
+| 2209 | Shorts Drawings(T2) | ★2 | Application: Produce/Make |
+| 2210 | Helmets Drawings(T2) | ★2 | Application: Produce/Make |
+| 2211 | Gloves Drawings(T2) | ★2 | Application: Produce/Make |
+| 2212 | Boots Drawings(T2) | ★2 | Application: Produce/Make |
+| 2213 | Weapons Drawings(T3) | ★3 | Application: Produce/Make |
+| 2214 | Clothes Drawings(T3) | ★3 | Application: Produce/Make |
+| 2215 | Shorts Drawings(T3) | ★3 | Application: Produce/Make |
+| 2216 | Helmets Drawings(T3) | ★3 | Application: Produce/Make |
+| 2217 | Gloves Drawings(T3) | ★3 | Application: Produce/Make |
+| 2218 | Boots Drawings(T3) | ★3 | Application: Produce/Make |
+| 2219 | Weapons Drawings(T4) | ★4 | Application: Produce/Make |
+| 2220 | Clothes Drawings(T4) | ★4 | Application: Produce/Make |
+| 2221 | Shorts Drawings(T4) | ★4 | Application: Produce/Make |
+| 2222 | Helmets Drawings(T4) | ★4 | Application: Produce/Make |
+| 2223 | Gloves Drawings(T4) | ★4 | Application: Produce/Make |
+| 2224 | Boots Drawings(T4) | ★4 | Application: Produce/Make |
+| 2225 | Weapons Drawings(T5) | ★5 | Application: Produce/Make |
+| 2226 | Clothes Drawings(T5) | ★5 | Application: Produce/Make |
+| 2227 | Shorts Drawings(T5) | ★5 | Application: Produce/Make |
+| 2228 | Helmets Drawings(T5) | ★5 | Application: Produce/Make |
+| 2229 | Gloves Drawings(T5) | ★5 | Application: Produce/Make |
+| 2230 | Boots Drawings(T5) | ★5 | Application: Produce/Make |
+| 2231 | Weapons Drawings(T6) | ★6 | Application: Produce/Make |
+| 2232 | Clothes Drawings(T6) | ★6 | Application: Produce/Make |
+| 2233 | Shorts Drawings(T6) | ★6 | Application: Produce/Make |
+| 2234 | Helmets Drawings(T6) | ★6 | Application: Produce/Make |
+| 2235 | Gloves Drawings(T6) | ★6 | Application: Produce/Make |
+| 2236 | Boots Drawings(T6) | ★6 | Application: Produce/Make |
+| 2251 | Hull Drawings(R1) | ★1 | Application: Produce/Make |
+| 2252 | Mast Drawings(R1) | ★1 | Application: Produce/Make |
+| 2253 | Sail Drawings(R1) | ★1 | Application: Produce/Make |
+| 2254 | Rudder Drawings(R1) | ★1 | Application: Produce/Make |
+| 2255 | Cargo Rack Drawings(R1) | ★1 | Application: Produce/Make |
+| 2256 | Hull Drawings(R2) | ★2 | Application: Produce/Make |
+| 2257 | Mast Drawings(R2) | ★2 | Application: Produce/Make |
+| 2258 | Sail Drawings(R2) | ★2 | Application: Produce/Make |
+| 2259 | Rudder Drawings(R2) | ★2 | Application: Produce/Make |
+| 2260 | Cargo Rack Drawings(R2) | ★2 | Application: Produce/Make |
+| 2261 | Hull Drawings(R3) | ★3 | Application: Produce/Make |
+| 2262 | Mast Drawings(R3) | ★3 | Application: Produce/Make |
+| 2263 | Sail Drawings(R3) | ★3 | Application: Produce/Make |
+| 2264 | Rudder Drawings(R3) | ★3 | Application: Produce/Make |
+| 2265 | Cargo Rack Drawings(R3) | ★3 | Application: Produce/Make |
+| 2266 | Hull Drawings(R4) | ★4 | Application: Produce/Make |
+| 2267 | Mast Drawings(R4) | ★4 | Application: Produce/Make |
+| 2268 | Sail Drawings(R4) | ★4 | Application: Produce/Make |
+| 2269 | Rudder Drawings(R4) | ★4 | Application: Produce/Make |
+| 2270 | Cargo Rack Drawings(R4) | ★4 | Application: Produce/Make |
+| 2271 | Hull Drawings(R5) | ★5 | Application: Produce/Make |
+| 2272 | Mast Drawings(R5) | ★5 | Application: Produce/Make |
+| 2273 | Sail Drawings(R5) | ★5 | Application: Produce/Make |
+| 2274 | Rudder Drawings(R5) | ★5 | Application: Produce/Make |
+| 2275 | Cargo Rack Drawings(R5) | ★5 | Application: Produce/Make |
+| 2501 | Animal Skin(T1) | ★1 | Application: Produce/Make(Gridy Specialty) |
+| 2502 | Animal Skin(T2) | ★2 | Application: Produce/Make(Gridy Specialty) |
+| 2503 | Animal Skin(T3) | ★3 | Application: Produce/Make(Gridy Specialty) |
+| 2504 | Animal Skin(T4) | ★4 | Application: Produce/Make(Gridy Specialty) |
+| 2505 | Animal Skin(T5) | ★5 | Application: Produce/Make(Gridy Specialty) |
+| 2506 | Animal Skin(T6) | ★6 | Application: Produce/Make(Gridy Specialty) |
+| 2507 | Silk(T1) | ★1 | Application: Produce/Make(Cragy Specialty) |
+| 2508 | Silk(T2) | ★2 | Application: Produce/Make(Cragy Specialty) |
+| 2509 | Silk(T3) | ★3 | Application: Produce/Make(Cragy Specialty) |
+| 2510 | Silk(T4) | ★4 | Application: Produce/Make(Cragy Specialty) |
+| 2511 | Silk(T5) | ★5 | Application: Produce/Make(Cragy Specialty) |
+| 2512 | Silk(T6) | ★6 | Application: Produce/Make(Cragy Specialty) |
+| 2513 | Spices(T1) | ★1 | Application: Produce/Make(Contreo Specialty) |
+| 2514 | Spices(T2) | ★2 | Application: Produce/Make(Contreo Specialty) |
+| 2515 | Spices(T3) | ★3 | Application: Produce/Make(Contreo Specialty) |
+| 2516 | Spices(T4) | ★4 | Application: Produce/Make(Contreo Specialty) |
+| 2517 | Spices(T5) | ★5 | Application: Produce/Make(Contreo Specialty) |
+| 2518 | Spices(T6) | ★6 | Application: Produce/Make(Contreo Specialty) |
+| 2519 | Lindera Tea(T1) | ★1 | Application: Produce/Make(Vezido Specialty) |
+| 2520 | Lindera Tea(T2) | ★2 | Application: Produce/Make(Vezido Specialty) |
+| 2521 | Lindera Tea(T3) | ★3 | Application: Produce/Make(Vezido Specialty) |
+| 2522 | Lindera Tea(T4) | ★4 | Application: Produce/Make(Vezido Specialty) |
+| 2523 | Lindera Tea(T5) | ★5 | Application: Produce/Make(Vezido Specialty) |
+| 2524 | Lindera Tea(T6) | ★6 | Application: Produce/Make(Vezido Specialty) |
+| 2525 | Marble(T1) | ★1 | Application: Produce/Make(Corem Specialty) |
+| 2526 | Marble(T2) | ★2 | Application: Produce/Make(Corem Specialty) |
+| 2527 | Marble(T3) | ★3 | Application: Produce/Make(Corem Specialty) |
+| 2528 | Marble(T4) | ★4 | Application: Produce/Make(Corem Specialty) |
+| 2529 | Marble(T5) | ★5 | Application: Produce/Make(Corem Specialty) |
+| 2530 | Marble(T6) | ★6 | Application: Produce/Make(Corem Specialty) |
+| 2531 | Jewelry(T1) | ★1 | Application: Produce/Make(Bellev Specialty) |
+| 2532 | Jewelry(T2) | ★2 | Application: Produce/Make(Bellev Specialty) |
+| 2533 | Jewelry(T3) | ★3 | Application: Produce/Make(Bellev Specialty) |
+| 2534 | Jewelry(T4) | ★4 | Application: Produce/Make(Bellev Specialty) |
+| 2535 | Jewelry(T5) | ★5 | Application: Produce/Make(Bellev Specialty) |
+| 2536 | Jewelry(T6) | ★6 | Application: Produce/Make(Bellev Specialty) |
+| 2601 | ATK Potion(1★) | ★1 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2602 | DEF Potion(1★) | ★1 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2603 | DES Potion(1★) | ★1 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2604 | ATK Potion(2★) | ★2 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2605 | DEF Potion(2★) | ★2 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2606 | DES Potion(2★) | ★2 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2607 | Strong Potion(2★) | ★2 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2608 | ATK Potion(3★) | ★3 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2609 | DEF Potion(3★) | ★3 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2610 | DES Potion(3★) | ★3 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2611 | Strong Potion(3★) | ★3 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2612 | Agility Potion(3★) | ★3 | Duration: 60 Min,Stacks Up To Most 2 Hours |
+| 2613 | ATK Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2614 | DEF Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2615 | DES Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2616 | Strong Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2617 | Agility Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours |
+| 2618 | Power Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2619 | Stamina Potion(4★) | ★4 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2620 | ATK Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2621 | DEF Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2622 | DES Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2623 | Strong Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2624 | Agility Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours |
+| 2625 | Power Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2626 | Stamina Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2627 | Berserk Potion(5★) | ★5 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2628 | ATK Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2629 | DEF Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2630 | DES Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2631 | Strong Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2632 | Agility Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours |
+| 2633 | Power Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2634 | Stamina Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2635 | Berserk Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2636 | Combat Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2637 | Persistence Potion(6★) | ★6 | Duration: 60 Min,Stacks Up To Most 2 Hours(Only Effective In PVE) |
+| 2701 | Harvest Stele-Food(1★) | ★1 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2702 | Harvest Stele-Wood(1★) | ★1 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2703 | Harvest Stele-Stone(1★) | ★1 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2704 | Harvest Stele-Food(2★) | ★2 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2705 | Harvest Stele-Wood(2★) | ★2 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2706 | Harvest Stele-Stone(2★) | ★2 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2707 | Harvest Stele-Iron(2★) | ★2 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2708 | Harvest Stele-Food(3★) | ★3 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2709 | Harvest Stele-Wood(3★) | ★3 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2710 | Harvest Stele-Stone(3★) | ★3 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2711 | Harvest Stele-Iron(3★) | ★3 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2712 | Harvest Stele-Gold Coin(3★) | ★3 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2713 | Harvest Stele-Food(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2714 | Harvest Stele-Wood(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2715 | Harvest Stele-Stone(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2716 | Harvest Stele-Iron(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2717 | Harvest Stele-Gold Coin(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2718 | Sigil Stele-Food(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2719 | Sigil Stele-Wood(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2720 | Sigil Stele-Stone(4★) | ★4 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2721 | Harvest Stele-Food(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2722 | Harvest Stele-Wood(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2723 | Harvest Stele-Stone(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2724 | Harvest Stele-Iron(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2725 | Harvest Stele-Gold Coin(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2726 | Sigil Stele-Food(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2727 | Sigil Stele-Wood(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2728 | Sigil Stele-Stone(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2729 | Sigil Stele-Iron(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2730 | Sigil Stele-Gold Coin(5★) | ★5 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2731 | Harvest Stele-Food(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2732 | Harvest Stele-Wood(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2733 | Harvest Stele-Stone(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2734 | Harvest Stele-Iron(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2735 | Harvest Stele-Gold Coin(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2736 | Sigil Stele-Food(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2737 | Sigil Stele-Wood(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2738 | Sigil Stele-Stone(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2739 | Sigil Stele-Iron(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2740 | Sigil Stele-Gold Coin(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2741 | Sigil Stele-Vit(6★) | ★6 | Duration: 360 Min,Stacks Up To Most 24 Hours |
+| 2801 | Harvest Scepter(Fragment) | ★3 | Application: Produce/Make |
+| 2802 | Wisdom Scepter(Fragment) | ★3 | Application: Produce/Make |
+| 2803 | Golden Ring(Fragment) | ★3 | Application: Produce/Make |
+| 2804 | Blacksmith's Ring(Fragment) | ★3 | Application: Produce/Make |
+| 2805 | Rally Banner(Fragment) | ★3 | Application: Produce/Make |
+| 2806 | Holy Banner(Fragment) | ★3 | Application: Produce/Make |
+| 2807 | War Scepter(Fragment) | ★3 | Application: Produce/Make |
+| 2808 | Courage Scepter(Fragment) | ★3 | Application: Produce/Make |
+| 2809 | Light Earring(Fragment) | ★3 | Application: Produce/Make |
+| 2810 | Dark Earring(Fragment) | ★3 | Application: Produce/Make |
+| 2811 | Glory Banner(Fragment) | ★3 | Application: Produce/Make |
+| 2812 | Gale Banner(Fragment) | ★3 | Application: Produce/Make |
+| 2831 | Hull(R1) | ★1 | Application: Build Freighter |
+| 2832 | Mast(R1) | ★1 | Application: Build Freighter |
+| 2833 | Sail(R1) | ★1 | Application: Build Freighter |
+| 2834 | Rudder(R1) | ★1 | Application: Build Freighter |
+| 2835 | Cargo Rack(R1) | ★1 | Application: Build Freighter |
+| 2836 | Hull(R2) | ★2 | Application: Upgrade Freighter |
+| 2837 | Mast(R2) | ★2 | Application: Upgrade Freighter |
+| 2838 | Sail(R2) | ★2 | Application: Upgrade Freighter |
+| 2839 | Rudder(R2) | ★2 | Application: Upgrade Freighter |
+| 2840 | Cargo Rack(R2) | ★2 | Application: Upgrade Freighter |
+| 2841 | Hull(R3) | ★3 | Application: Upgrade Freighter |
+| 2842 | Mast(R3) | ★3 | Application: Upgrade Freighter |
+| 2843 | Sail(R3) | ★3 | Application: Upgrade Freighter |
+| 2844 | Rudder(R3) | ★3 | Application: Upgrade Freighter |
+| 2845 | Cargo Rack(R3) | ★3 | Application: Upgrade Freighter |
+| 2846 | Hull(R4) | ★4 | Application: Upgrade Freighter |
+| 2847 | Mast(R4) | ★4 | Application: Upgrade Freighter |
+| 2848 | Sail(R4) | ★4 | Application: Upgrade Freighter |
+| 2849 | Rudder(R4) | ★4 | Application: Upgrade Freighter |
+| 2850 | Cargo Rack(R4) | ★4 | Application: Upgrade Freighter |
+| 2851 | Hull(R5) | ★5 | Application: Upgrade Freighter |
+| 2852 | Mast(R5) | ★5 | Application: Upgrade Freighter |
+| 2853 | Sail(R5) | ★5 | Application: Upgrade Freighter |
+| 2854 | Rudder(R5) | ★5 | Application: Upgrade Freighter |
+| 2855 | Cargo Rack(R5) | ★5 | Application: Upgrade Freighter |
+| 4001 | Decorative Building(Sycamore) | ★4 | After Use Get: Decorative Building |
+| 4002 | Decorative Building(Sakura) | ★4 | After Use Get: Decorative Building |
+| 4003 | Decorative Building(Camphora) | ★3 | After Use Get: Decorative Building |
+| 4004 | Decorative Building(Bellflower) | ★3 | After Use Get: Decorative Building |
+| 4005 | Decorative Building(Tulip) | ★3 | After Use Get: Decorative Building |
+| 4006 | Decorative Building(Morning Glory) | ★3 | After Use Get: Decorative Building |
+| 4007 | Decorative Building(Ivy) | ★4 | After Use Get: Decorative Building |
+| 4008 | Decorative Building(Baroque Streetlight) | ★3 | After Use Get: Decorative Building |
+| 4009 | Decorative Building(Gothic Streetlight) | ★3 | After Use Get: Decorative Building |
+| 4010 | Decorative Building(Rococo Streetlight) | ★3 | After Use Get: Decorative Building |
+| 4011 | Decorative Building(Gold-Inlaid Column) | ★3 | After Use Get: Decorative Building |
+| 4012 | Decorative Building(Spiral Column) | ★3 | After Use Get: Decorative Building |
+| 4013 | Decorative Building(Musical Fountain) | ★4 | After Use Get: Decorative Building |
+| 4014 | Decorative Building(Lotus Fountain) | ★4 | After Use Get: Decorative Building |
+| 4015 | Decorative Building(Layered Fountain) | ★5 | After Use Get: Decorative Building |
+| 4016 | Decorative Building(Saintess Statue) | ★4 | After Use Get: Decorative Building |
+| 4017 | Decorative Building(Warrior Statue) | ★4 | After Use Get: Decorative Building |
+| 4018 | Decorative Building(Snowman) | ★4 | After Use Get: Decorative Building |
+| 4019 | Decorative Building(Snowman Beast) | ★6 | After Use Get: Decorative Building |
+| 4020 | Decorative Building(Leisure afternoon) | ★4 | After Use Get: Decorative Building |
+| 4021 | Decorative Building-Hot Spring Pool(S) | ★4 | After Use Get: Decorative Building |
+| 4022 | Decorative Building-Hot Spring Pool(M) | ★5 | After Use Get: Decorative Building |
+| 4023 | Decorative Building-Hot Spring Pool(L) | ★6 | After Use Get: Decorative Building |
+| 4024 | Decorative Building-Flower Arch-1 | ★3 | After Use Get: Decorative Building |
+| 4025 | Decorative Building-Flower Arch-2 | ★3 | After Use Get: Decorative Building |
+| 4026 | Decorative Building-Vine Arch-1 | ★3 | After Use Get: Decorative Building |
+| 4027 | Decorative Building-Vine Arch-2 | ★3 | After Use Get: Decorative Building |
+| 4028 | Decorative Building-Festival Tent | ★4 | After Use Get: Decorative Building |
+| 4029 | Decorative Building-Festival Blackboard | ★4 | After Use Get: Decorative Building |
+| 4030 | Decorative Building-Festival Trees-1 | ★3 | After Use Get: Decorative Building |
+| 4031 | Decorative Building-Festival Trees-2 | ★3 | After Use Get: Decorative Building |
+| 4032 | Decorative Building-Festival Trees-3 | ★3 | After Use Get: Decorative Building |
+| 4033 | Decorative Building-Festival Trees-4 | ★3 | After Use Get: Decorative Building |
+| 4034 | Decorative Building-Cloud Sofa | ★5 | After Use Get: Decorative Building |
+| 4035 | Decorative Building-Tree Stump | ★4 | After Use Get: Decorative Building |
+| 4036 | Decorative Building-Round Coffee Table | ★4 | After Use Get: Decorative Building |
+| 4037 | Decorative Building-Round Dining Table-1 | ★4 | After Use Get: Decorative Building |
+| 4038 | Decorative Building-Round Dining Table-2 | ★4 | After Use Get: Decorative Building |
+| 4039 | Decorative Building-Long Dining Table-1 | ★4 | After Use Get: Decorative Building |
+| 4040 | Decorative Building-Long Dining Table-2 | ★4 | After Use Get: Decorative Building |
+| 4041 | Decorative Building-Christmas Tree | ★4 | After Use Get: Decorative Building |
+| 4042 | Decorative Building-Carousel | ★6 | After Use Get: Decorative Building |
+| 4043 | Decorative Building-Totem Pole | ★3 | After Use Get: Decorative Building |
+| 4044 | Decorative Building-Holy Water Basin | ★3 | After Use Get: Decorative Building |
+| 4045 | Decorative Building-Chinese Rockery-I | ★3 | After Use Get: Decorative Building |
+| 4046 | Decorative Building-Chinese Rockery-II | ★3 | After Use Get: Decorative Building |
+| 4047 | Decorative Building-Swimming Pool | ★5 | After Use Get: Decorative Building |
+| 4048 | Decorative Building-Cat Fountain(M) | ★5 | After Use Get: Decorative Building |
+| 4049 | Decorative Building-Cat Fountain(L) | ★6 | After Use Get: Decorative Building |
+| 4050 | Decorative Building-Archangel Statue | ★5 | After Use Get: Decorative Building |
+| 4051 | Decorative Building-Cat Statue | ★5 | After Use Get: Decorative Building |
+| 4052 | Decorative Building-Goddess Statue | ★5 | After Use Get: Decorative Building |
+| 4053 | Decorative Building-Christmas Snow Globe | ★6 | After Use Get: Decorative Building |
+| 4054 | Decorative Building-Ginkgo-II | ★4 | After Use Get: Decorative Building |
+| 4055 | Decorative Building-Sakura-II | ★4 | After Use Get: Decorative Building |
+| 4056 | Decorative Building-Rose Bed | ★3 | After Use Get: Decorative Building |
+| 4057 | Decorative Building-Rose | ★3 | After Use Get: Decorative Building |
+| 4058 | Decorative Building-Swan Pond | ★5 | After Use Get: Decorative Building |
+| 4059 | Decorative Building-Rose Trellis | ★5 | After Use Get: Decorative Building |
+| 4060 | Decorative Building-Platform | ★5 | After Use Get: Decorative Building |
+| 4061 | Decorative Building-Red Stone Table-1 | ★4 | After Use Get: Decorative Building |
+| 4062 | Decorative Building-Red Stone Table-2 | ★4 | After Use Get: Decorative Building |
+| 4063 | Decorative Building-Yellow Stone Table-1 | ★4 | After Use Get: Decorative Building |
+| 4064 | Decorative Building-Yellow Stone Table-2 | ★4 | After Use Get: Decorative Building |
+| 4501 | Beginner(Headwear) | ★1 | After Use Get: Lord Fashion |
+| 4502 | Beginner(Clothing) | ★1 | After Use Get: Lord Fashion |
+| 4503 | Beginner(Accessory) | ★1 | After Use Get: Lord Fashion |
+| 4504 | Attendant(Headwear) | ★2 | After Use Get: Lord Fashion |
+| 4505 | Attendant(Clothing) | ★2 | After Use Get: Lord Fashion |
+| 4506 | Attendant(Accessory) | ★2 | After Use Get: Lord Fashion |
+| 4507 | Meow Fun(Headwear) | ★2 | After Use Get: Lord Fashion |
+| 4508 | Meow Fun(Clothing) | ★2 | After Use Get: Lord Fashion |
+| 4509 | Meow Fun(Accessory) | ★2 | After Use Get: Lord Fashion |
+| 4510 | Reign Glory(Headwear) | ★3 | After Use Get: Lord Fashion |
+| 4511 | Reign Glory(Clothing) | ★3 | After Use Get: Lord Fashion |
+| 4512 | Reign Glory(Accessory) | ★3 | After Use Get: Lord Fashion |
+| 4513 | Snow Pompom(Headwear) | ★3 | After Use Get: Lord Fashion |
+| 4514 | Snow Pompom(Clothing) | ★3 | After Use Get: Lord Fashion |
+| 4515 | Snow Pompom(Accessory) | ★3 | After Use Get: Lord Fashion |
+| 4516 | Iron Overlord(Headwear) | ★3 | After Use Get: Lord Fashion |
+| 4517 | Iron Overlord(Clothing) | ★3 | After Use Get: Lord Fashion |
+| 4518 | Iron Overlord(Accessory) | ★3 | After Use Get: Lord Fashion |
+| 4519 | Afairy couple(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4520 | Afairy couple(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4521 | Afairy couple(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4522 | Night Thief(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4523 | Night Thief(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4524 | Night Thief(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4525 | Urban Pioneer(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4526 | Urban Pioneer(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4527 | Urban Pioneer(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4528 | Rose Blade(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4529 | Rose Blade(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4530 | Rose Blade(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4531 | Brilliant Star(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4532 | Brilliant Star(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4533 | Brilliant Star(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4534 | Bulbasaur(Headwear) | ★2 | After Use Get: Lord Fashion |
+| 4535 | Bulbasaur(Clothing) | ★2 | After Use Get: Lord Fashion |
+| 4536 | Bulbasaur(Accessory) | ★2 | After Use Get: Lord Fashion |
+| 4537 | Cowboy Cat(Headwear) | ★3 | After Use Get: Lord Fashion |
+| 4538 | Cowboy Cat(Clothing) | ★3 | After Use Get: Lord Fashion |
+| 4539 | Cowboy Cat(Accessory) | ★3 | After Use Get: Lord Fashion |
+| 4540 | Autumn Sun(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4541 | Autumn Sun(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4542 | Autumn Sun(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4543 | Shell Parl(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4544 | Shell Parl(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4545 | Shell Parl(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4546 | Muppet Encounter(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4547 | Muppet Encounter(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4548 | Muppet Encounter(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4549 | Spring Letter(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4550 | Spring Letter(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4551 | Spring Letter(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4552 | Azure Shikigami(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4553 | Azure Shikigami(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4554 | Azure Shikigami(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4555 | Stellar Covenant(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4556 | Stellar Covenant(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4557 | Stellar Covenant(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4558 | Fantasia(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4559 | Fantasia(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4560 | Fantasia(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4561 | Verdant Whisper(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4562 | Verdant Whisper(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4563 | Verdant Whisper(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4564 | Blossom Picnic(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4565 | Blossom Picnic(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4566 | Blossom Picnic(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4567 | Snow Fox(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4568 | Snow Fox(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4569 | Snow Fox(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4570 | Vine Elf(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4571 | Vine Elf(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4572 | Vine Elf(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4573 | Halloween Night(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4574 | Halloween Night(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4575 | Halloween Night(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4576 | Jade Feather Beauty(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4577 | Jade Feather Beauty(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4578 | Jade Feather Beauty(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4579 | Christmas Carol(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4580 | Christmas Carol(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4581 | Christmas Carol(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4582 | Rose Veil Shadow(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4583 | Rose Veil Shadow(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4584 | Rose Veil Shadow(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4585 | All the best(Headwear) | ★4 | After Use Get: Lord Fashion |
+| 4586 | All the best(Clothing) | ★4 | After Use Get: Lord Fashion |
+| 4587 | All the best(Accessory) | ★4 | After Use Get: Lord Fashion |
+| 4741 | Deep Blue Song(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4742 | Deep Blue Song(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4743 | Deep Blue Song(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4744 | Pharaoh Legend(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4745 | Pharaoh Legend(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4746 | Pharaoh Legend(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4747 | Gilded Fantasy(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4748 | Gilded Fantasy(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4749 | Gilded Fantasy(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4751 | Dark Phantom(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4752 | Dark Phantom(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4753 | Dark Phantom(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4754 | Arcane Bringer(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4755 | Arcane Bringer(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4756 | Arcane Bringer(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4757 | Moonlit Hunter(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4758 | Moonlit Hunter(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4759 | Moonlit Hunter(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4760 | Glaze Oath(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4761 | Glaze Oath(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4762 | Glaze Oath(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4763 | Abyssal Siren(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4764 | Abyssal Siren(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4765 | Abyssal Siren(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4766 | Lantern Night Watch(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4767 | Lantern Night Watch(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4768 | Lantern Night Watch(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4769 | Nautical Log(Headwear) | ★5 | After Use Get: Lord Fashion |
+| 4770 | Nautical Log(Clothing) | ★5 | After Use Get: Lord Fashion |
+| 4771 | Nautical Log(Accessory) | ★5 | After Use Get: Lord Fashion |
+| 4951 | Tide Reaver(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4952 | Tide Reaver(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4953 | Tide Reaver(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4954 | Immortal Myth(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4955 | Immortal Myth(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4956 | Immortal Myth(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4957 | Abyss King(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4958 | Abyss King(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4959 | Abyss King(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4960 | Dark Angel(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4961 | Dark Angel(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4962 | Dark Angel(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4963 | Crown Romance(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4964 | Crown Romance(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4965 | Crown Romance(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 4966 | Thousand Faces(Headwear) | ★6 | After Use Get: Lord Fashion |
+| 4967 | Thousand Faces(Clothing) | ★6 | After Use Get: Lord Fashion |
+| 4968 | Thousand Faces(Accessory) | ★6 | After Use Get: Lord Fashion |
+| 6001 | Building Drawings(Sycamore) | ★4 | Application: Make Decorative Building |
+| 6002 | Building Drawings(Sakura) | ★4 | Application: Make Decorative Building |
+| 6003 | Building Drawings(Camphora) | ★3 | Application: Make Decorative Building |
+| 6004 | Building Drawings(Bellflower) | ★3 | Application: Make Decorative Building |
+| 6005 | Building Drawings(Tulip) | ★3 | Application: Make Decorative Building |
+| 6006 | Building Drawings(Morning Glory) | ★3 | Application: Make Decorative Building |
+| 6007 | Building Drawings(Ivy) | ★4 | Application: Make Decorative Building |
+| 6008 | Building Drawings(Baroque Streetlight) | ★3 | Application: Make Decorative Building |
+| 6009 | Building Drawings(Gothic Streetlight) | ★3 | Application: Make Decorative Building |
+| 6010 | Building Drawings(Rococo Streetlight) | ★3 | Application: Make Decorative Building |
+| 6011 | Building Drawings(Gold-Inlaid Column) | ★3 | Application: Make Decorative Building |
+| 6012 | Building Drawings(Spiral Column) | ★3 | Application: Make Decorative Building |
+| 6013 | Building Drawings(Musical Fountain) | ★4 | Application: Make Decorative Building |
+| 6014 | Building Drawings(Lotus Fountain) | ★4 | Application: Make Decorative Building |
+| 6015 | Building Drawings(Layered Fountain) | ★5 | Application: Make Decorative Building |
+| 6016 | Building Drawings(Saintess Statue) | ★4 | Application: Make Decorative Building |
+| 6017 | Building Drawings(Warrior Statue) | ★4 | Application: Make Decorative Building |
+| 6018 | Building Drawings(Snowman) | ★4 | Application: Make Decorative Building |
+| 6019 | Building Drawings(Snowman Beast) | ★6 | Application: Make Decorative Building |
+| 6020 | Building Drawings(Leisure afternoon) | ★4 | Application: Make Decorative Building |
+| 6021 | Building Drawings-Hot Spring Pool(S) | ★4 | Application: Make Decorative Building |
+| 6022 | Building Drawings-Hot Spring Pool(M) | ★5 | Application: Make Decorative Building |
+| 6023 | Building Drawings-Flower Arch-1 | ★3 | Application: Make Decorative Building |
+| 6024 | Building Drawings-Flower Arch-2 | ★3 | Application: Make Decorative Building |
+| 6025 | Building Drawings-Vine Arch-1 | ★3 | Application: Make Decorative Building |
+| 6026 | Building Drawings-Vine Arch-2 | ★3 | Application: Make Decorative Building |
+| 6027 | Building Drawings-Festival Tent | ★4 | Application: Make Decorative Building |
+| 6028 | Building Drawings-Festival Blackboard | ★4 | Application: Make Decorative Building |
+| 6029 | Building Drawings-Festival Trees-1 | ★3 | Application: Make Decorative Building |
+| 6030 | Building Drawings-Festival Trees-2 | ★3 | Application: Make Decorative Building |
+| 6031 | Building Drawings-Festival Trees-3 | ★3 | Application: Make Decorative Building |
+| 6032 | Building Drawings-Festival Trees-4 | ★3 | Application: Make Decorative Building |
+| 6033 | Building Drawings-Tree Stump | ★4 | Application: Make Decorative Building |
+| 6034 | Building Drawings-Round Coffee Table | ★4 | Application: Make Decorative Building |
+| 6035 | Building Drawings-Round Dining Table-1 | ★4 | Application: Make Decorative Building |
+| 6036 | Building Drawings-Round Dining Table-2 | ★4 | Application: Make Decorative Building |
+| 6037 | Building Drawings-Long Dining Table-1 | ★4 | Application: Make Decorative Building |
+| 6038 | Building Drawings-Long Dining Table-2 | ★4 | Application: Make Decorative Building |
+| 6039 | Building Drawings-Totem Pole | ★3 | Application: Make Decorative Building |
+| 6040 | Building Drawings-Holy Water Basin | ★3 | Application: Make Decorative Building |
+| 6041 | Building Drawings-Chinese Rockery-I | ★3 | Application: Make Decorative Building |
+| 6042 | Building Drawings-Chinese Rockery-II | ★3 | Application: Make Decorative Building |
+| 6043 | Building Drawings-Cat Fountain(M) | ★5 | Application: Make Decorative Building |
+| 6044 | Building Drawings-Cat Fountain(L) | ★6 | Application: Make Decorative Building |
+| 6045 | Building Drawings-Cat Statue | ★5 | Application: Make Decorative Building |
+| 6046 | Building Drawings-Ginkgo-II | ★4 | Application: Make Decorative Building |
+| 6047 | Building Drawings-Sakura-II | ★4 | Application: Make Decorative Building |
+| 6048 | Building Drawings-Rose Bed | ★3 | Application: Make Decorative Building |
+| 6049 | Building Drawings-Rose | ★3 | Application: Make Decorative Building |
+| 6050 | Building Drawings-Red Stone Table-1 | ★4 | Application: Make Decorative Building |
+| 6051 | Building Drawings-Red Stone Table-2 | ★4 | Application: Make Decorative Building |
+| 6052 | Building Drawings-Yellow Stone Table-1 | ★4 | Application: Make Decorative Building |
+| 6053 | Building Drawings-Yellow Stone Table-2 | ★4 | Application: Make Decorative Building |
+| 6501 | Fashion Drawings-Beginner(Headwear) | ★1 | Application: Make Beginner(Headwear)(Fashion Points +5) |
+| 6502 | Fashion Drawings-Beginner(Clothing) | ★1 | Application: Make Beginner(Clothing)(Fashion Points +10) |
+| 6503 | Fashion Drawings-Beginner(Accessory) | ★1 | Application: Make Beginner(Accessory)(Fashion Points +10) |
+| 6504 | Fashion Drawings-Attendant(Headwear) | ★2 | Application: Make Attendant(Headwear)(Fashion Points +10) |
+| 6505 | Fashion Drawings-Attendant(Clothing) | ★2 | Application: Make Attendant(Clothing)(Fashion Points +20) |
+| 6506 | Fashion Drawings-Attendant(Accessory) | ★2 | Application: Make Attendant(Accessory)(Fashion Points +20) |
+| 6507 | Fashion Drawings-Meow Fun(Headwear) | ★2 | Application: Make Meow Fun(Headwear)(Fashion Points +10) |
+| 6508 | Fashion Drawings-Meow Fun(Clothing) | ★2 | Application: Make Meow Fun(Clothing)(Fashion Points +20) |
+| 6509 | Fashion Drawings-Meow Fun(Accessory) | ★2 | Application: Make Meow Fun(Accessory)(Fashion Points +20) |
+| 6510 | Fashion Drawings-Reign Glory(Headwear) | ★3 | Application: Make Reign Glory(Headwear)(Fashion Points +15) |
+| 6511 | Fashion Drawings-Reign Glory(Clothing) | ★3 | Application: Make Reign Glory(Clothing)(Fashion Points +30) |
+| 6512 | Fashion Drawings-Reign Glory(Accessory) | ★3 | Application: Make Reign Glory(Accessory)(Fashion Points +30) |
+| 6513 | Fashion Drawings-Snow Pompom(Headwear) | ★3 | Application: Make Snow Pompom(Headwear)(Fashion Points +15) |
+| 6514 | Fashion Drawings-Snow Pompom(Clothing) | ★3 | Application: Make Snow Pompom(Clothing)(Fashion Points +30) |
+| 6515 | Fashion Drawings-Snow Pompom(Accessory) | ★3 | Application: Make Snow Pompom(Accessory)(Fashion Points +30) |
+| 6516 | Fashion Drawings-Iron Overlord(Headwear) | ★3 | Application: Make Iron Overlord(Headwear)(Fashion Points +15) |
+| 6517 | Fashion Drawings-Iron Overlord(Clothing) | ★3 | Application: Make Iron Overlord(Clothing)(Fashion Points +30) |
+| 6518 | Fashion Drawings-Iron Overlord(Accessory) | ★3 | Application: Make Iron Overlord(Accessory)(Fashion Points +30) |
+| 6519 | Fashion Drawings-Afairy couple(Headwear) | ★4 | Application: Make Afairy couple(Headwear)(Fashion Points +20) |
+| 6520 | Fashion Drawings-Afairy couple(Clothing) | ★4 | Application: Make Afairy couple(Clothing)(Fashion Points +40) |
+| 6521 | Fashion Drawings-Afairy couple(Accessory) | ★4 | Application: Make Afairy couple(Accessory)(Fashion Points +40) |
+| 6522 | Fashion Drawings-Night Thief(Headwear) | ★4 | Application: Make Night Thief(Headwear)(Fashion Points +20) |
+| 6523 | Fashion Drawings-Night Thief(Clothing) | ★4 | Application: Make Night Thief(Clothing)(Fashion Points +40) |
+| 6524 | Fashion Drawings-Night Thief(Accessory) | ★4 | Application: Make Night Thief(Accessory)(Fashion Points +40) |
+| 6525 | Fashion Drawings-Urban Pioneer(Headwear) | ★4 | Application: Make Urban Pioneer(Headwear)(Fashion Points +20) |
+| 6526 | Fashion Drawings-Urban Pioneer(Clothing) | ★4 | Application: Make Urban Pioneer(Clothing)(Fashion Points +40) |
+| 6527 | Fashion Drawings-Urban Pioneer(Accessory) | ★4 | Application: Make Urban Pioneer(Accessory)(Fashion Points +40) |
+| 6528 | Fashion Drawings-Rose Blade(Headwear) | ★5 | Application: Make Rose Blade(Headwear)(Fashion Points +25) |
+| 6529 | Fashion Drawings-Rose Blade(Clothing) | ★5 | Application: Make Rose Blade(Clothing)(Fashion Points +50) |
+| 6530 | Fashion Drawings-Rose Blade(Accessory) | ★5 | Application: Make Rose Blade(Accessory)(Fashion Points +50) |
+| 6531 | Fashion Drawings-Brilliant Star(Headwear) | ★6 | Application: Make Brilliant Star(Headwear)(Fashion Points +30) |
+| 6532 | Fashion Drawings-Brilliant Star(Clothing) | ★6 | Application: Make Brilliant Star(Clothing)(Fashion Points +60) |
+| 6533 | Fashion Drawings-Brilliant Star(Accessory) | ★6 | Application: Make Brilliant Star(Accessory)(Fashion Points +60) |
+| 6534 | Fashion Drawings-Bulbasaur(Headwear) | ★2 | Application: Make Bulbasaur(Headwear)(Fashion Points +10) |
+| 6535 | Fashion Drawings-Bulbasaur(Clothing) | ★2 | Application: Make Bulbasaur(Clothing)(Fashion Points +20) |
+| 6536 | Fashion Drawings-Bulbasaur(Accessory) | ★2 | Application: Make Bulbasaur(Accessory)(Fashion Points +20) |
+| 6537 | Fashion Drawings-Cowboy Cat(Headwear) | ★3 | Application: Make Cowboy Cat(Headwear)(Fashion Points +15) |
+| 6538 | Fashion Drawings-Cowboy Cat(Clothing) | ★3 | Application: Make Cowboy Cat(Clothing)(Fashion Points +30) |
+| 6539 | Fashion Drawings-Cowboy Cat(Accessory) | ★3 | Application: Make Cowboy Cat(Accessory)(Fashion Points +30) |
+| 6540 | Fashion Drawings-Autumn Sun(Headwear) | ★4 | Application: Make Autumn Sun(Headwear)(Fashion Points +20) |
+| 6541 | Fashion Drawings-Autumn Sun(Clothing) | ★4 | Application: Make Autumn Sun(Clothing)(Fashion Points +40) |
+| 6542 | Fashion Drawings-Autumn Sun(Accessory) | ★4 | Application: Make Autumn Sun(Accessory)(Fashion Points +40) |
+| 6543 | Fashion Drawings-Muppet Encounter(Headwear) | ★4 | Application: Make Muppet Encounter(Headwear)(Fashion Points +20) |
+| 6544 | Fashion Drawings-Muppet Encounter(Clothing) | ★4 | Application: Make Muppet Encounter(Clothing)(Fashion Points +40) |
+| 6545 | Fashion Drawings-Muppet Encounter(Accessory) | ★4 | Application: Make Muppet Encounter(Accessory)(Fashion Points +40) |
+| 6546 | Fashion Drawings-Blossom Picnic(Headwear) | ★4 | Application: Make Blossom Picnic(Headwear)(Fashion Points +20) |
+| 6547 | Fashion Drawings-Blossom Picnic(Clothing) | ★4 | Application: Make Blossom Picnic(Clothing)(Fashion Points +40) |
+| 6548 | Fashion Drawings-Blossom Picnic(Accessory) | ★4 | Application: Make Blossom Picnic(Accessory)(Fashion Points +40) |
+| 6549 | Fashion Drawings-Halloween Night(Headwear) | ★5 | Application: Make Halloween Night(Headwear)(Fashion Points +25) |
+| 6550 | Fashion Drawings-Halloween Night(Clothing) | ★5 | Application: Make Halloween Night(Clothing)(Fashion Points +50) |
+| 6551 | Fashion Drawings-Halloween Night(Accessory) | ★5 | Application: Make Halloween Night(Accessory)(Fashion Points +50) |
+| 6552 | Fashion Drawings-Jade Feather Beauty(Headwear) | ★6 | Application: Make Jade Feather Beauty(Headwear)(Fashion Points +30) |
+| 6553 | Fashion Drawings-Jade Feather Beauty(Clothing) | ★6 | Application: Make Jade Feather Beauty(Clothing)(Fashion Points +60) |
+| 6554 | Fashion Drawings-Jade Feather Beauty(Accessory) | ★6 | Application: Make Jade Feather Beauty(Accessory)(Fashion Points +60) |
 
 ## Type 3 (308)
 | ID | Name | Rarity | Description |
@@ -1897,592 +1897,592 @@ Master catalog of every item / resource / material ("prop") in the game, grouped
 ## Type 4 (122)
 | ID | Name | Rarity | Description |
 |---|---|---|---|
-| 5001 | Crolos | ★4 | Hero Card Available After Use：Crolos |
-| 5002 | Saintess Shin | ★5 | Hero Card Available After Use：Saintess Shin |
-| 5003 | Cliodna | ★5 | Hero Card Available After Use：Cliodna |
-| 5004 | Seimaki | ★3 | Hero Card Available After Use：Seimaki |
-| 5005 | Bellona | ★4 | Hero Card Available After Use：Bellona |
-| 5006 | Derifa | ★4 | Hero Card Available After Use：Derifa |
-| 5007 | Degunnr | ★4 | Hero Card Available After Use：Degunnr |
-| 5008 | Thetis | ★3 | Hero Card Available After Use：Thetis |
-| 5009 | Ninianne | ★4 | Hero Card Available After Use：Ninianne |
-| 5010 | Sissi | ★3 | Hero Card Available After Use：Sissi |
-| 5011 | Vivian | ★4 | Hero Card Available After Use：Vivian |
-| 5012 | Gremory | ★4 | Hero Card Available After Use：Gremory |
-| 5013 | Thefis | ★4 | Hero Card Available After Use：Thefis |
-| 5014 | Eros | ★5 | Hero Card Available After Use：Eros |
-| 5015 | Skagull | ★4 | Hero Card Available After Use：Skagull |
-| 5016 | Slider | ★4 | Hero Card Available After Use：Slider |
-| 5017 | Doll Zero | ★3 | Hero Card Available After Use：Doll Zero |
-| 5018 | Lilith | ★4 | Hero Card Available After Use：Lilith |
-| 5019 | Stina | ★3 | Hero Card Available After Use：Stina |
-| 5020 | Utia | ★4 | Hero Card Available After Use：Utia |
-| 5021 | Undine | ★3 | Hero Card Available After Use：Undine |
-| 5022 | Perris | ★5 | Hero Card Available After Use：Perris |
-| 5023 | Roland | ★5 | Hero Card Available After Use：Roland |
-| 5024 | Sylph | ★3 | Hero Card Available After Use：Sylph |
-| 5025 | Herfjotur | ★3 | Hero Card Available After Use：Herfjotur |
-| 5026 | Fisis | ★3 | Hero Card Available After Use：Fisis |
-| 5027 | Lynf | ★4 | Hero Card Available After Use：Lynf |
-| 5028 | SusaMaki | ★5 | Hero Card Available After Use：SusaMaki |
-| 5029 | Rukia | ★4 | Hero Card Available After Use：Rukia |
-| 5030 | Grey | ★3 | Hero Card Available After Use：Grey |
-| 5031 | Olrun | ★3 | Hero Card Available After Use：Olrun |
-| 5032 | Cthugha | ★5 | Hero Card Available After Use：Cthugha |
-| 5033 | Angie | ★4 | Hero Card Available After Use：Angie |
-| 5034 | Pomon | ★5 | Hero Card Available After Use：Pomon |
-| 5035 | Bast | ★4 | Hero Card Available After Use：Bast |
-| 5036 | Lorelei | ★4 | Hero Card Available After Use：Lorelei |
-| 5037 | Susabi | ★4 | Hero Card Available After Use：Susabi |
-| 5038 | Asmodeus | ★4 | Hero Card Available After Use：Asmodeus |
-| 5039 | Lafayette | ★4 | Hero Card Available After Use：Lafayette |
-| 5040 | Rhea | ★5 | Hero Card Available After Use：Rhea |
-| 5041 | Unknown Brave | ★2 | Hero Card Available After Use：Unknown Brave |
-| 5042 | Unknown Mage | ★2 | Hero Card Available After Use：Unknown Mage |
-| 5043 | Unknown Shooter | ★2 | Hero Card Available After Use：Unknown Shooter |
-| 5044 | Unknown Pikeman | ★2 | Hero Card Available After Use：Unknown Pikeman |
-| 5045 | Unknown Swordsman | ★2 | Hero Card Available After Use：Unknown Swordsman |
-| 5046 | Mia | ★5 | Hero Card Available After Use：Mia |
-| 5047 | Vanessa | ★5 | Hero Card Available After Use：Vanessa |
-| 5048 | Lillian | ★3 | Hero Card Available After Use：Lillian |
-| 5049 | Bonnie | ★4 | Hero Card Available After Use：Bonnie |
-| 5050 | Batory | ★4 | Hero Card Available After Use：Batory |
-| 5051 | Zoe | ★5 | Hero Card Available After Use：Zoe |
-| 5052 | Duffy | ★4 | Hero Card Available After Use：Duffy |
-| 5053 | Abbey | ★3 | Hero Card Available After Use：Abbey |
-| 5054 | Bess | ★3 | Hero Card Available After Use：Bess |
-| 5055 | Iris | ★5 | Hero Card Available After Use：Iris |
-| 5056 | MeiLing | ★3 | Hero Card Available After Use：MeiLing |
-| 5057 | Puona | ★4 | Hero Card Available After Use：Puona |
-| 5058 | Darby | ★4 | Hero Card Available After Use：Darby |
-| 5059 | Utija | ★5 | Hero Card Available After Use：Utija |
-| 5060 | Patra | ★5 | Hero Card Available After Use：Patra |
-| 5061 | Saintess Shin·Sp | ★5 | Hero Card Available After Use：Saintess Shin·Sp |
-| 5062 | Cliodna·Sp | ★5 | Hero Card Available After Use：Cliodna·Sp |
-| 5063 | Derifa·Sp | ★5 | Hero Card Available After Use：Derifa·Sp |
-| 5064 | Thefis·Sp | ★5 | Hero Card Available After Use：Thefis·Sp |
-| 5065 | Eros·Sp | ★5 | Hero Card Available After Use：Eros·Sp |
-| 5066 | Slider·Sp | ★5 | Hero Card Available After Use：Slider·Sp |
-| 5067 | Mousika | ★5 | Hero Card Available After Use：Mousika |
-| 5068 | Roland·Sp | ★5 | Hero Card Available After Use：Roland·Sp |
-| 5069 | SusaMaki·Sp | ★5 | Hero Card Available After Use：SusaMaki·Sp |
-| 5070 | Cthugha·Sp | ★5 | Hero Card Available After Use：Cthugha·Sp |
-| 5071 | Susabi·Sp | ★5 | Hero Card Available After Use：Susabi·Sp |
-| 5072 | Lafayette·Sp | ★5 | Hero Card Available After Use：Lafayette·Sp |
-| 5073 | Belala | ★5 | Hero Card Available After Use：Belala |
-| 5074 | Mia·Sp | ★5 | Hero Card Available After Use：Mia·Sp |
-| 5075 | Vanessa·Sp | ★5 | Hero Card Available After Use：Vanessa·Sp |
-| 5076 | Batory·Sp | ★5 | Hero Card Available After Use：Batory·Sp |
-| 5077 | Zoe·Sp | ★5 | Hero Card Available After Use：Zoe·Sp |
-| 5078 | Duffy·Sp | ★5 | Hero Card Available After Use：Duffy·Sp |
-| 5079 | Iris·Sp | ★5 | Hero Card Available After Use：Iris·Sp |
-| 5080 | Darby·Sp | ★5 | Hero Card Available After Use：Darby·Sp |
-| 5081 | Universal Advanced Card | ★5 | Hero Card Available After Use：Universal Advanced Card(A card that can be used in place of  |
-| 5082 | Universal Codex Card | ★5 | Hero Card Available After Use：Universal Codex Card(Can be used in place of any 5-star hero |
-| 5083 | Skill Exp Card | ★5 | Hero Card Available After Use：Skill Exp Card |
-| 5084 | Monccoco | ★5 | Hero Card Available After Use：Monccoco |
-| 5085 | Luka | ★4 | Hero Card Available After Use：Luka |
-| 5086 | Synaga | ★5 | Hero Card Available After Use：Synaga |
-| 5087 | Nicole | ★4 | Hero Card Available After Use：Nicole |
-| 5088 | Perris·Sp | ★5 | Hero Card Available After Use：Perris·Sp |
-| 5089 | Angie·Sp | ★4 | Hero Card Available After Use：Angie·Sp |
-| 5090 | Yaya | ★5 | Hero Card Available After Use：Yaya |
-| 5091 | Puona·Sp | ★4 | Hero Card Available After Use：Puona·Sp |
-| 5092 | Utija·Sp | ★5 | Hero Card Available After Use：Utija·Sp |
-| 5093 | Utia·Sp | ★5 | Hero Card Available After Use：Utia·Sp |
-| 5094 | Cureka | ★4 | Hero Card Available After Use：Cureka |
-| 5095 | Aguria | ★5 | Hero Card Available After Use：Aguria |
-| 5096 | Lenna | ★5 | Hero Card Available After Use：Lenna |
-| 5097 | Satoru | ★5 | Hero Card Available After Use：Satoru |
-| 5098 | Aguria·Sp | ★5 | Hero Card Available After Use：Aguria·Sp |
-| 5099 | Thiel | ★5 | Hero Card Available After Use：Thiel |
-| 5100 | Phila | ★5 | Hero Card Available After Use：Phila |
-| 5101 | orlando | ★5 | Hero Card Available After Use：orlando |
-| 5102 | Breakthrough Card | ★5 | Hero Card Available After Use：Breakthrough Card(A card that can be used in place of any 5- |
-| 5103 | Shady | ★5 | Hero Card Available After Use：Shady |
-| 5104 | Bettina | ★5 | Hero Card Available After Use：Bettina |
-| 5105 | Madeline | ★5 | Hero Card Available After Use：Madeline |
-| 5106 | Hana | ★5 | Hero Card Available After Use：Hana |
-| 5107 | Eurella | ★5 | Hero Card Available After Use：Eurella |
-| 5108 | Dolly | ★5 | Hero Card Available After Use：Dolly |
-| 5109 | Livia | ★5 | Hero Card Available After Use：Livia |
-| 5110 | Serena | ★5 | Hero Card Available After Use：Serena |
-| 5111 | Luna | ★5 | Hero Card Available After Use：Luna |
-| 5112 | Yao Lin | ★5 | Hero Card Available After Use：Yao Lin |
-| 5113 | Lumi | ★5 | Hero Card Available After Use：Lumi |
-| 5114 | Sera | ★5 | Hero Card Available After Use：Sera |
-| 5115 | Faye | ★5 | Hero Card Available After Use：Faye |
-| 5116 | Nyx | ★5 | Hero Card Available After Use：Nyx |
-| 5117 | Niya | ★5 | Hero Card Available After Use：Niya |
-| 5118 | Isabelle | ★5 | Hero Card Available After Use：Isabelle |
-| 5119 | Crolos·Sp | ★5 | Hero Card Available After Use：Crolos·Sp |
-| 5120 | Nyx·Sp | ★5 | Hero Card Available After Use：Nyx·Sp |
-| 5121 | Faye·Sp | ★5 | Hero Card Available After Use：Faye·Sp |
-| 5122 | Yaya·Sp | ★5 | Hero Card Available After Use：Yaya·Sp |
+| 5001 | Crolos | ★4 | Hero Card Available After Use: Crolos |
+| 5002 | Saintess Shin | ★5 | Hero Card Available After Use: Saintess Shin |
+| 5003 | Cliodna | ★5 | Hero Card Available After Use: Cliodna |
+| 5004 | Seimaki | ★3 | Hero Card Available After Use: Seimaki |
+| 5005 | Bellona | ★4 | Hero Card Available After Use: Bellona |
+| 5006 | Derifa | ★4 | Hero Card Available After Use: Derifa |
+| 5007 | Degunnr | ★4 | Hero Card Available After Use: Degunnr |
+| 5008 | Thetis | ★3 | Hero Card Available After Use: Thetis |
+| 5009 | Ninianne | ★4 | Hero Card Available After Use: Ninianne |
+| 5010 | Sissi | ★3 | Hero Card Available After Use: Sissi |
+| 5011 | Vivian | ★4 | Hero Card Available After Use: Vivian |
+| 5012 | Gremory | ★4 | Hero Card Available After Use: Gremory |
+| 5013 | Thefis | ★4 | Hero Card Available After Use: Thefis |
+| 5014 | Eros | ★5 | Hero Card Available After Use: Eros |
+| 5015 | Skagull | ★4 | Hero Card Available After Use: Skagull |
+| 5016 | Slider | ★4 | Hero Card Available After Use: Slider |
+| 5017 | Doll Zero | ★3 | Hero Card Available After Use: Doll Zero |
+| 5018 | Lilith | ★4 | Hero Card Available After Use: Lilith |
+| 5019 | Stina | ★3 | Hero Card Available After Use: Stina |
+| 5020 | Utia | ★4 | Hero Card Available After Use: Utia |
+| 5021 | Undine | ★3 | Hero Card Available After Use: Undine |
+| 5022 | Perris | ★5 | Hero Card Available After Use: Perris |
+| 5023 | Roland | ★5 | Hero Card Available After Use: Roland |
+| 5024 | Sylph | ★3 | Hero Card Available After Use: Sylph |
+| 5025 | Herfjotur | ★3 | Hero Card Available After Use: Herfjotur |
+| 5026 | Fisis | ★3 | Hero Card Available After Use: Fisis |
+| 5027 | Lynf | ★4 | Hero Card Available After Use: Lynf |
+| 5028 | SusaMaki | ★5 | Hero Card Available After Use: SusaMaki |
+| 5029 | Rukia | ★4 | Hero Card Available After Use: Rukia |
+| 5030 | Grey | ★3 | Hero Card Available After Use: Grey |
+| 5031 | Olrun | ★3 | Hero Card Available After Use: Olrun |
+| 5032 | Cthugha | ★5 | Hero Card Available After Use: Cthugha |
+| 5033 | Angie | ★4 | Hero Card Available After Use: Angie |
+| 5034 | Pomon | ★5 | Hero Card Available After Use: Pomon |
+| 5035 | Bast | ★4 | Hero Card Available After Use: Bast |
+| 5036 | Lorelei | ★4 | Hero Card Available After Use: Lorelei |
+| 5037 | Susabi | ★4 | Hero Card Available After Use: Susabi |
+| 5038 | Asmodeus | ★4 | Hero Card Available After Use: Asmodeus |
+| 5039 | Lafayette | ★4 | Hero Card Available After Use: Lafayette |
+| 5040 | Rhea | ★5 | Hero Card Available After Use: Rhea |
+| 5041 | Unknown Brave | ★2 | Hero Card Available After Use: Unknown Brave |
+| 5042 | Unknown Mage | ★2 | Hero Card Available After Use: Unknown Mage |
+| 5043 | Unknown Shooter | ★2 | Hero Card Available After Use: Unknown Shooter |
+| 5044 | Unknown Pikeman | ★2 | Hero Card Available After Use: Unknown Pikeman |
+| 5045 | Unknown Swordsman | ★2 | Hero Card Available After Use: Unknown Swordsman |
+| 5046 | Mia | ★5 | Hero Card Available After Use: Mia |
+| 5047 | Vanessa | ★5 | Hero Card Available After Use: Vanessa |
+| 5048 | Lillian | ★3 | Hero Card Available After Use: Lillian |
+| 5049 | Bonnie | ★4 | Hero Card Available After Use: Bonnie |
+| 5050 | Batory | ★4 | Hero Card Available After Use: Batory |
+| 5051 | Zoe | ★5 | Hero Card Available After Use: Zoe |
+| 5052 | Duffy | ★4 | Hero Card Available After Use: Duffy |
+| 5053 | Abbey | ★3 | Hero Card Available After Use: Abbey |
+| 5054 | Bess | ★3 | Hero Card Available After Use: Bess |
+| 5055 | Iris | ★5 | Hero Card Available After Use: Iris |
+| 5056 | MeiLing | ★3 | Hero Card Available After Use: MeiLing |
+| 5057 | Puona | ★4 | Hero Card Available After Use: Puona |
+| 5058 | Darby | ★4 | Hero Card Available After Use: Darby |
+| 5059 | Utija | ★5 | Hero Card Available After Use: Utija |
+| 5060 | Patra | ★5 | Hero Card Available After Use: Patra |
+| 5061 | Saintess Shin·Sp | ★5 | Hero Card Available After Use: Saintess Shin·Sp |
+| 5062 | Cliodna·Sp | ★5 | Hero Card Available After Use: Cliodna·Sp |
+| 5063 | Derifa·Sp | ★5 | Hero Card Available After Use: Derifa·Sp |
+| 5064 | Thefis·Sp | ★5 | Hero Card Available After Use: Thefis·Sp |
+| 5065 | Eros·Sp | ★5 | Hero Card Available After Use: Eros·Sp |
+| 5066 | Slider·Sp | ★5 | Hero Card Available After Use: Slider·Sp |
+| 5067 | Mousika | ★5 | Hero Card Available After Use: Mousika |
+| 5068 | Roland·Sp | ★5 | Hero Card Available After Use: Roland·Sp |
+| 5069 | SusaMaki·Sp | ★5 | Hero Card Available After Use: SusaMaki·Sp |
+| 5070 | Cthugha·Sp | ★5 | Hero Card Available After Use: Cthugha·Sp |
+| 5071 | Susabi·Sp | ★5 | Hero Card Available After Use: Susabi·Sp |
+| 5072 | Lafayette·Sp | ★5 | Hero Card Available After Use: Lafayette·Sp |
+| 5073 | Belala | ★5 | Hero Card Available After Use: Belala |
+| 5074 | Mia·Sp | ★5 | Hero Card Available After Use: Mia·Sp |
+| 5075 | Vanessa·Sp | ★5 | Hero Card Available After Use: Vanessa·Sp |
+| 5076 | Batory·Sp | ★5 | Hero Card Available After Use: Batory·Sp |
+| 5077 | Zoe·Sp | ★5 | Hero Card Available After Use: Zoe·Sp |
+| 5078 | Duffy·Sp | ★5 | Hero Card Available After Use: Duffy·Sp |
+| 5079 | Iris·Sp | ★5 | Hero Card Available After Use: Iris·Sp |
+| 5080 | Darby·Sp | ★5 | Hero Card Available After Use: Darby·Sp |
+| 5081 | Universal Advanced Card | ★5 | Hero Card Available After Use: Universal Advanced Card(A card that can be used in place of |
+| 5082 | Universal Codex Card | ★5 | Hero Card Available After Use: Universal Codex Card(Can be used in place of any 5-star her |
+| 5083 | Skill Exp Card | ★5 | Hero Card Available After Use: Skill Exp Card |
+| 5084 | Monccoco | ★5 | Hero Card Available After Use: Monccoco |
+| 5085 | Luka | ★4 | Hero Card Available After Use: Luka |
+| 5086 | Synaga | ★5 | Hero Card Available After Use: Synaga |
+| 5087 | Nicole | ★4 | Hero Card Available After Use: Nicole |
+| 5088 | Perris·Sp | ★5 | Hero Card Available After Use: Perris·Sp |
+| 5089 | Angie·Sp | ★4 | Hero Card Available After Use: Angie·Sp |
+| 5090 | Yaya | ★5 | Hero Card Available After Use: Yaya |
+| 5091 | Puona·Sp | ★4 | Hero Card Available After Use: Puona·Sp |
+| 5092 | Utija·Sp | ★5 | Hero Card Available After Use: Utija·Sp |
+| 5093 | Utia·Sp | ★5 | Hero Card Available After Use: Utia·Sp |
+| 5094 | Cureka | ★4 | Hero Card Available After Use: Cureka |
+| 5095 | Aguria | ★5 | Hero Card Available After Use: Aguria |
+| 5096 | Lenna | ★5 | Hero Card Available After Use: Lenna |
+| 5097 | Satoru | ★5 | Hero Card Available After Use: Satoru |
+| 5098 | Aguria·Sp | ★5 | Hero Card Available After Use: Aguria·Sp |
+| 5099 | Thiel | ★5 | Hero Card Available After Use: Thiel |
+| 5100 | Phila | ★5 | Hero Card Available After Use: Phila |
+| 5101 | orlando | ★5 | Hero Card Available After Use: orlando |
+| 5102 | Breakthrough Card | ★5 | Hero Card Available After Use: Breakthrough Card(A card that can be used in place of any 5 |
+| 5103 | Shady | ★5 | Hero Card Available After Use: Shady |
+| 5104 | Bettina | ★5 | Hero Card Available After Use: Bettina |
+| 5105 | Madeline | ★5 | Hero Card Available After Use: Madeline |
+| 5106 | Hana | ★5 | Hero Card Available After Use: Hana |
+| 5107 | Eurella | ★5 | Hero Card Available After Use: Eurella |
+| 5108 | Dolly | ★5 | Hero Card Available After Use: Dolly |
+| 5109 | Livia | ★5 | Hero Card Available After Use: Livia |
+| 5110 | Serena | ★5 | Hero Card Available After Use: Serena |
+| 5111 | Luna | ★5 | Hero Card Available After Use: Luna |
+| 5112 | Yao Lin | ★5 | Hero Card Available After Use: Yao Lin |
+| 5113 | Lumi | ★5 | Hero Card Available After Use: Lumi |
+| 5114 | Sera | ★5 | Hero Card Available After Use: Sera |
+| 5115 | Faye | ★5 | Hero Card Available After Use: Faye |
+| 5116 | Nyx | ★5 | Hero Card Available After Use: Nyx |
+| 5117 | Niya | ★5 | Hero Card Available After Use: Niya |
+| 5118 | Isabelle | ★5 | Hero Card Available After Use: Isabelle |
+| 5119 | Crolos·Sp | ★5 | Hero Card Available After Use: Crolos·Sp |
+| 5120 | Nyx·Sp | ★5 | Hero Card Available After Use: Nyx·Sp |
+| 5121 | Faye·Sp | ★5 | Hero Card Available After Use: Faye·Sp |
+| 5122 | Yaya·Sp | ★5 | Hero Card Available After Use: Yaya·Sp |
 
 ## Type 5 (460)
 | ID | Name | Rarity | Description |
 |---|---|---|---|
-| 19001 | Crolos Relic | ★4 | Talent Skill：Effect Trigger Probability +6% |
-| 19002 | Crolos Relic | ★4 | Talent Skill：Effect Trigger Probability +9% |
-| 19003 | Crolos Relic | ★4 | Talent Skill：Effect Trigger Probability +12% |
-| 19004 | Crolos Relic | ★4 | Talent Skill：Effect Trigger Probability +15% |
-| 19005 | Bellona Relic | ★4 | Talent Skill：DMG Taken Reduced +3.8%(Not Affected By Attribute) |
-| 19006 | Bellona Relic | ★4 | Talent Skill：DMG Taken Reduced +5.7%(Not Affected By Attribute) |
-| 19007 | Bellona Relic | ★4 | Talent Skill：DMG Taken Reduced +7.6%(Not Affected By Attribute) |
-| 19008 | Bellona Relic | ★4 | Talent Skill：DMG Taken Reduced +9.5%(Not Affected By Attribute) |
-| 19009 | Derifa Relic | ★4 | Talent Skill：DMG Dealt Increased +3.8%(Not Affected By Attribute) |
-| 19010 | Derifa Relic | ★4 | Talent Skill：DMG Dealt Increased +5.7%(Not Affected By Attribute) |
-| 19011 | Derifa Relic | ★4 | Talent Skill：DMG Dealt Increased +7.6%(Not Affected By Attribute) |
-| 19012 | Derifa Relic | ★4 | Talent Skill：DMG Dealt Increased +9.5%(Not Affected By Attribute) |
-| 19013 | Degunnr Relic | ★4 | Talent Skill：Increase All Attributes +4.2(Not Affected By Attribute) |
-| 19014 | Degunnr Relic | ★4 | Talent Skill：Increase All Attributes +6.3(Not Affected By Attribute) |
-| 19015 | Degunnr Relic | ★4 | Talent Skill：Increase All Attributes +8.4(Not Affected By Attribute) |
-| 19016 | Degunnr Relic | ★4 | Talent Skill：Increase All Attributes +10.5(Not Affected By Attribute) |
-| 19017 | Ninianne Relic | ★4 | Talent Skill：Healing Coefficient +0.133 |
-| 19018 | Ninianne Relic | ★4 | Talent Skill：Healing Coefficient +0.200 |
-| 19019 | Ninianne Relic | ★4 | Talent Skill：Healing Coefficient +0.266 |
-| 19020 | Ninianne Relic | ★4 | Talent Skill：Healing Coefficient +0.332 |
-| 19021 | Vivian Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19022 | Vivian Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19023 | Vivian Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19024 | Vivian Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19025 | Gremory Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19026 | Gremory Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19027 | Gremory Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19028 | Gremory Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19029 | Thefis Relic | ★4 | Talent Skill：Effect Trigger Probability +5.0% |
-| 19030 | Thefis Relic | ★4 | Talent Skill：Effect Trigger Probability +7.5% |
-| 19031 | Thefis Relic | ★4 | Talent Skill：Effect Trigger Probability +10.0% |
-| 19032 | Thefis Relic | ★4 | Talent Skill：Effect Trigger Probability +12.5% |
-| 19033 | Skagull Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19034 | Skagull Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19035 | Skagull Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19036 | Skagull Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19037 | Slider Relic | ★4 | Talent Skill：Skill Trigger Probability +4.0% |
-| 19038 | Slider Relic | ★4 | Talent Skill：Skill Trigger Probability +6.0% |
-| 19039 | Slider Relic | ★4 | Talent Skill：Skill Trigger Probability +8.0% |
-| 19040 | Slider Relic | ★4 | Talent Skill：Skill Trigger Probability +10.0% |
-| 19041 | Lilith Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19042 | Lilith Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19043 | Lilith Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19044 | Lilith Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19045 | Utia Relic | ★4 | Talent Skill：Skill Trigger Probability +4.0% |
-| 19046 | Utia Relic | ★4 | Talent Skill：Skill Trigger Probability +6.0% |
-| 19047 | Utia Relic | ★4 | Talent Skill：Skill Trigger Probability +8.0% |
-| 19048 | Utia Relic | ★4 | Talent Skill：Skill Trigger Probability +10.0% |
-| 19049 | Lynf Relic | ★4 | Talent Skill：Healing Coefficient +0.076 |
-| 19050 | Lynf Relic | ★4 | Talent Skill：Healing Coefficient +0.114 |
-| 19051 | Lynf Relic | ★4 | Talent Skill：Healing Coefficient +0.152 |
-| 19052 | Lynf Relic | ★4 | Talent Skill：Healing Coefficient +0.190 |
-| 19053 | Rukia Relic | ★4 | Talent Skill：DMG Dealt Increased +4.6%(Not Affected By Attribute) |
-| 19054 | Rukia Relic | ★4 | Talent Skill：DMG Dealt Increased +6.9%(Not Affected By Attribute) |
-| 19055 | Rukia Relic | ★4 | Talent Skill：DMG Dealt Increased +9.2%(Not Affected By Attribute) |
-| 19056 | Rukia Relic | ★4 | Talent Skill：DMG Dealt Increased +11.5%(Not Affected By Attribute) |
-| 19057 | Angie Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19058 | Angie Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19059 | Angie Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19060 | Angie Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19061 | Bast Relic | ★4 | Talent Skill：Skill Trigger Probability +4.50% |
-| 19062 | Bast Relic | ★4 | Talent Skill：Skill Trigger Probability +6.75% |
-| 19063 | Bast Relic | ★4 | Talent Skill：Skill Trigger Probability +9.00% |
-| 19064 | Bast Relic | ★4 | Talent Skill：Skill Trigger Probability +11.25% |
-| 19065 | Lorelei Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Reduced +4.6%(Not Affected By Attribute) |
-| 19066 | Lorelei Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Reduced +6.9%(Not Affected By Attribute) |
-| 19067 | Lorelei Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Reduced +9.2%(Not Affected By Attribute) |
-| 19068 | Lorelei Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Reduced +11.5%(Not Affected By Attribute) |
-| 19069 | Susabi Relic | ★4 | Talent Skill：Skill Trigger Probability +4.50% |
-| 19070 | Susabi Relic | ★4 | Talent Skill：Skill Trigger Probability +6.75% |
-| 19071 | Susabi Relic | ★4 | Talent Skill：Skill Trigger Probability +9.00% |
-| 19072 | Susabi Relic | ★4 | Talent Skill：Skill Trigger Probability +11.25% |
-| 19073 | Asmodeus Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19074 | Asmodeus Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19075 | Asmodeus Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19076 | Asmodeus Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19077 | Lafayette Relic | ★4 | Talent Skill：Healing Coefficient +0.12 |
-| 19078 | Lafayette Relic | ★4 | Talent Skill：Healing Coefficient +0.18 |
-| 19079 | Lafayette Relic | ★4 | Talent Skill：Healing Coefficient +0.24 |
-| 19080 | Lafayette Relic | ★4 | Talent Skill：Healing Coefficient +0.30 |
-| 19081 | Bonnie Relic | ★4 | Talent Skill：Skill Trigger Probability +4.0% |
-| 19082 | Bonnie Relic | ★4 | Talent Skill：Skill Trigger Probability +6.0% |
-| 19083 | Bonnie Relic | ★4 | Talent Skill：Skill Trigger Probability +8.0% |
-| 19084 | Bonnie Relic | ★4 | Talent Skill：Skill Trigger Probability +10.0% |
-| 19085 | Batory Relic | ★4 | Talent Skill：Pursuit Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
-| 19086 | Batory Relic | ★4 | Talent Skill：Pursuit Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
-| 19087 | Batory Relic | ★4 | Talent Skill：Pursuit Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
-| 19088 | Batory Relic | ★4 | Talent Skill：Pursuit Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
-| 19089 | Duffy Relic | ★4 | Talent Skill：DMG Dealt Increased +6.0%(Not Affected By Attribute) |
-| 19090 | Duffy Relic | ★4 | Talent Skill：DMG Dealt Increased +9.0%(Not Affected By Attribute) |
-| 19091 | Duffy Relic | ★4 | Talent Skill：DMG Dealt Increased +12.0%(Not Affected By Attribute) |
-| 19092 | Duffy Relic | ★4 | Talent Skill：DMG Dealt Increased +15.0%(Not Affected By Attribute) |
-| 19093 | Puona Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19094 | Puona Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19095 | Puona Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19096 | Puona Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19097 | Darby Relic | ★4 | Talent Skill：Skill Trigger Probability +4.00% |
-| 19098 | Darby Relic | ★4 | Talent Skill：Skill Trigger Probability +6.00% |
-| 19099 | Darby Relic | ★4 | Talent Skill：Skill Trigger Probability +8.00% |
-| 19100 | Darby Relic | ★4 | Talent Skill：Skill Trigger Probability +10.00% |
-| 19101 | Luka Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19102 | Luka Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19103 | Luka Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19104 | Luka Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19105 | Nicole Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19106 | Nicole Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19107 | Nicole Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19108 | Nicole Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 19109 | Angie·Sp Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
-| 19110 | Angie·Sp Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
-| 19111 | Angie·Sp Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
-| 19112 | Angie·Sp Relic | ★4 | Talent Skill：Tactical Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
-| 19113 | Puona·Sp Relic | ★4 | Talent Skill：Real DMG Base +2.50(Not Affected By Attribute) |
-| 19114 | Puona·Sp Relic | ★4 | Talent Skill：Real DMG Base +3.75(Not Affected By Attribute) |
-| 19115 | Puona·Sp Relic | ★4 | Talent Skill：Real DMG Base +5.00(Not Affected By Attribute) |
-| 19116 | Puona·Sp Relic | ★4 | Talent Skill：Real DMG Base +6.25(Not Affected By Attribute) |
-| 19117 | Cureka Relic | ★4 | Talent Skill：Skill Trigger Probability +3.50% |
-| 19118 | Cureka Relic | ★4 | Talent Skill：Skill Trigger Probability +5.25% |
-| 19119 | Cureka Relic | ★4 | Talent Skill：Skill Trigger Probability +7.00% |
-| 19120 | Cureka Relic | ★4 | Talent Skill：Skill Trigger Probability +8.75% |
-| 20001 | Saintess Shin Relic | ★5 | Talent Skill：DMG Dealt Reduced +4.6%(Not Affected By Attribute) |
-| 20002 | Saintess Shin Relic | ★5 | Talent Skill：DMG Dealt Reduced +6.9%(Not Affected By Attribute) |
-| 20003 | Saintess Shin Relic | ★5 | Talent Skill：DMG Dealt Reduced +9.2%(Not Affected By Attribute) |
-| 20004 | Saintess Shin Relic | ★5 | Talent Skill：DMG Dealt Reduced +11.5%(Not Affected By Attribute) |
-| 20005 | Saintess Shin Relic | ★5 | Talent Skill：DMG Dealt Reduced +13.8%(Not Affected By Attribute) |
-| 20006 | Cliodna Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20007 | Cliodna Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20008 | Cliodna Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20009 | Cliodna Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20010 | Cliodna Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20011 | Eros Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20012 | Eros Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20013 | Eros Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20014 | Eros Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20015 | Eros Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20016 | Perris Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20017 | Perris Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20018 | Perris Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20019 | Perris Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20020 | Perris Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20021 | Roland Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20022 | Roland Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20023 | Roland Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20024 | Roland Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20025 | Roland Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20026 | SusaMaki Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20027 | SusaMaki Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20028 | SusaMaki Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20029 | SusaMaki Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20030 | SusaMaki Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20031 | Cthugha Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20032 | Cthugha Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20033 | Cthugha Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20034 | Cthugha Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20035 | Cthugha Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20036 | Pomon Relic | ★5 | Talent Skill：Blood Sucking Coefficien +0.12 |
-| 20037 | Pomon Relic | ★5 | Talent Skill：Blood Sucking Coefficien +0.18 |
-| 20038 | Pomon Relic | ★5 | Talent Skill：Blood Sucking Coefficien +0.24 |
-| 20039 | Pomon Relic | ★5 | Talent Skill：Blood Sucking Coefficien +0.30 |
-| 20040 | Pomon Relic | ★5 | Talent Skill：Blood Sucking Coefficien +0.36 |
-| 20041 | Rhea Relic | ★5 | Talent Skill：DMG Taken Reduced +10%(Not Affected By Attribute) |
-| 20042 | Rhea Relic | ★5 | Talent Skill：DMG Taken Reduced +15%(Not Affected By Attribute) |
-| 20043 | Rhea Relic | ★5 | Talent Skill：DMG Taken Reduced +20%(Not Affected By Attribute) |
-| 20044 | Rhea Relic | ★5 | Talent Skill：DMG Taken Reduced +25%(Not Affected By Attribute) |
-| 20045 | Rhea Relic | ★5 | Talent Skill：DMG Taken Reduced +30%(Not Affected By Attribute) |
-| 20046 | Mia Relic | ★5 | Talent Skill：Effect Trigger Probability +7.6% |
-| 20047 | Mia Relic | ★5 | Talent Skill：Effect Trigger Probability +11.4% |
-| 20048 | Mia Relic | ★5 | Talent Skill：Effect Trigger Probability +15.2% |
-| 20049 | Mia Relic | ★5 | Talent Skill：Effect Trigger Probability +19.0% |
-| 20050 | Mia Relic | ★5 | Talent Skill：Effect Trigger Probability +22.8% |
-| 20051 | Vanessa Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20052 | Vanessa Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20053 | Vanessa Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20054 | Vanessa Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20055 | Vanessa Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20056 | Zoe Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20057 | Zoe Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20058 | Zoe Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20059 | Zoe Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20060 | Zoe Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20061 | Iris Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20062 | Iris Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20063 | Iris Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20064 | Iris Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20065 | Iris Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20066 | Utija Relic | ★5 | Talent Skill：DMG Dealt Reduced +3.2%(Not Affected By Attribute) |
-| 20067 | Utija Relic | ★5 | Talent Skill：DMG Dealt Reduced +4.8%(Not Affected By Attribute) |
-| 20068 | Utija Relic | ★5 | Talent Skill：DMG Dealt Reduced +6.4%(Not Affected By Attribute) |
-| 20069 | Utija Relic | ★5 | Talent Skill：DMG Dealt Reduced +8.0%(Not Affected By Attribute) |
-| 20070 | Utija Relic | ★5 | Talent Skill：DMG Dealt Reduced +9.6%(Not Affected By Attribute) |
-| 20071 | Patra Relic | ★5 | Talent Skill：DMG Coefficient +0.10、Real DMG Base +2.4(Not Affected By Attribute) |
-| 20072 | Patra Relic | ★5 | Talent Skill：DMG Coefficient +0.15、Real DMG Base +3.6(Not Affected By Attribute) |
-| 20073 | Patra Relic | ★5 | Talent Skill：DMG Coefficient +0.20、Real DMG Base +4.8(Not Affected By Attribute) |
-| 20074 | Patra Relic | ★5 | Talent Skill：DMG Coefficient +0.25、Real DMG Base +6.0(Not Affected By Attribute) |
-| 20075 | Patra Relic | ★5 | Talent Skill：DMG Coefficient +0.30、Real DMG Base +7.2(Not Affected By Attribute) |
-| 20076 | Saintess Shin·Sp Relic | ★5 | Talent Skill：DMG Coefficient +0.18 |
-| 20077 | Saintess Shin·Sp Relic | ★5 | Talent Skill：DMG Coefficient +0.27 |
-| 20078 | Saintess Shin·Sp Relic | ★5 | Talent Skill：DMG Coefficient +0.36 |
-| 20079 | Saintess Shin·Sp Relic | ★5 | Talent Skill：DMG Coefficient +0.45 |
-| 20080 | Saintess Shin·Sp Relic | ★5 | Talent Skill：DMG Coefficient +0.54 |
-| 20081 | Cliodna·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +7.0% |
-| 20082 | Cliodna·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +10.5% |
-| 20083 | Cliodna·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +14.0% |
-| 20084 | Cliodna·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +17.5% |
-| 20085 | Cliodna·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +21.0% |
-| 20086 | Derifa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20087 | Derifa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20088 | Derifa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20089 | Derifa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20090 | Derifa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20091 | Thefis·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20092 | Thefis·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20093 | Thefis·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20094 | Thefis·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20095 | Thefis·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20096 | Eros·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20097 | Eros·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20098 | Eros·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20099 | Eros·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20100 | Eros·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20101 | Slider·Sp Relic | ★5 | Talent Skill：All Attributes Reduced +2.4%(Not Affected By Attribute) |
-| 20102 | Slider·Sp Relic | ★5 | Talent Skill：All Attributes Reduced +3.6%(Not Affected By Attribute) |
-| 20103 | Slider·Sp Relic | ★5 | Talent Skill：All Attributes Reduced +4.8%(Not Affected By Attribute) |
-| 20104 | Slider·Sp Relic | ★5 | Talent Skill：All Attributes Reduced +6.0%(Not Affected By Attribute) |
-| 20105 | Slider·Sp Relic | ★5 | Talent Skill：All Attributes Reduced +7.2%(Not Affected By Attribute) |
-| 20106 | Mousika Relic | ★5 | Talent Skill：DMG Taken Increased +3.2%(Not Affected By Attribute) |
-| 20107 | Mousika Relic | ★5 | Talent Skill：DMG Taken Increased +4.8%(Not Affected By Attribute) |
-| 20108 | Mousika Relic | ★5 | Talent Skill：DMG Taken Increased +6.4%(Not Affected By Attribute) |
-| 20109 | Mousika Relic | ★5 | Talent Skill：DMG Taken Increased +8.0%(Not Affected By Attribute) |
-| 20110 | Mousika Relic | ★5 | Talent Skill：DMG Taken Increased +9.6%(Not Affected By Attribute) |
-| 20111 | Roland·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +6% |
-| 20112 | Roland·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +9% |
-| 20113 | Roland·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +12% |
-| 20114 | Roland·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +15% |
-| 20115 | Roland·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +18% |
-| 20116 | SusaMaki·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +7.6% |
-| 20117 | SusaMaki·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +11.4% |
-| 20118 | SusaMaki·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +15.2% |
-| 20119 | SusaMaki·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +19.0% |
-| 20120 | SusaMaki·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +22.8% |
-| 20121 | Cthugha·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20122 | Cthugha·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20123 | Cthugha·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20124 | Cthugha·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20125 | Cthugha·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20126 | Susabi·Sp Relic | ★5 | Talent Skill：DMG Taken Increased +4.6%(Not Affected By Attribute) |
-| 20127 | Susabi·Sp Relic | ★5 | Talent Skill：DMG Taken Increased +6.9%(Not Affected By Attribute) |
-| 20128 | Susabi·Sp Relic | ★5 | Talent Skill：DMG Taken Increased +9.2%(Not Affected By Attribute) |
-| 20129 | Susabi·Sp Relic | ★5 | Talent Skill：DMG Taken Increased +11.5%(Not Affected By Attribute) |
-| 20130 | Susabi·Sp Relic | ★5 | Talent Skill：DMG Taken Increased +13.8%(Not Affected By Attribute) |
-| 20131 | Lafayette·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +4.50% |
-| 20132 | Lafayette·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +6.75% |
-| 20133 | Lafayette·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +9.00% |
-| 20134 | Lafayette·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +11.25% |
-| 20135 | Lafayette·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +13.50% |
-| 20136 | Belala Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20137 | Belala Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20138 | Belala Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20139 | Belala Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20140 | Belala Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20141 | Mia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20142 | Mia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20143 | Mia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20144 | Mia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20145 | Mia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20146 | Vanessa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20147 | Vanessa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20148 | Vanessa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20149 | Vanessa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20150 | Vanessa·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20151 | Batory·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20152 | Batory·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20153 | Batory·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20154 | Batory·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20155 | Batory·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20156 | Zoe·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +6.6%(Not Affected By Attribute) |
-| 20157 | Zoe·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +9.9%(Not Affected By Attribute) |
-| 20158 | Zoe·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +13.2%(Not Affected By Attribute) |
-| 20159 | Zoe·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +16.5%(Not Affected By Attribute) |
-| 20160 | Zoe·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +19.8%(Not Affected By Attribute) |
-| 20161 | Duffy·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20162 | Duffy·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20163 | Duffy·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20164 | Duffy·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20165 | Duffy·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20166 | Iris·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20167 | Iris·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20168 | Iris·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20169 | Iris·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20170 | Iris·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20171 | Darby·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20172 | Darby·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20173 | Darby·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20174 | Darby·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20175 | Darby·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20176 | Monccoco Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20177 | Monccoco Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20178 | Monccoco Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20179 | Monccoco Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20180 | Monccoco Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20181 | Synaga Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20182 | Synaga Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20183 | Synaga Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20184 | Synaga Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20185 | Synaga Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20186 | Perris·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +6%(Not Affected By Attribute) |
-| 20187 | Perris·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +9%(Not Affected By Attribute) |
-| 20188 | Perris·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +12%(Not Affected By Attribute) |
-| 20189 | Perris·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +15%(Not Affected By Attribute) |
-| 20190 | Perris·Sp Relic | ★5 | Talent Skill：DMG Dealt Increased +18%(Not Affected By Attribute) |
-| 20191 | Yaya Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20192 | Yaya Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20193 | Yaya Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20194 | Yaya Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20195 | Yaya Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20196 | Utija·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20197 | Utija·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20198 | Utija·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20199 | Utija·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20200 | Utija·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20201 | Utia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20202 | Utia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20203 | Utia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20204 | Utia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20205 | Utia·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20206 | Aguria Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20207 | Aguria Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20208 | Aguria Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20209 | Aguria Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20210 | Aguria Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20211 | Lenna Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20212 | Lenna Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20213 | Lenna Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20214 | Lenna Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20215 | Lenna Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20216 | Satoru Relic | ★5 | Talent Skill：Effect Trigger Probability +4.0% |
-| 20217 | Satoru Relic | ★5 | Talent Skill：Effect Trigger Probability +6.0% |
-| 20218 | Satoru Relic | ★5 | Talent Skill：Effect Trigger Probability +8.0% |
-| 20219 | Satoru Relic | ★5 | Talent Skill：Effect Trigger Probability +10.0% |
-| 20220 | Satoru Relic | ★5 | Talent Skill：Effect Trigger Probability +12.0% |
-| 20221 | Aguria·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20222 | Aguria·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20223 | Aguria·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20224 | Aguria·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20225 | Aguria·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20226 | Thiel Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20227 | Thiel Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20228 | Thiel Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20229 | Thiel Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20230 | Thiel Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20231 | Phila Relic | ★5 | Talent Skill：Effect Trigger Probability +5.50% |
-| 20232 | Phila Relic | ★5 | Talent Skill：Effect Trigger Probability +8.25% |
-| 20233 | Phila Relic | ★5 | Talent Skill：Effect Trigger Probability +11.00% |
-| 20234 | Phila Relic | ★5 | Talent Skill：Effect Trigger Probability +13.75% |
-| 20235 | Phila Relic | ★5 | Talent Skill：Effect Trigger Probability +16.50% |
-| 20236 | orlando Relic | ★5 | Talent Skill：Effect Trigger Probability +5.50% |
-| 20237 | orlando Relic | ★5 | Talent Skill：Effect Trigger Probability +8.25% |
-| 20238 | orlando Relic | ★5 | Talent Skill：Effect Trigger Probability +11.00% |
-| 20239 | orlando Relic | ★5 | Talent Skill：Effect Trigger Probability +13.75% |
-| 20240 | orlando Relic | ★5 | Talent Skill：Effect Trigger Probability +16.50% |
-| 20241 | Shady Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20242 | Shady Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20243 | Shady Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20244 | Shady Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20245 | Shady Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20246 | Bettina Relic | ★5 | Talent Skill：DMG Dealt Increased +6.6%(Not Affected By Attribute) |
-| 20247 | Bettina Relic | ★5 | Talent Skill：DMG Dealt Increased +9.9%(Not Affected By Attribute) |
-| 20248 | Bettina Relic | ★5 | Talent Skill：DMG Dealt Increased +13.2%(Not Affected By Attribute) |
-| 20249 | Bettina Relic | ★5 | Talent Skill：DMG Dealt Increased +16.5%(Not Affected By Attribute) |
-| 20250 | Bettina Relic | ★5 | Talent Skill：DMG Dealt Increased +19.8%(Not Affected By Attribute) |
-| 20251 | Madeline Relic | ★5 | Talent Skill：Real DMG Base +3.6(Not Affected By Attribute) |
-| 20252 | Madeline Relic | ★5 | Talent Skill：Real DMG Base +5.4(Not Affected By Attribute) |
-| 20253 | Madeline Relic | ★5 | Talent Skill：Real DMG Base +7.2(Not Affected By Attribute) |
-| 20254 | Madeline Relic | ★5 | Talent Skill：Real DMG Base +9.0(Not Affected By Attribute) |
-| 20255 | Madeline Relic | ★5 | Talent Skill：Real DMG Base +10.8(Not Affected By Attribute) |
-| 20256 | Hana Relic | ★5 | Talent Skill：Skill Trigger Probability +4.50% |
-| 20257 | Hana Relic | ★5 | Talent Skill：Skill Trigger Probability +6.75% |
-| 20258 | Hana Relic | ★5 | Talent Skill：Skill Trigger Probability +9.00% |
-| 20259 | Hana Relic | ★5 | Talent Skill：Skill Trigger Probability +11.25% |
-| 20260 | Hana Relic | ★5 | Talent Skill：Skill Trigger Probability +13.50% |
-| 20261 | Eurella Relic | ★5 | Talent Skill：Effect Trigger Probability +3.6% |
-| 20262 | Eurella Relic | ★5 | Talent Skill：Effect Trigger Probability +5.4% |
-| 20263 | Eurella Relic | ★5 | Talent Skill：Effect Trigger Probability +7.2% |
-| 20264 | Eurella Relic | ★5 | Talent Skill：Effect Trigger Probability +9.0% |
-| 20265 | Eurella Relic | ★5 | Talent Skill：Effect Trigger Probability +10.8% |
-| 20266 | Dolly Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20267 | Dolly Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20268 | Dolly Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20269 | Dolly Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20270 | Dolly Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20271 | Livia Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20272 | Livia Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20273 | Livia Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20274 | Livia Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20275 | Livia Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20276 | Serena Relic | ★5 | Talent Skill：All Attributes Reduced +2.4%(Not Affected By Attribute) |
-| 20277 | Serena Relic | ★5 | Talent Skill：All Attributes Reduced +3.6%(Not Affected By Attribute) |
-| 20278 | Serena Relic | ★5 | Talent Skill：All Attributes Reduced +4.8%(Not Affected By Attribute) |
-| 20279 | Serena Relic | ★5 | Talent Skill：All Attributes Reduced +6.0%(Not Affected By Attribute) |
-| 20280 | Serena Relic | ★5 | Talent Skill：All Attributes Reduced +7.2%(Not Affected By Attribute) |
-| 20281 | Luna Relic | ★5 | Talent Skill：Reduce Tactical Skill DMG received +4.6%(Not Affected By Attribute) |
-| 20282 | Luna Relic | ★5 | Talent Skill：Reduce Tactical Skill DMG received +6.9%(Not Affected By Attribute) |
-| 20283 | Luna Relic | ★5 | Talent Skill：Reduce Tactical Skill DMG received +9.2%(Not Affected By Attribute) |
-| 20284 | Luna Relic | ★5 | Talent Skill：Reduce Tactical Skill DMG received +11.5%(Not Affected By Attribute) |
-| 20285 | Luna Relic | ★5 | Talent Skill：Reduce Tactical Skill DMG received +13.8%(Not Affected By Attribute) |
-| 20286 | Yao Lin Relic | ★5 | Talent Skill：Tactical Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
-| 20287 | Yao Lin Relic | ★5 | Talent Skill：Tactical Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
-| 20288 | Yao Lin Relic | ★5 | Talent Skill：Tactical Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
-| 20289 | Yao Lin Relic | ★5 | Talent Skill：Tactical Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
-| 20290 | Yao Lin Relic | ★5 | Talent Skill：Tactical Skill DMG Dealt Increased +13.8%(Not Affected By Attribute) |
-| 20291 | Lumi Relic | ★5 | Talent Skill：All Pursuit Skill Probabilities Increased +1.0%(Not Affected By Attribute) |
-| 20292 | Lumi Relic | ★5 | Talent Skill：All Pursuit Skill Probabilities Increased +1.5%(Not Affected By Attribute) |
-| 20293 | Lumi Relic | ★5 | Talent Skill：All Pursuit Skill Probabilities Increased +2.0%(Not Affected By Attribute) |
-| 20294 | Lumi Relic | ★5 | Talent Skill：All Pursuit Skill Probabilities Increased +2.5%(Not Affected By Attribute) |
-| 20295 | Lumi Relic | ★5 | Talent Skill：All Pursuit Skill Probabilities Increased +3.0%(Not Affected By Attribute) |
-| 20296 | Sera Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20297 | Sera Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20298 | Sera Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20299 | Sera Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20300 | Sera Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20301 | Faye Relic | ★5 | Talent Skill：Effect Trigger Probability +7.6% |
-| 20302 | Faye Relic | ★5 | Talent Skill：Effect Trigger Probability +11.4% |
-| 20303 | Faye Relic | ★5 | Talent Skill：Effect Trigger Probability +15.2% |
-| 20304 | Faye Relic | ★5 | Talent Skill：Effect Trigger Probability +19.0% |
-| 20305 | Faye Relic | ★5 | Talent Skill：Effect Trigger Probability +22.8% |
-| 20306 | Nyx Relic | ★5 | Talent Skill：Skill Trigger Probability +4.0% |
-| 20307 | Nyx Relic | ★5 | Talent Skill：Skill Trigger Probability +6.0% |
-| 20308 | Nyx Relic | ★5 | Talent Skill：Skill Trigger Probability +8.0% |
-| 20309 | Nyx Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20310 | Nyx Relic | ★5 | Talent Skill：Skill Trigger Probability +12.0% |
-| 20311 | Niya Relic | ★5 | Talent Skill：Skill Trigger Probability +7.6% |
-| 20312 | Niya Relic | ★5 | Talent Skill：Skill Trigger Probability +11.4% |
-| 20313 | Niya Relic | ★5 | Talent Skill：Skill Trigger Probability +15.2% |
-| 20314 | Niya Relic | ★5 | Talent Skill：Skill Trigger Probability +19.0% |
-| 20315 | Niya Relic | ★5 | Talent Skill：Skill Trigger Probability +22.8% |
-| 20316 | Isabelle Relic | ★5 | Talent Skill：Skill Trigger Probability +5.0% |
-| 20317 | Isabelle Relic | ★5 | Talent Skill：Skill Trigger Probability +7.5% |
-| 20318 | Isabelle Relic | ★5 | Talent Skill：Skill Trigger Probability +10.0% |
-| 20319 | Isabelle Relic | ★5 | Talent Skill：Skill Trigger Probability +12.5% |
-| 20320 | Isabelle Relic | ★5 | Talent Skill：Skill Trigger Probability +15.0% |
-| 20321 | Crolos·Sp Relic | ★5 | Talent Skill：Healing Coefficient +0.090 |
-| 20322 | Crolos·Sp Relic | ★5 | Talent Skill：Healing Coefficient +0.135 |
-| 20323 | Crolos·Sp Relic | ★5 | Talent Skill：Healing Coefficient +0.180 |
-| 20324 | Crolos·Sp Relic | ★5 | Talent Skill：Healing Coefficient +0.225 |
-| 20325 | Crolos·Sp Relic | ★5 | Talent Skill：Healing Coefficient +0.270 |
-| 20326 | Nyx·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +5.00% |
-| 20327 | Nyx·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +7.50% |
-| 20328 | Nyx·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +10.00% |
-| 20329 | Nyx·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +12.50% |
-| 20330 | Nyx·Sp Relic | ★5 | Talent Skill：Skill Trigger Probability +15.00% |
-| 20331 | Faye·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +7.6% |
-| 20332 | Faye·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +11.4% |
-| 20333 | Faye·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +15.2% |
-| 20334 | Faye·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +19.0% |
-| 20335 | Faye·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +22.8% |
-| 20336 | Yaya·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +7.6% |
-| 20337 | Yaya·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +11.4% |
-| 20338 | Yaya·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +15.2% |
-| 20339 | Yaya·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +19.0% |
-| 20340 | Yaya·Sp Relic | ★5 | Talent Skill：Effect Trigger Probability +22.8% |
+| 19001 | Crolos Relic | ★4 | Talent Skill: Effect Trigger Probability +6% |
+| 19002 | Crolos Relic | ★4 | Talent Skill: Effect Trigger Probability +9% |
+| 19003 | Crolos Relic | ★4 | Talent Skill: Effect Trigger Probability +12% |
+| 19004 | Crolos Relic | ★4 | Talent Skill: Effect Trigger Probability +15% |
+| 19005 | Bellona Relic | ★4 | Talent Skill: DMG Taken Reduced +3.8%(Not Affected By Attribute) |
+| 19006 | Bellona Relic | ★4 | Talent Skill: DMG Taken Reduced +5.7%(Not Affected By Attribute) |
+| 19007 | Bellona Relic | ★4 | Talent Skill: DMG Taken Reduced +7.6%(Not Affected By Attribute) |
+| 19008 | Bellona Relic | ★4 | Talent Skill: DMG Taken Reduced +9.5%(Not Affected By Attribute) |
+| 19009 | Derifa Relic | ★4 | Talent Skill: DMG Dealt Increased +3.8%(Not Affected By Attribute) |
+| 19010 | Derifa Relic | ★4 | Talent Skill: DMG Dealt Increased +5.7%(Not Affected By Attribute) |
+| 19011 | Derifa Relic | ★4 | Talent Skill: DMG Dealt Increased +7.6%(Not Affected By Attribute) |
+| 19012 | Derifa Relic | ★4 | Talent Skill: DMG Dealt Increased +9.5%(Not Affected By Attribute) |
+| 19013 | Degunnr Relic | ★4 | Talent Skill: Increase All Attributes +4.2(Not Affected By Attribute) |
+| 19014 | Degunnr Relic | ★4 | Talent Skill: Increase All Attributes +6.3(Not Affected By Attribute) |
+| 19015 | Degunnr Relic | ★4 | Talent Skill: Increase All Attributes +8.4(Not Affected By Attribute) |
+| 19016 | Degunnr Relic | ★4 | Talent Skill: Increase All Attributes +10.5(Not Affected By Attribute) |
+| 19017 | Ninianne Relic | ★4 | Talent Skill: Healing Coefficient +0.133 |
+| 19018 | Ninianne Relic | ★4 | Talent Skill: Healing Coefficient +0.200 |
+| 19019 | Ninianne Relic | ★4 | Talent Skill: Healing Coefficient +0.266 |
+| 19020 | Ninianne Relic | ★4 | Talent Skill: Healing Coefficient +0.332 |
+| 19021 | Vivian Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19022 | Vivian Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19023 | Vivian Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19024 | Vivian Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19025 | Gremory Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19026 | Gremory Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19027 | Gremory Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19028 | Gremory Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19029 | Thefis Relic | ★4 | Talent Skill: Effect Trigger Probability +5.0% |
+| 19030 | Thefis Relic | ★4 | Talent Skill: Effect Trigger Probability +7.5% |
+| 19031 | Thefis Relic | ★4 | Talent Skill: Effect Trigger Probability +10.0% |
+| 19032 | Thefis Relic | ★4 | Talent Skill: Effect Trigger Probability +12.5% |
+| 19033 | Skagull Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19034 | Skagull Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19035 | Skagull Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19036 | Skagull Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19037 | Slider Relic | ★4 | Talent Skill: Skill Trigger Probability +4.0% |
+| 19038 | Slider Relic | ★4 | Talent Skill: Skill Trigger Probability +6.0% |
+| 19039 | Slider Relic | ★4 | Talent Skill: Skill Trigger Probability +8.0% |
+| 19040 | Slider Relic | ★4 | Talent Skill: Skill Trigger Probability +10.0% |
+| 19041 | Lilith Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19042 | Lilith Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19043 | Lilith Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19044 | Lilith Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19045 | Utia Relic | ★4 | Talent Skill: Skill Trigger Probability +4.0% |
+| 19046 | Utia Relic | ★4 | Talent Skill: Skill Trigger Probability +6.0% |
+| 19047 | Utia Relic | ★4 | Talent Skill: Skill Trigger Probability +8.0% |
+| 19048 | Utia Relic | ★4 | Talent Skill: Skill Trigger Probability +10.0% |
+| 19049 | Lynf Relic | ★4 | Talent Skill: Healing Coefficient +0.076 |
+| 19050 | Lynf Relic | ★4 | Talent Skill: Healing Coefficient +0.114 |
+| 19051 | Lynf Relic | ★4 | Talent Skill: Healing Coefficient +0.152 |
+| 19052 | Lynf Relic | ★4 | Talent Skill: Healing Coefficient +0.190 |
+| 19053 | Rukia Relic | ★4 | Talent Skill: DMG Dealt Increased +4.6%(Not Affected By Attribute) |
+| 19054 | Rukia Relic | ★4 | Talent Skill: DMG Dealt Increased +6.9%(Not Affected By Attribute) |
+| 19055 | Rukia Relic | ★4 | Talent Skill: DMG Dealt Increased +9.2%(Not Affected By Attribute) |
+| 19056 | Rukia Relic | ★4 | Talent Skill: DMG Dealt Increased +11.5%(Not Affected By Attribute) |
+| 19057 | Angie Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19058 | Angie Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19059 | Angie Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19060 | Angie Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19061 | Bast Relic | ★4 | Talent Skill: Skill Trigger Probability +4.50% |
+| 19062 | Bast Relic | ★4 | Talent Skill: Skill Trigger Probability +6.75% |
+| 19063 | Bast Relic | ★4 | Talent Skill: Skill Trigger Probability +9.00% |
+| 19064 | Bast Relic | ★4 | Talent Skill: Skill Trigger Probability +11.25% |
+| 19065 | Lorelei Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Reduced +4.6%(Not Affected By Attribute) |
+| 19066 | Lorelei Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Reduced +6.9%(Not Affected By Attribute) |
+| 19067 | Lorelei Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Reduced +9.2%(Not Affected By Attribute) |
+| 19068 | Lorelei Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Reduced +11.5%(Not Affected By Attribute) |
+| 19069 | Susabi Relic | ★4 | Talent Skill: Skill Trigger Probability +4.50% |
+| 19070 | Susabi Relic | ★4 | Talent Skill: Skill Trigger Probability +6.75% |
+| 19071 | Susabi Relic | ★4 | Talent Skill: Skill Trigger Probability +9.00% |
+| 19072 | Susabi Relic | ★4 | Talent Skill: Skill Trigger Probability +11.25% |
+| 19073 | Asmodeus Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19074 | Asmodeus Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19075 | Asmodeus Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19076 | Asmodeus Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19077 | Lafayette Relic | ★4 | Talent Skill: Healing Coefficient +0.12 |
+| 19078 | Lafayette Relic | ★4 | Talent Skill: Healing Coefficient +0.18 |
+| 19079 | Lafayette Relic | ★4 | Talent Skill: Healing Coefficient +0.24 |
+| 19080 | Lafayette Relic | ★4 | Talent Skill: Healing Coefficient +0.30 |
+| 19081 | Bonnie Relic | ★4 | Talent Skill: Skill Trigger Probability +4.0% |
+| 19082 | Bonnie Relic | ★4 | Talent Skill: Skill Trigger Probability +6.0% |
+| 19083 | Bonnie Relic | ★4 | Talent Skill: Skill Trigger Probability +8.0% |
+| 19084 | Bonnie Relic | ★4 | Talent Skill: Skill Trigger Probability +10.0% |
+| 19085 | Batory Relic | ★4 | Talent Skill: Pursuit Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
+| 19086 | Batory Relic | ★4 | Talent Skill: Pursuit Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
+| 19087 | Batory Relic | ★4 | Talent Skill: Pursuit Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
+| 19088 | Batory Relic | ★4 | Talent Skill: Pursuit Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
+| 19089 | Duffy Relic | ★4 | Talent Skill: DMG Dealt Increased +6.0%(Not Affected By Attribute) |
+| 19090 | Duffy Relic | ★4 | Talent Skill: DMG Dealt Increased +9.0%(Not Affected By Attribute) |
+| 19091 | Duffy Relic | ★4 | Talent Skill: DMG Dealt Increased +12.0%(Not Affected By Attribute) |
+| 19092 | Duffy Relic | ★4 | Talent Skill: DMG Dealt Increased +15.0%(Not Affected By Attribute) |
+| 19093 | Puona Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19094 | Puona Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19095 | Puona Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19096 | Puona Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19097 | Darby Relic | ★4 | Talent Skill: Skill Trigger Probability +4.00% |
+| 19098 | Darby Relic | ★4 | Talent Skill: Skill Trigger Probability +6.00% |
+| 19099 | Darby Relic | ★4 | Talent Skill: Skill Trigger Probability +8.00% |
+| 19100 | Darby Relic | ★4 | Talent Skill: Skill Trigger Probability +10.00% |
+| 19101 | Luka Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19102 | Luka Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19103 | Luka Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19104 | Luka Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19105 | Nicole Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19106 | Nicole Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19107 | Nicole Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19108 | Nicole Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 19109 | Angie·Sp Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
+| 19110 | Angie·Sp Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
+| 19111 | Angie·Sp Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
+| 19112 | Angie·Sp Relic | ★4 | Talent Skill: Tactical Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
+| 19113 | Puona·Sp Relic | ★4 | Talent Skill: Real DMG Base +2.50(Not Affected By Attribute) |
+| 19114 | Puona·Sp Relic | ★4 | Talent Skill: Real DMG Base +3.75(Not Affected By Attribute) |
+| 19115 | Puona·Sp Relic | ★4 | Talent Skill: Real DMG Base +5.00(Not Affected By Attribute) |
+| 19116 | Puona·Sp Relic | ★4 | Talent Skill: Real DMG Base +6.25(Not Affected By Attribute) |
+| 19117 | Cureka Relic | ★4 | Talent Skill: Skill Trigger Probability +3.50% |
+| 19118 | Cureka Relic | ★4 | Talent Skill: Skill Trigger Probability +5.25% |
+| 19119 | Cureka Relic | ★4 | Talent Skill: Skill Trigger Probability +7.00% |
+| 19120 | Cureka Relic | ★4 | Talent Skill: Skill Trigger Probability +8.75% |
+| 20001 | Saintess Shin Relic | ★5 | Talent Skill: DMG Dealt Reduced +4.6%(Not Affected By Attribute) |
+| 20002 | Saintess Shin Relic | ★5 | Talent Skill: DMG Dealt Reduced +6.9%(Not Affected By Attribute) |
+| 20003 | Saintess Shin Relic | ★5 | Talent Skill: DMG Dealt Reduced +9.2%(Not Affected By Attribute) |
+| 20004 | Saintess Shin Relic | ★5 | Talent Skill: DMG Dealt Reduced +11.5%(Not Affected By Attribute) |
+| 20005 | Saintess Shin Relic | ★5 | Talent Skill: DMG Dealt Reduced +13.8%(Not Affected By Attribute) |
+| 20006 | Cliodna Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20007 | Cliodna Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20008 | Cliodna Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20009 | Cliodna Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20010 | Cliodna Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20011 | Eros Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20012 | Eros Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20013 | Eros Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20014 | Eros Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20015 | Eros Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20016 | Perris Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20017 | Perris Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20018 | Perris Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20019 | Perris Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20020 | Perris Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20021 | Roland Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20022 | Roland Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20023 | Roland Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20024 | Roland Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20025 | Roland Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20026 | SusaMaki Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20027 | SusaMaki Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20028 | SusaMaki Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20029 | SusaMaki Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20030 | SusaMaki Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20031 | Cthugha Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20032 | Cthugha Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20033 | Cthugha Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20034 | Cthugha Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20035 | Cthugha Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20036 | Pomon Relic | ★5 | Talent Skill: Blood Sucking Coefficien +0.12 |
+| 20037 | Pomon Relic | ★5 | Talent Skill: Blood Sucking Coefficien +0.18 |
+| 20038 | Pomon Relic | ★5 | Talent Skill: Blood Sucking Coefficien +0.24 |
+| 20039 | Pomon Relic | ★5 | Talent Skill: Blood Sucking Coefficien +0.30 |
+| 20040 | Pomon Relic | ★5 | Talent Skill: Blood Sucking Coefficien +0.36 |
+| 20041 | Rhea Relic | ★5 | Talent Skill: DMG Taken Reduced +10%(Not Affected By Attribute) |
+| 20042 | Rhea Relic | ★5 | Talent Skill: DMG Taken Reduced +15%(Not Affected By Attribute) |
+| 20043 | Rhea Relic | ★5 | Talent Skill: DMG Taken Reduced +20%(Not Affected By Attribute) |
+| 20044 | Rhea Relic | ★5 | Talent Skill: DMG Taken Reduced +25%(Not Affected By Attribute) |
+| 20045 | Rhea Relic | ★5 | Talent Skill: DMG Taken Reduced +30%(Not Affected By Attribute) |
+| 20046 | Mia Relic | ★5 | Talent Skill: Effect Trigger Probability +7.6% |
+| 20047 | Mia Relic | ★5 | Talent Skill: Effect Trigger Probability +11.4% |
+| 20048 | Mia Relic | ★5 | Talent Skill: Effect Trigger Probability +15.2% |
+| 20049 | Mia Relic | ★5 | Talent Skill: Effect Trigger Probability +19.0% |
+| 20050 | Mia Relic | ★5 | Talent Skill: Effect Trigger Probability +22.8% |
+| 20051 | Vanessa Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20052 | Vanessa Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20053 | Vanessa Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20054 | Vanessa Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20055 | Vanessa Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20056 | Zoe Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20057 | Zoe Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20058 | Zoe Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20059 | Zoe Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20060 | Zoe Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20061 | Iris Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20062 | Iris Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20063 | Iris Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20064 | Iris Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20065 | Iris Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20066 | Utija Relic | ★5 | Talent Skill: DMG Dealt Reduced +3.2%(Not Affected By Attribute) |
+| 20067 | Utija Relic | ★5 | Talent Skill: DMG Dealt Reduced +4.8%(Not Affected By Attribute) |
+| 20068 | Utija Relic | ★5 | Talent Skill: DMG Dealt Reduced +6.4%(Not Affected By Attribute) |
+| 20069 | Utija Relic | ★5 | Talent Skill: DMG Dealt Reduced +8.0%(Not Affected By Attribute) |
+| 20070 | Utija Relic | ★5 | Talent Skill: DMG Dealt Reduced +9.6%(Not Affected By Attribute) |
+| 20071 | Patra Relic | ★5 | Talent Skill: DMG Coefficient +0.10, Real DMG Base +2.4(Not Affected By Attribute) |
+| 20072 | Patra Relic | ★5 | Talent Skill: DMG Coefficient +0.15, Real DMG Base +3.6(Not Affected By Attribute) |
+| 20073 | Patra Relic | ★5 | Talent Skill: DMG Coefficient +0.20, Real DMG Base +4.8(Not Affected By Attribute) |
+| 20074 | Patra Relic | ★5 | Talent Skill: DMG Coefficient +0.25, Real DMG Base +6.0(Not Affected By Attribute) |
+| 20075 | Patra Relic | ★5 | Talent Skill: DMG Coefficient +0.30, Real DMG Base +7.2(Not Affected By Attribute) |
+| 20076 | Saintess Shin·Sp Relic | ★5 | Talent Skill: DMG Coefficient +0.18 |
+| 20077 | Saintess Shin·Sp Relic | ★5 | Talent Skill: DMG Coefficient +0.27 |
+| 20078 | Saintess Shin·Sp Relic | ★5 | Talent Skill: DMG Coefficient +0.36 |
+| 20079 | Saintess Shin·Sp Relic | ★5 | Talent Skill: DMG Coefficient +0.45 |
+| 20080 | Saintess Shin·Sp Relic | ★5 | Talent Skill: DMG Coefficient +0.54 |
+| 20081 | Cliodna·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +7.0% |
+| 20082 | Cliodna·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +10.5% |
+| 20083 | Cliodna·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +14.0% |
+| 20084 | Cliodna·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +17.5% |
+| 20085 | Cliodna·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +21.0% |
+| 20086 | Derifa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20087 | Derifa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20088 | Derifa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20089 | Derifa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20090 | Derifa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20091 | Thefis·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20092 | Thefis·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20093 | Thefis·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20094 | Thefis·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20095 | Thefis·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20096 | Eros·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20097 | Eros·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20098 | Eros·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20099 | Eros·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20100 | Eros·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20101 | Slider·Sp Relic | ★5 | Talent Skill: All Attributes Reduced +2.4%(Not Affected By Attribute) |
+| 20102 | Slider·Sp Relic | ★5 | Talent Skill: All Attributes Reduced +3.6%(Not Affected By Attribute) |
+| 20103 | Slider·Sp Relic | ★5 | Talent Skill: All Attributes Reduced +4.8%(Not Affected By Attribute) |
+| 20104 | Slider·Sp Relic | ★5 | Talent Skill: All Attributes Reduced +6.0%(Not Affected By Attribute) |
+| 20105 | Slider·Sp Relic | ★5 | Talent Skill: All Attributes Reduced +7.2%(Not Affected By Attribute) |
+| 20106 | Mousika Relic | ★5 | Talent Skill: DMG Taken Increased +3.2%(Not Affected By Attribute) |
+| 20107 | Mousika Relic | ★5 | Talent Skill: DMG Taken Increased +4.8%(Not Affected By Attribute) |
+| 20108 | Mousika Relic | ★5 | Talent Skill: DMG Taken Increased +6.4%(Not Affected By Attribute) |
+| 20109 | Mousika Relic | ★5 | Talent Skill: DMG Taken Increased +8.0%(Not Affected By Attribute) |
+| 20110 | Mousika Relic | ★5 | Talent Skill: DMG Taken Increased +9.6%(Not Affected By Attribute) |
+| 20111 | Roland·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +6% |
+| 20112 | Roland·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +9% |
+| 20113 | Roland·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +12% |
+| 20114 | Roland·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +15% |
+| 20115 | Roland·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +18% |
+| 20116 | SusaMaki·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +7.6% |
+| 20117 | SusaMaki·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +11.4% |
+| 20118 | SusaMaki·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +15.2% |
+| 20119 | SusaMaki·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +19.0% |
+| 20120 | SusaMaki·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +22.8% |
+| 20121 | Cthugha·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20122 | Cthugha·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20123 | Cthugha·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20124 | Cthugha·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20125 | Cthugha·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20126 | Susabi·Sp Relic | ★5 | Talent Skill: DMG Taken Increased +4.6%(Not Affected By Attribute) |
+| 20127 | Susabi·Sp Relic | ★5 | Talent Skill: DMG Taken Increased +6.9%(Not Affected By Attribute) |
+| 20128 | Susabi·Sp Relic | ★5 | Talent Skill: DMG Taken Increased +9.2%(Not Affected By Attribute) |
+| 20129 | Susabi·Sp Relic | ★5 | Talent Skill: DMG Taken Increased +11.5%(Not Affected By Attribute) |
+| 20130 | Susabi·Sp Relic | ★5 | Talent Skill: DMG Taken Increased +13.8%(Not Affected By Attribute) |
+| 20131 | Lafayette·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +4.50% |
+| 20132 | Lafayette·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +6.75% |
+| 20133 | Lafayette·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +9.00% |
+| 20134 | Lafayette·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +11.25% |
+| 20135 | Lafayette·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +13.50% |
+| 20136 | Belala Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20137 | Belala Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20138 | Belala Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20139 | Belala Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20140 | Belala Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20141 | Mia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20142 | Mia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20143 | Mia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20144 | Mia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20145 | Mia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20146 | Vanessa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20147 | Vanessa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20148 | Vanessa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20149 | Vanessa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20150 | Vanessa·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20151 | Batory·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20152 | Batory·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20153 | Batory·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20154 | Batory·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20155 | Batory·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20156 | Zoe·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +6.6%(Not Affected By Attribute) |
+| 20157 | Zoe·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +9.9%(Not Affected By Attribute) |
+| 20158 | Zoe·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +13.2%(Not Affected By Attribute) |
+| 20159 | Zoe·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +16.5%(Not Affected By Attribute) |
+| 20160 | Zoe·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +19.8%(Not Affected By Attribute) |
+| 20161 | Duffy·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20162 | Duffy·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20163 | Duffy·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20164 | Duffy·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20165 | Duffy·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20166 | Iris·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20167 | Iris·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20168 | Iris·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20169 | Iris·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20170 | Iris·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20171 | Darby·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20172 | Darby·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20173 | Darby·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20174 | Darby·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20175 | Darby·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20176 | Monccoco Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20177 | Monccoco Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20178 | Monccoco Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20179 | Monccoco Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20180 | Monccoco Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20181 | Synaga Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20182 | Synaga Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20183 | Synaga Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20184 | Synaga Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20185 | Synaga Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20186 | Perris·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +6%(Not Affected By Attribute) |
+| 20187 | Perris·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +9%(Not Affected By Attribute) |
+| 20188 | Perris·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +12%(Not Affected By Attribute) |
+| 20189 | Perris·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +15%(Not Affected By Attribute) |
+| 20190 | Perris·Sp Relic | ★5 | Talent Skill: DMG Dealt Increased +18%(Not Affected By Attribute) |
+| 20191 | Yaya Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20192 | Yaya Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20193 | Yaya Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20194 | Yaya Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20195 | Yaya Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20196 | Utija·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20197 | Utija·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20198 | Utija·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20199 | Utija·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20200 | Utija·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20201 | Utia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20202 | Utia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20203 | Utia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20204 | Utia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20205 | Utia·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20206 | Aguria Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20207 | Aguria Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20208 | Aguria Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20209 | Aguria Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20210 | Aguria Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20211 | Lenna Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20212 | Lenna Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20213 | Lenna Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20214 | Lenna Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20215 | Lenna Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20216 | Satoru Relic | ★5 | Talent Skill: Effect Trigger Probability +4.0% |
+| 20217 | Satoru Relic | ★5 | Talent Skill: Effect Trigger Probability +6.0% |
+| 20218 | Satoru Relic | ★5 | Talent Skill: Effect Trigger Probability +8.0% |
+| 20219 | Satoru Relic | ★5 | Talent Skill: Effect Trigger Probability +10.0% |
+| 20220 | Satoru Relic | ★5 | Talent Skill: Effect Trigger Probability +12.0% |
+| 20221 | Aguria·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20222 | Aguria·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20223 | Aguria·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20224 | Aguria·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20225 | Aguria·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20226 | Thiel Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20227 | Thiel Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20228 | Thiel Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20229 | Thiel Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20230 | Thiel Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20231 | Phila Relic | ★5 | Talent Skill: Effect Trigger Probability +5.50% |
+| 20232 | Phila Relic | ★5 | Talent Skill: Effect Trigger Probability +8.25% |
+| 20233 | Phila Relic | ★5 | Talent Skill: Effect Trigger Probability +11.00% |
+| 20234 | Phila Relic | ★5 | Talent Skill: Effect Trigger Probability +13.75% |
+| 20235 | Phila Relic | ★5 | Talent Skill: Effect Trigger Probability +16.50% |
+| 20236 | orlando Relic | ★5 | Talent Skill: Effect Trigger Probability +5.50% |
+| 20237 | orlando Relic | ★5 | Talent Skill: Effect Trigger Probability +8.25% |
+| 20238 | orlando Relic | ★5 | Talent Skill: Effect Trigger Probability +11.00% |
+| 20239 | orlando Relic | ★5 | Talent Skill: Effect Trigger Probability +13.75% |
+| 20240 | orlando Relic | ★5 | Talent Skill: Effect Trigger Probability +16.50% |
+| 20241 | Shady Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20242 | Shady Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20243 | Shady Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20244 | Shady Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20245 | Shady Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20246 | Bettina Relic | ★5 | Talent Skill: DMG Dealt Increased +6.6%(Not Affected By Attribute) |
+| 20247 | Bettina Relic | ★5 | Talent Skill: DMG Dealt Increased +9.9%(Not Affected By Attribute) |
+| 20248 | Bettina Relic | ★5 | Talent Skill: DMG Dealt Increased +13.2%(Not Affected By Attribute) |
+| 20249 | Bettina Relic | ★5 | Talent Skill: DMG Dealt Increased +16.5%(Not Affected By Attribute) |
+| 20250 | Bettina Relic | ★5 | Talent Skill: DMG Dealt Increased +19.8%(Not Affected By Attribute) |
+| 20251 | Madeline Relic | ★5 | Talent Skill: Real DMG Base +3.6(Not Affected By Attribute) |
+| 20252 | Madeline Relic | ★5 | Talent Skill: Real DMG Base +5.4(Not Affected By Attribute) |
+| 20253 | Madeline Relic | ★5 | Talent Skill: Real DMG Base +7.2(Not Affected By Attribute) |
+| 20254 | Madeline Relic | ★5 | Talent Skill: Real DMG Base +9.0(Not Affected By Attribute) |
+| 20255 | Madeline Relic | ★5 | Talent Skill: Real DMG Base +10.8(Not Affected By Attribute) |
+| 20256 | Hana Relic | ★5 | Talent Skill: Skill Trigger Probability +4.50% |
+| 20257 | Hana Relic | ★5 | Talent Skill: Skill Trigger Probability +6.75% |
+| 20258 | Hana Relic | ★5 | Talent Skill: Skill Trigger Probability +9.00% |
+| 20259 | Hana Relic | ★5 | Talent Skill: Skill Trigger Probability +11.25% |
+| 20260 | Hana Relic | ★5 | Talent Skill: Skill Trigger Probability +13.50% |
+| 20261 | Eurella Relic | ★5 | Talent Skill: Effect Trigger Probability +3.6% |
+| 20262 | Eurella Relic | ★5 | Talent Skill: Effect Trigger Probability +5.4% |
+| 20263 | Eurella Relic | ★5 | Talent Skill: Effect Trigger Probability +7.2% |
+| 20264 | Eurella Relic | ★5 | Talent Skill: Effect Trigger Probability +9.0% |
+| 20265 | Eurella Relic | ★5 | Talent Skill: Effect Trigger Probability +10.8% |
+| 20266 | Dolly Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20267 | Dolly Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20268 | Dolly Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20269 | Dolly Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20270 | Dolly Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20271 | Livia Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20272 | Livia Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20273 | Livia Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20274 | Livia Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20275 | Livia Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20276 | Serena Relic | ★5 | Talent Skill: All Attributes Reduced +2.4%(Not Affected By Attribute) |
+| 20277 | Serena Relic | ★5 | Talent Skill: All Attributes Reduced +3.6%(Not Affected By Attribute) |
+| 20278 | Serena Relic | ★5 | Talent Skill: All Attributes Reduced +4.8%(Not Affected By Attribute) |
+| 20279 | Serena Relic | ★5 | Talent Skill: All Attributes Reduced +6.0%(Not Affected By Attribute) |
+| 20280 | Serena Relic | ★5 | Talent Skill: All Attributes Reduced +7.2%(Not Affected By Attribute) |
+| 20281 | Luna Relic | ★5 | Talent Skill: Reduce Tactical Skill DMG received +4.6%(Not Affected By Attribute) |
+| 20282 | Luna Relic | ★5 | Talent Skill: Reduce Tactical Skill DMG received +6.9%(Not Affected By Attribute) |
+| 20283 | Luna Relic | ★5 | Talent Skill: Reduce Tactical Skill DMG received +9.2%(Not Affected By Attribute) |
+| 20284 | Luna Relic | ★5 | Talent Skill: Reduce Tactical Skill DMG received +11.5%(Not Affected By Attribute) |
+| 20285 | Luna Relic | ★5 | Talent Skill: Reduce Tactical Skill DMG received +13.8%(Not Affected By Attribute) |
+| 20286 | Yao Lin Relic | ★5 | Talent Skill: Tactical Skill DMG Dealt Increased +4.6%(Not Affected By Attribute) |
+| 20287 | Yao Lin Relic | ★5 | Talent Skill: Tactical Skill DMG Dealt Increased +6.9%(Not Affected By Attribute) |
+| 20288 | Yao Lin Relic | ★5 | Talent Skill: Tactical Skill DMG Dealt Increased +9.2%(Not Affected By Attribute) |
+| 20289 | Yao Lin Relic | ★5 | Talent Skill: Tactical Skill DMG Dealt Increased +11.5%(Not Affected By Attribute) |
+| 20290 | Yao Lin Relic | ★5 | Talent Skill: Tactical Skill DMG Dealt Increased +13.8%(Not Affected By Attribute) |
+| 20291 | Lumi Relic | ★5 | Talent Skill: All Pursuit Skill Probabilities Increased +1.0%(Not Affected By Attribute) |
+| 20292 | Lumi Relic | ★5 | Talent Skill: All Pursuit Skill Probabilities Increased +1.5%(Not Affected By Attribute) |
+| 20293 | Lumi Relic | ★5 | Talent Skill: All Pursuit Skill Probabilities Increased +2.0%(Not Affected By Attribute) |
+| 20294 | Lumi Relic | ★5 | Talent Skill: All Pursuit Skill Probabilities Increased +2.5%(Not Affected By Attribute) |
+| 20295 | Lumi Relic | ★5 | Talent Skill: All Pursuit Skill Probabilities Increased +3.0%(Not Affected By Attribute) |
+| 20296 | Sera Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20297 | Sera Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20298 | Sera Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20299 | Sera Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20300 | Sera Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20301 | Faye Relic | ★5 | Talent Skill: Effect Trigger Probability +7.6% |
+| 20302 | Faye Relic | ★5 | Talent Skill: Effect Trigger Probability +11.4% |
+| 20303 | Faye Relic | ★5 | Talent Skill: Effect Trigger Probability +15.2% |
+| 20304 | Faye Relic | ★5 | Talent Skill: Effect Trigger Probability +19.0% |
+| 20305 | Faye Relic | ★5 | Talent Skill: Effect Trigger Probability +22.8% |
+| 20306 | Nyx Relic | ★5 | Talent Skill: Skill Trigger Probability +4.0% |
+| 20307 | Nyx Relic | ★5 | Talent Skill: Skill Trigger Probability +6.0% |
+| 20308 | Nyx Relic | ★5 | Talent Skill: Skill Trigger Probability +8.0% |
+| 20309 | Nyx Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20310 | Nyx Relic | ★5 | Talent Skill: Skill Trigger Probability +12.0% |
+| 20311 | Niya Relic | ★5 | Talent Skill: Skill Trigger Probability +7.6% |
+| 20312 | Niya Relic | ★5 | Talent Skill: Skill Trigger Probability +11.4% |
+| 20313 | Niya Relic | ★5 | Talent Skill: Skill Trigger Probability +15.2% |
+| 20314 | Niya Relic | ★5 | Talent Skill: Skill Trigger Probability +19.0% |
+| 20315 | Niya Relic | ★5 | Talent Skill: Skill Trigger Probability +22.8% |
+| 20316 | Isabelle Relic | ★5 | Talent Skill: Skill Trigger Probability +5.0% |
+| 20317 | Isabelle Relic | ★5 | Talent Skill: Skill Trigger Probability +7.5% |
+| 20318 | Isabelle Relic | ★5 | Talent Skill: Skill Trigger Probability +10.0% |
+| 20319 | Isabelle Relic | ★5 | Talent Skill: Skill Trigger Probability +12.5% |
+| 20320 | Isabelle Relic | ★5 | Talent Skill: Skill Trigger Probability +15.0% |
+| 20321 | Crolos·Sp Relic | ★5 | Talent Skill: Healing Coefficient +0.090 |
+| 20322 | Crolos·Sp Relic | ★5 | Talent Skill: Healing Coefficient +0.135 |
+| 20323 | Crolos·Sp Relic | ★5 | Talent Skill: Healing Coefficient +0.180 |
+| 20324 | Crolos·Sp Relic | ★5 | Talent Skill: Healing Coefficient +0.225 |
+| 20325 | Crolos·Sp Relic | ★5 | Talent Skill: Healing Coefficient +0.270 |
+| 20326 | Nyx·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +5.00% |
+| 20327 | Nyx·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +7.50% |
+| 20328 | Nyx·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +10.00% |
+| 20329 | Nyx·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +12.50% |
+| 20330 | Nyx·Sp Relic | ★5 | Talent Skill: Skill Trigger Probability +15.00% |
+| 20331 | Faye·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +7.6% |
+| 20332 | Faye·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +11.4% |
+| 20333 | Faye·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +15.2% |
+| 20334 | Faye·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +19.0% |
+| 20335 | Faye·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +22.8% |
+| 20336 | Yaya·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +7.6% |
+| 20337 | Yaya·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +11.4% |
+| 20338 | Yaya·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +15.2% |
+| 20339 | Yaya·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +19.0% |
+| 20340 | Yaya·Sp Relic | ★5 | Talent Skill: Effect Trigger Probability +22.8% |
 
 ## Type 7 (48)
 | ID | Name | Rarity | Description |

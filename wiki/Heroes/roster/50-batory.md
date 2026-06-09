@@ -20,7 +20,7 @@ After that, SusaMaki took her in for some time, until Batory expressed her wish 
 | Line | Text |
 |---|---|
 | Summon | Well, I'm back. What kind of eyes are you looking at? |
-| Tap 1 | Hurry up!  Why am I always running ahead? |
+| Tap 1 | Hurry up! Why am I always running ahead? |
 | Tap 2 | Ao blare ~ ~ ~... Ahem, no, I'm! Not! The Wolf! |
 | Tap 3 | Lend it to you and give it back to me |
 
@@ -144,6 +144,8 @@ When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy DEF Red
 | 3 | Skill Trigger Probability +4.8% |
 | 4 | Skill Trigger Probability +6.4% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -119,11 +119,11 @@ Under the moonlight, Mia's wings shimmered with a faint glow. She knew she might
 
 ## Skills
 ### Violent Chop — *Tactical*
-1 Round  Preparation Time,To 1 Enemy Troop,Launch 5-7 ATK
+1 Round Preparation Time,To 1 Enemy Troop,Launch 5-7 ATK
 *Rarity ★5 · Ready on round 1*
 
 ### Peerless Combo — *Tactical*
-1 Round  Preparation Time,To 1 Enemy Troop,Launch 4-6 ATK
+1 Round Preparation Time,To 1 Enemy Troop,Launch 4-6 ATK
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ To 1 Enemy Troop,Launch 3-7 ATK
 | 4 | Skill Trigger Probability +4.8% |
 | 5 | Skill Trigger Probability +6.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

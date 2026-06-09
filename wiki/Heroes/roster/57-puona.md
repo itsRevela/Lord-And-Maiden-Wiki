@@ -134,7 +134,7 @@ Make 2 Of our Troops,Restore Life,And DEF Attribute Increased 7.4(Affected By DE
 | 4 | Skill Trigger Probability +5.6% |
 
 ### Nikko In Wind — *Strategic*
-From The 5th Round,Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+From The 5th Round,Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★4 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ From The 5th Round,Own Troop,Before Each Round,A Chance to Purification:Disarm�
 | 3 | Effect Trigger Probability +8.4% |
 | 4 | Effect Trigger Probability +11.2% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

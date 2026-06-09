@@ -119,11 +119,11 @@ Finally, Iris' perseverance paid off. Under her leadership, the Red Elf clan too
 
 ## Skills
 ### Knight Charge — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round
+1 Round Preparation Time,ATK 3 Enemy Troops,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round
 *Rarity ★5 · Ready on round 1*
 
 ### Spirit Strike — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops
+1 Round Preparation Time,ATK 3 Enemy Troops
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ ATK 2 Enemy Troops,But Own Troop,DMG Taken Increased 20%(Not Affected By Attribu
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

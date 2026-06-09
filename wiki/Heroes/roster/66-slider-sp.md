@@ -146,6 +146,8 @@ When ATK Normally,Target All Attributes Reduced 7.6(Affected By DES Attribute),L
 | 4 | Skill Trigger Probability +6.4% |
 | 5 | Skill Trigger Probability +8.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

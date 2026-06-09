@@ -135,6 +135,8 @@ In The First 3 Rounds,Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Att
 | 3 | DMG Taken Reduced +3.9%(Not Affected By Attribute) |
 | 4 | DMG Taken Reduced +5.2%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

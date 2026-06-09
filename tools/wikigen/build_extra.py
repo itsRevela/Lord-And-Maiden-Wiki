@@ -8,6 +8,7 @@ events, reward boxes and cosmetic reference tables.
 writer, table helper and resolver instance, so every page lands in the same
 table-of-contents (build.PAGES) as the core generators.
 """
+import re
 import collections
 
 from resolver import load, fmt_num, clean, secs, SOLDIER_TYPE
@@ -16,6 +17,44 @@ from resolver import load, fmt_num, clean, secs, SOLDIER_TYPE
 def _dash(v, zero=("0", "", "0_0")):
     v = (v or "").strip()
     return "—" if v in zero else v
+
+
+# Translation tables for source columns the game ships only in Chinese.
+# (Verified term-by-term; the strings are fully compositional.)
+_ACDK_TR = [
+    ("上半月", "1st Half"), ("下半月", "2nd Half"),
+    ("七夕节", "Qixi Festival"), ("中秋节", "Mid-Autumn Festival"),
+    ("元宵节", "Lantern Festival"), ("元旦", "New Year's Day"),
+    ("劳动节", "Labor Day"), ("国庆节", "National Day"),
+    ("圣诞节", "Christmas"), ("春节", "Spring Festival"),
+    ("清明节", "Qingming Festival"), ("端午节", "Dragon Boat Festival"),
+    ("除夕", "New Year's Eve"),
+    ("玩家社区发帖", "Player Community Post"),
+    ("社区回复点赞官方帖", "Community Like Official Post"),
+    ("加群", "Join Group"), ("好评", "Positive Review"),
+    ("开服", "Server Launch"), ("渠道", "Channel"), ("预约", "Pre-registration"),
+    ("礼包码", " Gift Code"), ("专用", "Exclusive"), ("月", "-"),
+]
+_AIEQUIP_TR = [
+    ("弓兵", "Archer "), ("战车", "Chariot "), ("步兵", "Infantry "),
+    ("骑兵", "Cavalry "), ("特殊", "Special "), ("通用", "Generic "),
+    ("白", "White "), ("绿", "Green "), ("蓝", "Blue "), ("紫", "Purple "), ("橙", "Orange "),
+    ("装", "Gear"),
+]
+
+
+def _apply_tr(table, s):
+    s = s or ""
+    for cn, en in table:
+        s = s.replace(cn, en)
+    return re.sub(r"\s{2,}", " ", s).strip()
+
+
+def _tr_acdk(s):
+    s = _apply_tr(_ACDK_TR, s).replace("--", "-").replace("(", " (")
+    s = re.sub(r"(?<=\d)(?=[A-Za-z])", " ", s)
+    s = re.sub(r"(?<=[A-Za-z])(?=\d)", " ", s)
+    return re.sub(r"\s{2,}", " ", s).strip().rstrip("-").strip()
 
 
 def enemy_units(R, s):
@@ -75,9 +114,12 @@ def gen_feature_unlocks(write, tbl, R):
     rows = sorted(load("UnLockFun"), key=lambda r: (R.build_name(r["Buildtype"]), int(r.get("NeedLv") or 0)))
     lines = ["Every game feature/panel and the building level that unlocks it. "
              "Build the listed structure to the required level to open the feature.", ""]
-    body = [[clean(r.get("funName_en") or r.get("funName")),
-             R.build_name(r["Buildtype"]), r.get("NeedLv", "")] for r in rows]
-    lines += tbl(["Feature", "Required Building", "Building Lv"], body)
+    body = []
+    for r in rows:
+        bt = (r.get("Buildtype") or "").strip()
+        bld = "Special / Event" if bt in ("-1", "0", "") else R.build_name(bt)
+        body.append([clean(r.get("funName_en") or r.get("funName")), bld, r.get("NeedLv", "")])
+    lines += tbl(["Feature", "Required Building", "Required Lv"], body)
     write("Progression/Feature-Unlocks.md", "Feature Unlock Levels", "Progression", lines)
 
 
@@ -207,7 +249,7 @@ def gen_gift_codes(write, tbl, R):
              "stored in the game files — only the rewards each code category grants are listed here.)*", ""]
     by = collections.OrderedDict()
     for r in rows:
-        by.setdefault(clean(R.resolve_tokens(r.get("Name"))) or "Code", []).append(r)
+        by.setdefault(_tr_acdk(r.get("Name")) or "Code", []).append(r)
     for cat, items in by.items():
         lines.append("## %s" % cat)
         body = [[r["id"], R.expand_props(r.get("Props"))] for r in items]
@@ -428,7 +470,7 @@ def gen_ai_equipment(write, tbl, R):
     for r in rows:
         gear = [R.prop_name(r["Pos%d" % i]) for i in range(1, 9)
                 if r.get("Pos%d" % i, "0") not in ("0", "")]
-        body.append([r["AiEquipNum"], clean(R.resolve_tokens(r.get("Des"))),
+        body.append([r["AiEquipNum"], _apply_tr(_AIEQUIP_TR, r.get("Des")),
                      _dash(r.get("RecLv")), "★" + str(r.get("Rare", "")), ", ".join(gear) or "—"])
     lines += tbl(["Set", "Description", "Rec. Lv", "Rarity", "Gear"], body)
     write("Reference/AI-Equipment.md", "AI Equipment Sets", "Reference", lines)
@@ -439,10 +481,12 @@ def gen_emojis(write, tbl, R):
     by = collections.OrderedDict()
     for r in rows:
         by.setdefault(r.get("type", "0"), []).append(r)
-    lines = ["Chat emojis available in the game, grouped by pack.", ""]
+    lines = ["Chat emojis available in the game, grouped by pack. "
+             "(Many emojis are illustrated stickers whose names are not localised.)", ""]
     for t, es in by.items():
-        names = ", ".join(clean(r.get("name_en") or r.get("name")) for r in es if (r.get("name_en") or r.get("name")))
-        lines.append("- **Pack %s:** %s" % (t, names))
+        en = [clean(r.get("name_en")) for r in es if clean(r.get("name_en"))]
+        label = ", ".join(en) if en else "*(illustrated stickers — names not localised)*"
+        lines.append("- **Pack %s** (%d emojis): %s" % (t, len(es), label))
     write("Reference/Emojis.md", "Chat Emojis", "Reference", lines)
 
 

@@ -110,7 +110,7 @@ Height 165cm · Age 230 · Birthday 5/3 · Character: Innocent,Free-spirited · 
 
 ## Skills
 ### Forest Whispers — *Strategic*
-In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The 1st Round,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts
+In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The 1st Round,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★4*
 
 ### Anabiosis — *Tactical*
@@ -135,6 +135,8 @@ Make 2 Of our Troops,Before Each Round,Restore Life,Lasting For 2 Rounds
 | 3 | Skill Trigger Probability +4.2% |
 | 4 | Skill Trigger Probability +5.6% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

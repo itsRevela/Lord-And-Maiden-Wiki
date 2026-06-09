@@ -125,7 +125,7 @@ ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 7.4(Affected By DES Att
 | 4 | Skill Trigger Probability +5.6% |
 
 ### Fiery Spell — *Tactical*
-1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Burning DMG Taken,Lasting For 2 Rounds
+1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Burning DMG Taken,Lasting For 2 Rounds
 *Rarity ★4 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -135,6 +135,8 @@ ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 7.4(Affected By DES Att
 | 3 | Skill Trigger Probability +4.8% |
 | 4 | Skill Trigger Probability +6.4% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

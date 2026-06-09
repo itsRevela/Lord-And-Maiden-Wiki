@@ -142,6 +142,8 @@ Own Troop,Increase All Attributes(Affected By DEF Attribute)
 | 3 | Increase All Attributes +9.6(Not Affected By Attribute) |
 | 4 | Increase All Attributes +12.8(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -144,6 +144,8 @@ In The First 3 Rounds,Own Troop,When Receiving Any Normal ATK,A Chance to Dodge
 | 4 | Effect Trigger Probability +9.6% |
 | 5 | Effect Trigger Probability +12.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

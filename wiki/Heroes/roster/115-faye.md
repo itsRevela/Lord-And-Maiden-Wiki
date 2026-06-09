@@ -144,6 +144,8 @@ In The First 3 Rounds,Make 2 Of our Troops,When Receiving Any Normal ATK,A Chanc
 | 4 | Effect Trigger Probability +5.76% |
 | 5 | Effect Trigger Probability +7.20% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -121,6 +121,8 @@ Make 2 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds
 Own Troop,Soldier HP Increased
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

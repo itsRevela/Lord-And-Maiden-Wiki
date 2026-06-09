@@ -102,6 +102,8 @@
 From The 1st Round,Own Troop,In A Stunned State,Unable To Move,And DMG Taken Reduced(Affected By DEF Attribute)
 *Rarity ★3*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

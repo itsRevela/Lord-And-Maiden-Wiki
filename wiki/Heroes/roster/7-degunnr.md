@@ -135,6 +135,8 @@ In The First 3 Rounds,Make 2 Of our Troops,DEF Attribute Increased 11.4(Affected
 | 3 | DEF Attribute Increased +9.6(Not Affected By Attribute) |
 | 4 | DEF Attribute Increased +12.8(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

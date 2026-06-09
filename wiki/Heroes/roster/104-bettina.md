@@ -146,6 +146,8 @@ Own Troop,Will Not Be Affected by the Counter ATK Effect,And DMG Dealt Increased
 | 4 | DMG Dealt Increased +5.6%(Not Affected By Attribute) |
 | 5 | DMG Dealt Increased +7.0%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

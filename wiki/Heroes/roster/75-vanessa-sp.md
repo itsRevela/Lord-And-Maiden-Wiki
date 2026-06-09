@@ -119,7 +119,7 @@ The rain stopped, and sunlight shone on the revitalized headquarters. Vanessa st
 
 ## Skills
 ### Ghost Flame — *Tactical*
-1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round
+1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round
 *Rarity ★5 · Ready on round 1*
 
 ### Flame Claw — *Tactical*
@@ -135,7 +135,7 @@ ATK 1 Enemy Troop,And Make The Target Enemy In A Silenced State,Cannot Launch Ta
 | 5 | Skill Trigger Probability +6.0% |
 
 ### Purifying Fire — *Strategic*
-From The 5th Round,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+From The 5th Round,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★5 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ From The 5th Round,Make 2 Of our Troops,Before Each Round,A Chance to Purificati
 | 4 | Effect Trigger Probability +6.4% |
 | 5 | Effect Trigger Probability +8.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

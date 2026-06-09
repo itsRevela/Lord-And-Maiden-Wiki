@@ -117,6 +117,8 @@ In The First 2 Rounds,Own Troop,A Chance to Prioritizes ATK
 Own Troop,Restore Life
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -134,7 +134,7 @@ From The 5th Round,Make 2 Of our Troops,Before Each Round,Restore Life
 | 4 | Healing Coefficient +0.184 |
 
 ### Soul Redemption — *Tactical*
-Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,Lasting For 2 Rounds
+Own Troop,In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts,Lasting For 2 Rounds
 *Rarity ★4 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -144,6 +144,8 @@ Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,L
 | 3 | Skill Trigger Probability +4.2% |
 | 4 | Skill Trigger Probability +5.6% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

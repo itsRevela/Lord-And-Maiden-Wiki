@@ -10,7 +10,7 @@ Height 162cm · Age 20 · Birthday 12/25 · Character: Idealistic · Interest: R
 ## Voice Lines
 | Line | Text |
 |---|---|
-| Summon | It's nice to take a break  from the heavy politics and relax in a while. |
+| Summon | It's nice to take a break from the heavy politics and relax in a while. |
 | Tap 1 | It is a fine day. Will your Excellency join me for tea? |
 | Tap 2 | As a member of the royal family, I must always be considerate of the human race. |
 | Tap 3 | The time of becoming an adventurer is really happy! |
@@ -117,6 +117,8 @@ Make 2 Of our Troops,Restore Life
 From The 5th Round,Make 2 Of our Troops,Before Each Round,Restore Life
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

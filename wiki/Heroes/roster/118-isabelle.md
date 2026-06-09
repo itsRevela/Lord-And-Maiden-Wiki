@@ -151,7 +151,7 @@ In The First 3 Rounds,Make 2 Of our Troops,ATK Attribute Increased 15.6(Affected
 | 5 | Effect Trigger Probability +15% |
 
 ### Lucid — *Passive*
-Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★5 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -162,6 +162,8 @@ Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence
 | 4 | Effect Trigger Probability +4.8% |
 | 5 | Effect Trigger Probability +6.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

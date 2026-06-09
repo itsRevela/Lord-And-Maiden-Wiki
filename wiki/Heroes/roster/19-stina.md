@@ -117,6 +117,8 @@ ATK 1 Enemy Troop
 In The First 3 Rounds,Make 2 Of our Troops,ATK Attribute Increased(Affected By DEF Attribute)
 *Rarity ★3 · Max uses/battle: 2*
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

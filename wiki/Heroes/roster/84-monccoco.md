@@ -119,11 +119,11 @@ Finally, under Halena's intense training, Monccoco gradually mastered the method
 
 ## Skills
 ### Nightmare — *Tactical*
-1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,And Make 2 Of our Troops,DMG Taken Reduced 9.0%(Affected By DEF Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,And Make 2 Of our Troops,DMG Taken Reduced 9.0%(Affected By DEF Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Ready on round 1*
 
 ### Song Dream — *Tactical*
-1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,Lasting For 2 Rounds
+1 Round Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

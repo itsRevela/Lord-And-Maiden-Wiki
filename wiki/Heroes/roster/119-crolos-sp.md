@@ -119,11 +119,11 @@ It seems Crolos is no longer resisting the passage of time. Of course, since Cro
 
 ## Skills
 ### Time's Salvation — *Strategic*
-In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The First 2 Rounds,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts
+In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The First 2 Rounds,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★5*
 
 ### Time's Aegis — *Tactical*
-Make 2 Of our Troops,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts,Lasting For 2 Rounds
+Make 2 Of our Troops,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts,Lasting For 2 Rounds
 *Rarity ★5 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ In The First 3 Rounds,Make 2 Of our Troops,DEF Attribute Increased11.4(Affected 
 | 4 | Effect Trigger Probability +12% |
 | 5 | Effect Trigger Probability +15% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -110,11 +110,11 @@ Height 155cm · Age 15 · Birthday 3/15 · Character: Quiet · Interest: Observe
 
 ## Skills
 ### Pure Land — *Passive*
-Own Troop,Spd Attribute Increased 11.4(Affected By DEF Attribute),And Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+Own Troop,Spd Attribute Increased 11.4(Affected By DEF Attribute),And Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★4*
 
 ### Time Story — *Strategic*
-In The First 3 Rounds,Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+In The First 3 Rounds,Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★4 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -125,7 +125,7 @@ In The First 3 Rounds,Own Troop,Before Each Round,A Chance to Purification:Disar
 | 4 | Effect Trigger Probability +11.2% |
 
 ### Soul Redemption — *Tactical*
-Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,Lasting For 2 Rounds
+Own Troop,In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts,Lasting For 2 Rounds
 *Rarity ★4 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -135,6 +135,8 @@ Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,L
 | 3 | Skill Trigger Probability +4.2% |
 | 4 | Skill Trigger Probability +5.6% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

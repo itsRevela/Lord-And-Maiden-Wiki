@@ -135,7 +135,7 @@ In The First 3 Rounds,Make 2 Of our Troops,Increase All Attributes(Affected By D
 | 5 | Increase All Attributes +16.0(Not Affected By Attribute) |
 
 ### Devout — *Strategic*
-In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts
+In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts
 *Rarity ★5 · Max uses/battle: 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purific
 | 4 | Effect Trigger Probability +6.4% |
 | 5 | Effect Trigger Probability +8.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

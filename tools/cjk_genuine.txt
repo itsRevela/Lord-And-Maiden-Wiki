@@ -1,0 +1,89 @@
+Lines with >=2 consecutive Han chars (likely untranslated words): 130
+
+    100  wiki/Items/Gift-Code-Rewards.md
+     23  wiki/Reference/AI-Equipment.md
+      5  wiki/Mechanics/Buffs.md
+      1  wiki/Heroes/Skills.md
+      1  wiki/Reference/Emojis.md
+
+--- samples ---
+wiki/Heroes/Skills.md:431  runs=['受到追击伤害提高']  :: | 1002 | Demon Rock Slash | ★5 | 0 | 0 | 1.86 | 0.93 | 0.093 | When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy 受到追击
+wiki/Items/Gift-Code-Rewards.md:5  runs=['开服礼包码']  :: ## 开服礼包码
+wiki/Items/Gift-Code-Rewards.md:14  runs=['加群礼包码', '专用']  :: ## 加群礼包码(专用)
+wiki/Items/Gift-Code-Rewards.md:19  runs=['预约礼包码', '专用']  :: ## 预约礼包码(专用)
+wiki/Items/Gift-Code-Rewards.md:24  runs=['好评礼包码', '专用']  :: ## 好评礼包码(专用)
+wiki/Items/Gift-Code-Rewards.md:29  runs=['玩家社区发帖礼包码', '专用']  :: ## 玩家社区发帖礼包码(专用)
+wiki/Items/Gift-Code-Rewards.md:34  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码1(专用)
+wiki/Items/Gift-Code-Rewards.md:39  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码2(专用)
+wiki/Items/Gift-Code-Rewards.md:44  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码3(专用)
+wiki/Items/Gift-Code-Rewards.md:49  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码4(专用)
+wiki/Items/Gift-Code-Rewards.md:54  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码5(专用)
+wiki/Items/Gift-Code-Rewards.md:59  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码6(专用)
+wiki/Items/Gift-Code-Rewards.md:64  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码7(专用)
+wiki/Items/Gift-Code-Rewards.md:69  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码8(专用)
+wiki/Items/Gift-Code-Rewards.md:74  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码9(专用)
+wiki/Items/Gift-Code-Rewards.md:79  runs=['社区回复点赞官方帖礼包码', '专用']  :: ## 社区回复点赞官方帖礼包码10(专用)
+wiki/Items/Gift-Code-Rewards.md:84  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-1(专用)
+wiki/Items/Gift-Code-Rewards.md:89  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-2(专用)
+wiki/Items/Gift-Code-Rewards.md:94  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-3(专用)
+wiki/Items/Gift-Code-Rewards.md:99  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-4(专用)
+wiki/Items/Gift-Code-Rewards.md:104  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-5(专用)
+wiki/Items/Gift-Code-Rewards.md:109  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-6(专用)
+wiki/Items/Gift-Code-Rewards.md:114  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-7(专用)
+wiki/Items/Gift-Code-Rewards.md:119  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-8(专用)
+wiki/Items/Gift-Code-Rewards.md:124  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-9(专用)
+wiki/Items/Gift-Code-Rewards.md:129  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-10(专用)
+wiki/Items/Gift-Code-Rewards.md:134  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-11(专用)
+wiki/Items/Gift-Code-Rewards.md:139  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-12(专用)
+wiki/Items/Gift-Code-Rewards.md:144  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-13(专用)
+wiki/Items/Gift-Code-Rewards.md:149  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-14(专用)
+wiki/Items/Gift-Code-Rewards.md:154  runs=['渠道礼包码', '专用']  :: ## 渠道礼包码VIP-15(专用)
+wiki/Items/Gift-Code-Rewards.md:159  runs=['春节礼包码']  :: ## 2025春节礼包码
+wiki/Items/Gift-Code-Rewards.md:164  runs=['除夕礼包码']  :: ## 2025除夕礼包码
+wiki/Items/Gift-Code-Rewards.md:169  runs=['元旦礼包码']  :: ## 2025元旦礼包码
+wiki/Items/Gift-Code-Rewards.md:174  runs=['国庆节礼包码']  :: ## 2025国庆节礼包码
+wiki/Items/Gift-Code-Rewards.md:179  runs=['圣诞节礼包码']  :: ## 2025圣诞节礼包码
+wiki/Items/Gift-Code-Rewards.md:184  runs=['劳动节礼包码']  :: ## 2025劳动节礼包码
+wiki/Items/Gift-Code-Rewards.md:189  runs=['清明节礼包码']  :: ## 2025清明节礼包码
+wiki/Items/Gift-Code-Rewards.md:194  runs=['元宵节礼包码']  :: ## 2025元宵节礼包码
+wiki/Items/Gift-Code-Rewards.md:199  runs=['端午节礼包码']  :: ## 2025端午节礼包码
+wiki/Items/Gift-Code-Rewards.md:204  runs=['七夕节礼包码']  :: ## 2025七夕节礼包码
+wiki/Items/Gift-Code-Rewards.md:209  runs=['中秋节礼包码']  :: ## 2025中秋节礼包码
+wiki/Items/Gift-Code-Rewards.md:214  runs=['春节礼包码']  :: ## 2026春节礼包码
+wiki/Items/Gift-Code-Rewards.md:219  runs=['除夕礼包码']  :: ## 2026除夕礼包码
+wiki/Items/Gift-Code-Rewards.md:224  runs=['元旦礼包码']  :: ## 2026元旦礼包码
+wiki/Items/Gift-Code-Rewards.md:229  runs=['国庆节礼包码']  :: ## 2026国庆节礼包码
+wiki/Items/Gift-Code-Rewards.md:234  runs=['圣诞节礼包码']  :: ## 2026圣诞节礼包码
+wiki/Items/Gift-Code-Rewards.md:239  runs=['劳动节礼包码']  :: ## 2026劳动节礼包码
+wiki/Items/Gift-Code-Rewards.md:244  runs=['清明节礼包码']  :: ## 2026清明节礼包码
+wiki/Items/Gift-Code-Rewards.md:249  runs=['元宵节礼包码']  :: ## 2026元宵节礼包码
+wiki/Items/Gift-Code-Rewards.md:254  runs=['端午节礼包码']  :: ## 2026端午节礼包码
+wiki/Items/Gift-Code-Rewards.md:259  runs=['七夕节礼包码']  :: ## 2026七夕节礼包码
+wiki/Items/Gift-Code-Rewards.md:264  runs=['中秋节礼包码']  :: ## 2026中秋节礼包码
+wiki/Items/Gift-Code-Rewards.md:269  runs=['月礼包码', '上半月']  :: ## 2025-1月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:274  runs=['月礼包码', '下半月']  :: ## 2025-1月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:279  runs=['月礼包码', '上半月']  :: ## 2025-2月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:284  runs=['月礼包码', '下半月']  :: ## 2025-2月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:289  runs=['月礼包码', '上半月']  :: ## 2025-3月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:294  runs=['月礼包码', '下半月']  :: ## 2025-3月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:299  runs=['月礼包码', '上半月']  :: ## 2025-4月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:304  runs=['月礼包码', '下半月']  :: ## 2025-4月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:309  runs=['月礼包码', '上半月']  :: ## 2025-5月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:314  runs=['月礼包码', '下半月']  :: ## 2025-5月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:319  runs=['月礼包码', '上半月']  :: ## 2025-6月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:324  runs=['月礼包码', '下半月']  :: ## 2025-6月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:329  runs=['月礼包码', '上半月']  :: ## 2025-7月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:334  runs=['月礼包码', '下半月']  :: ## 2025-7月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:339  runs=['月礼包码', '上半月']  :: ## 2025-8月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:344  runs=['月礼包码', '下半月']  :: ## 2025-8月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:349  runs=['月礼包码', '上半月']  :: ## 2025-9月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:354  runs=['月礼包码', '下半月']  :: ## 2025-9月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:359  runs=['月礼包码', '上半月']  :: ## 2025-10月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:364  runs=['月礼包码', '下半月']  :: ## 2025-10月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:369  runs=['月礼包码', '上半月']  :: ## 2025-11月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:374  runs=['月礼包码', '下半月']  :: ## 2025-11月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:379  runs=['月礼包码', '上半月']  :: ## 2025-12月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:384  runs=['月礼包码', '下半月']  :: ## 2025-12月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:389  runs=['月礼包码', '上半月']  :: ## 2026-1月礼包码(上半月)
+wiki/Items/Gift-Code-Rewards.md:394  runs=['月礼包码', '下半月']  :: ## 2026-1月礼包码(下半月)
+wiki/Items/Gift-Code-Rewards.md:399  runs=['月礼包码', '上半月']  :: ## 2026-2月礼包码(上半月)

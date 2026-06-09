@@ -119,11 +119,11 @@ Because Dolly is free, she also believes that all things are also free, and thei
 
 ## Skills
 ### Sky Rain Arrows — *Tactical*
-1 Round  Preparation Time,To 3 Enemy Troops,Launch 3-5 ATK
+1 Round Preparation Time,To 3 Enemy Troops,Launch 3-5 ATK
 *Rarity ★5 · Ready on round 1*
 
 ### Arrows Volley — *Tactical*
-1 Round  Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK
+1 Round Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK
 *Rarity ★5 · Max uses/battle: 1 · Ready on round 1*
 
 | Skill Lv | Effect |
@@ -146,6 +146,8 @@ ATK 2 Enemy Troops
 | 4 | Skill Trigger Probability +5.6% |
 | 5 | Skill Trigger Probability +7.0% |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

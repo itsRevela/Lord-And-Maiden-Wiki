@@ -17,8 +17,9 @@ WIKI = os.path.join(ROOT, "wiki")
 CSV = os.path.join(ROOT, "data", "csv")
 
 LINK = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
-PLACEHOLDER = re.compile(r"\b(Prop|Hero|Build|Skill|Tech|Buff|Attr|AI)#\d")
+PLACEHOLDER = re.compile(r"\b(Prop|Hero|Build|Skill|Tech|Buff|Attr|AI)#-?\d")
 TOKEN = re.compile(r"\{[^{}]{1,40}\}")
+CJK = re.compile(r"[一-鿿]")
 
 issues = collections = 0
 problems = []
@@ -95,6 +96,12 @@ def main():
     tot2, per2 = count_re(TOKEN)
     print("total: %d" % tot2)
     for k, v in sorted(per2.items(), key=lambda x: -x[1])[:10]:
+        print("  %s: %d" % (k, v))
+
+    print("\n=== untranslated CJK (informational; some source fields ship no English) ===")
+    tot3, per3 = count_re(CJK)
+    print("total CJK chars: %d" % tot3)
+    for k, v in sorted(per3.items(), key=lambda x: -x[1])[:10]:
         print("  %s: %d" % (k, v))
 
     print("\n=== cross-checks ===")

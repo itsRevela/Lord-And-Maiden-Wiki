@@ -119,7 +119,7 @@ Perhaps, this was the clue she had been searching for all along. Thefis clenched
 
 ## Skills
 ### Dreamland — *Tactical*
-1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,And DMG Taken Increased 9.0%(Affected By DES Attribute),Lasting For 2 Rounds
+1 Round Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,And DMG Taken Increased 9.0%(Affected By DES Attribute),Lasting For 2 Rounds
 *Rarity ★5 · Ready on round 1*
 
 ### Hesitate — *Strategic*
@@ -146,6 +146,8 @@ In The First 3 Rounds,Make 2 Of Enemy Troops,Pursuit Skill DMG Dealt Reduced(Aff
 | 4 | Pursuit Skill DMG Dealt Reduced +7.2%(Not Affected By Attribute) |
 | 5 | Pursuit Skill DMG Dealt Reduced +9.0%(Not Affected By Attribute) |
 
+---
+**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

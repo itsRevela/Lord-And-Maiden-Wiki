@@ -18,10 +18,10 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 11 | Extremely Cold | ★4 | 1 | 0 | 0.6 | 0.3 | 0.03 | From The 5th Round,Make 2 Of Enemy Troops,Before Each Round,A Chance to In A Disarmed State,Cannot Launch Normal ATK |
 | 12 | Polar Shadow | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | In The First 3 Rounds,Make 2 Of our Troops,DEF Attribute Increased 11.4(Affected By DEF Attribute),And Each Round A Chance to Prioritizes ATK |
 | 13 | Turbid Current | ★4 | 1 | 0 | 7.4 | 3.7 | 0.37 | In The First 3 Rounds,Make 2 Of Enemy Troops,All Attributes Reduced(Affected By DES Attribute) |
-| 14 | Field | ★4 | 0 | 0 | 0.152 | 0.076 | 0.0076 | In The First 3 Rounds,Own Troop,DMG Dealt Increased(Affected By Spd Attribute),And In A Focused State,Immune: Disarm、Silence、Stun、Chaos、Taunts |
+| 14 | Field | ★4 | 0 | 0 | 0.152 | 0.076 | 0.0076 | In The First 3 Rounds,Own Troop,DMG Dealt Increased(Affected By Spd Attribute),And In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts |
 | 15 | Feather Fall | ★4 | 0 | 0 | 1.2 | 0.6 | 0.06 | In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,Restore Life,And Make Spd Attribute Increased 11.4(Affected By DEF Attribute) |
 | 16 | Steel Will | ★4 | 0 | 0 | 0.096 | 0.048 | 0.0048 | In The First 3 Rounds,Make 2 Of our Troops,DEF Attribute Increased 11.4(Affected By DEF Attribute),And From The 5th Round,DMG Taken Reduced(Affected By DEF Attribute) |
-| 17 | Forest Whispers | ★4 | 0 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The 1st Round,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts |
+| 17 | Forest Whispers | ★4 | 0 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The 1st Round,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts |
 | 18 | Sakura Strawberry | ★4 | 0 | 0 | 0.096 | 0.048 | 0.0048 | In The First 3 Rounds,Make 2 Of our Troops,ATK Attribute Increased 11.4(Affected By DEF Attribute),And From The 5th Round,DMG Dealt Increased(Affected By Spd Attribute) |
 | 19 | Skyland | ★4 | 1 | 0 | 0.08 | 0.04 | 0.004 | In The First 3 Rounds,Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute) |
 | 20 | Power Faith | ★4 | 0 | 0 | 0.114 | 0.057 | 0.0057 | From The 5th Round,Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute) |
@@ -57,15 +57,15 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 50 | Evil Spirit | ★5 | 0 | 0 | 0.15 | 0.075 | 0.0075 | In The First 4 Rounds,Own Troop,DMG Taken Reduced 15.0%(Affected By DEF Attribute),From The 5th Round,DMG Dealt Increased(Affected By Spd Attribute) |
 | 51 | Magic Book | ★4 | 0 | 0 | 0.114 | 0.057 | 0.0057 | From The 5th Round,Make 2 Of our Troops,Tactical Skill DMG Dealt Increased(Affected By Spd Attribute) |
 | 52 | Gray World | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | From The 1st Round,Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Make 3 Of Enemy Troops,Before Each Round,A Chance to In A Silenced State,Cannot Launch Tactical Skills |
-| 53 | Time Story | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | In The First 3 Rounds,Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
-| 54 | Nikko In Wind | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | From The 5th Round,Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 53 | Time Story | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | In The First 3 Rounds,Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
+| 54 | Nikko In Wind | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | From The 5th Round,Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 55 | Clap Thunder | ★4 | 1 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Own Troop,When ATK Normally,A Chance to Combo |
-| 56 | Devout | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 56 | Devout | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 57 | Illusion Maze | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | In The First 3 Rounds,Make 2 Of Enemy Troops,Pursuit Skill DMG Dealt Reduced(Affected By DES Attribute) |
 | 58 | Elf Deer | ★5 | 1 | 0 | 11.4 | 5.7 | 0.57 | In The First 3 Rounds,Make 2 Of our Troops,Increase All Attributes(Affected By DEF Attribute) |
 | 59 | Smoke Smother | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | From The 5th Round,Make 2 Of Enemy Troops,Before Each Round,A Chance to In A Stunned State,Unable To Move |
 | 60 | Hawkeye | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | From The 5th Round,Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute) |
-| 61 | Purifying Fire | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | From The 5th Round,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 61 | Purifying Fire | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | From The 5th Round,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 62 | Eternal Clock | ★5 | 1 | 0 | 0.09 | 0.045 | 0.0045 | From The 1st Round,Make 2 Of our Troops,In An Eternal State,Attribute Will Not Be Changed,And From The 5th Round,Make 2 Of Enemy Troops,DMG Dealt Reduced(Affected By DES Attribute) |
 | 63 | Mana Storage | ★5 | 0 | 0 | 0.55 | 0.28 | 0.027 | From The 5th Round,Make 2 Of our Troops,In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time |
 | 64 | Unmoving | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | From The 5th Round,Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute) |
@@ -94,7 +94,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 87 | Magic Summon | ★5 | 1 | 0 | 0.6 | 0.3 | 0.03 | In The First 3 Rounds,Make 2 Of our Troops,When ATK Normally,A Chance to Splash On Other Enemies(DMG Coefficient 0.6) |
 | 88 | Starlight Flash | ★5 | 1 | 0 | 0.36 | 0.18 | 0.018 | In The First 3 Rounds,Make 2 Of our Troops,When Receiving Any Normal ATK,A Chance to Dodge |
 | 89 | Swiftflare | ★5 | 1 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Make 2 Of our Troops,ATK Attribute Increased 15.6(Affected By DEF Attribute),And Each Round A Chance to Prioritizes ATK |
-| 90 | Time's Salvation | ★5 | 0 | 0 | 0.9 | 0.45 | 0.045 | In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The First 2 Rounds,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts |
+| 90 | Time's Salvation | ★5 | 0 | 0 | 0.9 | 0.45 | 0.045 | In The First 3 Rounds,Make 3 Of our Troops,Before Each Round,Restore Life,And In The First 2 Rounds,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts |
 | 91 | Time's Flow | ★5 | 1 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Make 2 Of our Troops,DEF Attribute Increased11.4(Affected By DEF Attribute),From The 4th Round,ATK Attribute Increased11.4(Affected By DEF Attribute),And When launching ATK,A Chance to Ignores Dodge and Shield,Ignores Soldier Restraint effects |
 | 92 | Combustion Aid | ★5 | 1 | 0 | 0.76 | 0.38 | 0.038 | In The First 4 Rounds,Make 3 Of Enemy Troops,When taking Curse or Burning DMG,A Chance to Make Curse or Burning DMG Taken*1.5 |
 | 93 | Arcane Buff | ★5 | 0 | 0 | 0.76 | 0.38 | 0.038 | In The First 3 Rounds,Make 2 Of our Troops,Spd Attribute Increased 11.4(Affected By DEF Attribute),And When Launching Pursuit Skills,A Chance to Splash On Other Enemies(DMG Coefficient 0.60) |
@@ -110,7 +110,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 1008 | Wind Guardian | ★5 | 0 | 0 | 0.25 | 0.13 | 0.012 | From The 1st Round,Own Troop,DMG Taken Reduced(Affected By DEF Attribute),When ATK Normally,100% Splash On Other Enemies(DMG Coefficient 1.00),And When Receiving A Normal ATK,100% Counterattack(DMG Coefficient 1.52) |
 | 1009 | Shocking Roar | ★5 | 0 | 0 | 0.152 | 0.076 | 0.0076 | From The 1st Round,Make 3 Of Enemy Troops,Before Each Round,Burning DMG Taken(DMG Coefficient 1.69),And DMG Taken Increased(Affected By DES Attribute),And Before Each Round 50%Probability In A Stunned State,Unable To Move |
 | 1010 | Watch The Fun | ★3 | 0 | 0 | 0.152 | 0.076 | 0.0076 | From The 1st Round,Own Troop,In A Stunned State,Unable To Move,And DMG Taken Reduced(Affected By DEF Attribute) |
-| 1011 | Super Armor | ★5 | 0 | 0 | 15.2 | 7.6 | 0.76 | From The 1st Round,Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,And ATK Attribute Increased(Affected By DEF Attribute) |
+| 1011 | Super Armor | ★5 | 0 | 0 | 15.2 | 7.6 | 0.76 | From The 1st Round,Own Troop,In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts,And ATK Attribute Increased(Affected By DEF Attribute) |
 | 1025 | Dragon Serious | ★5 | 0 | 0 | 0.25 | 0.13 | 0.012 | From The 1st Round,Own Troop,In An Eternal State,Attribute Will Not Be Changed,And In A Focused State,Make 3 Of Enemy Troops,DMG Taken Increased(Affected By DES Attribute),And Before Each Round,25%Probability,In A Disarmed State,25%Probability,In A Silenced State,25%Probability,In A Chaos State |
 | 1026 | Prudent | ★5 | 0 | 0 | 0.16 | 0.08 | 0.008 | From The 1st Round,Make 3 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),But DMG Dealt Reduced 50%(Not Affected By Attribute) |
 | 1027 | Bless Immortals | ★5 | 0 | 0 | 0.19 | 0.09 | 0.01 | From The 1st Round,Make 3 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),But DMG Dealt Reduced 35%(Not Affected By Attribute),And In The First 4 Rounds,In An Eternal State,Attribute Will Not Be Changed,From The 5th Round,In A Focused State |
@@ -151,7 +151,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 10 | Dazzle Feather | ★3 | 0 | 0 | 0.35 | 0.18 | 0.017 | Make 1 Of Enemy Troop,In A Stunned State,Unable To Move,Lasting For 1 Round |
 | 11 | Phantom | ★3 | 0 | 0 | 0.35 | 0.18 | 0.017 | Make 1 Of Enemy Troop,In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 1 Round |
 | 12 | Sword Break | ★3 | 2 | 0 | 1 | 0.5 | 0.05 | ATK 2 Enemy Troops |
-| 13 | Ripple | ★3 | 0 | 1 | 1.1 | 0.55 | 0.055 | 1 Round  Preparation Time,ATK 2 Enemy Troops |
+| 13 | Ripple | ★3 | 0 | 1 | 1.1 | 0.55 | 0.055 | 1 Round Preparation Time,ATK 2 Enemy Troops |
 | 14 | Burning Sky | ★3 | 0 | 0 | 0.72 | 0.36 | 0.036 | ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 5.2(Affected By DES Attribute),Lasting For 2 Rounds |
 | 15 | Remnant Moonlight | ★3 | 0 | 0 | 0.72 | 0.36 | 0.036 | ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 5.2(Affected By DES Attribute),Lasting For 2 Rounds |
 | 16 | Purify Mind | ★3 | 2 | 0 | 0.35 | 0.18 | 0.017 | Make 1 Of our Troop,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,And DEF Attribute Increased 8.0(Affected By DEF Attribute),Lasting For 2 Rounds |
@@ -161,24 +161,24 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 20 | Frost | ★3 | 2 | 0 | 0.6 | 0.3 | 0.03 | Make 2 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds |
 | 21 | Block | ★4 | 1 | 0 | 0.4 | 0.2 | 0.02 | Own Troop,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,And DEF Attribute Increased 11.4(Affected By DEF Attribute),And Protect Our Troops From Normal ATK,Lasting For 2 Rounds |
 | 22 | Anabiosis | ★4 | 1 | 0 | 0.8 | 0.4 | 0.04 | Make 2 Of our Troops,Restore Life |
-| 23 | Soul Redemption | ★4 | 1 | 0 | 0.35 | 0.18 | 0.017 | Own Troop,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,Lasting For 2 Rounds |
+| 23 | Soul Redemption | ★4 | 1 | 0 | 0.35 | 0.18 | 0.017 | Own Troop,In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts,Lasting For 2 Rounds |
 | 24 | Ice Soul | ★4 | 1 | 0 | 0.9 | 0.45 | 0.045 | ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 7.4(Affected By DES Attribute),Lasting For 2 Rounds |
 | 25 | Arrow Rain | ★4 | 1 | 0 | 0.9 | 0.45 | 0.045 | ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 7.4(Affected By DES Attribute),Lasting For 2 Rounds |
-| 26 | Walking Beasts | ★4 | 1 | 1 | 1.7 | 0.85 | 0.085 | 1 Round  Preparation Time,ATK 2 Enemy Troops |
-| 27 | Fiery Spell | ★4 | 1 | 1 | 1.04 | 0.52 | 0.052 | 1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Burning DMG Taken,Lasting For 2 Rounds |
-| 28 | Breaking Sky | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 29 | Through Cloud | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 30 | Magic Storm | ★4 | 1 | 1 | 1.04 | 0.52 | 0.052 | 1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds |
+| 26 | Walking Beasts | ★4 | 1 | 1 | 1.7 | 0.85 | 0.085 | 1 Round Preparation Time,ATK 2 Enemy Troops |
+| 27 | Fiery Spell | ★4 | 1 | 1 | 1.04 | 0.52 | 0.052 | 1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Burning DMG Taken,Lasting For 2 Rounds |
+| 28 | Breaking Sky | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 29 | Through Cloud | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 30 | Magic Storm | ★4 | 1 | 1 | 1.04 | 0.52 | 0.052 | 1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds |
 | 31 | Daunt | ★4 | 1 | 0 | 0.9 | 0.45 | 0.045 | ATK 2 Enemy Troops,And Make The Target Enemy Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
 | 32 | Elf Elegy | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | Make 2 Of our Troops,Restore Life,And DEF Attribute Increased 7.4(Affected By DEF Attribute),Lasting For 2 Rounds |
-| 33 | Sharp Claw | ★4 | 1 | 1 | 2.52 | 1.26 | 0.126 | 1 Round  Preparation Time,ATK 1 Enemy Troop |
+| 33 | Sharp Claw | ★4 | 1 | 1 | 2.52 | 1.26 | 0.126 | 1 Round Preparation Time,ATK 1 Enemy Troop |
 | 34 | Flowers Sword | ★4 | 1 | 0 | 0.66 | 0.33 | 0.033 | To 2 Enemy Troops,Launch 1-3 ATK |
 | 35 | Sparkly Flowers | ★4 | 1 | 0 | 0.81 | 0.41 | 0.04 | ATK 3 Enemy Troops |
 | 36 | Energy Magic | ★4 | 1 | 0 | 0.08 | 0.04 | 0.004 | Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute),Lasting For 2 Rounds |
-| 37 | Charged Slash | ★4 | 1 | 1 | 1.2 | 0.6 | 0.06 | 1 Round  Preparation Time,ATK 3 Enemy Troops |
+| 37 | Charged Slash | ★4 | 1 | 1 | 1.2 | 0.6 | 0.06 | 1 Round Preparation Time,ATK 3 Enemy Troops |
 | 38 | Cat Blade | ★4 | 1 | 0 | 1.67 | 0.84 | 0.083 | ATK 1 Enemy Troop |
-| 39 | Just Ruling | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced11.4(Affected By DES Attribute),Lasting For 2 Rounds |
-| 40 | Light Magic | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced11.4(Affected By DES Attribute),Lasting For 2 Rounds |
+| 39 | Just Ruling | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced11.4(Affected By DES Attribute),Lasting For 2 Rounds |
+| 40 | Light Magic | ★4 | 1 | 1 | 1.62 | 0.81 | 0.081 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced11.4(Affected By DES Attribute),Lasting For 2 Rounds |
 | 41 | Light Disperse | ★4 | 1 | 0 | 0.35 | 0.18 | 0.017 | Make 2 Of Enemy Troops,In A Forbidden Treatment State,Cannot Be Healed,Lasting For 1 Round,And Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
 | 42 | Rose Blade | ★4 | 1 | 0 | 1.1 | 0.55 | 0.055 | ATK 2 Enemy Troops |
 | 43 | Pierce Arrow | ★4 | 1 | 0 | 0.08 | 0.04 | 0.004 | Make 2 Of Enemy Troops,DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds |
@@ -192,39 +192,39 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 51 | Vines Entwine | ★4 | 0 | 0 | 0.81 | 0.41 | 0.04 | ATK 3 Enemy Troops,And Make The Target Enemy Spd Attribute Reduced 9.6(Affected By DES Attribute),Lasting For 2 Rounds |
 | 52 | Natural Magic | ★4 | 0 | 0 | 1.67 | 0.84 | 0.083 | ATK 1 Enemy Troop,And Make The Target Enemy DEF Reduced 11.4(Affected By DES Attribute),Lasting For 2 Rounds |
 | 53 | Startled Arrow | ★4 | 0 | 0 | 1.67 | 0.84 | 0.083 | ATK 1 Enemy Troop,And Make The Target Enemy ATK Reduced 11.4(Affected By DES Attribute),Lasting For 2 Rounds |
-| 54 | Precise Shoot | ★4 | 0 | 1 | 1.74 | 0.87 | 0.087 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 54 | Precise Shoot | ★4 | 0 | 1 | 1.74 | 0.87 | 0.087 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 55 | Night Fall | ★4 | 0 | 0 | 0.35 | 0.18 | 0.017 | Make 2 Of Enemy Troops,In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds |
-| 56 | Fox Spell | ★4 | 0 | 1 | 1.1 | 0.55 | 0.055 | 1 Round  Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds |
+| 56 | Fox Spell | ★4 | 0 | 1 | 1.1 | 0.55 | 0.055 | 1 Round Preparation Time,Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken,Lasting For 2 Rounds |
 | 57 | Knight Talent | ★4 | 0 | 0 | 1.3 | 0.65 | 0.065 | ATK 2 Enemy Troops,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round |
 | 58 | Healing Bell | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | Make 2 Of our Troops,Restore Life |
 | 59 | Green Tea | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute),Lasting For 2 Rounds |
 | 60 | Seal Song | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 1 Round |
 | 61 | Endless Destroy | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 25),Lasting For 2 Rounds,And ATK 2 Enemy Troops |
-| 62 | Song Dream | ★5 | 1 | 1 | 0.45 | 0.225 | 0.0225 | 1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,Lasting For 2 Rounds |
-| 63 | Charm | ★5 | 1 | 1 | 0.45 | 0.225 | 0.0225 | 1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds |
-| 64 | Spirit Strike | ★5 | 1 | 1 | 2 | 1 | 0.1 | 1 Round  Preparation Time,ATK 3 Enemy Troops |
-| 65 | Purgatory Trial | ★5 | 1 | 1 | 2.7 | 1.35 | 0.135 | 1 Round  Preparation Time,ATK 2 Enemy Troops |
+| 62 | Song Dream | ★5 | 1 | 1 | 0.45 | 0.225 | 0.0225 | 1 Round Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,Lasting For 2 Rounds |
+| 63 | Charm | ★5 | 1 | 1 | 0.45 | 0.225 | 0.0225 | 1 Round Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds |
+| 64 | Spirit Strike | ★5 | 1 | 1 | 2 | 1 | 0.1 | 1 Round Preparation Time,ATK 3 Enemy Troops |
+| 65 | Purgatory Trial | ★5 | 1 | 1 | 2.7 | 1.35 | 0.135 | 1 Round Preparation Time,ATK 2 Enemy Troops |
 | 66 | Holy-light Chop | ★5 | 1 | 0 | 1.1 | 0.55 | 0.055 | ATK 3 Enemy Troops |
 | 67 | Epee Storm | ★5 | 0 | 0 | 0.9 | 0.45 | 0.045 | Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 30),Lasting For 2 Rounds,And ATK 3 Enemy Troops |
 | 68 | Idol Voice | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | Make 3 Of our Troops,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,And When Receiving Any Normal ATK,30% Probability Dodge,Lasting For 2 Rounds |
 | 69 | Blazing Claw | ★5 | 0 | 0 | 1.9 | 0.95 | 0.095 | ATK 1 Enemy Troop,And Make The Target Enemy In A Stunned State,Unable To Move,Lasting For 1 Round |
 | 70 | Demon Slash | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 6.4%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 71 | Violent Chop | ★5 | 0 | 1 | 0.66 | 0.33 | 0.033 | 1 Round  Preparation Time,To 1 Enemy Troop,Launch 5-7 ATK |
-| 72 | Moon Wolf | ★5 | 0 | 1 | 2.7 | 1.35 | 0.135 | 1 Round  Preparation Time,ATK The Enemy Commander 1 Time,And Make The Target Enemy DEF Reduced 9.6%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 71 | Violent Chop | ★5 | 0 | 1 | 0.66 | 0.33 | 0.033 | 1 Round Preparation Time,To 1 Enemy Troop,Launch 5-7 ATK |
+| 72 | Moon Wolf | ★5 | 0 | 1 | 2.7 | 1.35 | 0.135 | 1 Round Preparation Time,ATK The Enemy Commander 1 Time,And Make The Target Enemy DEF Reduced 9.6%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 73 | Exploding Flame | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | Make 2 Of Enemy Troops,Before Each Round,Burning DMG Taken(DMG Coefficient 1.0),Lasting For 2 Rounds,If The Target Has Burning Effect,Immediately detonates the enemy to cause damage(DMG Coefficient 1.6) |
-| 74 | Dreamland | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,And DMG Taken Increased 9.0%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 74 | Dreamland | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round Preparation Time,Make 2 Of Enemy Troops,In A Chaos State,Carry Out Undifferentiated ATK,And DMG Taken Increased 9.0%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 75 | Sheep Game | ★5 | 0 | 0 | 0.5 | 0.25 | 0.025 | Make 3 Of our Troops,In A Swiftcast State,When Activating The Tactical Skills That Needed To Prepare,A Chance to Reduce Preparation Time By 1 Round,Lasting For 2 Rounds |
 | 76 | Taboo Seal | ★5 | 0 | 0 | 0.92 | 0.46 | 0.046 | ATK 3 Enemy Troops,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 1 Round |
-| 77 | Ghost Flame | ★5 | 0 | 1 | 1.56 | 0.78 | 0.078 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round |
-| 78 | Spirit Bondage | ★5 | 0 | 1 | 1.56 | 0.78 | 0.078 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round |
+| 77 | Ghost Flame | ★5 | 0 | 1 | 1.56 | 0.78 | 0.078 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round |
+| 78 | Spirit Bondage | ★5 | 0 | 1 | 1.56 | 0.78 | 0.078 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round |
 | 79 | Blazing Sword | ★5 | 0 | 0 | 0.8 | 0.4 | 0.04 | ATK 3 Enemy Troops,And Make The Target Enemy Before Each Round,Burning DMG Taken(DMG Coefficient 0.5),Lasting For 2 Rounds |
-| 80 | Flame Combo | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round  Preparation Time,To 2 Enemy Troops,Launch 4-6 ATK |
+| 80 | Flame Combo | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round Preparation Time,To 2 Enemy Troops,Launch 4-6 ATK |
 | 81 | Ghost Bone | ★5 | 0 | 0 | 1 | 0.5 | 0.05 | Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 22),Lasting For 1 Round,But,Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round,And ATK 2 Enemy Troops |
 | 82 | Dilemma | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy Tactical Skill DMG Taken Increased 6.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 83 | Magic Circuit | ★5 | 1 | 0 | 0.55 | 0.27 | 0.028 | Make 2 Of our Troops,In A Swiftcast State,When Activating The Tactical Skills That Needed To Prepare,A Chance to Reduce Preparation Time By 1 Round,Lasting For 2 Rounds |
 | 84 | Night Elf | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | Make 2 Of our Troops,Gain Blood Sucking Effect,Recruit Some Enemy Soldiers When Causing DMG(Blood Sucking Coefficien 0.6),And ATK Attribute Increased 11.4(Affected By DEF Attribute),Lasting For 2 Rounds |
-| 85 | Knight Charge | ★5 | 0 | 1 | 1.98 | 0.99 | 0.099 | 1 Round  Preparation Time,ATK 3 Enemy Troops,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round |
-| 86 | Nightmare | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round  Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,And Make 2 Of our Troops,DMG Taken Reduced 9.0%(Affected By DEF Attribute),Lasting For 2 Rounds |
+| 85 | Knight Charge | ★5 | 0 | 1 | 1.98 | 0.99 | 0.099 | 1 Round Preparation Time,ATK 3 Enemy Troops,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round |
+| 86 | Nightmare | ★5 | 0 | 1 | 0.5 | 0.25 | 0.025 | 1 Round Preparation Time,Make 2 Of Enemy Troops,In A Stunned State,Unable To Move,And Make 2 Of our Troops,DMG Taken Reduced 9.0%(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 87 | Suicide Attack | ★5 | 1 | 0 | 1.64 | 0.82 | 0.082 | ATK 2 Enemy Troops,But Own Troop,DMG Taken Increased 20%(Not Affected By Attribute),Lasting For 1 Round |
 | 88 | Elk Armor | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | Make 3 Of our Troops,Gain 1 Layer Of Shield, Which Can Block 1 DMG,And Increase All Attributes 7.4(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 89 | Broken Arrow | ★4 | 0 | 0 | 1 | 0.5 | 0.05 | Make 2 Of Enemy Troops,Tactical Skill DMG Taken Increased 6%(Affected By DES Attribute),Lasting For 2 Rounds,And ATK 2 Enemy Troops |
@@ -245,7 +245,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 104 | Wind Blessing | ★4 | 1 | 0 | 7.4 | 3.7 | 0.37 | Make 2 Of our Troops,Increase All Attributes(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 105 | Springtime | ★4 | 1 | 0 | 0.08 | 0.04 | 0.004 | Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 106 | Star Moon Shell | ★4 | 1 | 0 | 0.3 | 0.15 | 0.015 | Make 2 Of our Troops,Gain 1 Layer Of Shield, Which Can Block 1 DMG |
-| 107 | Poetry Cloud | ★4 | 1 | 1 | 1.38 | 0.69 | 0.069 | 1 Round  Preparation Time,Make 2 Of our Troops,Restore Life |
+| 107 | Poetry Cloud | ★4 | 1 | 1 | 1.38 | 0.69 | 0.069 | 1 Round Preparation Time,Make 2 Of our Troops,Restore Life |
 | 108 | Fruit Life | ★4 | 1 | 0 | 0.65 | 0.32 | 0.033 | Make 2 Of our Troops,Before Each Round,Restore Life,Lasting For 2 Rounds |
 | 109 | Reflux | ★4 | 1 | 0 | 7.4 | 3.7 | 0.37 | Make 2 Of Enemy Troops,All Attributes Reduced(Affected By DES Attribute),Lasting For 2 Rounds |
 | 110 | Knight Creed | ★5 | 1 | 0 | 0.152 | 0.076 | 0.0076 | Own Troop,DMG Taken Reduced(Affected By DEF Attribute),And Make 2 Of Enemy Troops,In A Provoked State,Lasting For 2 Rounds |
@@ -254,8 +254,8 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 113 | Binding Slash | ★5 | 0 | 0 | 0.48 | 0.24 | 0.024 | To 3 Enemy Troops,Launch 2-3 ATK |
 | 114 | Elemental Burst | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | Make 2 Of our Troops,In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time,Lasting For 2 Rounds |
 | 115 | Annihilation | ★5 | 0 | 0 | 2.26 | 1.13 | 0.113 | ATK 1 Enemy Troop,But Own Troop,DMG Taken Increased 15.2%(Not Affected By Attribute),Lasting For 1 Round |
-| 116 | Sky Rain Arrows | ★5 | 0 | 1 | 0.48 | 0.24 | 0.024 | 1 Round  Preparation Time,To 3 Enemy Troops,Launch 3-5 ATK |
-| 117 | Arrows Volley | ★5 | 1 | 1 | 0.66 | 0.33 | 0.033 | 1 Round  Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK |
+| 116 | Sky Rain Arrows | ★5 | 0 | 1 | 0.48 | 0.24 | 0.024 | 1 Round Preparation Time,To 3 Enemy Troops,Launch 3-5 ATK |
+| 117 | Arrows Volley | ★5 | 1 | 1 | 0.66 | 0.33 | 0.033 | 1 Round Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK |
 | 118 | Force Majeure | ★5 | 1 | 0 | 0.6 | 0.3 | 0.03 | Make 2 Of our Troops,When ATK Normally,A Chance to Combo,Lasting For 2 Rounds |
 | 119 | Defense Formation | ★5 | 0 | 0 | 0.09 | 0.045 | 0.0045 | Make 3 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 120 | Tactical Shield | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | Make 2 Of our Troops,Reduce Tactical Skill DMG received(Affected By DEF Attribute),Lasting For 2 Rounds |
@@ -268,31 +268,31 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 127 | Fireball | ★5 | 1 | 0 | 1.67 | 0.84 | 0.083 | ATK 1 Enemy Troop,And Make The Target Enemy DMG Dealt Reduced 8.0%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 128 | Dragon Roar | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 9.6(Affected By DES Attribute),Lasting For 2 Rounds |
 | 129 | Magic Vortex | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 9.6(Affected By DES Attribute),Lasting For 2 Rounds |
-| 130 | Beast King Seal | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds |
-| 131 | Flame Bash | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds |
+| 130 | Beast King Seal | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds |
+| 131 | Flame Bash | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy ATK Reduced 15.2(Affected By DES Attribute),Lasting For 2 Rounds |
 | 132 | Demon Sword | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 5.2%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 133 | Radiant Slash | ★5 | 1 | 0 | 1.2 | 0.6 | 0.06 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 5.2%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 134 | Dream Eater | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | Make 2 Of our Troops,DMG Taken Reduced(Affected By DEF Attribute),Lasting For 2 Rounds |
 | 135 | Rope Restraint | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | Make 2 Of Enemy Troops,DMG Dealt Reduced(Affected By DES Attribute),Lasting For 2 Rounds |
 | 136 | Blue Fire | ★5 | 1 | 0 | 0.114 | 0.057 | 0.0057 | Make 2 Of Enemy Troops,DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds |
-| 137 | Demon Breaker | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 138 | Soul Bound | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 139 | Storm Slash | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy Tactical Skill DMG Taken Increased 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 140 | Healing Time | ★5 | 1 | 1 | 1.5 | 0.75 | 0.075 | 1 Round  Preparation Time,Make 3 Of our Troops,Restore Life |
+| 137 | Demon Breaker | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 138 | Soul Bound | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 139 | Storm Slash | ★5 | 1 | 1 | 2.28 | 1.14 | 0.114 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy Tactical Skill DMG Taken Increased 8.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 140 | Healing Time | ★5 | 1 | 1 | 1.5 | 0.75 | 0.075 | 1 Round Preparation Time,Make 3 Of our Troops,Restore Life |
 | 141 | Light Baptism | ★5 | 1 | 0 | 0.35 | 0.18 | 0.017 | Make 2 Of our Troops,Restore Life(Healing Coefficient 1.0),And Purify The Harmful Effect Produced By Tactical And Pursuit Skill |
-| 142 | Peerless Combo | ★5 | 1 | 1 | 0.66 | 0.33 | 0.033 | 1 Round  Preparation Time,To 1 Enemy Troop,Launch 4-6 ATK |
-| 143 | Erythema Imprint | ★5 | 1 | 1 | 0.133 | 0.067 | 0.0066 | 1 Round  Preparation Time,Make 3 Of Enemy Troops,Tactical Skill DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds |
+| 142 | Peerless Combo | ★5 | 1 | 1 | 0.66 | 0.33 | 0.033 | 1 Round Preparation Time,To 1 Enemy Troop,Launch 4-6 ATK |
+| 143 | Erythema Imprint | ★5 | 1 | 1 | 0.133 | 0.067 | 0.0066 | 1 Round Preparation Time,Make 3 Of Enemy Troops,Tactical Skill DMG Taken Increased(Affected By DES Attribute),Lasting For 2 Rounds |
 | 144 | Bone Blade | ★5 | 1 | 0 | 1.8 | 0.9 | 0.09 | ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round |
-| 145 | Butterfly Strike | ★5 | 0 | 1 | 2.7 | 1.35 | 0.135 | 1 Round  Preparation Time,ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round |
-| 146 | Mushin | ★5 | 1 | 1 | 3 | 1.5 | 0.15 | 1 Round  Preparation Time,ATK 1 Enemy Troop |
+| 145 | Butterfly Strike | ★5 | 0 | 1 | 2.7 | 1.35 | 0.135 | 1 Round Preparation Time,ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round |
+| 146 | Mushin | ★5 | 1 | 1 | 3 | 1.5 | 0.15 | 1 Round Preparation Time,ATK 1 Enemy Troop |
 | 147 | Soul Drain | ★5 | 0 | 0 | 0.4 | 0.2 | 0.02 | Make 3 Of Enemy Troops,Before Each Round,Curse DMG Taken(DMG Coefficient 0.50),Lasting For 2 Rounds,And Make 3 Of our Troops,Gain 1 Layer Of Shield, Which Can Block 1 DMG |
 | 148 | Lunar Guardian | ★5 | 1 | 0 | 0.36 | 0.18 | 0.018 | Make 2 Of our Troops,Gain 1 Layer Of Shield, Which Can Block 1 DMG,And Restore Life(Healing Coefficient 0.5) |
 | 149 | Counter-Love | ★5 | 0 | 0 | 0.9 | 0.45 | 0.045 | Make 2 Of our Troops,Restore Life,And Make 2 Of Enemy TroopsDMG Taken Increased 9% (Affected By DES Attribute),Lasting For 2 Rounds |
-| 150 | Time's Aegis | ★5 | 1 | 0 | 0.35 | 0.18 | 0.017 | Make 2 Of our Troops,In A Focused State,Immune:Disarm、Silence、Stun、Chaos、Taunts,Lasting For 2 Rounds |
-| 151 | Eternal Flame | ★5 | 0 | 1 | 0.8 | 0.4 | 0.04 | 1 Round  Preparation Time,ATK 3 Enemy Troops(DMG Coefficient 1.0),And Make The Target Enemy Before Each Round,Curse DMG Taken,Lasting For 2～3 Rounds |
+| 150 | Time's Aegis | ★5 | 1 | 0 | 0.35 | 0.18 | 0.017 | Make 2 Of our Troops,In A Focused State,Immune:Disarm, Silence, Stun, Chaos, Taunts,Lasting For 2 Rounds |
+| 151 | Eternal Flame | ★5 | 0 | 1 | 0.8 | 0.4 | 0.04 | 1 Round Preparation Time,ATK 3 Enemy Troops(DMG Coefficient 1.0),And Make The Target Enemy Before Each Round,Curse DMG Taken,Lasting For 2~3 Rounds |
 | 1001 | Angry Rebel | ★5 | 0 | 0 | 0.92 | 0.46 | 0.046 | Own Troop,Gain Blood Sucking Effect,Recruit Some Enemy Soldiers When Causing DMG(Blood Sucking Coefficien 0.6),Lasting For 2 Rounds,And ATK 3 Enemy Troops |
-| 1002 | Might Fangs | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 1 Round |
-| 1003 | Vibration Hammer | ★5 | 0 | 1 | 2.1 | 1.1 | 0.1 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1002 | Might Fangs | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 1 Round |
+| 1003 | Vibration Hammer | ★5 | 0 | 1 | 2.1 | 1.1 | 0.1 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DEF Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1004 | Pure Fire | ★5 | 0 | 0 | 1.48 | 0.74 | 0.074 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1005 | Skull | ★5 | 0 | 0 | 1.48 | 0.74 | 0.074 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1006 | Bewitch Snake | ★5 | 0 | 0 | 0.8 | 0.4 | 0.04 | Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 30),Lasting For 2 Rounds,And To 1 Enemy Troop,Launch 2-4 ATK |
@@ -301,44 +301,44 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 1009 | Meteor Hammer | ★5 | 0 | 0 | 1.3 | 0.65 | 0.065 | ATK 3 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1010 | Bleak Realm | ★5 | 0 | 0 | 0.92 | 0.46 | 0.046 | ATK 3 Enemy Troops,And Make The Target Enemy Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
 | 1011 | Fangs Venom | ★5 | 0 | 0 | 0.92 | 0.46 | 0.046 | ATK 3 Enemy Troops,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 1 Round |
-| 1012 | Titan Power | ★5 | 0 | 1 | 2.1 | 1.05 | 0.105 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy 40%Probability In A Stunned State,Unable To Move,Lasting For 2 Rounds |
-| 1013 | Bursting Wind | ★5 | 0 | 1 | 2.26 | 1.13 | 0.113 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds |
-| 1014 | Soul Flag | ★5 | 0 | 1 | 2.26 | 1.13 | 0.113 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds |
+| 1012 | Titan Power | ★5 | 0 | 1 | 2.1 | 1.05 | 0.105 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy 40%Probability In A Stunned State,Unable To Move,Lasting For 2 Rounds |
+| 1013 | Bursting Wind | ★5 | 0 | 1 | 2.26 | 1.13 | 0.113 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds |
+| 1014 | Soul Flag | ★5 | 0 | 1 | 2.26 | 1.13 | 0.113 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds |
 | 1015 | Hidden Snake | ★5 | 0 | 0 | 0.55 | 0.28 | 0.027 | Own Troop,Gain Blood Sucking Effect,Recruit Some Enemy Soldiers When Causing DMG(Blood Sucking Coefficien 0.7),Lasting For 2 Rounds,And To 2 Enemy Troops,Launch 2-4 ATK |
 | 1016 | Ink Tide | ★5 | 0 | 0 | 1.6 | 0.8 | 0.08 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 1017 | Feather Blade | ★5 | 0 | 1 | 0.72 | 0.36 | 0.036 | 1 Round  Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK |
-| 1018 | Mountain Hammer | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round  Preparation Time,Own Troop,Restore Life(Healing Coefficient 2.4),ATK 3 Enemy Troops,And Make The Target Enemy DEF Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1017 | Feather Blade | ★5 | 0 | 1 | 0.72 | 0.36 | 0.036 | 1 Round Preparation Time,To 3 Enemy Troops,Launch 2-4 ATK |
+| 1018 | Mountain Hammer | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round Preparation Time,Own Troop,Restore Life(Healing Coefficient 2.4),ATK 3 Enemy Troops,And Make The Target Enemy DEF Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1019 | Dragon Breath | ★5 | 0 | 0 | 2 | 1 | 0.1 | ATK 3 Enemy Troops,And Make The Target Enemy,Before Each Round,Burning DMG Taken(DMG Coefficient 1.5),Lasting For 3 Rounds,If The Target Has Burning Effect,Immediately detonates the enemy to cause damage(DMG Coefficient 2.2) |
 | 1020 | Forbidden | ★5 | 0 | 0 | 0.114 | 0.057 | 0.0057 | Own Troop,DMG Dealt Increased(Affected By Spd Attribute),And Before Each Round,Restore Life(Healing Coefficient 1.52),Lasting For 3 Rounds |
 | 1021 | Dragon Chant | ★5 | 0 | 0 | 2 | 1 | 0.1 | Own Troop,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,And ATK 3 Enemy Troops,And Make The Target Enemy Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
 | 1022 | Luxuriant Branches | ★5 | 0 | 0 | 0.15 | 0.075 | 0.0075 | Make 2 Of our Troops,Tactical Skill DMG Dealt Increased(Affected By Spd Attribute),And Before Each Round,Restore Life(Healing Coefficient 1.00),Lasting For 1 Round |
-| 1023 | Green Glow | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy,Tactical Skill DMG Taken Increased 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1023 | Green Glow | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy,Tactical Skill DMG Taken Increased 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1024 | Cold Attack | ★5 | 0 | 0 | 1.48 | 0.74 | 0.074 | ATK 2 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round |
-| 1025 | Cold Shadow | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds |
-| 1026 | Soul Flame | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1025 | Cold Shadow | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds |
+| 1026 | Soul Flame | ★5 | 0 | 1 | 1.87 | 0.94 | 0.093 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 11.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1027 | Destroy Domain | ★5 | 0 | 0 | 1.48 | 0.74 | 0.074 | ATK 2 Enemy Troops,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round |
-| 1028 | Swift Feather | ★5 | 0 | 0 | 0.152 | 0.076 | 0.0076 | Make 2 Of our Troops,In A Focused State,Immune：Disarm、Silence、Stun、Chaos、Taunts,And DMG Dealt Increased(Affected By Spd Attribute),Lasting For 1 Round |
-| 1029 | Whirling Wing | ★5 | 0 | 1 | 2.06 | 1.03 | 0.103 | 1 Round  Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1028 | Swift Feather | ★5 | 0 | 0 | 0.152 | 0.076 | 0.0076 | Make 2 Of our Troops,In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts,And DMG Dealt Increased(Affected By Spd Attribute),Lasting For 1 Round |
+| 1029 | Whirling Wing | ★5 | 0 | 1 | 2.06 | 1.03 | 0.103 | 1 Round Preparation Time,ATK 2 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1030 | Rockslide | ★5 | 0 | 0 | 1.6 | 0.8 | 0.08 | ATK 2 Enemy Troops,And Make The Target Enemy DMG Taken Increased 12.6%(Affected By DES Attribute),Lasting For 1 Round |
-| 1031 | Rage of the Rock | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy 55% Probability In A Stunned State,Unable To Move,Lasting For 2 Rounds |
-| 1032 | Ice Blade | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy DMG Taken Increased 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 1033 | Frost Moon | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds |
-| 1034 | Burning Soul | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy Tactical Skill DMG Taken Increased 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1031 | Rage of the Rock | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy 55% Probability In A Stunned State,Unable To Move,Lasting For 2 Rounds |
+| 1032 | Ice Blade | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy DMG Taken Increased 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1033 | Frost Moon | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds |
+| 1034 | Burning Soul | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy Tactical Skill DMG Taken Increased 12.6%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1035 | Molten Tide | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 3 Enemy Troops,And Make The Target Enemy Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
-| 1036 | Stone Crack | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1036 | Stone Crack | ★5 | 0 | 1 | 1.9 | 0.95 | 0.095 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy DMG Dealt Reduced 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1037 | Black Soil Erosion | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 3 Enemy Troops,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 2 Rounds |
 | 1038 | Cold Tide | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 3 Enemy Troops,And Make The Target Enemy 50% Probability In A Disarmed State,Cannot Launch Normal ATK,Lasting For 2 Rounds,And Dissolves The Beneficial Effect Of Tactical And Pursuit Skill |
 | 1039 | Ice Roar | ★5 | 0 | 0 | 1.2 | 0.6 | 0.06 | ATK 3 Enemy Troops,And Make The Target Enemy 50% Probability In A Silenced State,Cannot Launch Tactical Skills,50% Probability In A Forbidden Treatment State,Cannot Be Healed,Lasting For 2 Rounds |
 | 1040 | Burning Soul | ★5 | 0 | 0 | 0.5 | 0.25 | 0.025 | To 2 Enemy Troops,Launch 3-5 ATK,And Make The Target Enemy Before Each Round Burning DMG Taken(DMG Coefficient 1.20),Lasting For 2 Rounds,If The Target Has Burning Effect,Immediately detonates the enemy to cause damage(DMG Coefficient 2.2) |
-| 1041 | Song of Hell | ★5 | 0 | 1 | 0.6 | 0.3 | 0.03 | 1 Round  Preparation Time,To 2 Enemy Troops,Launch 5-7 ATK |
+| 1041 | Song of Hell | ★5 | 0 | 1 | 0.6 | 0.3 | 0.03 | 1 Round Preparation Time,To 2 Enemy Troops,Launch 5-7 ATK |
 | 1042 | Cold Secret | ★5 | 0 | 0 | 1.4 | 0.7 | 0.07 | ATK 3 Enemy Troops,And Make The Target Enemy DMG Taken Increased 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 1043 | Staff of Ice | ★5 | 0 | 1 | 2.24 | 1.04 | 0.12 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds |
+| 1043 | Staff of Ice | ★5 | 0 | 1 | 2.24 | 1.04 | 0.12 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds |
 | 1044 | Melting Soul | ★5 | 0 | 0 | 1 | 0.5 | 0.05 | Own Troop,Tactical Skill DMG Dealt Increased 15.2%(Affected By Spd Attribute),And In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time,Lasting For 2 Rounds |
 | 1045 | Fury Flame Claw | ★5 | 0 | 0 | 1.6 | 0.8 | 0.08 | ATK 3 Enemy Troops,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 2 Rounds |
 | 1046 | Jade Light Sword | ★5 | 0 | 0 | 0.9 | 0.45 | 0.045 | Own Troop,Tactical Skill DMG Dealt Increased 15.2%(Affected By Spd Attribute),Lasting For 2 Rounds,And To 3 Enemy Troops,Launch 2-4 ATK |
-| 1047 | Leaf Blade | ★5 | 0 | 1 | 0.9 | 0.45 | 0.045 | 1 Round  Preparation Time,To 3 Enemy Troops,Launch 4-6 ATK,And Make The Target Enemy All Attributes Reduced 11.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1047 | Leaf Blade | ★5 | 0 | 1 | 0.9 | 0.45 | 0.045 | 1 Round Preparation Time,To 3 Enemy Troops,Launch 4-6 ATK,And Make The Target Enemy All Attributes Reduced 11.2%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1048 | Fist Strike | ★5 | 0 | 0 | 1.6 | 0.8 | 0.08 | ATK 3 Enemy Troops,And Make The Target Enemy DMG Taken Increased 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
-| 1049 | Blazing Rock Fury | ★5 | 0 | 1 | 2.24 | 1.04 | 0.12 | 1 Round  Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy All Attributes Reduced 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1049 | Blazing Rock Fury | ★5 | 0 | 1 | 2.24 | 1.04 | 0.12 | 1 Round Preparation Time,ATK 3 Enemy Troops,And Make The Target Enemy All Attributes Reduced 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1050 | Titan’s Shield | ★5 | 0 | 0 | 2.24 | 1.04 | 0.12 | Make 3 Of our Troops,Purify The Harmful Effect Produced By Tactical And Pursuit Skill,And Before Each Round,Restore Life,Lasting For 2 Rounds |
 | 1051 | Flawless Counter | ★5 | 0 | 0 | 1.8 | 0.9 | 0.09 | ATK 3 Enemy Troops,And Make The Target Enemy DMG Taken Increased 15.2%(Affected By DES Attribute),And Make The Target Enemy 55% Probability In A Stunned State,Unable To Move,Lasting For 1 Round |
 | 1052 | Frost Hell | ★5 | 0 | 0 | 1.8 | 0.9 | 0.09 | ATK 3 Enemy Troops,And Make The Target Enemy In A Silenced State,Cannot Launch Tactical Skills,Lasting For 1 Round,And Make The Target Enemy ATK Reduced 15.2%(Affected By DES Attribute),Lasting For 2 Rounds |
@@ -360,9 +360,9 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 9 | Mirror Reversal | ★4 | 1 | 0 | 0.7 | 0.35 | 0.035 | Own Troop,When Receiving A Normal ATK,100% Counterattack |
 | 10 | Wolf Blade | ★4 | 0 | 0 | 0.114 | 0.057 | 0.0057 | Own Troop,Pursuit Skill DMG Dealt Increased(Affected By Spd Attribute) |
 | 11 | Trail Fairy | ★4 | 0 | 0 | 0.5 | 0.25 | 0.025 | Own Troop,When Receiving Any Normal ATK,A Chance to DMG Taken Reduced 20%(Affected By DEF Attribute) |
-| 12 | Pure Land | ★4 | 0 | 0 | 0.6 | 0.3 | 0.03 | Own Troop,Spd Attribute Increased 11.4(Affected By DEF Attribute),And Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 12 | Pure Land | ★4 | 0 | 0 | 0.6 | 0.3 | 0.03 | Own Troop,Spd Attribute Increased 11.4(Affected By DEF Attribute),And Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 13 | Night Pupil | ★4 | 1 | 0 | 11.4 | 5.7 | 0.57 | Own Troop,Increase All Attributes(Affected By DEF Attribute) |
-| 14 | Magic Cloak | ★4 | 1 | 0 | 0.25 | 0.13 | 0.012 | Own Troop,Curse DMG Taken  Reduced(Affected By DEF Attribute),And Increase All Attributes 3.6(Affected By DEF Attribute) |
+| 14 | Magic Cloak | ★4 | 1 | 0 | 0.25 | 0.13 | 0.012 | Own Troop,Curse DMG Taken Reduced(Affected By DEF Attribute),And Increase All Attributes 3.6(Affected By DEF Attribute) |
 | 15 | Spirit Gather | ★5 | 1 | 0 | 0.04 | 0.02 | 0.002 | Own Troop,DMG Dealt Increased(Affected By Spd Attribute),Stack 1 Time Before Taking Action In Each Round,Until The End Of The Battle |
 | 16 | Reactive Block | ★5 | 1 | 0 | 0.24 | 0.12 | 0.012 | Own Troop,When Receiving A Normal ATK,100% Counterattack(DMG Coefficient 0.7),When Receiving Any DMG,30%Probability DMG Taken Reduced(Affected By DEF Attribute) |
 | 17 | Sneak Attack | ★5 | 1 | 0 | 0.09 | 0.045 | 0.0045 | Own Troop,Will Not Be Affected by the Counter ATK Effect,And DMG Dealt Increased(Affected By Spd Attribute) |
@@ -376,7 +376,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 25 | Master Tactical | ★5 | 1 | 0 | 0.15 | 0.075 | 0.0075 | Own Troop,Tactical Skill DMG Dealt Increased(Affected By Spd Attribute),But,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified |
 | 26 | Tactical Burst | ★5 | 1 | 0 | 0.4 | 0.2 | 0.02 | Own Troop,In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time |
 | 27 | Element Affinity | ★5 | 1 | 0 | 0.55 | 0.28 | 0.027 | Own Troop,In A Swiftcast State,When Activating The Tactical Skills That Needed To Prepare,A Chance to Reduce Preparation Time By 1 Round |
-| 28 | Sacred Feather | ★5 | 1 | 0 | 0.55 | 0.28 | 0.027 | Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 28 | Sacred Feather | ★5 | 1 | 0 | 0.55 | 0.28 | 0.027 | Own Troop,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 29 | Tactical Superb | ★5 | 0 | 0 | 0.55 | 0.28 | 0.027 | Own Troop,In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time,But,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified |
 | 30 | Emerald Dance | ★5 | 0 | 0 | 0.2 | 0.1 | 0.01 | Own Troop,DMG Dealt Increased(Affected By Spd Attribute),But,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified |
 | 31 | Star Compass | ★5 | 1 | 0 | 0.09 | 0.045 | 0.0045 | Own Troop,In An Eternal State,Attribute Will Not Be Changed,And DMG Taken Reduced(Affected By DEF Attribute) |
@@ -387,7 +387,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 36 | Penetrate Gun | ★5 | 1 | 0 | 0.6 | 0.3 | 0.03 | Own Troop,When ATK Normally,A Chance to Splash On Other Enemies(DMG Coefficient 0.6) |
 | 37 | Polaris | ★5 | 1 | 0 | 0.35 | 0.18 | 0.017 | Own Troop,A Chance to,Make All Carried Pursuit Skills 100% Trigger |
 | 38 | Wail | ★5 | 1 | 0 | 0.2 | 0.1 | 0.01 | For Targets in Curse state,Tactical Skill DMG Dealt Increased(Affected By Spd Attribute) |
-| 39 | Lucid | ★5 | 1 | 0 | 0.3 | 0.15 | 0.015 | Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts |
+| 39 | Lucid | ★5 | 1 | 0 | 0.3 | 0.15 | 0.015 | Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm, Silence, Stun, Chaos, Taunts |
 | 40 | Element Burs | ★5 | 1 | 0 | 0.6 | 0.3 | 0.03 | Own Troop,When attacking an enemy with Tactical Burning or Curse status,A Chance to Immediately settle all remaining Burning and Curse DMG at 1.3x,Burning and Curse effects are removed (Effect Trigger Probability,Multi-Stage Attack only triggers on the first hit) |
 | 41 | Weakness Break | ★5 | 1 | 0 | 0.76 | 0.38 | 0.038 | When Launching Pursuit Skills,A Chance to Splash On Other Enemies(DMG Coefficient 0.60) |
 | 42 | ATK-DEF Shift | ★5 | 1 | 0 | 0.76 | 0.38 | 0.038 | Own Troop,ATK Attribute Increased 11.4(Affected By DEF Attribute),And When launching ATK,A Chance to Ignores Dodge and Shield,Ignores Soldier Restraint effects |
@@ -428,7 +428,7 @@ Full skill catalog. **Type**: Strategic / Tactical / Passive / Pursuit. Skills l
 | 31 | Trio | ★5 | 1 | 0 | 1 | 0.5 | 0.05 | When ATK Normally,Launch Pursuit ATK On Target,And 40%/35%/30% Probability,Perform 3 Additional Pursuits,DMG Coefficient 0.45 |
 | 32 | Feint | ★5 | 1 | 0 | 1.52 | 0.76 | 0.076 | When ATK Normally,Regardless of the attack target,Launch a pursuit on the enemy Commander |
 | 1001 | Evil Blade | ★5 | 0 | 0 | 1.86 | 0.93 | 0.093 | When ATK Normally,Launch Pursuit ATK On Target,And 55% Probability Launch Another Pursuit On Other Targets |
-| 1002 | Demon Rock Slash | ★5 | 0 | 0 | 1.86 | 0.93 | 0.093 | When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy 受到追击伤害提高 15.4%(Affected By DES Attribute),Lasting For 2 Rounds |
+| 1002 | Demon Rock Slash | ★5 | 0 | 0 | 1.86 | 0.93 | 0.093 | When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy takes increased Pursuit damage 15.4%(Affected By DES Attribute),Lasting For 2 Rounds |
 | 1003 | Leaf Dance | ★5 | 0 | 0 | 1.9 | 0.95 | 0.095 | When ATK Normally,Launch Pursuit ATK On Target,And ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 50) |
 | 1004 | Shadow Leaf Gale | ★5 | 0 | 0 | 1.9 | 0.95 | 0.095 | When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy In A Chaos State,Carry Out Undifferentiated ATK,Lasting For 2 Rounds |
 | 1005 | Wind Wing Sprint | ★5 | 0 | 0 | 1.96 | 0.98 | 0.098 | When ATK Normally,Launch Pursuit ATK On Target,And Recruit Some Enemy Soldiers When Causing DMG(Blood Sucking Coefficien 1.50) |
