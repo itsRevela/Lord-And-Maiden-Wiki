@@ -43,7 +43,7 @@ If short on time, the most valuable subset is **end‑of‑Battle‑1 per‑unit
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DEF
 skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]  *(plain damage stone — do NOT use a buff stone here)*
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]  *(plain damage stone — do NOT use a buff stone here)*
 
 weapon: night's sword
 clothes: day's robe
@@ -65,7 +65,7 @@ T6 archer troops (55,000x)
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
 skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -87,7 +87,7 @@ T6 archer troops (55,000x)
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -112,7 +112,7 @@ T6 archer troops (55,000x)
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
 skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -134,7 +134,7 @@ T6 archer troops (55,000x)
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
 skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -156,7 +156,7 @@ T6 archer troops (55,000x)
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
 skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -178,7 +178,7 @@ T6 archer troops (55,000x)
 
 ## Notes
 - **Why these heroes:** their main skills are pure **"Launch N ATK"** (Binding Slash 2‑3 hits / Fly Flowers 1‑3 / Sky Rain Arrows 3‑5) on 3 enemies — no debuff/buff/control riders, so every hit is a clean damage reading on all three DEF levels.
-- **Skill stone** is secondary. Magic Spear is a plain damage stone; if 3× the same stone is blocked by team stone‑rules, swap any **plain damage** stone and tell me which — *avoid buff/heal/shield stones* (Elf Deer, Field Therapy, Reactive Block).
+- **Skill stones must be DISTINCT within a team** — an identical skill stone can't be equipped on two heroes in the same formation. Each team here uses three different plain‑damage stones (Holy‑light Chop / Rift / Purgatory Trial); the two formations may reuse the same three since the rule is per‑team. Stones are secondary — swap any for another **plain damage** stone if needed (and tell me which), but *avoid buff/heal/shield stones* (Elf Deer, Field Therapy, Reactive Block).
 - **Modular skills** are the heroes' own defaults; any plain "ATK N enemy" skill is a fine substitute.
 - Keep **gear + messenger identical across every unit** — it's the control (these exact pieces appeared in your first log).
 - This is the highest‑value of the three: it re‑grounds the entire damage equation, currently fit only to one shielded‑tank fight.

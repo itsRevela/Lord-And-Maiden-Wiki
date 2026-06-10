@@ -36,7 +36,7 @@ bonus). Names verified against the game data.
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DEF
 skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -58,7 +58,7 @@ T6 archer troops (55,000x)
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
 skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -80,7 +80,7 @@ T6 archer troops (55,000x)
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -105,7 +105,7 @@ T6 archer troops (55,000x)
 Cthugha·Sp (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)exploding flame lv10 (lv5 relic effect), sin judgment lv10 max awakening [Tactical, max 5★], fire emblem lv10 max awakening [Passive, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -127,7 +127,7 @@ T6 archer troops (55,000x)
 Cthugha:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)blazing sword lv10 (lv5 relic effect), erythema imprint lv10 max awakening [Tactical, max 5★], flame bash lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -149,7 +149,7 @@ T6 archer troops (55,000x)
 Nyx:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)soul drain lv10 (lv5 relic effect), lunar guardian lv10 max awakening [Tactical, max 5★], wail lv10 max awakening [Passive, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -171,6 +171,6 @@ T6 archer troops (55,000x)   *(Nyx is Infantry by default — field her on Arche
 
 ## Notes
 - The three DoT mains (Exploding Flame = Burn 1.0, Blazing Sword = Burn at a different coef, Soul Drain = Curse 0.5) are the whole point — their coefficients are printed in‑game, so the ticks become directly solvable.
-- **Skill stone**: plain damage (Magic Spear) is fine; *avoid* buff/heal/resist stones so they don't alter the DoT.
+- **Skill stones must be DISTINCT within a team** (no identical stone on two heroes in the same formation) — each team uses three plain‑damage stones (Holy‑light Chop / Rift / Purgatory Trial); *avoid* buff/heal/resist stones so they don't alter the DoT.
 - Keep **gear + messenger identical across every unit** — control.
 - Second‑most‑valuable of the three (a channel we have zero data on).

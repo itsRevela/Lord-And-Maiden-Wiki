@@ -33,7 +33,7 @@ bonus). Names verified against the game data.
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DEF
 skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -55,7 +55,7 @@ T6 archer troops (55,000x)
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
 skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -77,7 +77,7 @@ T6 archer troops (55,000x)
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
 skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -102,7 +102,7 @@ T6 archer troops (55,000x)
 SusaMaki (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
 skills: (main)flash fire lv10 (lv5 relic effect), white blade lv10 max awakening [Pursuit, max 5★], witcher lv10 max awakening [Passive, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Holy-light Chop lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -124,7 +124,7 @@ T6 archer troops (55,000x)
 Niya:
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
 skills: (main)slayer lv10 (lv5 relic effect), chain reaction lv10 max awakening [Pursuit, max 5★], trio lv10 max awakening [Pursuit, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Rift lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -146,7 +146,7 @@ T6 archer troops (55,000x)
 Mia:
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
 skills: (main)divine punish lv10 (lv5 relic effect), hayate blade lv10 max awakening [Passive, max 5★], force majeure lv10 max awakening [Tactical, max 5★]
-Skill stone: Magic Spear lv5 [Tactical, max 5★]
+Skill stone: Purgatory Trial lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -168,6 +168,6 @@ T6 archer troops (55,000x)
 
 ## Notes
 - **SusaMaki's Flash Fire** is the key read (pure pursuit + its 45% second‑pursuit proc). Niya cross‑checks Assault; Mia adds a combo‑on‑normal proc.
-- **Skill stone**: plain damage (Magic Spear) is fine; avoid buff/heal/shield stones.
+- **Skill stones must be DISTINCT within a team** (no identical stone on two heroes in the same formation) — each team uses three plain‑damage stones (Holy‑light Chop / Rift / Purgatory Trial); avoid buff/heal/shield stones.
 - Keep **gear + messenger identical across every unit** — control.
 - Third priority of the three, but it targets the exact throughput error that caused our bout‑count miss.
