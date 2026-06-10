@@ -90,6 +90,7 @@
 - [Gift Code Rewards](Items/Gift-Code-Rewards.md)
 - [Item Sources (How to Obtain)](Items/Item-Sources.md)
 - [Items & Resources (Props)](Items/Items.md)
+- [Travel Notes (Travelogue Merchant)](Items/Travel-Notes.md)
 
 ### Reference
 - [AI Equipment Sets](Reference/AI-Equipment.md)

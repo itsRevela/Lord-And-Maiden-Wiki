@@ -328,12 +328,36 @@ def gen_shop(write, tbl, R):
         "- **Lucky Wheel & Lucky Mystery Box** *(time-limited events)* — spin with Lottery Scrolls, then spend "
         "the resulting **Lucky Egg** / **Lucky Crystal** (plus Gems / Rand-Coin pack options) in the event's "
         "exchange shop. Stock is server-driven.",
-        "- **Travelogue Merchant** *(world map)* — buy city / fortress **Travel Notes** collectibles for "
-        "**Union Points**; per-item daily / weekly / monthly / lifetime limits.",
+        "- **Travelogue Merchant** *(world map)* — buy city / fortress **[Travel Notes](Travel-Notes.md)** "
+        "collectibles for **Union Points**; per-item daily / weekly / monthly / lifetime limits.",
         "- **Public Square \"Active Store\"** — an event exchange spending **Chinese Rose** (Public Square) or "
         "**Desert Expedition Star** (Desert Expedition minigame).",
     ]
     write("Items/Shop.md", "Shop (Recharge & Gift Packs)", "City & Economy", lines)
+
+
+def gen_travel_notes(write, tbl, R):
+    """The Travelogue Merchant's wares — unique 'Travel Notes' collectibles (PropInfo
+    70001-70175) bought with Union Points; each completes a Codex collection set."""
+    rows = sorted([r for r in load("PropInfo")
+                   if r["id"].isdigit() and 70000 <= int(r["id"]) < 71000],
+                  key=lambda r: int(r["id"]))
+
+    def place(r):
+        return clean(r.get("name_en") or r.get("name")).replace("-Travel Notes", "").strip()
+
+    lines = [
+        "**Travel Notes** are unique collectibles sold by the **Travelogue Merchant** on the world "
+        "map (for **Union Points**) — one per world city and per fortress/dungeon you've encountered. "
+        "Each is a *Codex Collections* unique item; gathering the listed sets completes the "
+        "[Item Collections](../Codex/Item-Collections.md) for permanent bonuses + Power. "
+        "All %d are listed below." % len(rows), "",
+        "## City Travelogues (%d)" % sum(1 for r in rows if int(r["id"]) < 70100), "",
+    ]
+    lines += tbl(["ID", "City"], [[r["id"], place(r)] for r in rows if int(r["id"]) < 70100])
+    lines += ["", "## Fortress & Dungeon Travelogues (%d)" % sum(1 for r in rows if int(r["id"]) >= 70100), ""]
+    lines += tbl(["ID", "Location"], [[r["id"], place(r)] for r in rows if int(r["id"]) >= 70100])
+    write("Items/Travel-Notes.md", "Travel Notes (Travelogue Merchant)", "Items", lines)
 
 
 def gen_choice_chests(write, tbl, R):
@@ -920,6 +944,7 @@ def register(write, tbl, R):
     gen_item_sources(write, tbl, R)
     gen_market(write, tbl, R)
     gen_shop(write, tbl, R)
+    gen_travel_notes(write, tbl, R)
     gen_choice_chests(write, tbl, R)
     gen_gift_codes(write, tbl, R)
     gen_relics(write, tbl, R)

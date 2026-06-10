@@ -314,7 +314,7 @@ Other purchase points in the game, documented on their own pages or driven entir
 - **[Hero Skin Store](../Heroes/Hero-Skins.md)** — buy hero skins with a **Hero Skin Scroll** or **Rand Coin**; each skin grants a small permanent bonus.
 - **[Gift Codes](Gift-Code-Rewards.md)** — redeem developer codes for reward bundles.
 - **Lucky Wheel & Lucky Mystery Box** *(time-limited events)* — spin with Lottery Scrolls, then spend the resulting **Lucky Egg** / **Lucky Crystal** (plus Gems / Rand-Coin pack options) in the event's exchange shop. Stock is server-driven.
-- **Travelogue Merchant** *(world map)* — buy city / fortress **Travel Notes** collectibles for **Union Points**; per-item daily / weekly / monthly / lifetime limits.
+- **Travelogue Merchant** *(world map)* — buy city / fortress **[Travel Notes](Travel-Notes.md)** collectibles for **Union Points**; per-item daily / weekly / monthly / lifetime limits.
 - **Public Square "Active Store"** — an event exchange spending **Chinese Rose** (Public Square) or **Desert Expedition Star** (Desert Expedition minigame).
 
 ---
