@@ -19,6 +19,13 @@ second Assault data point.
 Every hero is **Lv 80, advancement 5, 55,000 troops**, same gear set (control; mixed = no set
 bonus). Names verified against the game data.
 
+## Updated after Matchup 1 (baseline calibrated)
+Matchup 1 pinned the **base damage + DEF curve**, so this run isolates the **pursuit channel +
+attack/proc volume** on top of a now‑known direct‑damage baseline. Design unchanged; notes:
+- **Nicole is 4★** → she auto‑fields ~**51,000** troops (not 55,000) and a **+179** allocation cap. Expected — the game sets troop count by star.
+- **Thiel's modular Soul Bound / Radiant Slash carry a small −15% DMG‑Dealt‑Reduced rider** (enemy Thiel isn't perfectly inert). Minor — ignore, or swap them for a plain "ATK N enemy" modular.
+- **Longer fights = more pursuit/proc data.** The enemy commander (Thiel) is +DEF, which already drags the fight out; if a run ends in **< 5 rounds**, re‑run with **all three enemies on +229 DEF** to force a near‑8‑round stalemate and maximize the number of pursuit/double‑pursuit/combo procs observed.
+
 ## What to record (priority order)
 1. **Every `Use [Skill]` / `Effect Triggered Probability` / pursuit line, per round** — so I can count attacks/procs per unit per round (the throughput read).
 2. All `Loss N Soldier (current/max)` damage lines, actor → target (separate normal vs pursuit vs Assault hits).

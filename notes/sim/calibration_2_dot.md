@@ -22,6 +22,13 @@ caster DES or target HP, Burn‑vs‑Curse difference, and DEF‑independence.
 Every hero is **Lv 80, advancement 5, 55,000 troops**, same gear set (control; mixed = no set
 bonus). Names verified against the game data.
 
+## Updated after Matchup 1 (baseline calibrated)
+Matchup 1 pinned the **base damage + DEF curve**, so this run isolates the **DoT channel** on top
+of a now‑known direct‑damage baseline. Design unchanged; notes:
+- **Nicole is 4★** → she auto‑fields ~**51,000** troops (not 55,000) and a **+179** allocation cap. Expected — nothing to set; the game decides troop count by star.
+- **Thiel's modular Soul Bound / Radiant Slash carry a small −15% DMG‑Dealt‑Reduced rider** (so the enemy Thiel isn't perfectly inert). Minor — ignore, or swap them for a plain "ATK N enemy" modular if you prefer.
+- **Longer fights = more DoT‑tick data.** The enemy commander (Thiel) is +DEF, which already drags the fight out; if a run ends in **< 5 rounds**, re‑run with **all three enemies on +229 DEF** to force a near‑8‑round stalemate and maximize the number of Burn/Curse ticks observed.
+
 ## What to record (priority order)
 1. **The per‑round DoT tick lines** (`Burning/Curse DMG Taken`, the `Loss N` it produces) on each enemy — this is the core data here.
 2. All other per‑round damage lines (`Loss N (current/max)`), actor → target.
