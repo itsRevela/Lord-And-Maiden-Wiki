@@ -17,6 +17,7 @@ Thumbs.db
 
 # scratch model dumps + ad-hoc audit artifacts (regenerable; not part of the toolchain)
 tools/_*.txt
+_*.txt
 tools/audit_findings.txt
 tools/cjk_*.txt
 tools/html.txt

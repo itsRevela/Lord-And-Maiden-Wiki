@@ -1,8 +1,0 @@
-Max Number Of Troops seen in BuildNeed: 5
-GoodFeel rows: 12, levels 0..11
-  lv 0 des_en='Nothing'
-  lv 1 des_en='Heroes All Attributes +1'
-  lv 2 des_en='Heroes All Attributes +2'
-  lv 9 des_en='Heroes All Attributes +18'
-  lv 10 des_en='Heroes All Attributes +22'
-  lv 11 des_en='Heroes All Attributes +30'

@@ -1,4 +1,0 @@
-type 1 -> name_en='T1 Infantry' name='{1阶} {步兵}'
-type 2 -> name_en='T1 Archer' name='{1阶} {弓兵}'
-type 3 -> name_en='T1 Cavalry' name='{1阶} {骑兵}'
-type 4 -> name_en='T1 Chariot' name='{1阶} {战车}'
