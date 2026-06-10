@@ -1,0 +1,3272 @@
+{
+  "_about": "Resolution of every named entity in notes/sim simulatorTestCase to game-data ids + decoded effects.",
+  "_sources": [
+    "input: simulatorTestCase battle log (player-supplied)",
+    "data/csv/HeroInfo.csv, NewSkillInfo.csv, PropInfo.csv, EntryEffect.csv",
+    "data/sim/heroes.json, skills.json, gear.json (already-decoded layers)"
+  ],
+  "_hard_rules": "CSV read utf-8-sig DictReader; ensure_ascii=False; file:row cites; UNKNOWN_SERVER_SIDE for hidden formula.",
+  "_flags_summary": [
+    "Magic Messengers: NEW SYSTEM, not in gear.json (PropInfo PosType 11).",
+    "'Piety' is not a skill name -> alias of 'Devout' 1_56 (behavior match).",
+    "'Patra SP Relic': no Patra SP hero/relic exists -> resolved to 'Patra Relic' (20075).",
+    "Satoru shown as 4-star in battle report but HeroInfo id 97 is 5-star.",
+    "SP variants (Aguria·Sp 98, Slider·Sp 66) are distinct hero ids from base (95, 16).",
+    "Combat damage formula = UNKNOWN_SERVER_SIDE."
+  ],
+  "heroes": {
+    "Patra": {
+      "label_in_testcase": "Patra",
+      "hero_id": 60,
+      "name_en": "Patra",
+      "is_sp_variant": false,
+      "star": 5,
+      "race": {
+        "id": 3,
+        "name_en": "Elf"
+      },
+      "rst": 2,
+      "rst_archetype": "Archer (ATK+Ruin)",
+      "base_stats": {
+        "attack": 77,
+        "defense": 46,
+        "ruin": 56,
+        "speed": 52
+      },
+      "grow": {
+        "attack": "1.93",
+        "defense": "1.15",
+        "ruin": "1.42",
+        "speed": "1.3"
+      },
+      "maxed_lv80": {
+        "attack": 231,
+        "defense": 138,
+        "ruin": 169,
+        "speed": 156
+      },
+      "main_skill": {
+        "st": 2,
+        "id": 81,
+        "name_en": "Ghost Bone"
+      },
+      "default_modular_skills": [
+        {
+          "slot": 1,
+          "st": 2,
+          "id": 144,
+          "name_en": "Bone Blade"
+        },
+        {
+          "slot": 2,
+          "st": 3,
+          "id": 34,
+          "name_en": "Deadly Scythe"
+        }
+      ],
+      "testcase_attribute_alloc": "+229 ATK",
+      "_cite": "data/csv/HeroInfo.csv:66"
+    },
+    "Rhea": {
+      "label_in_testcase": "Rhea",
+      "hero_id": 40,
+      "name_en": "Rhea",
+      "is_sp_variant": false,
+      "star": 5,
+      "race": {
+        "id": 3,
+        "name_en": "Elf"
+      },
+      "rst": 3,
+      "rst_archetype": "Cavalry (DEF+ATK)",
+      "base_stats": {
+        "attack": 56,
+        "defense": 78,
+        "ruin": 40,
+        "speed": 58
+      },
+      "grow": {
+        "attack": "1.4",
+        "defense": "1.95",
+        "ruin": "1",
+        "speed": "1.45"
+      },
+      "maxed_lv80": {
+        "attack": 168,
+        "defense": 234,
+        "ruin": 120,
+        "speed": 174
+      },
+      "main_skill": {
+        "st": 1,
+        "id": 26,
+        "name_en": "Star Shield"
+      },
+      "default_modular_skills": [
+        {
+          "slot": 1,
+          "st": 1,
+          "id": 28,
+          "name_en": "Hard Armor"
+        },
+        {
+          "slot": 2,
+          "st": 3,
+          "id": 16,
+          "name_en": "Reactive Block"
+        }
+      ],
+      "testcase_attribute_alloc": "+229 DEF",
+      "_cite": "data/csv/HeroInfo.csv:60"
+    },
+    "Aguria_Sp": {
+      "label_in_testcase": "Aguria · Sp",
+      "hero_id": 98,
+      "name_en": "Aguria·Sp",
+      "is_sp_variant": true,
+      "star": 5,
+      "race": {
+        "id": 1,
+        "name_en": "Human"
+      },
+      "rst": 2,
+      "rst_archetype": "Archer (ATK+Ruin)",
+      "base_stats": {
+        "attack": 74,
+        "defense": 41,
+        "ruin": 61,
+        "speed": 54
+      },
+      "grow": {
+        "attack": "1.86",
+        "defense": "1.03",
+        "ruin": "1.54",
+        "speed": "1.37"
+      },
+      "maxed_lv80": {
+        "attack": 222,
+        "defense": 123,
+        "ruin": 184,
+        "speed": 163
+      },
+      "main_skill": {
+        "st": 2,
+        "id": 111,
+        "name_en": "Swift Thrust"
+      },
+      "default_modular_skills": [
+        {
+          "slot": 1,
+          "st": 2,
+          "id": 112,
+          "name_en": "Raid"
+        },
+        {
+          "slot": 2,
+          "st": 4,
+          "id": 25,
+          "name_en": "Thrust"
+        }
+      ],
+      "testcase_attribute_alloc": "+229 ATK",
+      "_cite": "data/csv/HeroInfo.csv:99"
+    },
+    "Satoru": {
+      "label_in_testcase": "Satoru",
+      "hero_id": 97,
+      "name_en": "Satoru",
+      "is_sp_variant": false,
+      "star": 5,
+      "race": {
+        "id": 2,
+        "name_en": "Orc"
+      },
+      "rst": 3,
+      "rst_archetype": "Cavalry (DEF+ATK)",
+      "base_stats": {
+        "attack": 43,
+        "defense": 72,
+        "ruin": 50,
+        "speed": 66
+      },
+      "grow": {
+        "attack": "1.08",
+        "defense": "1.82",
+        "ruin": "1.25",
+        "speed": "1.65"
+      },
+      "maxed_lv80": {
+        "attack": 129,
+        "defense": 217,
+        "ruin": 150,
+        "speed": 198
+      },
+      "main_skill": {
+        "st": 1,
+        "id": 52,
+        "name_en": "Gray World"
+      },
+      "default_modular_skills": [
+        {
+          "slot": 1,
+          "st": 1,
+          "id": 49,
+          "name_en": "Unbounded"
+        },
+        {
+          "slot": 2,
+          "st": 2,
+          "id": 99,
+          "name_en": "Cocoon Silence"
+        }
+      ],
+      "testcase_attribute_alloc": "+229 ATK SPD",
+      "_cite": "data/csv/HeroInfo.csv:98"
+    },
+    "Slider_Sp": {
+      "label_in_testcase": "Slider · Sp",
+      "hero_id": 66,
+      "name_en": "Slider·Sp",
+      "is_sp_variant": true,
+      "star": 5,
+      "race": {
+        "id": 3,
+        "name_en": "Elf"
+      },
+      "rst": 4,
+      "rst_archetype": "Chariot (Ruin+ATK)",
+      "base_stats": {
+        "attack": 49,
+        "defense": 54,
+        "ruin": 78,
+        "speed": 50
+      },
+      "grow": {
+        "attack": "1.24",
+        "defense": "1.36",
+        "ruin": "1.95",
+        "speed": "1.25"
+      },
+      "maxed_lv80": {
+        "attack": 148,
+        "defense": 162,
+        "ruin": 234,
+        "speed": 150
+      },
+      "main_skill": {
+        "st": 1,
+        "id": 42,
+        "name_en": "Dark Arrive"
+      },
+      "default_modular_skills": [
+        {
+          "slot": 1,
+          "st": 1,
+          "id": 35,
+          "name_en": "Rainy Night"
+        },
+        {
+          "slot": 2,
+          "st": 4,
+          "id": 27,
+          "name_en": "Rainy Chase"
+        }
+      ],
+      "testcase_attribute_alloc": "+229 DES",
+      "_cite": "data/csv/HeroInfo.csv:72"
+    },
+    "_base_counterparts": {
+      "Aguria_base": {
+        "label_in_testcase": "Aguria (base, NOT in testcase)",
+        "hero_id": 95,
+        "name_en": "Aguria",
+        "is_sp_variant": false,
+        "star": 5,
+        "race": {
+          "id": 1,
+          "name_en": "Human"
+        },
+        "rst": 2,
+        "rst_archetype": "Archer (ATK+Ruin)",
+        "base_stats": {
+          "attack": 74,
+          "defense": 52,
+          "ruin": 62,
+          "speed": 43
+        },
+        "grow": {
+          "attack": "1.87",
+          "defense": "1.3",
+          "ruin": "1.55",
+          "speed": "1.08"
+        },
+        "maxed_lv80": {
+          "attack": 223,
+          "defense": 156,
+          "ruin": 186,
+          "speed": 129
+        },
+        "main_skill": {
+          "st": 2,
+          "id": 97,
+          "name_en": "Flowlight Slash"
+        },
+        "default_modular_skills": [
+          {
+            "slot": 1,
+            "st": 2,
+            "id": 66,
+            "name_en": "Holy-light Chop"
+          },
+          {
+            "slot": 2,
+            "st": 4,
+            "id": 23,
+            "name_en": "Holy Chase"
+          }
+        ],
+        "testcase_attribute_alloc": "-",
+        "_cite": "data/csv/HeroInfo.csv:96"
+      },
+      "Slider_base": {
+        "label_in_testcase": "Slider (base, NOT in testcase)",
+        "hero_id": 16,
+        "name_en": "Slider",
+        "is_sp_variant": false,
+        "star": 4,
+        "race": {
+          "id": 3,
+          "name_en": "Elf"
+        },
+        "rst": 2,
+        "rst_archetype": "Archer (ATK+Ruin)",
+        "base_stats": {
+          "attack": 65,
+          "defense": 52,
+          "ruin": 36,
+          "speed": 38
+        },
+        "grow": {
+          "attack": "1.63",
+          "defense": "1.32",
+          "ruin": "0.9",
+          "speed": "0.95"
+        },
+        "maxed_lv80": {
+          "attack": 195,
+          "defense": 157,
+          "ruin": 108,
+          "speed": 114
+        },
+        "main_skill": {
+          "st": 2,
+          "id": 45,
+          "name_en": "Mad Knife"
+        },
+        "default_modular_skills": [
+          {
+            "slot": 1,
+            "st": 1,
+            "id": 10,
+            "name_en": "Red Blade"
+          },
+          {
+            "slot": 2,
+            "st": 3,
+            "id": 13,
+            "name_en": "Night Pupil"
+          }
+        ],
+        "testcase_attribute_alloc": "-",
+        "_cite": "data/csv/HeroInfo.csv:31"
+      }
+    },
+    "_sp_variant_note": "SP variants are SEPARATE HeroInfo ids from the base hero: Aguria=95 vs Aguria·Sp=98; Slider=16 vs Slider·Sp=66. They have different stars/RST/skill kits. (HeroInfo.csv)"
+  },
+  "skills": {
+    "Ghost Bone": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 81,
+      "key": "2.81",
+      "name_en": "Ghost Bone",
+      "des_en": "Own Troop,In An Assaulted State,ATK Adds Real DMG(Affected By ATK Attribute,Real DMG Base 22),Lasting For 1 Round,But,Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round,And ATK 2 Enemy Troops",
+      "skillP": "1",
+      "skillStone": "0",
+      "maxUse": "0",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.0,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "70_0_7_1_1_0_22_0_0_1_0_1+115_0_7_1_1_0_0_0_0_1_0_0+101_0_2_2_1_0.5_0_0_0_0_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 70,
+        "name": "Assault"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 70,
+          "actionName": "Assault",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 22,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "70",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0",
+            "22",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "actionType": 115,
+          "actionName": "Disarm",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "115",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.5,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "2",
+            "2",
+            "1",
+            "0.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:239",
+      "_classification": "main (Patra)",
+      "testcase_name": "Ghost Bone"
+    },
+    "Bone Blade": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 144,
+      "key": "2.144",
+      "name_en": "Bone Blade",
+      "des_en": "ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.8,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "115_0_7_1_1_0_0_0_0_1_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "101_0_2_2_1_0.9_0_0_0_0_1_0",
+      "buff_resolved": {
+        "id": 115,
+        "name": "Disarm"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.9,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "2",
+            "2",
+            "1",
+            "0.9",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 115,
+          "actionName": "Disarm",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "115",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:195",
+      "_classification": "modular (Patra) + rune",
+      "testcase_name": "Bone Blade"
+    },
+    "Star Shield": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 26,
+      "key": "1.26",
+      "name_en": "Star Shield",
+      "des_en": "In The First 3 Rounds,Own Troop,DMG Taken Reduced(Affected By DEF Attribute),And Protect Our Troops From Normal ATK",
+      "skillP": "1",
+      "skillStone": "0",
+      "maxUse": "0",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.25,
+      "maxedValuePercent": 25.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "8_1_7_1_1_0.13_0_0_0_3_1_1+120_1_6_2_1_0_0_0_0_3_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 8,
+        "name": "DMG Taken Reduced"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 8,
+          "actionName": "DMG Taken Reduced",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.13,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "8",
+            "1",
+            "7",
+            "1",
+            "1",
+            "0.13",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "actionType": 120,
+          "actionName": "Assist",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 6,
+          "targetCategoryName": "Assist / Protect target",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "120",
+            "1",
+            "6",
+            "2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:37",
+      "_classification": "main (Rhea)",
+      "testcase_name": "Star Shield"
+    },
+    "Sky Tear Arrow": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 76,
+      "key": "1.76",
+      "name_en": "Sky Tear Arrow",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Tactical Skill DMG Dealt Increased(Affected By Spd Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.114,
+      "maxedValuePercent": 11.4,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "31_1_4_2_1_0.057_0_0_0_3_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 31,
+        "name": "Tactical Skill DMG Dealt Increased"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 31,
+          "actionName": "Tactical Skill DMG Dealt Increased",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.057,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "31",
+            "1",
+            "4",
+            "2",
+            "1",
+            "0.057",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:45",
+      "_classification": "modular (Rhea)",
+      "testcase_name": "Sky Tear Arrow"
+    },
+    "Unbounded": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 49,
+      "key": "1.49",
+      "name_en": "Unbounded",
+      "des_en": "In The First 3 Rounds,Make 3 Of Enemy Troops,Before Each Round,A Chance to In A Silenced State,Cannot Launch Tactical Skills",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.6,
+      "maxedValuePercent": 60.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "85_1_2_3_0.3_0_0_0_0_3_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 85,
+        "name": "Silence(Prepared)"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 85,
+          "actionName": "Silence(Prepared)",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 3,
+          "triggerChance": 0.3,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "85",
+            "1",
+            "2",
+            "3",
+            "0.3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:65",
+      "_classification": "modular (Rhea); also Satoru default modular slot1",
+      "testcase_name": "Unbounded"
+    },
+    "Knight Creed": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 110,
+      "key": "2.110",
+      "name_en": "Knight Creed",
+      "des_en": "Own Troop,DMG Taken Reduced(Affected By DEF Attribute),And Make 2 Of Enemy Troops,In A Provoked State,Lasting For 2 Rounds",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.152,
+      "maxedValuePercent": 15.2,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "8_0_7_1_1_0.076_0_0_0_2_1_1+118_0_2_2_1_0_0_0_0_2_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 8,
+        "name": "DMG Taken Reduced"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 8,
+          "actionName": "DMG Taken Reduced",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.076,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "8",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0.076",
+            "0",
+            "0",
+            "0",
+            "2",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "actionType": 118,
+          "actionName": "Taunts",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "118",
+            "0",
+            "2",
+            "2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:236",
+      "_classification": "modular (enemy Rhea) + rune",
+      "testcase_name": "Knight Creed"
+    },
+    "Field Therapy": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 46,
+      "key": "1.46",
+      "name_en": "Field Therapy",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,Restore Life,And Make DEF Attribute Increased 11.4(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.4,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "107_1_4_2_1_0.7_0_0_0_3_1_0+10_1_0_2_1_0_11.4_0_0_3_0_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 107,
+        "name": "Self-Heal"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 107,
+          "actionName": "Self-Heal",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.7,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "107",
+            "1",
+            "4",
+            "2",
+            "1",
+            "0.7",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 10,
+          "actionName": "DEF Attribute Increased",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 11.4,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 0,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "10",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0",
+            "11.4",
+            "0",
+            "0",
+            "3",
+            "0",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:34",
+      "_classification": "skill-stone (Slider·Sp & enemy Rhea); also modular",
+      "testcase_name": "Field Therapy"
+    },
+    "Swift Thrust": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 111,
+      "key": "2.111",
+      "name_en": "Swift Thrust",
+      "des_en": "ATK The Enemy Commander 1 Time,And Make The Target Enemy In A Forbidden Treatment State,Cannot Be Healed,Lasting For 2 Rounds",
+      "skillP": "0.4",
+      "skillStone": "0",
+      "maxUse": "0",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.9,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.4,
+      "buff_raw": "119_0_0_1_1_0_0_0_0_2_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "101_0_10_1_1_0.95_0_0_0_0_1_0",
+      "buff_resolved": {
+        "id": 119,
+        "name": "Heal Ban"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 10,
+          "targetCategoryName": "Enemy Commander",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.95,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "10",
+            "1",
+            "1",
+            "0.95",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 119,
+          "actionName": "Heal Ban",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "119",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:217",
+      "_classification": "main (Aguria·Sp)",
+      "testcase_name": "Swift Thrust"
+    },
+    "Evil Fruit": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 101,
+      "key": "2.101",
+      "name_en": "Evil Fruit",
+      "des_en": "ATK The Enemy Commander 1 Time,And Make The Target Enemy 33%Probability In A Stunned State,Unable To Move,Lasting For 1 Round",
+      "skillP": "0.3",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 2.0,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.3,
+      "buff_raw": "114_0_0_1_0.33_0_0_0_0_1_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "101_0_10_1_1_1_0_0_0_0_1_0",
+      "buff_resolved": {
+        "id": 114,
+        "name": "Stun"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 10,
+          "targetCategoryName": "Enemy Commander",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 1,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "10",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 114,
+          "actionName": "Stun",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 1,
+          "triggerChance": 0.33,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "114",
+            "0",
+            "0",
+            "1",
+            "0.33",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:215",
+      "_classification": "modular (Aguria·Sp) + rune",
+      "testcase_name": "Evil Fruit"
+    },
+    "Tactical Burst": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 26,
+      "key": "3.26",
+      "name_en": "Tactical Burst",
+      "des_en": "Own Troop,In A Superconducting State,When Using A Tactical Skill That Does Not Require Preparation,A Chance to Activate The Tactical Skill 1 Additional Time",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.4,
+      "maxedValuePercent": 40.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "125_0_7_1_0.2_0_0_0_0_8_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 125,
+        "name": "Superconducting"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 125,
+          "actionName": "Superconducting",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.2,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "125",
+            "0",
+            "7",
+            "1",
+            "0.2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:347",
+      "_classification": "passive modular (Patra & Aguria·Sp)",
+      "testcase_name": "Tactical Burst"
+    },
+    "Sacred Feather": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 28,
+      "key": "3.28",
+      "name_en": "Sacred Feather",
+      "des_en": "Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.55,
+      "maxedValuePercent": 55.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "139_0_7_1_0.28_0_0_0_0_8_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 139,
+        "name": "Purification"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 139,
+          "actionName": "Purification",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.28,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "139",
+            "0",
+            "7",
+            "1",
+            "0.28",
+            "0",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:350",
+      "_classification": "passive skill-stone (Aguria·Sp)",
+      "testcase_name": "Sacred Feather"
+    },
+    "Gray World": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 52,
+      "key": "1.52",
+      "name_en": "Gray World",
+      "des_en": "From The 1st Round,Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Make 3 Of Enemy Troops,Before Each Round,A Chance to In A Silenced State,Cannot Launch Tactical Skills",
+      "skillP": "1",
+      "skillStone": "0",
+      "maxUse": "0",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.4,
+      "maxedValuePercent": 40.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "115_1_7_1_1_0_0_0_0_8_0_0+85_1_2_3_0.2_0_0_0_0_8_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 115,
+        "name": "Disarm"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 115,
+          "actionName": "Disarm",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "115",
+            "1",
+            "7",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "actionType": 85,
+          "actionName": "Silence(Prepared)",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 3,
+          "triggerChance": 0.2,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "85",
+            "1",
+            "2",
+            "3",
+            "0.2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:79",
+      "_classification": "main (Satoru)",
+      "testcase_name": "Gray World"
+    },
+    "Piety": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 56,
+      "key": "1.56",
+      "name_en": "Devout",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.4,
+      "maxedValuePercent": 40.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "139_1_4_2_0.2_0_0_0_0_3_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 139,
+        "name": "Purification"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 139,
+          "actionName": "Purification",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 0.2,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "139",
+            "1",
+            "4",
+            "2",
+            "0.2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:38",
+      "_classification": "ALIAS->'Devout'; skill-stone purify (Satoru & Slider·Sp)",
+      "testcase_name": "Piety",
+      "FLAG_ALIAS": "No skill named 'Piety' exists in NewSkillInfo. Behaviour in log (purify 2 troops, first 3 rounds) matches 'Devout' 1_56 exactly. Treated as a display alias. VERIFY in-game."
+    },
+    "Cocoon Silence": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 99,
+      "key": "2.99",
+      "name_en": "Cocoon Silence",
+      "des_en": "Make 2 Of Enemy Troops,In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.35,
+      "maxedValuePercent": 35.0,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "116_0_2_2_1_0_0_0_0_2_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 116,
+        "name": "Silence"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 116,
+          "actionName": "Silence",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "116",
+            "0",
+            "2",
+            "2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:258",
+      "_classification": "modular (Satoru) + rune",
+      "testcase_name": "Cocoon Silence"
+    },
+    "Green Tea": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 59,
+      "key": "2.59",
+      "name_en": "Green Tea",
+      "des_en": "Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute),Lasting For 2 Rounds",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.114,
+      "maxedValuePercent": 11.4,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "5_0_4_2_1_0.057_0_0_0_2_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 5,
+        "name": "DMG Dealt Increased"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 5,
+          "actionName": "DMG Dealt Increased",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.057,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "5",
+            "0",
+            "4",
+            "2",
+            "1",
+            "0.057",
+            "0",
+            "0",
+            "0",
+            "2",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:249",
+      "_classification": "skill-stone (Satoru)",
+      "testcase_name": "Green Tea"
+    },
+    "Dark Arrive": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 42,
+      "key": "1.42",
+      "name_en": "Dark Arrive",
+      "des_en": "In The First 3 Rounds,Make 3 Of Enemy Troops,All Attributes Reduced(Affected By DES Attribute),And In A Forbidden Treatment State,Cannot Be Healed",
+      "skillP": "1",
+      "skillStone": "0",
+      "maxUse": "0",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.06,
+      "maxedValuePercent": 6.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "28_1_2_3_1_0.03_0_0_0_3_1_1+119_1_2_3_1_0_0_0_0_3_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 28,
+        "name": "All Attributes Reduced"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 28,
+          "actionName": "All Attributes Reduced",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 3,
+          "triggerChance": 1,
+          "coefficient": 0.03,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "28",
+            "1",
+            "2",
+            "3",
+            "1",
+            "0.03",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        },
+        {
+          "actionType": 119,
+          "actionName": "Heal Ban",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 3,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "119",
+            "1",
+            "2",
+            "3",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "3",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:62",
+      "_classification": "main (Slider·Sp)",
+      "testcase_name": "Dark Arrive"
+    },
+    "Noise": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 32,
+      "key": "1.32",
+      "name_en": "Noise",
+      "des_en": "In The First 3 Rounds,Make 2 Of Enemy Troops,DMG Taken Increased(Affected By DES Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.114,
+      "maxedValuePercent": 11.4,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "7_1_2_2_1_0.057_0_0_0_3_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 7,
+        "name": "DMG Taken Increased"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 7,
+          "actionName": "DMG Taken Increased",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.057,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "7",
+            "1",
+            "2",
+            "2",
+            "1",
+            "0.057",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:43",
+      "_classification": "modular (Slider·Sp)",
+      "testcase_name": "Noise"
+    },
+    "Counterattack": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 9,
+      "key": "1.9",
+      "name_en": "Counterattack",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,When Receiving A Normal ATK,A Chance to Counterattack(DMG Coefficient 0.95)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "4",
+      "maxedValue": 0.76,
+      "maxedValuePercent": 76.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "81_1_4_2_0.38_0.95_0_0_0_3_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 81,
+        "name": "概率反击"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 81,
+          "actionName": "概率反击",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 0.38,
+          "coefficient": 0.95,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "81",
+            "1",
+            "4",
+            "2",
+            "0.38",
+            "0.95",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:17",
+      "_classification": "passive component of Reactive Block trigger",
+      "testcase_name": "Counterattack"
+    },
+    "Reactive Block": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 16,
+      "key": "3.16",
+      "name_en": "Reactive Block",
+      "des_en": "Own Troop,When Receiving A Normal ATK,100% Counterattack(DMG Coefficient 0.7),When Receiving Any DMG,30%Probability DMG Taken Reduced(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.24,
+      "maxedValuePercent": 24.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "81_0_7_1_1_0.7_0_0_0_8_0_0+8_0_7_1_0.30_0.12_0_0_0_8_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 81,
+        "name": "概率反击"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 81,
+          "actionName": "概率反击",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.7,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "81",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0.7",
+            "0",
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "actionType": 8,
+          "actionName": "DMG Taken Reduced",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.3,
+          "coefficient": 0.12,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "8",
+            "0",
+            "7",
+            "1",
+            "0.30",
+            "0.12",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:334",
+      "_classification": "passive skill-stone (Rhea); 'Reactive' is the short name",
+      "testcase_name": "Reactive Block"
+    },
+    "Magic Spear": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 125,
+      "key": "2.125",
+      "name_en": "Magic Spear",
+      "des_en": "ATK 1 Enemy Troop,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round",
+      "skillP": "0.3",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 2.09,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.3,
+      "buff_raw": "115_0_0_1_1_0_0_0_0_1_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "101_0_2_1_1_1.05_0_0_0_0_1_0",
+      "buff_resolved": {
+        "id": 115,
+        "name": "Disarm"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 1.05,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "2",
+            "1",
+            "1",
+            "1.05",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 115,
+          "actionName": "Disarm",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "115",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:220",
+      "_classification": "skill-stone (Patra)",
+      "testcase_name": "Magic Spear"
+    },
+    "Healing Bell": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 58,
+      "key": "2.58",
+      "name_en": "Healing Bell",
+      "des_en": "Make 2 Of our Troops,Restore Life",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.2,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "0",
+      "dbuff_raw": "0",
+      "effect_raw": "102_0_4_2_1_0.6_0_0_0_0_1_0",
+      "buff_resolved": null,
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 102,
+          "actionName": "Heal / Restore Life",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.6,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "102",
+            "0",
+            "4",
+            "2",
+            "1",
+            "0.6",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:189",
+      "_classification": "rune (Rhea & Slider·Sp)",
+      "testcase_name": "Healing Bell"
+    },
+    "Reactive": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 16,
+      "key": "3.16",
+      "name_en": "Reactive Block",
+      "des_en": "Own Troop,When Receiving A Normal ATK,100% Counterattack(DMG Coefficient 0.7),When Receiving Any DMG,30%Probability DMG Taken Reduced(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.24,
+      "maxedValuePercent": 24.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "81_0_7_1_1_0.7_0_0_0_8_0_0+8_0_7_1_0.30_0.12_0_0_0_8_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 81,
+        "name": "概率反击"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 81,
+          "actionName": "概率反击",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.7,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "81",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0.7",
+            "0",
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "actionType": 8,
+          "actionName": "DMG Taken Reduced",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.3,
+          "coefficient": 0.12,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "8",
+            "0",
+            "7",
+            "1",
+            "0.30",
+            "0.12",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:334",
+      "_classification": "ALIAS of 'Reactive Block' (skill-stone, Rhea)",
+      "testcase_name": "Reactive",
+      "FLAG_ALIAS": "Same skill as 'Reactive Block' 3_16 (short form)."
+    },
+    "Elf Deer": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 58,
+      "key": "1.58",
+      "name_en": "Elf Deer",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Increase All Attributes(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 11.4,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "13_1_4_2_1_0_5.7_0_0_3_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 13,
+        "name": "Increase All Attributes"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 13,
+          "actionName": "Increase All Attributes",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 5.7,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "13",
+            "1",
+            "4",
+            "2",
+            "1",
+            "0",
+            "5.7",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:68",
+      "_classification": "skill-stone (enemy Rhea)",
+      "testcase_name": "Elf Deer"
+    }
+  },
+  "skill_stones": {
+    "Elf Deer": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 58,
+      "key": "1.58",
+      "name_en": "Elf Deer",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Increase All Attributes(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 11.4,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "13_1_4_2_1_0_5.7_0_0_3_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 13,
+        "name": "Increase All Attributes"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 13,
+          "actionName": "Increase All Attributes",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 5.7,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "13",
+            "1",
+            "4",
+            "2",
+            "1",
+            "0",
+            "5.7",
+            "0",
+            "0",
+            "3",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:68",
+      "_classification": "skill-stone",
+      "testcase_name": "Elf Deer",
+      "is_skill_stone_eligible": true
+    },
+    "Sacred Feather": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 28,
+      "key": "3.28",
+      "name_en": "Sacred Feather",
+      "des_en": "Own Troop,Before Each Round,A Chance to Purification:Disarm、Silence、Stun、Chaos、Taunts",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.55,
+      "maxedValuePercent": 55.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "139_0_7_1_0.28_0_0_0_0_8_1_0",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 139,
+        "name": "Purification"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 139,
+          "actionName": "Purification",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.28,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "139",
+            "0",
+            "7",
+            "1",
+            "0.28",
+            "0",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:350",
+      "_classification": "skill-stone",
+      "testcase_name": "Sacred Feather",
+      "is_skill_stone_eligible": true
+    },
+    "Green Tea": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 59,
+      "key": "2.59",
+      "name_en": "Green Tea",
+      "des_en": "Make 2 Of our Troops,DMG Dealt Increased(Affected By Spd Attribute),Lasting For 2 Rounds",
+      "skillP": "0.35",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.114,
+      "maxedValuePercent": 11.4,
+      "triggerProbAtMax": 0.35,
+      "buff_raw": "5_0_4_2_1_0.057_0_0_0_2_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 5,
+        "name": "DMG Dealt Increased"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 5,
+          "actionName": "DMG Dealt Increased",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.057,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 2,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "5",
+            "0",
+            "4",
+            "2",
+            "1",
+            "0.057",
+            "0",
+            "0",
+            "0",
+            "2",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:249",
+      "_classification": "skill-stone",
+      "testcase_name": "Green Tea",
+      "is_skill_stone_eligible": true
+    },
+    "Magic Spear": {
+      "skill_type": 2,
+      "skill_type_name": "Tactical",
+      "skill_id": 125,
+      "key": "2.125",
+      "name_en": "Magic Spear",
+      "des_en": "ATK 1 Enemy Troop,And Make The Target Enemy In A Disarmed State,Cannot Launch Normal ATK,Lasting For 1 Round",
+      "skillP": "0.3",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 2.09,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 0.3,
+      "buff_raw": "115_0_0_1_1_0_0_0_0_1_0_0",
+      "dbuff_raw": "0",
+      "effect_raw": "101_0_2_1_1_1.05_0_0_0_0_1_0",
+      "buff_resolved": {
+        "id": 115,
+        "name": "Disarm"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 101,
+          "actionName": "ATK Enemy",
+          "isAction": true,
+          "fromRound": 0,
+          "targetCategory": 2,
+          "targetCategoryName": "Enemy Troops",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 1.05,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 0,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "101",
+            "0",
+            "2",
+            "1",
+            "1",
+            "1.05",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 115,
+          "actionName": "Disarm",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 1,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "115",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:220",
+      "_classification": "skill-stone",
+      "testcase_name": "Magic Spear",
+      "is_skill_stone_eligible": true
+    },
+    "Reactive": {
+      "skill_type": 3,
+      "skill_type_name": "Passive",
+      "skill_id": 16,
+      "key": "3.16",
+      "name_en": "Reactive Block",
+      "des_en": "Own Troop,When Receiving A Normal ATK,100% Counterattack(DMG Coefficient 0.7),When Receiving Any DMG,30%Probability DMG Taken Reduced(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 0.24,
+      "maxedValuePercent": 24.0,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "81_0_7_1_1_0.7_0_0_0_8_0_0+8_0_7_1_0.30_0.12_0_0_0_8_1_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 81,
+        "name": "概率反击"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 81,
+          "actionName": "概率反击",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 1,
+          "coefficient": 0.7,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 0,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "81",
+            "0",
+            "7",
+            "1",
+            "1",
+            "0.7",
+            "0",
+            "0",
+            "0",
+            "8",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "actionType": 8,
+          "actionName": "DMG Taken Reduced",
+          "isAction": false,
+          "fromRound": 0,
+          "targetCategory": 7,
+          "targetCategoryName": "Own / Self",
+          "targetCount": 1,
+          "triggerChance": 0.3,
+          "coefficient": 0.12,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 8,
+          "flagA": 1,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "8",
+            "0",
+            "7",
+            "1",
+            "0.30",
+            "0.12",
+            "0",
+            "0",
+            "0",
+            "8",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:334",
+      "_classification": "skill-stone",
+      "testcase_name": "Reactive",
+      "is_skill_stone_eligible": true
+    },
+    "Field Therapy": {
+      "skill_type": 1,
+      "skill_type_name": "Strategic",
+      "skill_id": 46,
+      "key": "1.46",
+      "name_en": "Field Therapy",
+      "des_en": "In The First 3 Rounds,Make 2 Of our Troops,Before Each Round,Restore Life,And Make DEF Attribute Increased 11.4(Affected By DEF Attribute)",
+      "skillP": "1",
+      "skillStone": "1",
+      "maxUse": "1",
+      "readyRound": "0",
+      "rare": "5",
+      "maxedValue": 1.4,
+      "maxedValuePercent": null,
+      "triggerProbAtMax": 1.0,
+      "buff_raw": "107_1_4_2_1_0.7_0_0_0_3_1_0+10_1_0_2_1_0_11.4_0_0_3_0_1",
+      "dbuff_raw": "0",
+      "effect_raw": "0",
+      "buff_resolved": {
+        "id": 107,
+        "name": "Self-Heal"
+      },
+      "dbuff_resolved": null,
+      "effects_decoded": [
+        {
+          "actionType": 107,
+          "actionName": "Self-Heal",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 4,
+          "targetCategoryName": "Our Troops",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0.7,
+          "flatMagnitude": 0,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 1,
+          "affectedByAttr": 0,
+          "rawTokens": [
+            "107",
+            "1",
+            "4",
+            "2",
+            "1",
+            "0.7",
+            "0",
+            "0",
+            "0",
+            "3",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "actionType": 10,
+          "actionName": "DEF Attribute Increased",
+          "isAction": false,
+          "fromRound": 1,
+          "targetCategory": 0,
+          "targetCategoryName": "Inherit action target (the target enemy)",
+          "targetCount": 2,
+          "triggerChance": 1,
+          "coefficient": 0,
+          "flatMagnitude": 11.4,
+          "layersOrMinDur": 0,
+          "maxStacks": 0,
+          "duration": 3,
+          "flagA": 0,
+          "affectedByAttr": 1,
+          "rawTokens": [
+            "10",
+            "1",
+            "0",
+            "2",
+            "1",
+            "0",
+            "11.4",
+            "0",
+            "0",
+            "3",
+            "0",
+            "1"
+          ]
+        }
+      ],
+      "_cite": "data/csv/NewSkillInfo.csv:34",
+      "_classification": "skill-stone",
+      "testcase_name": "Field Therapy",
+      "is_skill_stone_eligible": true
+    }
+  },
+  "relics": {
+    "Rhea Relic": {
+      "relic_id": "20045",
+      "name": "Rhea Relic",
+      "hero": "Rhea",
+      "hero_id": "40",
+      "rarity": 5,
+      "max_level": 5,
+      "enhanced_skill": {
+        "skill_type_id": "1",
+        "skill_id": "26",
+        "skill_type": "Strategic",
+        "skill_name": "Star Shield"
+      },
+      "raw_effect_max": "8_0.30",
+      "effect_tokens_max": [
+        {
+          "buff_id": "8",
+          "value": "0.30"
+        }
+      ],
+      "max_bonus": "DMG Taken Reduced +30%(Not Affected By Attribute)",
+      "lv1_bonus": "DMG Taken Reduced +10%(Not Affected By Attribute)",
+      "score_at_max": 45000,
+      "level_up_material": "UNKNOWN_SERVER_SIDE (duplicate-relic count per level not in client)",
+      "testcase_name": "Rhea Relic"
+    },
+    "Aguria SP Relic": {
+      "relic_id": "20225",
+      "name": "Aguria·Sp Relic",
+      "hero": "Aguria·Sp",
+      "hero_id": "98",
+      "rarity": 5,
+      "max_level": 5,
+      "enhanced_skill": {
+        "skill_type_id": "2",
+        "skill_id": "111",
+        "skill_type": "Tactical",
+        "skill_name": "Swift Thrust"
+      },
+      "raw_effect_max": "45_0.12",
+      "effect_tokens_max": [
+        {
+          "buff_id": "45",
+          "value": "0.12"
+        }
+      ],
+      "max_bonus": "Skill Trigger Probability +12.0%",
+      "lv1_bonus": "Skill Trigger Probability +4.0%",
+      "score_at_max": 45000,
+      "level_up_material": "UNKNOWN_SERVER_SIDE (duplicate-relic count per level not in client)",
+      "testcase_name": "Aguria SP Relic"
+    },
+    "Satoru Relic": {
+      "relic_id": "20220",
+      "name": "Satoru Relic",
+      "hero": "Satoru",
+      "hero_id": "97",
+      "rarity": 5,
+      "max_level": 5,
+      "enhanced_skill": {
+        "skill_type_id": "1",
+        "skill_id": "52",
+        "skill_type": "Strategic",
+        "skill_name": "Gray World"
+      },
+      "raw_effect_max": "1_0.12",
+      "effect_tokens_max": [
+        {
+          "buff_id": "1",
+          "value": "0.12"
+        }
+      ],
+      "max_bonus": "Effect Trigger Probability +12.0%",
+      "lv1_bonus": "Effect Trigger Probability +4.0%",
+      "score_at_max": 45000,
+      "level_up_material": "UNKNOWN_SERVER_SIDE (duplicate-relic count per level not in client)",
+      "testcase_name": "Satoru Relic"
+    },
+    "Patra SP Relic": {
+      "relic_id": "20075",
+      "name": "Patra Relic",
+      "hero": "Patra",
+      "hero_id": "60",
+      "rarity": 5,
+      "max_level": 5,
+      "enhanced_skill": {
+        "skill_type_id": "2",
+        "skill_id": "81",
+        "skill_type": "Tactical",
+        "skill_name": "Ghost Bone"
+      },
+      "raw_effect_max": "2_0.30+41_7.2",
+      "effect_tokens_max": [
+        {
+          "buff_id": "2",
+          "value": "0.30"
+        },
+        {
+          "buff_id": "41",
+          "value": "7.2"
+        }
+      ],
+      "max_bonus": "DMG Coefficient +0.30, Real DMG Base +7.2(Not Affected By Attribute)",
+      "lv1_bonus": "DMG Coefficient +0.10, Real DMG Base +2.4(Not Affected By Attribute)",
+      "score_at_max": 45000,
+      "level_up_material": "UNKNOWN_SERVER_SIDE (duplicate-relic count per level not in client)",
+      "testcase_name": "Patra SP Relic",
+      "FLAG_DISCREPANCY": "Testcase says 'Patra SP Relic' but no Patra SP hero exists; only Patra (id 60) with relic 20075 'Patra Relic'. Resolved to that."
+    },
+    "Slider SP Relic": {
+      "relic_id": "20105",
+      "name": "Slider·Sp Relic",
+      "hero": "Slider·Sp",
+      "hero_id": "66",
+      "rarity": 5,
+      "max_level": 5,
+      "enhanced_skill": {
+        "skill_type_id": "1",
+        "skill_id": "42",
+        "skill_type": "Strategic",
+        "skill_name": "Dark Arrive"
+      },
+      "raw_effect_max": "28_0.072",
+      "effect_tokens_max": [
+        {
+          "buff_id": "28",
+          "value": "0.072"
+        }
+      ],
+      "max_bonus": "All Attributes Reduced +7.2%(Not Affected By Attribute)",
+      "lv1_bonus": "All Attributes Reduced +2.4%(Not Affected By Attribute)",
+      "score_at_max": 45000,
+      "level_up_material": "UNKNOWN_SERVER_SIDE (duplicate-relic count per level not in client)",
+      "testcase_name": "Slider SP Relic"
+    }
+  },
+  "runes": {
+    "Knight Creed": {
+      "rune_id": "50282",
+      "boosted_skill": {
+        "skill_type_id": "2",
+        "skill_id": "110",
+        "skill_type": "Tactical",
+        "skill_name": "Knight Creed"
+      },
+      "rarity": 5,
+      "max_level": 5,
+      "trigger_chance_lv1_pct": 1.4,
+      "trigger_chance_max_pct": 7.0,
+      "effect_id": "45",
+      "effect_meaning": "Skill Trigger Probability",
+      "skill_effect": "Own Troop,DMG Taken Reduced(Affected By DEF Attribute),And Make 2 Of Enemy Troops,In A Provoked State,Lasting For 2 Rounds",
+      "upgrade_material": "Runes-Fragment (exact count per level UNKNOWN_SERVER_SIDE)",
+      "testcase_name": "Knight Creed"
+    },
+    "Evil Fruit": {
+      "rune_id": "50227",
+      "boosted_skill": {
+        "skill_type_id": "2",
+        "skill_id": "101",
+        "skill_type": "Tactical",
+        "skill_name": "Evil Fruit"
+      },
+      "rarity": 5,
+      "max_level": 5,
+      "trigger_chance_lv1_pct": 1.2,
+      "trigger_chance_max_pct": 6.0,
+      "effect_id": "45",
+      "effect_meaning": "Skill Trigger Probability",
+      "skill_effect": "ATK The Enemy Commander 1 Time,And Make The Target Enemy 33%Probability In A Stunned State,Unable To Move,Lasting For 1 Round",
+      "upgrade_material": "Runes-Fragment (exact count per level UNKNOWN_SERVER_SIDE)",
+      "testcase_name": "Evil Fruit"
+    },
+    "Cocoon Silence": {
+      "rune_id": "50352",
+      "boosted_skill": {
+        "skill_type_id": "2",
+        "skill_id": "99",
+        "skill_type": "Tactical",
+        "skill_name": "Cocoon Silence"
+      },
+      "rarity": 5,
+      "max_level": 5,
+      "trigger_chance_lv1_pct": 1.4,
+      "trigger_chance_max_pct": 7.0,
+      "effect_id": "45",
+      "effect_meaning": "Skill Trigger Probability",
+      "skill_effect": "Make 2 Of Enemy Troops,In A Silenced State,Cannot Launch Tactical Skills,Lasting For 2 Rounds",
+      "upgrade_material": "Runes-Fragment (exact count per level UNKNOWN_SERVER_SIDE)",
+      "testcase_name": "Cocoon Silence"
+    },
+    "Bone Blade": {
+      "rune_id": "50162",
+      "boosted_skill": {
+        "skill_type_id": "2",
+        "skill_id": "144",
+        "skill_type": "Tactical",
+        "skill_name": "Bone Blade"
+      },
+      "rarity": 5,
+      "max_level": 5,
+      "trigger_chance_lv1_pct": 1.4,
+      "trigger_chance_max_pct": 7.0,
+      "effect_id": "45",
+      "effect_meaning": "Skill Trigger Probability",
+      "skill_effect": "ATK 2 Enemy Troops,But Own Troop,In A Disarmed State,Cannot Launch Normal ATK,Cannot Be purified,Lasting For 1 Round",
+      "upgrade_material": "Runes-Fragment (exact count per level UNKNOWN_SERVER_SIDE)",
+      "testcase_name": "Bone Blade"
+    },
+    "Healing Bell": {
+      "rune_id": "50137",
+      "boosted_skill": {
+        "skill_type_id": "2",
+        "skill_id": "58",
+        "skill_type": "Tactical",
+        "skill_name": "Healing Bell"
+      },
+      "rarity": 5,
+      "max_level": 5,
+      "trigger_chance_lv1_pct": 1.4,
+      "trigger_chance_max_pct": 7.0,
+      "effect_id": "45",
+      "effect_meaning": "Skill Trigger Probability",
+      "skill_effect": "Make 2 Of our Troops,Restore Life",
+      "upgrade_material": "Runes-Fragment (exact count per level UNKNOWN_SERVER_SIDE)",
+      "testcase_name": "Healing Bell"
+    }
+  },
+  "magic_messengers": {
+    "Snow Fox": {
+      "prop_id": 3628,
+      "name_en": "Snow Fox(T6)",
+      "rare": "6",
+      "type": "3",
+      "PosType": "11",
+      "effect_raw": "51_25+50_60+48_800",
+      "effect_decoded": "Hero ATK +25, Hero ATK Spd +60, PVE DMG Taken Reduced +8%",
+      "value": "80000",
+      "slot_hint": "Magic Messenger (slot 11)",
+      "_cite": "data/csv/PropInfo.csv:1233",
+      "testcase_name": "Snow Fox (T6)"
+    },
+    "Swift Fox": {
+      "prop_id": 3624,
+      "name_en": "Swift Fox(T6)",
+      "rare": "6",
+      "type": "3",
+      "PosType": "11",
+      "effect_raw": "51_25+50_60+46_800",
+      "effect_decoded": "Hero ATK +25, Hero ATK Spd +60, PVE DMG Dealt Increased +8%",
+      "value": "80000",
+      "slot_hint": "Magic Messenger (slot 11)",
+      "_cite": "data/csv/PropInfo.csv:1229",
+      "testcase_name": "Swift Fox (T6)"
+    },
+    "Snowvine Cat": {
+      "prop_id": 3604,
+      "name_en": "Snowvine Cat(T6)",
+      "rare": "6",
+      "type": "3",
+      "PosType": "11",
+      "effect_raw": "51_25+50_60+131_400",
+      "effect_decoded": "Hero ATK +25, Hero ATK Spd +60, Equip Tactical Skill Activation Probability +4%",
+      "value": "80000",
+      "slot_hint": "Magic Messenger (slot 11)",
+      "_cite": "data/csv/PropInfo.csv:1209",
+      "testcase_name": "Snowvine Cat (T6)"
+    },
+    "Ice Shark": {
+      "prop_id": 3636,
+      "name_en": "Ice Shark(T6)",
+      "rare": "6",
+      "type": "3",
+      "PosType": "11",
+      "effect_raw": "52_25+50_60+48_800",
+      "effect_decoded": "Hero DEF +25, Hero ATK Spd +60, PVE DMG Taken Reduced +8%",
+      "value": "80000",
+      "slot_hint": "Magic Messenger (slot 11)",
+      "_cite": "data/csv/PropInfo.csv:1241",
+      "testcase_name": "Ice Shark (T6)"
+    },
+    "_system_note": "Magic Messengers = PropInfo PosType 11, type 3 (49 rows total, IDs 3601-3649, tiers T3-T6). Each occupies the 11th hero gear slot (gen_gear slot_enum). Effect string uses the EntryEffect namespace (NOT skill-buff): all grant flat Hero ATK/DEF/DES + Hero ATK Spd, plus one conditional combat modifier at T4+: code 46=PVE DMG Dealt +%, 48=PVE DMG Taken Reduced %, 131=Equip Tactical Skill Activation Prob %, 132=Equip Pursuit Skill Activation Prob %. T6 grants +25 ATK-stat +60 ATK Spd + an 8%/4% conditional. NOT modeled in gear.json -> NEW SYSTEM to add. (PropInfo.csv PosType==11; EntryEffect.csv codes verified.)"
+  },
+  "equipment": {
+    "Night's Sword": {
+      "prop_id": 3301,
+      "name_en": "Night'S Sword",
+      "slot": "Weapon",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Dealt Increased +7%",
+        "Soldier ATK +10",
+        "Soldier ATK +20%"
+      ],
+      "testcase_label": "Night's Sword"
+    },
+    "Day's Robe": {
+      "prop_id": 3302,
+      "name_en": "Day's Robe",
+      "slot": "Armor",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Taken Reduced +7%",
+        "Soldier DEF +10",
+        "Soldier DEF +20%"
+      ],
+      "testcase_label": "Day's Robe"
+    },
+    "Fanatical Shorts": {
+      "prop_id": 3303,
+      "name_en": "Fanatical Shorts",
+      "slot": "Pants",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Taken Reduced +7%",
+        "Soldier HP +10",
+        "Soldier HP +10%"
+      ],
+      "testcase_label": "Fanatical Shorts"
+    },
+    "Day's Helmet": {
+      "prop_id": 3304,
+      "name_en": "Day's Helmet",
+      "slot": "Helmet",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Taken Reduced +7%",
+        "Soldier HP +10",
+        "Soldier HP +10%"
+      ],
+      "testcase_label": "Day's Helmet"
+    },
+    "Fanatical Bracers": {
+      "prop_id": 3305,
+      "name_en": "Fanatical Bracers",
+      "slot": "Bracers",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Dealt Increased +7%",
+        "Soldier DES +10",
+        "Soldier DES +20%"
+      ],
+      "testcase_label": "Fanatical Bracers"
+    },
+    "Night's Boots": {
+      "prop_id": 3306,
+      "name_en": "Night's Boots",
+      "slot": "Boots",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Dealt Increased +7%",
+        "Hero ATK Spd +20",
+        "Soldier March Spd +20%"
+      ],
+      "testcase_label": "Night's Boots"
+    },
+    "Light Winged Dagger": {
+      "prop_id": 3409,
+      "name_en": "Light Winged Dagger",
+      "slot": "Accessory",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Dealt Increased +10%",
+        "PVP DMG Dealt Increased +10%"
+      ],
+      "testcase_label": "Light Winged Dagger"
+    },
+    "Aegis": {
+      "prop_id": 3412,
+      "name_en": "Aegis",
+      "slot": "Accessory",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVE DMG Taken Reduced +10%",
+        "PVP DMG Taken Reduced +10%"
+      ],
+      "testcase_label": "Aegis"
+    },
+    "Light Sword": {
+      "prop_id": 3307,
+      "name_en": "Light Sword",
+      "slot": "Weapon",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Dealt Increased +7%",
+        "Soldier ATK +10",
+        "Soldier ATK +20%"
+      ],
+      "testcase_label": "Light Sword"
+    },
+    "Abyss Armor": {
+      "prop_id": 3308,
+      "name_en": "Abyss Armor",
+      "slot": "Armor",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Taken Reduced +7%",
+        "Soldier DEF +10",
+        "Soldier DEF +20%"
+      ],
+      "testcase_label": "Abyss Armor"
+    },
+    "Abyss Pants": {
+      "prop_id": 3309,
+      "name_en": "Abyss Pants",
+      "slot": "Pants",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Taken Reduced +7%",
+        "Soldier HP +10",
+        "Soldier HP +10%"
+      ],
+      "testcase_label": "Abyss Pants"
+    },
+    "Streamer Helmet": {
+      "prop_id": 3310,
+      "name_en": "Streamer Helmet",
+      "slot": "Helmet",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Taken Reduced +7%",
+        "Soldier HP +10",
+        "Soldier HP +10%"
+      ],
+      "testcase_label": "Streamer Helmet"
+    },
+    "Cool Bracers": {
+      "prop_id": 3311,
+      "name_en": "Cool Bracers",
+      "slot": "Bracers",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Dealt Increased +7%",
+        "Soldier DES +10",
+        "Soldier DES +20%"
+      ],
+      "testcase_label": "Cool Bracers"
+    },
+    "Cool Boots": {
+      "prop_id": 3312,
+      "name_en": "Cool Boots",
+      "slot": "Boots",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "PVP DMG Dealt Increased +7%",
+        "Hero ATK Spd +20",
+        "Soldier March Spd +20%"
+      ],
+      "testcase_label": "Cool Boots"
+    },
+    "Fate (axe)": {
+      "prop_id": 3169,
+      "name_en": "Fate Axe",
+      "slot": "Weapon",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Chariot ATK +10",
+        "Chariot ATK +20%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3387,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (axe)"
+    },
+    "Fate (armor)": {
+      "prop_id": 3170,
+      "name_en": "Fate Armor",
+      "slot": "Armor",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Chariot DEF +10",
+        "Chariot DEF +20%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3388,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (armor)"
+    },
+    "Fate (shorts)": {
+      "prop_id": 3171,
+      "name_en": "Fate Pants",
+      "slot": "Pants",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Chariot HP +10",
+        "Chariot HP +10%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3389,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (shorts)"
+    },
+    "Fate (helmet)": {
+      "prop_id": 3172,
+      "name_en": "Fate Helmet",
+      "slot": "Helmet",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Chariot HP +10",
+        "Chariot HP +10%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3390,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (helmet)"
+    },
+    "Fate (bracers)": {
+      "prop_id": 3173,
+      "name_en": "Fate Bracers",
+      "slot": "Bracers",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Chariot DES +10",
+        "Chariot DES +20%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3391,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (bracers)"
+    },
+    "Fate (boots)": {
+      "prop_id": 3174,
+      "name_en": "Fate Boots",
+      "slot": "Boots",
+      "rarity": 5,
+      "power": 34800,
+      "set_id": "28",
+      "set_name": "Fate",
+      "effects": [
+        "Hero ATK Spd +18",
+        "Soldier March Spd +18%"
+      ],
+      "_other_tiers": [
+        {
+          "prop_id": 3392,
+          "rarity": 6,
+          "set_id": "28"
+        }
+      ],
+      "testcase_label": "Fate (boots)"
+    },
+    "Witch's Contract": {
+      "prop_id": 3411,
+      "name_en": "Witch's Contract",
+      "slot": "Accessory",
+      "rarity": 5,
+      "power": 40600,
+      "set_id": null,
+      "set_name": null,
+      "effects": [
+        "Soldier DES +20%"
+      ],
+      "testcase_label": "Witch's Contract"
+    },
+    "_fate_set_bonus": {
+      "set_id": "28",
+      "set_name": "Fate",
+      "three_piece": "Chariot ATK +28%",
+      "six_piece": "Chariot DES +28%",
+      "note": "Slider·Sp wears full 6pc Fate (Chariot set) -> gets both 3pc + 6pc bonus. RST 4 = Chariot/Siege."
+    },
+    "_set_note": "Night's/Day's/Fanatical pieces are PvE-oriented (DMG codes 46/48); Light/Abyss/Streamer/Cool are PvP-oriented (codes 47/49). None of these carry a set_id (set_id=null) so they grant no set bonus; only Fate (set 28) does."
+  }
+}
