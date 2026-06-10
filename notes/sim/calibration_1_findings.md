@@ -35,11 +35,17 @@ Effective stats (engine build, post troop‑fix): +ATK builds ATK ≈ 436–521,
   defender **DEF** lowers it (and made the +DEF commander win).
 
 ## Calibration targets for a `validate_baseline.py`
-- Outcome: **enemy wins**; player commander (Thiel +ATK) dies; the +DEF enemy commander survives.
-- **Single battle, ~4 rounds** (no rematch).
-- Left team ends ≈ 11,370 Health (≈ 7%), right ≈ 20,120 (≈ 12%); both nearly wiped (it was close).
-- Top dealers: enemy Thiel ≈ 67,876 kills, ally Dolly ≈ 84,669; team kills ≈ 140,880 (player) /
-  149,630 (enemy).
+- **Outcome is a near coin‑flip / high variance — NOT a deterministic enemy win.** The user ran
+  this matchup twice: **run 1 = player LOSS**, **run 2 = player VICTORY**. So the target is a
+  **close matchup, player win rate roughly 40–60%** (≈ 50%), decided narrowly by RNG (skill/prep
+  procs, multi‑hit ranges, targeting). The +DEF enemy commander is *tankier* (tilts it slightly,
+  and won run 1), but it does **not** guarantee an enemy win.
+- **Single battle, decided ~round 4** (no rematch — one commander falls before round 8 in this
+  close fight, but ~4 rounds, not a full 8‑round stalemate).
+- Both teams **nearly wiped** at the end (run 1: left ≈ 11,370 / right ≈ 20,120 Health) — a tight
+  finish either way.
+- Top dealers (run 1): enemy Thiel ≈ 67,876 kills, ally Dolly ≈ 84,669; team kills ≈ 140,880
+  (player) / 149,630 (enemy). (Per‑run kills vary with the RNG; use as ballpark, not exact.)
 - Normal hits land in the **~4,000–5,600** band at these stats.
 
 ## Open model gaps this exposes

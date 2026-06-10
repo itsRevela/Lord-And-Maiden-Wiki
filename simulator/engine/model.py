@@ -72,16 +72,39 @@ class ModelConfig:
     # When a BuildSpec pins an allocation stat, this many points go there. ---
     allocated_stat_points: int = 229          # FACT 5★ cap; star-aware in build_team (5★=229/4★=179/3★=129)
 
-    # --- ABSOLUTE damage model (calibrated to the log) -----------------------
-    # raw = coef * off(att,ch) * troop_scale(att)
+    # --- ABSOLUTE damage model (calibrated to BOTH logs) ---------------------
+    # raw = coef * off(att,ch) * troop_scale(att) * damage_global
     #   off(att,ch) = (soldier_off_stat + hero_stat*hero_off_weight) -- offence index
     #   troop_scale = troops_now / troop_scale_ref  (army-size & attrition factor)
     # mitigation (DEF):  def_ref / (def_ref + DEF_eff),  DEF_eff = hero_def*hero_def_weight
-    damage_global: float = 7.0                # ASSUMPTION global lethality scalar (calibrated)
-    hero_off_weight: float = 1.0              # ASSUMPTION hero-stat weight in offence
+    #
+    # CALIBRATION (2026-06): re-fit to the clean "Vanilla Baseline" mirror
+    # (notes/sim/calibration_1_baseline.md/_findings.md -> validate_baseline.py) AND the
+    # original shielded-tank Rosetta Stone (validate_testcase.py).  The clean fight pins
+    # the normal-hit magnitudes (~4,000-5,600 at these stats) and the DEF curve.  Per the
+    # findings, the user ran the mirror TWICE and got one LOSS + one WIN, so the true
+    # target is a CLOSE COIN-FLIP (~50%, the +DEF commander only tilts it), NOT a
+    # deterministic enemy win.  The fit:
+    #   * normal_attack_coef * damage_global = 24.263  (the combined per-hit scalar K
+    #     least-squares-fit to the 5 clean round-1 normal-attack readings in the log;
+    #     with normal_attack_coef=0.9 -> damage_global=26.959).  relerr ~3.2%; the 5
+    #     clean normals land in the logged ~4,000-5,600 band.
+    #   * hero_off_weight=0.20: ATK lifts offence enough to reproduce the log's
+    #     same-base-hero ATK ordering (ally Dolly+ATK 5,641 > enemy Dolly+DES 4,516) yet
+    #     stays modest, so the player's +ATK edge does NOT steamroll the enemy's +DEF edge.
+    #   * def_ref=600 + hero_def_weight=2.0: a DEF curve that makes the +DEF commander
+    #     meaningfully tankier (at DEF~403 mitigation ~= 600/(600+806) ~ 0.43x vs ~0.63x
+    #     at DEF~174) -- enough to TILT the mirror so the enemy wins ~52% (a coin-flip,
+    #     matching the user's 1-loss/1-win observation), not to flip it deterministically.
+    #     This also leaves validate_testcase at 9/9: there the shielded tank's survival is
+    #     driven by capped DMG-Taken-Reduced (max_dmg_taken_reduction), not DEF, so the
+    #     DEF curve is orthogonal to that fight.
+    # All four remain ASSUMPTION (server-side); the VALUES are calibrated to the logs.
+    damage_global: float = 26.959172          # ASSUMPTION global lethality scalar (calibrated; K/normal_attack_coef)
+    hero_off_weight: float = 0.20             # ASSUMPTION hero-stat weight in offence (modest -> ATK matters but isn't dominant)
     troop_scale_ref: float = 55000.0          # ASSUMPTION army-size reference (= full troop)
-    def_ref: float = 900.0                    # ASSUMPTION DEF mitigation midpoint
-    hero_def_weight: float = 1.0              # ASSUMPTION hero-DEF weight in mitigation
+    def_ref: float = 600.0                    # ASSUMPTION DEF mitigation midpoint (tuned so +DEF tilts the mirror to a coin-flip)
+    hero_def_weight: float = 2.0              # ASSUMPTION hero-DEF weight in mitigation
 
     # --- Assault / real damage (flat, DEF-independent).  Log: ~671-726 per hit,
     #     stated "Real DMG Base 32.17+7.2".  We scale the stated base by an army &
@@ -365,11 +388,14 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
 
         soldier = _soldier_stats(g, cfg, s.soldier_type, soldier_pct, soldier_flat)
 
-        # --- troop count: base + level + commander talent flat + gear Soldiers Qty ---
-        troops = cfg.soldier_qty_base + cfg.hero_level * cfg.soldier_qty_per_level + cfg.advance_soldiers_bonus
-        if s.is_commander:
-            troops += g.commander_talent_flat_soldiers()
-        troops += gb["troops"]
+        # --- troop count by hero STAR (in-game baseline log, Lv80 advancement 5):
+        #     5★=55,000, 4★=51,000 (Nicole), 3★≈47,000 (estimated, -4,000/star). The log
+        #     shows NO commander troop bonus (commander Thiel 5★ = 55,000, same as a
+        #     non-commander 5★), so the old +commander_talent is dropped. FACT (5★/4★). ---
+        troops = {5: 55000, 4: 51000, 3: 47000}.get(
+            int(h["star"]),
+            cfg.soldier_qty_base + cfg.hero_level * cfg.soldier_qty_per_level + cfg.advance_soldiers_bonus)
+        troops += gb["troops"]      # gear Soldiers-Quantity (0 for the baseline gear set)
         troops = int(troops)
 
         # --- skills (maxed): main + 2 modular ---

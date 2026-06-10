@@ -149,6 +149,37 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
     `smoke_test` and the CLI search/optimise paths still run. `BattleResult`/`build_team`/
     `fresh_units`/`Battle.run()` interfaces preserved (back-compat `hp`/`hp_max` display
     aliases added) so the UI and search are unaffected.
+- **Battle Simulator damage knobs re-fit to a SECOND in-game log + star-based troop counts.**
+  Why: the model was originally fit to one shielded-tank fight; a new clean "Vanilla
+  Baseline" mirror log (`notes/sim/calibration_1_baseline.md` / `_findings.md`) revealed (a)
+  troop count is set by hero star, not a flat advance bonus, and (b) the DEF curve was too
+  weak. The findings record that the user ran the mirror twice (one loss, one win), so the
+  matchup is a **close coin-flip** — the +DEF commander only *tilts* it, it is not a
+  deterministic enemy win.
+  - **Troop count by star (FACT, `model.py build_team`):** 5★ = 55,000, 4★ = 51,000,
+    3★ ≈ 47,000; **no commander troop bonus** (the old flat-55k + `commander_talent` +3,000
+    was wrong). This alone dropped `validate_testcase.py` from 9/9 to 8/9 ("Aguria falls
+    mid-B1" landed at the 49% boundary), which the damage re-fit below restores.
+  - **Damage knobs re-calibrated to satisfy BOTH logs** (`ModelConfig`, all `ASSUMPTION`,
+    values calibrated): `damage_global` 7.0 → **26.959** and `hero_off_weight` 1.0 → **0.20**
+    (combined per-hit scalar `normal_attack_coef·damage_global = 24.263`, least-squares-fit to
+    the log's 5 clean round-1 normal-attack readings, relerr ~3% — they land in the logged
+    ~4,000–5,600 band); `def_ref` 900 → **600** and `hero_def_weight` 1.0 → **2.0** (a stronger
+    DEF curve). The key tension — DEF strong enough to make the +DEF commander tankier yet not
+    so strong it deterministically flips the mirror or breaks the shielded fight — resolves at
+    a ~52% enemy-win coin-flip, because the shielded tank's survival is driven by **capped
+    DMG-Taken-Reduced**, not DEF, so the DEF curve is orthogonal to that fight (`validate_testcase.py`
+    stays 9/9; DEF-reduced Aguria still dies on schedule).
+  - **New `simulator/validate_baseline.py`** builds Matchup-1's exact formations (Thiel 99 /
+    Nicole 87 4★ / Dolly 108, Archer, player all +ATK vs enemy +DEF/+ATK/+DES) and reports
+    PASS/FAIL per target to a UTF-8 file: **6/6 PASS** — close coin-flip (enemy win ~51%, target
+    40–60%), +DEF commander tilts survival, single ~3.2-round battle, normals in band, kill
+    leaders ≈ enemy Thiel top-2 / ally Dolly #1, both teams heavily attrited. Known gap: the
+    engine ends a battle at commander death, so it leaves more striker troops standing than the
+    log's near-total wipe (model ends ~22–25% Health vs log ~7%/12%); the heavy-attrition signal
+    is faithful, the depth is not. The −15.08% DMG-Dealt-Reduced rider on Soul Bound/Radiant
+    Slash (skill actionType 6) is small and left unmodelled. `validate_testcase.py` back to
+    **9/9**; mirror ≈ 54%/46% (unbiased); `smoke_test` and the CLI `run` path still work.
 
 ### Fixed (from a 4-subagent inconsistency sweep)
 - **Attribute bonuses now render flat vs percent correctly.** `expand_effects` ignored the
