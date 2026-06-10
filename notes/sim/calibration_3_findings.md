@@ -1,124 +1,71 @@
-# Matchup 3 (Pursuit & Throughput) — findings from the in-game log
+# Matchup 3 (Pursuit & Throughput) — research notes
 
-Source: `calibration_3_pursuit.md` Results + Battle log. Player = SusaMaki / Niya / Mia (pursuit +
-proc), enemy = Thiel(+DEF) / Nicole(+ATK,4★) / Dolly(+DES), Archer. **Outcome: 100% player win over
-10 runs** — the pursuit team dominates. Detailed match = **Victory, single battle, 4 rounds** (enemy
-Nicole left at 55 troops; Thiel & Dolly wiped).
+Source: `calibration_3_pursuit.md` (build sheets + the in-game log/results). Player =
+SusaMaki / Niya / Mia (all +229 ATK, pursuit + combo), enemy = Thiel(+DEF) / Nicole(+ATK,4★) /
+Dolly(+DES), Archer. **In-game outcome: 100% player win over 10 runs; the detailed match was a
+single battle, ~4 rounds** (enemy Nicole left at 55 troops; Thiel & Dolly wiped).
 
-## Throughput / pursuit mechanics (the bout-count gap)
-1. **Attack VOLUME is high.** In ONE round Niya fired **Slayer + Chain Reaction + Trio + Trio** (4
-   pursuit skills), each triggering an **Assault** follow-up — i.e. ~8 hits from Niya in a round.
-   SusaMaki: normal + **Flash Fire** + **White Blade** (2 pursuits) per round. "Skills Used" totals:
-   Niya 12, SusaMaki 6, Mia 2 over 4 rounds. Pursuit/proc units act FAR more than once/round — this
-   is the volume the engine under-counted.
-2. **The SKILL STONE fires as a 4th equipped skill.** Niya casts **Rift** (her stone), Mia casts
-   **Purgatory Trial** (her stone) — confirmed in the log. Stones must be modeled as an extra
-   equipped skill (subject to the no-duplicate-per-team rule already catalogued).
-3. **Skill multi-cast:** Niya cast **Trio twice** in one round (lines: "Use Trio 40%+8%" then "Use
-   Trio 35%") — a pursuit can re-fire.
-4. **Combo (extra attack):** Mia's **Divine Punish** (passive) "Effect Triggered 76%+22.8% → Trigger
-   [Combo]" = a bonus hit after a normal; **Force Majeure** applies a `Combo` buff to allies;
-   SusaMaki then "Combo Triggered 60% → Trigger [Combo]" landed the kill. So Combo = a chance for an
-   extra attack (proc buffs 80/Combo).
-5. **Witcher (passive):** "Effect Triggered 40% → **Pursuit Skill DMG Dealt Increased 56.29%+20%**" —
-   a self-buff amplifying pursuit damage.
+> Status (2026-06-10): the Test-3 ENGINE changes were **reverted** — they were FACT-correct but
+> could not be reconciled with the DoT calibration without fresh data (see "Why this was reverted"
+> at the bottom). The engine is back at the clean three-validator state. This file is kept as a
+> **research note**: the client-data facts below are real and re-usable; the open questions are what
+> the next research phase should answer before we re-touch the engine.
 
-## Assault — second data point (refines `real_dmg_scale`)
-Niya's Slayer applies **Assault, Real DMG Base 32.29** (note: NO "+7.2" — that addend was Patra's
-relic). Assault follow-up hits: **757 → 648 → 468** across rounds (declining with Niya's troops),
-and **468** while Niya was lower. Patra (Rosetta) was base 39.37 → ~671–726. So Assault ≈
-`RealBase × ~scale × troop_factor`, DEF-independent — consistent across both heroes. Use to confirm
-`real_dmg_scale`.
+## Client-data facts discovered (engine-independent — these are real)
+These come straight from `data/sim/skills.json` (the decoded effect tokens), not from the model:
 
-## Damage magnitudes (anchors)
-- Pursuit hits (SusaMaki Flash Fire / White Blade): ~**6,200–9,700** (boosted by Witcher +56% in R3).
-- Assault (Niya): ~**468–757**, flat-ish, declining with troops.
-- Rift (stone, Niya) = **4 hits** (~940–1,600 each).
-- Per-unit kills: Niya 65,355 / SusaMaki 60,241 / Mia 35,349; enemy Nicole 59,382 / Dolly 40,032 / Thiel 30,845.
+1. **Bonus pursuit hits — `actionType 151` / `153`.** A pursuit skill can list extra hits as their
+   own effects with a `triggerChance`: Flash Fire = main hit + `151` @ 45% (a 2nd pursuit); Trio =
+   main hit + three `153` @ 40/35/30%; Chain Reaction = main + `151` @ 40%. Coefficient + chance are
+   in the data.
+2. **Per-effect `triggerChance` on `at=101` is real and load-bearing.** Multi-hit skills list each
+   extra hit as a separate `at=101` effect with `triggerChance < 1`. e.g. **Rift = 3 hits @ 1.0 + 4
+   @ 0.30 → ~4.2 expected hits, which matches the log's observed 4** (the in-game "Use [Rift] → 4
+   Loss lines"). A model that fires all 7 over-counts multi-hit / AoE damage badly.
+3. **Skill LEVEL scaling.** `coef(L) = initVal + (maxedValue − initVal)·(L−1)/9` (upType additive).
+   Main + modular skills are maxed (lv10 → `maxedValue`), but **skill STONES are equipped at lv5**
+   (the build sheets) → a stone's per-hit coef is ~28% below its max. The data flag `skillStone`
+   identifies stones.
+4. **`affectedByAttr` = 0 for every direct-damage effect** (normal = tactical = pursuit) and **= 1
+   only for Assault.** So pursuit DAMAGE scales with the same attribute as normal/tactical (ATK),
+   NOT Speed — the "Affected By Spd" hint governs pursuit trigger/turn-order, not its damage. The
+   log confirms it: the +ATK pursuit carries (SusaMaki/Niya) are the top damage dealers.
+5. **Assault (`at=70`).** Slayer applies an Assault buff (Real DMG Base flat 22 + relic) that fires
+   on EVERY subsequent pursuit hit (the log shows `[Slayer][Assault] Effect Activated` on Slayer,
+   Chain Reaction and Trio). Second Assault data point: **Niya Real DMG Base 32.29 → hits 757 → 648
+   → 468**, declining with caster troops (cf. Patra ~671-726).
+6. **Combo (`at=80`)** — Divine Punish / Hayate (passive) and Force Majeure (tactical → allies) grant
+   a Combo buff = a chance for one extra attack on a normal.
+7. **Witcher (`at=33`)** — per-round chance to gain a Pursuit-Skill-DMG-Dealt buff (~56.29% in log).
+8. **"Inherit action target (the target enemy)"** — a pursuit follows/concentrates on the unit's
+   attack target (the log: Niya focus-killed Thiel, SusaMaki → Dolly, Mia → Nicole), not a spread.
 
-## Calibration targets for `validate_pursuit.py`
-- **Player win ~100%** (10/10 in-game) — the pursuit team should win nearly always.
-- **Single battle, ~4 rounds** (no rematch — decisive).
-- **High attack volume:** pursuit units fire multiple pursuits + Assault/Combo procs per round (not ~1).
-- Assault (Niya) hits in the **~450–760** band, declining with caster troops.
-- Mia (combo) and SusaMaki end as the survivors-ish; enemy nearly wiped (Nicole ~55 left in the sample).
+## Per-hero damage (engine vs in-game) — the symptom that points at missing data
+When the above were modeled, per-hero damage still came out wrong in a structured way:
+- **+ATK heroes UNDER-damage ~2×** (Niya 35k vs log 65k; SusaMaki 33k vs 60k; Nicole 24k vs 59k).
+- **+DEF / +DES heroes OVER-damage ~2×** (Thiel 58-110k vs log 31k; Dolly 68k vs 40k).
+i.e. stat ALLOCATION barely moves damage in our model (a +DEF tank hits nearly as hard as a +ATK
+carry), but in-game it clearly does (~1.5-1.9×). The offence "floor" (soldier ATK) compresses the
+spread; raising allocation sensitivity instead breaks the baseline mirror. This is the core unknown.
 
-## Engine work this implies (the big one)
-- **Wire the skill stone as a 4th equipped skill** (main + 2 modular + stone). CAUTION: this affects
-  ALL teams, including the other 3 validators (their teams have stones too — Rosetta's Elf Deer is a
-  big attribute buff!). Re-validate testcase 9/9 + baseline 6/6 + dot 7/7 AND build pursuit; re-tune
-  only if forced, documented.
-- **Raise pursuit/proc throughput** so a pursuit DPS fires several pursuits + Assault/Combo procs per
-  round (match the log's volume), incl. pursuit re-cast (Trio twice) and Combo (proc buff).
-- Confirm `real_dmg_scale` against Niya's Assault (base 32.29 → ~468–757).
-- Witcher / Pursuit-DMG-Dealt-Increased buff applied.
+## Why this was reverted (and what it tells us)
+Applying facts #2 (triggerChance) + #3 (level scaling) improved the pursuit balance a lot
+(player:enemy damage ratio 0.64 → 0.96, in-game ~1.24) **but broke the DoT validator**: cutting the
+enemy's (correctly) over-counted multi-hit/AoE damage tipped the DoT-vs-sustain matchup to the
+player, and NO knob re-greened it without breaking testcase/baseline. The DoT calibration had
+**absorbed the over-counting bug** as load-bearing enemy pressure. That a FACT-correct fix can't be
+reconciled across all four logs is strong evidence that **the model is missing real structure in how
+builds/stats/effects combine** — not just mis-tuned knobs.
 
----
-
-## IMPLEMENTED (2026-06-10) — what shipped + what the test revealed
-
-The throughput data turned out to be FACT-driven: the relevant effects already live in the client
-data; the engine was simply DROPPING them. All four changes are gated so they cannot fire for the
-testcase/baseline/dot rosters (those action types/ids are absent there), so those validators stayed
-**9/9 + 6/6 + 7/7** throughout.
-
-1. **`at=151` / `at=153` bonus pursuit hits** (Flash Fire 45% 2nd-pursuit; Chain Reaction; Trio ×3).
-   coef + triggerChance are FACTS in the data; the engine now replays each as one extra pursuit hit.
-2. **Assault fires on EVERY pursuit hit** (not just normals): Slayer's standing Assault (id 70) now
-   re-fires on Chain Reaction / Trio, matching "[Slayer][Assault] Effect Activated" per follow-up.
-   Scoped to the PURSUIT channel so the tactical Assault carrier (Patra, testcase) is unchanged.
-3. **Combo (`at=80`)** — Divine Punish / Hayate (passive) and Force Majeure (tactical→allies) grant a
-   Combo buff (synthetic id 280) → a chance for one extra normal-channel attack after a normal.
-4. **Witcher (`at=33`)** — per-round chance to gain a 1-round Pursuit-Skill-DMG-Dealt buff
-   (`pursuit_dmg_buff_value=0.5629`, the log's "56.29%").
-5. **Pursuit damage scales with ATK, not Speed** — the client field `affectedByAttr` is **0 for every
-   direct-damage effect** (normal = tactical = pursuit) and only 1 for Assault. The old
-   `pursuit→speed` assumption was wrong; "Affected By Spd" governs trigger/turn-order. Fixed
-   `CHANNEL_PRIMARY_HERO_STAT["pursuit"]="atk"` (only touches pursuit teams; DoT stays empirically ruin).
-6. **Pursuit focus-fire** — "Inherit action target" now CONCENTRATES a unit's pursuit hits on one
-   enemy (the log: Niya focus-killed Thiel, SusaMaki→Dolly, Mia→Nicole) instead of scattering.
-   Computed lazily so non-pursuit teams draw no extra RNG (baseline/dot byte-for-byte unchanged).
-
-**Validated (GATING — Matchup-3's stated purpose):** Assault band (81% in 350-850, median ~424,
-log 468-757), Assault declines with caster troops (corr -0.63), pursuit throughput (Niya ~7 hits/round),
-fast decisive resolution (median 4 rounds, matching the log). `validate_pursuit.py` **4/4 gating PASS**.
-
-### KNOWN GAP (documented, NOT fudged): outcome win-rate
-Engine has the player winning ~25% (in-game 100%). In a WIN the per-hero damage shape matches the log
-(player out-damages ~3:1), but the OUTCOME is decided by a high-variance commander-death race, and the
-engine **over-credits the surviving tanky enemy commander's multi-hit tactical/AoE kit** — e.g. Thiel
-(+DEF) "deals" ~110k vs ~31k in-game. Per-hero engine vs log: +ATK heroes ~0.5× (under), +DEF/+DES
-~1.7-1.9× (over). Contributing factors, all in the SHARED damage model (not the pursuit mechanics added):
-  - the offence floor (`soldier.atk`) compresses the ATK-vs-DEF/DES damage spread to ~1.16× when the
-    game shows ~1.5-1.9× — BUT raising allocation sensitivity breaks the baseline mirror (verified by
-    sweep), so it is NOT a free knob;
-  - multi-hit tactical/stone effects (Rift = 7 `at=101` at max vs ~4 fired in-game at the lv5 stone)
-    are counted at max level — stone/skill LEVEL scaling is not modelled;
-  - the binary commander-death win condition + a squishy +ATK player commander amplify the variance.
-Levers tried and rejected (each broke a green validator or didn't help): allocation sensitivity
-(`soldier_off_frac`) breaks baseline; commander-target protection breaks dot and also shields the
-enemy's tank; global target-persistence backfires (helps the enemy focus the squishy player commander).
-**Fixing the win-rate requires a deliberate multi-log recalibration of the shared damage model
-(skill/stone level scaling + tank-vs-DPS distribution) that re-fits all four logs simultaneously** —
-flagged for a decision, not forced.
-
-### Recalibration attempt (2026-06-10, "level-scaling first") — REVERTED, key finding
-Implemented two FACT-correct fixes and measured against all four logs:
-1. **Per-effect `triggerChance` on `at=101` is the real cause of the Rift "7 vs 4" discrepancy** —
-   Rift has 3 hits @ chance 1.0 + 4 @ chance 0.30 → expected **4.2 hits = the log's 4**. The engine
-   ignored the per-effect chance and fired all 7 (over-counting multi-hit / AoE damage). Gating it
-   moved the pursuit damage ratio **0.64 → 0.96** (in-game 1.24), win 25% → 33%, and cut the
-   surviving tank's over-damage (Thiel ~110k → ~70k). This is the most impactful correctness fix.
-2. **Skill LEVEL scaling** — `coef(L)=initVal+(maxedValue−initVal)·(L−1)/9`; stones are lv5 (data
-   flag `skillStone`), so their per-hit coef is ~28% below max. Recovered testcase 8/9 → 9/9.
-**Outcome: both fixes are correct but INCOMPATIBLE with the current dot calibration.** They cut the
-enemy's direct/stone damage, which tips the DoT-vs-sustain matchup to the player (dot win 64.5% →
-~78%, exceeding the 50-65% band) — and **no dot-side knob re-greens it** (`dot_global`/`heal_scale`
-don't lower the win-rate; `heal_scale` is shared with testcase; raising `damage_global` to restore the
-enemy breaks testcase/baseline). i.e. the **dot calibration had absorbed the over-counting bug** as a
-load-bearing source of enemy pressure. Per the "revert anything that breaks a green validator" rule,
-both fixes were **reverted to the all-green committed state** (testcase 9/9, baseline 6/6, dot 7/7,
-pursuit 4/4 gating). **Path forward (needs a decision/data):** re-run the **DoT matchup in-game with
-the corrected mechanics** to get a fresh win-rate target (the old 60% is a 10-run sample with a wide
-CI), then re-apply the two fixes and re-fit the dot scenario to the new ground-truth. The two fixes
-are documented here and trivial to re-apply.
+## Open questions for the research phase (what data we likely need)
+- **Stat → damage scaling.** How exactly do ATK / DEF / DES (and the +229/+179 allocation) scale a
+  hit? The "Affected by X attribute / per-200" coefficient is currently UNKNOWN_SERVER_SIDE.
+- **Multi-hit / AoE accounting.** Confirm per-effect `triggerChance` + `targetCount` semantics on
+  `at=101` against more logs; how AoE spreads vs concentrates.
+- **DoT & sustain.** Re-run the DoT matchup in-game with corrected multi-hit handling for a fresh
+  win-rate target (the old 60% is a 10-run sample with a wide CI); separate the DoT/heal/shield
+  contributions from the direct channel.
+- **Skill/stone level scaling** confirmation (lv5 stone vs lv10 main) against logged hit values.
+- **Build interactions** the user flagged: relic / rune / awaken / soldier+race combos / affection /
+  messenger — how they stack and which stat each actually feeds. Catalogue what the client exposes
+  vs what is server-side, before re-touching the engine.

@@ -57,15 +57,6 @@ SUPERCONDUCTING = {125}             # Tactical Burst marker
 PROVOKED = {200}                    # synthetic id: a unit forced to attack its taunter
 STALEMATE_BUFF = {201}             # synthetic id: +33% All-Hero DMG Dealt per stalemate
 REACTIVE_BLOCK_HIT = {202}          # synthetic transient: this hit gets -59.20% taken
-PURSUIT_DMG_DEALT = {233}           # synthetic: active 1-round Pursuit-Skill-DMG-Dealt buff (Witcher proc)
-COMBO = {280}                       # synthetic: Combo buff -> chance for one extra normal after a normal
-WITCHER_MARK = {335}                # synthetic: marks a unit whose passive (at=33) re-rolls the pursuit buff each round
-# Bonus follow-up pursuit hits: at=151 (second-pursuit proc, e.g. Flash Fire 45%),
-# at=153 (repeated follow-ups, e.g. Trio x3).  Their coef + triggerChance are FACTS in
-# the client data; the engine simply replays each as one extra channel hit.
-PURSUIT_FOLLOWUP_ACTIONS = {151, 153}
-COMBO_GRANT_ACTION = 80             # actionType that grants the Combo buff (passive/tactical)
-PURSUIT_DMG_ACTION = 33             # actionType: Pursuit Skill DMG Dealt Increased (Witcher)
 
 # attribute-mod action ids -> hero stat key (and whether it's a reduction)
 ATTR_INCREASE = {9: "atk", 10: "def", 11: "ruin", 12: "speed", 13: "all"}
@@ -184,12 +175,6 @@ class Battle:
                             self._apply_status(u, 125, rounds=99, value=float(sk.get("maxedValue") or 0.4))
                         elif at == 139:              # purification (per-round cleanse chance)
                             self._apply_status(u, 139, rounds=99, value=float(sk.get("maxedValue") or 0.4))
-                        elif at == PURSUIT_DMG_ACTION:   # Witcher: per-round chance to buff pursuit dmg
-                            self._apply_status(u, 335, rounds=99,
-                                               value=float(eff.get("triggerChance") or 0.4))
-                        elif at == COMBO_GRANT_ACTION:   # Combo source passive (Divine Punish/Hayate)
-                            self._apply_status(u, 280, rounds=99,
-                                               value=float(eff.get("triggerChance") or 0.3))
 
     # ---- pre-war preparation (fire all Strategic skills before round 1) ----
     def _pre_war_preparation(self):
@@ -318,18 +303,7 @@ class Battle:
         m += u.gear_dmg_dealt
         if channel == "tactical":
             m += self._status_value(u, TACTICAL_DMG_DEALT)
-        if channel == "pursuit":
-            m += self._status_value(u, PURSUIT_DMG_DEALT)   # Witcher proc (1-round)
         return max(0.05, m)
-
-    def _standing_assault_base(self, u: CombatUnit) -> float:
-        """Real-DMG base of an active Assault buff (70) on `u`, else 0.  Used so the
-        bearer's Assault fires on EVERY attack (normal + each pursuit hit), as the log
-        shows ([Slayer][Assault] Effect Activated on Slayer, Chain Reaction and Trio)."""
-        st = u.statuses.get(70)
-        if st and st["rounds"] != 0:
-            return float(st.get("value", 0.0))
-        return 0.0
 
     def _dmg_taken_mult(self, u: CombatUnit, channel: str, reactive_hit: bool = False) -> float:
         # DMG-Taken-Reduced is CAPPED (the log shows stacked shields net to ~74%
@@ -444,24 +418,6 @@ class Battle:
                 return self.rng.choice(aiders)
         return chosen
 
-    def _pursuit_focus(self, caster: CombatUnit):
-        """Focus target for a unit's PURSUIT hits this turn.  "Inherit action target
-        (the target enemy)" means the pursuit concentrates on one enemy rather than
-        scattering -- the log shows each hero locking a target (Niya focus-killed Thiel,
-        SusaMaki -> Dolly, Mia -> Nicole), which is how a pursuit team converts its
-        throughput into kills.  Computed LAZILY (only when a pursuit hit fires) and
-        cached for the turn, so teams with no pursuit never draw extra RNG (the other
-        validators' streams are unchanged).  Re-picks if the focus died mid-turn."""
-        t = getattr(caster, "_focus", None)
-        if t is not None and t.alive:
-            return t
-        t = self._pick_target(caster)
-        try:
-            caster._focus = t
-        except (AttributeError, TypeError):
-            pass
-        return t
-
     def _pick_ally_priority(self, caster: CombatUnit, count: int):
         """Ally targets for protective buffs: commander first, then highest-offence
         (the carry), then the rest -- a sensible player allocation. ASSUMPTION."""
@@ -549,25 +505,11 @@ class Battle:
             # the skill has no maxedValue.  (calibration: maxedValue is the per-hit coef)
             use_coef = coef if coef > 0 else ecoef
             if at == 101:                    # ATK enemy
-                # pursuit hits concentrate on the unit's focus target (inherit); tactical
-                # hits keep the spread-with-floor targeting (preserves other validators).
-                if chan == "pursuit":
-                    ft = self._pursuit_focus(caster)
-                    atk_targets = [ft] if ft else []
-                else:
-                    atk_targets = self._pick_attack_targets(caster, tcat or "enemy", tcount)
-                for tgt in atk_targets:
+                for tgt in self._pick_attack_targets(caster, tcat or "enemy", tcount):
                     self._deal(caster, tgt, use_coef, chan, round_idx, is_skill=True)
-                    # Assault fires on this skill's own Real-DMG base; additionally, on
-                    # PURSUIT hits the bearer's standing Assault re-fires (the log shows
-                    # Slayer's Assault still activating on Chain Reaction / Trio).  Scoped
-                    # to pursuit so tactical Assault carriers (Patra) are unchanged.
-                    rb = real_base
-                    if not rb and chan == "pursuit":
-                        rb = self._standing_assault_base(caster)
-                    if rb:
+                    if real_base:            # Assault pursuit on every attack
                         self._deal(caster, tgt, 0.0, "real", round_idx,
-                                   is_skill=False, real_base=rb)
+                                   is_skill=False, real_base=real_base)
                     self._maybe_counter(caster, tgt, round_idx)
             elif at == 102:                  # heal allies (Lunar Guardian HoT instance)
                 # heals can never hit an enemy, so ignore a mislabeled "inherit
@@ -577,40 +519,8 @@ class Battle:
             elif at in (121, 122):           # purify own / dispel enemy
                 for tgt in self._pick_targets(caster, tcat or "our", tcount):
                     self._cleanse(tgt)
-        # bonus follow-up pursuit hits (at=151 second-pursuit proc, at=153 repeated
-        # follow-ups).  coef + triggerChance are FACTS in the client data; each rolls
-        # independently and replays as one extra channel hit (the throughput the engine
-        # used to drop -> the bout-count miss).
-        self._fire_pursuit_followups(caster, sk, chan, round_idx)
         # the skill's inflicted status (Buff/Dbuff field) -> apply to action target
         self._apply_skill_statuses(caster, sk)
-
-    def _fire_pursuit_followups(self, caster: CombatUnit, sk, chan: str, round_idx: int):
-        """Replay at=151/153 bonus hits: each rolls its own triggerChance and deals one
-        extra hit at its coefficient on the skill's channel.  The bearer's standing
-        Assault fires on each (matching the log's per-follow-up Assault activations)."""
-        for eff in sk.get("effects", []):
-            if eff.get("actionType") not in PURSUIT_FOLLOWUP_ACTIONS:
-                continue
-            ecoef = float(eff.get("coefficient") or 0.0)
-            if ecoef <= 0:
-                continue
-            chance = float(eff.get("triggerChance") or 1.0)
-            if self.rng.random() >= chance:
-                continue
-            tcat = eff.get("targetCategoryName") or "enemy"
-            tcount = eff.get("targetCount") or 1
-            if chan == "pursuit":
-                ft = self._pursuit_focus(caster)
-                fu_targets = [ft] if ft else []
-            else:
-                fu_targets = self._pick_attack_targets(caster, tcat, tcount)
-            for tgt in fu_targets:
-                self._deal(caster, tgt, ecoef, chan, round_idx, is_skill=True)
-                rb = self._standing_assault_base(caster) if chan == "pursuit" else 0.0
-                if rb:
-                    self._deal(caster, tgt, 0.0, "real", round_idx,
-                               is_skill=False, real_base=rb)
 
     def _apply_skill_statuses(self, caster: CombatUnit, sk):
         """Apply the non-action buff/debuff effects of a tactical skill (Disarm,
@@ -625,13 +535,9 @@ class Battle:
             chance = float(eff.get("triggerChance") or 1.0)
             ecoef = float(eff.get("coefficient") or 0.0)
             dur = self._eff_duration(eff, default=2)
-            if at == 70:                      # Assault buff on self (fires on every attack)
-                # store the FULL Real-DMG base (skill flat + relic add) so the standing
-                # buff's procs match the skill's own Assault hit (the log shows the same
-                # ~757/648/468 magnitude whichever pursuit triggers it).
-                key = (int(sk["st"]), int(sk["id"]))
-                base = self._skill_real_base(caster, sk, key) or float(eff.get("flatMagnitude") or 22.0)
-                self._apply_status(caster, 70, rounds=dur, value=base)
+            if at == 70:                      # Assault buff on self (handled at cast)
+                self._apply_status(caster, 70, rounds=dur,
+                                   value=float(eff.get("flatMagnitude") or 22.0))
                 continue
             # Shield (73): absorb-one-instance buff on OUR troops (Lunar Guardian /
             # Soul Drain grant it; the log shows "[Shield] Resisted This DMG").
@@ -674,8 +580,6 @@ class Battle:
                     self._add_attr(tgt, "atk", -abs(float(eff.get("flatMagnitude") or 0.0)) * self._affected_scale(caster))
                 elif at in (108, 109):        # Burn / Curse DoT
                     self._apply_dot(caster, tgt, at, ecoef, dur)
-                elif at == COMBO_GRANT_ACTION:  # grant Combo (extra-attack buff), e.g. Force Majeure -> allies
-                    self._apply_status(tgt, 280, rounds=dur, value=max(chance, 0.3))
 
     def _maybe_counter(self, attacker: CombatUnit, defender: CombatUnit, round_idx: int):
         """If the defender carries Counterattack, it strikes back at 0.84x a normal."""
@@ -775,11 +679,6 @@ class Battle:
         # prepared CC re-rolls happen at round start (see _round_start_cc)
         if self._has(u, CONTROL_STUN):
             return                                   # stunned: cannot act
-        # clear this turn's pursuit focus (no RNG draw -> non-pursuit teams unchanged)
-        try:
-            u._focus = None
-        except (AttributeError, TypeError):
-            pass
         # Tactical skills, unless silenced
         if not self._has(u, CONTROL_SILENCE):
             burst_used = False                       # Tactical Burst recasts once/turn
@@ -811,16 +710,6 @@ class Battle:
                 if self._has(u, ASSAULT):
                     rb = u.statuses[70].get("value", 22.0)
                     self._deal(u, tgt, 0.0, "real", round_idx, is_skill=False, real_base=rb)
-                # Combo: chance for ONE extra normal-channel attack (Divine Punish/Hayate
-                # passives and Force Majeure grant it; the log's Combo hit ~= a normal).
-                combo = u.statuses.get(280)
-                if combo and combo["rounds"] != 0 and self.rng.random() < combo.get("value", 0.0):
-                    ct = self._pick_target(u)
-                    if ct:
-                        self._deal(u, ct, self.cfg.normal_attack_coef, "normal", round_idx, is_skill=False)
-                        rb = self._standing_assault_base(u)
-                        if rb:
-                            self._deal(u, ct, 0.0, "real", round_idx, is_skill=False, real_base=rb)
         # Pursuit skills (after normal attack), probability
         if did_normal:
             for sk in u.skills:
@@ -849,12 +738,6 @@ class Battle:
                 pur = u.statuses.get(139)
                 if pur and pur["rounds"] != 0 and self.rng.random() < pur.get("value", 0.4):
                     self._cleanse_one(u)
-                # 2b. Witcher passive: per-round chance to gain a 1-round
-                #     Pursuit-Skill-DMG-Dealt buff (log: "Effect Triggered 40% ->
-                #     Pursuit Skill DMG Dealt Increased 56.29%").
-                wit = u.statuses.get(335)
-                if wit and wit["rounds"] != 0 and self.rng.random() < wit.get("value", 0.4):
-                    self._apply_status(u, 233, rounds=1, value=self.cfg.pursuit_dmg_buff_value)
                 # 3. Self-Heal HoT (Field Therapy) -- restores Slight->Health
                 heal = u.statuses.get(107)
                 if heal and heal["rounds"] != 0:

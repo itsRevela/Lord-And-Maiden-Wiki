@@ -404,19 +404,5 @@
     "no_duplicate_hero_note": "A formation cannot field the same hero twice. The two opposing teams MAY each field the same hero (per-team rule).",
     "variants_are_distinct_heroes": "SP variants (e.g. Cthugha vs Cthugha.Sp) AND 4-star/5-star same-name heroes are SEPARATE hero ids -> they may be used together on one team. (heroes.json keys by id, so the engine already treats them as distinct.)",
     "enforced_in_engine": "run_search + optimize_formation raise on duplicate ids; the API/CLI reject; the opponent sampler only draws distinct trios; the UI hero-picker disables an already-chosen hero."
-  },
-  "calibration_pursuit": {
-    "source": "notes/sim/calibration_3_pursuit.md + calibration_3_findings.md (in-game log, 100% player win/10 runs)",
-    "purpose": "Pursuit channel + attack/proc THROUGHPUT (the bout-count/volume read).",
-    "facts_from_client_data": {
-      "pursuit_followup_actions": "actionType 151 (2nd-pursuit proc, e.g. Flash Fire 45%) and 153 (repeated follow-ups, e.g. Trio x3 at 40/35/30%) are extra pursuit-channel hits; coef+triggerChance are in the data. The engine previously DROPPED them.",
-      "assault_on_every_pursuit": "A standing Assault buff (actionType 70, Slayer flat 22 + relic) re-fires on each subsequent pursuit hit (Slayer->Chain Reaction->Trio), not only on normals. Second Assault data point: Niya Real DMG Base 32.29 -> hits 757->648->468 declining with caster troops (cf. Patra ~671-726).",
-      "combo": "actionType 80 (Divine Punish/Hayate passives; Force Majeure tactical->allies) grants a Combo buff = a chance for one extra normal-channel attack.",
-      "witcher_pursuit_dmg": "actionType 33 (Witcher passive): per-round chance to gain a 1-round Pursuit-Skill-DMG-Dealt buff (~56.29% in the log).",
-      "pursuit_scales_with_ATK": "Client field affectedByAttr is 0 for ALL direct-damage effects (normal=tactical=pursuit) and 1 only for Assault. Pursuit DAMAGE scales with ATK like normal/tactical; the prior 'pursuit->Speed' assumption was wrong ('Affected By Spd' governs trigger/turn-order).",
-      "inherit_action_target": "'Inherit action target (the target enemy)' = the pursuit follows/concentrates on the unit's attack target (the log shows each hero locking one enemy), not a random spread."
-    },
-    "engine_changes": "Implemented in combat.py/model.py 2026-06-10, all gated to the pursuit team (no regression: testcase 9/9, baseline 6/6, dot 7/7). validate_pursuit.py 4/4 GATING PASS (Assault band 350-850, Assault declines, throughput ~7 hits/round, decisive in ~4 rounds).",
-    "known_gap_outcome_winrate": "Engine player-win ~25% vs in-game 100%. Per-WIN damage shape matches, but the engine OVER-credits the surviving tanky enemy commander's multi-hit tactical/AoE kit (Thiel ~110k vs ~31k in-game); +ATK heroes ~0.5x, +DEF/+DES ~1.7-1.9x. Causes (shared damage model, NOT the pursuit mechanics): soldier.atk offence floor compresses ATK-vs-DEF spread (raising it breaks the baseline mirror); multi-hit skills/STONES counted at max level (Rift 7 hits at max vs ~4 at lv5 in-game; stone level-scaling unmodelled); binary commander-death + squishy +ATK commander amplify variance. FIX = deliberate multi-log recalibration re-fitting all four logs; flagged, not forced. UNKNOWN_SERVER_SIDE remains for the exact damage equation."
   }
 }

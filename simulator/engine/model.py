@@ -41,16 +41,10 @@ from . import data as datamod
 CHANNEL_PRIMARY_HERO_STAT = {
     "normal": "atk",     # normal ATK scales with ATK
     "tactical": "atk",   # tactical (skill) damage scales mainly with ATK (calibration)
-    # Pursuit damage uses the SAME attribute as normal/tactical: the client field
-    # ``affectedByAttr`` is 0 for every direct-damage effect (normal=tactical=pursuit),
-    # and only 1 for Assault.  The "Affected By Spd" hint governs pursuit TRIGGER/turn
-    # order, not its damage.  Matchup-3 confirms it: the player's +ATK pursuit carries
-    # (SusaMaki/Niya) are the top damage dealers, which only holds if pursuit scales
-    # with ATK (calibration_3_pursuit.md).
-    "pursuit": "atk",
+    "pursuit": "speed",  # pursuit dmg "Affected By Spd"
     "real": "atk",       # Ghost-Bone Assault real dmg "Affected By ATK Attribute"
     "splash": "atk",
-    "dot": "ruin",       # Burn/Curse DoT scales with the CASTER's DES/Ruin (calibration_2, empirical)
+    "dot": "ruin",       # Burn/Curse DoT scales with the CASTER's DES/Ruin (calibration_2)
 }
 
 
@@ -173,21 +167,6 @@ class ModelConfig:
     # per prior stalemate. Use the logged value verbatim; the match simply takes a
     # few bouts to resolve (faithful, not forced to exactly 2).
     stalemate_dmg_dealt_per_stack: float = 0.33  # FACT (log: Stalemate-1 +33%)
-
-    # --- pursuit throughput (calibration_3_pursuit.md) -----------------------
-    # at=151/153 bonus pursuit hits and the Assault-on-every-pursuit behaviour are
-    # FACT-driven (coef + triggerChance live in the client data; the engine just
-    # replays them).  Two server-side magnitudes remain knobs:
-    #   * the Witcher passive's "Pursuit Skill DMG Dealt Increased" % when it procs.
-    #     The log prints "56.29%+20%"; we use the resolved ~0.5629 as the per-proc
-    #     buff value (1-round), with the proc CHANCE taken from the skill data (0.4).
-    #   * Combo's extra-attack: when a unit carries the Combo buff (granted by an
-    #     at=80 passive/tactical), after its normal attack it has a chance (the buff's
-    #     stored data chance) to make ONE extra normal-channel attack.  The extra hit
-    #     uses normal_attack_coef (the log shows the Combo hit ~= a normal).
-    # Both are gated on synthetic buff ids absent from the other three rosters, so they
-    # cannot perturb testcase/baseline/dot.
-    pursuit_dmg_buff_value: float = 0.5629    # ASSUMPTION/log-anchored (Witcher "56.29%")
 
     # --- prepared-CC per-round re-roll bases. FACT from the log: the carry-over
     #     Silence(Prepared) re-rolls each round at 40% (allies) / 60% (enemies),
