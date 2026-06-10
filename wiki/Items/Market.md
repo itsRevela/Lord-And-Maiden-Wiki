@@ -3,7 +3,7 @@
 The **Market** is the in-game panel where you spend **earned** currencies (Gems, Honor / Union / Friendship / Life Points, Courage Voucher, Island Coin, etc.) on items, across 13 tabs. It is a **separate panel from the [Shop](Shop.md)** (which sells Rand-Coin recharge packs).
 
 ## How the Market works
-- **Restock / refresh:** most tabs restock **weekly (Monday 00:00)**; the Tournament and Festival tabs restock **monthly (1st)**; the Manor tab runs a **daily** timer; the **Wilderness Store** and **Lord Store** never restock (one-time purchases).
+- **Restock / refresh:** most tabs restock **weekly (Monday 00:00)**; the Tournament and Festival tabs restock **monthly (1st)**; the Manor tab restocks on a **server-set timer**; the **Wilderness Store** and **Lord Store** never restock (one-time purchases).
 - **Buy Limit:** the per-item purchase cap; **∞** = unlimited. The limit **resets each restock** (so a weekly tab's limits refill every Monday); one-time tabs never refill.
 - **Unlock gates:** several tabs only appear once their feature is unlocked (Arena, Tournament, Ruins, Wilderness, etc.). The Gem / Wilderness / Lord tabs also gate **individual items** by a level (shown in the right-hand column).
 - Tapping a currency's **＋** opens where to get more — Gems → the [Shop](Shop.md), Gold Coin → the Farm.
@@ -11,7 +11,7 @@ The **Market** is the in-game panel where you spend **earned** currencies (Gems,
 > Two Market tabs are **server-driven and not in the static data**, so they aren't listed below: the **Traveling Merchant** (a randomly-rotating stock with a manual refresh) and a **Kuroland Badge** tab.
 
 ## Manor Shop
-**Currency:** Gold Coin / Gems  ·  **Restock:** Daily refresh  ·  **Access:** Unlocked with the Manor building
+**Currency:** Gold Coin / Gems  ·  **Restock:** Timed restock (server-set countdown)  ·  **Access:** Unlocked with the Manor building
 
 | Item | Currency | Price | Buy Limit |
 |---|---|---|---|

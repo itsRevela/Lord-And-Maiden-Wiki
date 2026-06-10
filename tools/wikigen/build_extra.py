@@ -211,7 +211,7 @@ def gen_item_sources(write, tbl, R):
 # from the decompiled MarketPanel / UnLockFun / localization (see notes). The 4th
 # entry is the per-item gate column header, or None when NeedLv is unused (all 0).
 _MARKET_TABS = {
-    "1":  ("Manor Shop", "Daily refresh", "Unlocked with the Manor building", None),
+    "1":  ("Manor Shop", "Timed restock (server-set countdown)", "Unlocked with the Manor building", None),
     "2":  ("Gem Shop", "Weekly refresh (Mon 00:00)", "Each item is gated by your Adventure / VIP level", "VIP/Adv Lv"),
     "3":  ("Alliance (Union) Shop", "Weekly refresh (Mon 00:00)", "Opened from the Alliance / Union panel", None),
     "4":  ("Friendship Shop", "Weekly refresh (Mon 00:00)", "Unlocked with the Ruins feature", None),
@@ -258,7 +258,7 @@ def gen_market(write, tbl, R):
         "tabs. It is a **separate panel from the [Shop](Shop.md)** (which sells Rand-Coin recharge packs).", "",
         "## How the Market works",
         "- **Restock / refresh:** most tabs restock **weekly (Monday 00:00)**; the Tournament and "
-        "Festival tabs restock **monthly (1st)**; the Manor tab runs a **daily** timer; the "
+        "Festival tabs restock **monthly (1st)**; the Manor tab restocks on a **server-set timer**; the "
         "**Wilderness Store** and **Lord Store** never restock (one-time purchases).",
         "- **Buy Limit:** the per-item purchase cap; **∞** = unlimited. The limit **resets each restock** "
         "(so a weekly tab's limits refill every Monday); one-time tabs never refill.",
