@@ -35,11 +35,12 @@ Effective stats (engine build, post troop‑fix): +ATK builds ATK ≈ 436–521,
   defender **DEF** lowers it (and made the +DEF commander win).
 
 ## Calibration targets for a `validate_baseline.py`
-- **Outcome is a near coin‑flip / high variance — NOT a deterministic enemy win.** The user ran
-  this matchup twice: **run 1 = player LOSS**, **run 2 = player VICTORY**. So the target is a
-  **close matchup, player win rate roughly 40–60%** (≈ 50%), decided narrowly by RNG (skill/prep
-  procs, multi‑hit ranges, targeting). The +DEF enemy commander is *tankier* (tilts it slightly,
-  and won run 1), but it does **not** guarantee an enemy win.
+- **Outcome = a TRUE COIN‑FLIP. Authoritative target: player win rate ≈ 50% (10 in‑game runs = 5
+  wins / 5 losses).** The matchup is balanced and variance‑driven (decided by RNG: skill/prep
+  procs, multi‑hit ranges, targeting). This is a tight calibration constraint: **a +229 ATK
+  allocation edge and a +229 DEF allocation edge must come out EQUAL** (neither dominates). Aim
+  the model at ~50% ± a few %; the +DEF commander is marginally tankier but the +ATK side hits
+  marginally harder, and they cancel.
 - **Single battle, decided ~round 4** (no rematch — one commander falls before round 8 in this
   close fight, but ~4 rounds, not a full 8‑round stalemate).
 - Both teams **nearly wiped** at the end (run 1: left ≈ 11,370 / right ≈ 20,120 Health) — a tight
