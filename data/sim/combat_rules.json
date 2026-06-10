@@ -391,9 +391,11 @@
   },
   "skill_stone_rules": {
     "no_duplicate_per_team": true,
-    "no_duplicate_note": "USER-CONFIRMED: an identical skill stone cannot be equipped on two heroes in the same formation/team (rule is per-team; the two opposing teams may each use the same stone).",
-    "per_category_limit": "UNDER_VERIFICATION",
-    "per_category_note": "Prior decode of the in-game rules text (wiki/Heroes/Skill-Stones.md) + the original test case (1 stone of each category per team) suggest stones may also be limited to ~1 Strategic + 1 each Tactical/Passive/Pursuit per team. Awaiting user confirm.",
-    "stone_is_4th_skill": "A skill stone grants the hero a 4th equipped skill (it fires in battle, e.g. the log's 'Use [Magic Spear]'). NOT YET MODELLED in the engine (build = main + 2 modular); to be added with the incoming calibration data, with the no-duplicate (and any per-category) constraint enforced on stone selection."
+    "no_duplicate_note": "USER-CONFIRMED: an identical skill stone cannot be equipped on two heroes in the same formation. Per-team only (the two opposing teams may each use the same stone). This is the ONLY stone-equip restriction the user has encountered.",
+    "stone_optional": true,
+    "stone_optional_note": "A hero may be fielded with NO stone (optional slot); equipping one is generally better if available.",
+    "per_category_limit": false,
+    "per_category_note": "An earlier decode of the in-game rules text suggested ~1 stone per category (1 Strategic + 1 each Tactical/Passive/Pursuit); the user reports NO such limit in practice (3 stones of the same category are fine as long as none are identical). The original test's 1-per-category layout was a player choice, not a rule.",
+    "stone_is_4th_skill": "A skill stone grants the hero a 4th equipped skill (it fires in battle, e.g. the log's 'Use [Magic Spear]'). NOT YET MODELLED in the engine (build = main + 2 modular); to add with incoming calibration data, enforcing only the no-duplicate constraint."
   }
 }

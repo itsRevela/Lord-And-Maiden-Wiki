@@ -178,7 +178,7 @@ T6 archer troops (55,000x)
 
 ## Notes
 - **Why these heroes:** their main skills are pure **"Launch N ATK"** (Binding Slash 2‑3 hits / Fly Flowers 1‑3 / Sky Rain Arrows 3‑5) on 3 enemies — no debuff/buff/control riders, so every hit is a clean damage reading on all three DEF levels.
-- **Skill stones must be DISTINCT within a team** — an identical skill stone can't be equipped on two heroes in the same formation. Each team here uses three different plain‑damage stones (Holy‑light Chop / Rift / Purgatory Trial); the two formations may reuse the same three since the rule is per‑team. Stones are secondary — swap any for another **plain damage** stone if needed (and tell me which), but *avoid buff/heal/shield stones* (Elf Deer, Field Therapy, Reactive Block).
+- **Skill stones are OPTIONAL and must be DISTINCT within a team.** The only rule is *no identical stone on two heroes of the same formation* (no per‑category cap). The slot can be left **empty** — for this baseline that's actually the cleanest (one fewer skill firing), so feel free to run all three with **no stone**. If you'd rather fill them, the three distinct plain‑damage stones shown (Holy‑light Chop / Rift / Purgatory Trial) are valid; just *avoid buff/heal/shield stones* (Elf Deer, Field Therapy, Reactive Block).
 - **Modular skills** are the heroes' own defaults; any plain "ATK N enemy" skill is a fine substitute.
 - Keep **gear + messenger identical across every unit** — it's the control (these exact pieces appeared in your first log).
 - This is the highest‑value of the three: it re‑grounds the entire damage equation, currently fit only to one shielded‑tank fight.
