@@ -1,0 +1,1171 @@
+{
+  "5": {
+    "id": 5,
+    "name_en": "DMG Dealt Increased",
+    "name_cn_token": "{造成伤害提高}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Multiplies the bearer's outgoing damage upward by a skill-supplied percentage; pure damage-dealt buff with no other effect. Magnitude is carried by the applying skill, not fixed in Buff.csv.",
+    "prepared_variant": false,
+    "stacking": "Same effect from the same skill type does not stack (highest applies); different skill types add together.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:2",
+      "Language_SkillDes.csv 'DMG Dealt Increased'",
+      "Game-Hints.md (same-type effects don't stack)"
+    ]
+  },
+  "6": {
+    "id": 6,
+    "name_en": "DMG Dealt Reduced",
+    "name_cn_token": "{造成伤害降低}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Reduces the target's outgoing damage by a skill-supplied percentage (e.g. Bless Immortals -35%). Magnitude carried by the applying skill.",
+    "prepared_variant": false,
+    "stacking": "Same-type does not stack (highest); cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:3",
+      "NewSkillInfo ST1 ID1027 Bless Immortals (DMG Dealt Reduced 35%)"
+    ]
+  },
+  "7": {
+    "id": 7,
+    "name_en": "DMG Taken Increased",
+    "name_cn_token": "{受到伤害提高}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Increases damage the target takes by a skill-supplied percentage (Affected By DES); amplifies all incoming hits while active.",
+    "prepared_variant": false,
+    "stacking": "Same-type does not stack (highest); cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:4",
+      "NewSkillInfo ST1 ID1042 Cold Secret 'DMG Taken Increased 15.2%'"
+    ]
+  },
+  "8": {
+    "id": 8,
+    "name_en": "DMG Taken Reduced",
+    "name_cn_token": "{受到伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Reduces damage the bearer takes by a skill-supplied percentage (Affected By DEF); common defensive buff.",
+    "prepared_variant": false,
+    "stacking": "Same-type does not stack (highest); cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:5",
+      "NewSkillInfo ST1 ID1005 Devil Fruit 'DMG Taken Reduced'"
+    ]
+  },
+  "9": {
+    "id": 9,
+    "name_en": "ATK Attribute Increased",
+    "name_cn_token": "{攻击属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's ATK attribute by a skill-supplied amount (flat point value or %, Affected By DEF).",
+    "prepared_variant": false,
+    "stacking": "Same-type does not stack (highest); cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:6",
+      "NewSkillInfo ST1 ID65 Boost Morale 'ATK Attribute Increased 11.4'"
+    ]
+  },
+  "10": {
+    "id": 10,
+    "name_en": "DEF Attribute Increased",
+    "name_cn_token": "{防御属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's DEF attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:7",
+      "NewSkillInfo ST1 ID27 Self-Healing 'DEF Attribute Increased 15.2'"
+    ]
+  },
+  "11": {
+    "id": 11,
+    "name_en": "DES Attribute Increased",
+    "name_cn_token": "{破坏属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's DES (Ruin) attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:8",
+      "localization 破坏属性提高"
+    ]
+  },
+  "12": {
+    "id": 12,
+    "name_en": "Spd Attribute Increased",
+    "name_cn_token": "{速度属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's Speed attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:9",
+      "NewSkillInfo ST1 ID15 Feather Fall 'Spd Attribute Increased 11.4'"
+    ]
+  },
+  "13": {
+    "id": 13,
+    "name_en": "Increase All Attributes",
+    "name_cn_token": "{所有属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises all four of the bearer's attributes (ATK/DEF/DES/Spd) by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:10",
+      "NewSkillInfo ST2 ID88 Elk Armor 'Increase All Attributes 7.4'"
+    ]
+  },
+  "14": {
+    "id": 14,
+    "name_en": "ATK Reduced",
+    "name_cn_token": "{攻击属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's ATK attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:11",
+      "localization 攻击属性降低"
+    ]
+  },
+  "15": {
+    "id": 15,
+    "name_en": "DEF Reduced",
+    "name_cn_token": "{防御属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's DEF attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:12",
+      "localization 防御属性降低"
+    ]
+  },
+  "16": {
+    "id": 16,
+    "name_en": "DES Reduced",
+    "name_cn_token": "{破坏属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's DES (Ruin) attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:13",
+      "localization 破坏属性降低"
+    ]
+  },
+  "17": {
+    "id": 17,
+    "name_en": "Spd Attribute Reduced",
+    "name_cn_token": "{速度属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's Speed attribute by a skill-supplied amount.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:14",
+      "localization 速度属性降低"
+    ]
+  },
+  "18": {
+    "id": 18,
+    "name_en": "All Attributes Reduced",
+    "name_cn_token": "{所有属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers all four of the target's attributes by a skill-supplied amount (Affected By DES).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:15",
+      "NewSkillInfo ST1 ID1004 Rock Fire 'All Attributes Reduced'"
+    ]
+  },
+  "19": {
+    "id": 19,
+    "name_en": "ATK Attribute Increased",
+    "name_cn_token": "{攻击属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's ATK attribute (duplicate registry entry of 9; used by some skills, e.g. Blazing Slash).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:16",
+      "NewSkillInfo ST1 ID1040 Blazing Slash uses buff 19"
+    ]
+  },
+  "20": {
+    "id": 20,
+    "name_en": "DEF Attribute Increased",
+    "name_cn_token": "{防御属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's DEF attribute (duplicate registry entry of 10).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:17",
+      "localization 防御属性提高"
+    ]
+  },
+  "21": {
+    "id": 21,
+    "name_en": "DES Attribute Increased",
+    "name_cn_token": "{破坏属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's DES attribute (duplicate registry entry of 11).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:18",
+      "localization 破坏属性提高"
+    ]
+  },
+  "22": {
+    "id": 22,
+    "name_en": "Spd Attribute Increased",
+    "name_cn_token": "{速度属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's Speed attribute (duplicate registry entry of 12).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:19",
+      "localization 速度属性提高"
+    ]
+  },
+  "23": {
+    "id": 23,
+    "name_en": "Increase All Attributes",
+    "name_cn_token": "{所有属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises all of the bearer's attributes (duplicate registry entry of 13).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:20",
+      "localization 所有属性提高"
+    ]
+  },
+  "24": {
+    "id": 24,
+    "name_en": "ATK Reduced",
+    "name_cn_token": "{攻击属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's ATK attribute (duplicate registry entry of 14).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:21",
+      "localization 攻击属性降低"
+    ]
+  },
+  "25": {
+    "id": 25,
+    "name_en": "DEF Reduced",
+    "name_cn_token": "{防御属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's DEF attribute (duplicate registry entry of 15).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:22",
+      "localization 防御属性降低"
+    ]
+  },
+  "26": {
+    "id": 26,
+    "name_en": "DES Reduced",
+    "name_cn_token": "{破坏属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's DES attribute (duplicate registry entry of 16).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:23",
+      "localization 破坏属性降低"
+    ]
+  },
+  "27": {
+    "id": 27,
+    "name_en": "Spd Attribute Reduced",
+    "name_cn_token": "{速度属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers the target's Speed attribute (duplicate registry entry of 17).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:24",
+      "localization 速度属性降低"
+    ]
+  },
+  "28": {
+    "id": 28,
+    "name_en": "All Attributes Reduced",
+    "name_cn_token": "{所有属性降低}",
+    "type": -1,
+    "category": "attr_mod",
+    "behavior": "Lowers all of the target's attributes (duplicate registry entry of 18).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:25",
+      "localization 所有属性降低"
+    ]
+  },
+  "29": {
+    "id": 29,
+    "name_en": "Normal ATK DMG Dealt Increased",
+    "name_cn_token": "{普通攻击伤害提高}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Increases the bearer's Normal-ATK damage by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:26",
+      "localization 普通攻击伤害提高"
+    ]
+  },
+  "30": {
+    "id": 30,
+    "name_en": "Normal DMG Dealt Reduced",
+    "name_cn_token": "{普通攻击伤害降低}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Decreases the target's Normal-ATK damage by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:27",
+      "localization 普通攻击伤害降低"
+    ]
+  },
+  "31": {
+    "id": 31,
+    "name_en": "Tactical Skill DMG Dealt Increased",
+    "name_cn_token": "{战术技能伤害提高}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Increases the bearer's Tactical-skill damage by a skill-supplied percentage (Affected By Spd).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:28",
+      "NewSkillInfo ST2 ID1044 Melting Soul 'Tactical Skill DMG Dealt Increased 15.2%'"
+    ]
+  },
+  "32": {
+    "id": 32,
+    "name_en": "Tactical Skill DMG Dealt Reduced",
+    "name_cn_token": "{战术技能伤害降低}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Decreases the target's Tactical-skill damage by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:29",
+      "localization 战术技能伤害降低"
+    ]
+  },
+  "33": {
+    "id": 33,
+    "name_en": "Pursuit Skill DMG Dealt Increased",
+    "name_cn_token": "{追击技能伤害提高}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Increases the bearer's Pursuit-skill damage by a skill-supplied percentage (Affected By Spd).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:30",
+      "NewSkillInfo ST1 ID1037 Glowing Leaf 'Pursuit Skill DMG Dealt Increased'"
+    ]
+  },
+  "34": {
+    "id": 34,
+    "name_en": "Pursuit Skill DMG Dealt Reduced",
+    "name_cn_token": "{追击技能伤害降低}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Decreases the target's Pursuit-skill damage by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:31",
+      "localization 追击技能伤害降低"
+    ]
+  },
+  "35": {
+    "id": 35,
+    "name_en": "Normal DMG Taken Increased",
+    "name_cn_token": "{受到普通攻击伤害提高}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Increases Normal-ATK damage the target takes by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:32",
+      "localization 受到普通攻击伤害提高"
+    ]
+  },
+  "36": {
+    "id": 36,
+    "name_en": "Normal DMG Taken Reduced",
+    "name_cn_token": "{受到普通攻击伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Decreases Normal-ATK damage the bearer takes by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:33",
+      "localization 受到普通攻击伤害降低"
+    ]
+  },
+  "37": {
+    "id": 37,
+    "name_en": "Tactical Skill DMG Taken Increased",
+    "name_cn_token": "{受到战术技能伤害提高}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Increases Tactical-skill damage the target takes by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:34",
+      "localization 受到战术技能伤害提高"
+    ]
+  },
+  "38": {
+    "id": 38,
+    "name_en": "Reduce Tactical Skill DMG received",
+    "name_cn_token": "{受到战术技能伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Decreases Tactical-skill damage the bearer takes by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:35",
+      "localization 受到战术技能伤害降低"
+    ]
+  },
+  "39": {
+    "id": 39,
+    "name_en": "Pursuit Skill DMG Taken Increased",
+    "name_cn_token": "{受到追击技能伤害提高}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Increases Pursuit-skill damage the target takes by a skill-supplied percentage (Affected By DES); e.g. Demon Rock Slash +15.4%.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:36",
+      "NewSkillInfo ST4 ID1002 Demon Rock Slash 'takes increased Pursuit damage 15.4%'"
+    ]
+  },
+  "40": {
+    "id": 40,
+    "name_en": "Pursuit Skill DMG Taken Reduced",
+    "name_cn_token": "{受到追击技能伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Decreases Pursuit-skill damage the bearer takes by a skill-supplied percentage.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:37",
+      "localization 受到追击技能伤害降低"
+    ]
+  },
+  "42": {
+    "id": 42,
+    "name_en": "Soldier HP Increased",
+    "name_cn_token": "{士兵生命属性提高}",
+    "type": 1,
+    "category": "attr_mod",
+    "behavior": "Raises the bearer's Soldier HP attribute by a skill-supplied amount (boosts both effective HP and healing, which scales off HP).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:38",
+      "localization 士兵生命属性提高",
+      "Game-Hints.md (healing scales off Soldiers' HP)"
+    ]
+  },
+  "43": {
+    "id": 43,
+    "name_en": "Curse DMG Taken  Reduced",
+    "name_cn_token": "{受到咒术伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Reduces Curse (DoT) damage the bearer takes by a skill-supplied percentage (Affected By DEF); resistance buff vs the Curse channel.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:39",
+      "NewSkillInfo ST3 ID14 Magic Cloak 'Curse DMG Taken Reduced'"
+    ]
+  },
+  "44": {
+    "id": 44,
+    "name_en": "Burning DMG Taken Reduced",
+    "name_cn_token": "{受到燃烧伤害降低}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Reduces Burn (DoT) damage the bearer takes by a skill-supplied percentage; resistance buff vs the Burn channel.",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:40",
+      "Language_SkillDes 受到燃烧伤害降低 'Burning DMG Taken Reduced'"
+    ]
+  },
+  "47": {
+    "id": 47,
+    "name_en": "Real DMG Dealt Increased",
+    "name_cn_token": "{造成真实伤害提高}",
+    "type": 1,
+    "category": "dmg_mod",
+    "behavior": "Increases the True/Real damage the bearer deals by a skill-supplied percentage (True damage ignores DEF mitigation).",
+    "prepared_variant": false,
+    "stacking": "Same-type highest; cross-type adds.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:41",
+      "localization 造成真实伤害提高"
+    ]
+  },
+  "70": {
+    "id": 70,
+    "name_en": "Assault",
+    "name_cn_token": "{强袭}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Assault state: the bearer's Normal ATK gains added True/Real damage (Affected By ATK; per-skill Real DMG Base 12.5-50). An offensive empowerment, not a heal or DoT.",
+    "prepared_variant": false,
+    "stacking": "Carried per-skill; refreshes/overwrites with the higher value (attr-style).",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:42",
+      "NewSkillInfo ST1 ID65 Boost Morale; ST2 ID67 Epee Storm 'Real DMG Base 30'",
+      "Game 强袭 'Enhances Assault effects'"
+    ]
+  },
+  "73": {
+    "id": 73,
+    "name_en": "Shield",
+    "name_cn_token": "{护盾}",
+    "type": 1,
+    "category": "shield",
+    "behavior": "Shield: grants N layers; each layer fully blocks one incoming damage instance (not a damage amount). Pierced by attacks flagged 'Ignores Dodge and Shield'.",
+    "prepared_variant": false,
+    "stacking": "Stacks as layers (skills grant 1-2). Each blocked hit consumes one layer.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:43",
+      "Language_SkillDes 'Gain N Layers Of Shield, Which Can Block N DMG'",
+      "NewSkillInfo ST2 ID1008 Wing Shield (2 layers)",
+      "Status-Effects.md (Shield absorbs first instance)"
+    ]
+  },
+  "74": {
+    "id": 74,
+    "name_en": "First Aid",
+    "name_cn_token": "{急救}",
+    "type": 1,
+    "category": "heal",
+    "behavior": "First Aid: a reactive heal -- when the bearer takes a Normal ATK, a chance to Restore Life (skill-supplied healing coefficient, e.g. 0.55-0.76; scales off Soldiers' HP).",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient and trigger chance.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:44",
+      "NewSkillInfo ST1 ID37 Past Memory (74, coef 0.55); ST1 ID1005 Devil Fruit (74, coef 0.76)"
+    ]
+  },
+  "79": {
+    "id": 79,
+    "name_en": "Chance Haste",
+    "name_cn_token": "{概率极速}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Chance Haste: a percentage chance to gain an extra/faster action (Haste proc). Trigger chance is skill-supplied.",
+    "prepared_variant": false,
+    "stacking": "Per-skill proc chance.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:45",
+      "resolver._CJK_FIX 概率极速 'Chance Haste'"
+    ]
+  },
+  "80": {
+    "id": 80,
+    "name_en": "Chance Combo",
+    "name_cn_token": "{概率连击}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Chance Combo: on a Normal ATK, a chance to immediately strike again (combo follow-up). Trigger chance is skill-supplied (e.g. Glowing Leaf 75%).",
+    "prepared_variant": false,
+    "stacking": "Per-skill proc chance.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:46",
+      "NewSkillInfo ST1 ID55 Clap Thunder 'A Chance to Combo'; ST1 ID1037 '75% Probability Combo'"
+    ]
+  },
+  "81": {
+    "id": 81,
+    "name_en": "Chance Counter",
+    "name_cn_token": "{概率反击}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Chance Counter: when the bearer receives a Normal ATK, a chance to counterattack (skill-supplied DMG coefficient, e.g. 0.7-1.69). Once applied it cannot be prevented.",
+    "prepared_variant": false,
+    "stacking": "Per-skill chance + coefficient.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:47",
+      "NewSkillInfo ST1 ID9 Counterattack (coef 0.95); ST1 ID82 '100% Counterattack'",
+      "Status-Effects.md (Counterattack cannot be prevented)"
+    ]
+  },
+  "82": {
+    "id": 82,
+    "name_en": "Chance Splash",
+    "name_cn_token": "{概率溅射}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Chance Splash: on a Normal ATK (or Pursuit), a chance to splash damage to other enemies (skill-supplied DMG coefficient, e.g. 0.5-1.5).",
+    "prepared_variant": false,
+    "stacking": "Per-skill chance + coefficient.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:48",
+      "NewSkillInfo ST1 ID10 Red Blade 'Splash On Other Enemies (coef 0.50)'"
+    ]
+  },
+  "83": {
+    "id": 83,
+    "name_en": "Stun(Prepared)",
+    "name_cn_token": "{眩晕}({预备})",
+    "type": -1,
+    "category": "control",
+    "behavior": "Telegraphed (Prepared) Stun -- a Stun whose application is announced one step ahead (the '(Prepared)' display of buff 114); resolves to the same Unable-to-Move state.",
+    "prepared_variant": true,
+    "stacking": "Becomes the real Stun (114) when it fires.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:49",
+      "Buff.csv:62 (114 Stun)",
+      "Name token 眩晕(预备) = Stun(Prepared)"
+    ]
+  },
+  "84": {
+    "id": 84,
+    "name_en": "Disarm(Prepared)",
+    "name_cn_token": "{缴械}({预备})",
+    "type": -1,
+    "category": "control",
+    "behavior": "Telegraphed (Prepared) Disarm -- the '(Prepared)' display of buff 115; resolves to Disarm (cannot Normal ATK).",
+    "prepared_variant": true,
+    "stacking": "Becomes the real Disarm (115) when it fires.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:50",
+      "Buff.csv:63 (115 Disarm)",
+      "NewSkillInfo ST1 ID1025 Dragon Serious applies 84/85/86 as '25% Probability ... Disarmed/Silenced/Chaos'"
+    ]
+  },
+  "85": {
+    "id": 85,
+    "name_en": "Silence(Prepared)",
+    "name_cn_token": "{沉默}({预备})",
+    "type": -1,
+    "category": "control",
+    "behavior": "Telegraphed (Prepared) Silence -- the '(Prepared)' display of buff 116; resolves to Silence (cannot Tactical).",
+    "prepared_variant": true,
+    "stacking": "Becomes the real Silence (116) when it fires.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:51",
+      "Buff.csv:64 (116 Silence)",
+      "NewSkillInfo ST1 ID1025 Dragon Serious"
+    ]
+  },
+  "86": {
+    "id": 86,
+    "name_en": "Chaos(Prepared)",
+    "name_cn_token": "{混乱}({预备})",
+    "type": -1,
+    "category": "control",
+    "behavior": "Telegraphed (Prepared) Chaos -- the '(Prepared)' display of buff 117; resolves to Chaos (random-target attacks).",
+    "prepared_variant": true,
+    "stacking": "Becomes the real Chaos (117) when it fires.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:52",
+      "Buff.csv:65 (117 Chaos)",
+      "NewSkillInfo ST1 ID1025 Dragon Serious"
+    ]
+  },
+  "87": {
+    "id": 87,
+    "name_en": "Heal",
+    "name_cn_token": "{治疗}",
+    "type": 0,
+    "category": "heal",
+    "behavior": "Heal: an instant restore-life effect (heal value scales off the Soldiers' HP attribute). The generic active-heal status shown as 'Healing'.",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:53",
+      "Language_SysTip 治疗效果受士兵生命属性影响 'Healing Effect Is Affected By Soldiers HP'",
+      "Language_SkillDes 治疗系数 'Healing Coefficient'"
+    ]
+  },
+  "88": {
+    "id": 88,
+    "name_en": "Instant",
+    "name_cn_token": "{瞬法}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Instant / Swiftcast: while active, when the bearer activates a Tactical skill that needs preparation, a chance to reduce its preparation time by 1 round.",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:54",
+      "NewSkillInfo ST2 ID75 Sheep Game 'Swiftcast State, ... Reduce Preparation Time By 1 Round'"
+    ]
+  },
+  "89": {
+    "id": 89,
+    "name_en": "Eternal",
+    "name_cn_token": "{永恒}",
+    "type": 0,
+    "category": "other",
+    "behavior": "Eternal: 'Attribute Will Not Be Changed' -- the bearer's attributes are locked so they cannot be raised or lowered (immune to attribute buffs/debuffs) for the duration. Does not block CC or DoT.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:55",
+      "NewSkillInfo ST1 ID77 Angel Blesse 'In An Eternal State,Attribute Will Not Be Changed'"
+    ]
+  },
+  "106": {
+    "id": 106,
+    "name_en": "Blood Sucking",
+    "name_cn_token": "{离间}",
+    "type": 1,
+    "category": "lifesteal",
+    "behavior": "Blood Sucking: the bearer recruits/restores some enemy soldiers when it deals damage, by a skill-supplied Blood Sucking Coefficient (0.4-1.5). A lifesteal multiplier on damage dealt.",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:56",
+      "NewSkillInfo ST2 ID84 Night Elf 'Blood Sucking Coefficien 0.6'; ST4 ID1005 (1.50)",
+      "Language_SkillDes 离间系数 'Blood Sucking Coefficient'"
+    ]
+  },
+  "107": {
+    "id": 107,
+    "name_en": "Self-Heal",
+    "name_cn_token": "{自愈}",
+    "type": 1,
+    "category": "heal",
+    "behavior": "Self-Heal / regen: 'Before Each Round, Restore Life' at a skill-supplied Healing Coefficient (0.32-1.52; scales off Soldiers' HP). The core periodic-heal buff used by most healers.",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient and duration; cross-type heals add.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:57",
+      "NewSkillInfo ST1 ID1 Healing Light (107, coef 0.45); ST3 ID7 Holy Water (107, coef 0.57)",
+      "Game-Hints.md (healing scales off HP)"
+    ]
+  },
+  "108": {
+    "id": 108,
+    "name_en": "Burn",
+    "name_cn_token": "{燃烧}",
+    "type": -1,
+    "category": "dot",
+    "behavior": "Burn: a damage-over-time -- 'Before Each Round, Burning DMG Taken' at a skill-supplied DMG coefficient (~0.5-1.69). Mitigated by buff 44; amplified by 157; can be detonated by 158 / Exploding-Flame skills.",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient and duration; reapplying refreshes/can enable detonation skills.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:58",
+      "NewSkillInfo ST2 ID19 Hopeless; ST1 ID1009 Shocking Roar (coef 1.69)",
+      "ST2 ID73 Exploding Flame (detonate 1.6 if Burning)"
+    ]
+  },
+  "109": {
+    "id": 109,
+    "name_en": "Curse",
+    "name_cn_token": "{咒术}",
+    "type": -1,
+    "category": "dot",
+    "behavior": "Curse: a damage-over-time -- 'Before Each Round, Curse DMG Taken' at a skill-supplied DMG coefficient (~0.5-1.69). Mitigated by buff 43; amplified by 157; detonated by 158.",
+    "prepared_variant": false,
+    "stacking": "Per-skill coefficient and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:59",
+      "NewSkillInfo ST1 ID1002 Frighten (coef 1.33); ST1 ID1007 Black Bog (coef 1.52)"
+    ]
+  },
+  "111": {
+    "id": 111,
+    "name_en": "Chance Dodge",
+    "name_cn_token": "{概率闪避}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Chance Dodge: when receiving a Normal ATK, a chance to dodge it entirely (skill-supplied chance, e.g. 30%). Bypassed by attacks flagged 'Ignores Dodge and Shield'.",
+    "prepared_variant": false,
+    "stacking": "Per-skill proc chance.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:60",
+      "NewSkillInfo ST2 ID68 Idol Voice '30% Probability Dodge'",
+      "resolver._CJK_FIX 概率闪避 'Chance Dodge'"
+    ]
+  },
+  "113": {
+    "id": 113,
+    "name_en": "Concentration",
+    "name_cn_token": "{专注}",
+    "type": 1,
+    "category": "other",
+    "behavior": "Concentration (Focus): the bearer is Immune to Disarm/Silence/Stun/Chaos/Taunt during its turn -- it ignores those control effects while acting, but does not remove or block them from being applied.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:61",
+      "NewSkillInfo ST1 ID14 Field 'In A Focused State,Immune: Disarm, Silence, Stun, Chaos, Taunts'",
+      "Status-Effects.md (Immune/Concentration)"
+    ]
+  },
+  "114": {
+    "id": 114,
+    "name_en": "Stun",
+    "name_cn_token": "{眩晕}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Stun: the unit is Unable to Move and cannot act at all (no normal attack, tactical, or pursuit) for the duration.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration; cleansable by Purification.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:62",
+      "Language_SkillDes 处于眩晕状态 'In A Stunned State'",
+      "NewSkillInfo ST1 ID1009 Shocking Roar 'In A Stunned State,Unable To Move'",
+      "Status-Effects.md (Stun = cannot act)"
+    ]
+  },
+  "115": {
+    "id": 115,
+    "name_en": "Disarm",
+    "name_cn_token": "{缴械}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Disarm: the unit cannot launch Normal ATK (tactical/pursuit skills still usable).",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration; usually cleansable, but some self-applied Disarm is flagged 'Cannot Be purified'.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:63",
+      "NewSkillInfo ST2 ID1027 Destroy Domain 'In A Disarmed State,Cannot Launch Normal ATK'",
+      "Status-Effects.md (Disarm = no normal attack)"
+    ]
+  },
+  "116": {
+    "id": 116,
+    "name_en": "Silence",
+    "name_cn_token": "{沉默}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Silence: the unit cannot launch Tactical skills (normal attack and pursuit still usable).",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration; cleansable by Purification.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:64",
+      "NewSkillInfo ST2 ID1024 Cold Attack 'In A Silenced State,Cannot Launch Tactical Skills'",
+      "Status-Effects.md (Silence = no tactical skills)"
+    ]
+  },
+  "117": {
+    "id": 117,
+    "name_en": "Chaos",
+    "name_cn_token": "{混乱}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Chaos: the unit carries out Undifferentiated ATK -- normal attacks and damage-dealing Tactical skills (and pursuits they trigger) hit completely random targets, friend or foe. Overrides Taunt.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration; cleansable by Purification.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:65",
+      "Language_SysTip 混乱 'Chaos effect only applies to normal attacks and damage-dealing Tactical Skills. Subsequent Pursuit ... is also affected'",
+      "NewSkillInfo ST4 ID17 Chaos 'Carry Out Undifferentiated ATK'",
+      "Status-Effects.md"
+    ]
+  },
+  "118": {
+    "id": 118,
+    "name_en": "Taunts",
+    "name_cn_token": "{嘲讽}",
+    "type": -1,
+    "category": "taunt",
+    "behavior": "Taunt (Provoke): forces enemies to direct their Normal ATK at the taunter, overriding normal target selection. Ignored if the taunted unit is also under Chaos.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:66",
+      "NewSkillInfo ST2 ID110 Knight Creed 'In A Provoked State'",
+      "Status-Effects.md (Taunt forces normal-attack on taunter; ignored under Chaos)"
+    ]
+  },
+  "119": {
+    "id": 119,
+    "name_en": "Heal Ban",
+    "name_cn_token": "{禁疗}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Heal Ban (Forbidden Treatment): the unit cannot be healed by any source for the duration.",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:67",
+      "Language_SkillDes 无法受到治疗效果 'Cannot Be Healed'",
+      "NewSkillInfo ST2 ID76 Taboo Seal 'Forbidden Treatment State,Cannot Be Healed'",
+      "Status-Effects.md"
+    ]
+  },
+  "120": {
+    "id": 120,
+    "name_en": "Assist",
+    "name_cn_token": "{援护}",
+    "type": 1,
+    "category": "taunt",
+    "behavior": "Assist (Protect): the bearer guards allied troops from Normal ATK -- 'Protect Our Troops From Normal ATK', intercepting normal attacks aimed at protected allies (an ally-side cover/redirect).",
+    "prepared_variant": false,
+    "stacking": "Refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:68",
+      "NewSkillInfo ST1 ID26 Star Shield 'Protect Our Troops From Normal ATK' (Buff=120_...)",
+      "ST2 ID21 Block (120)"
+    ]
+  },
+  "125": {
+    "id": 125,
+    "name_en": "Superconducting",
+    "name_cn_token": "{超导}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Superconducting: while active, when the bearer uses a Tactical skill that does NOT require preparation, a chance to immediately cast that Tactical skill 1 additional time.",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:69",
+      "NewSkillInfo ST1 ID63 Mana Storage 'Superconducting ... Activate The Tactical Skill 1 Additional Time'"
+    ]
+  },
+  "139": {
+    "id": 139,
+    "name_en": "Purification",
+    "name_cn_token": "{净化}",
+    "type": 1,
+    "category": "cleanse",
+    "behavior": "Purification: removes harmful effects produced by Tactical and Pursuit skills from an ally (cleanse). Often applied 'before each round, a chance to Purify: Disarm/Silence/Stun/Chaos/Taunt'. Some debuffs are flagged 'Cannot Be purified'.",
+    "prepared_variant": false,
+    "stacking": "Per-skill chance; one cleanse per trigger.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:70",
+      "Language_SkillDes 净化 'Purify The Harmful Effect Produced By Tactical And Pursuit Skill'",
+      "NewSkillInfo ST1 ID53 Time Story",
+      "Status-Effects.md (Purify)"
+    ]
+  },
+  "140": {
+    "id": 140,
+    "name_en": "Sneak Attack",
+    "name_cn_token": "{偷袭}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Sneak Attack: the bearer's attacks Will Not Be Affected by the Counter ATK Effect (it cannot be counterattacked). A defensive proc-immunity, typically paired with a DMG-dealt buff.",
+    "prepared_variant": false,
+    "stacking": "Boolean state; refreshes duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:71",
+      "NewSkillInfo ST3 ID17 Sneak Attack 'Will Not Be Affected by the Counter ATK Effect' (Buff=140_...)"
+    ]
+  },
+  "150": {
+    "id": 150,
+    "name_en": "Insight",
+    "name_cn_token": "{洞察}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Insight: raises the activation probability of ALL the bearer's Pursuit skills by a skill-supplied amount ('All Pursuit Skill Probabilities Increased').",
+    "prepared_variant": false,
+    "stacking": "Per-skill magnitude and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:72",
+      "NewSkillInfo ST1 ID84 Broken Star 'In An Insight State,All Pursuit Skill Probabilities Increased' (Buff=150_...)"
+    ]
+  },
+  "154": {
+    "id": 154,
+    "name_en": "Arcane Missile",
+    "name_cn_token": "{奥术飞弹}",
+    "type": -1,
+    "category": "control",
+    "behavior": "Arcane Missile: a recurring random-CC effect -- before each round, a chance to inflict one of Disarm / Silence / Chaos / Stun on the target.",
+    "prepared_variant": false,
+    "stacking": "Re-rolls each round while active.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:73",
+      "NewSkillInfo ST1 ID86 Arcane Missile 'Before Each Round,A Chance to In A Disarmed/Silenced/Chaos/Stunned State'"
+    ]
+  },
+  "155": {
+    "id": 155,
+    "name_en": "Precision Strike",
+    "name_cn_token": "{精准打击}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Precision Strike: when the bearer launches an attack, a chance to Ignore Dodge and Shield AND ignore Soldier-Restraint penalties (the attack cannot be dodged/blocked and loses the -25% restraint reduction).",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance and duration.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:74",
+      "NewSkillInfo ST1 ID91 Time's Flow / ST1 ID94 Night Dance Allure / ST3 ID42 ATK-DEF Shift all carry Buff=155_... 'Ignores Dodge and Shield, Ignores Soldier Restraint effects'"
+    ]
+  },
+  "157": {
+    "id": 157,
+    "name_en": "Combustion Aid",
+    "name_cn_token": "{助燃}",
+    "type": -1,
+    "category": "dmg_mod",
+    "behavior": "Combustion Aid: a debuff that amplifies DoT taken -- when the target takes Curse or Burning damage, a chance to multiply that DoT instance by 1.5x.",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance; multiplier 1.5x is in the effect string.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:75",
+      "NewSkillInfo ST1 ID92 Combustion Aid 'Make Curse or Burning DMG Taken*1.5' (Buff=157_..._1.5_...)"
+    ]
+  },
+  "158": {
+    "id": 158,
+    "name_en": "Element Burs",
+    "name_cn_token": "{元素爆炸}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Element Burst: a proc -- when the bearer attacks an enemy that has Tactical Burning or Curse, a chance to immediately settle all remaining Burn+Curse DoT at 1.3x and then remove those effects (detonation; multi-stage attacks trigger only on the first hit).",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance; multiplier 1.3x in effect string.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:76",
+      "NewSkillInfo ST3 ID40 Element Burs 'settle all remaining Burning and Curse DMG at 1.3x, ... effects are removed' (Buff=158_..._1.3_...)"
+    ]
+  },
+  "159": {
+    "id": 159,
+    "name_en": "Pursuit Splash",
+    "name_cn_token": "{追击} {溅射}",
+    "type": 1,
+    "category": "proc",
+    "behavior": "Pursuit Splash: when the bearer launches a Pursuit skill, a chance to splash that pursuit damage onto other enemies (skill-supplied DMG coefficient ~0.6). A pursuit-channel version of Splash.",
+    "prepared_variant": false,
+    "stacking": "Per-skill trigger chance and coefficient.",
+    "magnitude": "Carried by the applying skill's Effect/Buff string; final damage/heal formula is UNKNOWN_SERVER_SIDE (combat is server-authoritative).",
+    "evidence": [
+      "Buff.csv:77",
+      "NewSkillInfo ST1 ID93 Arcane Buff / ST3 ID41 Weakness Break 'When Launching Pursuit Skills, A Chance to Splash On Other Enemies (coef 0.60)'",
+      "Name token 追击+溅射"
+    ]
+  }
+}

@@ -25,4 +25,11 @@ tools/naive_tables.txt
 tools/underscore.txt
 tools/copy_audit.py
 tools/validate2.py
-tools/_inspect_model.py
+tools/_*.py
+
+# Battle simulator: JS deps and build output (engine + data are tracked)
+simulator/web/node_modules/
+simulator/web/.next/
+simulator/web/out/
+simulator/**/__pycache__/
+simulator/runs/

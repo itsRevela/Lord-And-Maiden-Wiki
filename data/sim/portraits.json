@@ -1,0 +1,4870 @@
+{
+  "_about": "Per hero id -> portrait/head sprite asset references for the Lord & Maiden simulator. Paths are YooAsset logical addresses (LoadAssetSync<Sprite>), keyed by HeroInfo.icon, NOT plain files on disk yet.",
+  "_asset_scheme": {
+    "source": "GetHeroHeadImg decompiled:9744-9792",
+    "full_head": "Hero/{icon}/Head_{icon}_{skinId}",
+    "chibi_head": "PlayerHead_Q/QHead_{icon}_{skinId}",
+    "skin_id_default": 0,
+    "alt_skin": "HeadImg>10000 picks skin num=HeadImg/10000 -> Head_{icon}_{num}",
+    "key_is_icon": "icon == HeroInfo.icon (often == id, but use icon)."
+  },
+  "_extraction_status": {
+    "plain_files_present": false,
+    "where_they_live": "Inside the game's YooAsset UnityFS bundles at <LAM install>/Lord and Maiden_Data/StreamingAssets/yoo/DefaultPackage/*.bundle (1278 plain UnityFS bundles, unencrypted - see notes/01-recon-and-encryption.md).",
+    "repo_extracted_dir": "extracted/bundles_assets/ exists but is EMPTY - only the XML config TextAssets were extracted, not sprites.",
+    "to_get_a_portrait": "Open the bundles with UnityPy/AssetStudio and pull the Sprite/Texture2D named 'Head_{icon}_0' (full) or 'QHead_{icon}_0' (chibi). No decryption needed.",
+    "note": "UNKNOWN until extracted: exact .bundle file containing a given icon's sprite (resolve via the YooAsset OOY manifest's asset-path -> bundle map)."
+  },
+  "portraits": {
+    "41": {
+      "id": 41,
+      "name_en": "Unknown Brave",
+      "icon": 41,
+      "asset_refs": {
+        "head_full": "Hero/41/Head_41_0",
+        "head_chibi": "PlayerHead_Q/QHead_41_0",
+        "head_full_skin_template": "Hero/41/Head_41_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_41_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -106,
+        "posy": -231,
+        "size": "0.9",
+        "effect_pos1": "100_-400",
+        "effect_pos2": "8_-386",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "42": {
+      "id": 42,
+      "name_en": "Unknown Mage",
+      "icon": 42,
+      "asset_refs": {
+        "head_full": "Hero/42/Head_42_0",
+        "head_chibi": "PlayerHead_Q/QHead_42_0",
+        "head_full_skin_template": "Hero/42/Head_42_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_42_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -22,
+        "posy": -233,
+        "size": "0.9",
+        "effect_pos1": "120_-400",
+        "effect_pos2": "68_-392",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "43": {
+      "id": 43,
+      "name_en": "Unknown Shooter",
+      "icon": 43,
+      "asset_refs": {
+        "head_full": "Hero/43/Head_43_0",
+        "head_chibi": "PlayerHead_Q/QHead_43_0",
+        "head_full_skin_template": "Hero/43/Head_43_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_43_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -69,
+        "posy": -232,
+        "size": "0.9",
+        "effect_pos1": "100_-400",
+        "effect_pos2": "34_-390",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "44": {
+      "id": 44,
+      "name_en": "Unknown Pikeman",
+      "icon": 44,
+      "asset_refs": {
+        "head_full": "Hero/44/Head_44_0",
+        "head_chibi": "PlayerHead_Q/QHead_44_0",
+        "head_full_skin_template": "Hero/44/Head_44_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_44_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -3,
+        "posy": -240,
+        "size": "0.9",
+        "effect_pos1": "150_-400",
+        "effect_pos2": "85_-389",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "45": {
+      "id": 45,
+      "name_en": "Unknown Swordsman",
+      "icon": 45,
+      "asset_refs": {
+        "head_full": "Hero/45/Head_45_0",
+        "head_chibi": "PlayerHead_Q/QHead_45_0",
+        "head_full_skin_template": "Hero/45/Head_45_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_45_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -138,
+        "posy": -242,
+        "size": "0.9",
+        "effect_pos1": "50_-400",
+        "effect_pos2": "-36_-396",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "4": {
+      "id": 4,
+      "name_en": "Seimaki",
+      "icon": 4,
+      "asset_refs": {
+        "head_full": "Hero/4/Head_4_0",
+        "head_chibi": "PlayerHead_Q/QHead_4_0",
+        "head_full_skin_template": "Hero/4/Head_4_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_4_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -170,
+        "posy": -80,
+        "size": "1",
+        "effect_pos1": "0_-150",
+        "effect_pos2": "-45_-155",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "8": {
+      "id": 8,
+      "name_en": "Thetis",
+      "icon": 8,
+      "asset_refs": {
+        "head_full": "Hero/8/Head_8_0",
+        "head_chibi": "PlayerHead_Q/QHead_8_0",
+        "head_full_skin_template": "Hero/8/Head_8_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_8_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -101,
+        "posy": -250,
+        "size": "1",
+        "effect_pos1": "40_-390",
+        "effect_pos2": "-6_-390",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "10": {
+      "id": 10,
+      "name_en": "Sissi",
+      "icon": 10,
+      "asset_refs": {
+        "head_full": "Hero/10/Head_10_0",
+        "head_chibi": "PlayerHead_Q/QHead_10_0",
+        "head_full_skin_template": "Hero/10/Head_10_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_10_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -88,
+        "posy": -235,
+        "size": "0.95",
+        "effect_pos1": "0_-410",
+        "effect_pos2": "8_-389",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "17": {
+      "id": 17,
+      "name_en": "Doll Zero",
+      "icon": 17,
+      "asset_refs": {
+        "head_full": "Hero/17/Head_17_0",
+        "head_chibi": "PlayerHead_Q/QHead_17_0",
+        "head_full_skin_template": "Hero/17/Head_17_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_17_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -72,
+        "posy": -194,
+        "size": "1",
+        "effect_pos1": "100_-380",
+        "effect_pos2": "8_-334",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "19": {
+      "id": 19,
+      "name_en": "Stina",
+      "icon": 19,
+      "asset_refs": {
+        "head_full": "Hero/19/Head_19_0",
+        "head_chibi": "PlayerHead_Q/QHead_19_0",
+        "head_full_skin_template": "Hero/19/Head_19_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_19_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -124,
+        "posy": -79,
+        "size": "1",
+        "effect_pos1": "70_-220",
+        "effect_pos2": "-31_-237",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "21": {
+      "id": 21,
+      "name_en": "Undine",
+      "icon": 21,
+      "asset_refs": {
+        "head_full": "Hero/21/Head_21_0",
+        "head_chibi": "PlayerHead_Q/QHead_21_0",
+        "head_full_skin_template": "Hero/21/Head_21_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_21_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -71,
+        "posy": -217,
+        "size": "1",
+        "effect_pos1": "50_-380",
+        "effect_pos2": "-3_-352",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "24": {
+      "id": 24,
+      "name_en": "Sylph",
+      "icon": 24,
+      "asset_refs": {
+        "head_full": "Hero/24/Head_24_0",
+        "head_chibi": "PlayerHead_Q/QHead_24_0",
+        "head_full_skin_template": "Hero/24/Head_24_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_24_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -90,
+        "posy": -280,
+        "size": "1",
+        "effect_pos1": "50_-420",
+        "effect_pos2": "-9_-415",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "25": {
+      "id": 25,
+      "name_en": "Herfjotur",
+      "icon": 25,
+      "asset_refs": {
+        "head_full": "Hero/25/Head_25_0",
+        "head_chibi": "PlayerHead_Q/QHead_25_0",
+        "head_full_skin_template": "Hero/25/Head_25_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_25_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -58,
+        "posy": -301,
+        "size": "1",
+        "effect_pos1": "80_-460",
+        "effect_pos2": "20_-419",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "26": {
+      "id": 26,
+      "name_en": "Fisis",
+      "icon": 26,
+      "asset_refs": {
+        "head_full": "Hero/26/Head_26_0",
+        "head_chibi": "PlayerHead_Q/QHead_26_0",
+        "head_full_skin_template": "Hero/26/Head_26_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_26_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 102,
+        "posy": 59,
+        "size": "1",
+        "effect_pos1": "250_-60",
+        "effect_pos2": "149_-127",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "30": {
+      "id": 30,
+      "name_en": "Grey",
+      "icon": 30,
+      "asset_refs": {
+        "head_full": "Hero/30/Head_30_0",
+        "head_chibi": "PlayerHead_Q/QHead_30_0",
+        "head_full_skin_template": "Hero/30/Head_30_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_30_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -123,
+        "posy": -278,
+        "size": "1",
+        "effect_pos1": "0_-430",
+        "effect_pos2": "-42_-414",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "31": {
+      "id": 31,
+      "name_en": "Olrun",
+      "icon": 31,
+      "asset_refs": {
+        "head_full": "Hero/31/Head_31_0",
+        "head_chibi": "PlayerHead_Q/QHead_31_0",
+        "head_full_skin_template": "Hero/31/Head_31_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_31_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -172,
+        "posy": -137,
+        "size": "0.95",
+        "effect_pos1": "0_-270",
+        "effect_pos2": "-78_-288",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "48": {
+      "id": 48,
+      "name_en": "Lillian",
+      "icon": 48,
+      "asset_refs": {
+        "head_full": "Hero/48/Head_48_0",
+        "head_chibi": "PlayerHead_Q/QHead_48_0",
+        "head_full_skin_template": "Hero/48/Head_48_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_48_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -62,
+        "posy": -233,
+        "size": "1",
+        "effect_pos1": "80_-350",
+        "effect_pos2": "24_-397",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "53": {
+      "id": 53,
+      "name_en": "Abbey",
+      "icon": 53,
+      "asset_refs": {
+        "head_full": "Hero/53/Head_53_0",
+        "head_chibi": "PlayerHead_Q/QHead_53_0",
+        "head_full_skin_template": "Hero/53/Head_53_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_53_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -58,
+        "posy": -214,
+        "size": "1",
+        "effect_pos1": "100_-350",
+        "effect_pos2": "26_-367",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "54": {
+      "id": 54,
+      "name_en": "Bess",
+      "icon": 54,
+      "asset_refs": {
+        "head_full": "Hero/54/Head_54_0",
+        "head_chibi": "PlayerHead_Q/QHead_54_0",
+        "head_full_skin_template": "Hero/54/Head_54_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_54_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -193,
+        "posy": -248,
+        "size": "1",
+        "effect_pos1": "-20_-380",
+        "effect_pos2": "-97_-392",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "56": {
+      "id": 56,
+      "name_en": "MeiLing",
+      "icon": 56,
+      "asset_refs": {
+        "head_full": "Hero/56/Head_56_0",
+        "head_chibi": "PlayerHead_Q/QHead_56_0",
+        "head_full_skin_template": "Hero/56/Head_56_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_56_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -45,
+        "posy": -276,
+        "size": "1",
+        "effect_pos1": "80_-390",
+        "effect_pos2": "20_-408",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1": {
+      "id": 1,
+      "name_en": "Crolos",
+      "icon": 1,
+      "asset_refs": {
+        "head_full": "Hero/1/Head_1_0",
+        "head_chibi": "PlayerHead_Q/QHead_1_0",
+        "head_full_skin_template": "Hero/1/Head_1_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -9,
+        "posy": -227,
+        "size": "1",
+        "effect_pos1": "120_-380",
+        "effect_pos2": "69_-373",
+        "enjoy_pos": "0",
+        "on_click": "ai",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "5": {
+      "id": 5,
+      "name_en": "Bellona",
+      "icon": 5,
+      "asset_refs": {
+        "head_full": "Hero/5/Head_5_0",
+        "head_chibi": "PlayerHead_Q/QHead_5_0",
+        "head_full_skin_template": "Hero/5/Head_5_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_5_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -178,
+        "posy": 59,
+        "size": "1",
+        "effect_pos1": "30_-50",
+        "effect_pos2": "-13_-111",
+        "enjoy_pos": "0",
+        "on_click": "e5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "6": {
+      "id": 6,
+      "name_en": "Derifa",
+      "icon": 6,
+      "asset_refs": {
+        "head_full": "Hero/6/Head_6_0",
+        "head_chibi": "PlayerHead_Q/QHead_6_0",
+        "head_full_skin_template": "Hero/6/Head_6_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_6_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 12,
+        "posy": 58,
+        "size": "1",
+        "effect_pos1": "180_-10",
+        "effect_pos2": "113_-69",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "7": {
+      "id": 7,
+      "name_en": "Degunnr",
+      "icon": 7,
+      "asset_refs": {
+        "head_full": "Hero/7/Head_7_0",
+        "head_chibi": "PlayerHead_Q/QHead_7_0",
+        "head_full_skin_template": "Hero/7/Head_7_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_7_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -221,
+        "posy": -249,
+        "size": "1",
+        "effect_pos1": "-80_-370",
+        "effect_pos2": "-99_-377",
+        "enjoy_pos": "0",
+        "on_click": "o1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "9": {
+      "id": 9,
+      "name_en": "Ninianne",
+      "icon": 9,
+      "asset_refs": {
+        "head_full": "Hero/9/Head_9_0",
+        "head_chibi": "PlayerHead_Q/QHead_9_0",
+        "head_full_skin_template": "Hero/9/Head_9_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_9_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -92,
+        "posy": -225,
+        "size": "1",
+        "effect_pos1": "60_-360",
+        "effect_pos2": "-18_-363",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "11": {
+      "id": 11,
+      "name_en": "Vivian",
+      "icon": 11,
+      "asset_refs": {
+        "head_full": "Hero/11/Head_11_0",
+        "head_chibi": "PlayerHead_Q/QHead_11_0",
+        "head_full_skin_template": "Hero/11/Head_11_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_11_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -96,
+        "posy": -258,
+        "size": "1",
+        "effect_pos1": "50_-400",
+        "effect_pos2": "-20_-387",
+        "enjoy_pos": "0",
+        "on_click": "hei1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "12": {
+      "id": 12,
+      "name_en": "Gremory",
+      "icon": 12,
+      "asset_refs": {
+        "head_full": "Hero/12/Head_12_0",
+        "head_chibi": "PlayerHead_Q/QHead_12_0",
+        "head_full_skin_template": "Hero/12/Head_12_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_12_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -96,
+        "posy": -243,
+        "size": "1",
+        "effect_pos1": "50_-400",
+        "effect_pos2": "-11_-379",
+        "enjoy_pos": "0",
+        "on_click": "a14",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "13": {
+      "id": 13,
+      "name_en": "Thefis",
+      "icon": 13,
+      "asset_refs": {
+        "head_full": "Hero/13/Head_13_0",
+        "head_chibi": "PlayerHead_Q/QHead_13_0",
+        "head_full_skin_template": "Hero/13/Head_13_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_13_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -89,
+        "posy": -261,
+        "size": "1",
+        "effect_pos1": "50_-400",
+        "effect_pos2": "-3_-369",
+        "enjoy_pos": "0",
+        "on_click": "e3",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "15": {
+      "id": 15,
+      "name_en": "Skagull",
+      "icon": 15,
+      "asset_refs": {
+        "head_full": "Hero/15/Head_15_0",
+        "head_chibi": "PlayerHead_Q/QHead_15_0",
+        "head_full_skin_template": "Hero/15/Head_15_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_15_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -96,
+        "posy": -267,
+        "size": "1",
+        "effect_pos1": "80_-420",
+        "effect_pos2": "-12_-404",
+        "enjoy_pos": "0",
+        "on_click": "heng8",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "16": {
+      "id": 16,
+      "name_en": "Slider",
+      "icon": 16,
+      "asset_refs": {
+        "head_full": "Hero/16/Head_16_0",
+        "head_chibi": "PlayerHead_Q/QHead_16_0",
+        "head_full_skin_template": "Hero/16/Head_16_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_16_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -296,
+        "posy": -239,
+        "size": "1",
+        "effect_pos1": "-120_-400",
+        "effect_pos2": "-156_-394",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "18": {
+      "id": 18,
+      "name_en": "Lilith",
+      "icon": 18,
+      "asset_refs": {
+        "head_full": "Hero/18/Head_18_0",
+        "head_chibi": "PlayerHead_Q/QHead_18_0",
+        "head_full_skin_template": "Hero/18/Head_18_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_18_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -45,
+        "posy": -142,
+        "size": "1",
+        "effect_pos1": "80_-300",
+        "effect_pos2": "16_-294",
+        "enjoy_pos": "0",
+        "on_click": "o6",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "20": {
+      "id": 20,
+      "name_en": "Utia",
+      "icon": 20,
+      "asset_refs": {
+        "head_full": "Hero/20/Head_20_0",
+        "head_chibi": "PlayerHead_Q/QHead_20_0",
+        "head_full_skin_template": "Hero/20/Head_20_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_20_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 203,
+        "posy": -317,
+        "size": "1",
+        "effect_pos1": "320_-490",
+        "effect_pos2": "227_-457",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "27": {
+      "id": 27,
+      "name_en": "Lynf",
+      "icon": 27,
+      "asset_refs": {
+        "head_full": "Hero/27/Head_27_0",
+        "head_chibi": "PlayerHead_Q/QHead_27_0",
+        "head_full_skin_template": "Hero/27/Head_27_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_27_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -134,
+        "posy": -278,
+        "size": "1",
+        "effect_pos1": "0_-430",
+        "effect_pos2": "-17_-429",
+        "enjoy_pos": "0",
+        "on_click": "e4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "29": {
+      "id": 29,
+      "name_en": "Rukia",
+      "icon": 29,
+      "asset_refs": {
+        "head_full": "Hero/29/Head_29_0",
+        "head_chibi": "PlayerHead_Q/QHead_29_0",
+        "head_full_skin_template": "Hero/29/Head_29_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_29_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -78,
+        "posy": -328,
+        "size": "1",
+        "effect_pos1": "80_-480",
+        "effect_pos2": "5_-469",
+        "enjoy_pos": "0",
+        "on_click": "a14",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "33": {
+      "id": 33,
+      "name_en": "Angie",
+      "icon": 33,
+      "asset_refs": {
+        "head_full": "Hero/33/Head_33_0",
+        "head_chibi": "PlayerHead_Q/QHead_33_0",
+        "head_full_skin_template": "Hero/33/Head_33_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_33_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -186,
+        "posy": -73,
+        "size": "1",
+        "effect_pos1": "0_-200",
+        "effect_pos2": "-74_-244",
+        "enjoy_pos": "0",
+        "on_click": "a4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "35": {
+      "id": 35,
+      "name_en": "Bast",
+      "icon": 35,
+      "asset_refs": {
+        "head_full": "Hero/35/Head_35_0",
+        "head_chibi": "PlayerHead_Q/QHead_35_0",
+        "head_full_skin_template": "Hero/35/Head_35_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_35_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -112,
+        "posy": -248,
+        "size": "1",
+        "effect_pos1": "50_-420",
+        "effect_pos2": "-26_-392",
+        "enjoy_pos": "0",
+        "on_click": "ai2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "36": {
+      "id": 36,
+      "name_en": "Lorelei",
+      "icon": 36,
+      "asset_refs": {
+        "head_full": "Hero/36/Head_36_0",
+        "head_chibi": "PlayerHead_Q/QHead_36_0",
+        "head_full_skin_template": "Hero/36/Head_36_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_36_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -202,
+        "posy": -195,
+        "size": "1",
+        "effect_pos1": "-50_-350",
+        "effect_pos2": "-148_-352",
+        "enjoy_pos": "0",
+        "on_click": "e5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "37": {
+      "id": 37,
+      "name_en": "Susabi",
+      "icon": 37,
+      "asset_refs": {
+        "head_full": "Hero/37/Head_37_0",
+        "head_chibi": "PlayerHead_Q/QHead_37_0",
+        "head_full_skin_template": "Hero/37/Head_37_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_37_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 51,
+        "posy": -263,
+        "size": "1",
+        "effect_pos1": "200_-420",
+        "effect_pos2": "95_-406",
+        "enjoy_pos": "0",
+        "on_click": "en4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "38": {
+      "id": 38,
+      "name_en": "Asmodeus",
+      "icon": 38,
+      "asset_refs": {
+        "head_full": "Hero/38/Head_38_0",
+        "head_chibi": "PlayerHead_Q/QHead_38_0",
+        "head_full_skin_template": "Hero/38/Head_38_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_38_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -76,
+        "posy": -269,
+        "size": "1",
+        "effect_pos1": "80_-400",
+        "effect_pos2": "-5_-399",
+        "enjoy_pos": "0",
+        "on_click": "a15",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "39": {
+      "id": 39,
+      "name_en": "Lafayette",
+      "icon": 39,
+      "asset_refs": {
+        "head_full": "Hero/39/Head_39_0",
+        "head_chibi": "PlayerHead_Q/QHead_39_0",
+        "head_full_skin_template": "Hero/39/Head_39_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_39_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -111,
+        "posy": -277,
+        "size": "1",
+        "effect_pos1": "50_-380",
+        "effect_pos2": "-24_-400",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "49": {
+      "id": 49,
+      "name_en": "Bonnie",
+      "icon": 49,
+      "asset_refs": {
+        "head_full": "Hero/49/Head_49_0",
+        "head_chibi": "PlayerHead_Q/QHead_49_0",
+        "head_full_skin_template": "Hero/49/Head_49_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_49_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -133,
+        "posy": -287,
+        "size": "1",
+        "effect_pos1": "0_-400",
+        "effect_pos2": "-35_-416",
+        "enjoy_pos": "0",
+        "on_click": "ahehe",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "50": {
+      "id": 50,
+      "name_en": "Batory",
+      "icon": 50,
+      "asset_refs": {
+        "head_full": "Hero/50/Head_50_0",
+        "head_chibi": "PlayerHead_Q/QHead_50_0",
+        "head_full_skin_template": "Hero/50/Head_50_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_50_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 23,
+        "posy": -163,
+        "size": "1",
+        "effect_pos1": "150_-300",
+        "effect_pos2": "78_-321",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "52": {
+      "id": 52,
+      "name_en": "Duffy",
+      "icon": 52,
+      "asset_refs": {
+        "head_full": "Hero/52/Head_52_0",
+        "head_chibi": "PlayerHead_Q/QHead_52_0",
+        "head_full_skin_template": "Hero/52/Head_52_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_52_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 58,
+        "posy": -332,
+        "size": "1",
+        "effect_pos1": "200_-470",
+        "effect_pos2": "111_-449",
+        "enjoy_pos": "0",
+        "on_click": "aye",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "57": {
+      "id": 57,
+      "name_en": "Puona",
+      "icon": 57,
+      "asset_refs": {
+        "head_full": "Hero/57/Head_57_0",
+        "head_chibi": "PlayerHead_Q/QHead_57_0",
+        "head_full_skin_template": "Hero/57/Head_57_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_57_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -57,
+        "posy": 24,
+        "size": "0.9",
+        "effect_pos1": "60_-50",
+        "effect_pos2": "-24_-105",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "58": {
+      "id": 58,
+      "name_en": "Darby",
+      "icon": 58,
+      "asset_refs": {
+        "head_full": "Hero/58/Head_58_0",
+        "head_chibi": "PlayerHead_Q/QHead_58_0",
+        "head_full_skin_template": "Hero/58/Head_58_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_58_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -254,
+        "posy": -267,
+        "size": "1",
+        "effect_pos1": "-100_-400",
+        "effect_pos2": "-142_-409",
+        "enjoy_pos": "0",
+        "on_click": "ai",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "85": {
+      "id": 85,
+      "name_en": "Luka",
+      "icon": 85,
+      "asset_refs": {
+        "head_full": "Hero/85/Head_85_0",
+        "head_chibi": "PlayerHead_Q/QHead_85_0",
+        "head_full_skin_template": "Hero/85/Head_85_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_85_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -138,
+        "posy": -78,
+        "size": "1",
+        "effect_pos1": "0_-220",
+        "effect_pos2": "-44_-257",
+        "enjoy_pos": "0",
+        "on_click": "o4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "87": {
+      "id": 87,
+      "name_en": "Nicole",
+      "icon": 87,
+      "asset_refs": {
+        "head_full": "Hero/87/Head_87_0",
+        "head_chibi": "PlayerHead_Q/QHead_87_0",
+        "head_full_skin_template": "Hero/87/Head_87_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_87_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -304,
+        "posy": -288,
+        "size": "1",
+        "effect_pos1": "-180_-420",
+        "effect_pos2": "-198_-422",
+        "enjoy_pos": "0",
+        "on_click": "en18",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "89": {
+      "id": 89,
+      "name_en": "Angie·Sp",
+      "icon": 89,
+      "asset_refs": {
+        "head_full": "Hero/89/Head_89_0",
+        "head_chibi": "PlayerHead_Q/QHead_89_0",
+        "head_full_skin_template": "Hero/89/Head_89_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_89_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -72,
+        "posy": -215,
+        "size": "1",
+        "effect_pos1": "80_-330",
+        "effect_pos2": "12_-358",
+        "enjoy_pos": "0",
+        "on_click": "a4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "91": {
+      "id": 91,
+      "name_en": "Puona·Sp",
+      "icon": 91,
+      "asset_refs": {
+        "head_full": "Hero/91/Head_91_0",
+        "head_chibi": "PlayerHead_Q/QHead_91_0",
+        "head_full_skin_template": "Hero/91/Head_91_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_91_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -102,
+        "posy": -230,
+        "size": "1",
+        "effect_pos1": "50_-380",
+        "effect_pos2": "-18_-366",
+        "enjoy_pos": "0",
+        "on_click": "o5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "94": {
+      "id": 94,
+      "name_en": "Cureka",
+      "icon": 94,
+      "asset_refs": {
+        "head_full": "Hero/94/Head_94_0",
+        "head_chibi": "PlayerHead_Q/QHead_94_0",
+        "head_full_skin_template": "Hero/94/Head_94_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_94_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -64,
+        "posy": -240,
+        "size": "1",
+        "effect_pos1": "80_-380",
+        "effect_pos2": "8_-381",
+        "enjoy_pos": "0",
+        "on_click": "en14",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2": {
+      "id": 2,
+      "name_en": "Saintess Shin",
+      "icon": 2,
+      "asset_refs": {
+        "head_full": "Hero/2/Head_2_0",
+        "head_chibi": "PlayerHead_Q/QHead_2_0",
+        "head_full_skin_template": "Hero/2/Head_2_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -125,
+        "posy": -152,
+        "size": "1",
+        "effect_pos1": "40_-300",
+        "effect_pos2": "-47_-318",
+        "enjoy_pos": "0",
+        "on_click": "a15",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "3": {
+      "id": 3,
+      "name_en": "Cliodna",
+      "icon": 3,
+      "asset_refs": {
+        "head_full": "Hero/3/Head_3_0",
+        "head_chibi": "PlayerHead_Q/QHead_3_0",
+        "head_full_skin_template": "Hero/3/Head_3_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -96,
+        "posy": -247,
+        "size": "1",
+        "effect_pos1": "50_-380",
+        "effect_pos2": "-29_-360",
+        "enjoy_pos": "0",
+        "on_click": "a1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "14": {
+      "id": 14,
+      "name_en": "Eros",
+      "icon": 14,
+      "asset_refs": {
+        "head_full": "Hero/14/Head_14_0",
+        "head_chibi": "PlayerHead_Q/QHead_14_0",
+        "head_full_skin_template": "Hero/14/Head_14_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_14_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -201,
+        "posy": -279,
+        "size": "1",
+        "effect_pos1": "-50_-400",
+        "effect_pos2": "-101_-391",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "22": {
+      "id": 22,
+      "name_en": "Perris",
+      "icon": 22,
+      "asset_refs": {
+        "head_full": "Hero/22/Head_22_0",
+        "head_chibi": "PlayerHead_Q/QHead_22_0",
+        "head_full_skin_template": "Hero/22/Head_22_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_22_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -30,
+        "posy": -286,
+        "size": "1",
+        "effect_pos1": "150_-440",
+        "effect_pos2": "40_-418",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "23": {
+      "id": 23,
+      "name_en": "Roland",
+      "icon": 23,
+      "asset_refs": {
+        "head_full": "Hero/23/Head_23_0",
+        "head_chibi": "PlayerHead_Q/QHead_23_0",
+        "head_full_skin_template": "Hero/23/Head_23_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_23_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -52,
+        "posy": -235,
+        "size": "1",
+        "effect_pos1": "80_-370",
+        "effect_pos2": "10_-365",
+        "enjoy_pos": "0",
+        "on_click": "e5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "28": {
+      "id": 28,
+      "name_en": "SusaMaki",
+      "icon": 28,
+      "asset_refs": {
+        "head_full": "Hero/28/Head_28_0",
+        "head_chibi": "PlayerHead_Q/QHead_28_0",
+        "head_full_skin_template": "Hero/28/Head_28_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_28_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -142,
+        "posy": -239,
+        "size": "1",
+        "effect_pos1": "0_-360",
+        "effect_pos2": "-52_-373",
+        "enjoy_pos": "0",
+        "on_click": "e4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "32": {
+      "id": 32,
+      "name_en": "Cthugha",
+      "icon": 32,
+      "asset_refs": {
+        "head_full": "Hero/32/Head_32_0",
+        "head_chibi": "PlayerHead_Q/QHead_32_0",
+        "head_full_skin_template": "Hero/32/Head_32_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_32_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -203,
+        "posy": -273,
+        "size": "1",
+        "effect_pos1": "-50_-420",
+        "effect_pos2": "-98_-421",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "34": {
+      "id": 34,
+      "name_en": "Pomon",
+      "icon": 34,
+      "asset_refs": {
+        "head_full": "Hero/34/Head_34_0",
+        "head_chibi": "PlayerHead_Q/QHead_34_0",
+        "head_full_skin_template": "Hero/34/Head_34_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_34_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -369,
+        "posy": -113,
+        "size": "1",
+        "effect_pos1": "-200_-260",
+        "effect_pos2": "-213_-278",
+        "enjoy_pos": "0",
+        "on_click": "heng4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "40": {
+      "id": 40,
+      "name_en": "Rhea",
+      "icon": 40,
+      "asset_refs": {
+        "head_full": "Hero/40/Head_40_0",
+        "head_chibi": "PlayerHead_Q/QHead_40_0",
+        "head_full_skin_template": "Hero/40/Head_40_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_40_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -259,
+        "posy": -282,
+        "size": "1",
+        "effect_pos1": "-80_-400",
+        "effect_pos2": "-136_-422",
+        "enjoy_pos": "0",
+        "on_click": "e4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "46": {
+      "id": 46,
+      "name_en": "Mia",
+      "icon": 46,
+      "asset_refs": {
+        "head_full": "Hero/46/Head_46_0",
+        "head_chibi": "PlayerHead_Q/QHead_46_0",
+        "head_full_skin_template": "Hero/46/Head_46_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_46_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -170,
+        "posy": -294,
+        "size": "1",
+        "effect_pos1": "0_-420",
+        "effect_pos2": "-51_-426",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "47": {
+      "id": 47,
+      "name_en": "Vanessa",
+      "icon": 47,
+      "asset_refs": {
+        "head_full": "Hero/47/Head_47_0",
+        "head_chibi": "PlayerHead_Q/QHead_47_0",
+        "head_full_skin_template": "Hero/47/Head_47_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_47_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -214,
+        "posy": -237,
+        "size": "1",
+        "effect_pos1": "-50_-380",
+        "effect_pos2": "-124_-382",
+        "enjoy_pos": "0",
+        "on_click": "damei2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "51": {
+      "id": 51,
+      "name_en": "Zoe",
+      "icon": 51,
+      "asset_refs": {
+        "head_full": "Hero/51/Head_51_0",
+        "head_chibi": "PlayerHead_Q/QHead_51_0",
+        "head_full_skin_template": "Hero/51/Head_51_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_51_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -7,
+        "posy": -341,
+        "size": "1",
+        "effect_pos1": "120_-450",
+        "effect_pos2": "61_-448",
+        "enjoy_pos": "0",
+        "on_click": "a7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "55": {
+      "id": 55,
+      "name_en": "Iris",
+      "icon": 55,
+      "asset_refs": {
+        "head_full": "Hero/55/Head_55_0",
+        "head_chibi": "PlayerHead_Q/QHead_55_0",
+        "head_full_skin_template": "Hero/55/Head_55_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_55_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -16,
+        "posy": -241,
+        "size": "1",
+        "effect_pos1": "150_-380",
+        "effect_pos2": "81_-392",
+        "enjoy_pos": "0",
+        "on_click": "en4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "59": {
+      "id": 59,
+      "name_en": "Utija",
+      "icon": 59,
+      "asset_refs": {
+        "head_full": "Hero/59/Head_59_0",
+        "head_chibi": "PlayerHead_Q/QHead_59_0",
+        "head_full_skin_template": "Hero/59/Head_59_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_59_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -85,
+        "posy": 3,
+        "size": "1",
+        "effect_pos1": "100_-230_1.3",
+        "effect_pos2": "-1_-170",
+        "enjoy_pos": "0",
+        "on_click": "en17",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "60": {
+      "id": 60,
+      "name_en": "Patra",
+      "icon": 60,
+      "asset_refs": {
+        "head_full": "Hero/60/Head_60_0",
+        "head_chibi": "PlayerHead_Q/QHead_60_0",
+        "head_full_skin_template": "Hero/60/Head_60_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_60_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -193,
+        "posy": 53,
+        "size": "1",
+        "effect_pos1": "-100_-70",
+        "effect_pos2": "-100_-127",
+        "enjoy_pos": "0",
+        "on_click": "heng2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "61": {
+      "id": 61,
+      "name_en": "Saintess Shin·Sp",
+      "icon": 61,
+      "asset_refs": {
+        "head_full": "Hero/61/Head_61_0",
+        "head_chibi": "PlayerHead_Q/QHead_61_0",
+        "head_full_skin_template": "Hero/61/Head_61_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_61_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -31,
+        "posy": -233,
+        "size": "1",
+        "effect_pos1": "180_-350",
+        "effect_pos2": "115_-391",
+        "enjoy_pos": "0",
+        "on_click": "o7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "62": {
+      "id": 62,
+      "name_en": "Cliodna·Sp",
+      "icon": 62,
+      "asset_refs": {
+        "head_full": "Hero/62/Head_62_0",
+        "head_chibi": "PlayerHead_Q/QHead_62_0",
+        "head_full_skin_template": "Hero/62/Head_62_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_62_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -169,
+        "posy": -226,
+        "size": "1",
+        "effect_pos1": "-50_-360",
+        "effect_pos2": "-117_-371",
+        "enjoy_pos": "0",
+        "on_click": "en12",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "63": {
+      "id": 63,
+      "name_en": "Derifa·Sp",
+      "icon": 63,
+      "asset_refs": {
+        "head_full": "Hero/63/Head_63_0",
+        "head_chibi": "PlayerHead_Q/QHead_63_0",
+        "head_full_skin_template": "Hero/63/Head_63_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_63_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -203,
+        "posy": -168,
+        "size": "1",
+        "effect_pos1": "-50_-320",
+        "effect_pos2": "-100_-327",
+        "enjoy_pos": "0",
+        "on_click": "en15",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "64": {
+      "id": 64,
+      "name_en": "Thefis·Sp",
+      "icon": 64,
+      "asset_refs": {
+        "head_full": "Hero/64/Head_64_0",
+        "head_chibi": "PlayerHead_Q/QHead_64_0",
+        "head_full_skin_template": "Hero/64/Head_64_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_64_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -88,
+        "posy": -196,
+        "size": "1",
+        "effect_pos1": "50_-310",
+        "effect_pos2": "-3_-349",
+        "enjoy_pos": "0",
+        "on_click": "heng8",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "65": {
+      "id": 65,
+      "name_en": "Eros·Sp",
+      "icon": 65,
+      "asset_refs": {
+        "head_full": "Hero/65/Head_65_0",
+        "head_chibi": "PlayerHead_Q/QHead_65_0",
+        "head_full_skin_template": "Hero/65/Head_65_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_65_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -5,
+        "posy": -277,
+        "size": "1",
+        "effect_pos1": "120_-400",
+        "effect_pos2": "69_-422",
+        "enjoy_pos": "0",
+        "on_click": "en7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "66": {
+      "id": 66,
+      "name_en": "Slider·Sp",
+      "icon": 66,
+      "asset_refs": {
+        "head_full": "Hero/66/Head_66_0",
+        "head_chibi": "PlayerHead_Q/QHead_66_0",
+        "head_full_skin_template": "Hero/66/Head_66_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_66_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -28,
+        "posy": -178,
+        "size": "1",
+        "effect_pos1": "80_-300",
+        "effect_pos2": "50_-350",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "67": {
+      "id": 67,
+      "name_en": "Mousika",
+      "icon": 67,
+      "asset_refs": {
+        "head_full": "Hero/67/Head_67_0",
+        "head_chibi": "PlayerHead_Q/QHead_67_0",
+        "head_full_skin_template": "Hero/67/Head_67_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_67_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -97,
+        "posy": -21,
+        "size": "1",
+        "effect_pos1": "80_-150",
+        "effect_pos2": "27_-198",
+        "enjoy_pos": "0",
+        "on_click": "e4",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "68": {
+      "id": 68,
+      "name_en": "Roland·Sp",
+      "icon": 68,
+      "asset_refs": {
+        "head_full": "Hero/68/Head_68_0",
+        "head_chibi": "PlayerHead_Q/QHead_68_0",
+        "head_full_skin_template": "Hero/68/Head_68_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_68_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -61,
+        "posy": -286,
+        "size": "1",
+        "effect_pos1": "80_-410",
+        "effect_pos2": "4_-423",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "69": {
+      "id": 69,
+      "name_en": "SusaMaki·Sp",
+      "icon": 69,
+      "asset_refs": {
+        "head_full": "Hero/69/Head_69_0",
+        "head_chibi": "PlayerHead_Q/QHead_69_0",
+        "head_full_skin_template": "Hero/69/Head_69_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_69_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -118,
+        "posy": -286,
+        "size": "1",
+        "effect_pos1": "30_-430",
+        "effect_pos2": "-27_-433",
+        "enjoy_pos": "0",
+        "on_click": "damei3",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "70": {
+      "id": 70,
+      "name_en": "Cthugha·Sp",
+      "icon": 70,
+      "asset_refs": {
+        "head_full": "Hero/70/Head_70_0",
+        "head_chibi": "PlayerHead_Q/QHead_70_0",
+        "head_full_skin_template": "Hero/70/Head_70_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_70_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -56,
+        "posy": -105,
+        "size": "1",
+        "effect_pos1": "80_-220",
+        "effect_pos2": "27_-276",
+        "enjoy_pos": "0",
+        "on_click": "hei1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "71": {
+      "id": 71,
+      "name_en": "Susabi·Sp",
+      "icon": 71,
+      "asset_refs": {
+        "head_full": "Hero/71/Head_71_0",
+        "head_chibi": "PlayerHead_Q/QHead_71_0",
+        "head_full_skin_template": "Hero/71/Head_71_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_71_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -94,
+        "posy": -314,
+        "size": "1",
+        "effect_pos1": "50_-450",
+        "effect_pos2": "-14_-448",
+        "enjoy_pos": "0",
+        "on_click": "ya5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "72": {
+      "id": 72,
+      "name_en": "Lafayette·Sp",
+      "icon": 72,
+      "asset_refs": {
+        "head_full": "Hero/72/Head_72_0",
+        "head_chibi": "PlayerHead_Q/QHead_72_0",
+        "head_full_skin_template": "Hero/72/Head_72_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_72_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -92,
+        "posy": -313,
+        "size": "1",
+        "effect_pos1": "50_-430",
+        "effect_pos2": "1_-450",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "73": {
+      "id": 73,
+      "name_en": "Belala",
+      "icon": 73,
+      "asset_refs": {
+        "head_full": "Hero/73/Head_73_0",
+        "head_chibi": "PlayerHead_Q/QHead_73_0",
+        "head_full_skin_template": "Hero/73/Head_73_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_73_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -161,
+        "posy": -271,
+        "size": "1",
+        "effect_pos1": "0_-400",
+        "effect_pos2": "-73_-420",
+        "enjoy_pos": "0",
+        "on_click": "ahehe",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "74": {
+      "id": 74,
+      "name_en": "Mia·Sp",
+      "icon": 74,
+      "asset_refs": {
+        "head_full": "Hero/74/Head_74_0",
+        "head_chibi": "PlayerHead_Q/QHead_74_0",
+        "head_full_skin_template": "Hero/74/Head_74_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_74_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -108,
+        "posy": -242,
+        "size": "1",
+        "effect_pos1": "50_-360",
+        "effect_pos2": "-10_-389",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "75": {
+      "id": 75,
+      "name_en": "Vanessa·Sp",
+      "icon": 75,
+      "asset_refs": {
+        "head_full": "Hero/75/Head_75_0",
+        "head_chibi": "PlayerHead_Q/QHead_75_0",
+        "head_full_skin_template": "Hero/75/Head_75_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_75_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -269,
+        "posy": -244,
+        "size": "1",
+        "effect_pos1": "-120_-400",
+        "effect_pos2": "-167_-401",
+        "enjoy_pos": "0",
+        "on_click": "heng7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "76": {
+      "id": 76,
+      "name_en": "Batory·Sp",
+      "icon": 76,
+      "asset_refs": {
+        "head_full": "Hero/76/Head_76_0",
+        "head_chibi": "PlayerHead_Q/QHead_76_0",
+        "head_full_skin_template": "Hero/76/Head_76_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_76_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -141,
+        "posy": -97,
+        "size": "1",
+        "effect_pos1": "0_-200",
+        "effect_pos2": "-68_-250",
+        "enjoy_pos": "0",
+        "on_click": "heng8",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "77": {
+      "id": 77,
+      "name_en": "Zoe·Sp",
+      "icon": 77,
+      "asset_refs": {
+        "head_full": "Hero/77/Head_77_0",
+        "head_chibi": "PlayerHead_Q/QHead_77_0",
+        "head_full_skin_template": "Hero/77/Head_77_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_77_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -66,
+        "posy": 58,
+        "size": "1",
+        "effect_pos1": "100_-40",
+        "effect_pos2": "-12_-129",
+        "enjoy_pos": "0",
+        "on_click": "en1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "78": {
+      "id": 78,
+      "name_en": "Duffy·Sp",
+      "icon": 78,
+      "asset_refs": {
+        "head_full": "Hero/78/Head_78_0",
+        "head_chibi": "PlayerHead_Q/QHead_78_0",
+        "head_full_skin_template": "Hero/78/Head_78_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_78_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -227,
+        "size": "1",
+        "effect_pos1": "-50_-380",
+        "effect_pos2": "-93_-378",
+        "enjoy_pos": "0",
+        "on_click": "en16",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "79": {
+      "id": 79,
+      "name_en": "Iris·Sp",
+      "icon": 79,
+      "asset_refs": {
+        "head_full": "Hero/79/Head_79_0",
+        "head_chibi": "PlayerHead_Q/QHead_79_0",
+        "head_full_skin_template": "Hero/79/Head_79_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_79_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -111,
+        "posy": -221,
+        "size": "1",
+        "effect_pos1": "50_-360",
+        "effect_pos2": "-44_-375",
+        "enjoy_pos": "0",
+        "on_click": "e5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "80": {
+      "id": 80,
+      "name_en": "Darby·Sp",
+      "icon": 80,
+      "asset_refs": {
+        "head_full": "Hero/80/Head_80_0",
+        "head_chibi": "PlayerHead_Q/QHead_80_0",
+        "head_full_skin_template": "Hero/80/Head_80_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_80_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -88,
+        "posy": -282,
+        "size": "1",
+        "effect_pos1": "50_-450",
+        "effect_pos2": "-5_-422",
+        "enjoy_pos": "0",
+        "on_click": "a10",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "81": {
+      "id": 81,
+      "name_en": "Universal Advanced Card",
+      "icon": 81,
+      "asset_refs": {
+        "head_full": "Hero/81/Head_81_0",
+        "head_chibi": "PlayerHead_Q/QHead_81_0",
+        "head_full_skin_template": "Hero/81/Head_81_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_81_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -98,
+        "posy": -4,
+        "size": "1",
+        "effect_pos1": "50_-60_1.1",
+        "effect_pos2": "-6_-96",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "82": {
+      "id": 82,
+      "name_en": "Universal Codex Card",
+      "icon": 82,
+      "asset_refs": {
+        "head_full": "Hero/82/Head_82_0",
+        "head_chibi": "PlayerHead_Q/QHead_82_0",
+        "head_full_skin_template": "Hero/82/Head_82_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_82_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -93,
+        "posy": -5,
+        "size": "1",
+        "effect_pos1": "50_-70_1.2",
+        "effect_pos2": "1_-92",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "83": {
+      "id": 83,
+      "name_en": "Skill Exp Card",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "84": {
+      "id": 84,
+      "name_en": "Monccoco",
+      "icon": 84,
+      "asset_refs": {
+        "head_full": "Hero/84/Head_84_0",
+        "head_chibi": "PlayerHead_Q/QHead_84_0",
+        "head_full_skin_template": "Hero/84/Head_84_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_84_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -146,
+        "posy": -71,
+        "size": "1",
+        "effect_pos1": "50_-200",
+        "effect_pos2": "-62_-242",
+        "enjoy_pos": "0",
+        "on_click": "e2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "86": {
+      "id": 86,
+      "name_en": "Synaga",
+      "icon": 86,
+      "asset_refs": {
+        "head_full": "Hero/86/Head_86_0",
+        "head_chibi": "PlayerHead_Q/QHead_86_0",
+        "head_full_skin_template": "Hero/86/Head_86_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_86_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -155,
+        "posy": -385,
+        "size": "1",
+        "effect_pos1": "0_-520",
+        "effect_pos2": "-71_-503",
+        "enjoy_pos": "0",
+        "on_click": "ai",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "88": {
+      "id": 88,
+      "name_en": "Perris·Sp",
+      "icon": 88,
+      "asset_refs": {
+        "head_full": "Hero/88/Head_88_0",
+        "head_chibi": "PlayerHead_Q/QHead_88_0",
+        "head_full_skin_template": "Hero/88/Head_88_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_88_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -118,
+        "posy": -371,
+        "size": "1",
+        "effect_pos1": "30_-500",
+        "effect_pos2": "-33_-490",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "90": {
+      "id": 90,
+      "name_en": "Yaya",
+      "icon": 90,
+      "asset_refs": {
+        "head_full": "Hero/90/Head_90_0",
+        "head_chibi": "PlayerHead_Q/QHead_90_0",
+        "head_full_skin_template": "Hero/90/Head_90_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_90_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -109,
+        "posy": -202,
+        "size": "1",
+        "effect_pos1": "80_-330",
+        "effect_pos2": "-11_-358",
+        "enjoy_pos": "0",
+        "on_click": "ahehe",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "92": {
+      "id": 92,
+      "name_en": "Utija·Sp",
+      "icon": 92,
+      "asset_refs": {
+        "head_full": "Hero/92/Head_92_0",
+        "head_chibi": "PlayerHead_Q/QHead_92_0",
+        "head_full_skin_template": "Hero/92/Head_92_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_92_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -221,
+        "posy": -147,
+        "size": "1",
+        "effect_pos1": "-80_-290",
+        "effect_pos2": "-135_-295",
+        "enjoy_pos": "0",
+        "on_click": "a2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "93": {
+      "id": 93,
+      "name_en": "Utia·Sp",
+      "icon": 93,
+      "asset_refs": {
+        "head_full": "Hero/93/Head_93_0",
+        "head_chibi": "PlayerHead_Q/QHead_93_0",
+        "head_full_skin_template": "Hero/93/Head_93_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_93_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -294,
+        "posy": -240,
+        "size": "1",
+        "effect_pos1": "-150_-380",
+        "effect_pos2": "-183_-389",
+        "enjoy_pos": "0",
+        "on_click": "a15",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "95": {
+      "id": 95,
+      "name_en": "Aguria",
+      "icon": 95,
+      "asset_refs": {
+        "head_full": "Hero/95/Head_95_0",
+        "head_chibi": "PlayerHead_Q/QHead_95_0",
+        "head_full_skin_template": "Hero/95/Head_95_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_95_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -79,
+        "posy": -254,
+        "size": "1",
+        "effect_pos1": "50_-400",
+        "effect_pos2": "-6_-391",
+        "enjoy_pos": "0",
+        "on_click": "a1",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "96": {
+      "id": 96,
+      "name_en": "Lenna",
+      "icon": 96,
+      "asset_refs": {
+        "head_full": "Hero/96/Head_96_0",
+        "head_chibi": "PlayerHead_Q/QHead_96_0",
+        "head_full_skin_template": "Hero/96/Head_96_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_96_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -171,
+        "posy": 50,
+        "size": "1",
+        "effect_pos1": "0_-100",
+        "effect_pos2": "-73_-146",
+        "enjoy_pos": "0",
+        "on_click": "ya5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "97": {
+      "id": 97,
+      "name_en": "Satoru",
+      "icon": 97,
+      "asset_refs": {
+        "head_full": "Hero/97/Head_97_0",
+        "head_chibi": "PlayerHead_Q/QHead_97_0",
+        "head_full_skin_template": "Hero/97/Head_97_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_97_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -38,
+        "posy": -272,
+        "size": "1",
+        "effect_pos1": "100_-420",
+        "effect_pos2": "28_-411",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "98": {
+      "id": 98,
+      "name_en": "Aguria·Sp",
+      "icon": 98,
+      "asset_refs": {
+        "head_full": "Hero/98/Head_98_0",
+        "head_chibi": "PlayerHead_Q/QHead_98_0",
+        "head_full_skin_template": "Hero/98/Head_98_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_98_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -203,
+        "posy": -246,
+        "size": "1",
+        "effect_pos1": "-80_-380",
+        "effect_pos2": "-128_-384",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "99": {
+      "id": 99,
+      "name_en": "Thiel",
+      "icon": 99,
+      "asset_refs": {
+        "head_full": "Hero/99/Head_99_0",
+        "head_chibi": "PlayerHead_Q/QHead_99_0",
+        "head_full_skin_template": "Hero/99/Head_99_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_99_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -90,
+        "posy": -312,
+        "size": "1",
+        "effect_pos1": "80_-450",
+        "effect_pos2": "5_-449",
+        "enjoy_pos": "0",
+        "on_click": "a13",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "100": {
+      "id": 100,
+      "name_en": "Phila",
+      "icon": 100,
+      "asset_refs": {
+        "head_full": "Hero/100/Head_100_0",
+        "head_chibi": "PlayerHead_Q/QHead_100_0",
+        "head_full_skin_template": "Hero/100/Head_100_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_100_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -87,
+        "posy": -248,
+        "size": "1",
+        "effect_pos1": "50_-380",
+        "effect_pos2": "4_-383",
+        "enjoy_pos": "0",
+        "on_click": "e6",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "101": {
+      "id": 101,
+      "name_en": "orlando",
+      "icon": 101,
+      "asset_refs": {
+        "head_full": "Hero/101/Head_101_0",
+        "head_chibi": "PlayerHead_Q/QHead_101_0",
+        "head_full_skin_template": "Hero/101/Head_101_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_101_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -48,
+        "posy": -295,
+        "size": "1",
+        "effect_pos1": "80_-430",
+        "effect_pos2": "19_-431",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "102": {
+      "id": 102,
+      "name_en": "Breakthrough Card",
+      "icon": 102,
+      "asset_refs": {
+        "head_full": "Hero/102/Head_102_0",
+        "head_chibi": "PlayerHead_Q/QHead_102_0",
+        "head_full_skin_template": "Hero/102/Head_102_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_102_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -89,
+        "posy": -1,
+        "size": "1.1",
+        "effect_pos1": "60_-60",
+        "effect_pos2": "-10_-87",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "103": {
+      "id": 103,
+      "name_en": "Shady",
+      "icon": 103,
+      "asset_refs": {
+        "head_full": "Hero/103/Head_103_0",
+        "head_chibi": "PlayerHead_Q/QHead_103_0",
+        "head_full_skin_template": "Hero/103/Head_103_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_103_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -282,
+        "posy": -299,
+        "size": "1",
+        "effect_pos1": "-120_-450",
+        "effect_pos2": "-165_-441",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "104": {
+      "id": 104,
+      "name_en": "Bettina",
+      "icon": 104,
+      "asset_refs": {
+        "head_full": "Hero/104/Head_104_0",
+        "head_chibi": "PlayerHead_Q/QHead_104_0",
+        "head_full_skin_template": "Hero/104/Head_104_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_104_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -67,
+        "posy": -256,
+        "size": "1",
+        "effect_pos1": "80_-370",
+        "effect_pos2": "13_-388",
+        "enjoy_pos": "0",
+        "on_click": "o5",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "105": {
+      "id": 105,
+      "name_en": "Madeline",
+      "icon": 105,
+      "asset_refs": {
+        "head_full": "Hero/105/Head_105_0",
+        "head_chibi": "PlayerHead_Q/QHead_105_0",
+        "head_full_skin_template": "Hero/105/Head_105_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_105_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -239,
+        "posy": -29,
+        "size": "1",
+        "effect_pos1": "-150_-110",
+        "effect_pos2": "-217_-196",
+        "enjoy_pos": "0",
+        "on_click": "aa",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "106": {
+      "id": 106,
+      "name_en": "Hana",
+      "icon": 106,
+      "asset_refs": {
+        "head_full": "Hero/106/Head_106_0",
+        "head_chibi": "PlayerHead_Q/QHead_106_0",
+        "head_full_skin_template": "Hero/106/Head_106_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_106_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -29,
+        "posy": -84,
+        "size": "1",
+        "effect_pos1": "100_-220",
+        "effect_pos2": "55_-256",
+        "enjoy_pos": "0",
+        "on_click": "a9",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "107": {
+      "id": 107,
+      "name_en": "Eurella",
+      "icon": 107,
+      "asset_refs": {
+        "head_full": "Hero/107/Head_107_0",
+        "head_chibi": "PlayerHead_Q/QHead_107_0",
+        "head_full_skin_template": "Hero/107/Head_107_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_107_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -272,
+        "posy": -29,
+        "size": "0.95",
+        "effect_pos1": "-150_-180",
+        "effect_pos2": "-209_-215",
+        "enjoy_pos": "0",
+        "on_click": "en7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "108": {
+      "id": 108,
+      "name_en": "Dolly",
+      "icon": 108,
+      "asset_refs": {
+        "head_full": "Hero/108/Head_108_0",
+        "head_chibi": "PlayerHead_Q/QHead_108_0",
+        "head_full_skin_template": "Hero/108/Head_108_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_108_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -49,
+        "posy": -211,
+        "size": "1",
+        "effect_pos1": "120_-340",
+        "effect_pos2": "51_-372",
+        "enjoy_pos": "0",
+        "on_click": "a10",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "109": {
+      "id": 109,
+      "name_en": "Livia",
+      "icon": 109,
+      "asset_refs": {
+        "head_full": "Hero/109/Head_109_0",
+        "head_chibi": "PlayerHead_Q/QHead_109_0",
+        "head_full_skin_template": "Hero/109/Head_109_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_109_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -95,
+        "posy": -311,
+        "size": "1",
+        "effect_pos1": "30_-450",
+        "effect_pos2": "-22_-446",
+        "enjoy_pos": "0",
+        "on_click": "en7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "110": {
+      "id": 110,
+      "name_en": "Serena",
+      "icon": 110,
+      "asset_refs": {
+        "head_full": "Hero/110/Head_110_0",
+        "head_chibi": "PlayerHead_Q/QHead_110_0",
+        "head_full_skin_template": "Hero/110/Head_110_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_110_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 110,
+        "posy": -216,
+        "size": "1",
+        "effect_pos1": "250_-340",
+        "effect_pos2": "152_-360",
+        "enjoy_pos": "0",
+        "on_click": "a15",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "111": {
+      "id": 111,
+      "name_en": "Luna",
+      "icon": 111,
+      "asset_refs": {
+        "head_full": "Hero/111/Head_111_0",
+        "head_chibi": "PlayerHead_Q/QHead_111_0",
+        "head_full_skin_template": "Hero/111/Head_111_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_111_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -76,
+        "posy": -330,
+        "size": "1",
+        "effect_pos1": "70_-430",
+        "effect_pos2": "5_-448",
+        "enjoy_pos": "0",
+        "on_click": "en11",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "112": {
+      "id": 112,
+      "name_en": "Yao Lin",
+      "icon": 112,
+      "asset_refs": {
+        "head_full": "Hero/112/Head_112_0",
+        "head_chibi": "PlayerHead_Q/QHead_112_0",
+        "head_full_skin_template": "Hero/112/Head_112_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_112_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -135,
+        "posy": -192,
+        "size": "1",
+        "effect_pos1": "0_-350",
+        "effect_pos2": "-49_-337",
+        "enjoy_pos": "0",
+        "on_click": "en10",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "113": {
+      "id": 113,
+      "name_en": "Lumi",
+      "icon": 113,
+      "asset_refs": {
+        "head_full": "Hero/113/Head_113_0",
+        "head_chibi": "PlayerHead_Q/QHead_113_0",
+        "head_full_skin_template": "Hero/113/Head_113_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_113_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -76,
+        "posy": -63,
+        "size": "1",
+        "effect_pos1": "119_-210",
+        "effect_pos2": "74_-242",
+        "enjoy_pos": "0",
+        "on_click": "a2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "114": {
+      "id": 114,
+      "name_en": "Sera",
+      "icon": 114,
+      "asset_refs": {
+        "head_full": "Hero/114/Head_114_0",
+        "head_chibi": "PlayerHead_Q/QHead_114_0",
+        "head_full_skin_template": "Hero/114/Head_114_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_114_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -64,
+        "posy": -260,
+        "size": "1",
+        "effect_pos1": "42_-400",
+        "effect_pos2": "39_-395",
+        "enjoy_pos": "0",
+        "on_click": "damei2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "115": {
+      "id": 115,
+      "name_en": "Faye",
+      "icon": 115,
+      "asset_refs": {
+        "head_full": "Hero/115/Head_115_0",
+        "head_chibi": "PlayerHead_Q/QHead_115_0",
+        "head_full_skin_template": "Hero/115/Head_115_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_115_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": 9,
+        "posy": -50,
+        "size": "1",
+        "effect_pos1": "180_-150",
+        "effect_pos2": "151_-226",
+        "enjoy_pos": "0",
+        "on_click": "heng8",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "116": {
+      "id": 116,
+      "name_en": "Nyx",
+      "icon": 116,
+      "asset_refs": {
+        "head_full": "Hero/116/Head_116_0",
+        "head_chibi": "PlayerHead_Q/QHead_116_0",
+        "head_full_skin_template": "Hero/116/Head_116_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_116_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -80,
+        "posy": 60,
+        "size": "1",
+        "effect_pos1": "28_-127",
+        "effect_pos2": "-5_-156",
+        "enjoy_pos": "0",
+        "on_click": "en10",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "117": {
+      "id": 117,
+      "name_en": "Niya",
+      "icon": 117,
+      "asset_refs": {
+        "head_full": "Hero/117/Head_117_0",
+        "head_chibi": "PlayerHead_Q/QHead_117_0",
+        "head_full_skin_template": "Hero/117/Head_117_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_117_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -197,
+        "posy": 73,
+        "size": "0.85",
+        "effect_pos1": "-53_-66",
+        "effect_pos2": "-60_-116",
+        "enjoy_pos": "0",
+        "on_click": "ahehe3",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "118": {
+      "id": 118,
+      "name_en": "Isabelle",
+      "icon": 118,
+      "asset_refs": {
+        "head_full": "Hero/118/Head_118_0",
+        "head_chibi": "PlayerHead_Q/QHead_118_0",
+        "head_full_skin_template": "Hero/118/Head_118_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_118_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -80,
+        "posy": -95,
+        "size": "0.85",
+        "effect_pos1": "80_-252",
+        "effect_pos2": "48_-276",
+        "enjoy_pos": "0",
+        "on_click": "ahehe2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "119": {
+      "id": 119,
+      "name_en": "Crolos·Sp",
+      "icon": 119,
+      "asset_refs": {
+        "head_full": "Hero/119/Head_119_0",
+        "head_chibi": "PlayerHead_Q/QHead_119_0",
+        "head_full_skin_template": "Hero/119/Head_119_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_119_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -107,
+        "posy": -139,
+        "size": "0.8",
+        "effect_pos1": "0_-303",
+        "effect_pos2": "15_-295",
+        "enjoy_pos": "0",
+        "on_click": "en2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "120": {
+      "id": 120,
+      "name_en": "Nyx·Sp",
+      "icon": 120,
+      "asset_refs": {
+        "head_full": "Hero/120/Head_120_0",
+        "head_chibi": "PlayerHead_Q/QHead_120_0",
+        "head_full_skin_template": "Hero/120/Head_120_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_120_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -119,
+        "posy": -172,
+        "size": "0.7",
+        "effect_pos1": "-63_-341",
+        "effect_pos2": "-62_-347",
+        "enjoy_pos": "0",
+        "on_click": "e6",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "121": {
+      "id": 121,
+      "name_en": "Faye·Sp",
+      "icon": 121,
+      "asset_refs": {
+        "head_full": "Hero/121/Head_121_0",
+        "head_chibi": "PlayerHead_Q/QHead_121_0",
+        "head_full_skin_template": "Hero/121/Head_121_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_121_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -150,
+        "posy": -130,
+        "size": "0.9",
+        "effect_pos1": "-63_-341",
+        "effect_pos2": "-51_-331",
+        "enjoy_pos": "0",
+        "on_click": "e7",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "122": {
+      "id": 122,
+      "name_en": "Yaya·Sp",
+      "icon": 122,
+      "asset_refs": {
+        "head_full": "Hero/122/Head_122_0",
+        "head_chibi": "PlayerHead_Q/QHead_122_0",
+        "head_full_skin_template": "Hero/122/Head_122_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_122_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -70,
+        "posy": -230,
+        "size": "0.85",
+        "effect_pos1": "76_-433",
+        "effect_pos2": "42_-400",
+        "enjoy_pos": "0",
+        "on_click": "ahehe2",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1001": {
+      "id": 1001,
+      "name_en": "Crocodile",
+      "icon": 1001,
+      "asset_refs": {
+        "head_full": "Hero/1001/Head_1001_0",
+        "head_chibi": "PlayerHead_Q/QHead_1001_0",
+        "head_full_skin_template": "Hero/1001/Head_1001_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1001_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -22,
+        "posy": -41,
+        "size": "0.8",
+        "effect_pos1": "200_-180",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1002": {
+      "id": 1002,
+      "name_en": "Moin",
+      "icon": 1002,
+      "asset_refs": {
+        "head_full": "Hero/1002/Head_1002_0",
+        "head_chibi": "PlayerHead_Q/QHead_1002_0",
+        "head_full_skin_template": "Hero/1002/Head_1002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -85,
+        "posy": -11,
+        "size": "0.8",
+        "effect_pos1": "100_-150",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1003": {
+      "id": 1003,
+      "name_en": "Currymont",
+      "icon": 1003,
+      "asset_refs": {
+        "head_full": "Hero/1003/Head_1003_0",
+        "head_chibi": "PlayerHead_Q/QHead_1003_0",
+        "head_full_skin_template": "Hero/1003/Head_1003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -27,
+        "posy": -73,
+        "size": "0.8",
+        "effect_pos1": "150_-200",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1004": {
+      "id": 1004,
+      "name_en": "Chidaru",
+      "icon": 1004,
+      "asset_refs": {
+        "head_full": "Hero/1004/Head_1004_0",
+        "head_chibi": "PlayerHead_Q/QHead_1004_0",
+        "head_full_skin_template": "Hero/1004/Head_1004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1004_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -27,
+        "posy": -73,
+        "size": "0.8",
+        "effect_pos1": "150_-200",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1005": {
+      "id": 1005,
+      "name_en": "Moricart",
+      "icon": 1005,
+      "asset_refs": {
+        "head_full": "Hero/1005/Head_1005_0",
+        "head_chibi": "PlayerHead_Q/QHead_1005_0",
+        "head_full_skin_template": "Hero/1005/Head_1005_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1005_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -52,
+        "posy": -26,
+        "size": "1",
+        "effect_pos1": "80_-100",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1006": {
+      "id": 1006,
+      "name_en": "Teresa",
+      "icon": 1006,
+      "asset_refs": {
+        "head_full": "Hero/1006/Head_1006_0",
+        "head_chibi": "PlayerHead_Q/QHead_1006_0",
+        "head_full_skin_template": "Hero/1006/Head_1006_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1006_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -80,
+        "posy": -18,
+        "size": "0.8",
+        "effect_pos1": "70_-100",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1007": {
+      "id": 1007,
+      "name_en": "Kraken",
+      "icon": 1007,
+      "asset_refs": {
+        "head_full": "Hero/1007/Head_1007_0",
+        "head_chibi": "PlayerHead_Q/QHead_1007_0",
+        "head_full_skin_template": "Hero/1007/Head_1007_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1007_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -91,
+        "posy": -23,
+        "size": "0.95",
+        "effect_pos1": "50_-20",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1008": {
+      "id": 1008,
+      "name_en": "Bayside",
+      "icon": 1008,
+      "asset_refs": {
+        "head_full": "Hero/1008/Head_1008_0",
+        "head_chibi": "PlayerHead_Q/QHead_1008_0",
+        "head_full_skin_template": "Hero/1008/Head_1008_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1008_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -5,
+        "size": "0.85",
+        "effect_pos1": "50_-140",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1009": {
+      "id": 1009,
+      "name_en": "Carta",
+      "icon": 1009,
+      "asset_refs": {
+        "head_full": "Hero/1009/Head_1009_0",
+        "head_chibi": "PlayerHead_Q/QHead_1009_0",
+        "head_full_skin_template": "Hero/1009/Head_1009_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1009_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": 11,
+        "size": "0.85",
+        "effect_pos1": "50_-150",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1010": {
+      "id": 1010,
+      "name_en": "Strong Barbarian 3★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1011": {
+      "id": 1011,
+      "name_en": "Tough Barbarian 3★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1012": {
+      "id": 1012,
+      "name_en": "Reckless Barbarian 3★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1013": {
+      "id": 1013,
+      "name_en": "Agile Barbarian 3★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1014": {
+      "id": 1014,
+      "name_en": "Strong Barbarian 4★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1015": {
+      "id": 1015,
+      "name_en": "Tough Barbarian 4★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1016": {
+      "id": 1016,
+      "name_en": "Reckless Barbarian 4★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1017": {
+      "id": 1017,
+      "name_en": "Agile Barbarian 4★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1018": {
+      "id": 1018,
+      "name_en": "Strong Barbarian 5★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1019": {
+      "id": 1019,
+      "name_en": "Tough Barbarian 5★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1020": {
+      "id": 1020,
+      "name_en": "Reckless Barbarian 5★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1021": {
+      "id": 1021,
+      "name_en": "Agile Barbarian 5★",
+      "icon": 1010,
+      "asset_refs": {
+        "head_full": "Hero/1010/Head_1010_0",
+        "head_chibi": "PlayerHead_Q/QHead_1010_0",
+        "head_full_skin_template": "Hero/1010/Head_1010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1010_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -164,
+        "posy": -77,
+        "size": "1",
+        "effect_pos1": "40_-250",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1030": {
+      "id": 1030,
+      "name_en": "Elf 3★",
+      "icon": 102,
+      "asset_refs": {
+        "head_full": "Hero/102/Head_102_0",
+        "head_chibi": "PlayerHead_Q/QHead_102_0",
+        "head_full_skin_template": "Hero/102/Head_102_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_102_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -89,
+        "posy": -1,
+        "size": "1.1",
+        "effect_pos1": "60_-60",
+        "effect_pos2": "-10_-87",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1031": {
+      "id": 1031,
+      "name_en": "Elf 3★",
+      "icon": 102,
+      "asset_refs": {
+        "head_full": "Hero/102/Head_102_0",
+        "head_chibi": "PlayerHead_Q/QHead_102_0",
+        "head_full_skin_template": "Hero/102/Head_102_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_102_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -89,
+        "posy": -1,
+        "size": "1.1",
+        "effect_pos1": "60_-60",
+        "effect_pos2": "-10_-87",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1032": {
+      "id": 1032,
+      "name_en": "Little mage 3★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1033": {
+      "id": 1033,
+      "name_en": "Little mage 3★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1034": {
+      "id": 1034,
+      "name_en": "Big Elf 4★",
+      "icon": 82,
+      "asset_refs": {
+        "head_full": "Hero/82/Head_82_0",
+        "head_chibi": "PlayerHead_Q/QHead_82_0",
+        "head_full_skin_template": "Hero/82/Head_82_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_82_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -93,
+        "posy": -5,
+        "size": "1",
+        "effect_pos1": "50_-70_1.2",
+        "effect_pos2": "1_-92",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1035": {
+      "id": 1035,
+      "name_en": "Big Elf 4★",
+      "icon": 82,
+      "asset_refs": {
+        "head_full": "Hero/82/Head_82_0",
+        "head_chibi": "PlayerHead_Q/QHead_82_0",
+        "head_full_skin_template": "Hero/82/Head_82_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_82_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -93,
+        "posy": -5,
+        "size": "1",
+        "effect_pos1": "50_-70_1.2",
+        "effect_pos2": "1_-92",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1036": {
+      "id": 1036,
+      "name_en": "Archmage 4★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1037": {
+      "id": 1037,
+      "name_en": "Archmage 4★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1038": {
+      "id": 1038,
+      "name_en": "Big Elf 5★",
+      "icon": 82,
+      "asset_refs": {
+        "head_full": "Hero/82/Head_82_0",
+        "head_chibi": "PlayerHead_Q/QHead_82_0",
+        "head_full_skin_template": "Hero/82/Head_82_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_82_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -93,
+        "posy": -5,
+        "size": "1",
+        "effect_pos1": "50_-70_1.2",
+        "effect_pos2": "1_-92",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1039": {
+      "id": 1039,
+      "name_en": "Big Elf 5★",
+      "icon": 82,
+      "asset_refs": {
+        "head_full": "Hero/82/Head_82_0",
+        "head_chibi": "PlayerHead_Q/QHead_82_0",
+        "head_full_skin_template": "Hero/82/Head_82_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_82_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -93,
+        "posy": -5,
+        "size": "1",
+        "effect_pos1": "50_-70_1.2",
+        "effect_pos2": "1_-92",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1040": {
+      "id": 1040,
+      "name_en": "Archmage 5★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1041": {
+      "id": 1041,
+      "name_en": "Archmage 5★",
+      "icon": 83,
+      "asset_refs": {
+        "head_full": "Hero/83/Head_83_0",
+        "head_chibi": "PlayerHead_Q/QHead_83_0",
+        "head_full_skin_template": "Hero/83/Head_83_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_83_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -139,
+        "posy": 24,
+        "size": "1",
+        "effect_pos1": "10_-30_1.2",
+        "effect_pos2": "-41_-80",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "1051": {
+      "id": 1051,
+      "name_en": "Goblin Assassin 4★",
+      "icon": 1051,
+      "asset_refs": {
+        "head_full": "Hero/1051/Head_1051_0",
+        "head_chibi": "PlayerHead_Q/QHead_1051_0",
+        "head_full_skin_template": "Hero/1051/Head_1051_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1051_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1052": {
+      "id": 1052,
+      "name_en": "Goblin Guardian 4★",
+      "icon": 1052,
+      "asset_refs": {
+        "head_full": "Hero/1052/Head_1052_0",
+        "head_chibi": "PlayerHead_Q/QHead_1052_0",
+        "head_full_skin_template": "Hero/1052/Head_1052_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1052_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1053": {
+      "id": 1053,
+      "name_en": "Goblin Archer 4★",
+      "icon": 1053,
+      "asset_refs": {
+        "head_full": "Hero/1053/Head_1053_0",
+        "head_chibi": "PlayerHead_Q/QHead_1053_0",
+        "head_full_skin_template": "Hero/1053/Head_1053_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1053_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1054": {
+      "id": 1054,
+      "name_en": "Goblin Warrior 4★",
+      "icon": 1054,
+      "asset_refs": {
+        "head_full": "Hero/1054/Head_1054_0",
+        "head_chibi": "PlayerHead_Q/QHead_1054_0",
+        "head_full_skin_template": "Hero/1054/Head_1054_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1054_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1055": {
+      "id": 1055,
+      "name_en": "Goblin Assassin 5★",
+      "icon": 1051,
+      "asset_refs": {
+        "head_full": "Hero/1051/Head_1051_0",
+        "head_chibi": "PlayerHead_Q/QHead_1051_0",
+        "head_full_skin_template": "Hero/1051/Head_1051_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1051_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1056": {
+      "id": 1056,
+      "name_en": "Goblin Guardian 5★",
+      "icon": 1052,
+      "asset_refs": {
+        "head_full": "Hero/1052/Head_1052_0",
+        "head_chibi": "PlayerHead_Q/QHead_1052_0",
+        "head_full_skin_template": "Hero/1052/Head_1052_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1052_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1057": {
+      "id": 1057,
+      "name_en": "Goblin Archer 5★",
+      "icon": 1053,
+      "asset_refs": {
+        "head_full": "Hero/1053/Head_1053_0",
+        "head_chibi": "PlayerHead_Q/QHead_1053_0",
+        "head_full_skin_template": "Hero/1053/Head_1053_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1053_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1058": {
+      "id": 1058,
+      "name_en": "Goblin Warrior 5★",
+      "icon": 1054,
+      "asset_refs": {
+        "head_full": "Hero/1054/Head_1054_0",
+        "head_chibi": "PlayerHead_Q/QHead_1054_0",
+        "head_full_skin_template": "Hero/1054/Head_1054_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1054_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1059": {
+      "id": 1059,
+      "name_en": "Goblin Leader",
+      "icon": 1059,
+      "asset_refs": {
+        "head_full": "Hero/1059/Head_1059_0",
+        "head_chibi": "PlayerHead_Q/QHead_1059_0",
+        "head_full_skin_template": "Hero/1059/Head_1059_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1059_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1061": {
+      "id": 1061,
+      "name_en": "Skeleton Guardian 4★",
+      "icon": 1061,
+      "asset_refs": {
+        "head_full": "Hero/1061/Head_1061_0",
+        "head_chibi": "PlayerHead_Q/QHead_1061_0",
+        "head_full_skin_template": "Hero/1061/Head_1061_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1061_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1062": {
+      "id": 1062,
+      "name_en": "Undead Warrior 4★",
+      "icon": 1062,
+      "asset_refs": {
+        "head_full": "Hero/1062/Head_1062_0",
+        "head_chibi": "PlayerHead_Q/QHead_1062_0",
+        "head_full_skin_template": "Hero/1062/Head_1062_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1062_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1063": {
+      "id": 1063,
+      "name_en": "Skeleton Archer 4★",
+      "icon": 1063,
+      "asset_refs": {
+        "head_full": "Hero/1063/Head_1063_0",
+        "head_chibi": "PlayerHead_Q/QHead_1063_0",
+        "head_full_skin_template": "Hero/1063/Head_1063_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1063_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1064": {
+      "id": 1064,
+      "name_en": "Undead Mage 4★",
+      "icon": 1064,
+      "asset_refs": {
+        "head_full": "Hero/1064/Head_1064_0",
+        "head_chibi": "PlayerHead_Q/QHead_1064_0",
+        "head_full_skin_template": "Hero/1064/Head_1064_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1064_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1065": {
+      "id": 1065,
+      "name_en": "Skeleton Guardian 5★",
+      "icon": 1061,
+      "asset_refs": {
+        "head_full": "Hero/1061/Head_1061_0",
+        "head_chibi": "PlayerHead_Q/QHead_1061_0",
+        "head_full_skin_template": "Hero/1061/Head_1061_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1061_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1066": {
+      "id": 1066,
+      "name_en": "Undead Warrior 5★",
+      "icon": 1062,
+      "asset_refs": {
+        "head_full": "Hero/1062/Head_1062_0",
+        "head_chibi": "PlayerHead_Q/QHead_1062_0",
+        "head_full_skin_template": "Hero/1062/Head_1062_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1062_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1067": {
+      "id": 1067,
+      "name_en": "Skeleton Archer 5★",
+      "icon": 1063,
+      "asset_refs": {
+        "head_full": "Hero/1063/Head_1063_0",
+        "head_chibi": "PlayerHead_Q/QHead_1063_0",
+        "head_full_skin_template": "Hero/1063/Head_1063_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1063_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1068": {
+      "id": 1068,
+      "name_en": "Undead Mage 5★",
+      "icon": 1064,
+      "asset_refs": {
+        "head_full": "Hero/1064/Head_1064_0",
+        "head_chibi": "PlayerHead_Q/QHead_1064_0",
+        "head_full_skin_template": "Hero/1064/Head_1064_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1064_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1069": {
+      "id": 1069,
+      "name_en": "Skeleton King",
+      "icon": 1069,
+      "asset_refs": {
+        "head_full": "Hero/1069/Head_1069_0",
+        "head_chibi": "PlayerHead_Q/QHead_1069_0",
+        "head_full_skin_template": "Hero/1069/Head_1069_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1069_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1071": {
+      "id": 1071,
+      "name_en": "Frost Guardian 4★",
+      "icon": 1071,
+      "asset_refs": {
+        "head_full": "Hero/1071/Head_1071_0",
+        "head_chibi": "PlayerHead_Q/QHead_1071_0",
+        "head_full_skin_template": "Hero/1071/Head_1071_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1071_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1072": {
+      "id": 1072,
+      "name_en": "Frost Warrior 4★",
+      "icon": 1072,
+      "asset_refs": {
+        "head_full": "Hero/1072/Head_1072_0",
+        "head_chibi": "PlayerHead_Q/QHead_1072_0",
+        "head_full_skin_template": "Hero/1072/Head_1072_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1072_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1073": {
+      "id": 1073,
+      "name_en": "Frost Thief 4★",
+      "icon": 1073,
+      "asset_refs": {
+        "head_full": "Hero/1073/Head_1073_0",
+        "head_chibi": "PlayerHead_Q/QHead_1073_0",
+        "head_full_skin_template": "Hero/1073/Head_1073_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1073_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1074": {
+      "id": 1074,
+      "name_en": "Frost Gladiator 4★",
+      "icon": 1074,
+      "asset_refs": {
+        "head_full": "Hero/1074/Head_1074_0",
+        "head_chibi": "PlayerHead_Q/QHead_1074_0",
+        "head_full_skin_template": "Hero/1074/Head_1074_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1074_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1075": {
+      "id": 1075,
+      "name_en": "Frost Guardian 5★",
+      "icon": 1071,
+      "asset_refs": {
+        "head_full": "Hero/1071/Head_1071_0",
+        "head_chibi": "PlayerHead_Q/QHead_1071_0",
+        "head_full_skin_template": "Hero/1071/Head_1071_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1071_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1076": {
+      "id": 1076,
+      "name_en": "Frost Warrior 5★",
+      "icon": 1072,
+      "asset_refs": {
+        "head_full": "Hero/1072/Head_1072_0",
+        "head_chibi": "PlayerHead_Q/QHead_1072_0",
+        "head_full_skin_template": "Hero/1072/Head_1072_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1072_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1077": {
+      "id": 1077,
+      "name_en": "Frost Thief 5★",
+      "icon": 1073,
+      "asset_refs": {
+        "head_full": "Hero/1073/Head_1073_0",
+        "head_chibi": "PlayerHead_Q/QHead_1073_0",
+        "head_full_skin_template": "Hero/1073/Head_1073_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1073_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1078": {
+      "id": 1078,
+      "name_en": "Frost Gladiator 5★",
+      "icon": 1074,
+      "asset_refs": {
+        "head_full": "Hero/1074/Head_1074_0",
+        "head_chibi": "PlayerHead_Q/QHead_1074_0",
+        "head_full_skin_template": "Hero/1074/Head_1074_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1074_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1079": {
+      "id": 1079,
+      "name_en": "Northern Lord",
+      "icon": 1079,
+      "asset_refs": {
+        "head_full": "Hero/1079/Head_1079_0",
+        "head_chibi": "PlayerHead_Q/QHead_1079_0",
+        "head_full_skin_template": "Hero/1079/Head_1079_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1079_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1081": {
+      "id": 1081,
+      "name_en": "Shark Guardian 4★",
+      "icon": 1081,
+      "asset_refs": {
+        "head_full": "Hero/1081/Head_1081_0",
+        "head_chibi": "PlayerHead_Q/QHead_1081_0",
+        "head_full_skin_template": "Hero/1081/Head_1081_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1081_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1082": {
+      "id": 1082,
+      "name_en": "Shark Assassin 4★",
+      "icon": 1082,
+      "asset_refs": {
+        "head_full": "Hero/1082/Head_1082_0",
+        "head_chibi": "PlayerHead_Q/QHead_1082_0",
+        "head_full_skin_template": "Hero/1082/Head_1082_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1082_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1083": {
+      "id": 1083,
+      "name_en": "Shark Thief 4★",
+      "icon": 1083,
+      "asset_refs": {
+        "head_full": "Hero/1083/Head_1083_0",
+        "head_chibi": "PlayerHead_Q/QHead_1083_0",
+        "head_full_skin_template": "Hero/1083/Head_1083_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1083_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1084": {
+      "id": 1084,
+      "name_en": "Shark Elite 4★",
+      "icon": 1084,
+      "asset_refs": {
+        "head_full": "Hero/1084/Head_1084_0",
+        "head_chibi": "PlayerHead_Q/QHead_1084_0",
+        "head_full_skin_template": "Hero/1084/Head_1084_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1084_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1085": {
+      "id": 1085,
+      "name_en": "Shark Guardian 5★",
+      "icon": 1081,
+      "asset_refs": {
+        "head_full": "Hero/1081/Head_1081_0",
+        "head_chibi": "PlayerHead_Q/QHead_1081_0",
+        "head_full_skin_template": "Hero/1081/Head_1081_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1081_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1086": {
+      "id": 1086,
+      "name_en": "Shark Assassin 5★",
+      "icon": 1082,
+      "asset_refs": {
+        "head_full": "Hero/1082/Head_1082_0",
+        "head_chibi": "PlayerHead_Q/QHead_1082_0",
+        "head_full_skin_template": "Hero/1082/Head_1082_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1082_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1087": {
+      "id": 1087,
+      "name_en": "Shark Thief 5★",
+      "icon": 1083,
+      "asset_refs": {
+        "head_full": "Hero/1083/Head_1083_0",
+        "head_chibi": "PlayerHead_Q/QHead_1083_0",
+        "head_full_skin_template": "Hero/1083/Head_1083_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1083_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1088": {
+      "id": 1088,
+      "name_en": "Shark Elite 5★",
+      "icon": 1084,
+      "asset_refs": {
+        "head_full": "Hero/1084/Head_1084_0",
+        "head_chibi": "PlayerHead_Q/QHead_1084_0",
+        "head_full_skin_template": "Hero/1084/Head_1084_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1084_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1089": {
+      "id": 1089,
+      "name_en": "Shark Lord",
+      "icon": 1089,
+      "asset_refs": {
+        "head_full": "Hero/1089/Head_1089_0",
+        "head_chibi": "PlayerHead_Q/QHead_1089_0",
+        "head_full_skin_template": "Hero/1089/Head_1089_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1089_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1091": {
+      "id": 1091,
+      "name_en": "Skyguard 4★",
+      "icon": 1091,
+      "asset_refs": {
+        "head_full": "Hero/1091/Head_1091_0",
+        "head_chibi": "PlayerHead_Q/QHead_1091_0",
+        "head_full_skin_template": "Hero/1091/Head_1091_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1091_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1092": {
+      "id": 1092,
+      "name_en": "Sky Warrior 4★",
+      "icon": 1092,
+      "asset_refs": {
+        "head_full": "Hero/1092/Head_1092_0",
+        "head_chibi": "PlayerHead_Q/QHead_1092_0",
+        "head_full_skin_template": "Hero/1092/Head_1092_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1092_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1093": {
+      "id": 1093,
+      "name_en": "Sky Archer 4★",
+      "icon": 1093,
+      "asset_refs": {
+        "head_full": "Hero/1093/Head_1093_0",
+        "head_chibi": "PlayerHead_Q/QHead_1093_0",
+        "head_full_skin_template": "Hero/1093/Head_1093_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1093_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1094": {
+      "id": 1094,
+      "name_en": "Sky Assassin 4★",
+      "icon": 1094,
+      "asset_refs": {
+        "head_full": "Hero/1094/Head_1094_0",
+        "head_chibi": "PlayerHead_Q/QHead_1094_0",
+        "head_full_skin_template": "Hero/1094/Head_1094_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1094_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1095": {
+      "id": 1095,
+      "name_en": "Skyguard 5★",
+      "icon": 1091,
+      "asset_refs": {
+        "head_full": "Hero/1091/Head_1091_0",
+        "head_chibi": "PlayerHead_Q/QHead_1091_0",
+        "head_full_skin_template": "Hero/1091/Head_1091_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1091_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1096": {
+      "id": 1096,
+      "name_en": "Sky Warrior 5★",
+      "icon": 1092,
+      "asset_refs": {
+        "head_full": "Hero/1092/Head_1092_0",
+        "head_chibi": "PlayerHead_Q/QHead_1092_0",
+        "head_full_skin_template": "Hero/1092/Head_1092_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1092_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1097": {
+      "id": 1097,
+      "name_en": "Sky Archer 5★",
+      "icon": 1093,
+      "asset_refs": {
+        "head_full": "Hero/1093/Head_1093_0",
+        "head_chibi": "PlayerHead_Q/QHead_1093_0",
+        "head_full_skin_template": "Hero/1093/Head_1093_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1093_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1098": {
+      "id": 1098,
+      "name_en": "Sky Assassin 5★",
+      "icon": 1094,
+      "asset_refs": {
+        "head_full": "Hero/1094/Head_1094_0",
+        "head_chibi": "PlayerHead_Q/QHead_1094_0",
+        "head_full_skin_template": "Hero/1094/Head_1094_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1094_{skinId}"
+      },
+      "pos_info": null
+    },
+    "1099": {
+      "id": 1099,
+      "name_en": "Skywarden",
+      "icon": 1099,
+      "asset_refs": {
+        "head_full": "Hero/1099/Head_1099_0",
+        "head_chibi": "PlayerHead_Q/QHead_1099_0",
+        "head_full_skin_template": "Hero/1099/Head_1099_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_1099_{skinId}"
+      },
+      "pos_info": null
+    },
+    "2000": {
+      "id": 2000,
+      "name_en": "Evil Dragon",
+      "icon": 2000,
+      "asset_refs": {
+        "head_full": "Hero/2000/Head_2000_0",
+        "head_chibi": "PlayerHead_Q/QHead_2000_0",
+        "head_full_skin_template": "Hero/2000/Head_2000_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2000_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -112,
+        "posy": 20,
+        "size": "0.8",
+        "effect_pos1": "80_-200_1.2",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2001": {
+      "id": 2001,
+      "name_en": "Sol",
+      "icon": 2001,
+      "asset_refs": {
+        "head_full": "Hero/2001/Head_2001_0",
+        "head_chibi": "PlayerHead_Q/QHead_2001_0",
+        "head_full_skin_template": "Hero/2001/Head_2001_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2001_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -113,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "40_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2002": {
+      "id": 2002,
+      "name_en": "Sapa",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2003": {
+      "id": 2003,
+      "name_en": "Dalas",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2004": {
+      "id": 2004,
+      "name_en": "Hogg",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2005": {
+      "id": 2005,
+      "name_en": "Assisa",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2006": {
+      "id": 2006,
+      "name_en": "Oder",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2007": {
+      "id": 2007,
+      "name_en": "Ledonam",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2008": {
+      "id": 2008,
+      "name_en": "Harless",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2009": {
+      "id": 2009,
+      "name_en": "River",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2010": {
+      "id": 2010,
+      "name_en": "Dalton",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2011": {
+      "id": 2011,
+      "name_en": "Kunt",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2012": {
+      "id": 2012,
+      "name_en": "Renster",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2013": {
+      "id": 2013,
+      "name_en": "Gordon's",
+      "icon": 2002,
+      "asset_refs": {
+        "head_full": "Hero/2002/Head_2002_0",
+        "head_chibi": "PlayerHead_Q/QHead_2002_0",
+        "head_full_skin_template": "Hero/2002/Head_2002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2002_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2014": {
+      "id": 2014,
+      "name_en": "Larry",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2015": {
+      "id": 2015,
+      "name_en": "Glickett",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2016": {
+      "id": 2016,
+      "name_en": "Gunungsitoli",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2017": {
+      "id": 2017,
+      "name_en": "Casar",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2018": {
+      "id": 2018,
+      "name_en": "Geshatu",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2019": {
+      "id": 2019,
+      "name_en": "Huada",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2020": {
+      "id": 2020,
+      "name_en": "Redman",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2021": {
+      "id": 2021,
+      "name_en": "Rulakabi",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2022": {
+      "id": 2022,
+      "name_en": "Risabil",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2023": {
+      "id": 2023,
+      "name_en": "Makgra",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2024": {
+      "id": 2024,
+      "name_en": "Brunch",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2025": {
+      "id": 2025,
+      "name_en": "Holmes",
+      "icon": 2003,
+      "asset_refs": {
+        "head_full": "Hero/2003/Head_2003_0",
+        "head_chibi": "PlayerHead_Q/QHead_2003_0",
+        "head_full_skin_template": "Hero/2003/Head_2003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2003_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -176,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "20_-170",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2026": {
+      "id": 2026,
+      "name_en": "Nibea",
+      "icon": 2004,
+      "asset_refs": {
+        "head_full": "Hero/2004/Head_2004_0",
+        "head_chibi": "PlayerHead_Q/QHead_2004_0",
+        "head_full_skin_template": "Hero/2004/Head_2004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2004_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-180",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2027": {
+      "id": 2027,
+      "name_en": "Carrett",
+      "icon": 2004,
+      "asset_refs": {
+        "head_full": "Hero/2004/Head_2004_0",
+        "head_chibi": "PlayerHead_Q/QHead_2004_0",
+        "head_full_skin_template": "Hero/2004/Head_2004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2004_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-180",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2028": {
+      "id": 2028,
+      "name_en": "Sigoff",
+      "icon": 2004,
+      "asset_refs": {
+        "head_full": "Hero/2004/Head_2004_0",
+        "head_chibi": "PlayerHead_Q/QHead_2004_0",
+        "head_full_skin_template": "Hero/2004/Head_2004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2004_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-180",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "2029": {
+      "id": 2029,
+      "name_en": "Clyde",
+      "icon": 2004,
+      "asset_refs": {
+        "head_full": "Hero/2004/Head_2004_0",
+        "head_chibi": "PlayerHead_Q/QHead_2004_0",
+        "head_full_skin_template": "Hero/2004/Head_2004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_2004_{skinId}"
+      },
+      "pos_info": {
+        "skin_id": 0,
+        "posx": -140,
+        "posy": -24,
+        "size": "1",
+        "effect_pos1": "30_-180",
+        "effect_pos2": "0_0",
+        "enjoy_pos": "0",
+        "on_click": "0",
+        "_source": "data/csv/HeroPosInfo.csv (keyed by HeroIcon)"
+      }
+    },
+    "3001": {
+      "id": 3001,
+      "name_en": "Pinewood Illusion",
+      "icon": 3001,
+      "asset_refs": {
+        "head_full": "Hero/3001/Head_3001_0",
+        "head_chibi": "PlayerHead_Q/QHead_3001_0",
+        "head_full_skin_template": "Hero/3001/Head_3001_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3001_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3002": {
+      "id": 3002,
+      "name_en": "Rockblade Swordsman",
+      "icon": 3002,
+      "asset_refs": {
+        "head_full": "Hero/3002/Head_3002_0",
+        "head_chibi": "PlayerHead_Q/QHead_3002_0",
+        "head_full_skin_template": "Hero/3002/Head_3002_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3002_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3003": {
+      "id": 3003,
+      "name_en": "Frostridge Divine Fox",
+      "icon": 3003,
+      "asset_refs": {
+        "head_full": "Hero/3003/Head_3003_0",
+        "head_chibi": "PlayerHead_Q/QHead_3003_0",
+        "head_full_skin_template": "Hero/3003/Head_3003_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3003_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3004": {
+      "id": 3004,
+      "name_en": "Blazing Holy Grail",
+      "icon": 3004,
+      "asset_refs": {
+        "head_full": "Hero/3004/Head_3004_0",
+        "head_chibi": "PlayerHead_Q/QHead_3004_0",
+        "head_full_skin_template": "Hero/3004/Head_3004_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3004_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3005": {
+      "id": 3005,
+      "name_en": "Hurricane Peregrine",
+      "icon": 3005,
+      "asset_refs": {
+        "head_full": "Hero/3005/Head_3005_0",
+        "head_chibi": "PlayerHead_Q/QHead_3005_0",
+        "head_full_skin_template": "Hero/3005/Head_3005_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3005_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3006": {
+      "id": 3006,
+      "name_en": "Primitive Stone Brute",
+      "icon": 3006,
+      "asset_refs": {
+        "head_full": "Hero/3006/Head_3006_0",
+        "head_chibi": "PlayerHead_Q/QHead_3006_0",
+        "head_full_skin_template": "Hero/3006/Head_3006_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3006_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3007": {
+      "id": 3007,
+      "name_en": "Frostwing Dragon",
+      "icon": 3007,
+      "asset_refs": {
+        "head_full": "Hero/3007/Head_3007_0",
+        "head_chibi": "PlayerHead_Q/QHead_3007_0",
+        "head_full_skin_template": "Hero/3007/Head_3007_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3007_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3008": {
+      "id": 3008,
+      "name_en": "Eruptive Magma Beast",
+      "icon": 3008,
+      "asset_refs": {
+        "head_full": "Hero/3008/Head_3008_0",
+        "head_chibi": "PlayerHead_Q/QHead_3008_0",
+        "head_full_skin_template": "Hero/3008/Head_3008_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3008_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3009": {
+      "id": 3009,
+      "name_en": "Feilian Dragon",
+      "icon": 3009,
+      "asset_refs": {
+        "head_full": "Hero/3009/Head_3009_0",
+        "head_chibi": "PlayerHead_Q/QHead_3009_0",
+        "head_full_skin_template": "Hero/3009/Head_3009_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3009_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3010": {
+      "id": 3010,
+      "name_en": "Stoneclad Earth Dragon",
+      "icon": 3010,
+      "asset_refs": {
+        "head_full": "Hero/3010/Head_3010_0",
+        "head_chibi": "PlayerHead_Q/QHead_3010_0",
+        "head_full_skin_template": "Hero/3010/Head_3010_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3010_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3011": {
+      "id": 3011,
+      "name_en": "Frost Prison Arbiter",
+      "icon": 3011,
+      "asset_refs": {
+        "head_full": "Hero/3011/Head_3011_0",
+        "head_chibi": "PlayerHead_Q/QHead_3011_0",
+        "head_full_skin_template": "Hero/3011/Head_3011_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3011_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3012": {
+      "id": 3012,
+      "name_en": "Quenching Executor",
+      "icon": 3012,
+      "asset_refs": {
+        "head_full": "Hero/3012/Head_3012_0",
+        "head_chibi": "PlayerHead_Q/QHead_3012_0",
+        "head_full_skin_template": "Hero/3012/Head_3012_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3012_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3013": {
+      "id": 3013,
+      "name_en": "Crimson Flame Apostle",
+      "icon": 3013,
+      "asset_refs": {
+        "head_full": "Hero/3013/Head_3013_0",
+        "head_chibi": "PlayerHead_Q/QHead_3013_0",
+        "head_full_skin_template": "Hero/3013/Head_3013_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3013_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3014": {
+      "id": 3014,
+      "name_en": "Heavenly Crystal Placodon",
+      "icon": 3014,
+      "asset_refs": {
+        "head_full": "Hero/3014/Head_3014_0",
+        "head_chibi": "PlayerHead_Q/QHead_3014_0",
+        "head_full_skin_template": "Hero/3014/Head_3014_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3014_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3015": {
+      "id": 3015,
+      "name_en": "Rockbound Heavy Tank",
+      "icon": 3015,
+      "asset_refs": {
+        "head_full": "Hero/3015/Head_3015_0",
+        "head_chibi": "PlayerHead_Q/QHead_3015_0",
+        "head_full_skin_template": "Hero/3015/Head_3015_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3015_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3016": {
+      "id": 3016,
+      "name_en": "Leaf Sheath Jackal",
+      "icon": 3016,
+      "asset_refs": {
+        "head_full": "Hero/3016/Head_3016_0",
+        "head_chibi": "PlayerHead_Q/QHead_3016_0",
+        "head_full_skin_template": "Hero/3016/Head_3016_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3016_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3017": {
+      "id": 3017,
+      "name_en": "Storm Lord",
+      "icon": 3017,
+      "asset_refs": {
+        "head_full": "Hero/3017/Head_3017_0",
+        "head_chibi": "PlayerHead_Q/QHead_3017_0",
+        "head_full_skin_template": "Hero/3017/Head_3017_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3017_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3018": {
+      "id": 3018,
+      "name_en": "Titan Giant",
+      "icon": 3018,
+      "asset_refs": {
+        "head_full": "Hero/3018/Head_3018_0",
+        "head_chibi": "PlayerHead_Q/QHead_3018_0",
+        "head_full_skin_template": "Hero/3018/Head_3018_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3018_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3019": {
+      "id": 3019,
+      "name_en": "Frost Lord",
+      "icon": 3019,
+      "asset_refs": {
+        "head_full": "Hero/3019/Head_3019_0",
+        "head_chibi": "PlayerHead_Q/QHead_3019_0",
+        "head_full_skin_template": "Hero/3019/Head_3019_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3019_{skinId}"
+      },
+      "pos_info": null
+    },
+    "3020": {
+      "id": 3020,
+      "name_en": "Flame Lord",
+      "icon": 3020,
+      "asset_refs": {
+        "head_full": "Hero/3020/Head_3020_0",
+        "head_chibi": "PlayerHead_Q/QHead_3020_0",
+        "head_full_skin_template": "Hero/3020/Head_3020_{skinId}",
+        "head_chibi_skin_template": "PlayerHead_Q/QHead_3020_{skinId}"
+      },
+      "pos_info": null
+    }
+  }
+}

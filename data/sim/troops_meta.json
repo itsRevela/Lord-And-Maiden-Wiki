@@ -1,0 +1,1927 @@
+{
+  "_about": "Troops, team-composition bonuses, affection, talents, and the soldier restraint triangle for the Lord & Maiden battle simulator. All numbers read from data/csv/*.csv; mechanics cited to the decompiled client. Combat damage itself is server-authoritative.",
+  "enums": {
+    "soldier_type": {
+      "1": "Infantry",
+      "2": "Archer",
+      "3": "Cavalry",
+      "4": "Chariot"
+    },
+    "race": {
+      "1": "Human",
+      "2": "Orc",
+      "3": "Elf"
+    },
+    "_source": "GetSoldierName decompiled:9056; GetHeroRaceDesTip decompiled:7857"
+  },
+  "troops": {
+    "1": {
+      "type_id": 1,
+      "type_name_en": "Infantry",
+      "max_tier": 6,
+      "max_tier_label": "T6",
+      "max_tier_stats": {
+        "attack": 23,
+        "defense": 75,
+        "ruin": 24,
+        "health": 255,
+        "movement_speed": 40,
+        "load": 17,
+        "power": 200
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "label": "T1",
+          "is_max_tier": false,
+          "attack": 7,
+          "defense": 30,
+          "ruin": 10,
+          "health": 100,
+          "movement_speed": 40,
+          "load": 7,
+          "power": 10
+        },
+        {
+          "tier": 2,
+          "label": "T2",
+          "is_max_tier": false,
+          "attack": 9,
+          "defense": 35,
+          "ruin": 12,
+          "health": 125,
+          "movement_speed": 40,
+          "load": 11,
+          "power": 30
+        },
+        {
+          "tier": 3,
+          "label": "T3",
+          "is_max_tier": false,
+          "attack": 11,
+          "defense": 40,
+          "ruin": 14,
+          "health": 150,
+          "movement_speed": 40,
+          "load": 12,
+          "power": 60
+        },
+        {
+          "tier": 4,
+          "label": "T4",
+          "is_max_tier": false,
+          "attack": 13,
+          "defense": 45,
+          "ruin": 16,
+          "health": 175,
+          "movement_speed": 40,
+          "load": 13,
+          "power": 100
+        },
+        {
+          "tier": 5,
+          "label": "T5",
+          "is_max_tier": false,
+          "attack": 18,
+          "defense": 60,
+          "ruin": 20,
+          "health": 215,
+          "movement_speed": 40,
+          "load": 15,
+          "power": 150
+        },
+        {
+          "tier": 6,
+          "label": "T6",
+          "is_max_tier": true,
+          "attack": 23,
+          "defense": 75,
+          "ruin": 24,
+          "health": 255,
+          "movement_speed": 40,
+          "load": 17,
+          "power": 200
+        }
+      ]
+    },
+    "2": {
+      "type_id": 2,
+      "type_name_en": "Archer",
+      "max_tier": 6,
+      "max_tier_label": "T6",
+      "max_tier_stats": {
+        "attack": 130,
+        "defense": 57,
+        "ruin": 18,
+        "health": 60,
+        "movement_speed": 45,
+        "load": 15,
+        "power": 200
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "label": "T1",
+          "is_max_tier": false,
+          "attack": 60,
+          "defense": 15,
+          "ruin": 4,
+          "health": 25,
+          "movement_speed": 45,
+          "load": 6,
+          "power": 10
+        },
+        {
+          "tier": 2,
+          "label": "T2",
+          "is_max_tier": false,
+          "attack": 70,
+          "defense": 21,
+          "ruin": 6,
+          "health": 30,
+          "movement_speed": 45,
+          "load": 8,
+          "power": 30
+        },
+        {
+          "tier": 3,
+          "label": "T3",
+          "is_max_tier": false,
+          "attack": 80,
+          "defense": 27,
+          "ruin": 8,
+          "health": 35,
+          "movement_speed": 45,
+          "load": 9,
+          "power": 60
+        },
+        {
+          "tier": 4,
+          "label": "T4",
+          "is_max_tier": false,
+          "attack": 90,
+          "defense": 33,
+          "ruin": 10,
+          "health": 40,
+          "movement_speed": 45,
+          "load": 11,
+          "power": 100
+        },
+        {
+          "tier": 5,
+          "label": "T5",
+          "is_max_tier": false,
+          "attack": 110,
+          "defense": 45,
+          "ruin": 14,
+          "health": 50,
+          "movement_speed": 45,
+          "load": 13,
+          "power": 150
+        },
+        {
+          "tier": 6,
+          "label": "T6",
+          "is_max_tier": true,
+          "attack": 130,
+          "defense": 57,
+          "ruin": 18,
+          "health": 60,
+          "movement_speed": 45,
+          "load": 15,
+          "power": 200
+        }
+      ]
+    },
+    "3": {
+      "type_id": 3,
+      "type_name_en": "Cavalry",
+      "max_tier": 6,
+      "max_tier_label": "T6",
+      "max_tier_stats": {
+        "attack": 42,
+        "defense": 120,
+        "ruin": 15,
+        "health": 110,
+        "movement_speed": 55,
+        "load": 14,
+        "power": 200
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "label": "T1",
+          "is_max_tier": false,
+          "attack": 16,
+          "defense": 50,
+          "ruin": 3,
+          "health": 40,
+          "movement_speed": 55,
+          "load": 5,
+          "power": 10
+        },
+        {
+          "tier": 2,
+          "label": "T2",
+          "is_max_tier": false,
+          "attack": 20,
+          "defense": 60,
+          "ruin": 5,
+          "health": 50,
+          "movement_speed": 55,
+          "load": 7,
+          "power": 30
+        },
+        {
+          "tier": 3,
+          "label": "T3",
+          "is_max_tier": false,
+          "attack": 24,
+          "defense": 70,
+          "ruin": 7,
+          "health": 60,
+          "movement_speed": 55,
+          "load": 8,
+          "power": 60
+        },
+        {
+          "tier": 4,
+          "label": "T4",
+          "is_max_tier": false,
+          "attack": 28,
+          "defense": 80,
+          "ruin": 9,
+          "health": 70,
+          "movement_speed": 55,
+          "load": 10,
+          "power": 100
+        },
+        {
+          "tier": 5,
+          "label": "T5",
+          "is_max_tier": false,
+          "attack": 35,
+          "defense": 100,
+          "ruin": 12,
+          "health": 90,
+          "movement_speed": 55,
+          "load": 12,
+          "power": 150
+        },
+        {
+          "tier": 6,
+          "label": "T6",
+          "is_max_tier": true,
+          "attack": 42,
+          "defense": 120,
+          "ruin": 15,
+          "health": 110,
+          "movement_speed": 55,
+          "load": 14,
+          "power": 200
+        }
+      ]
+    },
+    "4": {
+      "type_id": 4,
+      "type_name_en": "Chariot",
+      "max_tier": 6,
+      "max_tier_label": "T6",
+      "max_tier_stats": {
+        "attack": 48,
+        "defense": 36,
+        "ruin": 120,
+        "health": 95,
+        "movement_speed": 35,
+        "load": 60,
+        "power": 200
+      },
+      "tiers": [
+        {
+          "tier": 1,
+          "label": "T1",
+          "is_max_tier": false,
+          "attack": 20,
+          "defense": 15,
+          "ruin": 50,
+          "health": 50,
+          "movement_speed": 35,
+          "load": 25,
+          "power": 10
+        },
+        {
+          "tier": 2,
+          "label": "T2",
+          "is_max_tier": false,
+          "attack": 24,
+          "defense": 18,
+          "ruin": 60,
+          "health": 55,
+          "movement_speed": 35,
+          "load": 30,
+          "power": 30
+        },
+        {
+          "tier": 3,
+          "label": "T3",
+          "is_max_tier": false,
+          "attack": 28,
+          "defense": 21,
+          "ruin": 70,
+          "health": 60,
+          "movement_speed": 35,
+          "load": 35,
+          "power": 60
+        },
+        {
+          "tier": 4,
+          "label": "T4",
+          "is_max_tier": false,
+          "attack": 32,
+          "defense": 24,
+          "ruin": 80,
+          "health": 65,
+          "movement_speed": 35,
+          "load": 40,
+          "power": 100
+        },
+        {
+          "tier": 5,
+          "label": "T5",
+          "is_max_tier": false,
+          "attack": 40,
+          "defense": 30,
+          "ruin": 100,
+          "health": 80,
+          "movement_speed": 35,
+          "load": 50,
+          "power": 150
+        },
+        {
+          "tier": 6,
+          "label": "T6",
+          "is_max_tier": true,
+          "attack": 48,
+          "defense": 36,
+          "ruin": 120,
+          "health": 95,
+          "movement_speed": 35,
+          "load": 60,
+          "power": 200
+        }
+      ]
+    }
+  },
+  "soldier_combinations": {
+    "_about": "TroopsEffect type 1. Trigger = how many heroes in the 3-hero team field this soldier type. 2 = Basic, 3 = Advanced. A hero's soldier type = its HeroInfo.RST (decompiled:10428,17380).",
+    "_stacking": "Basic (2-of-type) and Advanced (3-of-type) are mutually exclusive thresholds keyed by TroopsEffect.number (2 vs 3); at 3 matching heroes only the Advanced row applies.",
+    "by_soldier_type": {
+      "1": {
+        "soldier_type_id": 1,
+        "soldier_type_en": "Infantry",
+        "basic": {
+          "name_en": "Basic Infantry Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "25_500+35_500",
+          "addtion_des_en": "Soldier HP+5%*Soldier DEF+5%",
+          "effects": [
+            {
+              "effect_id": 25,
+              "attr_en": "Soldier HP",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Infantry Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "25_1000+35_1000",
+          "addtion_des_en": "Soldier HP+10%*Soldier DEF+10%",
+          "effects": [
+            {
+              "effect_id": 25,
+              "attr_en": "Soldier HP",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            }
+          ]
+        }
+      },
+      "2": {
+        "soldier_type_id": 2,
+        "soldier_type_en": "Archer",
+        "basic": {
+          "name_en": "Basic Archer Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "30_500+35_500",
+          "addtion_des_en": "Soldier ATK+5%*Soldier DEF+5%",
+          "effects": [
+            {
+              "effect_id": 30,
+              "attr_en": "Soldier ATK",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Archer Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "30_1000+35_1000",
+          "addtion_des_en": "Soldier ATK+10%*Soldier DEF+10%",
+          "effects": [
+            {
+              "effect_id": 30,
+              "attr_en": "Soldier ATK",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            }
+          ]
+        }
+      },
+      "3": {
+        "soldier_type_id": 3,
+        "soldier_type_en": "Cavalry",
+        "basic": {
+          "name_en": "Basic Cavalry Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "45_500+35_500",
+          "addtion_des_en": "Soldier March Spd+5%*Soldier DEF+5%",
+          "effects": [
+            {
+              "effect_id": 45,
+              "attr_en": "Soldier March Spd",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Cavalry Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "45_1000+35_1000",
+          "addtion_des_en": "Soldier March Spd+10%*Soldier DEF+10%",
+          "effects": [
+            {
+              "effect_id": 45,
+              "attr_en": "Soldier March Spd",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            }
+          ]
+        }
+      },
+      "4": {
+        "soldier_type_id": 4,
+        "soldier_type_en": "Chariot",
+        "basic": {
+          "name_en": "Basic Chariot Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "40_500+35_500",
+          "addtion_des_en": "Soldier DES+5%*Soldier DEF+5%",
+          "effects": [
+            {
+              "effect_id": 40,
+              "attr_en": "Soldier DES",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 500,
+              "percent": 5.0
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Chariot Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "40_1000+35_1000",
+          "addtion_des_en": "Soldier DES+10%*Soldier DEF+10%",
+          "effects": [
+            {
+              "effect_id": 40,
+              "attr_en": "Soldier DES",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            },
+            {
+              "effect_id": 35,
+              "attr_en": "Soldier DEF",
+              "kind": "soldier_percent",
+              "raw_value": 1000,
+              "percent": 10.0
+            }
+          ]
+        }
+      }
+    },
+    "_source": "data/csv/TroopsEffect.csv rows 0-7 (type=1)"
+  },
+  "race_combinations": {
+    "_about": "TroopsEffect type 2. Trigger = how many heroes in the 3-hero team are of this race (HeroInfo.Type). 'All Attributes' = the 4 hero stats ATK(51)+DEF(52)+DES(53)+ATK-Spd(50), each +5 (Basic) or +10 (Advanced).",
+    "_stacking": "Basic (2-of-race, +5) and Advanced (3-of-race, +10) are mutually exclusive thresholds keyed by number (2 vs 3); with 3 same-race heroes only the +10 Advanced row applies, NOT +5 and +10 together.",
+    "by_race": {
+      "1": {
+        "race_id": 1,
+        "race_en": "Human",
+        "basic": {
+          "name_en": "Basic Human Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "51_5+52_5+53_5+50_5",
+          "addtion_des_en": "Hero All Attributes+5",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Human Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "51_10+52_10+53_10+50_10",
+          "addtion_des_en": "Hero All Attributes+10",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            }
+          ]
+        }
+      },
+      "2": {
+        "race_id": 2,
+        "race_en": "Orc",
+        "basic": {
+          "name_en": "Basic Orc Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "51_5+52_5+53_5+50_5",
+          "addtion_des_en": "Hero All Attributes+5",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Orc Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "51_10+52_10+53_10+50_10",
+          "addtion_des_en": "Hero All Attributes+10",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            }
+          ]
+        }
+      },
+      "3": {
+        "race_id": 3,
+        "race_en": "Elf",
+        "basic": {
+          "name_en": "Basic Elf Combination",
+          "trigger_count": 2,
+          "tier": "Basic",
+          "addtion_raw": "51_5+52_5+53_5+50_5",
+          "addtion_des_en": "Hero All Attributes+5",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 5,
+              "flat": 5
+            }
+          ]
+        },
+        "advanced": {
+          "name_en": "Advanced Elf Combination",
+          "trigger_count": 3,
+          "tier": "Advanced",
+          "addtion_raw": "51_10+52_10+53_10+50_10",
+          "addtion_des_en": "Hero All Attributes+10",
+          "effects": [
+            {
+              "effect_id": 51,
+              "attr_en": "Hero ATK",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 52,
+              "attr_en": "Hero DEF",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 53,
+              "attr_en": "Hero DES",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            },
+            {
+              "effect_id": 50,
+              "attr_en": "Hero ATK Spd",
+              "kind": "hero_flat",
+              "raw_value": 10,
+              "flat": 10
+            }
+          ]
+        }
+      }
+    },
+    "_source": "data/csv/TroopsEffect.csv rows 8-13 (type=2)"
+  },
+  "affection": {
+    "stat_affected": "Hero All Attributes (ATK + DEF + DES/Ruin + ATK Spd)",
+    "max_level": 11,
+    "max_bonus": 30,
+    "curve": [
+      {
+        "level": 0,
+        "all_attributes_bonus": 0,
+        "des_en": "Nothing",
+        "up_lv_exp": 100
+      },
+      {
+        "level": 1,
+        "all_attributes_bonus": 1,
+        "des_en": "Heroes All Attributes +1",
+        "up_lv_exp": 200
+      },
+      {
+        "level": 2,
+        "all_attributes_bonus": 2,
+        "des_en": "Heroes All Attributes +2",
+        "up_lv_exp": 300
+      },
+      {
+        "level": 3,
+        "all_attributes_bonus": 3,
+        "des_en": "Heroes All Attributes +3",
+        "up_lv_exp": 500
+      },
+      {
+        "level": 4,
+        "all_attributes_bonus": 5,
+        "des_en": "Heroes All Attributes +5",
+        "up_lv_exp": 700
+      },
+      {
+        "level": 5,
+        "all_attributes_bonus": 7,
+        "des_en": "Heroes All Attributes +7",
+        "up_lv_exp": 900
+      },
+      {
+        "level": 6,
+        "all_attributes_bonus": 9,
+        "des_en": "Heroes All Attributes +9",
+        "up_lv_exp": 1200
+      },
+      {
+        "level": 7,
+        "all_attributes_bonus": 12,
+        "des_en": "Heroes All Attributes +12",
+        "up_lv_exp": 1500
+      },
+      {
+        "level": 8,
+        "all_attributes_bonus": 15,
+        "des_en": "Heroes All Attributes +15",
+        "up_lv_exp": 1800
+      },
+      {
+        "level": 9,
+        "all_attributes_bonus": 18,
+        "des_en": "Heroes All Attributes +18",
+        "up_lv_exp": 2300
+      },
+      {
+        "level": 10,
+        "all_attributes_bonus": 22,
+        "des_en": "Heroes All Attributes +22",
+        "up_lv_exp": 3000
+      },
+      {
+        "level": 11,
+        "all_attributes_bonus": 30,
+        "des_en": "Heroes All Attributes +30",
+        "up_lv_exp": 99999999
+      }
+    ]
+  },
+  "talents": {
+    "_about": "HeroTalent awakening. Each TalentType levels 1..25; the hero's displayed bonus is the cumulative sum of every awakened level's Effect value (decompiled:85893-85910). Type 1 (Commander) is a flat Soldiers-Quantity bonus; types 2-5 are percent soldier-stat bonuses for that soldier type.",
+    "_namespace": "HeroTalent.Effect uses a talent-internal id space, NOT the EntryEffect catalog. 59=Soldiers Quantity (flat); 53=Infantry HP, 19=Archer ATK, 25=Cavalry DEF, 52=Chariot DES (percent, raw value is already a decimal fraction e.g. 0.06=6%). Names verified per-row via Des/Des_en and the soldier-attr switch GetBuffName decompiled:35835-35954 (case 19/25/52/53). NOTE the overlap trap: EntryEffect 53=Hero DES but Talent 53=Infantry HP.",
+    "_max_awaken_points": "A hero's total awaken points = Rare*10 (decompiled:85917). Maxing ALL 5 talents to lv25 needs 125 points, so even a 6-star (60 pts) cannot max every talent; the per-type maxed_cumulative below is the cap if that single talent is taken to lv25.",
+    "by_type": {
+      "1": {
+        "talent_type": 1,
+        "name_en": "Commander",
+        "max_level": 25,
+        "effect_id": 59,
+        "effect_namespace_attr_en": "Soldiers Quantity",
+        "effect_kind": "flat",
+        "maxed_cumulative": {
+          "flat": 3000
+        },
+        "maxed_display_en": "Soldiers Quantity +3000",
+        "total_points_to_max": 25,
+        "per_level": [
+          {
+            "level": 0,
+            "effect_id": null,
+            "effect_value": 0.0,
+            "need_point": 0,
+            "des_en": "Soldiers Quantity +0"
+          },
+          {
+            "level": 1,
+            "effect_id": 59,
+            "effect_value": 50.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +50"
+          },
+          {
+            "level": 2,
+            "effect_id": 59,
+            "effect_value": 50.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +50"
+          },
+          {
+            "level": 3,
+            "effect_id": 59,
+            "effect_value": 50.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +50"
+          },
+          {
+            "level": 4,
+            "effect_id": 59,
+            "effect_value": 50.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +50"
+          },
+          {
+            "level": 5,
+            "effect_id": 59,
+            "effect_value": 100.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +100"
+          },
+          {
+            "level": 6,
+            "effect_id": 59,
+            "effect_value": 60.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +60"
+          },
+          {
+            "level": 7,
+            "effect_id": 59,
+            "effect_value": 60.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +60"
+          },
+          {
+            "level": 8,
+            "effect_id": 59,
+            "effect_value": 60.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +60"
+          },
+          {
+            "level": 9,
+            "effect_id": 59,
+            "effect_value": 60.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +60"
+          },
+          {
+            "level": 10,
+            "effect_id": 59,
+            "effect_value": 200.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +200"
+          },
+          {
+            "level": 11,
+            "effect_id": 59,
+            "effect_value": 70.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +70"
+          },
+          {
+            "level": 12,
+            "effect_id": 59,
+            "effect_value": 70.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +70"
+          },
+          {
+            "level": 13,
+            "effect_id": 59,
+            "effect_value": 70.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +70"
+          },
+          {
+            "level": 14,
+            "effect_id": 59,
+            "effect_value": 70.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +70"
+          },
+          {
+            "level": 15,
+            "effect_id": 59,
+            "effect_value": 300.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +300"
+          },
+          {
+            "level": 16,
+            "effect_id": 59,
+            "effect_value": 80.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +80"
+          },
+          {
+            "level": 17,
+            "effect_id": 59,
+            "effect_value": 80.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +80"
+          },
+          {
+            "level": 18,
+            "effect_id": 59,
+            "effect_value": 80.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +80"
+          },
+          {
+            "level": 19,
+            "effect_id": 59,
+            "effect_value": 80.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +80"
+          },
+          {
+            "level": 20,
+            "effect_id": 59,
+            "effect_value": 400.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +400"
+          },
+          {
+            "level": 21,
+            "effect_id": 59,
+            "effect_value": 90.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +90"
+          },
+          {
+            "level": 22,
+            "effect_id": 59,
+            "effect_value": 90.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +90"
+          },
+          {
+            "level": 23,
+            "effect_id": 59,
+            "effect_value": 90.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +90"
+          },
+          {
+            "level": 24,
+            "effect_id": 59,
+            "effect_value": 90.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +90"
+          },
+          {
+            "level": 25,
+            "effect_id": 59,
+            "effect_value": 600.0,
+            "need_point": 1,
+            "des_en": "Soldiers Quantity +600"
+          }
+        ]
+      },
+      "2": {
+        "talent_type": 2,
+        "name_en": "Infantry",
+        "max_level": 25,
+        "effect_id": 53,
+        "effect_namespace_attr_en": "Infantry HP",
+        "effect_kind": "percent",
+        "maxed_cumulative": {
+          "percent": 30.0
+        },
+        "maxed_display_en": "Infantry HP +30%",
+        "total_points_to_max": 25,
+        "per_level": [
+          {
+            "level": 0,
+            "effect_id": null,
+            "effect_value": 0.0,
+            "need_point": 0,
+            "des_en": "Infantry HP +0%"
+          },
+          {
+            "level": 1,
+            "effect_id": 53,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.5%"
+          },
+          {
+            "level": 2,
+            "effect_id": 53,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.5%"
+          },
+          {
+            "level": 3,
+            "effect_id": 53,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.5%"
+          },
+          {
+            "level": 4,
+            "effect_id": 53,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.5%"
+          },
+          {
+            "level": 5,
+            "effect_id": 53,
+            "effect_value": 0.01,
+            "need_point": 1,
+            "des_en": "Infantry HP +1%"
+          },
+          {
+            "level": 6,
+            "effect_id": 53,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.6%"
+          },
+          {
+            "level": 7,
+            "effect_id": 53,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.6%"
+          },
+          {
+            "level": 8,
+            "effect_id": 53,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.6%"
+          },
+          {
+            "level": 9,
+            "effect_id": 53,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.6%"
+          },
+          {
+            "level": 10,
+            "effect_id": 53,
+            "effect_value": 0.02,
+            "need_point": 1,
+            "des_en": "Infantry HP +2%"
+          },
+          {
+            "level": 11,
+            "effect_id": 53,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.7%"
+          },
+          {
+            "level": 12,
+            "effect_id": 53,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.7%"
+          },
+          {
+            "level": 13,
+            "effect_id": 53,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.7%"
+          },
+          {
+            "level": 14,
+            "effect_id": 53,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.7%"
+          },
+          {
+            "level": 15,
+            "effect_id": 53,
+            "effect_value": 0.03,
+            "need_point": 1,
+            "des_en": "Infantry HP +3%"
+          },
+          {
+            "level": 16,
+            "effect_id": 53,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.8%"
+          },
+          {
+            "level": 17,
+            "effect_id": 53,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.8%"
+          },
+          {
+            "level": 18,
+            "effect_id": 53,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.8%"
+          },
+          {
+            "level": 19,
+            "effect_id": 53,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.8%"
+          },
+          {
+            "level": 20,
+            "effect_id": 53,
+            "effect_value": 0.04,
+            "need_point": 1,
+            "des_en": "Infantry HP +4%"
+          },
+          {
+            "level": 21,
+            "effect_id": 53,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.9%"
+          },
+          {
+            "level": 22,
+            "effect_id": 53,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.9%"
+          },
+          {
+            "level": 23,
+            "effect_id": 53,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.9%"
+          },
+          {
+            "level": 24,
+            "effect_id": 53,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Infantry HP +0.9%"
+          },
+          {
+            "level": 25,
+            "effect_id": 53,
+            "effect_value": 0.06,
+            "need_point": 1,
+            "des_en": "Infantry HP +6%"
+          }
+        ]
+      },
+      "3": {
+        "talent_type": 3,
+        "name_en": "Archer",
+        "max_level": 25,
+        "effect_id": 19,
+        "effect_namespace_attr_en": "Archer ATK",
+        "effect_kind": "percent",
+        "maxed_cumulative": {
+          "percent": 30.0
+        },
+        "maxed_display_en": "Archer ATK +30%",
+        "total_points_to_max": 25,
+        "per_level": [
+          {
+            "level": 0,
+            "effect_id": null,
+            "effect_value": 0.0,
+            "need_point": 0,
+            "des_en": "Archer ATK +0%"
+          },
+          {
+            "level": 1,
+            "effect_id": 19,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.5%"
+          },
+          {
+            "level": 2,
+            "effect_id": 19,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.5%"
+          },
+          {
+            "level": 3,
+            "effect_id": 19,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.5%"
+          },
+          {
+            "level": 4,
+            "effect_id": 19,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.5%"
+          },
+          {
+            "level": 5,
+            "effect_id": 19,
+            "effect_value": 0.01,
+            "need_point": 1,
+            "des_en": "Archer ATK +1%"
+          },
+          {
+            "level": 6,
+            "effect_id": 19,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.6%"
+          },
+          {
+            "level": 7,
+            "effect_id": 19,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.6%"
+          },
+          {
+            "level": 8,
+            "effect_id": 19,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.6%"
+          },
+          {
+            "level": 9,
+            "effect_id": 19,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.6%"
+          },
+          {
+            "level": 10,
+            "effect_id": 19,
+            "effect_value": 0.02,
+            "need_point": 1,
+            "des_en": "Archer ATK +2%"
+          },
+          {
+            "level": 11,
+            "effect_id": 19,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.7%"
+          },
+          {
+            "level": 12,
+            "effect_id": 19,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.7%"
+          },
+          {
+            "level": 13,
+            "effect_id": 19,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.7%"
+          },
+          {
+            "level": 14,
+            "effect_id": 19,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.7%"
+          },
+          {
+            "level": 15,
+            "effect_id": 19,
+            "effect_value": 0.03,
+            "need_point": 1,
+            "des_en": "Archer ATK +3%"
+          },
+          {
+            "level": 16,
+            "effect_id": 19,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.8%"
+          },
+          {
+            "level": 17,
+            "effect_id": 19,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.8%"
+          },
+          {
+            "level": 18,
+            "effect_id": 19,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.8%"
+          },
+          {
+            "level": 19,
+            "effect_id": 19,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.8%"
+          },
+          {
+            "level": 20,
+            "effect_id": 19,
+            "effect_value": 0.04,
+            "need_point": 1,
+            "des_en": "Archer ATK +4%"
+          },
+          {
+            "level": 21,
+            "effect_id": 19,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.9%"
+          },
+          {
+            "level": 22,
+            "effect_id": 19,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.9%"
+          },
+          {
+            "level": 23,
+            "effect_id": 19,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.9%"
+          },
+          {
+            "level": 24,
+            "effect_id": 19,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Archer ATK +0.9%"
+          },
+          {
+            "level": 25,
+            "effect_id": 19,
+            "effect_value": 0.06,
+            "need_point": 1,
+            "des_en": "Archer ATK +6%"
+          }
+        ]
+      },
+      "4": {
+        "talent_type": 4,
+        "name_en": "Cavalry",
+        "max_level": 25,
+        "effect_id": 25,
+        "effect_namespace_attr_en": "Cavalry DEF",
+        "effect_kind": "percent",
+        "maxed_cumulative": {
+          "percent": 30.0
+        },
+        "maxed_display_en": "Cavalry DEF +30%",
+        "total_points_to_max": 25,
+        "per_level": [
+          {
+            "level": 0,
+            "effect_id": null,
+            "effect_value": 0.0,
+            "need_point": 0,
+            "des_en": "Cavalry DEF +0%"
+          },
+          {
+            "level": 1,
+            "effect_id": 25,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.5%"
+          },
+          {
+            "level": 2,
+            "effect_id": 25,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.5%"
+          },
+          {
+            "level": 3,
+            "effect_id": 25,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.5%"
+          },
+          {
+            "level": 4,
+            "effect_id": 25,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.5%"
+          },
+          {
+            "level": 5,
+            "effect_id": 25,
+            "effect_value": 0.01,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +1%"
+          },
+          {
+            "level": 6,
+            "effect_id": 25,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.6%"
+          },
+          {
+            "level": 7,
+            "effect_id": 25,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.6%"
+          },
+          {
+            "level": 8,
+            "effect_id": 25,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.6%"
+          },
+          {
+            "level": 9,
+            "effect_id": 25,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.6%"
+          },
+          {
+            "level": 10,
+            "effect_id": 25,
+            "effect_value": 0.02,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +2%"
+          },
+          {
+            "level": 11,
+            "effect_id": 25,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.7%"
+          },
+          {
+            "level": 12,
+            "effect_id": 25,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.7%"
+          },
+          {
+            "level": 13,
+            "effect_id": 25,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.7%"
+          },
+          {
+            "level": 14,
+            "effect_id": 25,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.7%"
+          },
+          {
+            "level": 15,
+            "effect_id": 25,
+            "effect_value": 0.03,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +3%"
+          },
+          {
+            "level": 16,
+            "effect_id": 25,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.8%"
+          },
+          {
+            "level": 17,
+            "effect_id": 25,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.8%"
+          },
+          {
+            "level": 18,
+            "effect_id": 25,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.8%"
+          },
+          {
+            "level": 19,
+            "effect_id": 25,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.8%"
+          },
+          {
+            "level": 20,
+            "effect_id": 25,
+            "effect_value": 0.04,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +4%"
+          },
+          {
+            "level": 21,
+            "effect_id": 25,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.9%"
+          },
+          {
+            "level": 22,
+            "effect_id": 25,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.9%"
+          },
+          {
+            "level": 23,
+            "effect_id": 25,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.9%"
+          },
+          {
+            "level": 24,
+            "effect_id": 25,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +0.9%"
+          },
+          {
+            "level": 25,
+            "effect_id": 25,
+            "effect_value": 0.06,
+            "need_point": 1,
+            "des_en": "Cavalry DEF +6%"
+          }
+        ]
+      },
+      "5": {
+        "talent_type": 5,
+        "name_en": "Chariot",
+        "max_level": 25,
+        "effect_id": 52,
+        "effect_namespace_attr_en": "Chariot DES",
+        "effect_kind": "percent",
+        "maxed_cumulative": {
+          "percent": 30.0
+        },
+        "maxed_display_en": "Chariot DES +30%",
+        "total_points_to_max": 25,
+        "per_level": [
+          {
+            "level": 0,
+            "effect_id": null,
+            "effect_value": 0.0,
+            "need_point": 0,
+            "des_en": "Chariot DES +0%"
+          },
+          {
+            "level": 1,
+            "effect_id": 52,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.5%"
+          },
+          {
+            "level": 2,
+            "effect_id": 52,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.5%"
+          },
+          {
+            "level": 3,
+            "effect_id": 52,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.5%"
+          },
+          {
+            "level": 4,
+            "effect_id": 52,
+            "effect_value": 0.005,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.5%"
+          },
+          {
+            "level": 5,
+            "effect_id": 52,
+            "effect_value": 0.01,
+            "need_point": 1,
+            "des_en": "Chariot DES +1%"
+          },
+          {
+            "level": 6,
+            "effect_id": 52,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.6%"
+          },
+          {
+            "level": 7,
+            "effect_id": 52,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.6%"
+          },
+          {
+            "level": 8,
+            "effect_id": 52,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.6%"
+          },
+          {
+            "level": 9,
+            "effect_id": 52,
+            "effect_value": 0.006,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.6%"
+          },
+          {
+            "level": 10,
+            "effect_id": 52,
+            "effect_value": 0.02,
+            "need_point": 1,
+            "des_en": "Chariot DES +2%"
+          },
+          {
+            "level": 11,
+            "effect_id": 52,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.7%"
+          },
+          {
+            "level": 12,
+            "effect_id": 52,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.7%"
+          },
+          {
+            "level": 13,
+            "effect_id": 52,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.7%"
+          },
+          {
+            "level": 14,
+            "effect_id": 52,
+            "effect_value": 0.007,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.7%"
+          },
+          {
+            "level": 15,
+            "effect_id": 52,
+            "effect_value": 0.03,
+            "need_point": 1,
+            "des_en": "Chariot DES +3%"
+          },
+          {
+            "level": 16,
+            "effect_id": 52,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.8%"
+          },
+          {
+            "level": 17,
+            "effect_id": 52,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.8%"
+          },
+          {
+            "level": 18,
+            "effect_id": 52,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.8%"
+          },
+          {
+            "level": 19,
+            "effect_id": 52,
+            "effect_value": 0.008,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.8%"
+          },
+          {
+            "level": 20,
+            "effect_id": 52,
+            "effect_value": 0.04,
+            "need_point": 1,
+            "des_en": "Chariot DES +4%"
+          },
+          {
+            "level": 21,
+            "effect_id": 52,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.9%"
+          },
+          {
+            "level": 22,
+            "effect_id": 52,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.9%"
+          },
+          {
+            "level": 23,
+            "effect_id": 52,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.9%"
+          },
+          {
+            "level": 24,
+            "effect_id": 52,
+            "effect_value": 0.009,
+            "need_point": 1,
+            "des_en": "Chariot DES +0.9%"
+          },
+          {
+            "level": 25,
+            "effect_id": 52,
+            "effect_value": 0.06,
+            "need_point": 1,
+            "des_en": "Chariot DES +6%"
+          }
+        ]
+      }
+    },
+    "_source": "data/csv/HeroTalent.csv (130 rows)"
+  },
+  "restraint": {
+    "_about": "RST (HeroInfo.RST) is the hero's commanded soldier type: the client sets hero.SoldierT = heroInfo.RST (decompiled:10428, 17380-17392, 171702-171714). Values map 1=Infantry, 2=Archer, 3=Cavalry, 4=Chariot (same space as SoldierInfo.type). RST also drives the hero's default attribute-point split when RPoint is empty (decompiled:10459-10477, 80892-80916): RST1 favors DEF+Speed, RST2 ATK+Ruin, RST3 DEF+ATK, RST4 Ruin+ATK.",
+    "triangle": {
+      "order": [
+        "Infantry",
+        "Archer",
+        "Cavalry"
+      ],
+      "restrains": {
+        "Infantry": "Archer",
+        "Archer": "Cavalry",
+        "Cavalry": "Infantry"
+      },
+      "note": "Cyclic: Infantry->Archer->Cavalry->Infantry. The restrainer's soldiers are at advantage; the restrained side's soldiers deal reduced damage. Chariot (type 4) has NO restraint relationship.",
+      "no_relationship_types": [
+        "Chariot"
+      ]
+    },
+    "restrained_damage_modifier": {
+      "value_percent": -25,
+      "applies_to": "outgoing damage of the restrained (disadvantaged) soldiers",
+      "text_en": "When Soldiers Are Restrained, Damage Dealt Is Reduced By 25%.",
+      "source": "data/csv/Tips.csv row Id=350 (data-row 17); data/csv/Language_SysTip.csv data-rows 289 & 304",
+      "application": "UNKNOWN_SERVER_SIDE",
+      "application_note": "The -25% is a stated rule; the client never computes it. Battle damage arrives pre-resolved as BehaviourRet.RetVal from the server (decompiled:19506). No client-side soldier-type damage multiplier exists (no 0.75 factor tied to SoldierT in combat code)."
+    }
+  },
+  "preferred_soldier": {
+    "_about": "There is no separate selectable 'preferred soldier' bonus. A hero is locked to the single soldier type given by its RST (hero.SoldierT = heroInfo.RST). The only RST-linked effects found client-side are: (a) it sets which soldier type the hero fields, and (b) it sets the default attribute-point distribution when RPoint is empty (see restraint._about). The per-soldier-type talents (talents.by_type 2-5) are the closest thing to a 'preferred soldier' stat boost, but they are independent of RST and apply to whichever soldier type the talent names.",
+    "matching_bonus_magnitude": "UNKNOWN_SERVER_SIDE",
+    "matching_bonus_note": "No client-side stat bonus is granted simply for a hero using its RST-matching soldier type beyond fielding that type. Searched decompiled + Language_SysTip; no 'preferred/adept/suited soldier' bonus string or multiplier exists. If any such bonus is applied, it is resolved server-side."
+  }
+}
