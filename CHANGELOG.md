@@ -214,6 +214,45 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
     teams use none of the new actions (73/108/109/72/37/14), so `validate_testcase.py` stays
     **9/9** and `validate_baseline.py` stays **6/6**; `smoke_test` and the CLI `run` path still
     work (the smoke fixture's 0% win rate is pre-existing — an arbitrary unbalanced matchup).
+- **Battle Simulator: pursuit throughput + Assault/Combo/Witcher mechanics, calibrated to a
+  FOURTH in-game log** (`notes/sim/calibration_3_pursuit.md` / `_findings.md`, "Pursuit &
+  Throughput", in-game 100% player win / 10 runs). Why: the engine UNDER-counted pursuit attack
+  volume (the bout-count miss). The relevant effects were already in the client data — the engine
+  was simply dropping them.
+  - **Pursuit follow-up hits** — `actionType 151` (a chance-gated 2nd-pursuit, e.g. Flash Fire 45%)
+    and `153` (repeated follow-ups, e.g. Trio ×3 at 40/35/30%) now replay as extra pursuit-channel
+    hits; coefficient + trigger chance are FACTs in the data.
+  - **Assault fires on EVERY pursuit hit** — a standing Assault buff (actionType 70) re-fires on the
+    bearer's subsequent pursuits (Slayer → Chain Reaction → Trio), not only on normals. Scoped to the
+    pursuit channel so the tactical Assault carrier (Patra) is unchanged. Cross-checks the 2nd Assault
+    data point (Niya Real DMG Base 32.29 → ~757→648→468, declining with caster troops).
+  - **Combo** (`actionType 80`, Divine Punish/Hayate passives + Force Majeure → allies) grants a buff
+    that gives a chance for one extra normal-channel attack; **Witcher** (`actionType 33`) gives a
+    per-round chance at a 1-round Pursuit-Skill-DMG-Dealt buff (`pursuit_dmg_buff_value=0.5629`).
+  - **Pursuit damage scales with ATK, not Speed** — the client field `affectedByAttr` is **0 for
+    every direct-damage effect** (normal = tactical = pursuit) and **1 only for Assault**, so the old
+    `pursuit → Speed` assumption was wrong ("Affected By Spd" governs trigger/turn-order). Fixed the
+    channel-stat map (`pursuit → atk`); DoT stays empirically ruin-scaled.
+  - **Pursuit focus-fire** — "Inherit action target" now concentrates a unit's pursuit hits on one
+    enemy (the log shows each hero locking a target) instead of scattering; computed lazily so teams
+    with no pursuit draw no extra RNG (baseline/dot are byte-for-byte unchanged).
+  - **New `simulator/validate_pursuit.py`** builds Matchup-3's exact formations (SusaMaki 28 / Niya
+    117 / Mia 46, all +229 ATK, vs Thiel 99 +DEF / Nicole 87 4★ +ATK / Dolly 108 +DES, Archer,
+    distinct stones) and reports **4/4 GATING targets PASS** (the throughput this matchup calibrates):
+    Niya Assault 81% in the 350–850 band (log 468–757), Assault declines with caster troops (corr
+    −0.63), pursuit throughput ~7 hits/round, battles resolve decisively in ~4 rounds (matching the
+    log). All new mechanics are gated on action types/buff ids absent from the other rosters, so
+    `validate_testcase.py` stays **9/9**, `validate_baseline.py` **6/6**, `validate_dot.py` **7/7**;
+    `smoke_test`/CLI still work.
+  - **KNOWN GAP (documented, not fudged):** the OUTCOME win-rate is ~25% engine vs 100% in-game. In a
+    win the per-hero damage shape matches the log, but the outcome is a high-variance commander-death
+    race and the engine over-credits a surviving tanky enemy commander's multi-hit tactical/AoE kit
+    (Thiel ~110k vs ~31k in-game; +ATK heroes ~0.5×, +DEF/+DES ~1.7–1.9×). Root causes live in the
+    SHARED damage model (the `soldier.atk` offence floor compresses the ATK-vs-DEF spread — raising it
+    breaks the baseline mirror; skills/STONES are counted at max level not their actual level — Rift
+    fires 7 hits at max vs ~4 at lv5; binary commander-death + a squishy +ATK commander). Fixing the
+    win-rate requires a deliberate multi-log recalibration that re-fits all four logs — flagged for a
+    decision, not forced. Catalogued in `data/sim/combat_rules.json` (`calibration_pursuit`).
 
 ### Fixed (from a 4-subagent inconsistency sweep)
 - **Attribute bonuses now render flat vs percent correctly.** `expand_effects` ignored the
