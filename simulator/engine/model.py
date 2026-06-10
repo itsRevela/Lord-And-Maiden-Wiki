@@ -124,6 +124,11 @@ class CombatUnit:
     # resolved skills (list of skill dicts from data, maxed) by category
     skills: list = field(default_factory=list)
 
+    # gear-derived, read-only bonuses (relic = hero's own; rune/awaken = per skill)
+    skill_trigger_bonus: dict = field(default_factory=dict)  # (st,id) -> +trigger prob
+    channel_trigger: dict = field(default_factory=dict)      # 'tactical'/'pursuit' -> +prob
+    skill_coef_bonus: dict = field(default_factory=dict)     # (st,id) -> +coefficient
+
     # mutable combat state
     hp: float = 0.0
     hp_max: float = 0.0
@@ -239,12 +244,22 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
                 # maxed_cumulative.percent is already in percent units (30.0 = +30%)
                 soldier_pct[key] = soldier_pct.get(key, 0.0) + pct
 
+        # --- maxed EQUIPMENT (hero-generic: best item per slot + set bonuses) ---
+        gb = g.gear_bonus
+        for k, v in gb["soldier_pct"].items():
+            soldier_pct[k] = soldier_pct.get(k, 0.0) + v
+        for k, v in gb["soldier_flat"].items():
+            soldier_flat[k] = soldier_flat.get(k, 0.0) + v
+        atk += gb["hero_flat"].get("atk", 0.0); deff += gb["hero_flat"].get("def", 0.0)
+        ruin += gb["hero_flat"].get("ruin", 0.0); spd += gb["hero_flat"].get("speed", 0.0)
+
         soldier = _soldier_stats(g, cfg, s.soldier_type, soldier_pct, soldier_flat)
 
-        # --- troop count: base + level + commander talent flat ---
+        # --- troop count: base + level + commander talent flat + gear Soldiers Qty ---
         troops = cfg.soldier_qty_base + cfg.hero_level * cfg.soldier_qty_per_level + cfg.advance_soldiers_bonus
         if s.is_commander:
             troops += g.commander_talent_flat_soldiers()
+        troops += gb["troops"]
         troops = int(troops)
 
         # --- skills (maxed): main + 2 modular ---
@@ -263,6 +278,49 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             sk = g.skill(*kk)
             if sk:
                 skills.append(sk)
+        equipped_keys = [(int(sk["st"]), int(sk["id"])) for sk in skills]
+
+        # --- relic (hero's OWN only), rune (1, best matching an equipped skill),
+        #     skill-awaken (per equipped skill): trigger-prob & coefficient bonuses ---
+        skill_trigger_bonus: dict = {}
+        skill_coef_bonus: dict = {}
+        rel = g.relic_bonus_for_hero(s.hero_id)   # hero's OWN relic only
+        if rel:
+            rk, rkind, rv = rel["key"], rel["kind"], rel["value"]
+            if rkind == "trigger":
+                skill_trigger_bonus[rk] = skill_trigger_bonus.get(rk, 0.0) + rv
+            elif rkind == "coef":
+                skill_coef_bonus[rk] = skill_coef_bonus.get(rk, 0.0) + rv
+            elif rkind == "attr":
+                st_ = rel.get("stat")
+                if st_ == "atk": atk += rv
+                elif st_ == "def": deff += rv
+                elif st_ == "ruin": ruin += rv
+                elif st_ == "speed": spd += rv
+                elif st_ == "all": atk += rv; deff += rv; ruin += rv; spd += rv
+        # one rune: the equipped skill with the best available rune trigger
+        best_rune = None
+        for kk in equipped_keys:
+            rt = g.rune_trigger_for_skill(kk)
+            if rt and (best_rune is None or rt > best_rune[1]):
+                best_rune = (kk, rt)
+        if best_rune:
+            skill_trigger_bonus[best_rune[0]] = skill_trigger_bonus.get(best_rune[0], 0.0) + best_rune[1]
+        # skill-awaken (maxed) for each equipped skill
+        for kk in equipped_keys:
+            aw = g.awaken_bonus_for_skill(kk)
+            if not aw:
+                continue
+            if aw["kind"] == "coef":
+                skill_coef_bonus[kk] = skill_coef_bonus.get(kk, 0.0) + aw["value"]
+            elif aw["kind"] == "attr":
+                st_ = aw.get("stat"); v = aw["value"]
+                if st_ == "atk": atk += v
+                elif st_ == "def": deff += v
+                elif st_ == "ruin": ruin += v
+                elif st_ == "speed": spd += v
+                elif st_ == "all": atk += v; deff += v; ruin += v; spd += v
+        channel_trigger = {"tactical": gb["trigger_tactical"], "pursuit": gb["trigger_pursuit"]}
 
         u = CombatUnit(
             hero_id=s.hero_id, name=h["name_en"], race_id=h["race"]["id"],
@@ -272,6 +330,8 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             is_commander=s.is_commander, fight_pos=fight_pos_base + i, side=side,
             atk=atk, deff=deff, ruin=ruin, speed=spd,
             troops_max=troops, soldier=soldier, skills=skills,
+            skill_trigger_bonus=skill_trigger_bonus, channel_trigger=channel_trigger,
+            skill_coef_bonus=skill_coef_bonus,
         )
         u.hp_max = u.hp = troops * soldier.hp
         units.append(u)

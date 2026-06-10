@@ -61,6 +61,102 @@ class GameData:
 
         self.round_count = int(self.rules["round_count"])
 
+        # --- gear indices (equipment is hero-generic; relic is hero-specific;
+        #     rune & skill-awaken are skill-specific) ---
+        self._index_gear()
+
+    # ---- gear ----------------------------------------------------------
+    def _index_gear(self):
+        # relic by OWNER hero id (a hero can only equip its own relic)
+        self.relic_by_hero = {}
+        for rel in self.gear.get("hero_relics", []):
+            hid = rel.get("hero_id")
+            if hid not in (None, ""):
+                self.relic_by_hero[int(hid)] = rel
+        # rune by the skill it boosts; skill-awaken by skill
+        self.rune_by_skill = {}
+        for rune in self.gear.get("runes", []):
+            bs = rune.get("boosted_skill") or {}
+            try:
+                key = (int(bs["skill_type_id"]), int(bs["skill_id"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+            # keep the highest-trigger rune for a given skill
+            prev = self.rune_by_skill.get(key)
+            if not prev or float(rune.get("trigger_chance_max_pct") or 0) > float(prev.get("trigger_chance_max_pct") or 0):
+                self.rune_by_skill[key] = rune
+        self.awake_by_skill = {}
+        for aw in self.gear.get("skill_awake", []):
+            try:
+                key = (int(aw["skill_type_id"]), int(aw["skill_id"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+            self.awake_by_skill[key] = aw
+        self._compute_gear_bonus()
+
+    def _slot_items(self):
+        """Yield (slot_id, items[]) for the gear slots + accessory slots. Both
+        sections may be a list of {slot_id,items} or a dict keyed by slot id."""
+        for section in ("equipment", "accessories"):
+            sec = self.gear.get(section, [])
+            rows = sec.values() if isinstance(sec, dict) else sec
+            for row in rows:
+                if isinstance(row, dict):
+                    yield int(row.get("slot_id", 0)), row.get("items", [])
+
+    # attr_en -> our internal stat keys
+    _SOLDIER_ATTR = {"Soldier HP": "HP", "Soldier ATK": "ATK", "Soldier DEF": "DEF",
+                     "Soldier DES": "DES", "Soldier March Spd": "MarchSpd"}
+    _HERO_ATTR = {"Hero ATK": "atk", "Hero DEF": "def", "Hero DES": "ruin",
+                  "Hero ATK Spd": "speed"}
+
+    def _accumulate(self, effects, acc):
+        for e in effects or []:
+            attr = e.get("attr") or e.get("attr_en") or ""
+            kind = e.get("kind") or ""
+            try:
+                val = float(e.get("value"))
+            except (TypeError, ValueError):
+                continue
+            if attr in self._SOLDIER_ATTR:
+                k = self._SOLDIER_ATTR[attr]
+                if kind == "percent":
+                    acc["soldier_pct"][k] = acc["soldier_pct"].get(k, 0.0) + val
+                else:
+                    acc["soldier_flat"][k] = acc["soldier_flat"].get(k, 0.0) + val
+            elif attr in self._HERO_ATTR:
+                acc["hero_flat"][self._HERO_ATTR[attr]] = acc["hero_flat"].get(self._HERO_ATTR[attr], 0.0) + val
+            elif attr == "Hero Soldiers Quantity" or attr == "Soldiers Quantity":
+                acc["troops"] += val
+            elif "Tactical Skill Activation" in attr:
+                acc["trigger_tactical"] += val / 100.0 if kind == "percent" else val
+            elif "Pursuit Skill Activation" in attr:
+                acc["trigger_pursuit"] += val / 100.0 if kind == "percent" else val
+
+    def _compute_gear_bonus(self):
+        """Hero-generic 'maxed equipment' = best item per slot (by power) + any set
+        bonus that triggers among the chosen pieces. Same for every hero."""
+        acc = {"soldier_pct": {}, "soldier_flat": {}, "hero_flat": {},
+               "troops": 0.0, "trigger_tactical": 0.0, "trigger_pursuit": 0.0}
+        chosen_sets = {}
+        for slot_id, items in self._slot_items():
+            if not items:
+                continue
+            best = max(items, key=lambda it: float(it.get("power") or 0))
+            self._accumulate(best.get("effects"), acc)
+            sid = best.get("set_id")
+            if sid not in (None, "", "0"):
+                chosen_sets[sid] = chosen_sets.get(sid, 0) + 1
+        # set bonuses (3pc / 6pc) for any set with enough chosen pieces
+        for sb in self.gear.get("set_bonuses", []):
+            sid = str(sb.get("set_id"))
+            n = chosen_sets.get(sid, 0)
+            if n >= 3:
+                self._accumulate(sb.get("three_piece"), acc)
+            if n >= 6:
+                self._accumulate(sb.get("six_piece"), acc)
+        self.gear_bonus = acc
+
     # ---- lookups -------------------------------------------------------
     def hero(self, hid: int) -> dict:
         return self.heroes[int(hid)]
@@ -80,6 +176,76 @@ class GameData:
 
     def troop_max_stats(self, soldier_type_id: int) -> dict:
         return self.troops[int(soldier_type_id)]["max_tier_stats"]
+
+    def relic_bonus_for_hero(self, hero_id: int):
+        """A hero equips ONLY its own relic (e.g. Patra -> 'Patra Relic'). Returns the
+        bonus it grants to the skill it enhances, routed by effect kind:
+        {'key':(st,id), 'kind':'trigger'|'coef'|'attr', 'value':float, 'stat':?} or None.
+        Most relics give 'Skill Trigger Probability'; some give a coefficient/attribute."""
+        rel = self.relic_by_hero.get(int(hero_id))
+        if not rel:
+            return None
+        es = rel.get("enhanced_skill") or {}
+        try:
+            key = (int(es["skill_type_id"]), int(es["skill_id"]))
+        except (KeyError, TypeError, ValueError):
+            return None
+        val = 0.0
+        for tok in rel.get("effect_tokens_max") or []:
+            try:
+                val = float(tok.get("value"))
+            except (TypeError, ValueError):
+                pass
+        txt = (rel.get("max_bonus") or "").lower()
+        if "trigger probability" in txt:
+            return {"key": key, "kind": "trigger", "value": val}
+        if "coefficient" in txt:
+            return {"key": key, "kind": "coef", "value": val}
+        stat = None
+        for kw, s in (("atk spd", "speed"), ("atk", "atk"), ("def", "def"),
+                      ("des", "ruin"), ("ruin", "ruin"), ("spd", "speed"), ("speed", "speed")):
+            if kw in txt:
+                stat = s
+                break
+        if "all attribute" in txt:
+            stat = "all"
+        if stat:
+            return {"key": key, "kind": "attr", "value": val, "stat": stat}
+        return None
+
+    def rune_trigger_for_skill(self, key):
+        """Best rune for an equipped skill -> +trigger_prob (max-level chance), or None."""
+        rune = self.rune_by_skill.get(tuple(key))
+        if not rune:
+            return None
+        try:
+            return float(rune.get("trigger_chance_max_pct") or 0) / 100.0
+        except (TypeError, ValueError):
+            return None
+
+    def awaken_bonus_for_skill(self, key):
+        """Maxed skill-awaken bonus for an equipped skill. Returns
+        {'kind':'coef'|'attr', 'value':float, 'stat':<for attr>} or None."""
+        aw = self.awake_by_skill.get(tuple(key))
+        if not aw:
+            return None
+        try:
+            val = float(aw.get("max_buff_value"))
+        except (TypeError, ValueError):
+            return None
+        bonus_txt = (aw.get("max_bonus") or "").lower()
+        if "coefficient" in bonus_txt:
+            return {"kind": "coef", "value": val}
+        # attribute increase -> figure out which hero stat
+        stat = None
+        for kw, s in (("atk", "atk"), ("def", "def"), ("des", "ruin"),
+                      ("ruin", "ruin"), ("spd", "speed"), ("speed", "speed")):
+            if kw in bonus_txt:
+                stat = s
+                break
+        if "all attribute" in bonus_txt:
+            stat = "all"
+        return {"kind": "attr", "value": val, "stat": stat}
 
     # ---- team-composition bonuses -------------------------------------
     def soldier_combo(self, soldier_type_id: int, matching_count: int):

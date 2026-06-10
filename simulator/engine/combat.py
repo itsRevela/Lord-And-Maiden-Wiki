@@ -214,7 +214,8 @@ class Battle:
 
     def _fire_skill(self, caster: CombatUnit, sk, round_idx: int):
         chan = self._channel_for(sk)
-        coef = float(sk.get("maxedValue") or 0.0)
+        key = (int(sk["st"]), int(sk["id"]))
+        coef = float(sk.get("maxedValue") or 0.0) + caster.skill_coef_bonus.get(key, 0.0)
         fired = False
         for eff in sk.get("effects", []):
             at = eff.get("actionType")
@@ -288,7 +289,7 @@ class Battle:
         if not self._has(u, CONTROL_SILENCE):
             for sk in u.skills:
                 if int(sk["st"]) == 2 and round_no >= self._skill_from_round(sk):
-                    if self.rng.random() < self._trigger_prob(sk):
+                    if self.rng.random() < self._trigger_prob(sk, u):
                         self._fire_skill(u, sk, round_idx)
         # Normal attack, unless disarmed
         did_normal = False
@@ -301,7 +302,7 @@ class Battle:
         if did_normal:
             for sk in u.skills:
                 if int(sk["st"]) == 4 and round_no >= self._skill_from_round(sk):
-                    if self.rng.random() < self._trigger_prob(sk):
+                    if self.rng.random() < self._trigger_prob(sk, u):
                         self._fire_skill(u, sk, round_idx)
 
     def _skill_from_round(self, sk) -> int:
@@ -314,7 +315,7 @@ class Battle:
                     pass
         return 1
 
-    def _trigger_prob(self, sk) -> float:
+    def _trigger_prob(self, sk, unit=None) -> float:
         p = sk.get("skillP")
         if p is None:
             p = sk.get("triggerProbAtMax", 1.0)
@@ -322,6 +323,10 @@ class Battle:
             p = float(p)
         except (ValueError, TypeError):
             p = 1.0
+        if unit is not None:
+            key = (int(sk["st"]), int(sk["id"]))
+            p += unit.skill_trigger_bonus.get(key, 0.0)            # relic / rune
+            p += unit.channel_trigger.get(self._channel_for(sk), 0.0)  # gear 131/132
         return max(0.0, min(1.0, p))
 
     # ---- DoT before-action phase --------------------------------------
