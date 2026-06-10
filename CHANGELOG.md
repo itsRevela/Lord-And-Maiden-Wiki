@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Battle Simulator** (`simulator/`) — a configurable, multi-core Monte-Carlo model of
+  the game's 3v3, 8-round combat that ranks the best build for a chosen 3-hero formation.
+  - **Phase-1 catalogue → `data/sim/*.json`** (machine-readable): all 416 skills (decoded
+    12-token `Effect`/`Buff` layout: actionType/fromRound/targetCat/targetCount/coef…),
+    76 status effects with behaviours, equipment/accessories/relics/runes/skill-awaken maxed
+    values, troop T6 stats + soldier & race combination effects + affection + talents, 113
+    playable heroes (maxed Lv 80 stats, skill loadout, RST), and the combat-rules model.
+    Cited reference docs live in `notes/sim/*.md`.
+  - **Key finding:** combat is **server-authoritative** — the client only replays a battle
+    log (`FightBehaviour`/`BehaviourRet`), so the exact damage formula is **not** in the
+    client. The simulator is therefore a *transparent* rules-based model; every server-side
+    unknown is a documented, tunable `ModelConfig` knob (tagged `ASSUMPTION`), and rankings
+    are model-relative but comparable across builds.
+  - **Engine** (`simulator/engine/`): maxed-build aggregation + a scale-free exchange damage
+    model (troops = HP), an 8-round resolver with the **rematch** mechanic (undecided after 8
+    rounds → fresh bout, troop counts carried over, until a commander is wiped), turn order by
+    ATK Spd, activation order Passive→Strategic→Tactical→Normal→Pursuit, restraint ×0.75,
+    20/40/40 targeting, status effects; and a combinatorial multi-core search (commander ×
+    troop combos × opponent pool) ranked by win rate and early/mid/late/all damage windows.
+    Validated unbiased (mirror match ≈ 50 %).
+  - **UI:** Next.js dashboard (hero pickers with datamined portraits, commander toggle,
+    options, live progress, ranked results, JSON export) + a Flask API + a UnityPy portrait
+    extractor (113/113 heroes). Combat catalogue → proper wiki pages is the remaining step.
 - **Reference/Game-Hints.md** — catalogues the game's in-game hint/help systems (Hero Info →
   Details per-hero, loading-screen Tips, feature "?" buttons, skill/talent tooltips, system
   pop-ups) and consolidates the **battle rules & calculations** they reveal. Surfaces several

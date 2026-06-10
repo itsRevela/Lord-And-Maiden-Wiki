@@ -144,11 +144,22 @@ data-driven generator turns the configs into Markdown. See
 ```
 wiki/        the wiki — read this (start at wiki/README.md or Game-Overview.md)
 data/        extracted game configs the wiki is generated from (csv + localization)
+             (data/sim/ = machine-readable combat catalogue for the simulator)
 tools/       the generator (tools/wikigen/) and extraction scripts
-notes/       methodology, recon and formula notes
+simulator/   the Battle Simulator — engine + Next.js UI (see simulator/README.md)
+notes/       methodology, recon and formula notes (notes/sim/ = combat decode)
 decompiled/  decompiled C# from the game DLLs   (gitignored)
 extracted/   raw bundle/XML outputs             (gitignored)
 ```
+
+## ⚔️ Battle Simulator
+
+`simulator/` is a configurable, multi-core **Monte-Carlo battle simulator**: pick 3
+heroes and it ranks the best formation (commander + troop types) by win rate and by
+early / mid / late / all-round damage, across a pool of opponent formations. Because the
+game resolves combat **server-side**, it's a *transparent rules-based model* (every
+server-side unknown is a documented, tunable knob — rankings are model-relative but
+comparable across builds). See **[`simulator/README.md`](simulator/README.md)**.
 
 **Regenerate the wiki** (Python 3 + `UnityPy`):
 
