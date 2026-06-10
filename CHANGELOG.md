@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Quests/Knowledge-Quiz.md** — documents the daily Knowledge Quiz event (Fantasy Plaza,
+  once/day, timed multiple-choice, Life-Point rewards, share-to-chat help feature granting
+  Friendship Points up to a daily cap). Investigation confirmed the **question bank is
+  server-delivered** (`SCLogic_GetRandomQuestion` reads every question/option/answer from the
+  network; localization holds only UI labels), so the actual questions/options/answers are
+  **not in the client files** and cannot be data-mined — the page states this explicitly
+  rather than guessing. README badge → 186.
 - **Servers, Worlds & Regions** section (from a 2-subagent decompiled-code investigation):
   - **World/Servers-and-Realms.md** — the server/realm model (Group-N clusters, status
     lights, NEW/HOT badges, per-server characters, no client transfer), cross-server chat

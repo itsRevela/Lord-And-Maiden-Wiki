@@ -5,7 +5,7 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-185-1f6feb)
+![Pages](https://img.shields.io/badge/pages-186-1f6feb)
 ![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
@@ -91,6 +91,7 @@ cross-checked against the source files.
 [Item Collections](wiki/Codex/Item-Collections.md) ·
 [Reward Boxes](wiki/Codex/Reward-Boxes.md) ·
 [Quests & Events](wiki/Quests/Quests-and-Events.md) ·
+[Knowledge Quiz](wiki/Quests/Knowledge-Quiz.md) ·
 [Minigames](wiki/Quests/Minigames.md) ·
 [Story & Plot](wiki/Lore/Story.md) ·
 [Dating Events](wiki/Lore/Dating-Events.md) ·

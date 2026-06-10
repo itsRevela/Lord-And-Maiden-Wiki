@@ -73,6 +73,7 @@
 
 ### Quests & Events
 - [Event Schedule](Quests/Event-Schedule.md)
+- [Knowledge Quiz](Quests/Knowledge-Quiz.md)
 - [Minigames](Quests/Minigames.md)
 - [Quests & Events](Quests/Quests-and-Events.md)
 
