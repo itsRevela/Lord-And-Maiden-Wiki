@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Heroes/Relics.md** — the Hero Relic (equipment) system, from a decompiled-code
+  investigation. Relics are per-hero artifacts (PropInfo type 5, 98 of them) that enhance
+  the owning hero's **Talent Skill**, equipped in the hero's Relic slot. Documents the full
+  lifecycle (obtain via Relic Summon / boxes / **50 Ruby → a chosen 5★**; **upgrade with
+  duplicates** to max; **must be max level to equip**; **dismantle → Ruby**), the Lv1–4 (★4)
+  / Lv1–5 (★5) scaling, the `★ × level × 1800` Score, and the Lord-13 unlock gate — plus a
+  full ★5/★4 table of every hero's relic bonus at Lv 1 and at max. Server-side unknowns
+  (exact upgrade dupe counts, Ruby yield, gacha rates) are flagged, not guessed.
+- Distinct from the existing **Relic Dungeons** (World) page; the Glossary "Relic" entry was
+  corrected (relics are hero Talent-Skill artifacts, not standalone companions). Linked from
+  the per-hero roster footers and README. README badge → 187.
 - **Quests/Knowledge-Quiz.md** — documents the daily Knowledge Quiz event (Fantasy Plaza,
   once/day, timed multiple-choice, Life-Point rewards, share-to-chat help feature granting
   Friendship Points up to a daily cap). Investigation confirmed the **question bank is

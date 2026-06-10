@@ -69,7 +69,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 | Lord Outfit / Fashion | Cosmetic Lord outfit sets (Headwear + Clothing + Accessory); only one set's stats are active at a time, but Fashion Points from all owned sets stack into a ranking. See [Lord Outfits](../Progression/Lord-Outfits.md). |
 | Magic Messenger | A summonable pet/companion that grants hero ATK / DEF / DES and attack-speed bonuses. |
 | Prestige | An account track: **Prestige level** grants escalating daily gifts + passive stat bonuses; **Prestige Points** (from raiding Barbarian Camps) govern refugee recruitment. See [Player Systems](../Progression/Player-Systems.md). |
-| Relic | A summonable companion/unit type (via Relic Summon Scrolls), separate from heroes. |
+| Relic | A hero-specific artifact (one per hero) that enhances **that hero's Talent Skill**, equipped in the hero's Relic slot. Summoned/combined, then levelled to max before equipping. See [Hero Relics](../Heroes/Relics.md). |
 | Set bonus | The permanent stat bonus (+ Power) from completing a Codex collection; hero-codex bonuses scale with Advance level. |
 | Style / Charm | A level track whose milestones grant city-output and soldier bonuses. See [Style](../Progression/Style.md). |
 | Title / Astral Badges | Astral Badges (from Barbarian Towers / World Bosses) raise your **Title** - which buffs troop stats - and are spent in the Title Shop. |

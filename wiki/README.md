@@ -19,6 +19,7 @@
 
 ### Heroes & Lord
 - [AI / Enemy Heroes](Heroes/AI-Heroes.md)
+- [Hero Relics](Heroes/Relics.md)
 - [Hero Skins](Heroes/Hero-Skins.md)
 - [Hero Stat Leaderboards (Lv 80)](Heroes/Hero-Leaderboards.md)
 - [Hero Talents](Heroes/Hero-Talents.md)

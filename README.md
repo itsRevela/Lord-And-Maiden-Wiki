@@ -5,7 +5,7 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-186-1f6feb)
+![Pages](https://img.shields.io/badge/pages-187-1f6feb)
 ![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
@@ -37,6 +37,7 @@ cross-checked against the source files.
 [Lv 80 Leaderboards](wiki/Heroes/Hero-Leaderboards.md) ·
 [Skill Catalog](wiki/Heroes/Skills.md) ·
 [Hero Talents](wiki/Heroes/Hero-Talents.md) ·
+[Hero Relics](wiki/Heroes/Relics.md) ·
 [Lord Talents](wiki/Heroes/Lord-Talents.md) ·
 [Hero Skins](wiki/Heroes/Hero-Skins.md) ·
 [AI / Enemy Heroes](wiki/Heroes/AI-Heroes.md) ·
