@@ -33,3 +33,6 @@ simulator/web/.next/
 simulator/web/out/
 simulator/**/__pycache__/
 simulator/runs/
+# Extracted hero portraits are copyrighted game art -> never commit (run
+# simulator/tools/extract_portraits.py locally to populate these).
+simulator/web/public/portraits/
