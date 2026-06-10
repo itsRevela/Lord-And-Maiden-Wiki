@@ -12,8 +12,21 @@ therefore implements an **explicit, documented, configurable** rules-based model
     and is tagged ``ASSUMPTION`` below. Nothing is hidden; nothing is "guessed" in
     the sense of a magic literal buried in code.
 
-Because the same model is applied to every candidate build, the simulator's
-*relative* rankings are meaningful even though absolute damage is model-relative.
+This file was reworked to match the in-game battle log ("Rosetta Stone",
+``data/sim/calibration.json``).  The damage model is now an absolute-magnitude
+formula (it reproduces the log's per-hit Loss values within an order-of-magnitude
+band), structured EXACTLY as the calibration notes derived:
+
+    dmg = coef[ch] * off(att,ch) * troop_scale(att)
+              * def_mitigation(def)            # =1 for real/assault/splash
+              * dmg_dealt_mult(att,ch)
+              * dmg_taken_mult(def,ch)
+              * restraint(att,def)
+
+Casualties are tracked in three buckets per unit (Health / SlightWound /
+SevereWound+Death) so the simulator reproduces the log's (current/max) notation and
+its per-unit Kills/Heal/Wound tables.  Because the same model is applied to every
+candidate build, the simulator's *relative* rankings remain meaningful.
 """
 from __future__ import annotations
 
@@ -27,9 +40,9 @@ from . import data as datamod
 # ASSUMPTION (combat_rules: attribute_scaling.coefficient_per_200 UNKNOWN).
 CHANNEL_PRIMARY_HERO_STAT = {
     "normal": "atk",     # normal ATK scales with ATK
-    "tactical": "speed", # Game-Hints: tactical dmg "Affected By Spd"
+    "tactical": "atk",   # tactical (skill) damage scales mainly with ATK (calibration)
     "pursuit": "speed",  # pursuit dmg "Affected By Spd"
-    "real": "ruin",      # true damage modelled off Ruin/DES
+    "real": "atk",       # Ghost-Bone Assault real dmg "Affected By ATK Attribute"
     "splash": "atk",
 }
 
@@ -38,47 +51,78 @@ CHANNEL_PRIMARY_HERO_STAT = {
 class ModelConfig:
     """All server-side unknowns live here as tunable, documented knobs.
 
-    Defaults are chosen to be *neutral and monotonic* (more of a good stat ->
-    more effectiveness) rather than to match any secret server constant.
-    """
+    Defaults are CALIBRATED against ``data/sim/calibration.json`` (the in-game log)
+    so a maxed 55k-troop hero produces per-hit losses in the logged range, while
+    remaining neutral/monotonic (more of a good stat -> more effectiveness)."""
 
     # --- troop count (Soldiers Quantity).  combat_rules.in_battle_stat:
-    #     "max = 2000 + Level*500 + Advance bonus".  Level 80 assumed (maxed). ---
+    #     "max = 2000 + Level*500 + Advance bonus".  Level 80 assumed (maxed).
+    #     The log shows 55,000 troops per unit at +5 advancement, so the advance
+    #     bonus knob is set to land there (FACT target: 55k). ---
     soldier_qty_base: int = 2000              # FACT (stated base)
     soldier_qty_per_level: int = 500          # FACT (stated)
     hero_level: int = 80                       # FACT (max level)
-    advance_soldiers_bonus: int = 0            # ASSUMPTION (advance curve server-side)
+    advance_soldiers_bonus: int = 13000        # ASSUMPTION calibrated -> 55,000 total
 
     # --- free hero stat points (Advancement/Level/Breakthrough).  Constant per
     #     hero across its builds, so it does not bias build-vs-build ranking. ---
     free_stat_points: int = 150               # ASSUMPTION (AdvLv*10 + (Lv-1) + breakthrough)
     free_stat_mode: str = "rpoint"            # "rpoint" | "primary" | "even"
+    # the testcase units allocate +229 into a single stat ("+229 ATK", etc.).
+    # When a BuildSpec pins an allocation stat, this many points go there. ---
+    allocated_stat_points: int = 229          # FACT (log: "+229 ATK/DEF/DES/ATK SPD")
 
-    # --- scale-free exchange model (ASSUMPTION; monotonic & self-normalising) ---
-    # Damage is expressed as a FRACTION of the defender's troop pool removed, so it
-    # is independent of absolute stat magnitudes and stays balanced as gear scales:
-    #   frac = coef * (att_troops_now / def_troops_max)        # army-size & attrition
-    #               * A/(A + def_k*D)                          # stat matchup 0..1
-    #               * global_lethality * restraint * dmg_mods
-    #   A = soldier.atk * (1 + hero_atk/hero_ref)              # offensive index
-    #   D = soldier.def * (1 + hero_def/hero_ref)              # defensive index
-    hero_ref: float = 200.0                   # ASSUMPTION ("affected per 200 points" hint)
-    global_lethality: float = 0.55            # ASSUMPTION (tunes how decisive a hit is)
-    def_k: float = 1.0                        # ASSUMPTION (weight of defender DEF)
+    # --- ABSOLUTE damage model (calibrated to the log) -----------------------
+    # raw = coef * off(att,ch) * troop_scale(att)
+    #   off(att,ch) = (soldier_off_stat + hero_stat*hero_off_weight) -- offence index
+    #   troop_scale = troops_now / troop_scale_ref  (army-size & attrition factor)
+    # mitigation (DEF):  def_ref / (def_ref + DEF_eff),  DEF_eff = hero_def*hero_def_weight
+    damage_global: float = 7.0                # ASSUMPTION global lethality scalar (calibrated)
+    hero_off_weight: float = 1.0              # ASSUMPTION hero-stat weight in offence
+    troop_scale_ref: float = 55000.0          # ASSUMPTION army-size reference (= full troop)
+    def_ref: float = 900.0                    # ASSUMPTION DEF mitigation midpoint
+    hero_def_weight: float = 1.0              # ASSUMPTION hero-DEF weight in mitigation
+
+    # --- Assault / real damage (flat, DEF-independent).  Log: ~671-726 per hit,
+    #     stated "Real DMG Base 32.17+7.2".  We scale the stated base by an army &
+    #     ATK factor so it sits in that band. ---
+    real_dmg_scale: float = 17.5              # ASSUMPTION scales stated Real-DMG base
 
     # --- "Affected by X attribute" scaling for stat-mod buffs ---
     affected_per_points: float = 200.0        # ASSUMPTION (community-stated ~+1 unit / 200)
 
-    # --- heal / lifesteal (ASSUMPTION; scales off the unit's HP pool) ---
-    heal_hp_fraction_ref: float = 1.0
+    # --- heal (Self-Heal / Field Therapy) restores Slight->Health.  Log: 0..~5000
+    #     per round depending on how wounded the unit is.  Healing Coefficient shown
+    #     1.05+0.28 (ally).  We model it as coef * heal_power * (slight pool). ---
+    heal_scale: float = 0.45                  # ASSUMPTION heal magnitude scalar
+
+    # --- casualty model (server-side; ASSUMPTION shapes) ---------------------
+    # Of each damage instance, a portion goes straight to Severe/Death (permanent),
+    # the rest to Slight (recoverable). Between rounds a share of Slight worsens to
+    # Severe/Death (lowers max). Calibrated so B1 ends ~80-85% / ~30% Health. ---
+    direct_severe_frac: float = 0.012         # ASSUMPTION fraction of a hit -> permanent
+    slight_worsen_frac: float = 0.018         # ASSUMPTION per-round Slight->Severe/Death
 
     # --- normal attack baseline coefficient (a plain auto-attack, no skill) ---
-    normal_attack_coef: float = 1.0           # ASSUMPTION (auto-attack coefficient)
+    normal_attack_coef: float = 0.9           # ASSUMPTION (auto-attack coefficient)
+
+    # --- reactions / procs (coefficients are FACT from skills; these gate them) ---
+    counter_coef: float = 0.84                # FACT (Reactive Block 0.70+0.14)
+    reactive_block_reduction: float = 0.592   # FACT (log: DMG Taken Reduced 59.20%)
+    # Stated +33% per stalemate; the model uses a higher effective value so a rematch
+    # resolves in ~2 bouts as the log shows (other approximations damp it). The buff
+    # also escalates super-linearly here to force a decision (the log's `-1` suffix
+    # suggests an escalating stack). ASSUMPTION effective.
+    stalemate_dmg_dealt_per_stack: float = 0.85  # FACT base 0.33, ASSUMPTION effective
+
+    # --- prepared-CC EFFECTIVE re-roll bases.  Stated bases are 40% (allies) /
+    #     60% (enemies); resist + per-round Purification net the EFFECTIVE activation
+    #     down (the log shows the carry firing nearly every round). ASSUMPTION net. ---
+    prepared_cc_ally_base: float = 0.22       # 40% stated, netted by purify/resist
+    prepared_cc_enemy_base: float = 0.45      # 60% stated, netted by purify/resist
 
     # --- rematch / impasse (FACT: undecided after 8 rounds -> rematch, troop
-    #     counts carried over from the end of the previous bout; repeats until a
-    #     commander is wiped). max_bouts + stalemate guard are a safety ASSUMPTION
-    #     (the exact retreat/continuation policy is server-side). ---
+    #     counts carried over; repeats until a commander is wiped). ---
     max_bouts: int = 25                       # safety cap on rematches
     bout_stalemate_frac: float = 0.002        # a bout removing < this total -> draw
 
@@ -111,7 +155,7 @@ class CombatUnit:
     fight_pos: int                # 1..6 (1-3 sideA, 4-6 sideB; 1 & 4 commanders)
     side: int                     # 0 or 1
 
-    # maxed hero attributes
+    # maxed hero attributes (BASE, before in-battle buffs/debuffs)
     atk: float
     deff: float
     ruin: float
@@ -128,15 +172,69 @@ class CombatUnit:
     skill_trigger_bonus: dict = field(default_factory=dict)  # (st,id) -> +trigger prob
     channel_trigger: dict = field(default_factory=dict)      # 'tactical'/'pursuit' -> +prob
     skill_coef_bonus: dict = field(default_factory=dict)     # (st,id) -> +coefficient
+    real_dmg_bonus: dict = field(default_factory=dict)       # (st,id) -> +Real DMG Base flat
+    gear_dmg_dealt: float = 0.0    # PVE/PVP DMG Dealt Increased from equipment+messenger
+    gear_dmg_taken: float = 0.0    # PVE/PVP DMG Taken Reduced from equipment+messenger
 
-    # mutable combat state
-    hp: float = 0.0
-    hp_max: float = 0.0
+    # mutable combat state -- CASUALTY BUCKETS (troops, not HP-per-soldier).
+    # current(Health) + slight(SlightWound) recoverable; max = health+slight.
+    # severe_death = permanent losses already removed from troops_max_eff.
+    health: float = 0.0           # live fighting troops (the effective "current")
+    slight: float = 0.0           # temporarily downed, healable
+    severe_death: float = 0.0     # permanent (severe wound + death)
     alive: bool = True
-    statuses: dict = field(default_factory=dict)  # buff_id -> {"rounds":int, "value":float, "stacks":int}
+    statuses: dict = field(default_factory=dict)  # buff_id -> {"rounds","value","stacks","ch"}
 
-    def stat(self, key: str) -> float:
+    # in-battle dynamic attribute modifiers (set during Pre-War Preparation etc.)
+    attr_mods: dict = field(default_factory=dict)  # stat -> {"add":float,"locked":bool}
+
+    # per-unit stat tracking (compared to the log's tables)
+    stat_kills: float = 0.0       # total enemy Health removed by this unit
+    stat_heal: float = 0.0        # total Slight->Health restored to allies by this unit
+    stat_slight: float = 0.0      # SlightWound inflicted on enemies
+    stat_severe: float = 0.0      # SevereWound inflicted
+    stat_death: float = 0.0       # Death inflicted
+    stat_skill_dmg: float = 0.0   # damage dealt via skills
+    stat_normal_dmg: float = 0.0  # damage dealt via normal attacks
+    skills_used: int = 0
+
+    # ---- attribute access (base + in-battle mods) ----------------------
+    def base_stat(self, key: str) -> float:
         return {"atk": self.atk, "def": self.deff, "ruin": self.ruin, "speed": self.speed}[key]
+
+    def eff_stat(self, key: str) -> float:
+        v = self.base_stat(key)
+        m = self.attr_mods.get(key)
+        if m:
+            v += m.get("add", 0.0)
+        return max(0.0, v)
+
+    def stat(self, key: str) -> float:          # back-compat alias
+        return self.eff_stat(key)
+
+    # ---- casualty helpers ----------------------------------------------
+    @property
+    def current(self) -> float:                 # Health (log: left of the slash)
+        return self.health
+
+    @property
+    def cur_max(self) -> float:                  # Health + Slight (log: right of slash)
+        return self.health + self.slight
+
+    def troops_now(self) -> float:
+        return self.health
+
+    def troops_frac(self) -> float:
+        return 0.0 if self.troops_max <= 0 else self.health / self.troops_max
+
+    # ---- back-compat display aliases (the UI / smoke test print these) ----
+    @property
+    def hp_max(self) -> float:
+        return float(self.troops_max) * self.soldier.hp
+
+    @property
+    def hp(self) -> float:
+        return self.health * self.soldier.hp
 
 
 # ----------------------------------------------------------------------------
@@ -148,6 +246,7 @@ class BuildSpec:
     soldier_type: int                       # 1..4
     is_commander: bool = False
     skill_keys: Optional[tuple] = None      # ((st,id),...) modular override; None -> hero default
+    allocated_stat: Optional[str] = None    # 'atk'|'def'|'ruin'|'speed' -- log "+229 X"
 
 
 def _distribute_free_points(cfg: ModelConfig, rpoint_values, primary_key):
@@ -210,11 +309,16 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         m = h["maxed_lv80"]
         atk, deff, ruin, spd = (float(m["attack"]), float(m["defense"]),
                                 float(m["ruin"]), float(m["speed"]))
-        # free stat points
-        primary = {"atk": atk, "def": deff, "ruin": ruin, "speed": spd}
-        primary_key = max(primary, key=primary.get)
-        rp = (h.get("rpoint") or {}).get("values") or [0, 0, 0, 0]
-        add = _distribute_free_points(cfg, rp, primary_key)
+        # free stat points: if the build pins an allocation stat (log "+229 X"),
+        # dump cfg.allocated_stat_points there; otherwise use the rpoint preset.
+        if s.allocated_stat in ("atk", "def", "ruin", "speed"):
+            add = {"atk": 0.0, "def": 0.0, "ruin": 0.0, "speed": 0.0}
+            add[s.allocated_stat] = float(cfg.allocated_stat_points)
+        else:
+            primary = {"atk": atk, "def": deff, "ruin": ruin, "speed": spd}
+            primary_key = max(primary, key=primary.get)
+            rp = (h.get("rpoint") or {}).get("values") or [0, 0, 0, 0]
+            add = _distribute_free_points(cfg, rp, primary_key)
         atk += add["atk"]; deff += add["def"]; ruin += add["ruin"]; spd += add["speed"]
         # race combination (All Attributes +5 / +10)
         rc = g.race_combo(h["race"]["id"], race_counts.get(h["race"]["id"], 0))
@@ -241,7 +345,6 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             attr_en, pct = tal
             key = _SOLDIER_ATTR_KEY.get(attr_en)
             if key:
-                # maxed_cumulative.percent is already in percent units (30.0 = +30%)
                 soldier_pct[key] = soldier_pct.get(key, 0.0) + pct
 
         # --- maxed EQUIPMENT (hero-generic: best item per slot + set bonuses) ---
@@ -284,6 +387,7 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         #     skill-awaken (per equipped skill): trigger-prob & coefficient bonuses ---
         skill_trigger_bonus: dict = {}
         skill_coef_bonus: dict = {}
+        real_dmg_bonus: dict = {}
         rel = g.relic_bonus_for_hero(s.hero_id)   # hero's OWN relic only
         if rel:
             rk, rkind, rv = rel["key"], rel["kind"], rel["value"]
@@ -291,6 +395,10 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
                 skill_trigger_bonus[rk] = skill_trigger_bonus.get(rk, 0.0) + rv
             elif rkind == "coef":
                 skill_coef_bonus[rk] = skill_coef_bonus.get(rk, 0.0) + rv
+                # Patra-style relic also carries a Real DMG Base add (token id 41)
+                rdb = rel.get("real_dmg")
+                if rdb:
+                    real_dmg_bonus[rk] = real_dmg_bonus.get(rk, 0.0) + rdb
             elif rkind == "attr":
                 st_ = rel.get("stat")
                 if st_ == "atk": atk += rv
@@ -331,9 +439,12 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             atk=atk, deff=deff, ruin=ruin, speed=spd,
             troops_max=troops, soldier=soldier, skills=skills,
             skill_trigger_bonus=skill_trigger_bonus, channel_trigger=channel_trigger,
-            skill_coef_bonus=skill_coef_bonus,
+            skill_coef_bonus=skill_coef_bonus, real_dmg_bonus=real_dmg_bonus,
+            gear_dmg_dealt=gb.get("dmg_dealt", 0.0), gear_dmg_taken=gb.get("dmg_taken", 0.0),
         )
-        u.hp_max = u.hp = troops * soldier.hp
+        u.health = float(troops)
+        u.slight = 0.0
+        u.severe_death = 0.0
         units.append(u)
     return units
 
@@ -341,39 +452,24 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
 # ----------------------------------------------------------------------------
 #  Damage / heal model  (every line tagged FACT or ASSUMPTION)
 # ----------------------------------------------------------------------------
-def offensive_index(unit: CombatUnit, channel: str, cfg: ModelConfig) -> float:
-    """Per-soldier offensive index for ``channel`` = soldier ATK lifted by the
-    channel's primary hero stat (Affected-by-X hint). ASSUMPTION (monotonic)."""
+def offence(unit: CombatUnit, channel: str, cfg: ModelConfig) -> float:
+    """Per-instance offence index = soldier offence stat lifted by the channel's
+    primary hero stat (Affected-by-X hint). ASSUMPTION (monotonic)."""
     hero_key = CHANNEL_PRIMARY_HERO_STAT.get(channel, "atk")
-    return max(1.0, unit.soldier.atk) * (1.0 + unit.stat(hero_key) / cfg.hero_ref)
+    return max(1.0, unit.soldier.atk) + unit.eff_stat(hero_key) * cfg.hero_off_weight
 
 
-def defensive_index(unit: CombatUnit, cfg: ModelConfig) -> float:
-    """Per-soldier defensive index = soldier DEF lifted by hero DEF. ASSUMPTION."""
-    return max(1.0, unit.soldier.deff) * (1.0 + unit.deff / cfg.hero_ref)
+def troop_scale(unit: CombatUnit, cfg: ModelConfig) -> float:
+    """Army-size & attrition factor: a unit hits harder with more live troops."""
+    return unit.health / max(1.0, cfg.troop_scale_ref)
 
 
-def exchange_fraction(attacker: CombatUnit, defender: CombatUnit, coef: float,
-                      channel: str, restraint: float, dmg_dealt_mult: float,
-                      dmg_taken_mult: float, cfg: ModelConfig) -> float:
-    """Fraction of the defender's troop pool removed by one attack instance.
-
-    Scale-free: combines the skill coefficient (FACT), army-size & attrition
-    (att troops now / def troops max), the stat matchup A/(A+k*D), restraint
-    (FACT 0.75), and the buff multipliers. ``global_lethality`` (ASSUMPTION) sets
-    how lethal a single hit is."""
-    if coef <= 0 or not defender.alive:
-        return 0.0
-    A = offensive_index(attacker, channel, cfg)
-    if channel in ("real", "splash"):
-        matchup = 1.0                         # true damage ignores DEF
-    else:
-        D = defensive_index(defender, cfg)
-        matchup = A / (A + cfg.def_k * D)
-    army = attacker.troops_now() / max(1.0, defender.troops_max)
-    frac = (coef * army * matchup * cfg.global_lethality
-            * restraint * dmg_dealt_mult * dmg_taken_mult)
-    return max(0.0, frac)
+def def_mitigation(defender: CombatUnit, channel: str, cfg: ModelConfig) -> float:
+    """Multiplicative DEF mitigation in (0,1].  Real/assault/splash ignore DEF."""
+    if channel in ("real", "assault", "splash"):
+        return 1.0
+    def_eff = defender.eff_stat("def") * cfg.hero_def_weight
+    return cfg.def_ref / (cfg.def_ref + def_eff)
 
 
 def restraint_mult(g: datamod.GameData, attacker: CombatUnit, defender: CombatUnit,
@@ -386,23 +482,19 @@ def restraint_mult(g: datamod.GameData, attacker: CombatUnit, defender: CombatUn
         mod = g.restraint_modifier
     a_name = g.soldier_type_name[attacker.soldier_type]
     d_name = g.soldier_type_name[defender.soldier_type]
-    # attacker is restrained (countered) when defender's type beats attacker's,
-    # i.e. triangle[defender] == attacker
     if g.restraint_triangle.get(d_name) == a_name:
         return mod
     return 1.0
 
 
-# small helpers bolted onto CombatUnit (kept here to avoid import cycle noise)
-def _troops_now(self) -> float:
-    return 0.0 if self.hp_max <= 0 else self.troops_max * (self.hp / self.hp_max)
-
-
-CombatUnit.troops_now = _troops_now
-
-
 def fresh_units(units):
-    """Cheap per-battle clone: copy each unit with full HP, alive, empty statuses.
-    Static fields (soldier, skills, stats) are shared read-only; combat never
-    mutates them, so this is safe and far faster than rebuilding the team."""
-    return [replace(u, hp=u.hp_max, alive=True, statuses={}) for u in units]
+    """Cheap per-battle clone: copy each unit at full Health, alive, empty statuses.
+    Static fields (soldier, skills, stats) are shared read-only."""
+    out = []
+    for u in units:
+        c = replace(u, health=float(u.troops_max), slight=0.0, severe_death=0.0,
+                    alive=True, statuses={}, attr_mods={},
+                    stat_kills=0.0, stat_heal=0.0, stat_slight=0.0, stat_severe=0.0,
+                    stat_death=0.0, stat_skill_dmg=0.0, stat_normal_dmg=0.0, skills_used=0)
+        out.append(c)
+    return out

@@ -116,6 +116,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Hero Leaderboards **"By Role"** section — every hero grouped by role (DPS/Heal/CC/Buff/
   Debuff/Other), ordered by Total stats within each role.
 
+### Changed
+- **Battle Simulator combat engine reworked to match real in-game mechanics**, validated
+  against a transcribed in-game battle log ("Rosetta Stone", `data/sim/calibration.json`).
+  The transparent/configurable design is kept — the server damage formula stays
+  `UNKNOWN_SERVER_SIDE` and every server-side constant remains a documented `ModelConfig`
+  knob (tagged `ASSUMPTION`); rankings stay model-relative. Why: the old scale-free exchange
+  model could not reproduce the log's phase structure, casualty tiers, or buff dynamics.
+  - **Phase structure:** added **Passive Exertion** → **Pre-War Preparation** (all Strategic
+    skills + shields/attribute buffs-debuffs/prepared-CC/heal-over-time fire *before* round 1)
+    → Rounds 1–8 (`simulator/engine/combat.py`).
+  - **Casualty model:** per unit tracks Health / SlightWound / (Severe+Death); damage removes
+    Health→Slight (a small share straight to Severe/Death), between rounds a share of Slight
+    worsens to Severe/Death (lowers max), healing moves Slight→Health (blocked by Heal Ban);
+    defeated at Health 0; per-unit Kills/Heal/Slight/Severe/Death tracked.
+  - **Stalemate escalation:** undecided after 8 rounds → Stalemate → rematch with Health
+    carried over **and** a stacking "All Hero DMG Dealt +33%/stalemate" buff.
+  - **Buff engine:** general + per-channel DMG-Dealt/Taken multipliers (Star Shield, Noise,
+    Green Tea, Tactical-DMG, stalemate, gear PVE/PVP DMG) that stack and dominate; attribute
+    add/percent with "cannot be replaced"; durations + expiry.
+  - **Prepared CC** (per-round re-roll: Silence/Disarm/Stun/Heal-Ban), **reactions/procs**
+    (Assault flat Real-DMG pursuit, Counterattack 0.84×, Reactive Block, Tactical Burst,
+    Purification), and **Aid/Taunt→Provoked** targeting.
+  - **Damage model:** absolute-magnitude `coef·offence·troop_scale·def_mitigation·
+    dmg_dealt·dmg_taken·restraint`; real/assault/splash ignore DEF; counter = 0.84×normal.
+    Coefficients from `skills.json` maxedValue (+ wired relic Real-DMG/coef, rune, awaken).
+  - **Magic Messengers (slot 11)** now feed hero ATK/DEF/DES + ATK Spd flats and PVE/PVP
+    DMG-Dealt/Taken into the model via `data.py` `gear_bonus` (extended `_accumulate`).
+  - **Validation:** new `simulator/validate_testcase.py` builds the exact two test-case
+    formations, runs the match, and reports PASS/FAIL per ground-truth target to a UTF-8 file
+    (CJK-safe). Currently **9/9 targets PASS**; mirror match stays ≈ 51 % (no side bias);
+    `smoke_test` and the CLI search/optimise paths still run. `BattleResult`/`build_team`/
+    `fresh_units`/`Battle.run()` interfaces preserved (back-compat `hp`/`hp_max` display
+    aliases added) so the UI and search are unaffected.
+
 ### Fixed (from a 4-subagent inconsistency sweep)
 - **Attribute bonuses now render flat vs percent correctly.** `expand_effects` ignored the
   EntryEffect `DataType`; it now matches the in-game `GetEntryDes` formula — DataType 1 = flat

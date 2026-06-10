@@ -132,12 +132,19 @@ class GameData:
                 acc["trigger_tactical"] += val / 100.0 if kind == "percent" else val
             elif "Pursuit Skill Activation" in attr:
                 acc["trigger_pursuit"] += val / 100.0 if kind == "percent" else val
+            # PVE/PVP DMG Dealt/Taken from equipment + magic messenger (PvE-relevant
+            # here; the testcase is a PvE practice battle).  Stored as a fraction.
+            elif "DMG Dealt" in attr:
+                acc["dmg_dealt"] += val / 100.0 if kind == "percent" else val
+            elif "DMG Taken" in attr:
+                acc["dmg_taken"] += val / 100.0 if kind == "percent" else val
 
     def _compute_gear_bonus(self):
         """Hero-generic 'maxed equipment' = best item per slot (by power) + any set
         bonus that triggers among the chosen pieces. Same for every hero."""
         acc = {"soldier_pct": {}, "soldier_flat": {}, "hero_flat": {},
-               "troops": 0.0, "trigger_tactical": 0.0, "trigger_pursuit": 0.0}
+               "troops": 0.0, "trigger_tactical": 0.0, "trigger_pursuit": 0.0,
+               "dmg_dealt": 0.0, "dmg_taken": 0.0}
         chosen_sets = {}
         for slot_id, items in self._slot_items():
             if not items:
@@ -190,17 +197,28 @@ class GameData:
             key = (int(es["skill_type_id"]), int(es["skill_id"]))
         except (KeyError, TypeError, ValueError):
             return None
-        val = 0.0
+        # parse tokens by buff id: 2=DMG Coefficient, 41=Real DMG Base, 45/1=trigger.
+        coef_val = 0.0
+        real_dmg = 0.0
+        last_val = 0.0
         for tok in rel.get("effect_tokens_max") or []:
             try:
-                val = float(tok.get("value"))
+                tv = float(tok.get("value"))
             except (TypeError, ValueError):
-                pass
+                continue
+            last_val = tv
+            bid = str(tok.get("buff_id"))
+            if bid == "2":
+                coef_val = tv
+            elif bid == "41":
+                real_dmg = tv
+        val = last_val
         txt = (rel.get("max_bonus") or "").lower()
         if "trigger probability" in txt:
             return {"key": key, "kind": "trigger", "value": val}
         if "coefficient" in txt:
-            return {"key": key, "kind": "coef", "value": val}
+            return {"key": key, "kind": "coef",
+                    "value": coef_val or val, "real_dmg": real_dmg}
         stat = None
         for kw, s in (("atk spd", "speed"), ("atk", "atk"), ("def", "def"),
                       ("des", "ruin"), ("ruin", "ruin"), ("spd", "speed"), ("speed", "speed")):
