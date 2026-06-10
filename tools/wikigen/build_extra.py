@@ -512,9 +512,13 @@ def gen_skill_stones(write, tbl, R):
         "your bag. You can **move** a stone between heroes, or **unequip** it — removing a stone is "
         "**non-destructive** (it returns to your bag).", "",
         "## Equip rules",
-        "- **Strategic stones:** only **one** may be equipped **across your whole team**.",
-        "- **Tactical / Passive / Pursuit stones:** you may add **one extra** of each.",
-        "- **No two identical Strategic skills** in a team — counting both innate skills and skill stones.",
+        "- **No two identical skill stones in a formation** — the same skill stone can't be equipped on two "
+        "heroes of the same team. (The *opposing* team may use the same stone; the limit is per-team.) There "
+        "is **no per-category cap**, so e.g. three different Tactical stones across a team is allowed.",
+        "- **A skill stone is optional** — a hero may be fielded with no stone, though equipping one is "
+        "generally better if you have it.",
+        "- **No two identical Strategic *skills*** in a team — counting both innate skills and skill stones "
+        "(a hero also can't carry two copies of the same skill).",
         "- Same effect from the **same** skill type does **not** stack (only the highest applies), so favour a "
         "stone that adds an effect your hero doesn't already have. (See [Battle Mechanics](../Mechanics/Battle-Mechanics.md).)",
         "- A hero's stone may need to be **removed before** some operations (e.g. advancing or dispatching it).", "",
@@ -527,8 +531,10 @@ def gen_skill_stones(write, tbl, R):
         "Skill Stone Chests (and the fragments that combine into them — **50 fragments** per chest) come from: "
         "**Ruins – Lava Land**, the **Honor Shop**, the **Tournament** shop, **Achievements**, and limited-time "
         "events (**Lucky Wheel / Lucky Mystery Box**). Fragments are also sold in the Honor / Tournament shops.", "",
-        "*(Server-side: the rejection of a duplicate Strategic skill is enforced by the server; the resolved "
-        "stone items themselves aren't in the static files.)*",
+        "*(Server-side: duplicate-stone / duplicate-skill rejection is enforced by the server; the resolved "
+        "stone items themselves aren't in the static files. An earlier version of this page described a "
+        "per-category cap (~1 Strategic + 1 each Tactical/Passive/Pursuit); that has not held up in practice — "
+        "the binding rule is simply \"no two identical stones per team\".)*",
     ]
     write("Heroes/Skill-Stones.md", "Skill Stones", "Heroes & Lord", lines)
 
