@@ -501,6 +501,100 @@ def gen_runes(write, tbl, R):
     write("Heroes/Runes.md", "Runes", "Heroes & Lord", lines)
 
 
+def gen_skill_stones(write, tbl, R):
+    lines = [
+        "A **Skill Stone** equips an **extra skill onto a hero** — a 4th skill in a dedicated stone slot, "
+        "on top of the hero's 3 innate skills. Each hero has **one** skill-stone slot.", "",
+        "## Getting & applying a stone",
+        "- Open a **3★ / 4★ / 5★ Skill Stone Chest** — a *customize* chest where **you pick which skill** the "
+        "stone becomes. The chest's star sets the stone's **tier / level cap**.",
+        "- **Apply** a stone to a hero from the skill UI; it fills the hero's stone slot and is consumed from "
+        "your bag. You can **move** a stone between heroes, or **unequip** it — removing a stone is "
+        "**non-destructive** (it returns to your bag).", "",
+        "## Equip rules",
+        "- **Strategic stones:** only **one** may be equipped **across your whole team**.",
+        "- **Tactical / Passive / Pursuit stones:** you may add **one extra** of each.",
+        "- **No two identical Strategic skills** in a team — counting both innate skills and skill stones.",
+        "- Same effect from the **same** skill type does **not** stack (only the highest applies), so favour a "
+        "stone that adds an effect your hero doesn't already have. (See [Battle Mechanics](../Mechanics/Battle-Mechanics.md).)",
+        "- A hero's stone may need to be **removed before** some operations (e.g. advancing or dispatching it).", "",
+        "## Level & awaken",
+        "- A stone has a **level 1–5** (its bonus grows per level); upgrade it in your bag up to the chest's tier.",
+        "- The granted skill's **awaken** is **shared with the hero's own skill track** and is paid with "
+        "**Awakening Stones** (one type for Strategic/Passive skills, another for Tactical/Pursuit) — the cost "
+        "scales with the skill's rarity and target awaken level.", "",
+        "## Where chests come from",
+        "Skill Stone Chests (and the fragments that combine into them — **50 fragments** per chest) come from: "
+        "**Ruins – Lava Land**, the **Honor Shop**, the **Tournament** shop, **Achievements**, and limited-time "
+        "events (**Lucky Wheel / Lucky Mystery Box**). Fragments are also sold in the Honor / Tournament shops.", "",
+        "*(Server-side: the rejection of a duplicate Strategic skill is enforced by the server; the resolved "
+        "stone items themselves aren't in the static files.)*",
+    ]
+    write("Heroes/Skill-Stones.md", "Skill Stones", "Heroes & Lord", lines)
+
+
+def gen_hero_advancement(write, tbl, R):
+    lines = [
+        "A hero grows along **three separate tracks** — **Level**, **Advance**, and **Breakthrough** "
+        "(skill *Awaken* is a fourth, per-skill track covered on the [Skill Catalog](Skills.md)). All are done "
+        "from the hero's info panel.", "",
+        "```",
+        "Recruit (Lv1)  →  Level up with Hero Exp (cap Lv60)",
+        "             →  ADVANCE  (AdvLv 1..★)   +10 stat points & more troops each",
+        "             →  BREAKTHROUGH (BreakLv 1..20, 4★/5★ only)  +1 level cap & +3/+5 points each",
+        "             →  Max: Lv80, AdvLv = ★, BreakLv = 20",
+        "```", "",
+        "## Level",
+        "Hero EXP (Hero Exp Books / prop) levels a hero. The base level cap is **60**; raising it further "
+        "requires Breakthroughs. Each level grants **+1** freely-assignable stat point.", "",
+        "## Advance (AdvLv)",
+        "Advancing fills a hero's stars. A hero can advance up to **its star rarity** (★3 → 3 Advances, "
+        "★4 → 4, ★5 → 5). **Each Advance grants +10 freely-assignable stat points** and raises the hero's "
+        "**max soldier count**. The material is **duplicate copies of that hero** — or a **Universal Advance "
+        "Card**, which substitutes for a duplicate.", "",
+        "**Duplicates needed per Advance:**", "",
+    ]
+    lines += tbl(["Advance", "Duplicates"],
+                 [["0 → 1", "1"], ["1 → 2", "1"], ["2 → 3", "2"], ["3 → 4", "2"], ["4 → 5", "3"]])
+    lines += [
+        "",
+        "**Max soldier count** = `2,000 + Level×500` plus an Advance bonus:", "",
+    ]
+    lines += tbl(["AdvLv", "Bonus troops"],
+                 [["1", "+1,000"], ["2", "+2,000"], ["3", "+4,000"], ["4", "+6,000"], ["5", "+10,000"]])
+    lines += [
+        "",
+        "## Breakthrough (BreakLv)",
+        "Once a hero is **fully Advanced** (AdvLv = its rarity) **and** has reached **Lv 60**, it can "
+        "**Breakthrough** — **★4 and ★5 heroes only** (★3 heroes stop at Lv 60). Each Breakthrough:",
+        "- raises the **level cap by +1** (Lv 60 → up to **Lv 80** at BreakLv 20), and",
+        "- grants **+3** (★4) / **+5** (★5) freely-assignable stat points.",
+        "",
+        "The material is a **same-rarity duplicate hero** — or a **Breakthrough Card** (substitute). Max "
+        "**BreakLv = 20**.", "",
+        "## Stat (Allocable) points",
+        "All the points above pool into one total you assign freely across **Attack / Defense / Ruin / Speed** "
+        "(and can **reset**; an auto-allocate follows the hero's [RST](../Mechanics/Stats-and-Formulas.md) "
+        "recommendation):", "",
+        "```",
+        "total points = AdvLv×10  +  (Level − 1)  +  (5 if ★5 else 3) × BreakLv",
+        "```", "",
+        "## The advancement cards",
+    ]
+    lines += tbl(["Card", "Use"], [
+        ["Universal Advance Card", "Substitutes for any hero duplicate when **Advancing**."],
+        ["Breakthrough Card", "Substitutes for a same-rarity duplicate when doing a **Breakthrough**."],
+        ["Skill Exp Card", "Converts into **Skill EXP** (for levelling skills)."],
+        ["Universal Codex Card", "Substitutes for a hero when submitting to the **Hero Codex** (a separate system)."],
+    ])
+    lines += [
+        "",
+        "*(Server-side: exact duplicate counts consumed per Breakthrough aren't in the client — the UI stages up "
+        "to 10 cards at once toward the BreakLv-20 cap.)*",
+    ]
+    write("Heroes/Hero-Advancement.md", "Hero Advancement", "Heroes & Lord", lines)
+
+
 # --------------------------------------------------------------------------- #
 # PvE & world
 # --------------------------------------------------------------------------- #
@@ -910,27 +1004,80 @@ def gen_cumulative_costs(write, tbl, R):
 # Equipment & glossary
 # --------------------------------------------------------------------------- #
 _GEAR_SLOT = {"1": "Weapon", "2": "Armor", "3": "Pants", "4": "Helmet",
-              "5": "Bracers", "6": "Boots", "7": "Accessory", "8": "Accessory"}
+              "5": "Bracers", "6": "Boots", "7": "Left Accessory", "8": "Right Accessory",
+              "11": "Magic Messenger"}
+
+
+def _set_name(names):
+    """Longest common leading word-run of a set's member names → the set's theme."""
+    toks = [n.split() for n in names if n]
+    if not toks:
+        return "Set"
+    common = []
+    for i in range(min(len(t) for t in toks)):
+        w = toks[0][i]
+        if all(len(t) > i and t[i] == w for t in toks):
+            common.append(w)
+        else:
+            break
+    return " ".join(common) or names[0]
 
 
 def gen_equipment(write, tbl, R):
-    """Player equipment = PropInfo type 3. Effect decodes via the EntryEffect
-    attribute catalog; Value is the gear's Power."""
+    """Hero equipment = PropInfo type 3. Effect decodes via the EntryEffect catalog;
+    Value is the piece's Power; timeinfo encodes set bonuses (setId$3pc+6pc)."""
     gear = [r for r in load("PropInfo") if r.get("type") == "3"]
     by_slot = collections.OrderedDict()
     for r in gear:
         by_slot.setdefault(r.get("PosType", "?"), []).append(r)
-    lines = ["Player equipment, grouped by slot. Each piece grants the listed attribute bonuses "
-             "(decoded against the [Attribute catalog](../Reference/Attributes.md)) and Power. "
-             "Rarity runs ★1 (White) → ★6 (Red).", ""]
+    lines = [
+        "Each hero has **8 gear slots** — **Weapon, Armor, Pants, Helmet, Bracers, Boots** and a "
+        "**Left** & **Right Accessory** — plus separate slots for a [Relic](../Heroes/Relics.md), a "
+        "[Rune](../Heroes/Runes.md) and a Magic Messenger. Gear is **per-hero** (each hero wears its own).",
+        "",
+        "- **Bonuses** are decoded against the [Attribute catalog](../Reference/Attributes.md); **Power** is the piece's rating.",
+        "- **Rarity** runs ★1 (White) → ★6 (Red).",
+        "- **Set bonuses:** wearing **3** or **6** pieces of the same set grants the bonuses listed below.",
+        "- **Accessories:** **Left** accessories are offensive (Soldier ATK / Ruin, PVE/PVP *DMG Dealt*); "
+        "**Right** accessories are defensive (Soldier HP / DEF, *DMG Taken Reduced*) plus the Hero ATK-Spd pieces. "
+        "Accessories have **no** set bonus.",
+        "- **Upgrading** a piece means **crafting its next tier** at the Smithy, which consumes the lower-tier "
+        "piece — see [Crafting & Production](../Crafting/Formulas.md). The 6 armour slots are craftable; the "
+        "PVE/PVP special pieces and accessories come from shops/events.", "",
+    ]
+    # ---- Set bonuses (from the timeinfo field) ----
+    sets = collections.OrderedDict()
+    for r in gear:
+        ti = (r.get("timeinfo") or "0").strip()
+        if ti in ("0", "") or "$" not in ti:
+            continue
+        sid = ti.split("$")[0]
+        s = sets.setdefault(sid, {"names": [], "tiers": collections.OrderedDict()})
+        s["names"].append(clean(r.get("name_en") or r.get("name")))
+        if ti not in s["tiers"]:
+            p3, _, p6 = ti.split("$")[1].partition("+")
+            s["tiers"][ti] = (r.get("rare", "?"), R.expand_effects(p3), R.expand_effects(p6))
+    if sets:
+        lines += ["## Set Bonuses",
+                  "A set is the 6 matching armour pieces (Weapon→Boots). Equip 3 for the first bonus, all 6 "
+                  "for both.", ""]
+        body = []
+        for sid in sorted(sets, key=lambda x: int(x) if x.isdigit() else 0):
+            nm = _set_name(sets[sid]["names"])
+            for (rare, p3, p6) in sets[sid]["tiers"].values():
+                body.append([nm, "★" + (rare or "?"), p3, p6])
+        lines += tbl(["Set", "Rarity", "3-piece bonus", "6-piece bonus"], body)
+        lines.append("")
+    # ---- per-slot catalog ----
+    lines.append("## Gear by slot")
     for slot in sorted(by_slot, key=lambda x: int(x) if x.isdigit() else 99):
         items = sorted(by_slot[slot], key=lambda r: (int(r.get("rare") or 0), int(r["id"])))
-        lines.append("## %s" % _GEAR_SLOT.get(slot, "Slot " + slot))
+        lines.append("### %s" % _GEAR_SLOT.get(slot, "Slot " + slot))
         body = [[r["id"], clean(r.get("name_en") or r.get("name")), "★" + (r.get("rare") or "?"),
                  R.expand_effects(r.get("Effect")), fmt_num(r.get("Value"))] for r in items]
         lines += tbl(["ID", "Name", "Rarity", "Bonuses", "Power"], body)
         lines.append("")
-    write("Items/Equipment.md", "Equipment / Gear", "Items", lines)
+    write("Items/Equipment.md", "Hero Equipment", "Items", lines)
 
 
 def gen_glossary(write, tbl, R):
@@ -969,6 +1116,7 @@ def gen_glossary(write, tbl, R):
             ("Combo", "The unit makes its normal attack twice in a round."),
             ("Shield", "Absorbs the first instance of damage."),
             ("Status effects", "Disarm, Silence, Vertigo, Chaos, Taunt, Stun, Concentration/Immune, Forbidden Healing, etc. - full list on [Status Effects](../Mechanics/Status-Effects.md)."),
+            ("Skill Stone", "An item that equips an **extra (4th) skill** onto a hero (1 stone slot per hero); strict rules (e.g. one Strategic stone per team). See [Skill Stones](../Heroes/Skill-Stones.md)."),
             ("Name aliases", "Data and player guides name some things differently: **Chase = Pursuit**, **Strategy = Strategic**, **Aid = Assist**, **Concentration/Immune = Focused**, **Chaos = \"undifferentiated ATK\"**, **Dispel = \"dissolves beneficial effect\"**, **Role = Job**, **RST = Archetype**."),
             ("Library", "A building that lets you simulate battles."),
         ]),
@@ -996,7 +1144,8 @@ def gen_glossary(write, tbl, R):
             ("Troop Exoskeleton", "Cosmetic troop armour (bought for gems) upgraded with gold + Hearts to add a troop's weaker secondary stats."),
             ("Style / Charm", "A level track whose milestones grant city-output and soldier bonuses. See [Style](../Progression/Style.md)."),
             ("Lord Outfit / Fashion", "Cosmetic Lord outfit sets (Headwear + Clothing + Accessory); only one set's stats are active at a time, but Fashion Points from all owned sets stack into a ranking. See [Lord Outfits](../Progression/Lord-Outfits.md)."),
-            ("Set bonus", "The permanent stat bonus (+ Power) from completing a Codex collection; hero-codex bonuses scale with Advance level."),
+            ("Set bonus", "Two kinds: **gear sets** — wearing 3 or 6 matching [equipment](../Items/Equipment.md) pieces grants a 3-/6-piece bonus; and **Codex collection** sets (collect the listed heroes/items) which scale with Advance level. Accessories/relics/runes have no set bonus."),
+            ("Advance / Breakthrough", "Hero power-up tracks: **Advance** (needs duplicates, +10 stat points each, up to the hero's star count) then **Breakthrough** (★4/★5, raises the Lv 60 cap toward 80, +3/+5 points each). See [Hero Advancement](../Heroes/Hero-Advancement.md)."),
             ("Relic", "A hero-specific artifact (one per hero) that enhances **that hero's Talent Skill**, "
                       "equipped in the hero's Relic slot. Summoned/combined, then levelled to max before equipping. "
                       "See [Hero Relics](../Heroes/Relics.md)."),
@@ -1276,6 +1425,8 @@ def register(write, tbl, R):
     gen_travel_notes(write, tbl, R)
     gen_hero_relics(write, tbl, R)
     gen_runes(write, tbl, R)
+    gen_skill_stones(write, tbl, R)
+    gen_hero_advancement(write, tbl, R)
     gen_servers(write, tbl, R)
     gen_great_world(write, tbl, R)
     gen_knowledge_quiz(write, tbl, R)

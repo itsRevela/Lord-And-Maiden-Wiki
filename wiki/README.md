@@ -19,6 +19,7 @@
 
 ### Heroes & Lord
 - [AI / Enemy Heroes](Heroes/AI-Heroes.md)
+- [Hero Advancement](Heroes/Hero-Advancement.md)
 - [Hero Relics](Heroes/Relics.md)
 - [Hero Skins](Heroes/Hero-Skins.md)
 - [Hero Stat Leaderboards (Lv 80)](Heroes/Hero-Leaderboards.md)
@@ -27,6 +28,7 @@
 - [Lord Talents](Heroes/Lord-Talents.md)
 - [Runes](Heroes/Runes.md)
 - [Skill Catalog](Heroes/Skills.md)
+- [Skill Stones](Heroes/Skill-Stones.md)
 
 ### Teams & Builds
 - [Recommended Teams & Builds](Teams/Recommended-Teams.md)
@@ -91,8 +93,8 @@
 
 ### Items
 - [Choice Chests](Items/Choice-Chests.md)
-- [Equipment / Gear](Items/Equipment.md)
 - [Gift Code Rewards](Items/Gift-Code-Rewards.md)
+- [Hero Equipment](Items/Equipment.md)
 - [Item Sources (How to Obtain)](Items/Item-Sources.md)
 - [Items & Resources (Props)](Items/Items.md)
 - [Travel Notes (Travelogue Merchant)](Items/Travel-Notes.md)

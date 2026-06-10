@@ -372,9 +372,11 @@ def gen_hero_pages(heroes):
             L.append(" · ".join(appears))
             L.append("")
         L.append("---")
-        L.append("**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · "
-                 "[Hero Relics](../Relics.md) · [Runes](../Runes.md) · [Hero Skins](../Hero-Skins.md) · "
-                 "[Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)")
+        L.append("**Related:** [Hero Roster](../Heroes.md) · [Advancement](../Hero-Advancement.md) · "
+                 "[Hero Talents](../Hero-Talents.md) · [Skill Catalog](../Skills.md) · "
+                 "[Skill Stones](../Skill-Stones.md) · [Hero Relics](../Relics.md) · [Runes](../Runes.md) · "
+                 "[Equipment](../../Items/Equipment.md) · [Hero Skins](../Hero-Skins.md) · "
+                 "[Lv 80 Leaderboards](../Hero-Leaderboards.md)")
         write("Heroes/roster/%s-%s.md" % (hid, _slug(nm)), nm, "_hidden", L)
 
 

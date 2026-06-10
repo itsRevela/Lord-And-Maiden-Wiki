@@ -36,6 +36,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 | Name aliases | Data and player guides name some things differently: **Chase = Pursuit**, **Strategy = Strategic**, **Aid = Assist**, **Concentration/Immune = Focused**, **Chaos = "undifferentiated ATK"**, **Dispel = "dissolves beneficial effect"**, **Role = Job**, **RST = Archetype**. |
 | Real damage | A fixed extra hit based only on troop count + the unit's in-battle Attack; bypasses the normal damage calc. |
 | Shield | Absorbs the first instance of damage. |
+| Skill Stone | An item that equips an **extra (4th) skill** onto a hero (1 stone slot per hero); strict rules (e.g. one Strategic stone per team). See [Skill Stones](../Heroes/Skill-Stones.md). |
 | Skill types | **Strategic / Strategy (blue)** fire pre-battle or on a set round; **Tactical (purple)** roll each round; **Passive** are always-on; **Pursuit / Chase** fire after a normal attack. See [Skill Catalog](../Heroes/Skills.md). |
 | Splash | A normal attack also deals a % of the hit to the other two enemies, ignoring defence. |
 | Status effects | Disarm, Silence, Vertigo, Chaos, Taunt, Stun, Concentration/Immune, Forbidden Healing, etc. - full list on [Status Effects](../Mechanics/Status-Effects.md). |
@@ -64,6 +65,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 ## Progression & collections
 | Term | Meaning |
 |---|---|
+| Advance / Breakthrough | Hero power-up tracks: **Advance** (needs duplicates, +10 stat points each, up to the hero's star count) then **Breakthrough** (★4/★5, raises the Lv 60 cap toward 80, +3/+5 points each). See [Hero Advancement](../Heroes/Hero-Advancement.md). |
 | Cloud | Fog-of-war world-map territory tiles (referenced by city / wilderness unlock requirements). |
 | Favorability / GoodFeel | Hero affinity track granting a global all-hero stat bonus (up to +30 all stats). See [Favorability](../Progression/Favorability.md). |
 | Lord Outfit / Fashion | Cosmetic Lord outfit sets (Headwear + Clothing + Accessory); only one set's stats are active at a time, but Fashion Points from all owned sets stack into a ranking. See [Lord Outfits](../Progression/Lord-Outfits.md). |
@@ -71,7 +73,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 | Prestige | An account track: **Prestige level** grants escalating daily gifts + passive stat bonuses; **Prestige Points** (from raiding Barbarian Camps) govern refugee recruitment. See [Player Systems](../Progression/Player-Systems.md). |
 | Relic | A hero-specific artifact (one per hero) that enhances **that hero's Talent Skill**, equipped in the hero's Relic slot. Summoned/combined, then levelled to max before equipping. See [Hero Relics](../Heroes/Relics.md). |
 | Rune | Hero equipment (one per hero, in the Rune slot) that raises the **trigger chance** of one specific Tactical/Pursuit skill. Levelled to max with Runes-Fragment before equipping; no set bonuses. See [Runes](../Heroes/Runes.md). |
-| Set bonus | The permanent stat bonus (+ Power) from completing a Codex collection; hero-codex bonuses scale with Advance level. |
+| Set bonus | Two kinds: **gear sets** — wearing 3 or 6 matching [equipment](../Items/Equipment.md) pieces grants a 3-/6-piece bonus; and **Codex collection** sets (collect the listed heroes/items) which scale with Advance level. Accessories/relics/runes have no set bonus. |
 | Style / Charm | A level track whose milestones grant city-output and soldier bonuses. See [Style](../Progression/Style.md). |
 | Title / Astral Badges | Astral Badges (from Barbarian Towers / World Bosses) raise your **Title** - which buffs troop stats - and are spent in the Title Shop. |
 | Troop Exoskeleton | Cosmetic troop armour (bought for gems) upgraded with gold + Hearts to add a troop's weaker secondary stats. |

@@ -149,7 +149,7 @@ When ATK Normally,Launch Pursuit ATK On Target,And Make The Target Enemy In A Fo
 Featured in **3** [recommended team(s)](../../Teams/Recommended-Teams.md) · Part of **24** [hero codex set(s)](../../Codex/Codex.md)
 
 ---
-**Related:** [Hero Roster](../Heroes.md) · [Hero Talents](../Hero-Talents.md) · [Hero Relics](../Relics.md) · [Runes](../Runes.md) · [Hero Skins](../Hero-Skins.md) · [Skill Catalog](../Skills.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
+**Related:** [Hero Roster](../Heroes.md) · [Advancement](../Hero-Advancement.md) · [Hero Talents](../Hero-Talents.md) · [Skill Catalog](../Skills.md) · [Skill Stones](../Skill-Stones.md) · [Hero Relics](../Relics.md) · [Runes](../Runes.md) · [Equipment](../../Items/Equipment.md) · [Hero Skins](../Hero-Skins.md) · [Lv 80 Leaderboards](../Hero-Leaderboards.md)
 
 ---
 *Auto-generated from game data by `tools/wikigen/build.py`. Do not edit by hand.*

@@ -1,8 +1,56 @@
-# Equipment / Gear
+# Hero Equipment
 
-Player equipment, grouped by slot. Each piece grants the listed attribute bonuses (decoded against the [Attribute catalog](../Reference/Attributes.md)) and Power. Rarity runs ★1 (White) → ★6 (Red).
+Each hero has **8 gear slots** — **Weapon, Armor, Pants, Helmet, Bracers, Boots** and a **Left** & **Right Accessory** — plus separate slots for a [Relic](../Heroes/Relics.md), a [Rune](../Heroes/Runes.md) and a Magic Messenger. Gear is **per-hero** (each hero wears its own).
 
-## Weapon
+- **Bonuses** are decoded against the [Attribute catalog](../Reference/Attributes.md); **Power** is the piece's rating.
+- **Rarity** runs ★1 (White) → ★6 (Red).
+- **Set bonuses:** wearing **3** or **6** pieces of the same set grants the bonuses listed below.
+- **Accessories:** **Left** accessories are offensive (Soldier ATK / Ruin, PVE/PVP *DMG Dealt*); **Right** accessories are defensive (Soldier HP / DEF, *DMG Taken Reduced*) plus the Hero ATK-Spd pieces. Accessories have **no** set bonus.
+- **Upgrading** a piece means **crafting its next tier** at the Smithy, which consumes the lower-tier piece — see [Crafting & Production](../Crafting/Formulas.md). The 6 armour slots are craftable; the PVE/PVP special pieces and accessories come from shops/events.
+
+## Set Bonuses
+A set is the 6 matching armour pieces (Weapon→Boots). Equip 3 for the first bonus, all 6 for both.
+
+| Set | Rarity | 3-piece bonus | 6-piece bonus |
+|---|---|---|---|
+| Hunting | ★2 | PVE DMG Taken Reduced +5% | PVE DMG Dealt Increased +5% |
+| Redemption | ★2 | PVP DMG Taken Reduced +5% | PVP DMG Dealt Increased +5% |
+| Gallop | ★2 | Soldier March Spd +3% | Soldier March Spd +5% |
+| Bright | ★2 | Infantry DEF +7% | Infantry HP +7% |
+| Golden | ★2 | Archer DEF +7% | Archer ATK +7% |
+| Brave | ★2 | Cavalry ATK +7% | Cavalry DEF +7% |
+| Ice | ★2 | Chariot ATK +7% | Chariot DES +7% |
+| Eagle | ★3 | PVE DMG Taken Reduced +8% | PVE DMG Dealt Increased +8% |
+| Justice | ★3 | PVP DMG Taken Reduced +8% | PVP DMG Dealt Increased +8% |
+| Spirit Deer | ★3 | Soldier March Spd +5% | Soldier March Spd +8% |
+| Dawn | ★3 | Infantry DEF +10% | Infantry HP +10% |
+| Golden Bow | ★3 | Archer DEF +10% | Archer ATK +10% |
+| Hero | ★3 | Cavalry ATK +10% | Cavalry DEF +10% |
+| Deep-Sea Tomahawk | ★3 | Chariot ATK +10% | Chariot DES +10% |
+| Disciplinary | ★4 | PVE DMG Taken Reduced +12% | PVE DMG Dealt Increased +12% |
+| Glory | ★4 | PVP DMG Taken Reduced +12% | PVP DMG Dealt Increased +12% |
+| Lightning | ★4 | Soldier March Spd +8% | Soldier March Spd +12% |
+| Flame Sword | ★4 | Infantry DEF +14% | Infantry HP +14% |
+| Lion King Bow | ★4 | Archer DEF +14% | Archer ATK +14% |
+| Knight Spear | ★4 | Cavalry ATK +14% | Cavalry DEF +14% |
+| Broken Empty | ★4 | Chariot ATK +14% | Chariot DES +14% |
+| King | ★5 | PVE DMG Taken Reduced +18% | PVE DMG Dealt Increased +18% |
+| King | ★6 | PVE DMG Taken Reduced +25.2% | PVE DMG Dealt Increased +25.2% |
+| Victory | ★5 | PVP DMG Taken Reduced +18% | PVP DMG Dealt Increased +18% |
+| Victory | ★6 | PVP DMG Taken Reduced +25.2% | PVP DMG Dealt Increased +25.2% |
+| Thunder | ★5 | Soldier March Spd +12% | Soldier March Spd +18% |
+| Thunder | ★6 | Soldier March Spd +16.8% | Soldier March Spd +25.2% |
+| Sunshine | ★5 | Infantry DEF +20% | Infantry HP +20% |
+| Sunshine | ★6 | Infantry DEF +28% | Infantry HP +28% |
+| Daybreak Bow | ★5 | Archer DEF +20% | Archer ATK +20% |
+| Daybreak Bow | ★6 | Archer DEF +28% | Archer ATK +28% |
+| Ares Spear | ★5 | Cavalry ATK +20% | Cavalry DEF +20% |
+| Ares Spear | ★6 | Cavalry ATK +28% | Cavalry DEF +28% |
+| Fate | ★5 | Chariot ATK +20% | Chariot DES +20% |
+| Fate | ★6 | Chariot ATK +28% | Chariot DES +28% |
+
+## Gear by slot
+### Weapon
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3001 | Long Sword | ★1 | Soldier ATK +1, Soldier ATK +2% | 4,600 |
@@ -48,7 +96,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3381 | Ares Spear(R6) | ★6 | Cavalry ATK +14, Cavalry ATK +28% | 53,000 |
 | 3387 | Fate Axe(R6) | ★6 | Chariot ATK +14, Chariot ATK +28% | 53,000 |
 
-## Armor
+### Armor
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3002 | Leather Armor | ★1 | Soldier DEF +1, Soldier DEF +2% | 4,600 |
@@ -94,7 +142,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3382 | Ares Armor(R6) | ★6 | Cavalry DEF +14, Cavalry DEF +28% | 53,000 |
 | 3388 | Fate Armor(R6) | ★6 | Chariot DEF +14, Chariot DEF +28% | 53,000 |
 
-## Pants
+### Pants
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3003 | Leather Pants | ★1 | Soldier HP +1, Soldier HP +1% | 4,600 |
@@ -140,7 +188,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3383 | Ares Shorts(R6) | ★6 | Cavalry HP +14, Cavalry HP +14% | 53,000 |
 | 3389 | Fate Pants(R6) | ★6 | Chariot HP +14, Chariot HP +14% | 53,000 |
 
-## Helmet
+### Helmet
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3004 | Iron Armor Helmet | ★1 | Soldier HP +1, Soldier HP +1% | 4,600 |
@@ -186,7 +234,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3384 | Ares Helmet(R6) | ★6 | Cavalry HP +14, Cavalry HP +14% | 53,000 |
 | 3390 | Fate Helmet(R6) | ★6 | Chariot HP +14, Chariot HP +14% | 53,000 |
 
-## Bracers
+### Bracers
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3005 | Power Of Iron Armor | ★1 | Soldier DES +1, Soldier DES +2% | 4,600 |
@@ -232,7 +280,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3385 | Power Of Ares(R6) | ★6 | Cavalry DES +14, Cavalry DES +28% | 53,000 |
 | 3391 | Fate Bracers(R6) | ★6 | Chariot DES +14, Chariot DES +28% | 53,000 |
 
-## Boots
+### Boots
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3006 | Leather Boots | ★1 | Hero ATK Spd +2, Soldier March Spd +2% | 4,600 |
@@ -278,7 +326,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3386 | Ares Boots(R6) | ★6 | Hero ATK Spd +25, Soldier March Spd +25.2% | 53,000 |
 | 3392 | Fate Boots(R6) | ★6 | Hero ATK Spd +25, Soldier March Spd +25.2% | 53,000 |
 
-## Accessory
+### Left Accessory
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3401 | Eternal Ring | ★3 | Soldier ATK +4%, Soldier DES +4% | 9,000 |
@@ -289,7 +337,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3410 | Shadow Dagger | ★5 | Soldier ATK +20% | 40,600 |
 | 3411 | Witch's Contract | ★5 | Soldier DES +20% | 40,600 |
 
-## Accessory
+### Right Accessory
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3403 | Luna Crown | ★3 | Soldier HP +4%, Soldier DEF +4% | 9,000 |
@@ -302,7 +350,7 @@ Player equipment, grouped by slot. Each piece grants the listed attribute bonuse
 | 3414 | Endless Holy Grail | ★5 | Soldier DEF +20% | 40,600 |
 | 3416 | Golden Grail | ★5 | Hero ATK Spd +50 | 40,600 |
 
-## Slot 11
+### Magic Messenger
 | ID | Name | Rarity | Bonuses | Power |
 |---|---|---|---|---|
 | 3601 | Snowvine Cat(T3) | ★3 | Hero ATK +4, Hero ATK Spd +10 | 10,000 |

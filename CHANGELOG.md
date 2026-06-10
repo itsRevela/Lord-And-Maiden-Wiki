@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Hero Equipment, Skill Stones, Left/Right Accessories, and Hero Advancement** — four
+  interlocking hero systems, from a 3-subagent decompiled-code investigation:
+  - **Items/Equipment.md** rebuilt into the full **Hero Equipment** reference: the 8 gear
+    slots, a new **Set Bonuses** section (28 sets, 3-piece/6-piece, decoded from the
+    `timeinfo` field), **Left vs Right Accessory** slots labelled with their offense/defense
+    split, the Magic Messenger slot, and upgrade(=re-craft)/obtain notes — on top of the
+    existing per-slot catalog.
+  - **Heroes/Skill-Stones.md** — the skill-stone system: a 4th skill slot per hero, customize
+    chests (3★/4★/5★, 50-fragment combine), the strict equip rules (1 Strategic stone per team;
+    +1 Tactical/Passive/Pursuit; no duplicate Strategic), Lv 1–5 + shared awaken, non-destructive
+    unequip, and sources.
+  - **Heroes/Hero-Advancement.md** — the Level → Advance → Breakthrough tracks: Advance (AdvLv
+    to ★, +10 pts each, dupe costs 1/1/2/2/3 or Universal Advance Card, +max-soldier table),
+    Breakthrough (★4/★5, Lv 60→80, +3/+5 pts each, Breakthrough Card), the stat-point formula
+    `AdvLv×10 + (Lv−1) + (5 or 3)×BreakLv`, and the four advancement cards.
+  - Added Glossary entries (Skill Stone, Advance/Breakthrough; clarified gear vs Codex "Set
+    bonus"); linked from roster footers + README. README badge → 190. Server-side unknowns
+    (exact dupe/upgrade costs) flagged, not guessed.
 - **Heroes/Runes.md** — the Rune system, from a decompiled-code investigation. Runes are
   hero equipment (PropInfo type 9, 485 items = **105 kinds**) in a hero's **Rune slot**;
   each rune raises the **trigger chance of one specific Tactical/Pursuit skill**. Documents:

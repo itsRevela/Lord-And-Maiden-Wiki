@@ -5,7 +5,7 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-188-1f6feb)
+![Pages](https://img.shields.io/badge/pages-190-1f6feb)
 ![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
@@ -34,8 +34,10 @@ cross-checked against the source files.
 
 **⚔️ Heroes & Combat**
 [Hero Roster](wiki/Heroes/Heroes.md) ·
+[Hero Advancement](wiki/Heroes/Hero-Advancement.md) ·
 [Lv 80 Leaderboards](wiki/Heroes/Hero-Leaderboards.md) ·
 [Skill Catalog](wiki/Heroes/Skills.md) ·
+[Skill Stones](wiki/Heroes/Skill-Stones.md) ·
 [Hero Talents](wiki/Heroes/Hero-Talents.md) ·
 [Hero Relics](wiki/Heroes/Relics.md) ·
 [Runes](wiki/Heroes/Runes.md) ·
@@ -69,7 +71,7 @@ cross-checked against the source files.
 
 **🎒 Items**
 [Items & Resources](wiki/Items/Items.md) ·
-[Equipment / Gear](wiki/Items/Equipment.md) ·
+[Hero Equipment](wiki/Items/Equipment.md) ·
 [Item Sources](wiki/Items/Item-Sources.md) ·
 [Choice Chests](wiki/Items/Choice-Chests.md) ·
 [Gift Code Rewards](wiki/Items/Gift-Code-Rewards.md)
