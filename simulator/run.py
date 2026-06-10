@@ -74,6 +74,9 @@ def main():
     for h in args.heroes:
         if h not in g.heroes:
             ap.error("hero id %d is not a playable hero (see --list-heroes)" % h)
+    if len(set(args.heroes)) != 3:
+        ap.error("the 3 heroes must be DISTINCT — a formation can't field the same hero twice "
+                 "(note: SP and 4-star/5-star same-name variants ARE separate heroes).")
 
     opts = SearchOptions(
         n_battles=args.battles, n_opponents=args.opponents,

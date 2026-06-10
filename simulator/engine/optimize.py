@@ -150,6 +150,9 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
     """Evolve the best full build. ``progress(done,total)`` over generations."""
     g = datamod.load()
     hero_ids = [int(h) for h in hero_ids]
+    if len(set(hero_ids)) != 3:
+        raise ValueError("a formation cannot field the same hero twice "
+                         "(SP / 4-star / 5-star name-variants are distinct heroes)")
     rng = random.Random(opts.seed)
     cfg_dict = asdict(opts.cfg)
     opponents = sample_opponents(g, max(ga_opponents, opts.n_opponents), opts.seed, exclude=hero_ids)

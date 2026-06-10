@@ -183,6 +183,9 @@ def run_search(hero_ids, opts: SearchOptions, progress=None):
     Returns a results dict ready for JSON export."""
     g = datamod.load()
     hero_ids = [int(h) for h in hero_ids]
+    if len(set(hero_ids)) != 3:
+        raise ValueError("a formation cannot field the same hero twice "
+                         "(SP / 4-star / 5-star name-variants are distinct heroes)")
     plans = enumerate_builds(hero_ids, opts.select_optimal_troop)
     opponents = sample_opponents(g, opts.n_opponents, opts.seed, exclude=hero_ids)
 

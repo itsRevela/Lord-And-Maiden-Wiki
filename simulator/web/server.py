@@ -108,6 +108,9 @@ def simulate():
     heroes = [int(x) for x in body.get("heroes", [])]
     if len(heroes) != 3 or any(h not in _G.heroes for h in heroes):
         return jsonify({"error": "provide exactly 3 valid playable hero ids"}), 400
+    if len(set(heroes)) != 3:
+        return jsonify({"error": "the 3 heroes must be distinct — a formation can't field the "
+                                 "same hero twice (SP / 4-star / 5-star name-variants are separate heroes)"}), 400
     mode = body.get("mode", "rank")           # "rank" | "optimize"
     objective = body.get("objective", "win")  # win | early | mid | late | all
     opts = SearchOptions(

@@ -397,5 +397,12 @@
     "per_category_limit": false,
     "per_category_note": "An earlier decode of the in-game rules text suggested ~1 stone per category (1 Strategic + 1 each Tactical/Passive/Pursuit); the user reports NO such limit in practice (3 stones of the same category are fine as long as none are identical). The original test's 1-per-category layout was a player choice, not a rule.",
     "stone_is_4th_skill": "A skill stone grants the hero a 4th equipped skill (it fires in battle, e.g. the log's 'Use [Magic Spear]'). NOT YET MODELLED in the engine (build = main + 2 modular); to add with incoming calibration data, enforcing only the no-duplicate constraint."
+  },
+  "formation_rules": {
+    "_about": "Team/formation build-validity rules (user-confirmed in practice mode).",
+    "no_duplicate_hero_per_team": true,
+    "no_duplicate_hero_note": "A formation cannot field the same hero twice. The two opposing teams MAY each field the same hero (per-team rule).",
+    "variants_are_distinct_heroes": "SP variants (e.g. Cthugha vs Cthugha.Sp) AND 4-star/5-star same-name heroes are SEPARATE hero ids -> they may be used together on one team. (heroes.json keys by id, so the engine already treats them as distinct.)",
+    "enforced_in_engine": "run_search + optimize_formation raise on duplicate ids; the API/CLI reject; the opponent sampler only draws distinct trios; the UI hero-picker disables an already-chosen hero."
   }
 }
