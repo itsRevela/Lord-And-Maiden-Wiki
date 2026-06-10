@@ -360,5 +360,40 @@
     "Proc resolution order & RNG (Counter/Combo/Dodge/Splash/First-Aid).",
     "Commander hidden combat aura (none stated; assumed none).",
     "Impasse / multi-bout continuation behaviour (mode-specific)."
-  ]
+  ],
+  "calibration_rosetta": {
+    "_about": "Constants confirmed/tuned against the in-game Rosetta-Stone battle log (simulatorTestCase.txt) + user-stated facts. These are what the engine (simulator/engine/model.py ModelConfig) uses; server formula still UNKNOWN.",
+    "dmg_taken_reduced_cap": 0.75,
+    "dmg_taken_reduced_cap_note": "Stacked DMG-Taken-Reduced (e.g. Star Shield '90.17%+30%') nets to ~74% EFFECTIVE reduction, NOT near-immunity. Evidence: Magic Spear hit the shielded commander 2,139 vs 19,116 on an amplified target same round (ratio 0.112).",
+    "counterattack_coef": 0.84,
+    "counterattack_coef_note": "Counterattack deals 0.84x a normal hit (passive 'DMG Coefficient 0.70+0.14').",
+    "reactive_block_reduction": 0.592,
+    "stalemate_carryover_dmg_dealt_per_stack": 0.33,
+    "stalemate_carryover_note": "After a stalemate, the rematch grants All Hero DMG Dealt +33% per prior stalemate (log L676 'Stalemate-1 +33%'); troop counts carry over.",
+    "prepared_cc_reroll_base": {
+      "ally": 0.4,
+      "enemy": 0.6,
+      "note": "carry-over prepared Silence re-rolls each round at 40% (ally) / 60% (enemy), +flat"
+    },
+    "lv80_stat_allocation_cap_by_star": {
+      "5": 229,
+      "4": 179,
+      "3": 129,
+      "note": "free stat-point cap at Lv80 = 50 advance + 79 level + 50 per breakthrough tier"
+    },
+    "assault_real_dmg": {
+      "flat": true,
+      "ignores_def": true,
+      "ignores_dmg_taken_reduced": true,
+      "note": "Ghost-Bone-style Assault Real DMG (~671-726/hit) bypasses DEF and shields; the only reliable way to kill a heavily-shielded commander."
+    },
+    "match_cadence_observed": "5 in-game runs of one favoured matchup: 4x (stalemate -> victory, 2 bouts) + 1x (victory, 1 bout); player won all 5."
+  },
+  "skill_stone_rules": {
+    "no_duplicate_per_team": true,
+    "no_duplicate_note": "USER-CONFIRMED: an identical skill stone cannot be equipped on two heroes in the same formation/team (rule is per-team; the two opposing teams may each use the same stone).",
+    "per_category_limit": "UNDER_VERIFICATION",
+    "per_category_note": "Prior decode of the in-game rules text (wiki/Heroes/Skill-Stones.md) + the original test case (1 stone of each category per team) suggest stones may also be limited to ~1 Strategic + 1 each Tactical/Passive/Pursuit per team. Awaiting user confirm.",
+    "stone_is_4th_skill": "A skill stone grants the hero a 4th equipped skill (it fires in battle, e.g. the log's 'Use [Magic Spear]'). NOT YET MODELLED in the engine (build = main + 2 modular); to be added with the incoming calibration data, with the no-duplicate (and any per-category) constraint enforced on stone selection."
+  }
 }
