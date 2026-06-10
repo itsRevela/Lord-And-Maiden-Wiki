@@ -300,12 +300,13 @@ class Battle:
         return max(0.05, m)
 
     def _dmg_taken_mult(self, u: CombatUnit, channel: str, reactive_hit: bool = False) -> float:
-        m = 1.0
-        m += self._status_value(u, DMG_TAKEN_INCREASED)
-        m -= self._status_value(u, DMG_TAKEN_REDUCED)
-        m -= u.gear_dmg_taken
+        # DMG-Taken-Reduced is CAPPED (the log shows stacked shields net to ~74%
+        # effective reduction, not near-immunity); DMG-Taken-Increased is uncapped.
+        reduction = self._status_value(u, DMG_TAKEN_REDUCED) + u.gear_dmg_taken
         if reactive_hit:
-            m -= self.cfg.reactive_block_reduction
+            reduction += self.cfg.reactive_block_reduction
+        reduction = min(reduction, self.cfg.max_dmg_taken_reduction)
+        m = 1.0 + self._status_value(u, DMG_TAKEN_INCREASED) - reduction
         return max(0.02, m)
 
     # ---- damage application (casualty buckets) -------------------------

@@ -109,6 +109,11 @@ class ModelConfig:
     # --- reactions / procs (coefficients are FACT from skills; these gate them) ---
     counter_coef: float = 0.84                # FACT (Reactive Block 0.70+0.14)
     reactive_block_reduction: float = 0.592   # FACT (log: DMG Taken Reduced 59.20%)
+    # DMG-Taken-Reduced does NOT sum to near-immunity: the log shows Star Shield
+    # (displayed "90.17%+30%") leaving the commander at ~74% effective reduction
+    # (Magic Spear hit her for 2,139 vs 19,116 on an amplified target; backing out DEF
+    # mitigation => ~26% gets through). So the TOTAL reduction is capped here.
+    max_dmg_taken_reduction: float = 0.75     # CALIBRATED from log (~74% effective cap)
     # FACT (log L676): a rematch after a stalemate grants "All Hero DMG Dealt +33%"
     # per prior stalemate. Use the logged value verbatim; the match simply takes a
     # few bouts to resolve (faithful, not forced to exactly 2).
