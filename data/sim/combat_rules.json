@@ -327,9 +327,11 @@
   },
   "impasse": {
     "after_rounds": 8,
-    "behaviour": "pause (~1 min); may repeat / retreat / re-engage; varies by mode",
-    "resolution": "UNKNOWN_SERVER_SIDE",
-    "source": "Battle-Mechanics.md"
+    "behaviour": "If neither commander is wiped after 8 rounds, a REMATCH occurs: a fresh 8-round bout is fought with troop counts CARRIED OVER from the end of the previous bout's round 8. This repeats until one side's commander loses all troops.",
+    "troops_carry_over": true,
+    "buff_carry_over": "UNKNOWN_SERVER_SIDE (simulator assumes transient buffs reset each bout; troop counts persist)",
+    "resolution": "decided when a commander is wiped across any bout",
+    "source": "Battle-Mechanics.md; user-confirmed game behaviour (2026-06-10)"
   },
   "modeling_assumptions_server_side": [
     "core_damage_equation",
