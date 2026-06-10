@@ -180,6 +180,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
     is faithful, the depth is not. The −15.08% DMG-Dealt-Reduced rider on Soul Bound/Radiant
     Slash (skill actionType 6) is small and left unmodelled. `validate_testcase.py` back to
     **9/9**; mirror ≈ 54%/46% (unbiased); `smoke_test` and the CLI `run` path still work.
+- **Battle Simulator: real Burn/Curse DoT + sustain + Detonate, calibrated to a THIRD
+  in-game log** (`notes/sim/calibration_2_dot.md` / `_findings.md`, "DoT Lab"). Why: the
+  DoT channel was previously absent (a placeholder); this log gives the first real Burn/Curse
+  tick data, so it is now modeled from the skills' own effect tokens.
+  - **DoT tick (`model.dot_tick`, ticks at the before-action phase in `combat._dot_tick_phase`)**
+    for the effect's duration on the skill's target count: `coef · offence(caster,"dot") ·
+    troop_factor(caster) · dot_global · dot_def_mitig`. It scales with the **caster** (DES via
+    the new `"dot" → "ruin"` channel-stat entry, reusing `offence`/`troop_scale`), is **linear
+    in the printed coefficient** (Burn 1.0 ≈ 2× Curse 0.5), and is **mildly DEF-mitigated** (its
+    own gentle `dot_def_ref/(dot_def_ref+DEF·dot_def_weight)` curve). New `ModelConfig` knobs,
+    all `ASSUMPTION` (server-side), least-squares-fit to the log's 8 Burn/Curse anchors (mean
+    rel-err ~13%): `dot_global=24.2`, `dot_troop_floor=0.15` (a floor so a near-dead caster
+    still ticks a few hundred, as R8=674 shows), `dot_def_ref=900`, `dot_def_weight=2.0`.
+  - **Sustain wired:** Shield (actionType 73, buff Shield) is now an **absorb-one-instance**
+    buff on allies (consumed by the next DEF-mitigated hit; Real/Assault bypass it, per the
+    log); Lunar Guardian's heal (102) is forced to target allies (its token mislabels the
+    category as "the target enemy"); Tactical-Skill-DMG-Taken-Increased (37) and ATK-Reduced
+    (14) are applied. These produce the log's 8-round Battle-1 stalemate.
+  - **Detonate** (Element-Burst, actionType 72 on Exploding Flame): with `dot_detonate_chance`
+    (0.4) it **consumes** an enemy's active Burn for a burst = `dot_detonate_coef`(1.2)·burst-coef·
+    a fresh tick — landing in the logged ~3.1k–6.7k band. Approximate (exact server burst is
+    UNKNOWN_SERVER_SIDE); documented as `ASSUMPTION`.
+  - **New `simulator/validate_dot.py`** builds Matchup-2's exact formations (Cthugha·Sp 70 /
+    Cthugha 32 / Nyx 116, all +229 DES, vs Thiel 99 +DEF / Nicole 87 4★ +ATK / Dolly 108 +DES,
+    Archer, distinct stones) and reports **7/7 PASS** to a UTF-8 file: player win **64.5%**
+    (target ~50–65%; in-game 60%, n=10), a representative seed (225) reproduces **Battle 1
+    8-round stalemate → Battle 2 victory** with only the +DEF commander Thiel surviving B1,
+    Burn ticks 81% in the 700–4,000 band (median ~2,875) with a **0.90** caster-troops↔tick
+    correlation (declines as troops fall), **Curse/Burn ≈ 0.47** (~0.5×), Detonate median
+    ~5,512 in band, and **Thiel falls last 98%** of matches (strikers die first).
+  - The shared baseline/Rosetta damage knobs were **not** retouched: the testcase and baseline
+    teams use none of the new actions (73/108/109/72/37/14), so `validate_testcase.py` stays
+    **9/9** and `validate_baseline.py` stays **6/6**; `smoke_test` and the CLI `run` path still
+    work (the smoke fixture's 0% win rate is pre-existing — an arbitrary unbalanced matchup).
 
 ### Fixed (from a 4-subagent inconsistency sweep)
 - **Attribute bonuses now render flat vs percent correctly.** `expand_effects` ignored the

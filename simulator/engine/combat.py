@@ -46,6 +46,11 @@ DMG_TAKEN_INCREASED = {7}
 DMG_DEALT_INCREASED = {5}
 DMG_DEALT_DECREASED = {6}
 TACTICAL_DMG_DEALT = {31}
+TACTICAL_DMG_TAKEN = {37}           # Sin Judgment / Erythema: target takes +X% tactical dmg
+SHIELD = {73}                       # absorb-one-instance shield (Lunar Guardian / Soul Drain)
+BURN = {108}                        # DoT: Burn (ticks at before-action)
+CURSE = {109}                       # DoT: Curse (ticks at before-action)
+DOT_IDS = BURN | CURSE
 SELF_HEAL = {107}
 PURIFICATION = {139}
 SUPERCONDUCTING = {125}             # Tactical Burst marker
@@ -95,6 +100,7 @@ class Battle:
         self.sides = {0: list(player_units), 1: list(enemy_units)}
         self.round_dmg = {0: [0.0] * g.round_count, 1: [0.0] * g.round_count}
         self.stalemates = 0           # prior stalemate count (escalation stacks)
+        self._cur_round_idx = 0       # current round index (for DoT/detonate dmg tracking)
 
     # ---- helpers -------------------------------------------------------
     def _opp(self, side: int) -> int:
@@ -307,6 +313,8 @@ class Battle:
             reduction += self.cfg.reactive_block_reduction
         reduction = min(reduction, self.cfg.max_dmg_taken_reduction)
         m = 1.0 + self._status_value(u, DMG_TAKEN_INCREASED) - reduction
+        if channel == "tactical":             # Tactical Skill DMG Taken Increased (37)
+            m += self._status_value(u, TACTICAL_DMG_TAKEN)
         return max(0.02, m)
 
     # ---- damage application (casualty buckets) -------------------------
@@ -315,6 +323,12 @@ class Battle:
         if not defender.alive:
             return 0.0
         cfg = self.cfg
+        # Shield (73) absorbs ONE incoming instance entirely, then disappears.
+        # Real/Assault pursuit bypasses shields (log: Assault still chips the shielded
+        # commander), so only gate the DEF-mitigated channels.
+        if channel not in ("real", "assault") and self._has(defender, SHIELD):
+            defender.statuses[73]["rounds"] = 0   # consumed -> "Effect Disappeared"
+            return 0.0
         if channel in ("real", "assault"):
             # flat Real DMG, DEF-independent.  Loss = RealBase * scale * troop_scale,
             # amplified only by dmg-dealt (NOT mitigated by shields/DEF).
@@ -497,8 +511,10 @@ class Battle:
                         self._deal(caster, tgt, 0.0, "real", round_idx,
                                    is_skill=False, real_base=real_base)
                     self._maybe_counter(caster, tgt, round_idx)
-            elif at == 102:                  # heal allies
-                for tgt in self._pick_targets(caster, tcat or "our", tcount):
+            elif at == 102:                  # heal allies (Lunar Guardian HoT instance)
+                # heals can never hit an enemy, so ignore a mislabeled "inherit
+                # (the target enemy)" category and always restore to allies.
+                for tgt in self._pick_ally_priority(caster, tcount):
                     self._heal(caster, tgt, ecoef or coef or 0.6)
             elif at in (121, 122):           # purify own / dispel enemy
                 for tgt in self._pick_targets(caster, tcat or "our", tcount):
@@ -508,7 +524,8 @@ class Battle:
 
     def _apply_skill_statuses(self, caster: CombatUnit, sk):
         """Apply the non-action buff/debuff effects of a tactical skill (Disarm,
-        Stun, Heal Ban, Silence, Taunt, attribute mods)."""
+        Stun, Heal Ban, Silence, Taunt, attribute mods, Burn/Curse DoT, Shield,
+        Detonate)."""
         for eff in sk.get("effects", []):
             if eff.get("isAction"):
                 continue
@@ -516,10 +533,21 @@ class Battle:
             tcat = eff.get("targetCategoryName") or ""
             tcount = eff.get("targetCount") or 1
             chance = float(eff.get("triggerChance") or 1.0)
+            ecoef = float(eff.get("coefficient") or 0.0)
             dur = self._eff_duration(eff, default=2)
             if at == 70:                      # Assault buff on self (handled at cast)
                 self._apply_status(caster, 70, rounds=dur,
                                    value=float(eff.get("flatMagnitude") or 22.0))
+                continue
+            # Shield (73): absorb-one-instance buff on OUR troops (Lunar Guardian /
+            # Soul Drain grant it; the log shows "[Shield] Resisted This DMG").
+            if at == 73:
+                for tgt in self._pick_ally_priority(caster, tcount):
+                    self._apply_status(tgt, 73, rounds=dur, value=1.0)
+                continue
+            # Detonate (72, Element-Burst): consume an enemy's active Burn for a burst.
+            if at == 72:
+                self._detonate(caster, ecoef or 1.0, tcount)
                 continue
             # resolve targets: "inherit action target" -> an enemy we just hit
             if "inherit" in tcat.lower() or tcat == "":
@@ -544,10 +572,87 @@ class Battle:
                     self._apply_status(tgt, 200, rounds=dur, value=caster.hero_id)
                 elif at == 8:                 # DMG Taken Reduced (e.g. Knight Creed)
                     self._apply_status(tgt, 8, rounds=dur, value=self._affected_pct(caster, float(eff.get("coefficient") or 0.0)))
+                elif at == 7:                 # DMG Taken Increased
+                    self._apply_status(tgt, 7, rounds=dur, value=self._affected_pct(caster, ecoef))
+                elif at == 37:                # Tactical Skill DMG Taken Increased (Sin Judgment)
+                    self._apply_status(tgt, 37, rounds=dur, value=self._affected_pct(caster, ecoef))
+                elif at == 14:                # ATK Reduced (flat, Affected-by source)
+                    self._add_attr(tgt, "atk", -abs(float(eff.get("flatMagnitude") or 0.0)) * self._affected_scale(caster))
+                elif at in (108, 109):        # Burn / Curse DoT
+                    self._apply_dot(caster, tgt, at, ecoef, dur)
 
     def _maybe_counter(self, attacker: CombatUnit, defender: CombatUnit, round_idx: int):
         """If the defender carries Counterattack, it strikes back at 0.84x a normal."""
         pass    # counters fire only on NORMAL attacks (see _unit_turn); skills don't provoke
+
+    # ---- Burn / Curse damage-over-time ---------------------------------
+    def _apply_dot(self, caster: CombatUnit, tgt: CombatUnit, at: int,
+                   coef: float, dur: int):
+        """Stamp a Burn(108)/Curse(109) DoT on the target.  Stores the CASTER and the
+        printed coefficient so the before-action tick scales with the caster (DES +
+        troops), matching the log.  Re-cast = refresh (rounds + caster + coef updated),
+        as the log's '[Burn] Effect Updated' shows."""
+        if not tgt.alive or coef <= 0:
+            return
+        st = tgt.statuses.get(at)
+        if st and st["rounds"] != 0:
+            st["rounds"] = max(st["rounds"], dur)
+            st["coef"] = coef
+            st["caster"] = caster
+        else:
+            tgt.statuses[at] = {"rounds": dur, "value": coef, "stacks": 1,
+                                "ch": "dot", "coef": coef, "caster": caster}
+
+    def _dot_tick_phase(self, round_idx: int):
+        """Before-action phase: every active Burn/Curse ticks on its bearer, applied to
+        the caster's current strength (DES + troop_scale).  Order: enemy bearers then
+        ally bearers (side has no effect on the per-tick value)."""
+        for side in (0, 1):
+            for u in list(self._alive(side)):
+                for bid in (108, 109):
+                    st = u.statuses.get(bid)
+                    if not st or st["rounds"] == 0:
+                        continue
+                    caster = st.get("caster")
+                    if caster is None or not caster.alive:
+                        continue
+                    tick = modelmod.dot_tick(caster, u, st.get("coef", st.get("value", 0.0)),
+                                             self.cfg)
+                    if tick <= 0:
+                        continue
+                    applied = self._apply_casualties(u, tick)
+                    caster.stat_kills += applied
+                    caster.stat_skill_dmg += applied
+                    self.round_dmg[caster.side][round_idx] += applied
+                    if not u.alive:
+                        break
+
+    def _detonate(self, caster: CombatUnit, coef: float, count: int):
+        """Element-Burst (actionType 72): with dot_detonate_chance, CONSUME an enemy's
+        active Burn for a burst = dot_detonate_coef * the burst-coef * a fresh tick of
+        the consumed DoT.  Hits up to `count` Burn-carrying enemies; clears the Burn it
+        consumes.  Approximate (the exact server burst is UNKNOWN_SERVER_SIDE) but lands
+        in the logged ~3.1k-6.7k band -- documented as an ASSUMPTION."""
+        foes = [f for f in self._alive(self._opp(caster.side))
+                if self._has(f, BURN)]
+        if not foes:
+            return
+        self.rng.shuffle(foes)
+        for tgt in foes[:max(1, count or 1)]:
+            if self.rng.random() >= self.cfg.dot_detonate_chance:
+                continue
+            st = tgt.statuses.get(108)
+            if not st or st["rounds"] == 0:
+                continue
+            dot_caster = st.get("caster") or caster
+            base = modelmod.dot_tick(dot_caster, tgt,
+                                     st.get("coef", st.get("value", 0.0)), self.cfg)
+            burst = base * self.cfg.dot_detonate_coef * max(1.0, coef)
+            applied = self._apply_casualties(tgt, burst)
+            caster.stat_kills += applied
+            caster.stat_skill_dmg += applied
+            self.round_dmg[caster.side][self._cur_round_idx] += applied
+            st["rounds"] = 0                  # Burn consumed by the detonation
 
     def _cleanse(self, unit: CombatUnit):
         for bid in list(unit.statuses.keys()):
@@ -681,7 +786,13 @@ class Battle:
         ri = 0
         for ri in range(rounds):
             round_no = ri + 1
+            self._cur_round_idx = ri
             self._round_start(round_no)
+            # Burn/Curse DoT ticks at the before-action phase (after heal/worsen).
+            self._dot_tick_phase(ri)
+            if self._is_over():
+                decided = True
+                break
             order = sorted(
                 [u for s in (0, 1) for u in self._alive(s)],
                 key=lambda u: (-u.eff_stat("speed"), self.rng.random()),

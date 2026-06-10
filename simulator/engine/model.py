@@ -44,6 +44,7 @@ CHANNEL_PRIMARY_HERO_STAT = {
     "pursuit": "speed",  # pursuit dmg "Affected By Spd"
     "real": "atk",       # Ghost-Bone Assault real dmg "Affected By ATK Attribute"
     "splash": "atk",
+    "dot": "ruin",       # Burn/Curse DoT scales with the CASTER's DES/Ruin (calibration_2)
 }
 
 
@@ -110,6 +111,31 @@ class ModelConfig:
     #     stated "Real DMG Base 32.17+7.2".  We scale the stated base by an army &
     #     ATK factor so it sits in that band. ---
     real_dmg_scale: float = 17.5              # ASSUMPTION scales stated Real-DMG base
+
+    # --- Burn / Curse DAMAGE-OVER-TIME channel (calibrated to calibration_2_dot.md) ---
+    # A DoT tick fires at the BEFORE-ACTION phase for the effect's duration, applied
+    # to the skill's target count.  The findings pin the shape:
+    #   * ~LINEAR in the printed coefficient (Burn coef 1.0 ~= 2x Curse coef 0.5).
+    #   * scales with the CASTER (DES/Ruin via offence("dot") + troop_scale), NOT the
+    #     target's HP -- ticks fall as the caster loses troops.
+    #   * MILDLY DEF-mitigated (its own gentle curve, weaker than the direct channel).
+    # tick = coef * off(caster,"dot") * troop_factor(caster) * dot_global * dot_def_mitig
+    #   off(caster,"dot") = soldier.atk + Ruin*hero_off_weight  (channel stat = ruin)
+    #   troop_factor = dot_troop_floor + (1-dot_troop_floor)*troop_scale(caster)
+    #     (a FLOOR so a near-dead caster still ticks for a few hundred, as R8=674 shows)
+    #   dot_def_mitig = dot_def_ref / (dot_def_ref + DEF*dot_def_weight)
+    # Fit: least-squares over the 8 logged Burn/Curse anchors -> mean rel-err ~13%.
+    # All ASSUMPTION (server-side); values calibrated to the log.
+    dot_global: float = 24.2                  # ASSUMPTION global DoT lethality scalar (fit)
+    dot_troop_floor: float = 0.15             # ASSUMPTION floor of the caster troop factor
+    dot_def_ref: float = 900.0                # ASSUMPTION DoT DEF-mitigation midpoint (mild)
+    dot_def_weight: float = 2.0               # ASSUMPTION hero-DEF weight in DoT mitigation
+    # Detonate (Element-Burst style, actionType 72 on Exploding Flame, coef 1.6): a
+    # chance, when re-casting the Burn skill while the target already carries Burn, to
+    # CONSUME the DoT for a burst = dot_detonate_coef * the would-be remaining tick.
+    # Log bursts ~3.1k-6.7k; a multiple of the ~1.5-3.5k tick reproduces that band.
+    dot_detonate_chance: float = 0.4          # ASSUMPTION detonate trigger chance
+    dot_detonate_coef: float = 1.2            # ASSUMPTION burst multiple of remaining tick
 
     # --- "Affected by X attribute" scaling for stat-mod buffs ---
     affected_per_points: float = 200.0        # ASSUMPTION (community-stated ~+1 unit / 200)
@@ -503,6 +529,19 @@ def def_mitigation(defender: CombatUnit, channel: str, cfg: ModelConfig) -> floa
         return 1.0
     def_eff = defender.eff_stat("def") * cfg.hero_def_weight
     return cfg.def_ref / (cfg.def_ref + def_eff)
+
+
+def dot_tick(caster: CombatUnit, defender: CombatUnit, coef: float,
+             cfg: ModelConfig) -> float:
+    """One Burn/Curse tick.  Scales with the CASTER (DES via offence("dot") +
+    a floored troop factor), LINEAR in the printed coefficient, and only MILDLY
+    DEF-mitigated.  Calibrated to calibration_2_dot.md (see ModelConfig).  All
+    server-side -> ASSUMPTION; values fit to the log's 8 tick anchors."""
+    off = offence(caster, "dot", cfg)
+    troop_factor = cfg.dot_troop_floor + (1.0 - cfg.dot_troop_floor) * troop_scale(caster, cfg)
+    def_eff = defender.eff_stat("def") * cfg.dot_def_weight
+    def_mitig = cfg.dot_def_ref / (cfg.dot_def_ref + def_eff)
+    return max(0.0, coef * off * troop_factor * cfg.dot_global * def_mitig)
 
 
 def restraint_mult(g: datamod.GameData, attacker: CombatUnit, defender: CombatUnit,
