@@ -106,4 +106,5 @@
 - [Chat Emojis](Reference/Emojis.md)
 - [Game Tips](Reference/Tips.md)
 - [Glossary](Reference/Glossary.md)
+- [In-Game Hints & Help](Reference/Game-Hints.md)
 

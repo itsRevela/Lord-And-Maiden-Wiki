@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Reference/Game-Hints.md** — catalogues the game's in-game hint/help systems (Hero Info →
+  Details per-hero, loading-screen Tips, feature "?" buttons, skill/talent tooltips, system
+  pop-ups) and consolidates the **battle rules & calculations** they reveal. Surfaces several
+  clarifications not previously captured (from `Language_SysTip`): "Affected by X attribute"
+  refers to the **caster**, **healing scales with Soldiers' HP**, "**2 of our troops**" = 2
+  *other* allies, **5★ summon rate-up = 50%** it's the featured one, Codex submission destroys
+  the hero/item, World-level EXP cap, siege auto-bombard, etc. Cross-linked to Battle Mechanics,
+  Skill Stones, Hero Advancement and Tips. README badge → 191.
 - **Hero Equipment, Skill Stones, Left/Right Accessories, and Hero Advancement** — four
   interlocking hero systems, from a 3-subagent decompiled-code investigation:
   - **Items/Equipment.md** rebuilt into the full **Hero Equipment** reference: the 8 gear

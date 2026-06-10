@@ -5,7 +5,7 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-190-1f6feb)
+![Pages](https://img.shields.io/badge/pages-191-1f6feb)
 ![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
@@ -105,6 +105,7 @@ cross-checked against the source files.
 [Glossary](wiki/Reference/Glossary.md) ·
 [Attribute Catalog](wiki/Reference/Attributes.md) ·
 [Game Tips](wiki/Reference/Tips.md) ·
+[In-Game Hints & Help](wiki/Reference/Game-Hints.md) ·
 [AI Equipment](wiki/Reference/AI-Equipment.md) ·
 [Avatar Frames](wiki/Reference/Avatar-Frames.md) ·
 [Chat Emojis](wiki/Reference/Emojis.md)
