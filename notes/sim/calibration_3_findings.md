@@ -101,3 +101,24 @@ enemy's tank; global target-persistence backfires (helps the enemy focus the squ
 **Fixing the win-rate requires a deliberate multi-log recalibration of the shared damage model
 (skill/stone level scaling + tank-vs-DPS distribution) that re-fits all four logs simultaneously** —
 flagged for a decision, not forced.
+
+### Recalibration attempt (2026-06-10, "level-scaling first") — REVERTED, key finding
+Implemented two FACT-correct fixes and measured against all four logs:
+1. **Per-effect `triggerChance` on `at=101` is the real cause of the Rift "7 vs 4" discrepancy** —
+   Rift has 3 hits @ chance 1.0 + 4 @ chance 0.30 → expected **4.2 hits = the log's 4**. The engine
+   ignored the per-effect chance and fired all 7 (over-counting multi-hit / AoE damage). Gating it
+   moved the pursuit damage ratio **0.64 → 0.96** (in-game 1.24), win 25% → 33%, and cut the
+   surviving tank's over-damage (Thiel ~110k → ~70k). This is the most impactful correctness fix.
+2. **Skill LEVEL scaling** — `coef(L)=initVal+(maxedValue−initVal)·(L−1)/9`; stones are lv5 (data
+   flag `skillStone`), so their per-hit coef is ~28% below max. Recovered testcase 8/9 → 9/9.
+**Outcome: both fixes are correct but INCOMPATIBLE with the current dot calibration.** They cut the
+enemy's direct/stone damage, which tips the DoT-vs-sustain matchup to the player (dot win 64.5% →
+~78%, exceeding the 50-65% band) — and **no dot-side knob re-greens it** (`dot_global`/`heal_scale`
+don't lower the win-rate; `heal_scale` is shared with testcase; raising `damage_global` to restore the
+enemy breaks testcase/baseline). i.e. the **dot calibration had absorbed the over-counting bug** as a
+load-bearing source of enemy pressure. Per the "revert anything that breaks a green validator" rule,
+both fixes were **reverted to the all-green committed state** (testcase 9/9, baseline 6/6, dot 7/7,
+pursuit 4/4 gating). **Path forward (needs a decision/data):** re-run the **DoT matchup in-game with
+the corrected mechanics** to get a fresh win-rate target (the old 60% is a 10-run sample with a wide
+CI), then re-apply the two fixes and re-fit the dot scenario to the new ground-truth. The two fixes
+are documented here and trivial to re-apply.
