@@ -35,8 +35,8 @@ bonus). Names verified against the game data.
 
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DEF
-skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening, soul bound lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -57,8 +57,8 @@ T6 archer troops (55,000x)
 
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
-skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening, rose blade lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -79,8 +79,8 @@ T6 archer troops (55,000x)
 
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
-skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening, chain arrows lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -104,8 +104,8 @@ T6 archer troops (55,000x)
 
 Cthugha·Sp (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DES
-skills: (main)exploding flame lv10 (lv5 relic effect), sin judgment lv10 max awakening, fire emblem lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)exploding flame lv10 (lv5 relic effect), sin judgment lv10 max awakening [Tactical, max 5★], fire emblem lv10 max awakening [Passive, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -126,8 +126,8 @@ T6 archer troops (55,000x)
 
 Cthugha:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
-skills: (main)blazing sword lv10 (lv5 relic effect), erythema imprint lv10 max awakening, flame bash lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)blazing sword lv10 (lv5 relic effect), erythema imprint lv10 max awakening [Tactical, max 5★], flame bash lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -148,8 +148,8 @@ T6 archer troops (55,000x)
 
 Nyx:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
-skills: (main)soul drain lv10 (lv5 relic effect), lunar guardian lv10 max awakening, wail lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)soul drain lv10 (lv5 relic effect), lunar guardian lv10 max awakening [Tactical, max 5★], wail lv10 max awakening [Passive, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe

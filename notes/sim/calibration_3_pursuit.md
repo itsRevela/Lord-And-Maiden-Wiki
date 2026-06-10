@@ -32,8 +32,8 @@ bonus). Names verified against the game data.
 
 Thiel (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 DEF
-skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening, soul bound lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)binding slash lv10 (lv5 relic effect), radiant slash lv10 max awakening [Tactical, max 5★], soul bound lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -54,8 +54,8 @@ T6 archer troops (55,000x)
 
 Nicole:
 lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
-skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening, rose blade lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening [Tactical, max 4★], rose blade lv10 max awakening [Tactical, max 4★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -76,8 +76,8 @@ T6 archer troops (55,000x)
 
 Dolly:
 lv 80 (level 5 advancement), attributes allocated: +229 DES
-skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening, chain arrows lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)sky rain arrows lv10 (lv5 relic effect), arrows volley lv10 max awakening [Tactical, max 5★], chain arrows lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -101,8 +101,8 @@ T6 archer troops (55,000x)
 
 SusaMaki (commander):
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
-skills: (main)flash fire lv10 (lv5 relic effect), white blade lv10 max awakening, witcher lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)flash fire lv10 (lv5 relic effect), white blade lv10 max awakening [Pursuit, max 5★], witcher lv10 max awakening [Passive, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -123,8 +123,8 @@ T6 archer troops (55,000x)
 
 Niya:
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
-skills: (main)slayer lv10 (lv5 relic effect), chain reaction lv10 max awakening, trio lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)slayer lv10 (lv5 relic effect), chain reaction lv10 max awakening [Pursuit, max 5★], trio lv10 max awakening [Pursuit, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
@@ -145,8 +145,8 @@ T6 archer troops (55,000x)
 
 Mia:
 lv 80 (level 5 advancement), attributes allocated: +229 ATK
-skills: (main)divine punish lv10 (lv5 relic effect), hayate blade lv10 max awakening, force majeure lv10 max awakening
-Skill stone: Magic Spear lv5
+skills: (main)divine punish lv10 (lv5 relic effect), hayate blade lv10 max awakening [Passive, max 5★], force majeure lv10 max awakening [Tactical, max 5★]
+Skill stone: Magic Spear lv5 [Tactical, max 5★]
 
 weapon: night's sword
 clothes: day's robe
