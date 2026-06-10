@@ -47,6 +47,8 @@
 - [Campaign (Main Gates)](World/Campaign.md)
 - [NPC Cities & Guardians](World/NPC-Cities.md)
 - [Relic Dungeons](World/Relic-Dungeons.md)
+- [Servers & Realms](World/Servers-and-Realms.md)
+- [The Great World (Map & Regions)](World/Great-World.md)
 - [Trials (Assessment)](World/Trials.md)
 - [Warlord Challenge](World/Warlord-Challenge.md)
 - [Wilderness & World Boxes](World/Wild-Exploration.md)

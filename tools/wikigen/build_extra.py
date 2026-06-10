@@ -933,6 +933,107 @@ def gen_glossary(write, tbl, R):
 
 
 # --------------------------------------------------------------------------- #
+# Servers & the Great World (recovered from the decompiled client + in-game tips)
+# --------------------------------------------------------------------------- #
+def gen_servers(write, tbl, R):
+    lines = [
+        "Lord and Maiden runs many parallel **servers** (realms). Your **account is global**, but "
+        "each **character lives on one server** — there is no in-client character transfer between "
+        "servers, so the server you start on is effectively your home realm.", "",
+        "## Choosing a server",
+        "On the server-select screen, servers are grouped into **Group-N** clusters. Each server shows:", "",
+        "- a **status light** — green (smooth), yellow (busy) or red (full / crowded);",
+        "- a **NEW** or **HOT** badge for freshly-opened / featured servers;",
+        "- a **Role ×N** count showing where your account already has characters.",
+        "",
+        "You pick a server to enter and the game connects to that server's own host. (\"Realm\" and "
+        "\"server\" are the same thing.)", "",
+        "## Chat & cross-server",
+        "Chat is split into channels: **World** (your own server), **Union**, **Team**, **Private**, "
+        "**System**, **Camp**, and a cross-server **Server** channel (available when enabled). "
+        "Cross-server messages display the **originating server's name**, and the game can push "
+        "server-wide announcements as on-screen broadcasts.", "",
+        "## Cross-server modes",
+        "Several activities pit you against other servers, gated by your character's age "
+        "(**Role Creation Time**):", "",
+    ]
+    lines += tbl(["Cross-server mode", "Unlocks at character age"], [
+        ["Ruins", "7 days"],
+        ["Divine Demon Trial", "10 days"],
+        ["Abyss", "14 days"],
+        ["Primordial Continent Boss", "30 days (a 3-day countdown shows in advance)"],
+        ["Cross-server Friends", "30 days (the other player must also be 30+ days old)"],
+    ])
+    lines += [
+        "", "## Server merges",
+        "Low-population servers are periodically **merged**. On a merge:", "",
+        "1. All Main Cities are randomly relocated (you get 1 Custom Relocation Order; relocation cooldown reset).",
+        "2. All occupied Mines are reset (unclaimed resources settled immediately).",
+        "3. All Union-occupied Cities are reset (unclaimed Union resources settled immediately).",
+        "4. Union cooperation relationships and First Occupation are **not** reset.",
+        "5. All player Camps are removed (construction resources refunded).",
+        "6. All Union Camps and Giant Trebuchets are removed (Union resources refunded).",
+        "7. Compensation: Vit ×3,000, Portal Cooldown Stone ×100, Quick Healing Pack ×300.",
+        "8. The Divine Demon Trial Hall-of-Fame first-clears reset (must be re-challenged).",
+        "9. The relocation restricted zone resets; clear stages to shrink it again.",
+        "10. City protection time is **not** reset — it uses the oldest server's protection time.", "",
+        "> *Community note (not in the game files):* players report that **servers 1–3 are mobile-only** "
+        "and **server 4 onward is shared between mobile and Steam**. Treat this as community knowledge.", "",
+        "**See also:** [The Great World](Great-World.md) · "
+        "[Territory Wars & Raids](../Alliance/Territory-Wars-and-Raids.md) · [Game Tips](../Reference/Tips.md).",
+    ]
+    write("World/Servers-and-Realms.md", "Servers & Realms", "PvE & World", lines)
+
+
+def gen_great_world(write, tbl, R):
+    wsb = load("WorldSysBuildXmlInfo")
+    counts = collections.Counter(r["itemType"] for r in wsb)
+    node = {"4": "Farm", "5": "Sawmill", "6": "Quarry", "7": "Iron Mine", "18": "Meteoric Iron Mine",
+            "10": "NPC City / Village", "12": "World Boss", "11": "Mine (special)"}
+    lines = [
+        "The **Great World** (also called the \"Big World\") is the single shared map every player on a "
+        "server inhabits, outside their own city. It unlocks once your **main keep reaches level 6**, "
+        "and you toggle between your City and the Great World from the main screen.", "",
+        "## World vs Region",
+        "These are **not** the same thing:", "",
+        "- The **Great World** is the entire shared map — a fixed **193 × 193 grid** (plus a special expansion block).",
+        "- A **Region** is a single **grid cell** of that map (about 20.5 world units across). It is an "
+        "internal map/streaming unit, **not** a named area.",
+        "- The **\"nine-square grid\"** in the occupation rules is just the **3 × 3 block of regions** around a point.",
+        "",
+        "So the world is *divided into* regions; a region is one tile of the world.", "",
+        "## What's on the map",
+        "The static map is built from ~%s object placements:" % format(len(wsb), ","), "",
+    ]
+    body = [[node.get(t, "Type " + t), format(counts[t], ",")]
+            for t in sorted(counts, key=lambda x: -counts[x])]
+    lines += tbl(["Object", "Tiles on map"], body)
+    lines += [
+        "",
+        "Resource nodes (Farm / Sawmill / Quarry / Iron Mine) make up the bulk; **73 NPC Cities/Villages** "
+        "are the siege targets, **9 World Bosses** and special **Mines** are scattered about, and a mine "
+        "flagged as a **Core Mine** grants a **Sphere of Influence** when held. For each occupiable "
+        "target's levels, rewards and defenders see [World Map Objects](World-Map.md); for NPC cities see "
+        "[NPC Cities](NPC-Cities.md); for player-built structures see [World & Naval Structures](World-Structures.md); "
+        "for wilderness nodes and treasure boxes see [Wilderness & World Boxes](Wild-Exploration.md).", "",
+        "## Occupation & siege rules",
+        "- You can occupy any target in the **nine-square grid** around your main city.",
+        "- Holding a **Core Mine** grants a **Sphere of Influence**; the grids adjacent to your sphere then "
+        "become occupiable — this is how you expand across the map.",
+        "- Occupied mines give passive resource income for a limited time; the **Transport Station** raises "
+        "how long and how many you can hold at once.",
+        "- After all defenders are beaten, the target belongs to the **first war-declarer** (whose allies may "
+        "assist). A city left **offline 14+ days** is randomly relocated.",
+        "- **Siege battles** (capturing NPC cities) are **Union-only**: an ally's Sphere must border the "
+        "target, you must beat all defenders **and break the walls with Chariots**, and city ownership "
+        "resets on the **1st of each month**. See [Territory Wars & Raids](../Alliance/Territory-Wars-and-Raids.md).", "",
+        "*(The in-game rule pop-ups are images; the authoritative text is on [Game Tips](../Reference/Tips.md) "
+        "under \"Great World\" and \"Siege Battle\".)*",
+    ]
+    write("World/Great-World.md", "The Great World (Map & Regions)", "PvE & World", lines)
+
+
+# --------------------------------------------------------------------------- #
 def register(write, tbl, R):
     gen_overview(write, tbl, R)
     gen_hero_leaderboards(write, tbl, R)
@@ -945,6 +1046,8 @@ def register(write, tbl, R):
     gen_market(write, tbl, R)
     gen_shop(write, tbl, R)
     gen_travel_notes(write, tbl, R)
+    gen_servers(write, tbl, R)
+    gen_great_world(write, tbl, R)
     gen_choice_chests(write, tbl, R)
     gen_gift_codes(write, tbl, R)
     gen_relics(write, tbl, R)

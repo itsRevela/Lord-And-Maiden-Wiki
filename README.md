@@ -5,7 +5,7 @@
 **The complete, data-mined reference for *Lord and Maiden*** — every stat, formula,
 cost table, skill, and progression curve, pulled straight from the game files.
 
-![Pages](https://img.shields.io/badge/pages-183-1f6feb)
+![Pages](https://img.shields.io/badge/pages-185-1f6feb)
 ![Heroes](https://img.shields.io/badge/heroes-118-8957e5)
 ![Source](https://img.shields.io/badge/source-data--mined-2da44e)
 ![Verified](https://img.shields.io/badge/numbers-verified-2da44e)
@@ -73,6 +73,8 @@ cross-checked against the source files.
 [Gift Code Rewards](wiki/Items/Gift-Code-Rewards.md)
 
 **🗺️ PvE & World**
+[The Great World](wiki/World/Great-World.md) ·
+[Servers & Realms](wiki/World/Servers-and-Realms.md) ·
 [Campaign](wiki/World/Campaign.md) ·
 [Relic Dungeons](wiki/World/Relic-Dungeons.md) ·
 [Bosses](wiki/World/Bosses.md) ·

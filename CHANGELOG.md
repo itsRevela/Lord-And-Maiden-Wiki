@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Servers, Worlds & Regions** section (from a 2-subagent decompiled-code investigation):
+  - **World/Servers-and-Realms.md** — the server/realm model (Group-N clusters, status
+    lights, NEW/HOT badges, per-server characters, no client transfer), cross-server chat
+    channels, the cross-server-mode age gates (Ruins 7d / Divine Demon Trial 10d / Abyss
+    14d / Primordial Boss 30d / Friends 30d), and the full 10-point server-merge rules.
+  - **World/Great-World.md** — answers "is a World a Region?" definitively: **no** — the
+    Great World is the whole shared **193×193 grid**, a **Region** is one ~20.5-unit grid
+    cell (the "nine-square grid" = a 3×3 region block). Plus map composition (data-derived
+    tile counts: ~119k objects — resource nodes, 73 NPC cities, 9 bosses), Sphere-of-
+    Influence/occupation rules, siege rules, and the level-6-keep unlock gate.
+  - The community "servers 1–3 mobile / 4+ shared" claim is attributed as community
+    knowledge (not found in the client). README badge → 185 pages.
 - **Shop & Market documentation overhauled** (from a 3-subagent decompiled-code
   investigation). The game's **Market** (MarketPanel) and **Shop** (ShopPanel) are
   distinct panels, now documented as two pages:
