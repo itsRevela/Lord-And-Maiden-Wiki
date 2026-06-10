@@ -70,7 +70,7 @@ class ModelConfig:
     free_stat_mode: str = "rpoint"            # "rpoint" | "primary" | "even"
     # the testcase units allocate +229 into a single stat ("+229 ATK", etc.).
     # When a BuildSpec pins an allocation stat, this many points go there. ---
-    allocated_stat_points: int = 229          # FACT (log: "+229 ATK/DEF/DES/ATK SPD")
+    allocated_stat_points: int = 229          # FACT 5★ cap; star-aware in build_team (5★=229/4★=179/3★=129)
 
     # --- ABSOLUTE damage model (calibrated to the log) -----------------------
     # raw = coef * off(att,ch) * troop_scale(att)
@@ -316,8 +316,11 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         # free stat points: if the build pins an allocation stat (log "+229 X"),
         # dump cfg.allocated_stat_points there; otherwise use the rpoint preset.
         if s.allocated_stat in ("atk", "def", "ruin", "speed"):
+            # Lv80 free-point cap is star-dependent (FACT): 5★=+229, 4★=+179,
+            # 3★=+129 (= 50 advance + 79 level; +50 per breakthrough tier).
+            pts = {5: 229.0, 4: 179.0, 3: 129.0}.get(int(h["star"]), float(cfg.allocated_stat_points))
             add = {"atk": 0.0, "def": 0.0, "ruin": 0.0, "speed": 0.0}
-            add[s.allocated_stat] = float(cfg.allocated_stat_points)
+            add[s.allocated_stat] = pts
         else:
             primary = {"atk": atk, "def": deff, "ruin": ruin, "speed": spd}
             primary_key = max(primary, key=primary.get)

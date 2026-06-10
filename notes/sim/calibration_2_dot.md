@@ -56,7 +56,7 @@ T6 archer troops (55,000x)
 ---
 
 Nicole:
-lv 80 (level 5 advancement), attributes allocated: +229 ATK
+lv 80 (level 5 advancement), attributes allocated: +179 ATK   *(4★ cap is +179, not +229)*
 skills: (main)fly flowers lv10 (lv5 relic effect), rose sword lv10 max awakening, rose blade lv10 max awakening
 Skill stone: Magic Spear lv5
 
