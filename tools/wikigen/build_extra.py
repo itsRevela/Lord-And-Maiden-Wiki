@@ -458,9 +458,11 @@ def gen_runes(write, tbl, R):
     for gp, lv in groups.items():
         st, _, sid = (gp or "").partition("_")
         lv = sorted(lv, key=lambda x: int(x.get("Value") or 0))
+        sk = R.skill_full(st, sid)
         kinds.append({
             "skill": R.skill_name(st, sid),
             "type": SKILL_TYPE_NAME.get(st, "Type " + st),
+            "effect": clean(sk.get("Des_en") or sk.get("Des")) if sk else "—",
             "rare": lv[0].get("rare", "?"),
             "lv1": pct(lv[0]),
             "max": pct(lv[-1]),
@@ -484,15 +486,17 @@ def gen_runes(write, tbl, R):
         "**Lucky Wheel** / **Lucky Mystery Box**.",
         "- *(Server-side, not in the files: exact Runes-Fragment cost per level, dismantle yield, and box rates.)*", "",
         "## Rune catalog",
-        "Each rune raises its skill's trigger chance; the column shows the bonus at **Lv 1 → max level**.", "",
+        "Each rune raises its skill's trigger chance (shown at **Lv 1 → max level**); the **Skill effect** "
+        "column describes what that boosted skill does.", "",
     ]
     for star, title in [("5", "★5 Runes"), ("4", "★4 Runes")]:
         grp = sorted([k for k in kinds if k["rare"] == star], key=lambda x: (x["type"], x["skill"].lower()))
         if not grp:
             continue
         lines += ["### %s (%d)" % (title, len(grp)), ""]
-        lines += tbl(["Skill boosted", "Type", "Trigger chance (Lv 1 → max)"],
-                     [[k["skill"], k["type"], "+%s%% → +%s%% (Lv %s)" % (k["lv1"], k["max"], k["maxlv"])] for k in grp])
+        lines += tbl(["Skill boosted", "Type", "Trigger chance (Lv 1 → max)", "Skill effect"],
+                     [[k["skill"], k["type"], "+%s%% → +%s%% (Lv %s)" % (k["lv1"], k["max"], k["maxlv"]), k["effect"]]
+                      for k in grp])
         lines.append("")
     write("Heroes/Runes.md", "Runes", "Heroes & Lord", lines)
 
