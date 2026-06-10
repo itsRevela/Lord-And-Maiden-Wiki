@@ -109,17 +109,16 @@ class ModelConfig:
     # --- reactions / procs (coefficients are FACT from skills; these gate them) ---
     counter_coef: float = 0.84                # FACT (Reactive Block 0.70+0.14)
     reactive_block_reduction: float = 0.592   # FACT (log: DMG Taken Reduced 59.20%)
-    # Stated +33% per stalemate; the model uses a higher effective value so a rematch
-    # resolves in ~2 bouts as the log shows (other approximations damp it). The buff
-    # also escalates super-linearly here to force a decision (the log's `-1` suffix
-    # suggests an escalating stack). ASSUMPTION effective.
-    stalemate_dmg_dealt_per_stack: float = 0.85  # FACT base 0.33, ASSUMPTION effective
+    # FACT (log L676): a rematch after a stalemate grants "All Hero DMG Dealt +33%"
+    # per prior stalemate. Use the logged value verbatim; the match simply takes a
+    # few bouts to resolve (faithful, not forced to exactly 2).
+    stalemate_dmg_dealt_per_stack: float = 0.33  # FACT (log: Stalemate-1 +33%)
 
-    # --- prepared-CC EFFECTIVE re-roll bases.  Stated bases are 40% (allies) /
-    #     60% (enemies); resist + per-round Purification net the EFFECTIVE activation
-    #     down (the log shows the carry firing nearly every round). ASSUMPTION net. ---
-    prepared_cc_ally_base: float = 0.22       # 40% stated, netted by purify/resist
-    prepared_cc_enemy_base: float = 0.45      # 60% stated, netted by purify/resist
+    # --- prepared-CC per-round re-roll bases. FACT from the log: the carry-over
+    #     Silence(Prepared) re-rolls each round at 40% (allies) / 60% (enemies),
+    #     +flat from skill-stone/rune (shown as "40.00%+12.00%"). ---
+    prepared_cc_ally_base: float = 0.40       # FACT (log: ally trigger 40%+flat)
+    prepared_cc_enemy_base: float = 0.60      # FACT (log: enemy trigger 60%+flat)
 
     # --- rematch / impasse (FACT: undecided after 8 rounds -> rematch, troop
     #     counts carried over; repeats until a commander is wiped). ---
