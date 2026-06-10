@@ -339,3 +339,10 @@ def _troops_now(self) -> float:
 
 
 CombatUnit.troops_now = _troops_now
+
+
+def fresh_units(units):
+    """Cheap per-battle clone: copy each unit with full HP, alive, empty statuses.
+    Static fields (soldier, skills, stats) are shared read-only; combat never
+    mutates them, so this is safe and far faster than rebuilding the team."""
+    return [replace(u, hp=u.hp_max, alive=True, statuses={}) for u in units]
