@@ -22,6 +22,7 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from simulator.engine import data as datamod
 from simulator.engine.model import ModelConfig
+from simulator.engine.optimize import optimize_formation
 from simulator.engine.search import SearchOptions, run_search
 
 app = Flask(__name__)
@@ -80,13 +81,16 @@ def portraits(fname):
     return send_from_directory(PORTRAITS_DIR, fname)
 
 
-def _run_job(job_id, heroes, opts):
+def _run_job(job_id, heroes, opts, mode, objective):
     def progress(done, total):
         with _LOCK:
             _JOBS[job_id]["done"] = done
             _JOBS[job_id]["total"] = total
     try:
-        report = run_search(heroes, opts, progress=progress)
+        if mode == "optimize":
+            report = optimize_formation(heroes, opts, progress=progress, objective=objective)
+        else:
+            report = run_search(heroes, opts, progress=progress)
         with _LOCK:
             _JOBS[job_id]["result"] = report
             _JOBS[job_id]["status"] = "done"
@@ -104,6 +108,8 @@ def simulate():
     heroes = [int(x) for x in body.get("heroes", [])]
     if len(heroes) != 3 or any(h not in _G.heroes for h in heroes):
         return jsonify({"error": "provide exactly 3 valid playable hero ids"}), 400
+    mode = body.get("mode", "rank")           # "rank" | "optimize"
+    objective = body.get("objective", "win")  # win | early | mid | late | all
     opts = SearchOptions(
         n_battles=int(body.get("battles", 60)),
         n_opponents=int(body.get("opponents", 40)),
@@ -114,8 +120,10 @@ def simulate():
     )
     job_id = uuid.uuid4().hex[:12]
     with _LOCK:
-        _JOBS[job_id] = {"status": "running", "done": 0, "total": 192}
-    threading.Thread(target=_run_job, args=(job_id, heroes, opts), daemon=True).start()
+        _JOBS[job_id] = {"status": "running", "done": 0,
+                         "total": 24 if mode == "optimize" else 192, "mode": mode}
+    threading.Thread(target=_run_job, args=(job_id, heroes, opts, mode, objective),
+                     daemon=True).start()
     return jsonify({"job_id": job_id})
 
 

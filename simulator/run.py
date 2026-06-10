@@ -17,6 +17,7 @@ import time
 
 from simulator.engine import data as datamod
 from simulator.engine.model import ModelConfig
+from simulator.engine.optimize import optimize_formation
 from simulator.engine.search import SearchOptions, run_search
 
 RUNS_DIR = os.path.join(os.path.dirname(__file__), "runs")
@@ -56,6 +57,10 @@ def main():
     ap.add_argument("--seed", type=int, default=12345)
     ap.add_argument("--workers", type=int, default=0, help="0 = all CPU cores")
     ap.add_argument("--top", type=int, default=10, help="how many builds to print")
+    ap.add_argument("--optimize", action="store_true",
+                    help="genetic search over commander + troops + the 6 modular skills (any skill)")
+    ap.add_argument("--objective", default="win", choices=["win", "early", "mid", "late", "all"],
+                    help="what --optimize maximises")
     ap.add_argument("--list-heroes", action="store_true")
     args = ap.parse_args()
 
@@ -76,18 +81,39 @@ def main():
         seed=args.seed, workers=args.workers, cfg=ModelConfig(),
     )
     names = [g.hero(h)["name_en"] for h in args.heroes]
-    total_battles = opts.n_battles * opts.n_opponents * 192
-    print("Simulating formation: %s" % " / ".join(names))
-    print("  %d builds x %d opponents x %d battles = %d battles, on %s cores"
-          % (192, opts.n_opponents, opts.n_battles, total_battles,
-             args.workers or os.cpu_count()))
+    print("Formation: %s" % " / ".join(names))
+    os.makedirs(RUNS_DIR, exist_ok=True)
+    stamp = time.strftime("%Y%m%d_%H%M%S")
     t0 = time.time()
+
+    if args.optimize:
+        print("  genetic search over commander + troops + 6 modular skills "
+              "(objective: %s), on %s cores" % (args.objective, args.workers or os.cpu_count()))
+        report = optimize_formation(args.heroes, opts, progress=_progress, objective=args.objective)
+        dt = time.time() - t0
+        report["elapsed_seconds"] = round(dt, 1)
+        fname = os.path.join(RUNS_DIR, "%s_%s_opt.json" % (stamp, "-".join(map(str, args.heroes))))
+        with io.open(fname, "w", encoding="utf-8") as f:
+            json.dump(report, f, ensure_ascii=False, indent=2)
+        print("\n=== OPTIMISED BUILD (%.1fs) ===" % dt)
+        print("Best: %s" % report["best_label"])
+        print("Win rate: %.1f%% | objective(%s) = %s"
+              % (100 * report["win_rate"], args.objective,
+                 ("%.1f%%" % (100 * report["win_rate"])) if args.objective == "win"
+                 else ("%.0f" % report["windows"][args.objective])))
+        for h in report["heroes"]:
+            print("  %s%s (%s)  main: %s  | modular: %s"
+                  % ("[CMD] " if h["is_commander"] else "      ", h["name"], h["troop"],
+                     h["main_skill"], " + ".join(h["modular_skills"])))
+        print("\nFull report: %s" % fname)
+        return
+
+    total_battles = opts.n_battles * opts.n_opponents * 192
+    print("  %d builds x %d opponents x %d battles = %d battles, on %s cores"
+          % (192, opts.n_opponents, opts.n_battles, total_battles, args.workers or os.cpu_count()))
     report = run_search(args.heroes, opts, progress=_progress)
     dt = time.time() - t0
     report["elapsed_seconds"] = round(dt, 1)
-
-    os.makedirs(RUNS_DIR, exist_ok=True)
-    stamp = time.strftime("%Y%m%d_%H%M%S")
     fname = os.path.join(RUNS_DIR, "%s_%s.json" % (stamp, "-".join(map(str, args.heroes))))
     with io.open(fname, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)

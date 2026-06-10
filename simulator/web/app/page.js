@@ -25,6 +25,8 @@ export default function Page() {
   const [slots, setSlots] = useState([null, null, null]);
   const [commander, setCommander] = useState(0);
   const [optimalTroop, setOptimalTroop] = useState(true);
+  const [mode, setMode] = useState("rank"); // rank | optimize
+  const [objective, setObjective] = useState("win");
   const [battles, setBattles] = useState(60);
   const [opponents, setOpponents] = useState(40);
   const [pickIdx, setPickIdx] = useState(-1);
@@ -62,10 +64,10 @@ export default function Page() {
   async function start() {
     setResult(null);
     const body = {
-      heroes: slots, battles, opponents,
+      heroes: slots, battles, opponents, mode, objective,
       select_optimal_troop: optimalTroop,
-      // map UI commander (slot index) — backend re-derives commander per build,
-      // but we pass it as the seed preference is irrelevant; commander is searched.
+      // commander + troop types + (in optimize mode) skills are all SEARCHED, so the
+      // UI commander pick is just a hint; the simulator finds the best assignment.
     };
     const r = await fetch("/api/simulate", {
       method: "POST", headers: { "Content-Type": "application/json" },
@@ -155,6 +157,28 @@ export default function Page() {
         {/* controls */}
         <div className="panel">
           <h2>Simulation settings</h2>
+          <div className="seg" style={{ marginBottom: 16 }}>
+            <button className={"seg-btn" + (mode === "rank" ? " on" : "")} onClick={() => setMode("rank")}>
+              Rank troop &amp; commander builds
+              <span className="seg-sub">exhaustive · default skills</span>
+            </button>
+            <button className={"seg-btn" + (mode === "optimize" ? " on" : "")} onClick={() => setMode("optimize")}>
+              Optimize full build (incl. skills)
+              <span className="seg-sub">genetic · any 6 modular skills</span>
+            </button>
+          </div>
+          {mode === "optimize" && (
+            <div className="control" style={{ marginBottom: 16 }}>
+              <label>Maximize</label>
+              <select className="sel" value={objective} onChange={(e) => setObjective(e.target.value)}>
+                <option value="win">Win rate</option>
+                <option value="early">Early-round damage (1-2)</option>
+                <option value="mid">Mid-round damage (3-4)</option>
+                <option value="late">Late-round damage (5+)</option>
+                <option value="all">Total damage (all 8)</option>
+              </select>
+            </div>
+          )}
           <div className="controls">
             <div className="control">
               <label
@@ -186,9 +210,11 @@ export default function Page() {
           </div>
           <div className="row" style={{ marginTop: 16, justifyContent: "space-between" }}>
             <span className="muted">
-              {chosen.length === 3
-                ? `≈ ${(192 * battles * opponents).toLocaleString()} battles across 192 builds`
-                : `select ${3 - chosen.length} more hero(es)`}
+              {chosen.length !== 3
+                ? `select ${3 - chosen.length} more hero(es)`
+                : mode === "optimize"
+                ? `genetic search of commander + troops + 6 skills (objective: ${objective})`
+                : `≈ ${(192 * battles * opponents).toLocaleString()} battles across 192 builds`}
             </span>
             <button className="go" disabled={!ready} onClick={start}>
               {job && job.status === "running" ? "Simulating…" : "▶ Start simulation"}
@@ -202,7 +228,7 @@ export default function Page() {
                 {job.status === "running" && <span className="spinner" />}
                 <span className="muted">
                   {job.status === "running"
-                    ? `${job.done}/${job.total} builds evaluated`
+                    ? `${job.done}/${job.total} ${job.mode === "optimize" ? "generations" : "builds"} evaluated`
                     : job.status === "done" ? "Done." : "…"}
                 </span>
               </div>
@@ -210,8 +236,50 @@ export default function Page() {
           )}
         </div>
 
-        {/* results */}
-        {result && (
+        {/* results — optimize mode */}
+        {result && result.mode === "optimize" && (
+          <div className="panel">
+            <div className="row" style={{ justifyContent: "space-between", marginBottom: 14 }}>
+              <h2 style={{ margin: 0 }}>Optimized build — genetic search</h2>
+              <button className="ghost" onClick={exportJson}>⬇ Export JSON</button>
+            </div>
+            <div className="hero-rec">
+              <div>
+                <div className="muted">BEST BUILD (maximizing {result.objective === "win" ? "win rate" : result.objective + " damage"})</div>
+                <div className="big" style={{ marginTop: 6 }}>{result.best_label}</div>
+                <div className="muted" style={{ marginTop: 6 }}>
+                  win {(100 * result.win_rate).toFixed(1)}% ·
+                  {" "}early {fmt(result.windows.early)} · mid {fmt(result.windows.mid)} · late {fmt(result.windows.late)} dmg ·
+                  {" "}{result.ga.generations} generations × {result.ga.population} pop
+                  {result.elapsed_seconds ? ` · ${result.elapsed_seconds}s` : ""}
+                </div>
+              </div>
+            </div>
+            <div className="cards" style={{ marginTop: 14, gridTemplateColumns: "repeat(3,1fr)" }}>
+              {result.heroes.map((h, i) => (
+                <div className="card" key={i}>
+                  <div className="k">
+                    {h.is_commander && <span className="crown">♛ </span>}{h.name}
+                    <span className={"troop " + h.troop} style={{ marginLeft: 6 }}>{h.troop}</span>
+                  </div>
+                  <div className="v" style={{ fontWeight: 500 }}>
+                    <div className="muted" style={{ fontSize: 11 }}>MAIN (fixed)</div>
+                    {h.main_skill}
+                    <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>MODULAR (optimized)</div>
+                    {h.modular_skills.join(" · ")}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="muted" style={{ fontSize: 12, marginTop: 14 }}>
+              A hero can slot any 2 skills, so the space (~10¹⁶ builds) is searched genetically — this is a
+              strong build, not a proven global optimum. Re-run for a second opinion (different seed paths explore differently).
+            </p>
+          </div>
+        )}
+
+        {/* results — rank mode */}
+        {result && result.mode !== "optimize" && (
           <>
             <div className="panel">
               <div className="row" style={{ justifyContent: "space-between", marginBottom: 14 }}>
