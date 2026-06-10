@@ -2,10 +2,10 @@
 
 > 📘 **Community strategy.** Rebuilt from a Steam Community guide by **Lofthouse** — credit to the original author. This is player experience and screenshot-transcribed info, not data extracted from the game files, and may be out of date (originally posted 2022). Sources: [original guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2768347161) · [archive](https://github.com/itsRevela/Lord-And-Maiden-Guides).
 
-Where money and free-to-play effort go furthest. For the raw price tables see [Shops](Shops.md) and [Recharge & Gift Packs](Recharge-Packs.md). *(Prices show in USD for English players; other-currency conversions can be unfavourable.)*
+Where money and free-to-play effort go furthest. For the raw price tables see the [Market](Market.md) and the [Shop](Shop.md). *(Prices show in USD for English players; other-currency conversions can be unfavourable.)*
 
 ## Best value purchases
-*(Figures below are from the guide's store screenshots and may differ from the current build — see [Recharge & Gift Packs](Recharge-Packs.md) for the data-extracted contents.)*
+*(Figures below are from the guide's store screenshots and may differ from the current build — see the [Shop](Shop.md) page for the data-extracted contents.)*
 
 - **Growth Fund** (~$14.99, advertised "2000% value") — pays gems at each **City Hall milestone** (e.g. 700 + 3,200 gems at CH 5, then ~800 at CH 6, ~900 at CH 7, ~1,200 at CH 8, and onward). The **best gem value**.
 - **$5 Monthly Card** (~$4.99) — **980 gems instantly + 300 gems/day** (≈9,980 over the month) and **doubles your upgradeable soldiers**. The best ongoing value.

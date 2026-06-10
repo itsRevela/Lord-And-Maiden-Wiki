@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Shop & Market documentation overhauled** (from a 3-subagent decompiled-code
+  investigation). The game's **Market** (MarketPanel) and **Shop** (ShopPanel) are
+  distinct panels, now documented as two pages:
+  - **Items/Market.md** — the 13 currency-exchange tabs given their real names
+    (Manor, Gem, Alliance/Union, Friendship, Honor/Arena, Tournament/Courage,
+    Festival, Wilderness, Lord, Life, Meteoric Iron, Island) with per-tab currency,
+    **restock cycle** (weekly Mon / monthly 1st / daily / one-time), per-item unlock
+    gates, and notes on the server-driven Traveling Merchant & Kuroland tabs.
+  - **Items/Shop.md** — the recharge/gift packs, correctly priced in **Rand Coin**
+    (real money → Rand Coin → packs), grouped by their real `gift_type` categories,
+    with `refresh_type` reset windows, plus a "Related shops" section (Hero Skin Store,
+    Gift Codes, Lucky Wheel/Box, Travelogue Merchant, Public Square Active Store).
+  - All mechanics (refresh cadence, limit-reset semantics, per-tab gate meaning, the
+    Rand-Coin two-tier model, skin dual-currency) are grounded in the decompiled
+    `MarketPanel`/`ShopPanel`/`GetEntryDes` code.
+  - Replaces the old flat `Shops.md` / `Recharge-Packs.md`; references updated across
+    the Overview, Glossary, Spending Guide and README.
 - Hero Leaderboards **"By Role"** section — every hero grouped by role (DPS/Heal/CC/Buff/
   Debuff/Other), ordered by Total stats within each role.
 

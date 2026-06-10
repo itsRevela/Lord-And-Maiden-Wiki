@@ -94,7 +94,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 | World Boss / Alliance Boss | Open-world bosses with multi-wave formations - solo (World Boss) or guild co-op (Alliance Boss, more waves). |
 
 ## Currencies
-What each currency is for (full price lists on [Shops](../Items/Shops.md)):
+What each currency is for (earned currencies are spent in the [Market](../Items/Market.md); Rand Coin in the [Shop](../Items/Shop.md)):
 
 | Currency | Use / source |
 |---|---|

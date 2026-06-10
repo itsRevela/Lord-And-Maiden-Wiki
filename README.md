@@ -52,8 +52,8 @@ cross-checked against the source files.
 [Buildings](wiki/Buildings/Buildings.md) ·
 [Research](wiki/Research/Science.md) ·
 [Crafting & Production](wiki/Crafting/Formulas.md) ·
-[Shops](wiki/Items/Shops.md) ·
-[Recharge & Gift Packs](wiki/Items/Recharge-Packs.md)
+[Market (currency exchange)](wiki/Items/Market.md) ·
+[Shop (recharge & gifts)](wiki/Items/Shop.md)
 
 **📈 Progression**
 [VIP](wiki/Progression/VIP.md) ·

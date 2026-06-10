@@ -207,43 +207,133 @@ def gen_item_sources(write, tbl, R):
     write("Items/Item-Sources.md", "Item Sources (How to Obtain)", "Items", lines)
 
 
-def gen_shops(write, tbl, R):
+# Market tabs (MarketPanel StoreType 1-13). Names, refresh and unlock are recovered
+# from the decompiled MarketPanel / UnLockFun / localization (see notes). The 4th
+# entry is the per-item gate column header, or None when NeedLv is unused (all 0).
+_MARKET_TABS = {
+    "1":  ("Manor Shop", "Daily refresh", "Unlocked with the Manor building", None),
+    "2":  ("Gem Shop", "Weekly refresh (Mon 00:00)", "Each item is gated by your Adventure / VIP level", "VIP/Adv Lv"),
+    "3":  ("Alliance (Union) Shop", "Weekly refresh (Mon 00:00)", "Opened from the Alliance / Union panel", None),
+    "4":  ("Friendship Shop", "Weekly refresh (Mon 00:00)", "Unlocked with the Ruins feature", None),
+    "5":  ("Honor Shop (Arena)", "Weekly refresh (Mon 00:00)", "Unlocked with the Arena", None),
+    "6":  ("Tournament (Courage) Shop", "Monthly refresh (1st 00:00)", "Unlocked with the Tournament", None),
+    "7":  ("Festival (Celebration) Shop", "Monthly refresh (1st 00:00)", "Open only during festival events", None),
+    "9":  ("Wilderness Store", "No restock — one-time buys", "Each item is gated by your Wilderness gate progress", "Wild Gate"),
+    "10": ("Lord Store", "No restock — one-time buys", "Each item is gated by your Lord level", "Lord Lv"),
+    "11": ("Life Shop", "Weekly refresh (Mon 00:00)", "Via the Manor / Life feature", None),
+    "12": ("Meteoric Iron Store", "Weekly refresh (Mon 00:00)", "From Primordial Continent / Falling Star content", None),
+    "13": ("Island Store", "Weekly refresh (Mon 00:00)", "From island / maritime content", None),
+}
+
+# Recharge Shop (ShopPanel) gift_type categories + refresh_type reset windows (Pay.csv).
+_SHOP_CATEGORIES = {
+    "1": "Subscription Cards (Monthly / Luxury / Permanent)",
+    "2": "Growth Funds",
+    "3": "Adventure Plan & Starter Packs",
+    "4": "Gem Bundles",
+    "5": "Level & Milestone Gift Packs",
+    "6": "Daily & Spree Packs",
+    "7": "7-Day Sign-in Specials",
+    "8": "Daily Specials",
+    "9": "Lucky Wheel Supply Boxes",
+    "10": "Lucky Mystery Box Supply Boxes",
+    "12": "Return Sign-in",
+    "13": "Hero Growth Support Packs",
+    "21": "Themed Bundles",
+    "31": "Seasonal Sale",
+}
+_RESET_WINDOW = {"0": "one-time", "1": "subscription", "2": "daily", "3": "weekly", "4": "monthly", "6": "event"}
+
+
+def gen_market(write, tbl, R):
+    """The Market panel (MarketPanel) — spend earned in-game currencies across 13 tabs.
+    Distinct from the Shop (recharge packs); see [Shop](Shop.md)."""
     rows = load("StoreInfo")
     by = collections.OrderedDict()
     for r in rows:
         by.setdefault(r["storetype"], []).append(r)
-    lines = ["All purchasable goods across the game's shops, grouped by shop. "
-             "Each shop's heading lists the currency(ies) it uses — which usually identifies it "
-             "(e.g. Honor Points = Arena shop, Union Points = Alliance shop), though some shops "
-             "(like Shop 1) accept more than one. **Buy Limit** ∞ = unlimited.", ""]
+    lines = [
+        "The **Market** is the in-game panel where you spend **earned** currencies (Gems, Honor / "
+        "Union / Friendship / Life Points, Courage Voucher, Island Coin, etc.) on items, across 13 "
+        "tabs. It is a **separate panel from the [Shop](Shop.md)** (which sells Rand-Coin recharge packs).", "",
+        "## How the Market works",
+        "- **Restock / refresh:** most tabs restock **weekly (Monday 00:00)**; the Tournament and "
+        "Festival tabs restock **monthly (1st)**; the Manor tab runs a **daily** timer; the "
+        "**Wilderness Store** and **Lord Store** never restock (one-time purchases).",
+        "- **Buy Limit:** the per-item purchase cap; **∞** = unlimited. The limit **resets each restock** "
+        "(so a weekly tab's limits refill every Monday); one-time tabs never refill.",
+        "- **Unlock gates:** several tabs only appear once their feature is unlocked (Arena, Tournament, "
+        "Ruins, Wilderness, etc.). The Gem / Wilderness / Lord tabs also gate **individual items** by a "
+        "level (shown in the right-hand column).",
+        "- Tapping a currency's **＋** opens where to get more — Gems → the [Shop](Shop.md), Gold Coin → the Farm.", "",
+        "> Two Market tabs are **server-driven and not in the static data**, so they aren't listed below: "
+        "the **Traveling Merchant** (a randomly-rotating stock with a manual refresh) and a **Kuroland Badge** tab.", "",
+    ]
     for st, items in sorted(by.items(), key=lambda x: int(x[0])):
+        meta = _MARKET_TABS.get(st)
+        name = meta[0] if meta else ("Market Tab %s" % st)
         curs = []
         for r in items:
             c = R.prop_name(r["pricetype"])
             if c not in curs:
                 curs.append(c)
-        lines.append("## Shop %s — %s" % (st, " / ".join(curs)))
-        body = [[R.prop_name(r["propId"]), R.prop_name(r["pricetype"]), fmt_num(r["price"]),
-                 _limit(r.get("limit")), _dash(r.get("NeedLv"))] for r in items]
-        lines += tbl(["Item", "Currency", "Price", "Buy Limit", "Unlock Lv"], body)
+        lines.append("## %s" % name)
+        if meta:
+            lines.append("**Currency:** %s  ·  **Restock:** %s  ·  **Access:** %s" %
+                         (" / ".join(curs), meta[1], meta[2]))
+        else:
+            lines.append("**Currency:** %s" % " / ".join(curs))
         lines.append("")
-    write("Items/Shops.md", "Shops & Stores", "City & Economy", lines)
+        gate = meta[3] if meta else None
+        headers = ["Item", "Currency", "Price", "Buy Limit"] + ([gate] if gate else [])
+        body = []
+        for r in items:
+            row = [R.prop_name(r["propId"]), R.prop_name(r["pricetype"]), fmt_num(r["price"]),
+                   _limit(r.get("limit"))]
+            if gate:
+                row.append(_dash(r.get("NeedLv")))
+            body.append(row)
+        lines += tbl(headers, body)
+        lines.append("")
+    write("Items/Market.md", "Market (Currency Exchange)", "City & Economy", lines)
 
 
-def gen_recharge(write, tbl, R):
+def gen_shop(write, tbl, R):
+    """The Shop panel (ShopPanel) — Rand-Coin recharge & gift packs (Pay.csv).
+    Distinct from the [Market](Market.md)."""
     rows = load("Pay")
     by = collections.OrderedDict()
-    for r in rows:
+    for r in sorted(rows, key=lambda r: int(r.get("gift_type") or 0)):
         by.setdefault(r.get("gift_type", "0"), []).append(r)
-    lines = ["Paid packs and gift bundles. *Price* is the value shown in-game. "
-             "Contents are resolved to the items granted.", ""]
+    lines = [
+        "The **Shop** is the in-game store for **paid** packs and gift bundles. Prices are in "
+        "**Rand Coin** (the premium currency): real money buys Rand Coin in the Recharge panel, and "
+        "Rand Coin is then spent on the packs below. It is a **separate panel from the [Market](Market.md)** "
+        "(which spends earned currencies). The **Resets** column is how often a pack's purchase limit "
+        "refills.", "",
+    ]
     for gt, items in by.items():
-        lines.append("## Pack Group %s" % gt)
+        lines.append("## %s" % _SHOP_CATEGORIES.get(gt, "Group %s" % gt))
         body = [[clean(r.get("name_en") or r.get("name")), fmt_num(r.get("price")),
-                 _limit(r.get("limit")), R.expand_props(r.get("content"))] for r in items]
-        lines += tbl(["Pack", "Price", "Limit", "Contents"], body)
+                 _RESET_WINDOW.get(r.get("refresh_type"), "—"), _limit(r.get("limit")),
+                 R.expand_props(r.get("content"))] for r in items]
+        lines += tbl(["Pack", "Price (Rand Coin)", "Resets", "Buy Limit", "Contents"], body)
         lines.append("")
-    write("Items/Recharge-Packs.md", "Recharge & Gift Packs", "City & Economy", lines)
+    lines += [
+        "## Related shops",
+        "Other purchase points in the game, documented on their own pages or driven entirely by the server:", "",
+        "- **[Hero Skin Store](../Heroes/Hero-Skins.md)** — buy hero skins with a **Hero Skin Scroll** or "
+        "**Rand Coin**; each skin grants a small permanent bonus.",
+        "- **[Gift Codes](Gift-Code-Rewards.md)** — redeem developer codes for reward bundles.",
+        "- **Lucky Wheel & Lucky Mystery Box** *(time-limited events)* — spin with Lottery Scrolls, then spend "
+        "the resulting **Lucky Egg** / **Lucky Crystal** (plus Gems / Rand-Coin pack options) in the event's "
+        "exchange shop. Stock is server-driven.",
+        "- **Travelogue Merchant** *(world map)* — buy city / fortress **Travel Notes** collectibles for "
+        "**Union Points**; per-item daily / weekly / monthly / lifetime limits.",
+        "- **Public Square \"Active Store\"** — an event exchange spending **Chinese Rose** (Public Square) or "
+        "**Desert Expedition Star** (Desert Expedition minigame).",
+    ]
+    write("Items/Shop.md", "Shop (Recharge & Gift Packs)", "City & Economy", lines)
 
 
 def gen_choice_chests(write, tbl, R):
@@ -522,7 +612,8 @@ def gen_overview(write, tbl, R):
         "- **[City & Buildings](Buildings/Buildings.md)** — per-level costs, times and unlocks.",
         "- **[Soldiers](Soldiers/Soldiers.md)** & **[Troop Combinations](Military/Troop-Combinations.md)** — 4 types, tiered.",
         "- **[Research](Research/Science.md)** & **[Alliance Research](Alliance/Union-Research.md)**.",
-        "- **[Crafting](Crafting/Formulas.md)**, **[Shops](Items/Shops.md)**, **[Item Sources](Items/Item-Sources.md)**.",
+        "- **[Crafting](Crafting/Formulas.md)**, **[Market](Items/Market.md)** (currency exchange), "
+        "**[Shop](Items/Shop.md)** (recharge), **[Item Sources](Items/Item-Sources.md)**.",
         "- **PvE**: **[Campaign](World/Campaign.md)**, **[Relic Dungeons](World/Relic-Dungeons.md)**, "
         "**[Bosses](World/Bosses.md)**, **[Trials](World/Trials.md)**, **[Warlord Challenge](World/Warlord-Challenge.md)**.",
         "- **Progression**: **[VIP](Progression/VIP.md)**, **[Favorability](Progression/Favorability.md)**, "
@@ -541,7 +632,7 @@ def gen_overview(write, tbl, R):
     if cur:
         lines += ["## Currencies", "",
                   "Currencies the game spends across its shops (full price lists in "
-                  "**[Shops](Items/Shops.md)** and **[Recharge Packs](Items/Recharge-Packs.md)**):", ""]
+                  "the **[Market](Items/Market.md)** and the **[Shop](Items/Shop.md)**):", ""]
         lines += tbl(["Currency"], cur)
         lines.append("")
     # early progression order
@@ -793,7 +884,8 @@ def gen_glossary(write, tbl, R):
         lines += tbl(["Term", "Meaning"], [[t, d] for t, d in sorted(terms, key=lambda x: x[0].lower())])
         lines.append("")
     lines.append("## Currencies")
-    lines.append("What each currency is for (full price lists on [Shops](../Items/Shops.md)):")
+    lines.append("What each currency is for (earned currencies are spent in the "
+                 "[Market](../Items/Market.md); Rand Coin in the [Shop](../Items/Shop.md)):")
     lines.append("")
     lines += tbl(["Currency", "Use / source"], [
         ["Gems", "Premium currency - summons, shop, speedups."],
@@ -826,8 +918,8 @@ def register(write, tbl, R):
     gen_feature_unlocks(write, tbl, R)
     gen_building_unlocks(write, tbl, R)
     gen_item_sources(write, tbl, R)
-    gen_shops(write, tbl, R)
-    gen_recharge(write, tbl, R)
+    gen_market(write, tbl, R)
+    gen_shop(write, tbl, R)
     gen_choice_chests(write, tbl, R)
     gen_gift_codes(write, tbl, R)
     gen_relics(write, tbl, R)

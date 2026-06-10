@@ -37,9 +37,9 @@
 ### City & Economy
 - [Buildings](Buildings/Buildings.md)
 - [Crafting & Production](Crafting/Formulas.md)
-- [Recharge & Gift Packs](Items/Recharge-Packs.md)
+- [Market (Currency Exchange)](Items/Market.md)
 - [Research / Technology](Research/Science.md)
-- [Shops & Stores](Items/Shops.md)
+- [Shop (Recharge & Gift Packs)](Items/Shop.md)
 - [Spending & Free-to-Play Tips](Items/Spending-Guide.md)
 
 ### PvE & World

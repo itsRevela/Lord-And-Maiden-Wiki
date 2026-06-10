@@ -9,14 +9,14 @@
 - **[City & Buildings](Buildings/Buildings.md)** — per-level costs, times and unlocks.
 - **[Soldiers](Soldiers/Soldiers.md)** & **[Troop Combinations](Military/Troop-Combinations.md)** — 4 types, tiered.
 - **[Research](Research/Science.md)** & **[Alliance Research](Alliance/Union-Research.md)**.
-- **[Crafting](Crafting/Formulas.md)**, **[Shops](Items/Shops.md)**, **[Item Sources](Items/Item-Sources.md)**.
+- **[Crafting](Crafting/Formulas.md)**, **[Market](Items/Market.md)** (currency exchange), **[Shop](Items/Shop.md)** (recharge), **[Item Sources](Items/Item-Sources.md)**.
 - **PvE**: **[Campaign](World/Campaign.md)**, **[Relic Dungeons](World/Relic-Dungeons.md)**, **[Bosses](World/Bosses.md)**, **[Trials](World/Trials.md)**, **[Warlord Challenge](World/Warlord-Challenge.md)**.
 - **Progression**: **[VIP](Progression/VIP.md)**, **[Favorability](Progression/Favorability.md)**, **[Feature Unlocks](Progression/Feature-Unlocks.md)**.
 - **Reference**: **[Stats & Formulas](Mechanics/Stats-and-Formulas.md)** (start here for the math).
 
 ## Currencies
 
-Currencies the game spends across its shops (full price lists in **[Shops](Items/Shops.md)** and **[Recharge Packs](Items/Recharge-Packs.md)**):
+Currencies the game spends across its shops (full price lists in the **[Market](Items/Market.md)** and the **[Shop](Items/Shop.md)**):
 
 | Currency |
 |---|
