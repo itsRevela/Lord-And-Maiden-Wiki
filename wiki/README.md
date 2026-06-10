@@ -25,6 +25,7 @@
 - [Hero Talents](Heroes/Hero-Talents.md)
 - [Heroes (Roster)](Heroes/Heroes.md)
 - [Lord Talents](Heroes/Lord-Talents.md)
+- [Runes](Heroes/Runes.md)
 - [Skill Catalog](Heroes/Skills.md)
 
 ### Teams & Builds

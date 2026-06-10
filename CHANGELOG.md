@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Heroes/Runes.md** — the Rune system, from a decompiled-code investigation. Runes are
+  hero equipment (PropInfo type 9, 485 items = **105 kinds**) in a hero's **Rune slot**;
+  each rune raises the **trigger chance of one specific Tactical/Pursuit skill**. Documents:
+  one-rune-per-hero, **no set bonuses** (only PropType-3 gear has 3/6-piece sets), levels
+  (★4 Lv1–4 / ★5 Lv1–5), must-be-max-to-equip, upgrade with **Runes-Fragment**, dismantle →
+  fragment, and box sources (4★ Random: Abyss/Union War; 5★ Random: Union Store/Abyss/Union
+  War; 5★ Customize: Tournament/Lucky Wheel/Mystery Box). Full ★5/★4 catalog of every rune's
+  boosted skill + Lv1→max trigger bonus. Server-side unknowns flagged.
+  - Data caveat handled: the rune `Effect` reuses EntryEffect #45 (mislabeled "Soldier March
+    Spd"); the page uses the authoritative "Skill Trigger Probability" reading instead.
+  - Added a Glossary "Rune" entry; linked from roster footers + README. README badge → 188.
 - **Heroes/Relics.md** — the Hero Relic (equipment) system, from a decompiled-code
   investigation. Relics are per-hero artifacts (PropInfo type 5, 98 of them) that enhance
   the owning hero's **Talent Skill**, equipped in the hero's Relic slot. Documents the full

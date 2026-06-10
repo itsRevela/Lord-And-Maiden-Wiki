@@ -70,6 +70,7 @@ A reference for the recurring terms, stat abbreviations and game-specific jargon
 | Magic Messenger | A summonable pet/companion that grants hero ATK / DEF / DES and attack-speed bonuses. |
 | Prestige | An account track: **Prestige level** grants escalating daily gifts + passive stat bonuses; **Prestige Points** (from raiding Barbarian Camps) govern refugee recruitment. See [Player Systems](../Progression/Player-Systems.md). |
 | Relic | A hero-specific artifact (one per hero) that enhances **that hero's Talent Skill**, equipped in the hero's Relic slot. Summoned/combined, then levelled to max before equipping. See [Hero Relics](../Heroes/Relics.md). |
+| Rune | Hero equipment (one per hero, in the Rune slot) that raises the **trigger chance** of one specific Tactical/Pursuit skill. Levelled to max with Runes-Fragment before equipping; no set bonuses. See [Runes](../Heroes/Runes.md). |
 | Set bonus | The permanent stat bonus (+ Power) from completing a Codex collection; hero-codex bonuses scale with Advance level. |
 | Style / Charm | A level track whose milestones grant city-output and soldier bonuses. See [Style](../Progression/Style.md). |
 | Title / Astral Badges | Astral Badges (from Barbarian Towers / World Bosses) raise your **Title** - which buffs troop stats - and are spent in the Title Shop. |

@@ -12,7 +12,7 @@ import re
 import collections
 
 from resolver import (load, fmt_num, clean, secs, SOLDIER_TYPE,
-                      RACE_NAME, RST_ARCHETYPE, HERO_MAX_LEVEL)
+                      RACE_NAME, RST_ARCHETYPE, HERO_MAX_LEVEL, SKILL_TYPE_NAME)
 
 
 def _slug(s):
@@ -437,6 +437,64 @@ def gen_hero_relics(write, tbl, R):
                      [[x["hero"], x["lv1"], x["max"]] for x in grp])
         lines.append("")
     write("Heroes/Relics.md", "Hero Relics", "Heroes & Lord", lines)
+
+
+def gen_runes(write, tbl, R):
+    """Runes (PropInfo type 9) — hero equipment in the Rune slot; each rune raises the
+    trigger chance of one specific Tactical/Pursuit skill. Levels: 4★ Lv1-4, 5★ Lv1-5."""
+    def pct(r):
+        v = (r.get("Effect") or "").partition("_")[2]
+        try:
+            return "%g" % (float(v) * 100)
+        except ValueError:
+            return v
+
+    groups = collections.OrderedDict()
+    for r in load("PropInfo"):
+        if r.get("type") == "9":
+            groups.setdefault(r.get("gotoPanel"), []).append(r)
+
+    kinds = []
+    for gp, lv in groups.items():
+        st, _, sid = (gp or "").partition("_")
+        lv = sorted(lv, key=lambda x: int(x.get("Value") or 0))
+        kinds.append({
+            "skill": R.skill_name(st, sid),
+            "type": SKILL_TYPE_NAME.get(st, "Type " + st),
+            "rare": lv[0].get("rare", "?"),
+            "lv1": pct(lv[0]),
+            "max": pct(lv[-1]),
+            "maxlv": lv[-1].get("Value", "?"),
+        })
+
+    lines = [
+        "**Runes** are hero equipment slotted in a hero's dedicated **Rune slot**. Each rune is bound to "
+        "one specific **Tactical** or **Pursuit** skill and raises **that skill's trigger chance** "
+        "(\"Skill Trigger Probability\"). There are **%d** rune kinds — one per such skill." % len(kinds), "",
+        "## How runes work",
+        "- **One rune per hero.** Each hero has a single Rune slot, and a rune only helps the skill it's "
+        "tied to. **There are no rune set bonuses** (unlike gear's 3-/6-piece sets — runes have no set effect).",
+        "- **Levels:** a rune's bonus scales with its level — **★4** runes go **Lv 1–4**, **★5** runes go "
+        "**Lv 1–5**.",
+        "- **Must be max level to equip:** the equip list only offers fully-levelled runes, so raise a rune "
+        "to its cap (Lv 4 / Lv 5) before slotting it.",
+        "- **Upgrade** a rune with **Runes-Fragment**; **dismantle** unwanted runes back into Runes-Fragment.",
+        "- **Obtain (boxes):** 4★ Runes (Random) from **Abyss** / **Union War**; 5★ Runes (Random) from "
+        "**Union Store** / Abyss / Union War; 5★ Runes (Customize, you choose the skill) from **Tournament** / "
+        "**Lucky Wheel** / **Lucky Mystery Box**.",
+        "- *(Server-side, not in the files: exact Runes-Fragment cost per level, dismantle yield, and box rates.)*", "",
+        "## Rune catalog",
+        "Each rune raises its skill's trigger chance; the column shows the bonus at **Lv 1 → max level**.", "",
+    ]
+    for star, title in [("5", "★5 Runes"), ("4", "★4 Runes")]:
+        grp = sorted([k for k in kinds if k["rare"] == star], key=lambda x: (x["type"], x["skill"].lower()))
+        if not grp:
+            continue
+        lines += ["### %s (%d)" % (title, len(grp)), ""]
+        lines += tbl(["Skill boosted", "Type", "Trigger chance (Lv 1 → max)"],
+                     [[k["skill"], k["type"], "+%s%% → +%s%% (Lv %s)" % (k["lv1"], k["max"], k["maxlv"])] for k in grp])
+        lines.append("")
+    write("Heroes/Runes.md", "Runes", "Heroes & Lord", lines)
 
 
 # --------------------------------------------------------------------------- #
@@ -938,6 +996,9 @@ def gen_glossary(write, tbl, R):
             ("Relic", "A hero-specific artifact (one per hero) that enhances **that hero's Talent Skill**, "
                       "equipped in the hero's Relic slot. Summoned/combined, then levelled to max before equipping. "
                       "See [Hero Relics](../Heroes/Relics.md)."),
+            ("Rune", "Hero equipment (one per hero, in the Rune slot) that raises the **trigger chance** of one "
+                     "specific Tactical/Pursuit skill. Levelled to max with Runes-Fragment before equipping; no set "
+                     "bonuses. See [Runes](../Heroes/Runes.md)."),
             ("Magic Messenger", "A summonable pet/companion that grants hero ATK / DEF / DES and attack-speed bonuses."),
             ("Cloud", "Fog-of-war world-map territory tiles (referenced by city / wilderness unlock requirements)."),
         ]),
@@ -1210,6 +1271,7 @@ def register(write, tbl, R):
     gen_shop(write, tbl, R)
     gen_travel_notes(write, tbl, R)
     gen_hero_relics(write, tbl, R)
+    gen_runes(write, tbl, R)
     gen_servers(write, tbl, R)
     gen_great_world(write, tbl, R)
     gen_knowledge_quiz(write, tbl, R)
