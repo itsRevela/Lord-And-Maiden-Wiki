@@ -415,24 +415,29 @@ class Battle:
         return allies[:count]
 
     def _pick_attack_targets(self, caster: CombatUnit, category: str, count: int):
-        """Like _pick_targets, but for damaging skills the carry focuses the most
-        KILLABLE enemy (lowest effective DMG-Taken-Reduced/DEF), as a real player
-        focuses the squishy DPS over the heavily-shielded tank. ASSUMPTION; commander
-        / inherit categories fall back to the normal picker."""
+        """Damaging-skill targeting. The log shows damage is SPREAD, not piled on the
+        squishiest: in Battle 1 the shielded enemy commander still took ~33k (much via
+        Assault, which bypasses her shield) while a tankier striker survived. So we
+        weight toward squishier targets but give every enemy a real floor share
+        (weighted sampling WITHOUT replacement). A purely "focus-squishiest" rule
+        under-damages the commander and wrongly needs an extra bout to wipe her.
+        ASSUMPTION shape; commander/inherit categories fall back to the normal picker."""
         cat = (category or "").lower()
         if "commander" in cat or "inherit" in cat or cat == "":
             return self._pick_targets(caster, category, count)
         pool = self._alive(self._opp(caster.side))
         if not pool:
             return []
-        # effective squishiness = dmg_taken_mult * (1 / mitigation proxy)
-        def threat(d):
-            taken = self._dmg_taken_mult(d, "tactical")
-            mit = modelmod.def_mitigation(d, "tactical", self.cfg)
-            return taken * mit
-        ranked = sorted(pool, key=threat, reverse=True)
-        count = max(1, min(count or 1, len(ranked)))
-        return ranked[:count]
+        # squishiness weight = dmg_taken_mult * mitigation, + a floor so the
+        # heavily-shielded commander is never fully skipped (she still eats Assault),
+        # but skills still lean toward the killable strikers. Weighted sampling
+        # without replacement (Efraimidis-Spirakis).
+        def weight(d):
+            w = self._dmg_taken_mult(d, "tactical") * modelmod.def_mitigation(d, "tactical", self.cfg)
+            return max(w, 0.0) + 0.35      # ASSUMPTION floor share for any enemy
+        keyed = sorted(pool, key=lambda d: self.rng.random() ** (1.0 / weight(d)), reverse=True)
+        count = max(1, min(count or 1, len(keyed)))
+        return keyed[:count]
 
     def _pick_targets(self, caster: CombatUnit, category: str, count: int):
         cat = (category or "").lower()
