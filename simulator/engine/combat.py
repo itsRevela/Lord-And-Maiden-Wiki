@@ -46,6 +46,8 @@ DMG_TAKEN_INCREASED = {7}
 DMG_DEALT_INCREASED = {5}
 DMG_DEALT_DECREASED = {6}
 TACTICAL_DMG_DEALT = {31}
+PURSUIT_DMG_DEALT = {33}            # Witcher (at=33): +X% pursuit-channel dmg dealt (self)
+COMBO_CHANCE = {80}                 # Chance Combo: on a normal attack, fire one more hit
 TACTICAL_DMG_TAKEN = {37}           # Sin Judgment / Erythema: target takes +X% tactical dmg
 SHIELD = {73}                       # absorb-one-instance shield (Lunar Guardian / Soul Drain)
 BURN = {108}                        # DoT: Burn (ticks at before-action)
@@ -101,6 +103,7 @@ class Battle:
         self.round_dmg = {0: [0.0] * g.round_count, 1: [0.0] * g.round_count}
         self.stalemates = 0           # prior stalemate count (escalation stacks)
         self._cur_round_idx = 0       # current round index (for DoT/detonate dmg tracking)
+        self._turn_focus = None       # the acting unit's per-turn concentration target
 
     # ---- helpers -------------------------------------------------------
     def _opp(self, side: int) -> int:
@@ -175,6 +178,24 @@ class Battle:
                             self._apply_status(u, 125, rounds=99, value=float(sk.get("maxedValue") or 0.4))
                         elif at == 139:              # purification (per-round cleanse chance)
                             self._apply_status(u, 139, rounds=99, value=float(sk.get("maxedValue") or 0.4))
+                        # --- in-battle SELF-BUFFS folded into effective offence ----
+                        # FACT (spec B / digest): the static build undercounts in-battle
+                        # offence ~1.9x; passive self-buffs (at=9 ATK Increased, at=33
+                        # pursuit-dmg, at=5 dmg-dealt) are applied live.  Magnitudes are
+                        # the per-200 ASSUMPTION knob fit to the log (Divine Punish +49.79%
+                        # ATK, Witcher +56.29% pursuit-dmg).
+                        elif at == 9:                # ATK Attribute Increased (self)
+                            pct = self._self_buff_pct(u, eff)
+                            self._add_attr(u, "atk", u.base_stat("atk") * pct, locked=True)
+                        elif at == 33:               # Pursuit Skill DMG Dealt Increased (self)
+                            pct = self._self_buff_pct(u, eff)
+                            self._apply_status(u, 33, rounds=99, value=pct)
+                        elif at == 5:                # DMG Dealt Increased (self)
+                            pct = self._self_buff_pct(u, eff)
+                            self._apply_status(u, 5, rounds=99, value=pct)
+                        elif at == 80:               # Chance Combo: extra normal-attack hit
+                            self._apply_status(u, 80, rounds=99,
+                                               value=float(eff.get("triggerChance") or 0.4))
 
     # ---- pre-war preparation (fire all Strategic skills before round 1) ----
     def _pre_war_preparation(self):
@@ -276,6 +297,19 @@ class Battle:
     def _flat_pct(self, flat: float) -> float:
         return flat                       # already a fraction-style flat add
 
+    def _self_buff_pct(self, u: CombatUnit, eff) -> float:
+        """Percent (as a fraction) for an 'Affected By ATK Attribute' self-buff
+        (at=9 ATK Increased, at=33 pursuit-dmg, at=5 dmg-dealt).  FACT: these scale
+        with the source's ATK ('per-200 points') -- the per-200 magnitude is the
+        server-side ASSUMPTION knob (cfg.affected_per_points), fit so Divine Punish's
+        token (15.2) lands near the logged +49.79% ATK at these stats.  The token lives
+        in flatMagnitude (percent-form, upType==1) or coefficient."""
+        token = float(eff.get("flatMagnitude") or eff.get("coefficient") or 0.0)
+        if token <= 0:
+            return 0.0
+        # token is a per-level percent; scale by ATK/per-200 (Affected-By-ATK hint).
+        return (token / 100.0) * (u.base_stat("atk") / self.cfg.affected_per_points)
+
     def _eff_duration(self, eff, default: int = 2) -> int:
         rt = eff.get("rawTokens")
         if rt and len(rt) > 9:
@@ -303,6 +337,9 @@ class Battle:
         m += u.gear_dmg_dealt
         if channel == "tactical":
             m += self._status_value(u, TACTICAL_DMG_DEALT)
+        if channel in ("pursuit", "real"):
+            # Witcher (at=33) lifts pursuit-channel damage (incl. its Assault rider).
+            m += self._status_value(u, PURSUIT_DMG_DEALT)
         return max(0.05, m)
 
     def _dmg_taken_mult(self, u: CombatUnit, channel: str, reactive_hit: bool = False) -> float:
@@ -359,10 +396,27 @@ class Battle:
 
     def _apply_casualties(self, defender: CombatUnit, dealt: float):
         """Remove `dealt` from Health.  A small part goes straight to Severe/Death
-        (permanent, lowers max); the rest becomes Slight (recoverable)."""
+        (permanent, lowers max); the rest becomes Slight (recoverable).
+
+        COMMANDER-FALLS-LAST (Tips Id=130/430; combat-resolution digest): the commander is
+        'the core of the team' and falls LAST -- while it still has a living STRIKER ally,
+        a blow that would wipe the commander is soaked down to a 1-troop floor (the team
+        shields its core; the commander only dies once its strikers are down).  This both
+        matches the win-condition shape (pursuit log: striker Dolly dies R3, commander
+        Thiel R4) and restores the long 8-round grinds (Star-Shield / DoT-sustain) that a
+        purely-greedy commander kill would otherwise cut short.  No effect once strikers
+        are dead (then the commander takes lethal damage normally)."""
         dealt = min(dealt, defender.health)
         if dealt <= 0:
             return 0.0
+        # commander protection: cap the removal so a 1-troop floor remains while a striker lives
+        if defender.is_commander and defender.health - dealt <= 0.0:
+            strikers_alive = any(u.alive and not u.is_commander
+                                 for u in self.sides[defender.side])
+            if strikers_alive:
+                dealt = max(0.0, defender.health - 1.0)
+                if dealt <= 0:
+                    return 0.0
         severe = dealt * self.cfg.direct_severe_frac
         slight = dealt - severe
         defender.health -= dealt
@@ -374,12 +428,20 @@ class Battle:
         return dealt
 
     def _heal(self, caster: CombatUnit, target: CombatUnit, coef: float):
-        """Restore Slight -> Health.  Blocked by Heal Ban; 0 when no Slight."""
+        """Restore Slight -> Health.  Blocked by Heal Ban; 0 when no Slight.
+
+        Spec D / digest dot-sustain: the heal scales off the HEALER's troops/strength
+        (with a floor, sublinear decline -- 'Healing Affected By Soldiers HP'), NOT the
+        target's Slight pool.  Modelled as coef * heal_scale * healer-troop-factor, capped
+        by the target's available Slight.  ASSUMPTION magnitude (heal_scale); shape fixed."""
         if not target.alive or self._has(target, HEAL_BAN):
             return
         if target.slight <= 0:
             return
-        amount = coef * self.cfg.heal_scale * target.slight
+        # healer-troop factor: floored sublinear decline with the healer's live troops.
+        healer_factor = (self.cfg.dot_troop_floor
+                         + (1.0 - self.cfg.dot_troop_floor) * modelmod.troop_scale(caster, self.cfg))
+        amount = coef * self.cfg.heal_scale * caster.troops_max * healer_factor
         amount = min(amount, target.slight)
         target.slight -= amount
         target.health += amount
@@ -430,29 +492,38 @@ class Battle:
         return allies[:count]
 
     def _pick_attack_targets(self, caster: CombatUnit, category: str, count: int):
-        """Damaging-skill targeting. The log shows damage is SPREAD, not piled on the
-        squishiest: in Battle 1 the shielded enemy commander still took ~33k (much via
-        Assault, which bypasses her shield) while a tankier striker survived. So we
-        weight toward squishier targets but give every enemy a real floor share
-        (weighted sampling WITHOUT replacement). A purely "focus-squishiest" rule
-        under-damages the commander and wrongly needs an extra bout to wipe her.
-        ASSUMPTION shape; commander/inherit categories fall back to the normal picker."""
+        """Opener target pick for a damaging skill wave (spec A.3 + combat-resolution
+        digest).  The OPENER ('Enemy Troops', tcat=2) picks targetCount DISTINCT enemies
+        using the 20/40/40 commander/striker weighting (the best estimate for whether
+        20/40/40 governs skill first-pick -- a LABELED ASSUMPTION; see spec unknowns).
+        'Enemy Commander' targets the commander; 'Inherit'/'' is handled by the caller's
+        focus memory and routes here only as a fallback (then uses 20/40/40 too)."""
         cat = (category or "").lower()
-        if "commander" in cat or "inherit" in cat or cat == "":
+        if "commander" in cat:
             return self._pick_targets(caster, category, count)
         pool = self._alive(self._opp(caster.side))
         if not pool:
             return []
-        # squishiness weight = dmg_taken_mult * mitigation, + a floor so the
-        # heavily-shielded commander is never fully skipped (she still eats Assault),
-        # but skills still lean toward the killable strikers. Weighted sampling
-        # without replacement (Efraimidis-Spirakis).
-        def weight(d):
-            w = self._dmg_taken_mult(d, "tactical") * modelmod.def_mitigation(d, "tactical", self.cfg)
-            return max(w, 0.0) + 0.35      # ASSUMPTION floor share for any enemy
-        keyed = sorted(pool, key=lambda d: self.rng.random() ** (1.0 / weight(d)), reverse=True)
-        count = max(1, min(count or 1, len(keyed)))
-        return keyed[:count]
+        count = max(1, min(count or 1, len(pool)))
+        # 20/40/40 weighting, sampled WITHOUT replacement for distinct spread targets.
+        chosen = []
+        remaining = list(pool)
+        for _ in range(count):
+            if not remaining:
+                break
+            weights = [0.2 if f.is_commander else 0.4 for f in remaining]
+            tot = sum(weights) or 1.0
+            r = self.rng.random() * tot
+            acc = 0.0
+            pick = remaining[-1]
+            for f, w in zip(remaining, weights):
+                acc += w
+                if r <= acc:
+                    pick = f
+                    break
+            chosen.append(pick)
+            remaining.remove(pick)
+        return chosen
 
     def _pick_targets(self, caster: CombatUnit, category: str, count: int):
         cat = (category or "").lower()
@@ -488,44 +559,106 @@ class Battle:
         return base
 
     def _fire_skill(self, caster: CombatUnit, sk, round_idx: int):
+        """Fire a skill as a sequence of WAVES (spec A; digest multihit-aoe-procs).
+
+        Each at=101 effect group is one wave: roll its per-effect triggerChance, and on
+        a proc strike its targetCount distinct targets (targetCategory==2 'Enemy Troops')
+        or re-hit the OPENER target(s) chosen by the first wave (targetCategory==0
+        'Inherit action target' => CONCENTRATION).  Per-hit coefficient = the per-effect
+        token coef * the level ratio (lv10=raw token; lv5 stone ~0.75x).  151/152/153/156
+        bonus pursuits re-trigger sequentially after the main hits, each its own roll,
+        coef and Assault rider.  The Assault (at=70) rider fires once per attack event."""
+        import simulator.engine.model as _m
         chan = self._channel_for(sk)
         key = (int(sk["st"]), int(sk["id"]))
-        coef = float(sk.get("maxedValue") or 0.0) + caster.skill_coef_bonus.get(key, 0.0)
+        level = caster.skill_level.get(key, 10)
+        lvr = _m.level_ratio(sk, level)
+        coef_bonus = caster.skill_coef_bonus.get(key, 0.0)
         real_base = self._skill_real_base(caster, sk, key)
         caster.skills_used += 1
+        focus = []        # the opener target(s) the first 'Enemy Troops' wave chose
+
+        def attack_event(tgt, ecoef):
+            """One resolved hit + its Assault rider + counter check."""
+            self._deal(caster, tgt, ecoef, chan, round_idx, is_skill=True)
+            if real_base and tgt.alive:      # Assault pursuit rides every attack event
+                self._deal(caster, tgt, 0.0, "real", round_idx,
+                           is_skill=False, real_base=real_base)
+            self._maybe_counter(caster, tgt, round_idx)
+
         for eff in sk.get("effects", []):
             at = eff.get("actionType")
             if not eff.get("isAction"):
                 continue                     # buffs/debuffs handled below or as state
-            tcat = eff.get("targetCategoryName") or ""
+            tcat = (eff.get("targetCategoryName") or "")
             tcount = eff.get("targetCount") or 1
-            ecoef = float(eff.get("coefficient") or 0.0)
-            # the skill's maxed coefficient (+ relic/awaken) already represents the
-            # leveled damage power; fall back to the per-effect coefficient only when
-            # the skill has no maxedValue.  (calibration: maxedValue is the per-hit coef)
-            use_coef = coef if coef > 0 else ecoef
-            if at == 101:                    # ATK enemy
-                for tgt in self._pick_attack_targets(caster, tcat or "enemy", tcount):
-                    self._deal(caster, tgt, use_coef, chan, round_idx, is_skill=True)
-                    if real_base:            # Assault pursuit on every attack
-                        self._deal(caster, tgt, 0.0, "real", round_idx,
-                                   is_skill=False, real_base=real_base)
-                    self._maybe_counter(caster, tgt, round_idx)
+            ecoef = (float(eff.get("coefficient") or 0.0) + coef_bonus) * lvr
+            if at == 101:                    # ATK enemy WAVE
+                if ecoef <= 0:
+                    continue
+                chance = float(eff.get("triggerChance") or 1.0)
+                if chance < 1.0 and self.rng.random() >= chance:
+                    continue                 # this wave failed its per-effect roll
+                catl = tcat.lower()
+                if "inherit" in catl and focus:
+                    # CONCENTRATION (spec A.3): Inherit waves re-hit the SAME target(s) the
+                    # opener chose (multi-hit skills concentrate -- e.g. all 4 Rift hits on
+                    # Thiel), NOT a fresh re-sample.
+                    targets = [t for t in focus if t.alive] or self._pick_attack_targets(
+                        caster, tcat or "enemy", tcount)
+                else:
+                    targets = self._pick_attack_targets(caster, tcat or "enemy", tcount)
+                    if not focus:
+                        focus = list(targets)    # opener fixes the focus for Inherit waves
+                for tgt in targets:
+                    attack_event(tgt, ecoef)
             elif at == 102:                  # heal allies (Lunar Guardian HoT instance)
-                # heals can never hit an enemy, so ignore a mislabeled "inherit
-                # (the target enemy)" category and always restore to allies.
                 for tgt in self._pick_ally_priority(caster, tcount):
-                    self._heal(caster, tgt, ecoef or coef or 0.6)
+                    self._heal(caster, tgt, ecoef)
             elif at in (121, 122):           # purify own / dispel enemy
                 for tgt in self._pick_targets(caster, tcat or "our", tcount):
                     self._cleanse(tgt)
+        # 151/152/153/156 bonus pursuits: sequential re-triggers (spec A.4).  Each
+        # follow-up group is its OWN server roll + (on proc) one more pursuit hit carrying
+        # its own token coef and re-applying the Assault rider.
+        if focus:
+            self._fire_bonus_pursuits(caster, sk, focus, lvr, coef_bonus,
+                                      real_base, round_idx, chan)
         # the skill's inflicted status (Buff/Dbuff field) -> apply to action target
         self._apply_skill_statuses(caster, sk)
+
+    def _fire_bonus_pursuits(self, caster, sk, focus, lvr, coef_bonus,
+                             real_base, round_idx, chan):
+        """Resolve actionType 151/152/153/156 follow-up pursuits as SEQUENTIAL extra
+        activations (digest: each renders as its own 'Use [Skill]' line + one hit)."""
+        for eff in sk.get("effects", []):
+            at = eff.get("actionType")
+            if at not in (151, 152, 153, 156):
+                continue
+            chance = float(eff.get("triggerChance") or 0.0)
+            ecoef = (float(eff.get("coefficient") or 0.0) + coef_bonus) * lvr
+            if ecoef <= 0 or chance <= 0:
+                continue
+            if self.rng.random() >= chance:
+                continue
+            tcat = (eff.get("targetCategoryName") or "").lower()
+            # 151 'Other Targets' (tcat=2) may spread; 153 (tcat=0) focuses the opener.
+            if "enemy" in tcat and "inherit" not in tcat:
+                tgts = self._pick_attack_targets(caster, "enemy", eff.get("targetCount") or 1)
+            else:
+                tgts = [t for t in focus if t.alive]
+            for tgt in tgts:
+                self._deal(caster, tgt, ecoef, chan, round_idx, is_skill=True)
+                if real_base and tgt.alive:
+                    self._deal(caster, tgt, 0.0, "real", round_idx,
+                               is_skill=False, real_base=real_base)
 
     def _apply_skill_statuses(self, caster: CombatUnit, sk):
         """Apply the non-action buff/debuff effects of a tactical skill (Disarm,
         Stun, Heal Ban, Silence, Taunt, attribute mods, Burn/Curse DoT, Shield,
         Detonate)."""
+        import simulator.engine.model as _m
+        lvr = _m.level_ratio(sk, caster.skill_level.get((int(sk["st"]), int(sk["id"])), 10))
         for eff in sk.get("effects", []):
             if eff.get("isAction"):
                 continue
@@ -533,7 +666,7 @@ class Battle:
             tcat = eff.get("targetCategoryName") or ""
             tcount = eff.get("targetCount") or 1
             chance = float(eff.get("triggerChance") or 1.0)
-            ecoef = float(eff.get("coefficient") or 0.0)
+            ecoef = float(eff.get("coefficient") or 0.0) * lvr
             dur = self._eff_duration(eff, default=2)
             if at == 70:                      # Assault buff on self (handled at cast)
                 self._apply_status(caster, 70, rounds=dur,
@@ -628,19 +761,17 @@ class Battle:
                         break
 
     def _detonate(self, caster: CombatUnit, coef: float, count: int):
-        """Element-Burst (actionType 72): with dot_detonate_chance, CONSUME an enemy's
-        active Burn for a burst = dot_detonate_coef * the burst-coef * a fresh tick of
-        the consumed DoT.  Hits up to `count` Burn-carrying enemies; clears the Burn it
-        consumes.  Approximate (the exact server burst is UNKNOWN_SERVER_SIDE) but lands
-        in the logged ~3.1k-6.7k band -- documented as an ASSUMPTION."""
+        """Element-Burst (actionType 72): DETERMINISTICALLY (spec D / digest dot-sustain)
+        burst every Burning enemy (up to `count`) for burst = dot_detonate_coef * coef *
+        a fresh tick of its Burn.  The Burn is NOT consumed (log: R3 detonate Dolly ->
+        R4 Dolly still takes a Burn tick).  The exact server burst is UNKNOWN_SERVER_SIDE
+        but lands in the logged ~3.1k-6.7k band -- the coefs are documented ASSUMPTION."""
         foes = [f for f in self._alive(self._opp(caster.side))
                 if self._has(f, BURN)]
         if not foes:
             return
         self.rng.shuffle(foes)
         for tgt in foes[:max(1, count or 1)]:
-            if self.rng.random() >= self.cfg.dot_detonate_chance:
-                continue
             st = tgt.statuses.get(108)
             if not st or st["rounds"] == 0:
                 continue
@@ -652,7 +783,7 @@ class Battle:
             caster.stat_kills += applied
             caster.stat_skill_dmg += applied
             self.round_dmg[caster.side][self._cur_round_idx] += applied
-            st["rounds"] = 0                  # Burn consumed by the detonation
+            # Burn survives the detonation (do NOT clear st["rounds"]).
 
     def _cleanse(self, unit: CombatUnit):
         for bid in list(unit.statuses.keys()):
@@ -687,6 +818,20 @@ class Battle:
                     continue
                 if round_no < self._skill_from_round(sk):
                     continue
+                kk = (int(sk["st"]), int(sk["id"]))
+                # readyRound=1 PREPARATION skills (Soul Bound, Purgatory, Sky Rain,
+                # Arrows Volley) take a round to CHARGE before firing -- the log shows a
+                # "[Skill] Ready Probability" line one round, then "Use [Skill]" + damage
+                # the next.  Model: on proc, charge (no damage this round); fire next turn
+                # if charged.  (digest: the reduced token coef already bakes in part of the
+                # prep cost; the round-1 delay is the timing piece, added here.)
+                if int(sk.get("readyRound") or 0) >= 1:
+                    if u._charged.get(kk):
+                        u._charged[kk] = False
+                        self._fire_skill(u, sk, round_idx)
+                    elif self.rng.random() < self._trigger_prob(sk, u):
+                        u._charged[kk] = True        # charging this round; fires next
+                    continue
                 if self.rng.random() < self._trigger_prob(sk, u):
                     self._fire_skill(u, sk, round_idx)
                     # Tactical Burst: chance to recast ONE tactical per turn
@@ -695,7 +840,9 @@ class Battle:
                         if self.rng.random() < burst:
                             self._fire_skill(u, sk, round_idx)
                             burst_used = True
-        # Normal attack, unless disarmed
+        # Normal attack, unless disarmed.  Normals use the standard 20/40/40 pick (the
+        # per-turn focus governs SKILL concentration; mixing it into normals over-credits
+        # the rarely-targeted commander and mis-orders the baseline kill leaders).
         did_normal = False
         if not self._has(u, CONTROL_DISARM):
             tgt = self._pick_target(u)
@@ -710,6 +857,13 @@ class Battle:
                 if self._has(u, ASSAULT):
                     rb = u.statuses[70].get("value", 22.0)
                     self._deal(u, tgt, 0.0, "real", round_idx, is_skill=False, real_base=rb)
+                # Chance Combo (at=80, Divine Punish/Hayate/Force Majeure): a chance, on a
+                # normal attack, to fire ONE more normal-coef hit (log: Mia "Trigger [Combo]").
+                if tgt.alive and self._has(u, COMBO_CHANCE):
+                    combo_p = self._status_value(u, COMBO_CHANCE)
+                    if self.rng.random() < combo_p:
+                        self._deal(u, tgt, self.cfg.normal_attack_coef, "normal",
+                                   round_idx, is_skill=False)
         # Pursuit skills (after normal attack), probability
         if did_normal:
             for sk in u.skills:
@@ -816,6 +970,7 @@ class Battle:
             for u in self.sides[side]:
                 u.statuses = {}
                 u.attr_mods = {}
+                u._charged = {}
                 u.slight = 0.0
                 if u.health <= 0:
                     u.alive = False

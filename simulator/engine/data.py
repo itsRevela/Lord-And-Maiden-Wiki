@@ -104,9 +104,17 @@ class GameData:
                 if isinstance(row, dict):
                     yield int(row.get("slot_id", 0)), row.get("items", [])
 
-    # attr_en -> our internal stat keys
+    # attr_en -> our internal stat keys.  Includes the soldier-type-specific gear keys
+    # (spec C: latent today since best-by-power picks generic 'Soldier ATK' names, but a
+    # free correctness improvement aligning with model._SOLDIER_ATTR_KEY).
     _SOLDIER_ATTR = {"Soldier HP": "HP", "Soldier ATK": "ATK", "Soldier DEF": "DEF",
-                     "Soldier DES": "DES", "Soldier March Spd": "MarchSpd"}
+                     "Soldier DES": "DES", "Soldier March Spd": "MarchSpd",
+                     "Infantry HP": "HP", "Infantry ATK": "ATK", "Infantry DEF": "DEF",
+                     "Infantry DES": "DES", "Archer HP": "HP", "Archer ATK": "ATK",
+                     "Archer DEF": "DEF", "Archer DES": "DES", "Cavalry HP": "HP",
+                     "Cavalry ATK": "ATK", "Cavalry DEF": "DEF", "Cavalry DES": "DES",
+                     "Chariot HP": "HP", "Chariot ATK": "ATK", "Chariot DEF": "DEF",
+                     "Chariot DES": "DES"}
     _HERO_ATTR = {"Hero ATK": "atk", "Hero DEF": "def", "Hero DES": "ruin",
                   "Hero ATK Spd": "speed"}
 
@@ -132,12 +140,20 @@ class GameData:
                 acc["trigger_tactical"] += val / 100.0 if kind == "percent" else val
             elif "Pursuit Skill Activation" in attr:
                 acc["trigger_pursuit"] += val / 100.0 if kind == "percent" else val
-            # PVE/PVP DMG Dealt/Taken from equipment + magic messenger (PvE-relevant
-            # here; the testcase is a PvE practice battle).  Stored as a fraction.
+            # PVE/PVP DMG Dealt/Taken from equipment + magic messenger.  Spec C: split
+            # PVE vs PVP at decode and apply only the PVE sum in these PvE battles (the
+            # logs are PvE practice fights); 'PVP'-tagged percents do not apply.  An
+            # untagged 'DMG Dealt/Taken' is treated as PVE (context-neutral).
             elif "DMG Dealt" in attr:
-                acc["dmg_dealt"] += val / 100.0 if kind == "percent" else val
+                if "PVP" in attr.upper():
+                    pass
+                else:
+                    acc["dmg_dealt"] += val / 100.0 if kind == "percent" else val
             elif "DMG Taken" in attr:
-                acc["dmg_taken"] += val / 100.0 if kind == "percent" else val
+                if "PVP" in attr.upper():
+                    pass
+                else:
+                    acc["dmg_taken"] += val / 100.0 if kind == "percent" else val
 
     def _compute_gear_bonus(self):
         """Hero-generic 'maxed equipment' = best item per slot (by power) + any set
@@ -197,9 +213,16 @@ class GameData:
             key = (int(es["skill_type_id"]), int(es["skill_id"]))
         except (KeyError, TypeError, ValueError):
             return None
-        # parse tokens by buff id: 2=DMG Coefficient, 41=Real DMG Base, 45/1=trigger.
+        # parse tokens by buff id (spec C: route by buff_id, not keyword -- 21/98 relics
+        # whose bonus is DMG Dealt/Taken / Real DMG Base / Tactical-Pursuit DMG matched no
+        # keyword and were dropped).  buff_id namespace:
+        #   2=DMG Coefficient, 41=Real DMG Base, 45/1=trigger probability,
+        #   5/6=DMG Dealt +/-, 7/8=DMG Taken -/+, 31/33=tactical/pursuit dmg-dealt,
+        #   4=blood-sucking.
         coef_val = 0.0
         real_dmg = 0.0
+        trigger_val = 0.0
+        dmg_dealt = 0.0
         last_val = 0.0
         for tok in rel.get("effect_tokens_max") or []:
             try:
@@ -212,13 +235,25 @@ class GameData:
                 coef_val = tv
             elif bid == "41":
                 real_dmg = tv
+            elif bid in ("45", "1"):
+                trigger_val = tv
+            elif bid in ("5", "31", "33"):
+                dmg_dealt += tv / 100.0 if tv > 1.0 else tv
+            elif bid == "6":
+                dmg_dealt -= tv / 100.0 if tv > 1.0 else tv
         val = last_val
         txt = (rel.get("max_bonus") or "").lower()
-        if "trigger probability" in txt:
-            return {"key": key, "kind": "trigger", "value": val}
-        if "coefficient" in txt:
+        if "trigger probability" in txt or trigger_val:
+            return {"key": key, "kind": "trigger", "value": trigger_val or val}
+        if "coefficient" in txt or coef_val:
             return {"key": key, "kind": "coef",
                     "value": coef_val or val, "real_dmg": real_dmg}
+        # standalone Real DMG Base relic (no coefficient text)
+        if real_dmg:
+            return {"key": key, "kind": "coef", "value": 0.0, "real_dmg": real_dmg}
+        # DMG Dealt/Tactical/Pursuit dmg-dealt relic -> hero-wide dmg_dealt channel
+        if dmg_dealt:
+            return {"key": key, "kind": "dmg_dealt", "value": dmg_dealt}
         stat = None
         for kw, s in (("atk spd", "speed"), ("atk", "atk"), ("def", "def"),
                       ("des", "ruin"), ("ruin", "ruin"), ("spd", "speed"), ("speed", "speed")):
@@ -243,7 +278,16 @@ class GameData:
 
     def awaken_bonus_for_skill(self, key):
         """Maxed skill-awaken bonus for an equipped skill. Returns
-        {'kind':'coef'|'attr', 'value':float, 'stat':<for attr>} or None."""
+        {'kind':'trigger'|'coef'|'attr', 'value':float, 'stat':<for attr>} or None.
+
+        Spec C / build-aggregation digest fixes:
+          * Route Skill/Effect-Trigger-Probability awakens (buff_id 45/1) into trigger
+            (135/187 were dropped); match 'trigger probability'/'probability' BEFORE the
+            stat fallback.
+          * De-route Healing-Coefficient (buff_id 3): require the bare 'dmg coefficient'
+            (or non-healing 'coefficient') for kind='coef' so heal-coef awakens stop
+            boosting damage.
+          * Fix the 'All Attributes Reduced' sign (buff_id 18): apply as negative."""
         aw = self.awake_by_skill.get(tuple(key))
         if not aw:
             return None
@@ -252,9 +296,17 @@ class GameData:
         except (TypeError, ValueError):
             return None
         bonus_txt = (aw.get("max_bonus") or "").lower()
+        # 1. trigger-probability awakens (the dominant dropped class) -> trigger bonus.
+        if "probability" in bonus_txt:
+            # the awaken value is a percent (e.g. 8.00) -> fraction
+            return {"kind": "trigger", "value": val / 100.0 if val > 1.0 else val}
+        # 2. healing coefficient is NOT a damage coef -> drop it from the coef channel.
+        if "healing" in bonus_txt and "coefficient" in bonus_txt:
+            return None
         if "coefficient" in bonus_txt:
             return {"kind": "coef", "value": val}
-        # attribute increase -> figure out which hero stat
+        # 3. attribute increase/reduce -> figure out which hero stat (+ sign).
+        sign = -1.0 if "reduced" in bonus_txt else 1.0
         stat = None
         for kw, s in (("atk", "atk"), ("def", "def"), ("des", "ruin"),
                       ("ruin", "ruin"), ("spd", "speed"), ("speed", "speed")):
@@ -263,7 +315,7 @@ class GameData:
                 break
         if "all attribute" in bonus_txt:
             stat = "all"
-        return {"kind": "attr", "value": val, "stat": stat}
+        return {"kind": "attr", "value": sign * val, "stat": stat}
 
     # ---- team-composition bonuses -------------------------------------
     def soldier_combo(self, soldier_type_id: int, matching_count: int):

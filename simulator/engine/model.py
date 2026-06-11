@@ -41,11 +41,40 @@ from . import data as datamod
 CHANNEL_PRIMARY_HERO_STAT = {
     "normal": "atk",     # normal ATK scales with ATK
     "tactical": "atk",   # tactical (skill) damage scales mainly with ATK (calibration)
-    "pursuit": "speed",  # pursuit dmg "Affected By Spd"
+    # FACT (digest multihit-aoe-procs + spec B): affectedByAttr==0 on EVERY direct
+    # at=101 effect including pursuit, and calibration_3_findings #4 concluded pursuit
+    # DAMAGE scales with ATK (Speed governs trigger/turn-order only).  Was "speed".
+    "pursuit": "atk",    # pursuit dmg scales with ATK (Spd only gates trigger/order)
     "real": "atk",       # Ghost-Bone Assault real dmg "Affected By ATK Attribute"
     "splash": "atk",
     "dot": "ruin",       # Burn/Curse DoT scales with the CASTER's DES/Ruin (calibration_2)
 }
+
+
+def level_ratio(sk, level: int) -> float:
+    """Scale a skill's per-effect coefficient from lv10 (=maxedValue) down to `level`.
+
+    FACT (decompiled GetSkillUpDes 9940-9949; verified across all 416 skills):
+        coef(L) = initVal + L*upVal,  maxedValue == coef(10).
+    The per-effect token coefficient stored in skills.json is the lv10/raw per-hit
+    value the in-game logs fit, so for main/modular (lv10) this returns 1.0 (no change).
+    A lv5 STONE returns the exact ratio (initVal+5*upVal)/(initVal+10*upVal) (~0.745-0.76,
+    NOT a flat 75%).  When the skill lacks init/up data, falls back to 1.0 (lv10)."""
+    try:
+        L = int(level)
+    except (TypeError, ValueError):
+        return 1.0
+    if L >= 10:
+        return 1.0
+    try:
+        init = float(sk.get("initVal"))
+        up = float(sk.get("upVal"))
+    except (TypeError, ValueError):
+        return 1.0
+    denom = init + 10.0 * up
+    if denom <= 0:
+        return 1.0
+    return max(0.0, (init + L * up) / denom)
 
 
 @dataclass(frozen=True)
@@ -101,9 +130,27 @@ class ModelConfig:
     #     driven by capped DMG-Taken-Reduced (max_dmg_taken_reduction), not DEF, so the
     #     DEF curve is orthogonal to that fight.
     # All four remain ASSUMPTION (server-side); the VALUES are calibrated to the logs.
-    damage_global: float = 26.959172          # ASSUMPTION global lethality scalar (calibrated; K/normal_attack_coef)
-    hero_off_weight: float = 0.20             # ASSUMPTION hero-stat weight in offence (modest -> ATK matters but isn't dominant)
+    # RE-FIT (2026-06, wave-based skill firing): using the per-effect token coefficient
+    # (x level scaling) per wave instead of the skill's maxedValue roughly HALVES raw
+    # skill damage and the per-effect triggerChance gate cuts multi-hit volume, so the
+    # global scalars are re-derived TOGETHER (spec E).  damage_global is fit so a clean
+    # Niya pursuit (Slayer lv10 coef 0.6) lands ~4,800-5,180 and her Rift lv5 stone
+    # (per-effect 0.25 * lv5-ratio 0.75 = 0.1875) lands ~1,550 (calibration_3_pursuit.md),
+    # while normal_attack_coef is lowered so the clean baseline normals stay in the logged
+    # ~4,000-5,600 band (calibration_1).  Both remain ASSUMPTION (server-side magnitude).
+    damage_global: float = 50.0               # ASSUMPTION global lethality scalar (re-fit to measured per-hit skill magnitudes)
+    # Lifted 0.20 -> 0.30 toward the MEASURED clean isolated allocation effect ~1.25x
+    # (calibration_1_findings:29-30; build-aggregation digest VALIDATION CORRECTIONS).  At
+    # 0.30 the +ATK-vs-+DES offence ratio is ~1.22x (engine was 1.16x), so +ATK heroes
+    # out-deal +DEF/+DES as the logs show, WITHOUT cranking it to chase a 2x (that lives in
+    # throughput + in-battle buffs).  Re-checked: baseline mirror stays a ~40-50% coin-flip.
+    hero_off_weight: float = 0.30             # ASSUMPTION hero-stat weight in offence (fit to ~1.25x clean allocation)
     troop_scale_ref: float = 55000.0          # ASSUMPTION army-size reference (= full troop)
+    # Spec B: sub-linear (~sqrt) attacker-attrition curve for DIRECT channels (pursuit log
+    # SusaMaki decay backs out exponent ~0.52); 1.0 at full troops so the clean anchors are
+    # unchanged.  LABELED ASSUMPTION fit to the logged decay; real/assault/dot keep their
+    # own floored factors.
+    troop_scale_exp: float = 0.6              # ASSUMPTION attacker-attrition exponent (~sqrt; ~0.52 measured, noisy)
     def_ref: float = 600.0                    # ASSUMPTION DEF mitigation midpoint (tuned so +DEF tilts the mirror to a coin-flip)
     hero_def_weight: float = 2.0              # ASSUMPTION hero-DEF weight in mitigation
 
@@ -126,7 +173,11 @@ class ModelConfig:
     #   dot_def_mitig = dot_def_ref / (dot_def_ref + DEF*dot_def_weight)
     # Fit: least-squares over the 8 logged Burn/Curse anchors -> mean rel-err ~13%.
     # All ASSUMPTION (server-side); values calibrated to the log.
-    dot_global: float = 24.2                  # ASSUMPTION global DoT lethality scalar (fit)
+    # RE-FIT (spec E): removing the DoT DEF-mitigation curve (~0.5x) and gating the enemy
+    # multi-hit over-count both changed the DoT balance, so dot_global is re-derived DOWN
+    # (24.2 -> 6.0) so Burn ticks stay in the logged ~700-4,000 band (calibration_2_dot.md;
+    # ~98% in band, median ~1,900) and detonate bursts in ~3,100-6,700.
+    dot_global: float = 6.0                   # ASSUMPTION global DoT lethality scalar (re-fit; no DEF term now)
     dot_troop_floor: float = 0.15             # ASSUMPTION floor of the caster troop factor
     dot_def_ref: float = 900.0                # ASSUMPTION DoT DEF-mitigation midpoint (mild)
     dot_def_weight: float = 2.0               # ASSUMPTION hero-DEF weight in DoT mitigation
@@ -143,7 +194,10 @@ class ModelConfig:
     # --- heal (Self-Heal / Field Therapy) restores Slight->Health.  Log: 0..~5000
     #     per round depending on how wounded the unit is.  Healing Coefficient shown
     #     1.05+0.28 (ally).  We model it as coef * heal_power * (slight pool). ---
-    heal_scale: float = 0.45                  # ASSUMPTION heal magnitude scalar
+    # RE-FIT (spec D): the heal now scales off the HEALER's troops (coef*heal_scale*
+    # healer_troops*floored-factor) instead of the target's Slight pool, so the scalar is
+    # re-derived to keep restores in the logged ~1.1-1.6k/round band (calibration_2_dot).
+    heal_scale: float = 0.05                  # ASSUMPTION heal magnitude scalar (re-fit to healer-troop shape)
 
     # --- casualty model (server-side; ASSUMPTION shapes) ---------------------
     # Of each damage instance, a portion goes straight to Severe/Death (permanent),
@@ -153,7 +207,10 @@ class ModelConfig:
     slight_worsen_frac: float = 0.018         # ASSUMPTION per-round Slight->Severe/Death
 
     # --- normal attack baseline coefficient (a plain auto-attack, no skill) ---
-    normal_attack_coef: float = 0.9           # ASSUMPTION (auto-attack coefficient)
+    # RE-FIT (spec E): lowered from 0.9 jointly with the higher damage_global so the
+    # combined normal scalar (damage_global*normal_attack_coef ~= 24.2) keeps the clean
+    # baseline normals in the logged ~4,000-5,600 band while skills scale up.
+    normal_attack_coef: float = 0.46          # ASSUMPTION (auto-attack coefficient; re-fit with damage_global)
 
     # --- reactions / procs (coefficients are FACT from skills; these gate them) ---
     counter_coef: float = 0.84                # FACT (Reactive Block 0.70+0.14)
@@ -220,6 +277,10 @@ class CombatUnit:
 
     # resolved skills (list of skill dicts from data, maxed) by category
     skills: list = field(default_factory=list)
+    # per-skill equipped LEVEL: (st,id) -> level.  Main/modular = lv10 (=maxedValue);
+    # skill STONES = lv5.  Drives coef(L)=initVal+L*upVal in combat (FACT: decompiled
+    # GetSkillUpDes 9940-9949; lv10=maxedValue verified across all 416 skills).
+    skill_level: dict = field(default_factory=dict)
 
     # gear-derived, read-only bonuses (relic = hero's own; rune/awaken = per skill)
     skill_trigger_bonus: dict = field(default_factory=dict)  # (st,id) -> +trigger prob
@@ -240,6 +301,8 @@ class CombatUnit:
 
     # in-battle dynamic attribute modifiers (set during Pre-War Preparation etc.)
     attr_mods: dict = field(default_factory=dict)  # stat -> {"add":float,"locked":bool}
+    # readyRound charge state: (st,id) -> True while a prep skill is charging (fires next)
+    _charged: dict = field(default_factory=dict)
 
     # per-unit stat tracking (compared to the log's tables)
     stat_kills: float = 0.0       # total enemy Health removed by this unit
@@ -365,9 +428,10 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         # free stat points: if the build pins an allocation stat (log "+229 X"),
         # dump cfg.allocated_stat_points there; otherwise use the rpoint preset.
         if s.allocated_stat in ("atk", "def", "ruin", "speed"):
-            # Lv80 free-point cap is star-dependent (FACT): 5★=+229, 4★=+179,
-            # 3★=+129 (= 50 advance + 79 level; +50 per breakthrough tier).
-            pts = {5: 229.0, 4: 179.0, 3: 129.0}.get(int(h["star"]), float(cfg.allocated_stat_points))
+            # Lv80 free-point cap is star-dependent (FACT, decompiled maxed-preview
+            # cs:77749-77767): 5★=+229, 4★=+179, 3★=+169 (= AdvLv 3*10 + (Lv-1) 79 +
+            # 3*BreakthroughLv 20*3 = 30+79+60 = 169; the old 129 was wrong -- spec C).
+            pts = {5: 229.0, 4: 179.0, 3: 169.0}.get(int(h["star"]), float(cfg.allocated_stat_points))
             add = {"atk": 0.0, "def": 0.0, "ruin": 0.0, "speed": 0.0}
             add[s.allocated_stat] = pts
         else:
@@ -418,21 +482,30 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         #     5★=55,000, 4★=51,000 (Nicole), 3★≈47,000 (estimated, -4,000/star). The log
         #     shows NO commander troop bonus (commander Thiel 5★ = 55,000, same as a
         #     non-commander 5★), so the old +commander_talent is dropped. FACT (5★/4★). ---
-        troops = {5: 55000, 4: 51000, 3: 47000}.get(
+        troops = {5: 55000, 4: 51000, 3: 49000}.get(
             int(h["star"]),
             cfg.soldier_qty_base + cfg.hero_level * cfg.soldier_qty_per_level + cfg.advance_soldiers_bonus)
         troops += gb["troops"]      # gear Soldiers-Quantity (0 for the baseline gear set)
         troops = int(troops)
 
-        # --- skills (maxed): main + 2 modular ---
-        skill_refs = [h["main_skill"]]
+        # --- skills: main(lv10) + 2 modular(lv10) + 1 skill STONE(lv5) ---
+        # The build sheets field main & modular at max (lv10 = maxedValue) and a skill
+        # stone equipped at lv5 (FACT: level-scaling digest).  The validators / loadout
+        # helpers always pass the stone as the LAST skill_keys entry, so we mark it lv5;
+        # all others are lv10.  level only scales the per-effect coefficient.
+        skill_refs = [(h["main_skill"], 10)]
         if s.skill_keys:
-            skill_refs += [{"st": st, "id": sid} for (st, sid) in s.skill_keys]
+            keys = list(s.skill_keys)
+            for idx, (st, sid) in enumerate(keys):
+                # last equipped key = the skill stone (lv5); the rest are modular (lv10)
+                lvl = 5 if idx == len(keys) - 1 else 10
+                skill_refs.append(({"st": st, "id": sid}, lvl))
         else:
-            skill_refs += h.get("modular_default", [])
+            skill_refs += [(ref, 10) for ref in h.get("modular_default", [])]
         skills = []
+        skill_level: dict = {}
         seen = set()
-        for ref in skill_refs:
+        for ref, lvl in skill_refs:
             kk = (int(ref["st"]), int(ref["id"]))
             if kk in seen:
                 continue          # a hero cannot equip the same skill twice
@@ -440,6 +513,7 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             sk = g.skill(*kk)
             if sk:
                 skills.append(sk)
+                skill_level[kk] = lvl
         equipped_keys = [(int(sk["st"]), int(sk["id"])) for sk in skills]
 
         # --- relic (hero's OWN only), rune (1, best matching an equipped skill),
@@ -448,16 +522,20 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         skill_coef_bonus: dict = {}
         real_dmg_bonus: dict = {}
         rel = g.relic_bonus_for_hero(s.hero_id)   # hero's OWN relic only
+        relic_dmg_dealt = 0.0
         if rel:
             rk, rkind, rv = rel["key"], rel["kind"], rel["value"]
             if rkind == "trigger":
                 skill_trigger_bonus[rk] = skill_trigger_bonus.get(rk, 0.0) + rv
             elif rkind == "coef":
-                skill_coef_bonus[rk] = skill_coef_bonus.get(rk, 0.0) + rv
+                if rv:
+                    skill_coef_bonus[rk] = skill_coef_bonus.get(rk, 0.0) + rv
                 # Patra-style relic also carries a Real DMG Base add (token id 41)
                 rdb = rel.get("real_dmg")
                 if rdb:
                     real_dmg_bonus[rk] = real_dmg_bonus.get(rk, 0.0) + rdb
+            elif rkind == "dmg_dealt":
+                relic_dmg_dealt += rv
             elif rkind == "attr":
                 st_ = rel.get("stat")
                 if st_ == "atk": atk += rv
@@ -478,7 +556,9 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             aw = g.awaken_bonus_for_skill(kk)
             if not aw:
                 continue
-            if aw["kind"] == "coef":
+            if aw["kind"] == "trigger":
+                skill_trigger_bonus[kk] = skill_trigger_bonus.get(kk, 0.0) + aw["value"]
+            elif aw["kind"] == "coef":
                 skill_coef_bonus[kk] = skill_coef_bonus.get(kk, 0.0) + aw["value"]
             elif aw["kind"] == "attr":
                 st_ = aw.get("stat"); v = aw["value"]
@@ -496,10 +576,11 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             role=(h.get("role") or {}).get("name_en", "?"),
             is_commander=s.is_commander, fight_pos=fight_pos_base + i, side=side,
             atk=atk, deff=deff, ruin=ruin, speed=spd,
-            troops_max=troops, soldier=soldier, skills=skills,
+            troops_max=troops, soldier=soldier, skills=skills, skill_level=skill_level,
             skill_trigger_bonus=skill_trigger_bonus, channel_trigger=channel_trigger,
             skill_coef_bonus=skill_coef_bonus, real_dmg_bonus=real_dmg_bonus,
-            gear_dmg_dealt=gb.get("dmg_dealt", 0.0), gear_dmg_taken=gb.get("dmg_taken", 0.0),
+            gear_dmg_dealt=gb.get("dmg_dealt", 0.0) + relic_dmg_dealt,
+            gear_dmg_taken=gb.get("dmg_taken", 0.0),
         )
         u.health = float(troops)
         u.slight = 0.0
@@ -519,8 +600,17 @@ def offence(unit: CombatUnit, channel: str, cfg: ModelConfig) -> float:
 
 
 def troop_scale(unit: CombatUnit, cfg: ModelConfig) -> float:
-    """Army-size & attrition factor: a unit hits harder with more live troops."""
-    return unit.health / max(1.0, cfg.troop_scale_ref)
+    """Army-size & attrition factor: a unit hits harder with more live troops.
+
+    Spec B: the linear (exponent 1.0) factor over-penalizes a wounded army; the pursuit
+    log implies a SUB-linear (~sqrt) attacker-attrition curve (SusaMaki R1 5441@54k ->
+    R3 3363@21.5k => exponent ~0.52).  At FULL troops the factor is 1.0 regardless of the
+    exponent, so the clean full-troop calibration anchors are unaffected; only wounded
+    attackers change.  troop_scale_exp is a LABELED ASSUMPTION fit to that decay (~0.5)."""
+    frac = unit.health / max(1.0, cfg.troop_scale_ref)
+    if frac <= 0.0:
+        return 0.0
+    return frac ** cfg.troop_scale_exp
 
 
 def def_mitigation(defender: CombatUnit, channel: str, cfg: ModelConfig) -> float:
@@ -534,14 +624,14 @@ def def_mitigation(defender: CombatUnit, channel: str, cfg: ModelConfig) -> floa
 def dot_tick(caster: CombatUnit, defender: CombatUnit, coef: float,
              cfg: ModelConfig) -> float:
     """One Burn/Curse tick.  Scales with the CASTER (DES via offence("dot") +
-    a floored troop factor), LINEAR in the printed coefficient, and only MILDLY
-    DEF-mitigated.  Calibrated to calibration_2_dot.md (see ModelConfig).  All
-    server-side -> ASSUMPTION; values fit to the log's 8 tick anchors."""
+    a floored troop factor), LINEAR in the printed coefficient.  NO DEF mitigation
+    (spec D / digest dot-sustain: the server DoT spec has no DEF term and the log shows
+    no DEF trend -- high-DEF Thiel is not hit less per caster-troop than low-DEF Nicole;
+    `defender` is kept only for signature compatibility).  Calibrated to
+    calibration_2_dot.md (see ModelConfig).  All server-side -> ASSUMPTION."""
     off = offence(caster, "dot", cfg)
     troop_factor = cfg.dot_troop_floor + (1.0 - cfg.dot_troop_floor) * troop_scale(caster, cfg)
-    def_eff = defender.eff_stat("def") * cfg.dot_def_weight
-    def_mitig = cfg.dot_def_ref / (cfg.dot_def_ref + def_eff)
-    return max(0.0, coef * off * troop_factor * cfg.dot_global * def_mitig)
+    return max(0.0, coef * off * troop_factor * cfg.dot_global)
 
 
 def restraint_mult(g: datamod.GameData, attacker: CombatUnit, defender: CombatUnit,
@@ -565,7 +655,7 @@ def fresh_units(units):
     out = []
     for u in units:
         c = replace(u, health=float(u.troops_max), slight=0.0, severe_death=0.0,
-                    alive=True, statuses={}, attr_mods={},
+                    alive=True, statuses={}, attr_mods={}, _charged={},
                     stat_kills=0.0, stat_heal=0.0, stat_slight=0.0, stat_severe=0.0,
                     stat_death=0.0, stat_skill_dmg=0.0, stat_normal_dmg=0.0, skills_used=0)
         out.append(c)
