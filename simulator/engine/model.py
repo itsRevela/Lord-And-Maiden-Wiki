@@ -377,7 +377,9 @@ class BuildSpec:
     is_commander: bool = False
     skill_keys: Optional[tuple] = None      # ((st,id),...) modular override; None -> hero default
     allocated_stat: Optional[str] = None    # 'atk'|'def'|'ruin'|'speed' -- log "+229 X"
-    relic_on: bool = True                   # equip the hero's OWN relic (toggleable in the search)
+    relic_on: bool = True                   # equip the hero's OWN relic (always on in phase-2)
+    gear: Optional[dict] = None             # {armor_set_id,messenger_id,acc_left_id,acc_right_id};
+                                            # None -> flat best-gear bonus (anchors/legacy)
 
 
 def _distribute_free_points(cfg: ModelConfig, rpoint_values, primary_key):
@@ -482,8 +484,9 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
             if key:
                 soldier_pct[key] = soldier_pct.get(key, 0.0) + pct
 
-        # --- maxed EQUIPMENT (hero-generic: best item per slot + set bonuses) ---
-        gb = g.gear_bonus
+        # --- EQUIPMENT: a per-build SELECTED gear set (armor set + messenger + 2 accessories)
+        #     when the BuildSpec pins one, else the flat hero-generic best-gear bonus. ---
+        gb = g.gear_bonus_from_selection(**s.gear) if getattr(s, "gear", None) else g.gear_bonus
         for k, v in gb["soldier_pct"].items():
             soldier_pct[k] = soldier_pct.get(k, 0.0) + v
         for k, v in gb["soldier_flat"].items():

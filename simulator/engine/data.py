@@ -180,6 +180,69 @@ class GameData:
                 self._accumulate(sb.get("six_piece"), acc)
         self.gear_bonus = acc
 
+    # ---- per-build SELECTABLE gear components (phase-2 gear system) ----
+    @staticmethod
+    def _empty_gear_acc():
+        return {"soldier_pct": {}, "soldier_flat": {}, "hero_flat": {},
+                "troops": 0.0, "trigger_tactical": 0.0, "trigger_pursuit": 0.0,
+                "dmg_dealt": 0.0, "dmg_taken": 0.0}
+
+    def gear_bonus_from_selection(self, armor_set_id=None, messenger_id=None,
+                                  acc_left_id=None, acc_right_id=None):
+        """Per-build gear bonus from a SELECTED armor set (its pieces in slots 1-6 + the
+        3pc/6pc set bonus), a magic messenger (slot 11), and two accessories (left/right).
+        Same dict shape as the flat ``gear_bonus``; omitted components contribute nothing."""
+        acc = self._empty_gear_acc()
+        eq = self.gear.get("equipment", {})
+        if armor_set_id not in (None, "", "0"):
+            sid = str(armor_set_id); npieces = 0
+            for slot in ("1", "2", "3", "4", "5", "6"):
+                items = (eq.get(slot) or {}).get("items", [])
+                piece = next((it for it in items if str(it.get("set_id")) == sid), None)
+                if piece:
+                    self._accumulate(piece.get("effects"), acc); npieces += 1
+            for sb in self.gear.get("set_bonuses", []):
+                if str(sb.get("set_id")) == sid:
+                    if npieces >= 3:
+                        self._accumulate(sb.get("three_piece"), acc)
+                    if npieces >= 6:
+                        self._accumulate(sb.get("six_piece"), acc)
+        if messenger_id not in (None, "", "0"):
+            m = next((it for it in (eq.get("11") or {}).get("items", [])
+                      if str(it.get("id")) == str(messenger_id)), None)
+            if m:
+                self._accumulate(m.get("effects"), acc)
+        accs = self.gear.get("accessories", {})
+        for side, aid in (("left", acc_left_id), ("right", acc_right_id)):
+            if aid not in (None, "", "0"):
+                a = next((it for it in (accs.get(side) or {}).get("items", [])
+                          if str(it.get("id")) == str(aid)), None)
+                if a:
+                    self._accumulate(a.get("effects"), acc)
+        return acc
+
+    def max_tier_armor_sets(self):
+        """[(set_id, set_name)] for the highest-rarity armor sets (the 'best tier' pool)."""
+        sbs = self.gear.get("set_bonuses", [])
+        if not sbs:
+            return []
+        maxr = max(int(s.get("rarity") or 0) for s in sbs)
+        return [(str(s.get("set_id")), s.get("set_name")) for s in sbs
+                if int(s.get("rarity") or 0) == maxr]
+
+    def _max_tier_items(self, items):
+        if not items:
+            return []
+        maxr = max(int(i.get("rarity") or 0) for i in items)
+        return [(str(i.get("id")), i.get("name")) for i in items
+                if int(i.get("rarity") or 0) == maxr]
+
+    def messenger_items(self):
+        return self._max_tier_items((self.gear.get("equipment", {}).get("11") or {}).get("items", []))
+
+    def accessory_items(self, side):
+        return self._max_tier_items((self.gear.get("accessories", {}).get(side) or {}).get("items", []))
+
     # ---- lookups -------------------------------------------------------
     def hero(self, hid: int) -> dict:
         return self.heroes[int(hid)]
