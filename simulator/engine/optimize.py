@@ -27,7 +27,9 @@ from .model import BuildSpec, ModelConfig, build_team, fresh_units
 from .search import WINDOWS, SearchOptions, sample_opponents
 
 TROOP_NAMES = {1: "Infantry", 2: "Archer", 3: "Cavalry", 4: "Chariot"}
-ALL_AXES = ("troop", "skills", "stone")   # relic is ALWAYS equipped (#4), never an axis
+ALL_AXES = ("troop", "skills", "stone", "armor", "messenger", "accessory")
+# relic is ALWAYS equipped (#4), never an axis. gear genome slot = per hero
+# (armor_set_id, messenger_id, acc_left_id, acc_right_id); always full (never empty, #1/#2).
 # genome = (troops:tuple3 int, loadout:tuple3 of (k,k), stones:tuple3 int{-1,0,1}, relics:tuple3 bool)
 
 
@@ -70,12 +72,29 @@ def _ctx(g, hero_ids, rng, axes, troop_types=None):
     tt = troop_types or [None, None, None]
     def_troops = tuple(int(tt[i]) if (i < len(tt) and tt[i] in (1, 2, 3, 4)) else g.hero(hero_ids[i])["rst"]["id"]
                        for i in range(3))
+    armor = [a[0] for a in g.max_tier_armor_sets()]
+    msgr = [m[0] for m in g.messenger_items()]
+    accl = [a[0] for a in g.accessory_items("left")]
+    accr = [a[0] for a in g.accessory_items("right")]
+    def_gear = (armor[0] if armor else None, msgr[0] if msgr else None,
+                accl[0] if accl else None, accr[0] if accr else None)
     return {
         "pool": pool, "mains": mains, "axes": set(axes),
         "def_troops": def_troops,
         "def_loadout": tuple(_default_modular(g, hero_ids[i], pool, mains[i], rng)
                              for i in range(3)),
+        "armor": armor, "msgr": msgr, "accl": accl, "accr": accr, "def_gear": def_gear,
     }
+
+
+def _rand_gear(rng, ctx):
+    """Per-hero (armor_set, messenger, acc_left, acc_right); always full (never empty)."""
+    ax, dg = ctx["axes"], ctx["def_gear"]
+    a = rng.choice(ctx["armor"]) if ("armor" in ax and ctx["armor"]) else dg[0]
+    m = rng.choice(ctx["msgr"]) if ("messenger" in ax and ctx["msgr"]) else dg[1]
+    l = rng.choice(ctx["accl"]) if ("accessory" in ax and ctx["accl"]) else dg[2]
+    r = rng.choice(ctx["accr"]) if ("accessory" in ax and ctx["accr"]) else dg[3]
+    return (a, m, l, r)
 
 
 def _rand_genome(rng, ctx):
@@ -86,22 +105,23 @@ def _rand_genome(rng, ctx):
     # #1: a skill stone is ALWAYS equipped and matches a modular (0 or 1) -- never empty.
     stones = (tuple(rng.choice((0, 1)) for _ in range(3))
               if "stone" in ctx["axes"] else (0, 0, 0))
-    relics = (True, True, True)               # #4: relic ALWAYS on (hero's own, max tier)
-    return (troops, loadout, stones, relics)
+    gears = tuple(_rand_gear(rng, ctx) for _ in range(3))   # always full gear (#1/#2)
+    return (troops, loadout, stones, gears)
 
 
 def _seed_genomes(rng, ctx):
-    """Sensible starting points: default troops + default modular skills, no stone, relic on;
-    plus a few with each hero's stone on slot 0."""
-    base = (ctx["def_troops"], ctx["def_loadout"], (0, 0, 0), (True, True, True))
+    """Sensible starting points: default troops + default modular skills, stone on slot 0,
+    default (first max-tier) gear; plus a variant with the stone on slot 1."""
+    dg = tuple(ctx["def_gear"] for _ in range(3))
+    base = (ctx["def_troops"], ctx["def_loadout"], (0, 0, 0), dg)
     seeds = [base]
     if "stone" in ctx["axes"]:
-        seeds.append((ctx["def_troops"], ctx["def_loadout"], (1, 1, 1), (True, True, True)))
+        seeds.append((ctx["def_troops"], ctx["def_loadout"], (1, 1, 1), dg))
     return seeds
 
 
 def _specs(hero_ids, genome, commander, allocated):
-    troops, loadout, stones, relics = genome
+    troops, loadout, stones, gears = genome
     specs = []
     for i in range(3):
         mods = [tuple(k) for k in loadout[i]]
@@ -109,11 +129,14 @@ def _specs(hero_ids, genome, commander, allocated):
         st = stones[i]
         if st in (0, 1) and st < len(mods):
             keys.append(mods[st])   # stone == a modular skill (reinforces it); last entry @ lv5
+        ga, gm, gl, gr = gears[i]
         specs.append(BuildSpec(hero_id=hero_ids[i], soldier_type=int(troops[i]),
                                is_commander=(i == commander),
                                skill_keys=tuple(keys),
                                allocated_stat=allocated[i],
-                               relic_on=bool(relics[i])))
+                               relic_on=True,        # #4: always equipped
+                               gear={"armor_set_id": ga, "messenger_id": gm,
+                                     "acc_left_id": gl, "acc_right_id": gr}))
     return tuple(specs)
 
 
@@ -161,34 +184,44 @@ def _eval_genome(payload):
 
 
 def _crossover(rng, a, b):
-    ta, la, sa, ra = a
-    tb, lb, sb, rb = b
+    ta, la, sa, ga = a
+    tb, lb, sb, gb = b
     troops = tuple((ta[i] if rng.random() < 0.5 else tb[i]) for i in range(3))
     loadout = tuple((la[i] if rng.random() < 0.5 else lb[i]) for i in range(3))
     stones = tuple((sa[i] if rng.random() < 0.5 else sb[i]) for i in range(3))
-    relics = tuple((ra[i] if rng.random() < 0.5 else rb[i]) for i in range(3))
-    return (troops, loadout, stones, relics)
+    gears = tuple((ga[i] if rng.random() < 0.5 else gb[i]) for i in range(3))
+    return (troops, loadout, stones, gears)
 
 
 def _mutate(rng, genome, ctx, rate=0.3):
-    troops, loadout, stones, relics = genome
+    troops, loadout, stones, gears = genome
     troops = list(troops); loadout = [list(p) for p in loadout]
-    stones = list(stones); relics = list(relics)
-    pool = ctx["pool"]
+    stones = list(stones); gears = [list(gp) for gp in gears]
+    pool, ax = ctx["pool"], ctx["axes"]
     for i in range(3):
-        if "troop" in ctx["axes"] and rng.random() < rate:
+        if "troop" in ax and rng.random() < rate:
             troops[i] = rng.randrange(1, 5)
-        if "skills" in ctx["axes"] and rng.random() < rate:
+        if "skills" in ax and rng.random() < rate:
             slot = rng.randrange(2)
             other = loadout[i][1 - slot]; mk = ctx["mains"][i]
             ns = rng.choice(pool); tries = 0
             while (ns == mk or ns == other) and tries < 10:
                 ns = rng.choice(pool); tries += 1
             loadout[i][slot] = ns
-        if "stone" in ctx["axes"] and rng.random() < rate:
+        if "stone" in ax and rng.random() < rate:
             stones[i] = rng.choice((0, 1))    # always a stone (#1); just which modular
+        if "armor" in ax and ctx["armor"] and rng.random() < rate:
+            gears[i][0] = rng.choice(ctx["armor"])
+        if "messenger" in ax and ctx["msgr"] and rng.random() < rate:
+            gears[i][1] = rng.choice(ctx["msgr"])
+        if "accessory" in ax and rng.random() < rate:
+            if ctx["accl"]:
+                gears[i][2] = rng.choice(ctx["accl"])
+            if ctx["accr"]:
+                gears[i][3] = rng.choice(ctx["accr"])
         # relic always on (#4) -- not mutated
-    return (tuple(troops), tuple(tuple(p) for p in loadout), tuple(stones), tuple(relics))
+    return (tuple(troops), tuple(tuple(p) for p in loadout), tuple(stones),
+            tuple(tuple(gp) for gp in gears))
 
 
 def _tournament(rng, population, cache, k=3):
@@ -295,12 +328,16 @@ def _skill_name(g, key):
 
 
 def _build_detail(g, hero_ids, commander, allocated, genome, stats):
-    troops, loadout, stones, relics = genome
+    troops, loadout, stones, gears = genome
+    armor_nm = dict(g.max_tier_armor_sets())
+    msgr_nm = dict(g.messenger_items())
+    accl_nm = dict(g.accessory_items("left")); accr_nm = dict(g.accessory_items("right"))
     heroes = []
     for i, hid in enumerate(hero_ids):
         h = g.hero(hid)
         mods = [tuple(k) for k in loadout[i]]
         st = stones[i]
+        ga, gm, gl, gr = gears[i]
         heroes.append({
             "id": hid, "name": h["name_en"], "is_commander": (i == commander),
             "troop": TROOP_NAMES[int(troops[i])],
@@ -308,7 +345,10 @@ def _build_detail(g, hero_ids, commander, allocated, genome, stats):
             "main_skill": h["main_skill"]["name_en"],
             "modular_skills": [_skill_name(g, k) for k in mods],
             "skill_stone": (_skill_name(g, mods[st]) if st in (0, 1) and st < len(mods) else "none"),
-            "relic": "on" if relics[i] else "off",
+            "relic": "on",
+            "armor_set": armor_nm.get(ga, ga or "—"),
+            "messenger": msgr_nm.get(gm, gm or "—"),
+            "accessories": [accl_nm.get(gl, gl or "—"), accr_nm.get(gr, gr or "—")],
         })
     label = " / ".join(
         ("[CMD] " if hi["is_commander"] else "") + "%s(%s)" % (hi["name"], hi["troop"])
