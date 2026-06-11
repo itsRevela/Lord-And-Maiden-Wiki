@@ -108,6 +108,67 @@ The quiz's **question and answer-option text** do exist in the game's localizati
 
 **A:** **Elder Cliodna** — she sought out Elder Cliodna for guidance and went on to become the Sixth Knight of the Holy Knights. ([Lafayette](../Heroes/roster/39-lafayette.md))
 
+### Batch 3
+**Q24. What is the heirloom from Rhea's father that she carries?**
+
+**A:** **The Mountain Shield** — all she inherited from her vanished father was his shield and armor; she carries his battle-worn Mountain Shield. ([Rhea](../Heroes/roster/40-rhea.md))
+
+**Q25. How was Bast healed after being wounded by a hidden forest trap?**
+
+**A:** **Lafayette's feather** — Bast idly handled a fallen feather and her wound healed, even erasing the scar, revealing Lafayette's healing power. ([Lafayette](../Heroes/roster/39-lafayette.md))
+
+**Q26. How does the Lord's diary bless Yaya?**
+
+**A:** **Happiness every day** — the diary entry closes with "Wishing Miss Yaya happiness every day." ([Yaya·Sp](../Heroes/roster/122-yaya-sp.md))
+
+**Q27. Who took in Aguria after she destroyed the dark organization?**
+
+**A:** **The High Priest** — he gave the hunted Aguria a stable home, taught her magic, and instilled her optimism. ([Aguria](../Heroes/roster/95-aguria.md))
+
+**Q28. What was the reason for Pomon's title of "Calamity Star"?**
+
+**A:** **Misfortune followed her wherever she went** — after barbarians destroyed her home, disaster trailed her everywhere, earning the epithet. ([Pomon](../Heroes/roster/34-pomon.md))
+
+**Q29. How long did Zoe spend tracking SusaMaki?**
+
+**A:** **Three full days** — she reached the chaotic Susa estate and took three full days to track down SusaMaki's trail. ([Zoe](../Heroes/roster/51-zoe.md))
+
+**Q30. Who reports to Cthugha in the garden?**
+
+**A:** **Bonnie** — Cthugha spends her days in the garden sipping tea while listening to Bonnie's reports. ([Cthugha](../Heroes/roster/32-cthugha.md))
+
+**Q31. What did Faye's mentor believe her understanding of magic stemmed from?**
+
+**A:** **Soul engraving** — her mentor said her understanding of magic "feels as if it were etched into her soul." ([Faye](../Heroes/roster/115-faye.md))
+
+**Q32. What is Roland's demeanor at home?**
+
+**A:** **Picky but easygoing** — at home she's a somewhat picky yet easygoing young lady, unlike her calm, battle-skilled self against monsters. ([Roland](../Heroes/roster/23-roland.md))
+
+**Q33. What did Darby love to do most as a child?**
+
+**A:** **Cling to her elder sister (Duffy)** — as a child she was extremely clingy, constantly following Duffy as her "little shadow." ([Duffy](../Heroes/roster/52-duffy.md))
+
+**Q34. What is Serena trying to retrieve/reclaim?**
+
+**A:** **Her (lost) memory** — amnesiac Serena journeys to recover her forgotten past, her ruby necklace her only clue. ([Serena](../Heroes/roster/110-serena.md))
+
+**Q35. What was the final attitude of the little girl saved by Shady's mother?**
+
+**A:** **Resentment** — far from grateful, the rescued girl resented being saved, complaining it caused her suffering. ([Shady](../Heroes/roster/103-shady.md))
+
+**Q36. What tool did Dolly use to revive the plants?**
+
+**A:** **Her arrow** — she fired an arrow that instantly revived the weeds the elder had cleared. ([Dolly](../Heroes/roster/108-dolly.md))
+
+**Q37. Where was Isabelle confined after losing control?**
+
+**A:** **The confinement chamber** — after the cursed sword made her turn on her comrades, she was locked in the confinement chamber and her sword confiscated. ([Isabelle](../Heroes/roster/118-isabelle.md))
+
+**Q38. What role does Faye play in adventure teams?**
+
+**A:** **Support** — concealing her High Mage identity, she serves as the team's support mage, casting enhancement magic on her teammates. ([Faye·Sp](../Heroes/roster/121-faye-sp.md))
+
 **See also:** [Quests & Events](Quests-and-Events.md) · [Glossary](../Reference/Glossary.md) (Friendship / Life Points).
 
 ---
