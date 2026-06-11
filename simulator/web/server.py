@@ -95,7 +95,7 @@ def _run_job(job_id, heroes, opts, mode, objective, extra):
                 commander_index=extra["commander_index"],
                 allocated_stats=extra["allocated_stats"],
                 search_axes=extra["search_axes"], top_n=extra["top_n"],
-                generations=extra["generations"])
+                troop_types=extra["troop_types"], generations=extra["generations"])
         else:
             report = run_search(heroes, opts, progress=progress)
         with _LOCK:
@@ -134,6 +134,14 @@ def simulate():
     search_axes = tuple(x for x in (axes if isinstance(axes, list) else ALL_AXES) if x in ALL_AXES) \
         or ALL_AXES
     top_n = max(1, min(int(body.get("top_n", 20)), 50))
+    raw_tt = body.get("troop_types") or [None, None, None]
+    troop_types = []                          # per-hero troop (1..4) used when troop axis is OFF
+    for t in (list(raw_tt) + [None, None, None])[:3]:
+        try:
+            t = int(t)
+        except (TypeError, ValueError):
+            t = None
+        troop_types.append(t if t in (1, 2, 3, 4) else None)
 
     opts = SearchOptions(
         n_battles=int(body.get("battles", 60)),
@@ -145,7 +153,8 @@ def simulate():
     )
     generations = int(body.get("generations", 24))
     extra = {"commander_index": commander_index, "allocated_stats": allocated_stats,
-             "search_axes": search_axes, "top_n": top_n, "generations": generations}
+             "search_axes": search_axes, "top_n": top_n, "generations": generations,
+             "troop_types": troop_types}
     job_id = uuid.uuid4().hex[:12]
     with _LOCK:
         _JOBS[job_id] = {"status": "running", "done": 0,

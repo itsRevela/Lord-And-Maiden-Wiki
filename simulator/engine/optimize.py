@@ -62,12 +62,17 @@ def _rand_loadout_for(rng, pool, main_key):
     return (a, b)
 
 
-def _ctx(g, hero_ids, rng, axes):
+def _ctx(g, hero_ids, rng, axes, troop_types=None):
     pool = _skill_pool(g)
     mains = [_main_key(g, h) for h in hero_ids]
+    # default/fixed troop per hero: the user's choice if given (1..4), else the hero's RST.
+    # When the troop axis is OFF this is used verbatim; when ON it's the seed/starting point.
+    tt = troop_types or [None, None, None]
+    def_troops = tuple(int(tt[i]) if (i < len(tt) and tt[i] in (1, 2, 3, 4)) else g.hero(hero_ids[i])["rst"]["id"]
+                       for i in range(3))
     return {
         "pool": pool, "mains": mains, "axes": set(axes),
-        "def_troops": tuple(g.hero(h)["rst"]["id"] for h in hero_ids),
+        "def_troops": def_troops,
         "def_loadout": tuple(_default_modular(g, hero_ids[i], pool, mains[i], rng)
                              for i in range(3)),
     }
@@ -194,7 +199,7 @@ def _tournament(rng, population, cache, k=3):
 
 def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
                        commander_index=0, allocated_stats=None, search_axes=ALL_AXES,
-                       objective="win", top_n=20,
+                       troop_types=None, objective="win", top_n=20,
                        pop_size=44, generations=24, ga_battles=18, ga_opponents=12, elite=6):
     """Evolve + rank the best builds for a FIXED commander + allocation. Returns top-N."""
     g = datamod.load()
@@ -205,7 +210,7 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
     allocated = tuple((allocated_stats or [None, None, None])[i] for i in range(3))
     rng = random.Random(opts.seed)
     cfg_dict = asdict(opts.cfg)
-    ctx = _ctx(g, hero_ids, rng, search_axes)
+    ctx = _ctx(g, hero_ids, rng, search_axes, troop_types)
     opponents = sample_opponents(g, max(ga_opponents, opts.n_opponents), opts.seed, exclude=hero_ids)
     ga_opp = opponents[:ga_opponents]
 

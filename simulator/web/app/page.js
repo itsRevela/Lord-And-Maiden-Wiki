@@ -34,6 +34,7 @@ export default function Page() {
   const [slots, setSlots] = useState([null, null, null]);
   const [commander, setCommander] = useState(0);                       // FIXED commander slot
   const [allocations, setAllocations] = useState(["atk", "atk", "atk"]); // per-hero max-allocated stat
+  const [troopTypes, setTroopTypes] = useState([2, 2, 2]);             // per-hero troop (1..4); used when troop axis off
   const [axes, setAxes] = useState({ troop: true, skills: true, stone: true, relic: true });
   const [workers, setWorkers] = useState(0);                           // 0 = all cores
   const [objective, setObjective] = useState("win");                   // win | casualty | early | mid | late | all
@@ -66,16 +67,20 @@ export default function Page() {
   }, [heroes, filter]);
 
   function choose(h) {
-    const s = [...slots]; s[pickIdx] = h.id; setSlots(s); setPickIdx(-1); setFilter("");
+    const s = [...slots]; s[pickIdx] = h.id; setSlots(s);
+    const rstIdx = TROOPS.indexOf(h.rst);          // default troop = the hero's natural RST
+    if (rstIdx >= 0) { const t = [...troopTypes]; t[pickIdx] = rstIdx + 1; setTroopTypes(t); }
+    setPickIdx(-1); setFilter("");
   }
   function setAlloc(i, v) { const a = [...allocations]; a[i] = v; setAllocations(a); }
+  function setTroop(i, v) { const t = [...troopTypes]; t[i] = +v; setTroopTypes(t); }
 
   async function start() {
     setResult(null); setOpenBuild(null);
     const search_axes = AXES.map((a) => a.v).filter((v) => axes[v]);
     const body = {
       heroes: slots, mode: "optimize", objective,
-      commander_index: commander, allocated_stats: allocations,
+      commander_index: commander, allocated_stats: allocations, troop_types: troopTypes,
       search_axes, workers: +workers || 0, battles, opponents, top_n: topN,
     };
     const r = await fetch("/api/simulate", {
@@ -138,6 +143,15 @@ export default function Page() {
                             onChange={(e) => setAlloc(i, e.target.value)}>
                             {ALLOCS.map((a) => <option key={a.v} value={a.v}>{a.label}</option>)}
                           </select>
+                        </div>
+                        <div className="row" style={{ marginTop: 4, gap: 6 }} onClick={(e) => e.stopPropagation()}>
+                          <span className="muted" style={{ fontSize: 11 }}>Troop</span>
+                          <select className="sel" style={{ padding: "2px 6px" }} value={troopTypes[i]}
+                            onChange={(e) => setTroop(i, e.target.value)}
+                            title={axes.troop ? "Seeds the troop search (axis ON)" : "Used as-is (troop axis OFF)"}>
+                            {TROOPS.map((t, ti) => <option key={t} value={ti + 1}>{t}</option>)}
+                          </select>
+                          {axes.troop && <span className="muted" style={{ fontSize: 10 }}>(searched)</span>}
                         </div>
                       </div>
                       <button
