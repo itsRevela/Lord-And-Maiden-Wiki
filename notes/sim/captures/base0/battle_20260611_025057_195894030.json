@@ -1,0 +1,1281 @@
+{
+  "msg": "SCLogic_DetailsGrand",
+  "grandId": 195894030,
+  "where": 0,
+  "viewUserId": 274222,
+  "shareId": 0,
+  "fightRet": 1,
+  "playerA": "revela",
+  "playerB": "{自定义}-{敌方}",
+  "desList": [
+    "{被动施加回合}",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> <color=#8d97f5>[{猎魔人}]</color> {生效} {概率}:<color=#e4872c>100.00%</color>",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color> <color=#8d97f5>[{神罚双刃}]</color> {生效} {概率}:<color=#e4872c>100.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color><color=#ffdf87>[{攻击属性提高}]</color><color=#e4872c>49.79</color>(989.1)",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color> <color=#8d97f5>[{疾风之刃}]</color> {生效} {概率}:<color=#e4872c>100.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color><color=#ffdf87>[{连击}]</color>{效果无法替换}",
+    "{战前准备回合}",
+    "--------------------------------{回合} 1------------------------------",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {使用}<color=#8d97f5>[{圣光斩}]</color> {概率}:<color=#e4872c>35.00%</color>+<color=#e4872c>7.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>4970</color> {士兵}(50030/54006)",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>5038</color> {士兵}(45962/49993)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>4816</color> {士兵}(50184/54037)",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>5384</color> {士兵}(44800/52961)",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {使用}<color=#8d97f5>[{白刃}]</color> {概率}:<color=#e4872c>40.00%</color>+<color=#e4872c>16.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>10473</color> {士兵}(34327/50867)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{裂空}]</color> {概率}:<color=#e4872c>30.00%</color>+<color=#e4872c>6.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1678</color> {士兵}(32649/50532)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1747</color> {士兵}(30902/50183)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1730</color> {士兵}(29172/49837)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1747</color> {士兵}(27425/49488)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1678</color> {士兵}(25747/49153)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1627</color> {士兵}(24120/48828)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>4952</color> {士兵}(45078/53016)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{猎杀者}]</color> {概率}:<color=#e4872c>76.00%</color>+<color=#e4872c>22.80%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{强袭}]</color>{效果已施加} {真实伤害基数} <color=#e4872c>29.77</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>5377</color> {士兵}(39701/51941)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>698</color> {士兵}(39003/51802)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{三重奏}]</color> {概率}:<color=#e4872c>40.00%</color>+<color=#e4872c>8.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>4481</color> {士兵}(34522/50906)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>698</color> {士兵}(33824/50767)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{三重奏}]</color> {概率}:<color=#e4872c>40.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>2164</color> {士兵}(31660/50335)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>698</color> {士兵}(30962/50196)",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>6391</color> {士兵}(39571/48715)",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color><color=#8d97f5>[{神罚双刃}]</color>{效果已触发} {概率}:<color=#e4872c>76.00%</color>+<color=#e4872c>22.80%</color>",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{触发}<color=#ffdf87>[{连击}]</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>6291</color> {士兵}(17829/47570)",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color><color=#8d97f5>[{漫天箭雨}]</color>{开始准备} {概率}:<color=#e4872c>50.00%</color>",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color><color=#8d97f5>[{蓄力一击}]</color>{开始准备} {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>9.00%</color>",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>2763</color> {士兵}(52237/54448)",
+    "<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>3297</color> {士兵}(51703/54341)",
+    "<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>3671</color> {士兵}(51329/54266)",
+    "--------------------------------{回合} 2------------------------------",
+    "{在战场中的士兵伤情逐渐恶化，由轻伤转为重伤或死亡}",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>5929</color> {士兵}(25033/47088)",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {使用}<color=#8d97f5>[{电光火石}]</color> {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>13.50%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>7933</color> {士兵}(17100/45502)",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {使用}<color=#8d97f5>[{电光火石}]</color> {概率}:<color=#e4872c>45.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>8079</color> {士兵}(9750/42981)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{强袭}]</color>{效果已消失} ",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>5097</color> {士兵}(34474/46782)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{猎杀者}]</color> {概率}:<color=#e4872c>76.00%</color>+<color=#e4872c>22.80%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{强袭}]</color>{效果已施加} {真实伤害基数} <color=#e4872c>29.77</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>5651</color> {士兵}(28823/45652)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>675</color> {士兵}(28148/45517)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{连锁}]</color> {概率}:<color=#e4872c>40.00%</color>+<color=#e4872c>16.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>6500</color> {士兵}(21648/44217)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>675</color> {士兵}(20973/44082)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{三重奏}]</color> {概率}:<color=#e4872c>40.00%</color>+<color=#e4872c>8.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>4952</color> {士兵}(16021/43092)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>675</color> {士兵}(15346/42957)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{三重奏}]</color> {概率}:<color=#e4872c>40.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>2118</color> {士兵}(13228/42534)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>675</color> {士兵}(12553/42399)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{三重奏}]</color> {概率}:<color=#e4872c>35.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>2118</color> {士兵}(10435/41976)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#8d97f5>[{猎杀者}]</color><color=#ffdf87>[{强袭}]</color>{效果已生效},<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color>{损失} <color=#ffae73>675</color> {士兵}(9760/41841)",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color> {使用}<color=#8d97f5>[{雷霆万钧}]</color> {概率}:<color=#e4872c>35.00%</color>+<color=#e4872c>14.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color><color=#ffdf87>[{连击}]</color>{效果已施加}",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{连击}]</color>{效果已施加}",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color><color=#8d97f5>[{蓄力一击}]</color>{开始准备} {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>9.00%</color>",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>5937</color> {士兵}(11163/44315)",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color><color=#8d97f5>[{神罚双刃}]</color>{效果已触发} {概率}:<color=#e4872c>76.00%</color>+<color=#e4872c>22.80%</color>",
+    "<color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{触发}<color=#ffdf87>[{连击}]</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>5877</color> {士兵}(5286/43140)",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color> {使用}<color=#8d97f5>[{漫天箭雨}]</color> {概率}:<color=#e4872c>50.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>992</color> {士兵}(51245/54029)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>989</color> {士兵}(50340/53776)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>960</color> {士兵}(50743/53886)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>906</color> {士兵}(50339/53848)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>999</color> {士兵}(49341/53577)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>914</color> {士兵}(49829/53704)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>915</color> {士兵}(49424/53665)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>1009</color> {士兵}(48332/53376)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>896</color> {士兵}(48933/53525)",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color><color=#8d97f5>[{万箭齐发}]</color>{开始准备} {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>9.00%</color>",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color> {使用}<color=#8d97f5>[{蓄力一击}]</color> {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>9.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>4137</color> {士兵}(44195/52549)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>3944</color> {士兵}(45480/52877)",
+    "<color=#e86868>▲</color><color=#e86868>[{多莉}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>1942</color> {士兵}(42253/52161)",
+    "<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color> {使用}<color=#8d97f5>[{缚灵斩}]</color> {概率}:<color=#e4872c>45.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>693</color> {士兵}(44787/52739)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>684</color> {士兵}(41569/52025)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>658</color> {士兵}(48275/53394)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>665</color> {士兵}(44122/52606)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>727</color> {士兵}(40842/51880)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>692</color> {士兵}(47583/53256)",
+    "<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color><color=#8d97f5>[{暗魂缚}]</color>{开始准备} {概率}:<color=#e4872c>45.00%</color>+<color=#e4872c>9.00%</color>",
+    "<color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>1372</color> {士兵}(46211/52982)",
+    "<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color> {使用}<color=#8d97f5>[{飞花}]</color> {概率}:<color=#e4872c>35.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>935</color> {士兵}(43187/52419)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>960</color> {士兵}(39882/51688)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>897</color> {士兵}(45314/52803)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>871</color> {士兵}(42316/52245)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>887</color> {士兵}(38995/51511)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>906</color> {士兵}(44408/52622)",
+    "<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color> {使用}<color=#8d97f5>[{玫瑰剑}]</color> {概率}:<color=#e4872c>30.00%</color>+<color=#e4872c>4.80%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>889</color> {士兵}(41427/52068)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>951</color> {士兵}(38044/51321)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>924</color> {士兵}(43484/52438)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>871</color> {士兵}(40556/51894)",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>942</color> {士兵}(37102/51133)",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>906</color> {士兵}(42578/52257)",
+    "<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color> {使用}<color=#8d97f5>[{蔷薇刃}]</color> {概率}:<color=#e4872c>35.00%</color>+<color=#e4872c>5.60%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color>{损失} <color=#ffae73>2161</color> {士兵}(34941/50701)",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color>{损失} <color=#ffae73>2145</color> {士兵}(38411/51465)",
+    "<color=#e86868>▲</color><color=#e86868>[{尼可尔}]</color> {普通攻击}",
+    "  <color=#68e895>▲</color><color=#68e895>[{米娅}]</color>{损失} <color=#ffae73>1778</color> {士兵}(40800/51902)",
+    "--------------------------------{回合} 3------------------------------",
+    "{在战场中的士兵伤情逐渐恶化，由轻伤转为重伤或死亡}",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color><color=#8d97f5>[{猎魔人}]</color>{效果已触发} {概率}:<color=#e4872c>40.00%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color><color=#ffdf87>[{追击技能伤害提高}]</color><color=#e4872c>56.29%</color>+<color=#e4872c>20.00%</color>",
+    "<color=#68e895>▲</color><color=#68e895>[{须佐真希}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>4785</color> {士兵}(4965/38701)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{强袭}]</color>{效果已消失} ",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{裂空}]</color> {概率}:<color=#e4872c>30.00%</color>+<color=#e4872c>6.00%</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1338</color> {士兵}(3627/38434)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1420</color> {士兵}(2207/38150)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>1393</color> {士兵}(814/37872)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{损失} <color=#ffae73>814</color> {士兵}(0/37710)",
+    "  <color=#e86868>▲</color><color=#e86868>[{多莉}]</color>{已阵亡}",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {普通攻击}",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>3611</color> {士兵}(1675/38633)",
+    "<color=#68e895>▲</color><color=#68e895>[{妮娅}]</color> {使用}<color=#8d97f5>[{猎杀者}]</color> {概率}:<color=#e4872c>76.00%</color>+<color=#e4872c>22.80%</color>",
+    "  <color=#68e895>▲</color><color=#68e895>[{妮娅}]</color><color=#ffdf87>[{强袭}]</color>{效果已施加} {真实伤害基数} <color=#e4872c>29.77</color>",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{损失} <color=#ffae73>1675</color> {士兵}(0/38298)",
+    "  <color=#e86868>▲</color><color=#e86868>[{蒂尔}]</color>{已阵亡}",
+    ""
+  ],
+  "attackKill": [
+    {
+      "heroNum": 28,
+      "skinId": 0,
+      "fightPos": 1,
+      "normalKill": 16098,
+      "skillKill": 41309,
+      "skillCount": 4
+    },
+    {
+      "heroNum": 117,
+      "skinId": 0,
+      "fightPos": 2,
+      "normalKill": 13660,
+      "skillKill": 55677,
+      "skillCount": 11
+    },
+    {
+      "heroNum": 46,
+      "skinId": 0,
+      "fightPos": 3,
+      "normalKill": 24496,
+      "skillKill": 0,
+      "skillCount": 1
+    }
+  ],
+  "defenderKill": [
+    {
+      "heroNum": 99,
+      "skinId": 0,
+      "fightPos": 1,
+      "normalKill": 4669,
+      "skillKill": 4119,
+      "skillCount": 1
+    },
+    {
+      "heroNum": 87,
+      "skinId": 0,
+      "fightPos": 2,
+      "normalKill": 5449,
+      "skillKill": 15245,
+      "skillCount": 3
+    },
+    {
+      "heroNum": 108,
+      "skinId": 0,
+      "fightPos": 3,
+      "normalKill": 4705,
+      "skillKill": 16661,
+      "skillCount": 2
+    }
+  ],
+  "initState": [
+    {
+      "heroNum": 28,
+      "skinId": 0,
+      "fightPos": 1,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    },
+    {
+      "heroNum": 117,
+      "skinId": 0,
+      "fightPos": 2,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    },
+    {
+      "heroNum": 46,
+      "skinId": 0,
+      "fightPos": 3,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    },
+    {
+      "heroNum": 99,
+      "skinId": 0,
+      "fightPos": 4,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    },
+    {
+      "heroNum": 87,
+      "skinId": 0,
+      "fightPos": 5,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    },
+    {
+      "heroNum": 108,
+      "skinId": 0,
+      "fightPos": 6,
+      "st": 2,
+      "slv": 6,
+      "hpRate1": 1.0,
+      "hpRate2": 1.0
+    }
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "behaviours": [
+        {
+          "fightPos": 1,
+          "beforeAction": [],
+          "actions": []
+        },
+        {
+          "fightPos": 2,
+          "beforeAction": [],
+          "actions": []
+        },
+        {
+          "fightPos": 3,
+          "beforeAction": [],
+          "actions": []
+        },
+        {
+          "fightPos": 6,
+          "beforeAction": [],
+          "actions": []
+        },
+        {
+          "fightPos": 4,
+          "beforeAction": [],
+          "actions": []
+        },
+        {
+          "fightPos": 5,
+          "beforeAction": [],
+          "actions": []
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "behaviours": [
+        {
+          "fightPos": 1,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_66+4_5_6",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 4970,
+                  "hpRate1": 0.98193,
+                  "hpRate2": 0.90964
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 5038,
+                  "hpRate1": 0.98025,
+                  "hpRate2": 0.90122
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 4816,
+                  "hpRate1": 0.98249,
+                  "hpRate2": 0.91244
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 1,
+                  "retVal": 5384,
+                  "hpRate1": 0.96293,
+                  "hpRate2": 0.81455
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_24+6",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 10473,
+                  "hpRate1": 0.92485,
+                  "hpRate2": 0.62413
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 2,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_100+6",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1678,
+                  "hpRate1": 0.91876,
+                  "hpRate2": 0.59362
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1747,
+                  "hpRate1": 0.91242,
+                  "hpRate2": 0.56185
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1730,
+                  "hpRate1": 0.90613,
+                  "hpRate2": 0.5304
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1747,
+                  "hpRate1": 0.89978,
+                  "hpRate2": 0.49864
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1678,
+                  "hpRate1": 0.89369,
+                  "hpRate2": 0.46813
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1627,
+                  "hpRate1": 0.88778,
+                  "hpRate2": 0.43855
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 1,
+                  "retVal": 4952,
+                  "hpRate1": 0.96393,
+                  "hpRate2": 0.8196
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_29+4",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 6,
+                  "retVal": 70,
+                  "hpRate1": 1.0,
+                  "hpRate2": 1.0
+                },
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 5377,
+                  "hpRate1": 0.94438,
+                  "hpRate2": 0.72184
+                },
+                {
+                  "targetPos": 4,
+                  "retType": 3,
+                  "retVal": 698,
+                  "hpRate1": 0.94185,
+                  "hpRate2": 0.70915
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_31+4",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 4481,
+                  "hpRate1": 0.92556,
+                  "hpRate2": 0.62767
+                },
+                {
+                  "targetPos": 4,
+                  "retType": 3,
+                  "retVal": 698,
+                  "hpRate1": 0.92304,
+                  "hpRate2": 0.61498
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_31+4",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 2164,
+                  "hpRate1": 0.91518,
+                  "hpRate2": 0.57564
+                },
+                {
+                  "targetPos": 4,
+                  "retType": 3,
+                  "retVal": 698,
+                  "hpRate1": 0.91265,
+                  "hpRate2": 0.56295
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 3,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 1,
+                  "retVal": 6391,
+                  "hpRate1": 0.9552,
+                  "hpRate2": 0.7759
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 1,
+                  "retVal": 6291,
+                  "hpRate1": 0.86491,
+                  "hpRate2": 0.32416
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 6,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 5,
+              "skillKey": "2_116",
+              "rets": []
+            },
+            {
+              "behaviourId": 5,
+              "skillKey": "2_65",
+              "rets": []
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 1,
+                  "retVal": 2763,
+                  "hpRate1": 0.98996,
+                  "hpRate2": 0.94976
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 4,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 3,
+                  "retType": 1,
+                  "retVal": 3297,
+                  "hpRate1": 0.98802,
+                  "hpRate2": 0.94005
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 5,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 1,
+                  "retVal": 3671,
+                  "hpRate1": 0.98665,
+                  "hpRate2": 0.93325
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "behaviours": [
+        {
+          "fightPos": 1,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 1,
+                  "retVal": 5929,
+                  "hpRate1": 0.85615,
+                  "hpRate2": 0.45515
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_14+4",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 7933,
+                  "hpRate1": 0.82731,
+                  "hpRate2": 0.31091
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_14+6",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 8079,
+                  "hpRate1": 0.78147,
+                  "hpRate2": 0.17727
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 2,
+          "beforeAction": [
+            {
+              "targetPos": 2,
+              "retType": 7,
+              "retVal": 70,
+              "hpRate1": 0.98133,
+              "hpRate2": 0.93325
+            }
+          ],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 1,
+                  "retVal": 5097,
+                  "hpRate1": 0.91729,
+                  "hpRate2": 0.67596
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_29+5",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 6,
+                  "retVal": 70,
+                  "hpRate1": 0.98133,
+                  "hpRate2": 0.93325
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 5651,
+                  "hpRate1": 0.89514,
+                  "hpRate2": 0.56516
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 3,
+                  "retVal": 675,
+                  "hpRate1": 0.89249,
+                  "hpRate2": 0.55192
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_30+5",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 6500,
+                  "hpRate1": 0.867,
+                  "hpRate2": 0.42447
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 3,
+                  "retVal": 675,
+                  "hpRate1": 0.86435,
+                  "hpRate2": 0.41124
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_31+5",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 4952,
+                  "hpRate1": 0.84494,
+                  "hpRate2": 0.31414
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 3,
+                  "retVal": 675,
+                  "hpRate1": 0.84229,
+                  "hpRate2": 0.3009
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_31+5",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 2118,
+                  "hpRate1": 0.834,
+                  "hpRate2": 0.25937
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 3,
+                  "retVal": 675,
+                  "hpRate1": 0.83135,
+                  "hpRate2": 0.24614
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_31+5",
+              "rets": [
+                {
+                  "targetPos": 5,
+                  "retType": 2,
+                  "retVal": 2118,
+                  "hpRate1": 0.82306,
+                  "hpRate2": 0.20461
+                },
+                {
+                  "targetPos": 5,
+                  "retType": 3,
+                  "retVal": 675,
+                  "hpRate1": 0.82041,
+                  "hpRate2": 0.19137
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 3,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_118+1_2",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 6,
+                  "retVal": 80,
+                  "hpRate1": 0.98595,
+                  "hpRate2": 0.94976
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 6,
+                  "retVal": 80,
+                  "hpRate1": 0.98133,
+                  "hpRate2": 0.93325
+                }
+              ]
+            },
+            {
+              "behaviourId": 5,
+              "skillKey": "2_65",
+              "rets": []
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 1,
+                  "retVal": 5937,
+                  "hpRate1": 0.80573,
+                  "hpRate2": 0.20296
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 1,
+                  "retVal": 5877,
+                  "hpRate1": 0.78436,
+                  "hpRate2": 0.09611
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 6,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 6,
+              "skillKey": "2_116",
+              "rets": []
+            },
+            {
+              "behaviourId": 2,
+              "skillKey": "2_116+1_2_3",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 992,
+                  "hpRate1": 0.98235,
+                  "hpRate2": 0.93173
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 989,
+                  "hpRate1": 0.97775,
+                  "hpRate2": 0.91527
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 960,
+                  "hpRate1": 0.97975,
+                  "hpRate2": 0.9226
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 906,
+                  "hpRate1": 0.97905,
+                  "hpRate2": 0.91525
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 999,
+                  "hpRate1": 0.97413,
+                  "hpRate2": 0.89711
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 914,
+                  "hpRate1": 0.97644,
+                  "hpRate2": 0.90598
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 915,
+                  "hpRate1": 0.97573,
+                  "hpRate2": 0.89862
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 1009,
+                  "hpRate1": 0.97047,
+                  "hpRate2": 0.87876
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 896,
+                  "hpRate1": 0.97318,
+                  "hpRate2": 0.88969
+                }
+              ]
+            },
+            {
+              "behaviourId": 5,
+              "skillKey": "2_117",
+              "rets": []
+            },
+            {
+              "behaviourId": 6,
+              "skillKey": "2_65",
+              "rets": []
+            },
+            {
+              "behaviourId": 2,
+              "skillKey": "2_65+2_1",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 4137,
+                  "hpRate1": 0.95544,
+                  "hpRate2": 0.80355
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 3944,
+                  "hpRate1": 0.9614,
+                  "hpRate2": 0.82691
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 1,
+                  "retVal": 1942,
+                  "hpRate1": 0.94838,
+                  "hpRate2": 0.76824
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 4,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_113+1_2_3",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 693,
+                  "hpRate1": 0.95889,
+                  "hpRate2": 0.81431
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 684,
+                  "hpRate1": 0.94591,
+                  "hpRate2": 0.7558
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 658,
+                  "hpRate1": 0.9708,
+                  "hpRate2": 0.87773
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 665,
+                  "hpRate1": 0.95647,
+                  "hpRate2": 0.80222
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 727,
+                  "hpRate1": 0.94327,
+                  "hpRate2": 0.74258
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 692,
+                  "hpRate1": 0.96829,
+                  "hpRate2": 0.86515
+                }
+              ]
+            },
+            {
+              "behaviourId": 5,
+              "skillKey": "2_138",
+              "rets": []
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 3,
+                  "retType": 1,
+                  "retVal": 1372,
+                  "hpRate1": 0.96331,
+                  "hpRate2": 0.8402
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 5,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_92+1_2_3",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 935,
+                  "hpRate1": 0.95307,
+                  "hpRate2": 0.78522
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 960,
+                  "hpRate1": 0.93978,
+                  "hpRate2": 0.72513
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 897,
+                  "hpRate1": 0.96005,
+                  "hpRate2": 0.82389
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 871,
+                  "hpRate1": 0.94991,
+                  "hpRate2": 0.76938
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 887,
+                  "hpRate1": 0.93656,
+                  "hpRate2": 0.709
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 906,
+                  "hpRate1": 0.95676,
+                  "hpRate2": 0.80742
+                }
+              ]
+            },
+            {
+              "behaviourId": 2,
+              "skillKey": "2_103+1_2_3",
+              "rets": [
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 889,
+                  "hpRate1": 0.94669,
+                  "hpRate2": 0.75322
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 951,
+                  "hpRate1": 0.93311,
+                  "hpRate2": 0.69171
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 924,
+                  "hpRate1": 0.95342,
+                  "hpRate2": 0.79062
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 871,
+                  "hpRate1": 0.94353,
+                  "hpRate2": 0.73738
+                },
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 942,
+                  "hpRate1": 0.92969,
+                  "hpRate2": 0.67458
+                },
+                {
+                  "targetPos": 3,
+                  "retType": 2,
+                  "retVal": 906,
+                  "hpRate1": 0.95013,
+                  "hpRate2": 0.77415
+                }
+              ]
+            },
+            {
+              "behaviourId": 2,
+              "skillKey": "2_42+2_1",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 2,
+                  "retVal": 2161,
+                  "hpRate1": 0.92184,
+                  "hpRate2": 0.63529
+                },
+                {
+                  "targetPos": 1,
+                  "retType": 2,
+                  "retVal": 2145,
+                  "hpRate1": 0.93573,
+                  "hpRate2": 0.69838
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 3,
+                  "retType": 1,
+                  "retVal": 1778,
+                  "hpRate1": 0.94367,
+                  "hpRate2": 0.74182
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "behaviours": [
+        {
+          "fightPos": 1,
+          "beforeAction": [],
+          "actions": [
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 1,
+                  "retVal": 4785,
+                  "hpRate1": 0.70365,
+                  "hpRate2": 0.09027
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fightPos": 2,
+          "beforeAction": [
+            {
+              "targetPos": 2,
+              "retType": 7,
+              "retVal": 70,
+              "hpRate1": 0.89318,
+              "hpRate2": 0.63529
+            }
+          ],
+          "actions": [
+            {
+              "behaviourId": 2,
+              "skillKey": "2_100+6",
+              "rets": [
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1338,
+                  "hpRate1": 0.6988,
+                  "hpRate2": 0.06595
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1420,
+                  "hpRate1": 0.69364,
+                  "hpRate2": 0.04013
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 1393,
+                  "hpRate1": 0.68858,
+                  "hpRate2": 0.0148
+                },
+                {
+                  "targetPos": 6,
+                  "retType": 2,
+                  "retVal": 814,
+                  "hpRate1": 0.58262,
+                  "hpRate2": 0.0
+                }
+              ]
+            },
+            {
+              "behaviourId": 1,
+              "skillKey": "",
+              "rets": [
+                {
+                  "targetPos": 4,
+                  "retType": 1,
+                  "retVal": 3611,
+                  "hpRate1": 0.70242,
+                  "hpRate2": 0.03045
+                }
+              ]
+            },
+            {
+              "behaviourId": 3,
+              "skillKey": "4_29+4",
+              "rets": [
+                {
+                  "targetPos": 2,
+                  "retType": 6,
+                  "retVal": 70,
+                  "hpRate1": 0.89318,
+                  "hpRate2": 0.63529
+                },
+                {
+                  "targetPos": 4,
+                  "retType": 2,
+                  "retVal": 1675,
+                  "hpRate1": 0.59324,
+                  "hpRate2": 0.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_unparsed_tail_bytes": 156,
+  "_src": "43.159.0.212:9668->192.168.1.247:57053"
+}

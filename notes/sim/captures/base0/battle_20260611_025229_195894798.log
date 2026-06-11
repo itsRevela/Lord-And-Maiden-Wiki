@@ -1,0 +1,82 @@
+=== Battle 195894798 | revela vs {自定义}-{敌方} | fightRet=1 | rounds=4 ===
+-- init (fightPos: heroNum st/slv hp1 hp2) --
+   pos1 hero28 st2/lv6 hp1=1.000 hp2=1.000
+   pos2 hero117 st2/lv6 hp1=1.000 hp2=1.000
+   pos3 hero46 st2/lv6 hp1=1.000 hp2=1.000
+   pos4 hero99 st2/lv6 hp1=1.000 hp2=1.000
+   pos5 hero87 st2/lv6 hp1=1.000 hp2=1.000
+   pos6 hero108 st2/lv6 hp1=1.000 hp2=1.000
+   [A] pos1 hero28 kills: normal=16941 skill=59032 skillsUsed=5
+   [A] pos2 hero117 kills: normal=9240 skill=53112 skillsUsed=11
+   [A] pos3 hero46 kills: normal=22675 skill=0 skillsUsed=0
+   [B] pos1 hero99 kills: normal=5575 skill=28537 skillsUsed=4
+   [B] pos2 hero87 kills: normal=2696 skill=9206 skillsUsed=2
+   [B] pos3 hero108 kills: normal=0 skill=0 skillsUsed=0
+-- Round 0 --
+-- Round 1 --
+   [pos1] 2_66+4_5_6 -> pos4 DMG 4681 (hp 0.983->0.915)
+   [pos1] 2_66+4_5_6 -> pos5 DMG 4935 (hp 0.981->0.903)
+   [pos1] 2_66+4_5_6 -> pos6 DMG 4816 (hp 0.982->0.912)
+   [pos1] NormalATK -> pos6 DMG 5894 (hp 0.961->0.805)
+   [pos1] 4_14+6 -> pos6 DMG 14470 (hp 0.908->0.542)
+   [pos1] 4_24+6 -> pos6 DMG 18287 (hp 0.842->0.210)
+   [pos2] 2_100+4 -> pos4 DMG 1714 (hp 0.977->0.884)
+   [pos2] 2_100+4 -> pos4 DMG 1714 (hp 0.971->0.853)
+   [pos2] 2_100+4 -> pos4 DMG 1803 (hp 0.964->0.820)
+   [pos2] NormalATK -> pos5 DMG 5125 (hp 0.961->0.803)
+   [pos2] 4_29+5 -> pos2 BUFF 70 (hp 1.000->1.000)
+   [pos2] 4_29+5 -> pos5 DMG 5909 (hp 0.937->0.687)
+   [pos2] 4_29+5 -> pos5 DMG 698 (hp 0.935->0.673)
+   [pos2] 4_30+5 -> pos5 DMG 6466 (hp 0.909->0.546)
+   [pos2] 4_30+5 -> pos5 DMG 698 (hp 0.907->0.533)
+   [pos2] 4_30+4 -> pos4 DMG 6377 (hp 0.941->0.704)
+   [pos2] 4_30+4 -> pos4 DMG 698 (hp 0.938->0.691)
+   [pos2] 4_31+5 -> pos5 DMG 4974 (hp 0.887->0.435)
+   [pos2] 4_31+5 -> pos5 DMG 698 (hp 0.884->0.422)
+   [pos2] 4_31+5 -> pos5 DMG 2328 (hp 0.875->0.376)
+   [pos2] 4_31+5 -> pos5 DMG 698 (hp 0.873->0.362)
+   [pos3] NormalATK -> pos6 DMG 5872 (hp 0.821->0.103)
+   [pos3] NormalATK -> pos6 DMG 5661 (hp 0.696->0.000)
+   [pos4] 2_113+1_2_3 -> pos1 DMG 1883 (hp 0.993->0.966)
+   [pos4] 2_113+1_2_3 -> pos2 DMG 1954 (hp 0.993->0.964)
+   [pos4] 2_113+1_2_3 -> pos3 DMG 1843 (hp 0.993->0.966)
+   [pos4] 2_113+1_2_3 -> pos1 DMG 1902 (hp 0.986->0.931)
+   [pos4] 2_113+1_2_3 -> pos2 DMG 1972 (hp 0.986->0.929)
+   [pos4] 2_113+1_2_3 -> pos3 DMG 1861 (hp 0.987->0.933)
+   [pos4] 2_66+1_2_3 -> pos1 DMG 3172 (hp 0.975->0.874)
+   [pos4] 2_66+1_2_3 -> pos2 DMG 3325 (hp 0.974->0.868)
+   [pos4] 2_66+1_2_3 -> pos3 DMG 2981 (hp 0.976->0.878)
+   [pos4] NormalATK -> pos3 DMG 3953 (hp 0.961->0.807)
+   [pos5] 2_103+1_2_3 -> pos1 DMG 1271 (hp 0.970->0.850)
+   [pos5] 2_103+1_2_3 -> pos2 DMG 1243 (hp 0.969->0.846)
+   [pos5] 2_103+1_2_3 -> pos3 DMG 1244 (hp 0.957->0.784)
+   [pos5] 2_42+2_3 -> pos2 DMG 2791 (hp 0.959->0.795)
+   [pos5] 2_42+2_3 -> pos3 DMG 2657 (hp 0.947->0.736)
+   [pos5] NormalATK -> pos2 DMG 2696 (hp 0.949->0.746)
+-- Round 2 --
+   [pos1] NormalATK -> pos5 DMG 5977 (hp 0.798->0.245)
+   [pos1] 4_24+5 -> pos5 DMG 10621 (hp 0.756->0.037)
+   [pos2] BEFORE -> pos2 BUFF 70 (hp 0.929->0.746)
+   [pos2] 2_100+5 -> pos5 DMG 1545 (hp 0.750->0.006)
+   [pos2] 2_100+5 -> pos5 DMG 328 (hp 0.646->0.000)
+   [pos2] NormalATK -> pos4 DMG 4115 (hp 0.899->0.616)
+   [pos2] 4_29+4 -> pos2 BUFF 70 (hp 0.929->0.746)
+   [pos2] 4_29+4 -> pos4 DMG 5085 (hp 0.880->0.524)
+   [pos2] 4_29+4 -> pos4 DMG 603 (hp 0.878->0.513)
+   [pos2] 4_30+4 -> pos4 DMG 5455 (hp 0.858->0.414)
+   [pos2] 4_30+4 -> pos4 DMG 603 (hp 0.856->0.403)
+   [pos2] 4_31+4 -> pos4 DMG 4115 (hp 0.841->0.328)
+   [pos2] 4_31+4 -> pos4 DMG 603 (hp 0.839->0.317)
+   [pos3] NormalATK -> pos4 DMG 5571 (hp 0.819->0.216)
+   [pos3] NormalATK -> pos4 DMG 5571 (hp 0.798->0.114)
+   [pos4] 2_133+2_3 -> pos2 DMG 1884 (hp 0.922->0.712)
+   [pos4] 2_133+2_3 -> pos3 DMG 1831 (hp 0.919->0.702)
+   [pos4] 2_133+2_3 -> pos2 BUFF 6 (hp 0.922->0.712)
+   [pos4] 2_133+2_3 -> pos3 BUFF 6 (hp 0.919->0.702)
+   [pos4] 2_66+1_2_3 -> pos1 DMG 1259 (hp 0.954->0.828)
+   [pos4] 2_66+1_2_3 -> pos2 DMG 1335 (hp 0.917->0.687)
+   [pos4] 2_66+1_2_3 -> pos3 DMG 1335 (hp 0.915->0.678)
+   [pos4] NormalATK -> pos1 DMG 1622 (hp 0.948->0.798)
+-- Round 3 --
+   [pos1] NormalATK -> pos4 DMG 5070 (hp 0.711->0.022)
+   [pos1] 4_24+4 -> pos4 DMG 1222 (hp 0.604->0.000)
