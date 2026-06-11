@@ -97,6 +97,23 @@ def main():
     skills = load("NewSkillInfo")
     buffrows = {r["buffId"]: r for r in load("Buff")}
 
+    # Authoritative skill-name translation: the game's own Language_SkillName.csv,
+    # keyed by the Simplified token (== NewSkillInfo.Name stripped of { }).  The
+    # NewSkillInfo.Name_en column (and the merged localization.json) have DRIFTED for a
+    # few skills -- e.g. 虔诚 is officially "Piety" but Name_en says "Devout", 谨慎
+    # "Cautious" not "Prudent", 恐吓 "Intimidation" not "Skull", 守护之盾 "Guard Shield",
+    # 狩猎 "Hunting".  Prefer the localization file so names match the in-game UI.
+    _langname = {}
+    for r in load("Language_SkillName"):
+        simp = (r.get("Simplified_Text") or "").strip()
+        en = (r.get("English_Text") or "").strip()
+        if simp and en:
+            _langname[simp] = en
+
+    def official_name(r):
+        tok = clean(r.get("Name"))                # braces stripped -> Simplified token
+        return _langname.get(tok) or clean(r.get("Name_en")) or tok
+
     def buff_name(bid):
         r = buffrows.get(str(bid))
         if r:
@@ -188,7 +205,7 @@ def main():
             "st": int(st),
             "st_name": SKILL_TYPE_NAME.get(st, "Unknown"),
             "id": int(sid),
-            "name_en": clean(r["Name_en"]) or clean(r["Name"]),
+            "name_en": official_name(r),
             "des_en": clean(r["Des_en"]),
             "rare": int(r["Rare"]) if r["Rare"].strip() else 0,
             "skillStone": r["SkillStone"].strip() == "1",

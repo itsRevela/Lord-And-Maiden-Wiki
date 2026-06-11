@@ -37,8 +37,8 @@ simulator/runs/
 # simulator/tools/extract_portraits.py locally to populate these).
 simulator/web/public/portraits/
 
-# captured battle raw dumps + live message log (scratch)
+# captured battle raw dumps + live message log (scratch) -- any capture subdir
 notes/sim/captures/raw_*.bin
 notes/sim/captures/messages.log
-notes/sim/captures/_archive_*/raw_*.bin
-notes/sim/captures/_archive_*/messages.log
+notes/sim/captures/**/raw_*.bin
+notes/sim/captures/**/messages.log

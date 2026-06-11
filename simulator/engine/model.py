@@ -138,7 +138,7 @@ class ModelConfig:
     # (per-effect 0.25 * lv5-ratio 0.75 = 0.1875) lands ~1,550 (calibration_3_pursuit.md),
     # while normal_attack_coef is lowered so the clean baseline normals stay in the logged
     # ~4,000-5,600 band (calibration_1).  Both remain ASSUMPTION (server-side magnitude).
-    damage_global: float = 50.0               # ASSUMPTION global lethality scalar (re-fit to measured per-hit skill magnitudes)
+    damage_global: float = 65.0               # CALIBRATED to captured per-hit ground truth (dg=65 universal; strikers = base x (1-Skyland DTR)); see GROUND_TRUTH.md S9
     # Lifted 0.20 -> 0.30 toward the MEASURED clean isolated allocation effect ~1.25x
     # (calibration_1_findings:29-30; build-aggregation digest VALIDATION CORRECTIONS).  At
     # 0.30 the +ATK-vs-+DES offence ratio is ~1.22x (engine was 1.16x), so +ATK heroes
@@ -190,6 +190,10 @@ class ModelConfig:
 
     # --- "Affected by X attribute" scaling for stat-mod buffs ---
     affected_per_points: float = 200.0        # ASSUMPTION (community-stated ~+1 unit / 200)
+    # DMG-Taken-Reduced (buff 8) scales with the CASTER's DEF.  DERIVED from 2 captured Skyland
+    # points (Thiel DEF 589.6 -> 19.32%, DEF 438.4 -> 16.41%, coef 0.08): DTR = coef*(1+DEF/417).
+    # Cross-checks Rhea's Star Shield (coef 0.25 + high DEF + 30% relic -> capped). See GROUND_TRUTH.md.
+    dtr_def_ref: float = 417.0                # DERIVED (captures); was a spurious x6.0 fudge before
 
     # --- heal (Self-Heal / Field Therapy) restores Slight->Health.  Log: 0..~5000
     #     per round depending on how wounded the unit is.  Healing Coefficient shown
@@ -197,7 +201,7 @@ class ModelConfig:
     # RE-FIT (spec D): the heal now scales off the HEALER's troops (coef*heal_scale*
     # healer_troops*floored-factor) instead of the target's Slight pool, so the scalar is
     # re-derived to keep restores in the logged ~1.1-1.6k/round band (calibration_2_dot).
-    heal_scale: float = 0.05                  # ASSUMPTION heal magnitude scalar (re-fit to healer-troop shape)
+    heal_scale: float = 0.063                 # DERIVED from captures: heal = coef x 0.063 x max_troops, capped by recoverable, scales w/ MAX troops (constant as current fell 49k->23k). See GROUND_TRUTH.md
 
     # --- casualty model (server-side; ASSUMPTION shapes) ---------------------
     # Of each damage instance, a portion goes straight to Severe/Death (permanent),

@@ -187,8 +187,13 @@ class Battle:
                         elif at == 9:                # ATK Attribute Increased (self)
                             pct = self._self_buff_pct(u, eff)
                             self._add_attr(u, "atk", u.base_stat("atk") * pct, locked=True)
-                        elif at == 33:               # Pursuit Skill DMG Dealt Increased (self)
-                            pct = self._self_buff_pct(u, eff)
+                        elif at == 33:               # Pursuit Skill DMG Dealt Increased (self) -- Witcher
+                            # Witcher's token is a FRACTIONAL coefficient (maxedValue 0.25), not a
+                            # whole-number percent, so _self_buff_pct's /100 zeroed it (gave 0.003
+                            # vs the captured ~56%).  Use the maxed coefficient * ATK/per-200.
+                            mx = float(sk.get("maxedValue") or 0.0)
+                            pct = (mx * (u.eff_stat("atk") / self.cfg.affected_per_points)
+                                   if mx > 0 else self._self_buff_pct(u, eff))
                             self._apply_status(u, 33, rounds=99, value=pct)
                         elif at == 5:                # DMG Dealt Increased (self)
                             pct = self._self_buff_pct(u, eff)
@@ -242,9 +247,11 @@ class Battle:
             mag = (coef * self._affected_scale(caster) + flat) * 6.0
             self._add_attr(tgt, stat, sign * mag, locked=False)
             return
-        if at == 8:                       # DMG Taken Reduced (shield-type)
-            self._apply_status(tgt, 8, rounds=dur,
-                               value=self._affected_pct(caster, coef) + self._flat_pct(flat))
+        if at == 8:                       # DMG Taken Reduced (shield) -- scales w/ CASTER DEF.
+            # DERIVED from captures: DTR = coef*(1 + casterDEF/dtr_def_ref) + flat relic bonus.
+            # (Replaces the old _affected_pct x6.0 fudge that pinned every shield to the cap.)
+            dtr = coef * (1.0 + caster.eff_stat("def") / self.cfg.dtr_def_ref) + self._flat_pct(flat)
+            self._apply_status(tgt, 8, rounds=dur, value=dtr)
             return
         if at == 7:                       # DMG Taken Increased
             self._apply_status(tgt, 7, rounds=dur,
@@ -818,6 +825,8 @@ class Battle:
                     continue
                 if round_no < self._skill_from_round(sk):
                     continue
+                if not self._avail(u, sk):           # maxUse exhausted this battle -> skip
+                    continue
                 kk = (int(sk["st"]), int(sk["id"]))
                 # readyRound=1 PREPARATION skills (Soul Bound, Purgatory, Sky Rain,
                 # Arrows Volley) take a round to CHARGE before firing -- the log shows a
@@ -829,12 +838,14 @@ class Battle:
                     if u._charged.get(kk):
                         u._charged[kk] = False
                         self._fire_skill(u, sk, round_idx)
+                        self._mark_use(u, sk)        # a use is consumed when it FIRES
                     elif self.rng.random() < self._trigger_prob(sk, u):
                         u._charged[kk] = True        # charging this round; fires next
                     continue
                 if self.rng.random() < self._trigger_prob(sk, u):
                     self._fire_skill(u, sk, round_idx)
-                    # Tactical Burst: chance to recast ONE tactical per turn
+                    self._mark_use(u, sk)
+                    # Tactical Burst: chance to recast ONE tactical per turn (bonus; no maxUse cost)
                     if not burst_used and self._has(u, SUPERCONDUCTING):
                         burst = u.statuses[125].get("value", 0.4)
                         if self.rng.random() < burst:
@@ -868,8 +879,24 @@ class Battle:
         if did_normal:
             for sk in u.skills:
                 if int(sk["st"]) == 4 and round_no >= self._skill_from_round(sk):
+                    if not self._avail(u, sk):       # maxUse exhausted this battle -> skip
+                        continue
                     if self.rng.random() < self._trigger_prob(sk, u):
                         self._fire_skill(u, sk, round_idx)
+                        self._mark_use(u, sk)
+
+    def _avail(self, u: CombatUnit, sk) -> bool:
+        """A skill with maxUse>0 fires at most maxUse times PER BATTLE (the in-game
+        UseNum/MaxUse counter, decompiled eb46ed1b3cbb.cs:5880-5889).  maxUse==0 = unlimited."""
+        mx = int(sk.get("maxUse") or 0)
+        if mx <= 0:
+            return True
+        return u.skill_uses.get((int(sk["st"]), int(sk["id"])), 0) < mx
+
+    def _mark_use(self, u: CombatUnit, sk):
+        if int(sk.get("maxUse") or 0) > 0:
+            k = (int(sk["st"]), int(sk["id"]))
+            u.skill_uses[k] = u.skill_uses.get(k, 0) + 1
 
     def _skill_from_round(self, sk) -> int:
         for eff in sk.get("effects", []):
@@ -934,6 +961,10 @@ class Battle:
     def _run_bout(self):
         rounds = self.g.round_count
         self.round_dmg = {0: [0.0] * rounds, 1: [0.0] * rounds}
+        for side in (0, 1):                       # per-battle skill state (maxUse cap + prep charge)
+            for u in self.sides[side]:
+                u._charged = {}
+                u.skill_uses = {}
         self._passive_exertion()
         self._pre_war_preparation()
         decided = False
