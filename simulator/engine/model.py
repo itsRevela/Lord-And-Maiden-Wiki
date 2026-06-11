@@ -194,6 +194,9 @@ class ModelConfig:
     # points (Thiel DEF 589.6 -> 19.32%, DEF 438.4 -> 16.41%, coef 0.08): DTR = coef*(1+DEF/417).
     # Cross-checks Rhea's Star Shield (coef 0.25 + high DEF + 30% relic -> capped). See GROUND_TRUTH.md.
     dtr_def_ref: float = 417.0                # DERIVED (captures); was a spurious x6.0 fudge before
+    # a skill STONE that matches an equipped modular reinforces it with +trigger probability
+    # (the in-game "+X%" stone bonus, e.g. logged "40.00%+12.00%"). ASSUMPTION magnitude.
+    stone_trigger_bonus: float = 0.12
 
     # --- heal (Self-Heal / Field Therapy) restores Slight->Health.  Log: 0..~5000
     #     per round depending on how wounded the unit is.  Healing Coefficient shown
@@ -374,6 +377,7 @@ class BuildSpec:
     is_commander: bool = False
     skill_keys: Optional[tuple] = None      # ((st,id),...) modular override; None -> hero default
     allocated_stat: Optional[str] = None    # 'atk'|'def'|'ruin'|'speed' -- log "+229 X"
+    relic_on: bool = True                   # equip the hero's OWN relic (toggleable in the search)
 
 
 def _distribute_free_points(cfg: ModelConfig, rpoint_values, primary_key):
@@ -516,10 +520,15 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         skills = []
         skill_level: dict = {}
         seen = set()
+        stoned = set()            # modular skills reinforced by a matching skill stone
         for ref, lvl in skill_refs:
             kk = (int(ref["st"]), int(ref["id"]))
             if kk in seen:
-                continue          # a hero cannot equip the same skill twice
+                # a hero can't equip the same skill twice; a lv5 duplicate is the STONE
+                # reinforcing an already-equipped modular (the in-game "+X%" stone bonus).
+                if lvl == 5:
+                    stoned.add(kk)
+                continue
             seen.add(kk)
             sk = g.skill(*kk)
             if sk:
@@ -530,9 +539,11 @@ def build_team(g: datamod.GameData, specs, side: int, cfg: ModelConfig,
         # --- relic (hero's OWN only), rune (1, best matching an equipped skill),
         #     skill-awaken (per equipped skill): trigger-prob & coefficient bonuses ---
         skill_trigger_bonus: dict = {}
+        for kk in stoned:         # skill stone matching a modular -> +trigger on that skill
+            skill_trigger_bonus[kk] = skill_trigger_bonus.get(kk, 0.0) + cfg.stone_trigger_bonus
         skill_coef_bonus: dict = {}
         real_dmg_bonus: dict = {}
-        rel = g.relic_bonus_for_hero(s.hero_id)   # hero's OWN relic only
+        rel = g.relic_bonus_for_hero(s.hero_id) if getattr(s, "relic_on", True) else None
         relic_dmg_dealt = 0.0
         if rel:
             rk, rkind, rv = rel["key"], rel["kind"], rel["value"]

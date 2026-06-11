@@ -1,12 +1,18 @@
-"""Genetic optimiser for the full build space of a fixed 3-hero formation.
+"""Genetic optimiser for the build space of a fixed 3-hero formation.
 
-A hero can slot ANY two skills in its modular slots (the main skill is fixed), so the
-joint space is commander(3) x troop-combos(4^3) x skill-loadouts (~C(416,2)^3) ~ 1e16 --
-far too large to enumerate. This module evolves a population of full builds
-(commander + troop types + the 6 modular skill slots), scoring each by win rate (or a
-chosen damage window) using the same Monte-Carlo battle engine, parallelised across
-cores. Result is a strong build, NOT a proven global optimum -- it is reported as a
-heuristic optimum.
+The COMMANDER and each hero's STAT ALLOCATION are fixed user inputs (NOT permuted). The
+search evolves, per hero, the build over these toggleable axes:
+  * troop type (1..4)
+  * 2 modular skills (the main skill is fixed)
+  * skill stone: one of the hero's TWO equipped modular skills @ lv5, or none -- the stone
+    MUST match a modular skill (it reinforces it); modelled as a trigger-prob boost on that
+    modular (cfg.stone_trigger_bonus, ASSUMPTION) since build_team de-dups identical skills.
+  * relic on/off (the hero's OWN relic)
+
+Pools are restricted to the BEST tier ("top builds"): only 5-star (rare==5) modular-equippable
+skills; max-tier troops. The space is still large, so this is a genetic search returning a
+RANKED top-N of strong builds (heuristic, not a proven global optimum), scored by win rate or
+casualty rate via the Monte-Carlo engine, parallelised across `workers` cores.
 """
 from __future__ import annotations
 
@@ -18,19 +24,32 @@ from dataclasses import asdict
 from . import data as datamod
 from .combat import Battle
 from .model import BuildSpec, ModelConfig, build_team, fresh_units
-from .search import WINDOWS, SearchOptions, sample_opponents, _summ
+from .search import WINDOWS, SearchOptions, sample_opponents
 
 TROOP_NAMES = {1: "Infantry", 2: "Archer", 3: "Cavalry", 4: "Chariot"}
+ALL_AXES = ("troop", "skills", "stone", "relic")
+# genome = (troops:tuple3 int, loadout:tuple3 of (k,k), stones:tuple3 int{-1,0,1}, relics:tuple3 bool)
 
 
-# genome = (commander:int, troops:tuple3, loadout:tuple3 of tuple2 of (st,id))
 def _skill_pool(g):
-    return [k for k in g.skills.keys()]
+    """Best-category modular pool: 5-star (rare==5) AND modular-equippable (skillStone)."""
+    return [k for k, sk in g.skills.items()
+            if int(sk.get("rare") or 0) == 5 and sk.get("skillStone")]
 
 
 def _main_key(g, hid):
     m = g.hero(hid)["main_skill"]
     return (int(m["st"]), int(m["id"]))
+
+
+def _default_modular(g, hid, pool, main_key, rng):
+    mods = [(int(s["st"]), int(s["id"])) for s in g.hero(hid).get("modular_default", [])]
+    mods = [m for m in mods if m in pool and m != main_key]
+    while len(mods) < 2:
+        c = rng.choice(pool)
+        if c != main_key and c not in mods:
+            mods.append(c)
+    return (mods[0], mods[1])
 
 
 def _rand_loadout_for(rng, pool, main_key):
@@ -43,31 +62,54 @@ def _rand_loadout_for(rng, pool, main_key):
     return (a, b)
 
 
-def _rand_genome(rng, g, hero_ids):
+def _ctx(g, hero_ids, rng, axes):
     pool = _skill_pool(g)
-    commander = rng.randrange(3)
-    troops = tuple(rng.randrange(1, 5) for _ in range(3))
-    loadout = tuple(_rand_loadout_for(rng, pool, _main_key(g, h)) for h in hero_ids)
-    return (commander, troops, loadout)
+    mains = [_main_key(g, h) for h in hero_ids]
+    return {
+        "pool": pool, "mains": mains, "axes": set(axes),
+        "def_troops": tuple(g.hero(h)["rst"]["id"] for h in hero_ids),
+        "def_loadout": tuple(_default_modular(g, hero_ids[i], pool, mains[i], rng)
+                             for i in range(3)),
+    }
 
 
-def _seed_genomes(g, hero_ids):
-    """Sensible starting points: each hero on its RST troop with default skills,
-    one genome per commander choice."""
-    seeds = []
-    troops = tuple(g.hero(h)["rst"]["id"] for h in hero_ids)
-    loadout = tuple(tuple((int(s["st"]), int(s["id"])) for s in g.hero(h).get("modular_default", []))
-                    for h in hero_ids)
-    # pad loadouts that have <2 default skills with the main skill's neighbours? keep as-is;
-    # build_team tolerates short loadouts.
-    for cmd in range(3):
-        seeds.append((cmd, troops, loadout))
+def _rand_genome(rng, ctx):
+    troops = (tuple(rng.randrange(1, 5) for _ in range(3))
+              if "troop" in ctx["axes"] else ctx["def_troops"])
+    loadout = (tuple(_rand_loadout_for(rng, ctx["pool"], ctx["mains"][i]) for i in range(3))
+               if "skills" in ctx["axes"] else ctx["def_loadout"])
+    stones = (tuple(rng.choice((-1, 0, 1)) for _ in range(3))
+              if "stone" in ctx["axes"] else (-1, -1, -1))
+    relics = (tuple(rng.random() < 0.5 for _ in range(3))
+              if "relic" in ctx["axes"] else (True, True, True))
+    return (troops, loadout, stones, relics)
+
+
+def _seed_genomes(rng, ctx):
+    """Sensible starting points: default troops + default modular skills, no stone, relic on;
+    plus a few with each hero's stone on slot 0."""
+    base = (ctx["def_troops"], ctx["def_loadout"], (-1, -1, -1), (True, True, True))
+    seeds = [base]
+    if "stone" in ctx["axes"]:
+        seeds.append((ctx["def_troops"], ctx["def_loadout"], (0, 0, 0), (True, True, True)))
     return seeds
 
 
-def _specs_from_genome(genome):
-    commander, troops, loadout = genome
-    return commander, troops, loadout
+def _specs(hero_ids, genome, commander, allocated):
+    troops, loadout, stones, relics = genome
+    specs = []
+    for i in range(3):
+        mods = [tuple(k) for k in loadout[i]]
+        keys = list(mods)
+        st = stones[i]
+        if st in (0, 1) and st < len(mods):
+            keys.append(mods[st])   # stone == a modular skill (reinforces it); last entry @ lv5
+        specs.append(BuildSpec(hero_id=hero_ids[i], soldier_type=int(troops[i]),
+                               is_commander=(i == commander),
+                               skill_keys=tuple(keys),
+                               allocated_stat=allocated[i],
+                               relic_on=bool(relics[i])))
+    return tuple(specs)
 
 
 def _eval_genome(payload):
@@ -75,107 +117,116 @@ def _eval_genome(payload):
     g = datamod.load()
     cfg = ModelConfig(**payload["cfg"])
     hero_ids = payload["hero_ids"]
-    commander, troops, loadout = payload["commander"], payload["troops"], payload["loadout"]
-    opponents = payload["opponents"]
-    n_battles = payload["n_battles"]
-    seed = payload["seed"]
-
-    specs = tuple(
-        BuildSpec(hero_id=hero_ids[i], soldier_type=troops[i],
-                  is_commander=(i == commander),
-                  skill_keys=tuple((int(k[0]), int(k[1])) for k in loadout[i]))
-        for i in range(3)
-    )
+    genome = payload["genome"]
+    specs = _specs(hero_ids, genome, payload["commander"], payload["allocated"])
     player = build_team(g, specs, side=0, cfg=cfg, fight_pos_base=1)
-    opp_templates = []
-    for opp in opponents:
-        ospecs = [BuildSpec(hero_id=hid, soldier_type=tt, is_commander=ic) for (hid, tt, ic) in opp]
-        opp_templates.append(build_team(g, ospecs, side=1, cfg=cfg, fight_pos_base=4))
-
+    opp_templates = [build_team(g, [BuildSpec(hero_id=hid, soldier_type=tt, is_commander=ic)
+                                    for (hid, tt, ic) in opp], side=1, cfg=cfg, fight_pos_base=4)
+                     for opp in payload["opponents"]]
+    n_battles = payload["n_battles"]
     wins = battles = 0
+    troops_rem = 0.0; units_lost = 0
     window_samples = {w: [] for w in WINDOWS}
-    s = seed
+    s = payload["seed"]
     for opp_team in opp_templates:
         for _ in range(n_battles):
             res = Battle(g, cfg, fresh_units(player), fresh_units(opp_team), random.Random(s)).run()
-            s += 1
-            battles += 1
+            s += 1; battles += 1
             if res.winner == 0:
                 wins += 1
+            troops_rem += res.player_troops_frac_remaining
+            units_lost += (3 - res.player_units_alive)
             wd = res.window_damage("player")
             for w in WINDOWS:
                 window_samples[w].append(wd[w])
     win_rate = wins / battles if battles else 0.0
-    windows = {w: (sum(window_samples[w]) / len(window_samples[w]) if window_samples[w] else 0.0)
-               for w in WINDOWS}
+    casualty_rate = 1.0 - (troops_rem / battles if battles else 1.0)   # frac of player troops lost
+    avg_units_lost = units_lost / battles if battles else 0.0
+    windows = {w: (sum(v) / len(v) if v else 0.0) for w, v in window_samples.items()}
     obj = payload["objective"]
-    primary = win_rate if obj == "win" else windows.get(obj, 0.0)
-    return {"win_rate": win_rate, "windows": windows, "primary": primary, "battles": battles}
+    if obj == "win":
+        primary = win_rate
+    elif obj == "casualty":
+        primary = 1.0 - casualty_rate            # higher = fewer casualties = better
+    else:
+        primary = windows.get(obj, 0.0)
+    return {"win_rate": win_rate, "casualty_rate": casualty_rate,
+            "avg_units_lost": avg_units_lost, "windows": windows,
+            "primary": primary, "battles": battles}
 
 
 def _crossover(rng, a, b):
-    ca, ta, la = a
-    cb, tb, lb = b
-    commander = ca if rng.random() < 0.5 else cb
+    ta, la, sa, ra = a
+    tb, lb, sb, rb = b
     troops = tuple((ta[i] if rng.random() < 0.5 else tb[i]) for i in range(3))
     loadout = tuple((la[i] if rng.random() < 0.5 else lb[i]) for i in range(3))
-    return (commander, troops, loadout)
+    stones = tuple((sa[i] if rng.random() < 0.5 else sb[i]) for i in range(3))
+    relics = tuple((ra[i] if rng.random() < 0.5 else rb[i]) for i in range(3))
+    return (troops, loadout, stones, relics)
 
 
-def _mutate(rng, genome, g, hero_ids, rate=0.3):
-    pool = _skill_pool(g)
-    commander, troops, loadout = genome
-    if rng.random() < rate:
-        commander = rng.randrange(3)
-    troops = list(troops)
-    loadout = [list(pair) for pair in loadout]
+def _mutate(rng, genome, ctx, rate=0.3):
+    troops, loadout, stones, relics = genome
+    troops = list(troops); loadout = [list(p) for p in loadout]
+    stones = list(stones); relics = list(relics)
+    pool = ctx["pool"]
     for i in range(3):
-        if rng.random() < rate:
+        if "troop" in ctx["axes"] and rng.random() < rate:
             troops[i] = rng.randrange(1, 5)
-        if rng.random() < rate:
-            mk = _main_key(g, hero_ids[i])
+        if "skills" in ctx["axes"] and rng.random() < rate:
             slot = rng.randrange(2)
-            other = loadout[i][1 - slot]
-            ns = rng.choice(pool)
-            tries = 0
+            other = loadout[i][1 - slot]; mk = ctx["mains"][i]
+            ns = rng.choice(pool); tries = 0
             while (ns == mk or ns == other) and tries < 10:
                 ns = rng.choice(pool); tries += 1
             loadout[i][slot] = ns
-    return (commander, tuple(troops), tuple(tuple(p) for p in loadout))
+        if "stone" in ctx["axes"] and rng.random() < rate:
+            stones[i] = rng.choice((-1, 0, 1))
+        if "relic" in ctx["axes"] and rng.random() < rate:
+            relics[i] = not relics[i]
+    return (tuple(troops), tuple(tuple(p) for p in loadout), tuple(stones), tuple(relics))
+
+
+def _tournament(rng, population, cache, k=3):
+    cand = rng.sample(population, min(k, len(population)))
+    return max(cand, key=lambda gm: cache[gm]["primary"])
 
 
 def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
-                       pop_size=44, generations=24, objective="win",
-                       ga_battles=18, ga_opponents=12, elite=6):
-    """Evolve the best full build. ``progress(done,total)`` over generations."""
+                       commander_index=0, allocated_stats=None, search_axes=ALL_AXES,
+                       objective="win", top_n=20,
+                       pop_size=44, generations=24, ga_battles=18, ga_opponents=12, elite=6):
+    """Evolve + rank the best builds for a FIXED commander + allocation. Returns top-N."""
     g = datamod.load()
     hero_ids = [int(h) for h in hero_ids]
     if len(set(hero_ids)) != 3:
-        raise ValueError("a formation cannot field the same hero twice "
-                         "(SP / 4-star / 5-star name-variants are distinct heroes)")
+        raise ValueError("a formation cannot field the same hero twice")
+    commander_index = int(commander_index)
+    allocated = tuple((allocated_stats or [None, None, None])[i] for i in range(3))
     rng = random.Random(opts.seed)
     cfg_dict = asdict(opts.cfg)
+    ctx = _ctx(g, hero_ids, rng, search_axes)
     opponents = sample_opponents(g, max(ga_opponents, opts.n_opponents), opts.seed, exclude=hero_ids)
     ga_opp = opponents[:ga_opponents]
 
-    population = _seed_genomes(g, hero_ids)
+    population = _seed_genomes(rng, ctx)
     while len(population) < pop_size:
-        population.append(_rand_genome(rng, g, hero_ids))
+        population.append(_rand_genome(rng, ctx))
 
     cache = {}
     workers = opts.workers or (os.cpu_count() or 2)
+
+    def _payload(gm, opp, nb, sd):
+        return {"hero_ids": hero_ids, "genome": gm, "commander": commander_index,
+                "allocated": list(allocated), "opponents": opp, "n_battles": nb,
+                "cfg": cfg_dict, "objective": objective, "seed": sd}
 
     def evaluate(genomes):
         todo = [gm for gm in genomes if gm not in cache]
         if not todo:
             return
-        payloads = []
-        for gm in todo:
-            c, t, l = gm
-            payloads.append({"hero_ids": hero_ids, "commander": c, "troops": list(t),
-                             "loadout": [list(p) for p in l], "opponents": ga_opp,
-                             "n_battles": ga_battles, "cfg": cfg_dict, "objective": objective,
-                             "seed": opts.seed + (hash(gm) & 0xffff) * 131})
+        payloads = [_payload(gm, ga_opp, ga_battles, opts.seed + (hash(gm) & 0xffff) * 131)
+                    for gm in todo]
         if workers <= 1:
             for gm, pl in zip(todo, payloads):
                 cache[gm] = _eval_genome(pl)
@@ -185,40 +236,39 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
                 for fut in as_completed(futs):
                     cache[futs[fut]] = fut.result()
 
-    best_history = []
+    history = []
     for gen in range(generations):
         evaluate(population)
         population.sort(key=lambda gm: (cache[gm]["primary"], cache[gm]["win_rate"]), reverse=True)
-        best_history.append(cache[population[0]]["primary"])
+        history.append(cache[population[0]]["primary"])
         if progress:
             progress(gen + 1, generations)
         if gen == generations - 1:
             break
-        # next generation: elitism + tournament offspring
         nxt = population[:elite]
+        seen = set(nxt)
         while len(nxt) < pop_size:
-            p1 = _tournament(rng, population, cache)
-            p2 = _tournament(rng, population, cache)
-            child = _mutate(rng, _crossover(rng, p1, p2), g, hero_ids)
-            nxt.append(child)
+            child = _mutate(rng, _crossover(rng, _tournament(rng, population, cache),
+                                            _tournament(rng, population, cache)), ctx)
+            if child not in seen:
+                nxt.append(child); seen.add(child)
         population = nxt
 
-    # final high-fidelity re-eval of the winner vs the FULL opponent pool
-    best = population[0]
-    c, t, l = best
-    final = _eval_genome({
-        "hero_ids": hero_ids, "commander": c, "troops": list(t),
-        "loadout": [list(p) for p in l], "opponents": opponents,
-        "n_battles": opts.n_battles, "cfg": cfg_dict, "objective": objective,
-        "seed": opts.seed + 777,
-    })
-    return _assemble_opt(g, hero_ids, best, final, opponents, opts, objective,
-                         generations, pop_size, best_history)
-
-
-def _tournament(rng, population, cache, k=3):
-    cand = rng.sample(population, min(k, len(population)))
-    return max(cand, key=lambda gm: cache[gm]["primary"])
+    # de-dup, take the unique top-N, re-eval each at full fidelity vs the FULL opponent pool
+    uniq = []
+    seen = set()
+    for gm in population:
+        if gm not in seen:
+            seen.add(gm); uniq.append(gm)
+        if len(uniq) >= top_n:
+            break
+    ranked = []
+    for gm in uniq:
+        final = _eval_genome(_payload(gm, opponents, opts.n_battles, opts.seed + 777))
+        ranked.append((gm, final))
+    ranked.sort(key=lambda gf: (gf[1]["primary"], gf[1]["win_rate"]), reverse=True)
+    return _assemble(g, hero_ids, commander_index, allocated, ranked, opts, objective,
+                     search_axes, generations, pop_size, history)
 
 
 def _skill_name(g, key):
@@ -226,33 +276,47 @@ def _skill_name(g, key):
     return sk["name_en"] if sk else "Skill#%s.%s" % key
 
 
-def _assemble_opt(g, hero_ids, best, stats, opponents, opts, objective,
-                  generations, pop_size, history):
-    commander, troops, loadout = best
+def _build_detail(g, hero_ids, commander, allocated, genome, stats):
+    troops, loadout, stones, relics = genome
     heroes = []
     for i, hid in enumerate(hero_ids):
         h = g.hero(hid)
+        mods = [tuple(k) for k in loadout[i]]
+        st = stones[i]
         heroes.append({
             "id": hid, "name": h["name_en"], "is_commander": (i == commander),
-            "troop": TROOP_NAMES[troops[i]],
+            "troop": TROOP_NAMES[int(troops[i])],
+            "allocation": allocated[i] or "none",
             "main_skill": h["main_skill"]["name_en"],
-            "modular_skills": [_skill_name(g, k) for k in loadout[i]],
+            "modular_skills": [_skill_name(g, k) for k in mods],
+            "skill_stone": (_skill_name(g, mods[st]) if st in (0, 1) and st < len(mods) else "none"),
+            "relic": "on" if relics[i] else "off",
         })
     label = " / ".join(
         ("[CMD] " if hi["is_commander"] else "") + "%s(%s)" % (hi["name"], hi["troop"])
         for hi in heroes)
+    return {"heroes": heroes, "label": label,
+            "win_rate": stats["win_rate"], "casualty_rate": stats["casualty_rate"],
+            "avg_units_lost": stats["avg_units_lost"], "windows": stats["windows"]}
+
+
+def _assemble(g, hero_ids, commander, allocated, ranked, opts, objective, axes,
+              generations, pop_size, history):
+    builds = [_build_detail(g, hero_ids, commander, allocated, gm, st) for gm, st in ranked]
     return {
-        "_about": ("Heuristic genetic optimisation over the full build space (commander + "
-                   "troop types + the 6 modular skill slots). A hero can slot any skills. "
-                   "This is a strong build, not a proven global optimum. Combat model is "
-                   "server-side; see notes/sim/combat_rules.md."),
+        "_about": ("Genetic top-N over a FIXED commander + allocation. Searches troop/modular "
+                   "skills/skill-stone(matches a modular)/relic over BEST-tier (5-star) pools. "
+                   "Heuristic ranking, not a proven global optimum. Combat model is server-side; "
+                   "see notes/sim/combat_rules.md."),
         "mode": "optimize",
         "objective": objective,
-        "heroes": heroes,
-        "best_label": label,
-        "win_rate": stats["win_rate"],
-        "windows": stats["windows"],
-        "ga": {"generations": generations, "population": pop_size,
-               "best_primary_history": history},
+        "commander_index": commander,
+        "allocation": list(allocated),
+        "search_axes": list(axes),
+        "builds": builds,                          # ranked top-N, each with full detail
+        "best_label": builds[0]["label"] if builds else "",
+        "win_rate": builds[0]["win_rate"] if builds else 0.0,
+        "windows": builds[0]["windows"] if builds else {},
+        "ga": {"generations": generations, "population": pop_size, "best_primary_history": history},
         "options": {"seed": opts.seed},
     }
