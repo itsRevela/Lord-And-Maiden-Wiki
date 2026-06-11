@@ -103,3 +103,23 @@ ORDERED BUILD (user-confirmed):
 
 This is a sizable focused build (gear system -> axes -> generator). The current sim
 (commits above) keeps working meanwhile on the redesigned single-formation optimizer.
+
+### Gear data map (de-risked 2026-06-11) -- the build plan is concrete now
+`g.gear` contents + how to turn each into a selectable component:
+- **Armor sets** = `g.gear["set_bonuses"]` (35 sets, rarity 2-6). Max tier (rarity 6) = 7 sets:
+  King, Victory, Thunder, Sunshine, Daybreak Bow, Ares Spear, Fate. Each has `three_piece` +
+  `six_piece` effect lists. AXIS: pick one max-tier set per hero -> apply its 6-piece (full set)
+  bonus. ("same-prefix" = one set_name, so a full set is inherently same-prefix.)
+- **Magic messengers** = `g.gear["equipment"]["11"]["items"]` (slot 11 "Magic Messenger", ids
+  3601+, each with `effects` + rarity/power; some carry a `set_id`). AXIS: pick one (max-tier).
+- **Accessories** = `g.gear["accessories"]["left"]["items"]` (7) + `["right"]["items"]` (9),
+  rarity 3-5. AXIS: pick one left + one right (max-tier); NO identical item in a hero's two slots
+  (cross-hero dup OK). Pools are largely distinct already.
+- **Runes** = `g.gear["runes"]` (105, rarity 4-5), each `boosted_skill`. AUTO (not an axis): for
+  each equipped skill, attach the highest-tier rune whose boosted_skill matches.
+- **Relic** = `g.gear["hero_relics"]` (hero's own, enhanced_skill). ALWAYS on (max).
+IMPLEMENTATION: replace the single flat `_compute_gear_bonus` path with a per-BuildSpec
+`gear` selection {armor_set_id, messenger_id, acc_left_id, acc_right_id} -> accumulate effects
+(reuse `_accumulate`) + auto runes + always relic. Keep the flat path as a default/fallback so
+the four anchors stay green (validate after). Then add armor_set/messenger/accessory(2) to the
+optimize genome as toggleable axes; the opponent generator uses the same gear selection.
