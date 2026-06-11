@@ -46,16 +46,36 @@ export default function Page() {
   const [pickIdx, setPickIdx] = useState(-1);
   const [filter, setFilter] = useState("");
   const [job, setJob] = useState(null);
+  const [jobKind, setJobKind] = useState(null);                        // "optimize" | "generate"
   const [result, setResult] = useState(null);
   const [sortBy, setSortBy] = useState("win");                         // win | casualty
   const [openBuild, setOpenBuild] = useState(null);                    // drill-down build index
+  const [oppStatus, setOppStatus] = useState(null);                    // cached opponent pool summary
+  const [topX, setTopX] = useState(40);                                // # opponent formations to cache
+  const [oppScope, setOppScope] = useState("5star");                   // 5star | all
+  const [oppBattles, setOppBattles] = useState(10);                    // battles per trio (stage-A ranking)
   const poll = useRef(null);
+
+  function refreshOpponents() {
+    fetch("/api/opponents").then((r) => r.json()).then(setOppStatus).catch(() => {});
+  }
 
   useEffect(() => {
     fetch("/api/heroes").then((r) => r.json()).then(setHeroes).catch(() => {});
     fetch("/api/meta").then((r) => r.json()).then(setMeta).catch(() => {});
+    refreshOpponents();
     return () => clearInterval(poll.current);
   }, []);
+
+  function pollJob(jobId, kind, onDone) {
+    setJobKind(kind);
+    poll.current = setInterval(async () => {
+      const st = await fetch(`/api/jobs/${jobId}`).then((x) => x.json());
+      setJob(st);
+      if (st.status === "done") { clearInterval(poll.current); onDone(st.result); }
+      if (st.status === "error") { clearInterval(poll.current); alert("Error: " + st.error); }
+    }, 350);
+  }
 
   const byId = useMemo(() => Object.fromEntries(heroes.map((h) => [h.id, h])), [heroes]);
   const chosen = slots.filter(Boolean);
@@ -90,13 +110,19 @@ export default function Page() {
       body: JSON.stringify(body),
     }).then((x) => x.json());
     if (r.error) { alert(r.error); return; }
-    setJob({ status: "running", done: 0, total: 24 });
-    poll.current = setInterval(async () => {
-      const st = await fetch(`/api/jobs/${r.job_id}`).then((x) => x.json());
-      setJob(st);
-      if (st.status === "done") { clearInterval(poll.current); setResult(st.result); }
-      if (st.status === "error") { clearInterval(poll.current); alert("Sim error: " + st.error); }
-    }, 350);
+    setJob({ status: "running", done: 0, total: topN });
+    pollJob(r.job_id, "optimize", (res) => setResult(res));
+  }
+
+  async function generateOpponents() {
+    const body = { top_x: topX, scope: oppScope, battles: oppBattles, workers: +workers || 0 };
+    const r = await fetch("/api/generate_opponents", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then((x) => x.json());
+    if (r.error) { alert(r.error); return; }
+    setJob({ status: "running", done: 0, total: r.total || 1 });
+    pollJob(r.job_id, "generate", () => refreshOpponents());
   }
 
   function exportJson() {
@@ -169,6 +195,57 @@ export default function Page() {
           </div>
         </div>
 
+        {/* challenging-opponent pool */}
+        <div className="panel">
+          <h2>Challenging opponents — the cached pool your builds are ranked against</h2>
+          <div className="muted" style={{ fontSize: 12, marginBottom: 10 }}>
+            Generate this once: it ranks every hero trio with a strong fixed build, then optimizes the
+            top performers into fully‑geared formations (no empty slots · max‑tier armor sets · all
+            messengers · relic always on). Cached on disk — survives refresh/restart. Without it, the
+            search falls back to a weaker sampled set.
+          </div>
+          <div className="controls">
+            <div className="control">
+              <label>Top opponent formations to cache: <b>{topX}</b></label>
+              <input type="range" min="5" max="100" step="5" value={topX}
+                onChange={(e) => setTopX(+e.target.value)} />
+            </div>
+            <div className="control">
+              <label>Candidate pool</label>
+              <select className="sel" value={oppScope} onChange={(e) => setOppScope(e.target.value)}>
+                <option value="5star">5★ heroes only (faster)</option>
+                <option value="all">All heroes (slower, broader)</option>
+              </select>
+            </div>
+            <div className="control">
+              <label>Battles per trio (ranking): <b>{oppBattles}</b></label>
+              <input type="range" min="4" max="30" step="2" value={oppBattles}
+                onChange={(e) => setOppBattles(+e.target.value)} />
+            </div>
+          </div>
+          <div className="row" style={{ marginTop: 14, justifyContent: "space-between" }}>
+            <span className="muted">
+              {oppStatus && oppStatus.generated > 0
+                ? `✓ Cached pool: ${oppStatus.generated} formations (${oppStatus.scope})`
+                : "No cached pool yet — the search uses a weaker fallback set"}
+            </span>
+            <button className="go" disabled={job && job.status === "running"} onClick={generateOpponents}>
+              {job && job.status === "running" && jobKind === "generate"
+                ? "Generating…" : "⚔ Generate challenging opponents"}
+            </button>
+          </div>
+          {oppStatus && oppStatus.formations && oppStatus.formations.length > 0 && (
+            <details style={{ marginTop: 10 }}>
+              <summary className="muted" style={{ cursor: "pointer", fontSize: 12 }}>
+                show {oppStatus.formations.length} cached opponent formations
+              </summary>
+              <ol className="muted" style={{ fontSize: 11, marginTop: 8, paddingLeft: 20 }}>
+                {oppStatus.formations.map((f, i) => <li key={i}>{f.label}</li>)}
+              </ol>
+            </details>
+          )}
+        </div>
+
         {/* controls */}
         <div className="panel">
           <h2>Search settings — top builds (5★ skills/stones, max‑tier troops)</h2>
@@ -238,7 +315,8 @@ export default function Page() {
               <div className="row" style={{ marginTop: 6 }}>
                 {job.status === "running" && <span className="spinner" />}
                 <span className="muted">
-                  {job.status === "running" ? `${job.done}/${job.total} generations evaluated`
+                  {job.status === "running"
+                    ? `${job.done}/${job.total} ${jobKind === "generate" ? "candidates evaluated" : "generations evaluated"}`
                     : job.status === "done" ? "Done." : "…"}
                 </span>
               </div>

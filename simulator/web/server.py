@@ -11,6 +11,8 @@ Endpoints:
   GET  /api/meta                -> enums / model notes / server-side caveat
   POST /api/simulate            -> {job_id}; body: {heroes:[a,b,c], battles, opponents,
                                     select_optimal_troop, seed}
+  GET  /api/opponents           -> cached challenging-opponent pool status {generated, scope, ...}
+  POST /api/generate_opponents  -> {job_id}; body: {top_x, scope, max_trios, battles, seed, workers}
   GET  /api/jobs/<job_id>       -> {status, done, total, result?}
   GET  /portraits/<file>        -> hero portrait PNG (fallback 404 -> UI uses avatar)
 """
@@ -23,6 +25,8 @@ from flask import Flask, jsonify, request, send_from_directory
 from simulator.engine import data as datamod
 from simulator.engine.model import ModelConfig
 from simulator.engine.optimize import optimize_formation, ALL_AXES
+from simulator.engine.opponents import (_candidate_trios, generate_opponents,
+                                        load_opponent_cache)
 from simulator.engine.search import SearchOptions, run_search
 
 _ALLOC = {"atk", "def", "ruin", "speed"}
@@ -162,6 +166,69 @@ def simulate():
     threading.Thread(target=_run_job, args=(job_id, heroes, opts, mode, objective, extra),
                      daemon=True).start()
     return jsonify({"job_id": job_id})
+
+
+def _cache_summary(cache):
+    """Compact view of the opponent cache for the UI (labels only, no full builds)."""
+    if not cache:
+        return {"generated": 0, "scope": None, "top_x": None, "formations": []}
+    return {"generated": cache.get("generated", 0), "scope": cache.get("scope"),
+            "top_x": cache.get("top_x"),
+            "formations": [{"label": f.get("label", "?")} for f in cache.get("formations", [])]}
+
+
+@app.route("/api/opponents")
+def opponents_status():
+    return jsonify(_cache_summary(load_opponent_cache()))
+
+
+def _run_opp_job(job_id, opts, params):
+    def progress(done, total):
+        with _LOCK:
+            _JOBS[job_id]["done"] = done
+            _JOBS[job_id]["total"] = total
+    try:
+        cache = generate_opponents(
+            opts, progress=progress, top_x=params["top_x"], scope=params["scope"],
+            max_trios=params["max_trios"], ref_n=params["ref_n"], battles=params["battles"],
+            opt_generations=params["opt_generations"], opt_pop=params["opt_pop"])
+        with _LOCK:
+            _JOBS[job_id]["result"] = _cache_summary(cache)
+            _JOBS[job_id]["status"] = "done"
+    except Exception as e:  # noqa: BLE001 - surface to client
+        with _LOCK:
+            _JOBS[job_id]["status"] = "error"
+            _JOBS[job_id]["error"] = repr(e)
+
+
+@app.route("/api/generate_opponents", methods=["POST", "OPTIONS"])
+def generate_opponents_route():
+    if request.method == "OPTIONS":
+        return ("", 204)
+    body = request.get_json(force=True) or {}
+    top_x = max(1, min(int(body.get("top_x", 40)), 100))
+    scope = body.get("scope", "5star")
+    if scope not in ("5star", "all"):
+        scope = "5star"
+    max_trios = max(50, min(int(body.get("max_trios", 600)), 5000))
+    battles = max(2, min(int(body.get("battles", 10)), 50))
+    ref_n = max(4, min(int(body.get("ref_n", 12)), 40))
+    opt_generations = max(4, min(int(body.get("generations", 12)), 60))
+    opt_pop = max(8, min(int(body.get("pop_size", 24)), 80))
+    opts = SearchOptions(
+        n_battles=int(body.get("n_battles", 24)), n_opponents=ref_n,
+        seed=int(body.get("seed", 12345)), workers=int(body.get("workers", 0)),
+        cfg=ModelConfig())
+    # exact, stable progress total (#7): trios actually evaluated + top_x optimised finalists
+    n_trios = len(_candidate_trios(_G, scope, max_trios, opts.seed))
+    params = {"top_x": top_x, "scope": scope, "max_trios": max_trios, "battles": battles,
+              "ref_n": ref_n, "opt_generations": opt_generations, "opt_pop": opt_pop}
+    job_id = uuid.uuid4().hex[:12]
+    with _LOCK:
+        _JOBS[job_id] = {"status": "running", "done": 0, "total": n_trios + top_x,
+                         "mode": "generate_opponents"}
+    threading.Thread(target=_run_opp_job, args=(job_id, opts, params), daemon=True).start()
+    return jsonify({"job_id": job_id, "total": n_trios + top_x})
 
 
 @app.route("/api/jobs/<job_id>")
