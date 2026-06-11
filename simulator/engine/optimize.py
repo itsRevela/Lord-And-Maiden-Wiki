@@ -262,10 +262,23 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
             seen.add(gm); uniq.append(gm)
         if len(uniq) >= top_n:
             break
+    # full-fidelity re-eval of the top-N -- parallelised (was sequential -> slow tail), with
+    # progress continuing past the GA generations so the UI bar doesn't sit "stuck" at 24/24.
+    fin_payloads = [_payload(gm, opponents, opts.n_battles, opts.seed + 777 + i)
+                    for i, gm in enumerate(uniq)]
     ranked = []
-    for gm in uniq:
-        final = _eval_genome(_payload(gm, opponents, opts.n_battles, opts.seed + 777))
-        ranked.append((gm, final))
+    if workers <= 1:
+        for gm, pl in zip(uniq, fin_payloads):
+            ranked.append((gm, _eval_genome(pl)))
+            if progress:
+                progress(generations + len(ranked), generations + len(uniq))
+    else:
+        with ProcessPoolExecutor(max_workers=workers) as ex:
+            futs = {ex.submit(_eval_genome, pl): gm for gm, pl in zip(uniq, fin_payloads)}
+            for fut in as_completed(futs):
+                ranked.append((futs[fut], fut.result()))
+                if progress:
+                    progress(generations + len(ranked), generations + len(uniq))
     ranked.sort(key=lambda gf: (gf[1]["primary"], gf[1]["win_rate"]), reverse=True)
     return _assemble(g, hero_ids, commander_index, allocated, ranked, opts, objective,
                      search_axes, generations, pop_size, history)
