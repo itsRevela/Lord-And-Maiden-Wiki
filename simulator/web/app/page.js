@@ -8,7 +8,8 @@ const ALLOCS = [
 ];
 const AXES = [   // relic is always equipped (max-tier, hero's own) -- not a toggle
   { v: "troop", label: "Troop type" }, { v: "skills", label: "Modular skills" },
-  { v: "stone", label: "Skill stone" },
+  { v: "stone", label: "Skill stone" }, { v: "armor", label: "Armor set" },
+  { v: "messenger", label: "Magic messenger" }, { v: "accessory", label: "Accessories" },
 ];
 const ROLE_COLOR = {
   DPS: "#f0883e", Heal: "#3fb950", "CC (Control)": "#c678dd",
@@ -35,7 +36,8 @@ export default function Page() {
   const [commander, setCommander] = useState(0);                       // FIXED commander slot
   const [allocations, setAllocations] = useState(["atk", "atk", "atk"]); // per-hero max-allocated stat
   const [troopTypes, setTroopTypes] = useState([2, 2, 2]);             // per-hero troop (1..4); used when troop axis off
-  const [axes, setAxes] = useState({ troop: true, skills: true, stone: true, relic: true });
+  const [axes, setAxes] = useState({ troop: true, skills: true, stone: true,
+    armor: true, messenger: true, accessory: true });
   const [workers, setWorkers] = useState(0);                           // 0 = all cores
   const [objective, setObjective] = useState("win");                   // win | casualty | early | mid | late | all
   const [battles, setBattles] = useState(60);
@@ -314,7 +316,10 @@ export default function Page() {
                         <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>MAIN (fixed)</div>{h.main_skill}
                         <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>MODULAR</div>{h.modular_skills.join(" · ")}
                         <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>SKILL STONE</div>{h.skill_stone}
-                        <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>RELIC</div>{h.relic}
+                        <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>ARMOR SET</div>{h.armor_set}
+                        <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>MAGIC MESSENGER</div>{h.messenger}
+                        <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>ACCESSORIES</div>{(h.accessories || []).join(" · ")}
+                        <div className="muted" style={{ fontSize: 11, marginTop: 6 }}>RELIC</div>{h.relic} (always)
                       </div>
                     </div>
                   ))}
