@@ -22,8 +22,10 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from simulator.engine import data as datamod
 from simulator.engine.model import ModelConfig
-from simulator.engine.optimize import optimize_formation
+from simulator.engine.optimize import optimize_formation, ALL_AXES
 from simulator.engine.search import SearchOptions, run_search
+
+_ALLOC = {"atk", "def", "ruin", "speed"}
 
 app = Flask(__name__)
 PORTRAITS_DIR = os.path.join(os.path.dirname(__file__), "public", "portraits")
@@ -81,14 +83,19 @@ def portraits(fname):
     return send_from_directory(PORTRAITS_DIR, fname)
 
 
-def _run_job(job_id, heroes, opts, mode, objective):
+def _run_job(job_id, heroes, opts, mode, objective, extra):
     def progress(done, total):
         with _LOCK:
             _JOBS[job_id]["done"] = done
             _JOBS[job_id]["total"] = total
     try:
         if mode == "optimize":
-            report = optimize_formation(heroes, opts, progress=progress, objective=objective)
+            report = optimize_formation(
+                heroes, opts, progress=progress, objective=objective,
+                commander_index=extra["commander_index"],
+                allocated_stats=extra["allocated_stats"],
+                search_axes=extra["search_axes"], top_n=extra["top_n"],
+                generations=extra["generations"])
         else:
             report = run_search(heroes, opts, progress=progress)
         with _LOCK:
@@ -111,21 +118,39 @@ def simulate():
     if len(set(heroes)) != 3:
         return jsonify({"error": "the 3 heroes must be distinct — a formation can't field the "
                                  "same hero twice (SP / 4-star / 5-star name-variants are separate heroes)"}), 400
-    mode = body.get("mode", "rank")           # "rank" | "optimize"
-    objective = body.get("objective", "win")  # win | early | mid | late | all
+    mode = body.get("mode", "optimize")       # "optimize" (new default) | "rank" (legacy)
+    objective = body.get("objective", "win")  # win | casualty | early | mid | late | all
+
+    # --- new optimize inputs: fixed commander + per-hero allocation + toggleable axes ---
+    commander_index = int(body.get("commander_index", 0))
+    if not 0 <= commander_index <= 2:
+        return jsonify({"error": "commander_index must be 0, 1, or 2"}), 400
+    raw_alloc = body.get("allocated_stats") or [None, None, None]
+    allocated_stats = []
+    for a in (list(raw_alloc) + [None, None, None])[:3]:
+        a = (a or "").lower() if isinstance(a, str) else None
+        allocated_stats.append(a if a in _ALLOC else None)
+    axes = body.get("search_axes")
+    search_axes = tuple(x for x in (axes if isinstance(axes, list) else ALL_AXES) if x in ALL_AXES) \
+        or ALL_AXES
+    top_n = max(1, min(int(body.get("top_n", 20)), 50))
+
     opts = SearchOptions(
         n_battles=int(body.get("battles", 60)),
         n_opponents=int(body.get("opponents", 40)),
         select_optimal_troop=bool(body.get("select_optimal_troop", True)),
         seed=int(body.get("seed", 12345)),
-        workers=int(body.get("workers", 0)),
+        workers=int(body.get("workers", 0)),     # 0 = all cores; user-configurable
         cfg=ModelConfig(),
     )
+    generations = int(body.get("generations", 24))
+    extra = {"commander_index": commander_index, "allocated_stats": allocated_stats,
+             "search_axes": search_axes, "top_n": top_n, "generations": generations}
     job_id = uuid.uuid4().hex[:12]
     with _LOCK:
         _JOBS[job_id] = {"status": "running", "done": 0,
-                         "total": 24 if mode == "optimize" else 192, "mode": mode}
-    threading.Thread(target=_run_job, args=(job_id, heroes, opts, mode, objective),
+                         "total": generations if mode == "optimize" else 192, "mode": mode}
+    threading.Thread(target=_run_job, args=(job_id, heroes, opts, mode, objective, extra),
                      daemon=True).start()
     return jsonify({"job_id": job_id})
 
