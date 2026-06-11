@@ -60,3 +60,38 @@ Each step is self-contained + testable. Build engine first (verify via `python -
 / optimize), then API, then UI. Keep the four capture-grounded validators green
 (testcase/baseline/dot superseded by validate_shield + pursuit at dg=65; engine logic unchanged --
 this is search/UI, not combat math).
+
+## PHASE 2 (user directive 2026-06-11) -- gear system + challenging-opponent generator
+
+DONE so far: #1 stone never empty (always matches a modular), #4 relic always equipped (axis
+removed), #7 progress total stable (generations+top_n). Per-hero troop dropdown done. Commits
+4033cab/abeac3c/304f0e2/c70df06/4143d45/777e12e.
+
+REALITY CHECK (logged for posterity): the requested EXHAUSTIVE opponent search (all C(113,3)~230k
+trios x troops x C(128,2)^3 skills x stones x runes x messengers x accessories x armor sets x 10
+battles) is ~10^24 battles -- impossible (millions of years). Per-trio build search alone ~10^12.
+So opponent generation MUST be tiered, NOT exhaustive.
+
+ORDERED BUILD (user-confirmed):
+1. **Gear-component system** (prereq for everything else). Today the engine applies ONE flat
+   `g.gear_bonus` to all units. Decompose `g.gear` (has equipment, set_bonuses, accessories,
+   hero_relics, runes) into SELECTABLE components: highest-tier ARMOR SETS (same-prefix sets +
+   their set bonus), MAGIC MESSENGERS (PosType 11, ids 3601-3649), ACCESSORIES (2 slots), RUNES
+   (highest tier, name-aligned to each equipped skill). Each applied per-BuildSpec; relic always
+   on (hero's own, max). Keep a "best flat" fallback. Validate the four anchors stay green.
+2. **Player search axes** (#2/#3/#5): add armor-set + messenger + accessory(2) as toggleable
+   genome axes (rune auto-aligns to skills; relic always on); 5-star/max-tier pools only; no empty
+   slots; no duplicate skill in a formation.
+3. **Generate challenging opponents** (new button before "Start search", same progress bar):
+   - STAGE A: rank hero trios (5-star filter optional) using a strong FIXED per-hero build
+     (recommended skills+stone+relic+best gear), recommended (rpoint) allocation, 10 battles vs a
+     reference set; keep the user's top-X.
+   - STAGE B: run the full genetic build-optimization ONLY on the top-X survivors.
+   - CACHE the top-X to disk (JSON under notes/sim or simulator/) -> survives refresh/restart;
+     the main search loads it as the opponent pool. Opponents follow #1/#2/#4/#5 (full max builds,
+     best armor, relic on, no empty slots) -- so they're genuinely challenging (#8/#9).
+   - Decisions: rank-trios-then-optimize-top-X; build the gear system FIRST.
+   Stat allocation for opponents = each hero's recommended (rpoint) preset.
+
+This is a sizable focused build (gear system -> axes -> generator). The current sim
+(commits above) keeps working meanwhile on the redesigned single-formation optimizer.
