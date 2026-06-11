@@ -233,28 +233,19 @@ def _plausible_name(name: str) -> bool:
 
 
 class FlowReassembler:
-    """Per-TCP-flow byte reassembly using sequence numbers (handles reorder/retransmit)."""
+    """Per-TCP-flow byte buffer. Uses ARRIVAL ORDER (not seq reassembly): scapy delivers
+    packets in capture order, which for a single flow is stream order. This is gap-tolerant
+    -- a dropped/missing packet costs at most one frame (the length-framing resyncs on the
+    next valid frame) instead of STALLING the whole connection forever (which strict
+    seq-reassembly does the moment it hits a gap)."""
 
     def __init__(self):
-        self.segments = {}      # seq -> bytes
-        self.base = None        # next contiguous seq we expect
         self.buffer = bytearray()
         self.is_game = None     # None=unknown, True/False once decided
 
-    def add(self, seq: int, data: bytes):
-        if not data:
-            return
-        if self.base is None:
-            self.base = seq
-        self.segments[seq] = data
-        # drain contiguous
-        while self.base in self.segments:
-            d = self.segments.pop(self.base)
-            self.buffer += d
-            self.base = (self.base + len(d)) & 0xFFFFFFFF
-        # cap stray segment memory
-        if len(self.segments) > 4096:
-            self.segments.clear()
+    def add(self, data: bytes):
+        if data:
+            self.buffer += data
 
 
 # --------------------------------------------------------------------------- output
@@ -270,9 +261,9 @@ class BattleWriter:
         self.n_battles = 0
         self.n_msgs = 0
 
-    def note_msg(self, name: str, size: int):
+    def note_msg(self, name: str, size: int, src: str = ""):
         self.n_msgs += 1
-        self.msglog.write("%s\t%d\n" % (name, size))
+        self.msglog.write("%s\t%d\t%s\n" % (name, size, src))
         self.msglog.flush()
 
     def write_battle(self, d: dict):
@@ -294,17 +285,22 @@ class BattleWriter:
             len(d.get("rounds", [])), base + ".json"))
         self.index.flush()
         self.n_battles += 1
+        # ASCII-safe console line (player names may be CJK; the cp1252 console can't encode
+        # them -- write the real UTF-8 names to the files, print a safe summary here).
+        def _ascii(x):
+            return str(x).encode("ascii", "replace").decode("ascii")
         print("[+] battle captured: %s  (%s vs %s, fightRet=%s, %d rounds)  -> %s"
-              % (gid, d.get("playerA"), d.get("playerB"), d.get("fightRet"),
+              % (gid, _ascii(d.get("playerA")), _ascii(d.get("playerB")), d.get("fightRet"),
                  len(d.get("rounds", [])), base + ".json"))
 
 
 # --------------------------------------------------------------------------- engine glue
-def handle_body(name: str, body: bytes, writer: BattleWriter, dump_raw: bool):
-    writer.note_msg(name, len(body))
+def handle_body(name: str, body: bytes, writer: BattleWriter, dump_raw: bool, src: str = ""):
+    writer.note_msg(name, len(body), src)
     if name == BATTLE_DETAILS_MSG:
         try:
             d = decode_battle_details(body)
+            d["_src"] = src
             writer.write_battle(d)
         except Exception as e:
             print("[!] failed to decode %s: %s" % (name, e))
@@ -331,53 +327,54 @@ def process_pcap(path: str, writer: BattleWriter, dump_raw: bool):
             continue
         key = (l3.src, tcp.sport, l3.dst, tcp.dport)
         fr = flows.setdefault(key, FlowReassembler())
-        fr.add(int(tcp.seq), payload)
-        _drain_flow(fr, writer, dump_raw)
+        fr.add(payload)
+        _drain_flow(fr, writer, dump_raw, "%s:%d->%s:%d" % (l3.src, tcp.sport, l3.dst, tcp.dport))
     print("[done] pcap parsed: %d battles, %d messages." % (writer.n_battles, writer.n_msgs))
 
 
-def _drain_flow(fr: FlowReassembler, writer: BattleWriter, dump_raw: bool):
+def _drain_flow(fr: FlowReassembler, writer: BattleWriter, dump_raw: bool, src: str = ""):
     """Frame + decode all complete messages in the flow buffer. Robust to starting
     mid-stream: byte-by-byte resync until the first valid frame, then trust the length
     framing once aligned."""
     if not fr.buffer:
         return
     stream = bytes(fr.buffer)
-    consumed = 0                          # only advanced once we trust alignment
+    consumed = 0                          # advanced only past SUCCESSFULLY decoded frames
     o = 0
     n = len(stream)
-    while n - o >= 4:
+    # Scan-and-resync: try to decode a frame at o; on success handle it and jump past it;
+    # on ANY failure (bad length / incomplete / undecodable) advance one byte and retry.
+    # NEVER hard-stop -- inter-frame junk or a mid-stream start must not block later frames
+    # (a permanent `break` here silently dropped every message after the first, including
+    # the gzip'd SCLogic_DetailsGrand battle log).
+    while o <= n - 4:
         outer = struct.unpack_from("<i", stream, o)[0]
-        if not (0 < outer <= MAX_FRAME):
-            o += 1                        # invalid length -> resync (no trim until aligned)
-            if fr.is_game:
+        if 0 < outer <= MAX_FRAME and o + 4 + outer <= n:
+            dec = _decode_msg(stream[o + 4:o + 4 + outer])
+            if dec is not None:
+                handle_body(dec[0], dec[1], writer, dump_raw, src)
+                fr.is_game = True
+                o += 4 + outer
                 consumed = o
-            continue
-        if n - o - 4 < outer:             # plausible length but frame not fully arrived
-            if fr.is_game:
-                break                     # aligned -> wait for the rest
-            o += 1                        # not aligned -> keep searching (do NOT discard:
-            continue                      #   a real frame start may complete with more bytes)
-        dec = _decode_msg(stream[o + 4:o + 4 + outer])
-        if dec is not None:
-            handle_body(dec[0], dec[1], writer, dump_raw)
-            fr.is_game = True
-            o += 4 + outer
-            consumed = o
-        elif fr.is_game:
-            o += 4 + outer                # aligned but unrecognized -> skip, stay aligned
-            consumed = o
-        else:
-            o += 1                        # not aligned -> resync (no trim)
+                continue
+        o += 1
     if consumed:
-        del fr.buffer[:consumed]
-    elif not fr.is_game and len(fr.buffer) > 512 * 1024:
-        fr.buffer.clear()                 # non-game / un-alignable flow -> stop buffering
+        del fr.buffer[:consumed]          # keep only the tail (a possibly-incomplete frame)
+    if fr.is_game is None and len(fr.buffer) > 65536:
+        fr.is_game = False                # never aligned in 64KB -> non-game; ignore this flow
+        fr.buffer.clear()
+    elif fr.is_game and len(fr.buffer) > 1048576:
+        del fr.buffer[:len(fr.buffer) - 262144]   # aligned but huge undecoded tail -> bound memory
 
 
-def process_live(iface, writer: BattleWriter, dump_raw: bool):
-    from scapy.all import sniff, TCP, IP, IPv6  # noqa
+def process_live(iface, writer: BattleWriter, dump_raw: bool, bpf: str = "tcp"):
+    # Capture thread does the MINIMUM (buffer raw payload per flow); framing+gzip+decode
+    # run on a periodic timer off the capture thread. Doing the decode inside the per-packet
+    # callback was too slow and made scapy drop packets (shredding multi-packet battle msgs).
+    from scapy.all import AsyncSniffer, TCP, IP, IPv6  # noqa
+    import time
     flows = {}
+    srcs = {}
 
     def cb(pkt):
         if TCP not in pkt:
@@ -385,24 +382,46 @@ def process_live(iface, writer: BattleWriter, dump_raw: bool):
         l3 = pkt[IP] if IP in pkt else (pkt[IPv6] if IPv6 in pkt else None)
         if l3 is None:
             return
-        tcp = pkt[TCP]
-        payload = bytes(tcp.payload)
+        payload = bytes(pkt[TCP].payload)
         if not payload:
             return
-        key = (l3.src, tcp.sport, l3.dst, tcp.dport)
-        fr = flows.setdefault(key, FlowReassembler())
-        fr.add(int(tcp.seq), payload)
-        _drain_flow(fr, writer, dump_raw)
+        key = (l3.src, pkt[TCP].sport, l3.dst, pkt[TCP].dport)
+        fr = flows.get(key)
+        if fr is None:
+            fr = flows[key] = FlowReassembler()
+            srcs[key] = "%s:%d->%s:%d" % (l3.src, pkt[TCP].sport, l3.dst, pkt[TCP].dport)
+        elif fr.is_game is False:
+            return                       # confirmed non-game (TLS/etc.) -> stop buffering
+        fr.add(payload)
 
-    print("[*] live sniffing (filter: tcp). Play the game / run practice battles AND open")
-    print("    each battle's report/log so the client fetches SCLogic_DetailsGrand. Ctrl+C to stop.")
     try:
-        sniff(prn=cb, store=False, filter="tcp", iface=iface)
+        sniffer = AsyncSniffer(filter=bpf, prn=cb, store=False, iface=iface)
+        sniffer.start()
     except (OSError, RuntimeError) as e:
         print("\nERROR starting live capture: %s" % e)
         print("Live capture needs Npcap (https://npcap.com -- check 'WinPcap API-compatible mode').")
         print("No-install alternative: capture with Wireshark to a .pcapng, then run with --pcap FILE.")
         sys.exit(1)
+    print("[*] live sniffing (filter: %s). Run battles AND open each battle's report/replay so" % bpf)
+    print("    the client fetches SCLogic_DetailsGrand. Ctrl+C to stop.")
+    last_hb = time.time()
+    try:
+        while True:
+            time.sleep(0.7)
+            for key in list(flows.keys()):
+                _drain_flow(flows[key], writer, dump_raw, srcs.get(key, ""))
+            if time.time() - last_hb >= 5:
+                print("[hb] flows=%d  messages=%d  battles=%d" % (len(flows), writer.n_msgs, writer.n_battles))
+                last_hb = time.time()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        try:
+            sniffer.stop()
+        except Exception:
+            pass
+        for key in list(flows.keys()):     # final drain
+            _drain_flow(flows[key], writer, dump_raw, srcs.get(key, ""))
 
 
 def list_ifaces():
@@ -421,6 +440,7 @@ def main():
     ap.add_argument("--live", action="store_true", help="live capture (needs admin + Npcap)")
     ap.add_argument("--iface", default=None, help="interface name (see --list-ifaces)")
     ap.add_argument("--pcap", default=None, help="decode a saved .pcap/.pcapng instead")
+    ap.add_argument("--filter", default="tcp", help="BPF capture filter (e.g. 'host 43.159.0.212')")
     ap.add_argument("--out", default=DEFAULT_OUT, help="output dir (default notes/sim/captures)")
     ap.add_argument("--dump-raw", action="store_true", help="dump raw bytes of battle/unknown msgs")
     ap.add_argument("--list-ifaces", action="store_true", help="list capture interfaces and exit")
@@ -441,7 +461,7 @@ def main():
         process_pcap(args.pcap, writer, args.dump_raw)
     elif args.live:
         try:
-            process_live(args.iface, writer, args.dump_raw)
+            process_live(args.iface, writer, args.dump_raw, args.filter)
         except KeyboardInterrupt:
             print("\n[done] %d battles, %d messages captured." % (writer.n_battles, writer.n_msgs))
     else:
