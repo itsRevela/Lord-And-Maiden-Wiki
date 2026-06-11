@@ -29,6 +29,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
   - **UI:** Next.js dashboard (hero pickers with datamined portraits, commander toggle,
     options, live progress, ranked results, JSON export) + a Flask API + a UnityPy portrait
     extractor (113/113 heroes). Combat catalogue → proper wiki pages is the remaining step.
+  - **Simulator redesign (Phase 2)** — reframed the search around the question players actually
+    ask: *with my fixed 3 heroes and commander, which skills / matching skill-stone / gear give the
+    highest win-rate (or lowest casualties)?*
+    - **Gear-component system** (`data.gear_bonus_from_selection`): the flat gear bonus is now
+      decomposed into selectable, per-hero components — a max-tier **armor set** (slots 1-6 + its
+      3-/6-piece bonus), a **magic messenger** (slot 11), and **two accessories** — plus an
+      always-on hero **relic** and skill-aligned runes. A single hero's two accessory slots can't
+      hold the same item (cross-hero duplicates are fine). Applies to **both** the player's
+      formation and opponents; the old flat path remains as a fallback.
+    - **Genetic optimizer** (`engine/optimize.py`): fixed commander + per-hero stat allocation;
+      toggleable search axes (troop · modular skills · skill stone · armor · messenger ·
+      accessory — relic always equipped); 5★/max-tier pools only with no empty slots; win or
+      casualty objective; ranked top-N with a per-build drill-down (allocation, main/modular skills,
+      stone, armor set, messenger, accessories, relic).
+    - **Challenging-opponent generator** (`engine/opponents.py`): a "Generate challenging opponents"
+      button builds a cached pool — stage A ranks hero trios with a strong fixed build, stage B
+      genetically optimizes the top-X into fully-geared formations — cached to disk
+      (`simulator/opponent_cache.json`, survives restart) and loaded as the search's opponent pool
+      (falls back to a sampled set when absent). API: `GET /api/opponents`,
+      `POST /api/generate_opponents`. Exhaustive enumeration (~10²⁴ battles) is infeasible, so the
+      two-stage approach is by design.
+    - **Translation fix:** skill display names now resolve via the game's authoritative
+      `Language_SkillName.csv` (corrected 5 drifted names, e.g. *Devout → Piety*), so UI builds
+      match the in-game skill names. Four calibration anchors held across the redesign
+      (testcase 7/9, dot 5/7, shield 3/6, pursuit ~88%).
 - **Reference/Game-Hints.md** — catalogues the game's in-game hint/help systems (Hero Info →
   Details per-hero, loading-screen Tips, feature "?" buttons, skill/talent tooltips, system
   pop-ups) and consolidates the **battle rules & calculations** they reveal. Surfaces several

@@ -67,6 +67,21 @@ DONE so far: #1 stone never empty (always matches a modular), #4 relic always eq
 removed), #7 progress total stable (generations+top_n). Per-hero troop dropdown done. Commits
 4033cab/abeac3c/304f0e2/c70df06/4143d45/777e12e.
 
+**PHASE 2 COMPLETE (2026-06-11).** All three ordered steps shipped:
+1. Gear-component system -- `g.gear_bonus_from_selection(armor_set_id, messenger_id, acc_left_id,
+   acc_right_id)` decomposes the flat bonus into a selected max-tier armor SET (slots 1-6 + 3pc/6pc)
+   + magic messenger (slot 11) + 2 accessories; relic always on; flat path kept as fallback. Applies
+   to BOTH player + opponents. Anchors stayed green (testcase 7/9, dot 5/7, shield 3/6). Commit 994a2ab.
+2. Player axes -- `ALL_AXES = (troop, skills, stone, armor, messenger, accessory)`; relic NOT an axis
+   (always on). No empty slots; accessory no-dup-within-hero. Commits 47974b5 (axes) + 01905a5 (UI).
+3. Challenging-opponent generator -- `engine/opponents.py` two-stage (rank trios w/ strong fixed
+   build -> optimize top-X -> cache to `simulator/opponent_cache.json`, gitignored). Main search loads
+   the cache as its pool (`use_opponent_cache`, stage B opts out to avoid a feedback loop); falls back
+   to the weak sampled set when absent. API: GET /api/opponents, POST /api/generate_opponents. UI:
+   "Challenging opponents" panel (top-X / scope / battles-per-trio / shared progress bar / cache
+   status). Verified end-to-end over HTTP (0/53->53/53, 3 geared formations cached; main search then
+   ranks vs that pool, win 0.88->0.67 vs the stronger set). Commits ebf0ab2 (engine) + 5f73b5c (API+UI).
+
 REALITY CHECK (logged for posterity): the requested EXHAUSTIVE opponent search (all C(113,3)~230k
 trios x troops x C(128,2)^3 skills x stones x runes x messengers x accessories x armor sets x 10
 battles) is ~10^24 battles -- impossible (millions of years). Per-trio build search alone ~10^12.
