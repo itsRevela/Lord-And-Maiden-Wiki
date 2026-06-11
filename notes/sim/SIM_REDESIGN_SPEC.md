@@ -79,6 +79,14 @@ ORDERED BUILD (user-confirmed):
    their set bonus), MAGIC MESSENGERS (PosType 11, ids 3601-3649), ACCESSORIES (2 slots), RUNES
    (highest tier, name-aligned to each equipped skill). Each applied per-BuildSpec; relic always
    on (hero's own, max). Keep a "best flat" fallback. Validate the four anchors stay green.
+   **Applies to BOTH the user's formation AND opponents** (user-confirmed) -- every unit, friendly
+   or enemy, is built through this system; no flat shortcut for enemies.
+   **Constraints (formation rules):**
+   - ACCESSORIES: a single hero's TWO accessory slots cannot hold the same accessory (no dup
+     within a hero), BUT the same accessory MAY appear across different heroes in the formation
+     (cross-hero duplicates are allowed). (Contrast with skill stones, which are no-dup per TEAM.)
+   - SKILLS: no duplicate skill within a hero (main + 2 modular + stone, stone matches a modular).
+   - ARMOR: same-prefix set; never empty.
 2. **Player search axes** (#2/#3/#5): add armor-set + messenger + accessory(2) as toggleable
    genome axes (rune auto-aligns to skills; relic always on); 5-star/max-tier pools only; no empty
    slots; no duplicate skill in a formation.
