@@ -19,7 +19,8 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from . import data as datamod
 from .combat import Battle
 from .model import BuildSpec, ModelConfig, build_team, fresh_units
-from .optimize import _default_modular, _main_key, _skill_pool, optimize_formation
+from .optimize import (_default_modular, _main_key, _repair_loadout, _skill_pool,
+                       optimize_formation)
 from .search import SearchOptions, sample_opponents
 
 CACHE_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -45,15 +46,25 @@ def _def_gear(g):
             "acc_right_id": accr[0][0] if accr else None}
 
 
-def _strong_spec(g, hid, troop, is_cmd, gear):
-    """A strong FIXED build for one opponent hero: recommended modular skills + stone on the
-    first modular + relic + best-tier gear + rpoint allocation."""
-    pool = _skill_pool(g); mk = _main_key(g, hid)
-    mods = _default_modular(g, hid, pool, mk, random.Random(hid))
-    keys = (mods[0], mods[1], mods[0])         # 2 modular + stone reinforcing modular 0
-    return BuildSpec(hero_id=hid, soldier_type=int(troop), is_commander=is_cmd,
-                     skill_keys=keys, allocated_stat=_rpoint_alloc(g, hid),
-                     relic_on=True, gear=gear)
+def _strong_team_specs(g, trio, gear, cmd_index=0):
+    """A strong FIXED build for ALL 3 opponent heroes that obeys per-FORMATION skill uniqueness
+    (no modular/stone shared across heroes, no modular == any main). Each hero: recommended
+    modular skills + a stone reinforcing modular 0 + relic + best-tier gear + rpoint allocation.
+    The recommended modulars are picked per hero then repaired across the trio (same rule as the
+    player optimizer), so opponents are valid in-game formations -- not just challenging (#9)."""
+    pool = _skill_pool(g)
+    mains = [_main_key(g, h) for h in trio]
+    raw = tuple(_default_modular(g, hid, pool, mains[k], random.Random(hid))
+                for k, hid in enumerate(trio))
+    loadout = _repair_loadout(random.Random(sum(trio) + 1), raw, {"pool": pool, "mains": mains})
+    specs = []
+    for k, hid in enumerate(trio):
+        m0, m1 = loadout[k]
+        keys = (m0, m1, m0)         # 2 modular + stone reinforcing modular 0
+        specs.append(BuildSpec(hero_id=hid, soldier_type=int(g.hero(hid)["rst"]["id"]),
+                               is_commander=(k == cmd_index), skill_keys=keys,
+                               allocated_stat=_rpoint_alloc(g, hid), relic_on=True, gear=gear))
+    return specs
 
 
 def build_opponent_team(g, formation, cfg):
@@ -80,8 +91,7 @@ def _rank_payload(payload):
     g = datamod.load()
     cfg = ModelConfig(**payload["cfg"])
     trio = payload["trio"]; gear = payload["gear"]
-    specs = [_strong_spec(g, hid, g.hero(hid)["rst"]["id"], (k == 0), gear)
-             for k, hid in enumerate(trio)]
+    specs = _strong_team_specs(g, trio, gear)
     player = build_team(g, specs, side=0, cfg=cfg, fight_pos_base=1)
     refs = [build_opponent_team(g, opp, cfg) for opp in payload["refs"]]
     wins = n = 0
@@ -117,6 +127,14 @@ def _candidate_trios(g, scope, max_trios, seed, exclude=()):
     return out
 
 
+def _trio_label(g, trio):
+    """Human-readable matchup label for progress display: 'HeroA / HeroB / HeroC'."""
+    def nm(hid):
+        h = g.hero(int(hid)) or {}
+        return h.get("name_en") or h.get("name") or str(hid)
+    return " / ".join(nm(h) for h in trio)
+
+
 def generate_opponents(opts: SearchOptions, progress=None, top_x=40, scope="5star",
                        max_trios=600, ref_n=12, battles=10,
                        opt_generations=12, opt_pop=24, exclude=()):
@@ -135,14 +153,15 @@ def generate_opponents(opts: SearchOptions, progress=None, top_x=40, scope="5sta
         for i, pl in enumerate(payloads):
             scored.append(_rank_payload(pl))
             if progress and i % 5 == 0:
-                progress(len(scored), total)
+                progress(len(scored), total, "Ranking trios · " + _trio_label(g, pl["trio"]))
     else:
         with ProcessPoolExecutor(max_workers=workers) as ex:
             futs = [ex.submit(_rank_payload, pl) for pl in payloads]
             for fut in as_completed(futs):
-                scored.append(fut.result())
+                res = fut.result()
+                scored.append(res)
                 if progress:
-                    progress(len(scored), total)
+                    progress(len(scored), total, "Ranking trios · " + _trio_label(g, res[0]))
     scored.sort(key=lambda ts: ts[1], reverse=True)
     survivors = [t for t, _ in scored[:top_x]]
 
@@ -159,7 +178,8 @@ def generate_opponents(opts: SearchOptions, progress=None, top_x=40, scope="5sta
                                  ga_battles=8, ga_opponents=min(8, ref_n))
         formations.append(_formation_from_build(g, trio, rep["builds"][0]))
         if progress:
-            progress(len(trios) + j + 1, total)
+            progress(len(trios) + j + 1, total,
+                     "Optimizing finalist %d/%d · %s" % (j + 1, len(survivors), _trio_label(g, trio)))
 
     cache = {"scope": scope, "top_x": top_x, "generated": len(formations), "formations": formations}
     save_opponent_cache(cache)

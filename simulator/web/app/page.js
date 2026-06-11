@@ -320,6 +320,11 @@ export default function Page() {
                     : job.status === "done" ? "Done." : "…"}
                 </span>
               </div>
+              {job.status === "running" && job.label && (
+                <div className="row" style={{ marginTop: 4 }}>
+                  <span className="muted mono" style={{ fontSize: 11, opacity: 0.85 }}>↳ {job.label}</span>
+                </div>
+              )}
             </div>
           )}
         </div>

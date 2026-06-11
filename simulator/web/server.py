@@ -183,10 +183,12 @@ def opponents_status():
 
 
 def _run_opp_job(job_id, opts, params):
-    def progress(done, total):
+    def progress(done, total, label=None):
         with _LOCK:
             _JOBS[job_id]["done"] = done
             _JOBS[job_id]["total"] = total
+            if label is not None:
+                _JOBS[job_id]["label"] = label
     try:
         cache = generate_opponents(
             opts, progress=progress, top_x=params["top_x"], scope=params["scope"],

@@ -64,6 +64,34 @@ def _rand_loadout_for(rng, pool, main_key):
     return (a, b)
 
 
+def _repair_loadout(rng, loadout, ctx):
+    """Enforce per-FORMATION skill uniqueness (user-confirmed rule): the 6 modular picks (2 per
+    hero) must be pairwise distinct AND distinct from EVERY hero's locked main skill. Keeps each
+    already-valid pick; only resamples the ones that collide. Idempotent on a valid loadout.
+    Because a stone always reinforces one of its own hero's modulars, stone-uniqueness across the
+    team follows for free."""
+    pool, mains = ctx["pool"], set(ctx["mains"])
+    used, out = set(), []
+    for i in range(3):
+        picks = []
+        for k in loadout[i]:
+            k = tuple(k)
+            if k not in mains and k not in used and k not in picks:
+                picks.append(k)
+        while len(picks) < 2:
+            c = rng.choice(pool)
+            if c not in mains and c not in used and c not in picks:
+                picks.append(c)
+        used.update(picks)
+        out.append((picks[0], picks[1]))
+    return tuple(out)
+
+
+def _rand_formation_loadout(rng, ctx):
+    """A fresh, formation-valid 3x2 modular loadout (all distinct, none a main skill)."""
+    return _repair_loadout(rng, ((), (), ()), ctx)
+
+
 def _ctx(g, hero_ids, rng, axes, troop_types=None):
     pool = _skill_pool(g)
     mains = [_main_key(g, h) for h in hero_ids]
@@ -78,11 +106,13 @@ def _ctx(g, hero_ids, rng, axes, troop_types=None):
     accr = [a[0] for a in g.accessory_items("right")]
     def_gear = (armor[0] if armor else None, msgr[0] if msgr else None,
                 accl[0] if accl else None, accr[0] if accr else None)
+    # each hero's recommended modulars are picked independently and CAN collide across heroes;
+    # repair them into a formation-valid default (the starting point when the skills axis is off).
+    raw_def = tuple(_default_modular(g, hero_ids[i], pool, mains[i], rng) for i in range(3))
+    def_loadout = _repair_loadout(rng, raw_def, {"pool": pool, "mains": mains})
     return {
         "pool": pool, "mains": mains, "axes": set(axes),
-        "def_troops": def_troops,
-        "def_loadout": tuple(_default_modular(g, hero_ids[i], pool, mains[i], rng)
-                             for i in range(3)),
+        "def_troops": def_troops, "def_loadout": def_loadout,
         "armor": armor, "msgr": msgr, "accl": accl, "accr": accr, "def_gear": def_gear,
     }
 
@@ -100,7 +130,7 @@ def _rand_gear(rng, ctx):
 def _rand_genome(rng, ctx):
     troops = (tuple(rng.randrange(1, 5) for _ in range(3))
               if "troop" in ctx["axes"] else ctx["def_troops"])
-    loadout = (tuple(_rand_loadout_for(rng, ctx["pool"], ctx["mains"][i]) for i in range(3))
+    loadout = (_rand_formation_loadout(rng, ctx)
                if "skills" in ctx["axes"] else ctx["def_loadout"])
     # #1: a skill stone is ALWAYS equipped and matches a modular (0 or 1) -- never empty.
     stones = (tuple(rng.choice((0, 1)) for _ in range(3))
@@ -236,6 +266,10 @@ def _mutate(rng, genome, ctx, rate=0.3):
             if ctx["accr"]:
                 gears[i][3] = rng.choice(ctx["accr"])
         # relic always on (#4) -- not mutated
+    # per-FORMATION skill uniqueness: crossover mixes whole-hero loadouts and a mutation can land
+    # on a skill another hero (or a main) already holds, so repair the whole formation here. This
+    # is the single choke-point every child passes through (crossover -> mutate).
+    loadout = [list(p) for p in _repair_loadout(rng, loadout, ctx)]
     return (tuple(troops), tuple(tuple(p) for p in loadout), tuple(stones),
             tuple(tuple(gp) for gp in gears))
 
