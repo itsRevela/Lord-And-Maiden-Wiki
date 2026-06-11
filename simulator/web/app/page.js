@@ -6,9 +6,9 @@ const ALLOCS = [
   { v: "atk", label: "ATK" }, { v: "def", label: "DEF" },
   { v: "ruin", label: "Ruin/DES" }, { v: "speed", label: "Speed" },
 ];
-const AXES = [
+const AXES = [   // relic is always equipped (max-tier, hero's own) -- not a toggle
   { v: "troop", label: "Troop type" }, { v: "skills", label: "Modular skills" },
-  { v: "stone", label: "Skill stone" }, { v: "relic", label: "Relic" },
+  { v: "stone", label: "Skill stone" },
 ];
 const ROLE_COLOR = {
   DPS: "#f0883e", Heal: "#3fb950", "CC (Control)": "#c678dd",

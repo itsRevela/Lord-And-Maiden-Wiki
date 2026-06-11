@@ -158,7 +158,7 @@ def simulate():
     job_id = uuid.uuid4().hex[:12]
     with _LOCK:
         _JOBS[job_id] = {"status": "running", "done": 0,
-                         "total": generations if mode == "optimize" else 192, "mode": mode}
+                         "total": (generations + top_n) if mode == "optimize" else 192, "mode": mode}
     threading.Thread(target=_run_job, args=(job_id, heroes, opts, mode, objective, extra),
                      daemon=True).start()
     return jsonify({"job_id": job_id})

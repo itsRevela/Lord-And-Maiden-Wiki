@@ -27,7 +27,7 @@ from .model import BuildSpec, ModelConfig, build_team, fresh_units
 from .search import WINDOWS, SearchOptions, sample_opponents
 
 TROOP_NAMES = {1: "Infantry", 2: "Archer", 3: "Cavalry", 4: "Chariot"}
-ALL_AXES = ("troop", "skills", "stone", "relic")
+ALL_AXES = ("troop", "skills", "stone")   # relic is ALWAYS equipped (#4), never an axis
 # genome = (troops:tuple3 int, loadout:tuple3 of (k,k), stones:tuple3 int{-1,0,1}, relics:tuple3 bool)
 
 
@@ -83,20 +83,20 @@ def _rand_genome(rng, ctx):
               if "troop" in ctx["axes"] else ctx["def_troops"])
     loadout = (tuple(_rand_loadout_for(rng, ctx["pool"], ctx["mains"][i]) for i in range(3))
                if "skills" in ctx["axes"] else ctx["def_loadout"])
-    stones = (tuple(rng.choice((-1, 0, 1)) for _ in range(3))
-              if "stone" in ctx["axes"] else (-1, -1, -1))
-    relics = (tuple(rng.random() < 0.5 for _ in range(3))
-              if "relic" in ctx["axes"] else (True, True, True))
+    # #1: a skill stone is ALWAYS equipped and matches a modular (0 or 1) -- never empty.
+    stones = (tuple(rng.choice((0, 1)) for _ in range(3))
+              if "stone" in ctx["axes"] else (0, 0, 0))
+    relics = (True, True, True)               # #4: relic ALWAYS on (hero's own, max tier)
     return (troops, loadout, stones, relics)
 
 
 def _seed_genomes(rng, ctx):
     """Sensible starting points: default troops + default modular skills, no stone, relic on;
     plus a few with each hero's stone on slot 0."""
-    base = (ctx["def_troops"], ctx["def_loadout"], (-1, -1, -1), (True, True, True))
+    base = (ctx["def_troops"], ctx["def_loadout"], (0, 0, 0), (True, True, True))
     seeds = [base]
     if "stone" in ctx["axes"]:
-        seeds.append((ctx["def_troops"], ctx["def_loadout"], (0, 0, 0), (True, True, True)))
+        seeds.append((ctx["def_troops"], ctx["def_loadout"], (1, 1, 1), (True, True, True)))
     return seeds
 
 
@@ -186,9 +186,8 @@ def _mutate(rng, genome, ctx, rate=0.3):
                 ns = rng.choice(pool); tries += 1
             loadout[i][slot] = ns
         if "stone" in ctx["axes"] and rng.random() < rate:
-            stones[i] = rng.choice((-1, 0, 1))
-        if "relic" in ctx["axes"] and rng.random() < rate:
-            relics[i] = not relics[i]
+            stones[i] = rng.choice((0, 1))    # always a stone (#1); just which modular
+        # relic always on (#4) -- not mutated
     return (tuple(troops), tuple(tuple(p) for p in loadout), tuple(stones), tuple(relics))
 
 
@@ -241,13 +240,14 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
                 for fut in as_completed(futs):
                     cache[futs[fut]] = fut.result()
 
+    total_steps = generations + top_n          # STABLE progress total (gens + final re-eval)
     history = []
     for gen in range(generations):
         evaluate(population)
         population.sort(key=lambda gm: (cache[gm]["primary"], cache[gm]["win_rate"]), reverse=True)
         history.append(cache[population[0]]["primary"])
         if progress:
-            progress(gen + 1, generations)
+            progress(gen + 1, total_steps)
         if gen == generations - 1:
             break
         nxt = population[:elite]
@@ -276,14 +276,14 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
         for gm, pl in zip(uniq, fin_payloads):
             ranked.append((gm, _eval_genome(pl)))
             if progress:
-                progress(generations + len(ranked), generations + len(uniq))
+                progress(min(generations + len(ranked), total_steps), total_steps)
     else:
         with ProcessPoolExecutor(max_workers=workers) as ex:
             futs = {ex.submit(_eval_genome, pl): gm for gm, pl in zip(uniq, fin_payloads)}
             for fut in as_completed(futs):
                 ranked.append((futs[fut], fut.result()))
                 if progress:
-                    progress(generations + len(ranked), generations + len(uniq))
+                    progress(min(generations + len(ranked), total_steps), total_steps)
     ranked.sort(key=lambda gf: (gf[1]["primary"], gf[1]["win_rate"]), reverse=True)
     return _assemble(g, hero_ids, commander_index, allocated, ranked, opts, objective,
                      search_axes, generations, pop_size, history)
