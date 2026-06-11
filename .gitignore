@@ -42,3 +42,4 @@ notes/sim/captures/raw_*.bin
 notes/sim/captures/messages.log
 notes/sim/captures/**/raw_*.bin
 notes/sim/captures/**/messages.log
+simulator/opponent_cache.json

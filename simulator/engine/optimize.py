@@ -140,6 +140,24 @@ def _specs(hero_ids, genome, commander, allocated):
     return tuple(specs)
 
 
+def _opp_team(g, opp, cfg):
+    """Build an opponent team from a FULL formation (list of hero dicts w/ skills/gear/alloc --
+    from the cached challenging-opponent pool) OR legacy (hero_id, troop, is_commander) tuples."""
+    specs = []
+    for slot in opp:
+        if isinstance(slot, dict):
+            specs.append(BuildSpec(
+                hero_id=int(slot["hero_id"]), soldier_type=int(slot["troop"]),
+                is_commander=bool(slot.get("is_commander")),
+                skill_keys=tuple(tuple(k) for k in slot["skill_keys"]) if slot.get("skill_keys") else None,
+                allocated_stat=slot.get("allocated_stat"),
+                relic_on=bool(slot.get("relic_on", True)), gear=slot.get("gear")))
+        else:
+            hid, tt, ic = slot
+            specs.append(BuildSpec(hero_id=int(hid), soldier_type=int(tt), is_commander=bool(ic)))
+    return build_team(g, specs, side=1, cfg=cfg, fight_pos_base=4)
+
+
 def _eval_genome(payload):
     """Worker: score one genome vs the opponent pool. Deterministic per genome."""
     g = datamod.load()
@@ -148,9 +166,7 @@ def _eval_genome(payload):
     genome = payload["genome"]
     specs = _specs(hero_ids, genome, payload["commander"], payload["allocated"])
     player = build_team(g, specs, side=0, cfg=cfg, fight_pos_base=1)
-    opp_templates = [build_team(g, [BuildSpec(hero_id=hid, soldier_type=tt, is_commander=ic)
-                                    for (hid, tt, ic) in opp], side=1, cfg=cfg, fight_pos_base=4)
-                     for opp in payload["opponents"]]
+    opp_templates = [_opp_team(g, opp, cfg) for opp in payload["opponents"]]
     n_battles = payload["n_battles"]
     wins = battles = 0
     troops_rem = 0.0; units_lost = 0
@@ -231,7 +247,7 @@ def _tournament(rng, population, cache, k=3):
 
 def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
                        commander_index=0, allocated_stats=None, search_axes=ALL_AXES,
-                       troop_types=None, objective="win", top_n=20,
+                       troop_types=None, objective="win", top_n=20, use_opponent_cache=True,
                        pop_size=44, generations=24, ga_battles=18, ga_opponents=12, elite=6):
     """Evolve + rank the best builds for a FIXED commander + allocation. Returns top-N."""
     g = datamod.load()
@@ -243,8 +259,20 @@ def optimize_formation(hero_ids, opts: SearchOptions, progress=None,
     rng = random.Random(opts.seed)
     cfg_dict = asdict(opts.cfg)
     ctx = _ctx(g, hero_ids, rng, search_axes, troop_types)
-    opponents = sample_opponents(g, max(ga_opponents, opts.n_opponents), opts.seed, exclude=hero_ids)
-    ga_opp = opponents[:ga_opponents]
+    # opponent pool: prefer the cached CHALLENGING-OPPONENT pool (full strong builds) if present,
+    # else fall back to the weak sampled pool. (Lazy import avoids an optimize<->opponents cycle.)
+    opponents = None
+    if use_opponent_cache:
+        try:
+            from .opponents import load_opponent_cache
+            cached = load_opponent_cache()
+            if cached and cached.get("formations"):
+                opponents = [f["heroes"] for f in cached["formations"]]
+        except Exception:
+            opponents = None
+    if not opponents:
+        opponents = sample_opponents(g, max(ga_opponents, opts.n_opponents), opts.seed, exclude=hero_ids)
+    ga_opp = opponents[:ga_opponents] if len(opponents) >= ga_opponents else opponents
 
     population = _seed_genomes(rng, ctx)
     while len(population) < pop_size:
