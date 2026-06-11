@@ -211,6 +211,13 @@ class ModelConfig:
     # combined normal scalar (damage_global*normal_attack_coef ~= 24.2) keeps the clean
     # baseline normals in the logged ~4,000-5,600 band while skills scale up.
     normal_attack_coef: float = 0.46          # ASSUMPTION (auto-attack coefficient; re-fit with damage_global)
+    # SKILL first-pick commander weight (documented SERVER-SIDE UNKNOWN: whether the 20/40/40
+    # normal-attack weighting also governs damaging-SKILL targeting). Pursuit-log evidence says
+    # skills favour strikers over the commander -- the player's STRIKER (Mia) died while the
+    # +ATK commander (SusaMaki) survived, and a striker (Dolly) fell on the enemy side too. So
+    # skills target the commander LESS than a normal (0.20) does. ASSUMPTION knob; normal
+    # attacks keep the FACT 0.20 in _pick_target.
+    skill_commander_target_weight: float = 0.2
 
     # --- reactions / procs (coefficients are FACT from skills; these gate them) ---
     counter_coef: float = 0.84                # FACT (Reactive Block 0.70+0.14)

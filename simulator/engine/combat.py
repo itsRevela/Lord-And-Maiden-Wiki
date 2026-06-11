@@ -511,7 +511,7 @@ class Battle:
         for _ in range(count):
             if not remaining:
                 break
-            weights = [0.2 if f.is_commander else 0.4 for f in remaining]
+            weights = [self.cfg.skill_commander_target_weight if f.is_commander else 0.4 for f in remaining]
             tot = sum(weights) or 1.0
             r = self.rng.random() * tot
             acc = 0.0
