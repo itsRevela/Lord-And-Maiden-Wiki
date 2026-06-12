@@ -44,6 +44,7 @@ import gzip
 import io
 import json
 import os
+import re
 import struct
 import sys
 
@@ -164,13 +165,75 @@ def _ret_label(rt: int) -> str:
     return {4: "HEAL", 5: "DEFEAT", 6: "BUFF", 7: "BUFF"}.get(rt, "?%d" % rt)
 
 
+# --------------------------------------------------------------------------- multi-bout linking
+# A "fight" can span several 8-round BOUTS: an undecided bout ends in a STALEMATE and the next bout
+# continues with TROOPS CARRIED OVER plus a stacking "{僵持}-N" buff (+33% all-hero DMG per stack),
+# repeating until a Commander's troops hit 0. Each bout is its own SCLogic_DetailsGrand (consecutive
+# grandId). Reverse-engineered from capture: bout N+1's initState hpRate2 == bout N's final hpRate2.
+# fightRet per bout: 1 = side A (left/"you") win, 2 = side B win, 3 = stalemate (-> another bout).
+_STALEMATE_RE = re.compile(r"\{僵持\}-(\d+)")
+
+
+def _bout_result(ret) -> str:
+    return {1: "A_win", 2: "B_win", 3: "stalemate"}.get(ret, "ret%s" % ret)
+
+
+def final_state(d: dict) -> dict:
+    """Final hp1/hp2 per fightPos = the last value seen targeting that pos across all rounds
+    (units never targeted keep their init value). Used for the bout outcome + carry-over linking."""
+    st = {s["fightPos"]: [s["hpRate1"], s["hpRate2"]] for s in d.get("initState", [])}
+    for rnd in d.get("rounds", []):
+        for bh in rnd["behaviours"]:
+            for coll in [bh.get("beforeAction", [])] + [a.get("rets", []) for a in bh.get("actions", [])]:
+                for r in coll:
+                    tp = r.get("targetPos")
+                    if tp in st:
+                        if r.get("hpRate1") is not None:
+                            st[tp][0] = r["hpRate1"]
+                        if r.get("hpRate2") is not None:
+                            st[tp][1] = r["hpRate2"]
+    return {p: {"hp1": round(v[0], 5), "hp2": round(v[1], 5)} for p, v in st.items()}
+
+
+def _stalemate_stacks(d: dict) -> int:
+    """The {僵持}-N escalation stack a bout opens with (0 for a first bout)."""
+    dl = d.get("desList", [])
+    if dl:
+        m = _STALEMATE_RE.search(dl[0])
+        if m:
+            return int(m.group(1))
+    return 0
+
+
+def _is_fresh_bout(d: dict) -> bool:
+    """A FIRST bout starts with every unit at full troops; a continuation starts mid-depletion."""
+    return all(abs(s.get("hpRate2", 1.0) - 1.0) < 1e-3 for s in d.get("initState", []))
+
+
+def _carries_over_from(d: dict, prev_final: dict) -> bool:
+    """True if this bout's starting troops match the previous bout's ending troops (the carry-over
+    that links continuation bouts of one fight)."""
+    if not prev_final:
+        return False
+    for s in d.get("initState", []):
+        p = s["fightPos"]
+        if p not in prev_final or abs(s.get("hpRate2", 1.0) - prev_final[p]["hp2"]) > 0.03:
+            return False
+    return True
+
+
 def battle_to_text(d: dict) -> str:
     """Human-readable reconstruction (like a transcribed battle log)."""
     out = io.StringIO()
     w = lambda *a: out.write(" ".join(str(x) for x in a) + "\n")
-    w("=== Battle %s | %s vs %s | fightRet=%s | rounds=%d ==="
+    w("=== Battle %s | %s vs %s | fightRet=%s (%s) | rounds=%d ==="
       % (d.get("grandId"), d.get("playerA"), d.get("playerB"), d.get("fightRet"),
-         len(d.get("rounds", []))))
+         d.get("boutResult", "?"), len(d.get("rounds", []))))
+    if d.get("fightId") is not None:
+        w("    fight %s · bout %d%s"
+          % (d.get("fightId"), d.get("boutNum", 1),
+             (" · stalemate stack +%d (+%d%% all-hero DMG)" % (d["stalemates"], 33 * d["stalemates"]))
+             if d.get("stalemates") else ""))
     if d.get("initState"):
         w("-- init (fightPos: heroNum st/slv hp1 hp2) --")
         for u in d["initState"]:
@@ -256,10 +319,49 @@ class BattleWriter:
         self.msglog = open(os.path.join(out_dir, "messages.log"), "a", encoding="utf-8")
         self.index = open(os.path.join(out_dir, "index.csv"), "a", encoding="utf-8")
         if os.path.getsize(os.path.join(out_dir, "index.csv")) == 0:
-            self.index.write("timestamp,grandId,playerA,playerB,fightRet,rounds,file\n")
+            self.index.write("timestamp,grandId,playerA,playerB,fightRet,boutResult,"
+                             "fightId,boutNum,stalemates,rounds,file\n")
         self.seen_battles = set()
         self.n_battles = 0
         self.n_msgs = 0
+        self._prev = None          # last decoded bout: {grandId, fightId, boutNum, final, roster}
+        self.fights = {}           # fightId -> {bouts:[grandId...], result, rounds, ...}
+        self.n_fights = 0
+
+    def _link_bout(self, d: dict):
+        """Assign fightId/boutNum by detecting continuation bouts (carried-over troops after a
+        prior stalemate). Mutates d with fightId, boutNum, boutResult, stalemates, finalState."""
+        d["finalState"] = final_state(d)
+        d["stalemates"] = _stalemate_stacks(d)
+        d["boutResult"] = _bout_result(d.get("fightRet"))
+        roster = tuple(sorted((s["fightPos"], int(s["heroNum"])) for s in d.get("initState", [])))
+        prev = self._prev
+        cont = (not _is_fresh_bout(d) and prev is not None
+                and roster == prev["roster"]
+                and (_carries_over_from(d, prev["final"]) or d["grandId"] == prev["grandId"] + 1))
+        if cont:
+            d["fightId"], d["boutNum"] = prev["fightId"], prev["boutNum"] + 1
+        else:
+            d["fightId"], d["boutNum"] = d["grandId"], 1
+        self._prev = {"grandId": d["grandId"], "fightId": d["fightId"], "boutNum": d["boutNum"],
+                      "final": d["finalState"], "roster": roster}
+        # accumulate fight summary (final winner = last decisive bout's result)
+        ft = self.fights.setdefault(d["fightId"], {"bouts": [], "rounds": 0, "result": "ongoing"})
+        ft["bouts"].append(d["grandId"])
+        ft["rounds"] += len(d.get("rounds", []))
+        ft["result"] = d["boutResult"] if d["boutResult"] != "stalemate" else "stalemate(ongoing)"
+        ft["lastFinal"] = d["finalState"]
+        self._write_fights()
+
+    def _write_fights(self):
+        with open(os.path.join(self.dir, "fights.csv"), "w", encoding="utf-8") as f:
+            f.write("fightId,bouts,total_rounds,result,pCmd_hp2,eCmd_hp2\n")
+            for fid, ft in self.fights.items():
+                lf = ft.get("lastFinal", {})
+                pc = lf.get(1, {}).get("hp2", "")
+                ec = lf.get(4, {}).get("hp2", "")
+                f.write("%s,%d,%d,%s,%s,%s\n" % (fid, len(ft["bouts"]), ft["rounds"],
+                                                 ft["result"], pc, ec))
 
     def note_msg(self, name: str, size: int, src: str = ""):
         self.n_msgs += 1
@@ -272,6 +374,9 @@ class BattleWriter:
         if key in self.seen_battles:
             return
         self.seen_battles.add(key)
+        self._link_bout(d)                 # assign fightId/boutNum + finalState/result/stalemates
+        if d["boutNum"] == 1:
+            self.n_fights += 1
         ts = _dt.datetime.now().strftime("%Y%m%d_%H%M%S")
         base = "battle_%s_%s" % (ts, gid)
         jpath = os.path.join(self.dir, base + ".json")
@@ -280,8 +385,9 @@ class BattleWriter:
             json.dump(d, f, ensure_ascii=False, indent=2)
         with open(lpath, "w", encoding="utf-8") as f:
             f.write(battle_to_text(d))
-        self.index.write("%s,%s,%s,%s,%s,%d,%s\n" % (
+        self.index.write("%s,%s,%s,%s,%s,%s,%s,%d,%d,%d,%s\n" % (
             ts, gid, d.get("playerA", ""), d.get("playerB", ""), d.get("fightRet"),
+            d.get("boutResult"), d.get("fightId"), d.get("boutNum"), d.get("stalemates", 0),
             len(d.get("rounds", [])), base + ".json"))
         self.index.flush()
         self.n_battles += 1
@@ -289,9 +395,11 @@ class BattleWriter:
         # them -- write the real UTF-8 names to the files, print a safe summary here).
         def _ascii(x):
             return str(x).encode("ascii", "replace").decode("ascii")
-        print("[+] battle captured: %s  (%s vs %s, fightRet=%s, %d rounds)  -> %s"
-              % (gid, _ascii(d.get("playerA")), _ascii(d.get("playerB")), d.get("fightRet"),
-                 len(d.get("rounds", [])), base + ".json"))
+        bouttag = ("fight %s bout %d%s" % (d.get("fightId"), d.get("boutNum"),
+                   (" stalemate+%d" % d["stalemates"]) if d.get("stalemates") else ""))
+        print("[+] battle %s  [%s]  (%s vs %s, %s, %d rounds)  -> %s"
+              % (gid, bouttag, _ascii(d.get("playerA")), _ascii(d.get("playerB")),
+                 d.get("boutResult"), len(d.get("rounds", [])), base + ".json"))
 
 
 # --------------------------------------------------------------------------- engine glue
