@@ -169,6 +169,76 @@ The quiz's **question and answer-option text** do exist in the game's localizati
 
 **A:** **Support** — concealing her High Mage identity, she serves as the team's support mage, casting enhancement magic on her teammates. ([Faye·Sp](../Heroes/roster/121-faye-sp.md))
 
+### Batch 4
+**Q39. Before the final ritual, what did Crolos press into Niya's hand?**
+
+**A:** **A booklet** — a neatly transcribed booklet of the town's true history, pressed into Niya's palm with "Go, Niya. I will remember you." ([Niya](../Heroes/roster/117-niya.md))
+
+**Q40. What trait sets Madeline apart from ordinary humans?**
+
+**A:** **Her unusually long lifespan** — she ages far slower (her appearance never ages), having lived since the old king's birth. ([Madeline](../Heroes/roster/105-madeline.md))
+
+**Q41. What is Yaya's public identity at the restaurant?**
+
+**A:** **A bunny girl** — she is the restaurant's most popular bunny girl, secretly its owner and the kingdom's Chief Intelligence Officer. ([Yaya](../Heroes/roster/90-yaya.md))
+
+**Q42. What is Derifa's purpose for becoming stronger?**
+
+**A:** **To protect her little sister's smile** — after their homeless early years, she grows stronger to keep her sister happy and carefree. ([Derifa](../Heroes/roster/6-derifa.md))
+
+**Q43. What race does Bellara belong to?**
+
+**A:** **Dark Elf** — she calls herself a dark elf (her broad combat race is listed as Elf). ([Belala](../Heroes/roster/73-belala.md))
+
+**Q44. The Council trained Lenna to become the new generation's ______.**
+
+**A:** **Executor** — taken at age 5 for her talent, she was trained as an executor of the new generation. ([Lenna](../Heroes/roster/96-lenna.md))
+
+**Q45. What color are Mia's wings?**
+
+**A:** **Black** — her black wings can't heal wounds but symbolize her resolve to protect the beastmen. ([Mia·Sp](../Heroes/roster/74-mia-sp.md))
+
+**Q46. Why did Isabelle join the Dawn Knight Order?**
+
+**A:** **Curiosity and rebellion** — the earl's daughter joined precisely because she was warned not to, wanting to see the slandered "den of demons" for herself. ([Isabelle](../Heroes/roster/118-isabelle.md))
+
+**Q47. What is the name of Sera's sword?**
+
+**A:** **"Iron Devourer"** — the cursed blade her dying father gave her; it seems to feed on metal but truly hungers for the curses sealing demons. ([Sera](../Heroes/roster/114-sera.md))
+
+**Q48. What did the special forces sent by the kingdom want to do with Niya?**
+
+**A:** **Retrieve her power** — the special unit was sent to reclaim Niya, the source of the anomalous power, and destroy all records of the town's truth. ([Niya](../Heroes/roster/117-niya.md))
+
+**Q49. Why did Slider refuse to join the Dibuk organization?**
+
+**A:** **She had something she wanted to protect** — by her own admission she might have joined the "madwoman" Vanessa otherwise. ([Slider](../Heroes/roster/16-slider.md))
+
+**Q50. When Lafayette decided to wander, who did Mia choose to stay behind to guard against?**
+
+**A:** **Vanessa** — Mia stayed to protect the beastmen, sensing Vanessa (and the resurgent Dibuk organization) would harm her people. ([Mia](../Heroes/roster/46-mia.md))
+
+### Batch 5
+**Q51. Why has Crolos been feeling very sleepy lately?**
+
+**A:** **She has lost many memories** — her time magic is eroding her existence, so memories (and her sense of self) are fading. ([Crolos·Sp](../Heroes/roster/119-crolos-sp.md))
+
+**Q52. Who in the Holy Knights holds the title "Calamity Star"?**
+
+**A:** **Pomon** — the Third Knight, titled "Calamity Star" because misfortune followed her everywhere. ([Pomon](../Heroes/roster/34-pomon.md))
+
+**Q53. Who did Olrun send to seize the demon blade "Higan" from the Susa clan?**
+
+**A:** **Zoe** — the retrieval of the freshly-forged demon sword Higan fell to Zoe, who infiltrated the Susa estate. ([Zoe](../Heroes/roster/51-zoe.md))
+
+**Q54. Which organization did Olrun invite Patra to join?**
+
+**A:** **Poisonous Vulture** — Olrun recruited the "Judge" Patra into the Poisonous Vulture. ([Patra](../Heroes/roster/60-patra.md))
+
+**Q55. Who helped heal the wound on Perris's face?**
+
+**A:** **Lilith** — Olrun pointed Perris to the red elf Lilith, whose deal healed her face (at a price). ([Perris](../Heroes/roster/22-perris.md))
+
 **See also:** [Quests & Events](Quests-and-Events.md) · [Glossary](../Reference/Glossary.md) (Friendship / Life Points).
 
 ---
