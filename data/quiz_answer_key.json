@@ -1,0 +1,44 @@
+{
+  "克罗洛丝最近总是很困是因为自己怎么了？": {
+    "answer_en": "Lost many memories",
+    "count": 1,
+    "question_en": "Why has Crolos been feeling very sleepy lately?",
+    "right_key": "丢失了很多记忆"
+  },
+  "圣骑士团拥有\"灾星\"的称号是？": {
+    "answer_en": "Pomon",
+    "count": 1,
+    "question_en": "Who in the Holy Knights holds the title \"Calamity Star\"?",
+    "right_key": "波蒙"
+  },
+  "在拉法叶说要闯荡时，米娅选择留下是为了防范谁？": {
+    "answer_en": "Vanessa",
+    "count": 1,
+    "question_en": "When Lafayette decided to wander, who did Mia choose to stay behind to guard against?",
+    "right_key": "瓦妮莎"
+  },
+  "奥尔露恩派谁去抢夺须佐家族的妖刀彼岸？": {
+    "answer_en": "Zoe",
+    "count": 1,
+    "question_en": "Who did Olrun send to seize the demon blade \"Higan\" from the Susa clan?",
+    "right_key": "佐伊"
+  },
+  "奥尔露恩邀请帕特拉加入什么组织？": {
+    "answer_en": "Poisonous Vulture",
+    "count": 1,
+    "question_en": "Which organization did Olrun invite Patra to join?",
+    "right_key": "鸩"
+  },
+  "珀瑞斯脸上的伤是通过谁帮助治愈的？": {
+    "answer_en": "Lilith",
+    "count": 1,
+    "question_en": "Who helped heal the wound on Perris’s face?",
+    "right_key": "莉莉丝"
+  },
+  "莱恩娜足够灵敏且天赋异禀，国会将她培养成了新世代的______?": {
+    "answer_en": "Executor",
+    "count": 1,
+    "question_en": "Lenna is agile and exceptionally gifted, so the Council trained her to become the new generation’s ______.",
+    "right_key": "执行者"
+  }
+}

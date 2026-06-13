@@ -145,7 +145,8 @@ data-driven generator turns the configs into Markdown. See
 wiki/        the wiki — read this (start at wiki/README.md or Game-Overview.md)
 data/        extracted game configs the wiki is generated from (csv + localization)
              (data/sim/ = machine-readable combat catalogue for the simulator)
-tools/       the generator (tools/wikigen/) and extraction scripts
+tools/       the generator (tools/wikigen/), extraction scripts, and the live
+             Knowledge-Quiz answer scanner — see tools/README.md
 simulator/   the Battle Simulator — engine + Next.js UI (see simulator/README.md)
 notes/       methodology, recon and formula notes (notes/sim/ = combat decode)
 decompiled/  decompiled C# from the game DLLs   (gitignored)

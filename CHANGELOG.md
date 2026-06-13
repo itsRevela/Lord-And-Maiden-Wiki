@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
+- **Knowledge-Quiz answer monitor** (`tools/lam_question_monitor.py`) — a live scanner that
+  reads the (unencrypted) server→client stream and, on each daily-quiz question, prints the
+  correct answer; it self-learns and runs until stopped.
+  - **`tools/lam_question_capture.py`** — Phase-1 raw capture + best-effort decoder, built to
+    verify the protocol before the monitor. Reuses the battle sniffer's TCP framing / gzip /
+    `Proto` / flow-reassembly stack.
+  - **Protocol (reverse-engineered from `eb46ed1b3cbb.cs` + a live capture):** the quiz pushes
+    `SCLogic_GetRandomQuestion` with the question and every option sent as `{translation-key}`
+    strings (resolved via `data/localization.json`) — and **no correct-answer id**. The answer
+    is only revealed *after* you submit, in `SCLogic_SelectQuestionAnser` (`rightId`). Verified
+    byte-exact (`_unparsed_tail_bytes == 0`).
+  - **Answer engine:** canonicalises each question/option to its Simplified translation key
+    (language-proof), looks the answer up in `data/quiz_answer_key.json`, and **learns** every
+    revealed `rightId` by correlating it with the last question — so coverage grows toward the
+    full pool with play. Bootstrapped from a captured Mia→Vanessa answer.
+- **Prop (item) asset extractor** (`tools/extract_prop_assets.py`) — pulls all 676 item icons
+  and the 7 rarity backdrops (`PropBox/0–6`, `5` = gold ★5) + ★5/★6 glow layers from the
+  bundles to `extracted/assets/props/`, with an `index.json` mapping every prop → icon + backdrop.
 - **Battle Simulator** (`simulator/`) — a configurable, multi-core Monte-Carlo model of
   the game's 3v3, 8-round combat that ranks the best build for a chosen 3-hero formation.
   - **Phase-1 catalogue → `data/sim/*.json`** (machine-readable): all 416 skills (decoded
