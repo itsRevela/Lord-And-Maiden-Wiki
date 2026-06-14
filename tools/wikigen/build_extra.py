@@ -1323,8 +1323,8 @@ def gen_knowledge_quiz(write, tbl, R):
         "The **Knowledge Quiz** is a **daily** multiple-choice event held at the **Fantasy Plaza** "
         "(the Public Square social hub). You can take part **once per day**.", "",
         "## How it works",
-        "- The game presents **timed questions**, each with several **answer options** and one correct "
-        "answer; pick an option before the timer runs out.",
+        "- The game presents a **question** with several **answer options** and one correct answer; "
+        "pick an option to answer (the daily quiz is **not timed**).",
         "- A **correct answer** grants a reward (the game files list the Knowledge Quiz as a source of "
         "**Life Points** — see [Glossary](../Reference/Glossary.md)); a wrong answer gives a smaller / "
         "alternate reward.",

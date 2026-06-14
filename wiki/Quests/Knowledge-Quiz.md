@@ -3,7 +3,7 @@
 The **Knowledge Quiz** is a **daily** multiple-choice event held at the **Fantasy Plaza** (the Public Square social hub). You can take part **once per day**.
 
 ## How it works
-- The game presents **timed questions**, each with several **answer options** and one correct answer; pick an option before the timer runs out.
+- The game presents a **question** with several **answer options** and one correct answer; pick an option to answer (the daily quiz is **not timed**).
 - A **correct answer** grants a reward (the game files list the Knowledge Quiz as a source of **Life Points** — see [Glossary](../Reference/Glossary.md)); a wrong answer gives a smaller / alternate reward.
 - **Ask for help:** you can **share a question to chat** to ask other players for the answer.
 - **Help others:** answering another player's shared question correctly earns you **Friendship Points**, up to a **daily help cap**.
