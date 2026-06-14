@@ -1538,6 +1538,22 @@ def gen_knowledge_quiz(write, tbl, R):
         "**A:** **A word of thanks** — she gave the wounded little elf a potion; its \"thank you\" left "
         "her feeling she'd found something more meaningful than battle. "
         "([Slider·Sp](../Heroes/roster/66-slider-sp.md))", "",
+        "### Batch 7",
+        "**Q62. What did Niya say when she saw Crolos again that night?**", "",
+        "**A:** **\"See, I haven't forgotten you!\"** — said as the two reunited that night, before "
+        "hugging Crolos. ([Crolos·Sp](../Heroes/roster/119-crolos-sp.md))", "",
+        "**Q63. What is Dolly's ability related to?**", "",
+        "**A:** **Nature's revival** — she communicates with nature and can heal and revive plant life "
+        "(she regrew the cleared weeds with an arrow). ([Dolly](../Heroes/roster/108-dolly.md))", "",
+        "**Q64. Where was Niya's fiancé found dead on the night of her funeral?**", "",
+        "**A:** **In front of Niya's grave** — the grieving man was found collapsed before her grave, "
+        "clutching withered wildflowers. ([Niya](../Heroes/roster/117-niya.md))", "",
+        "**Q65. Who is the pure angel possessing the power of water?**", "",
+        "**A:** **Luna** — a pure-hearted angel gifted with the power of water and a guardian of nature. "
+        "([Luna](../Heroes/roster/111-luna.md))", "",
+        "**Q66. How many horns did Bellara manifest for herself?**", "",
+        "**A:** **Three** — she conjured three horns (wanting both unicorn and bicorn charm). "
+        "([Belala](../Heroes/roster/73-belala.md))", "",
         "**See also:** [Quests & Events](Quests-and-Events.md) · [Glossary](../Reference/Glossary.md) "
         "(Friendship / Life Points).",
     ]
