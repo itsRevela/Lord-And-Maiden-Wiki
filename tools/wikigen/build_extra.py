@@ -1517,6 +1517,27 @@ def gen_knowledge_quiz(write, tbl, R):
         "**Q55. Who helped heal the wound on Perris's face?**", "",
         "**A:** **Lilith** — Olrun pointed Perris to the red elf Lilith, whose deal healed her face (at a "
         "price). ([Perris](../Heroes/roster/22-perris.md))", "",
+        "### Batch 6",
+        "**Q56. What is Susabi's appearance usually associated with?**", "",
+        "**A:** **A crisis of the Beastkin** — the nine-tailed fox is said to appear only in the "
+        "beastmen's times of crisis (e.g. she returned to cure a plague). "
+        "([Susabi](../Heroes/roster/37-susabi.md))", "",
+        "**Q57. Which organization did Sera become a blade against?**", "",
+        "**A:** **The Dibuk cult** — wielding the cursed sword \"Iron Devourer,\" Sera turned it against "
+        "the Dibuk organization. ([Sera](../Heroes/roster/114-sera.md))", "",
+        "**Q58. What was Isabelle's first impression of Aguria?**", "",
+        "**A:** **Radiant like the sun** — she first saw Aguria as the figure who \"shone like the sun\" "
+        "on the battlefield. ([Isabelle](../Heroes/roster/118-isabelle.md))", "",
+        "**Q59. Who taught Derifa magic?**", "",
+        "**A:** **Sylph** — Derifa learned wind magic from Sylph at the magic academy. "
+        "([Derifa](../Heroes/roster/6-derifa.md))", "",
+        "**Q60. What is the name of the new dancer in Umiga?**", "",
+        "**A:** **Thefis** — the new dancer who drew nobles and royals to Umiga; her dancing weaves "
+        "illusions. ([Thefis](../Heroes/roster/13-thefis.md))", "",
+        "**Q61. What did Slider gain after helping an injured little spirit?**", "",
+        "**A:** **A word of thanks** — she gave the wounded little elf a potion; its \"thank you\" left "
+        "her feeling she'd found something more meaningful than battle. "
+        "([Slider·Sp](../Heroes/roster/66-slider-sp.md))", "",
         "**See also:** [Quests & Events](Quests-and-Events.md) · [Glossary](../Reference/Glossary.md) "
         "(Friendship / Life Points).",
     ]
